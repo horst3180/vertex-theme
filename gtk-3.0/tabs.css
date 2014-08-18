@@ -1,0 +1,143 @@
+NemoWindow .notebook,
+NautilusNotebook.notebook,
+EmpathyChatWindow .notebook,
+EphyNotebook.notebook,
+GeditWindow .notebook {
+    border-top-width: 0;
+}
+
+NautilusNotebook.notebook.header,
+NemoWindow .notebook.header,
+EmpathyChatWindow .notebook.header,
+EphyNotebook.notebook.header,
+GeditWindow .notebook.header {
+	border-bottom: 1px solid alpha(black, 0.1);
+}
+
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.top:active:hover,
+NemoNotebook.notebook tab.top:active,
+NemoNotebook.notebook tab.top:active:hover,
+GeditWindow .notebook tab.top:active,
+GeditWindow .notebook tab.top:active:hover,
+EphyNotebook.notebook tab.top:active,
+EphyNotebook.notebook tab.top:active:hover {
+    border-left: 1px solid @borders;
+    border-right: 1px solid @borders;
+	border-bottom: 1px solid @borders;
+	border-top-width: 0px;
+    background-color: @wm_bg_b;
+    background-image: linear-gradient(to bottom,
+                                      @notebook_tab_gradient_a,
+									  @notebook_tab_gradient_b);
+	box-shadow: none;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+NautilusNotebook.notebook tab.reorderable-page:hover,
+NemoNotebook.notebook tab.reorderable-page:hover,
+GeditWindow .notebook tab.reorderable-page:hover,
+EphyNotebook .notebook tab.reorderable-page:hover {
+    border-top: 1px solid alpha(black, 0.03);
+    border-bottom: 1px solid alpha(black, 0.02);
+}
+
+/*
+ * Terminal
+ */
+TerminalWindow .notebook tab.reorderable-page:active {
+	    background-image: linear-gradient(to bottom,
+                                      @theme_bg_color,
+									  @wm_bg_b);
+}
+
+TerminalWindow .notebook.header {
+    border-width: 0px;
+	border-top: 1px solid @borders;
+}
+
+TerminalWindow .notebook {
+    border-color: shade(@terminal_bg, 0.8);
+}
+
+TerminalWindow .notebook tab.reorderable-page:active:hover {
+    border-top-style: none;
+}
+
+TerminalWindow .notebook tab.reorderable-page:hover {
+    border-top: 1px solid @borders;
+}
+
+/*
+ * Nautilus
+ */
+NautilusWindow .sidebar .frame,
+NautilusNotebook .frame {
+    border-width: 1px 0 0 0;
+	border-color: @borders;
+}
+
+NautilusWindow .header-bar {
+    border-width: 0;
+}
+
+NautilusNotebook.notebook tab.top {
+	background-color: transparent;
+}
+
+NautilusNotebook.notebook.header {
+    border-width: 1px 0 1px 0;
+	border-top-color: @borders;
+
+}
+
+NautilusWindow .info,
+NautilusWindow .question,
+NautilusWindow .warning,
+NautilusWindow .error {
+	border-width: 0;
+    background-image: linear-gradient(to bottom,
+                                      @notebook_tab_gradient_a,
+									  @theme_base_color);
+}
+
+/*
+ * Nemo
+ */
+NemoNotebook.notebook tab.reorderable-page:hover {
+    border-top: 1px solid alpha(black, 0.03);
+    border-bottom: 1px solid alpha(black, 0.02);
+}
+
+NemoNotebook.notebook {
+    border-top-width: 0px;
+}
+
+NemoNotebook.notebook.header {
+    border-width: 0 0 1px 0;
+	border-bottom-color: shade(@borders, 1.2);
+}
+
+/*
+ * Empathy
+ */
+EmpathyChatWindow .notebook {
+	border-width: 0;
+	border-bottom-width: 1px;
+}
+
+EmpathyChatWindow .notebook.header.frame.top {
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+EmpathyChatWindow .notebook tab.top {
+    padding: 6px 20px 4px;
+}
+
+EmpathyChatWindow .menubar {
+    background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b,
+                                      @notebook_tab_gradient_a);
+}

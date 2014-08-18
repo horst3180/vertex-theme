@@ -1,0 +1,15 @@
+.menu {
+    border-image: linear-gradient(to top,
+                                  alpha(@borders, 0.80),
+                                  alpha(@borders, 0.60) 33%,
+                                  alpha(@borders, 0.50) 66%,
+                                  alpha(@borders, 0.15)) 1 1 1 1/ 1px 1px 1px 1px;
+}
+
+.menubar .menu {
+    border-image: linear-gradient(to top,
+                                  alpha(@borders, 0.80),
+                                  alpha(@borders, 0.60) 33%,
+                                  alpha(@borders, 0.50) 66%,
+                                  transparent 99%) 1 1 1 1/ 1px 1px 1px 1px;
+}

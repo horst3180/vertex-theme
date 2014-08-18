@@ -1,0 +1,162 @@
+TerminalWindow .notebook .prelight-page GtkLabel,
+TerminalWindow .notebook tab .active-page GtkLabel,
+NautilusWindow .notebook tab .active-page GtkLabel,
+NemoWindow .notebook tab .active-page GtkLabel,
+EmpathyChatWindow .notebook tab .active-page GtkLabel,
+GeditWindow .notebook tab .active-page GtkLabel,
+EphyNotebook.notebook tab .active-page GtkLabel {
+    color: @dark_fg_color;
+	text-shadow: 0 -1px @dark_wm_title_shadow;
+    icon-shadow: 0 -1px @dark_wm_title_shadow;
+    transition: none;
+}
+
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.top:active:hover,
+NemoWindow .notebook tab.reorderable-page:active,
+NemoWindow .notebook tab.reorderable-page:active:hover,
+EmpathyChatWindow .notebook tab.reorderable-page:active,
+EmpathyChatWindow .notebook tab.reorderable-page:active:hover,
+GeditWindow .notebook tab.reorderable-page:active,
+GeditWindow .notebook tab.reorderable-page:active:hover,
+EphyNotebook.notebook tab.reorderable-page:active,
+EphyNotebook.notebook tab.reorderable-page:active:hover {
+    background-image: linear-gradient(to bottom,
+                                      @dark_notebook_tab_gradient_a,
+									  @dark_notebook_tab_gradient_b);
+    border-left: 1px solid @dark_borders;
+    border-right: 1px solid @dark_borders;
+	border-bottom: 1px solid @dark_borders;
+	border-top-width: 0px;
+	border-radius: 0 0 2px 2px;
+}
+
+TerminalWindow .notebook .active-page .button,
+TerminalWindow .notebook .prelight-page .button,
+NautilusWindow .notebook .active-page .button,
+NemoWindow .notebook .active-page .button,
+EmpathyChatWindow .notebook .active-page .button,
+GeditWindow .notebook .active-page .button,
+EphyNotebook.notebook .active-page .button {
+    color: @dark_fg_color;
+    icon-shadow: 0 -1px @dark_wm_title_shadow;
+}
+
+TerminalWindow .notebook .active-page .button:hover,
+TerminalWindow .notebook .prelight-page .button:hover,
+NautilusWindow .notebook .active-page .button:hover,
+NemoWindow .notebook .active-page .button:hover,
+EmpathyChatWindow .notebook .active-page .button:hover,
+GeditWindow .notebook .active-page .button:hover,
+EphyNotebook.notebook .active-page .button:hover {
+    icon-shadow: 0 -1px @dark_wm_title_shadow;
+    border-color: alpha(white, 0.1);
+    color: shade(red, 1.3);
+}
+
+TerminalWindow .notebook .active-page .button:active,
+TerminalWindow .notebook .prelight-page .button:active,
+NautilusWindow .notebook .active-page .button:active,
+NemoWindow .notebook .active-page .button:active,
+EmpathyChatWindow .notebook .active-page .button:active,
+GeditWindow .notebook .active-page .button:active,
+EphyNotebook.notebook .active-page .button:active {
+    border-color: alpha(black, 0.5);
+    background-image: linear-gradient(to bottom,
+                                  @dark_button_active_gradient_color_a,
+                                  @dark_button_active_gradient_color_b);
+}
+
+/*
+ * Empathy
+ */
+EmpathyChatWindow .menubar {
+    background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b,
+                                      @dark_notebook_tab_gradient_a);
+}
+
+EmpathyChatWindow .notebook,
+EmpathyChatWindow .notebook.header.frame.top {
+	border-width: 0;
+}
+
+/*
+ * GNOME Terminal
+ */
+TerminalWindow .notebook tab.reorderable-page:active {
+	    background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b,
+									  shade(@dark_notebook_tab_gradient_b, 1.05));
+		border-color: shade(@terminal_bg, 0.7);
+		border-image: none;
+}
+
+TerminalWindow .notebook.header {
+    border-width: 0px;
+	border-top: 1px solid shade(@terminal_bg, 0.7);
+	background-color: @terminal_bg;
+}
+
+TerminalWindow .notebook {
+    border-color: shade(@terminal_bg, 0.7);
+}
+
+TerminalWindow .notebook tab.reorderable-page:active:hover {
+    border-top-style: none;
+}
+
+TerminalWindow .notebook tab.reorderable-page:hover {
+    background-color: alpha(@highlight, 0.06);
+}
+
+TerminalWindow .notebook tab.top {
+    border-image: linear-gradient(to bottom,
+                                  shade(@terminal_bg, 0.7),
+                                  @terminal_bg
+                                  ) 0 1 0 1;
+}
+
+TerminalWindow .notebook tab GtkLabel {
+    color: mix(@dark_fg_color, @dark_bg_color, 0.40);
+	text-shadow: 0 -1px @dark_wm_title_shadow;
+}
+
+/*
+ * Nautilus
+ */
+NautilusWindow .sidebar .frame,
+NautilusNotebook .frame {
+	border-color: @dark_borders;
+}
+
+NautilusWindow > GtkGrid > .pane-separator,
+NautilusWindow > GtkGrid > .pane-separator:hover {
+    border-width: 0 1px 0 0;
+    border-image: linear-gradient(to bottom,
+                                  @dark_borders,
+                                  shade(@borders, 1.0) 2px) 0 1 0 0;
+}
+
+
+NautilusNotebook.notebook.header {
+	border-top-color: @dark_borders;
+}
+
+NautilusNotebook.notebook tab.reorderable-page {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+}
+
+NautilusWindow .info,
+NautilusWindow .question,
+NautilusWindow .warning,
+NautilusWindow .error {
+	border-width: 0;
+    background-image: linear-gradient(to bottom,
+                                      @dark_wm_bg_b,
+									  shade(@dark_wm_bg_b, 0.9));
+	color: @dark_fg_color;
+    text-shadow: 0 -1px @dark_wm_title_shadow;
+}
+

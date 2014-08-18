@@ -1,0 +1,11 @@
+.notebook tab.top {
+    background-image: linear-gradient(to bottom,
+                                     shade(@theme_base_color, 1.2),
+                                     shade(@theme_base_color, 1.05));
+}
+
+.notebook tab.bottom {
+    background-image: linear-gradient(to top,
+                                     shade(@theme_base_color, 1.2),
+                                     shade(@theme_base_color, 1.05));
+}
