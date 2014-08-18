@@ -1,0 +1,66 @@
+###########################
+#      Requirements       #
+###########################
+
+* Gnome/GTK 3.10 or 3.12
+* Compatible with Ubuntu 14.04
+* GTK3: gnome-themes-standard package or a package which contains the adwaita engine
+* GTK2: Murrine engine and pixbuf engine
+
+Please search in the repositories of your distribution because the package names vary from distro to distro.
+
+###########################
+#      Installation       #
+###########################
+
+The extracted zip file contains two different subfolders ("Gnome_3-10_Ubuntu_14-04" and "Gnome_3-12") with the GTK themes for the different versions of Gnome/GTK (or the first one for Ubuntu 14.04). Pick the one that matches your version and copy the content to "/usr/share/themes".
+
+To set the right permissions, execute
+
+sudo chmod -R 755 /usr/share/themes/Vertex
+
+or
+
+sudo chmod -R 755 /usr/share/themes/Vertex-Light
+
+
+To set the theme, run the following commands in Terminal,
+
+gsettings set org.gnome.desktop.interface gtk-theme "Vertex"
+gsettings set org.gnome.desktop.wm.preferences theme "Vertex"
+
+for the version with dark header-bars and toolbars or
+
+gsettings set org.gnome.desktop.interface gtk-theme "Vertex-light"
+gsettings set org.gnome.desktop.wm.preferences theme "Vertex-light"
+
+for the light version
+
+To install the Gnome-Shell theme, copy the "Vertex GS" folder to "/usr/share/themes" and set the permissions
+
+sudo chmod -R 755 "/usr/share/themes/Vertex GS"
+
+and apply the theme with 
+
+gsettings set org.gnome.shell.extensions.user-theme name "Vertex GS"
+
+Instead of applying the theme with the gsettings commands you can select them in Gnome Tweak Tool like any other theme.
+
+To install the Chrome/Chromium theme open the "Chrome" folder in the extracted archive and drag and drop the Vertex.crx or Vertex-light.crx file into the Chrome/Chromium window. The source of the Chrome themes is located in the source "Chrome/source" folder 
+
+Also included is an alternative metacity theme with hidden buttons when maximized. Installation is the same as above
+
+#######################
+#   Troubleshooting   #
+#######################
+
+If you get black spaces under Unity, disable overlay scrollbars with
+
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
+
+
+If the metacity theme doesn't show up in gnome-tweak-tool copy the theme folder with only the metacity theme inside to ~/.local/share/themes. Otherwise gnome-tweak-tool won't find the metacity theme. (This shouldn't happen if you copy the theme to /usr/share/themes)
+
+
+You may face the issue that sublime text 2 won't load the theme correctly. This is due to either a bug in sublime or libpng. To fix this, download and extract the sublime-text-fix.tar.gz file and follow the instructions in the included README
+
