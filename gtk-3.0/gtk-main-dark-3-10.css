@@ -5,10 +5,10 @@
 @import url("gtk-widgets-dark-overrides.css");
 @import url("gtk-widgets-assets-dark.css");
 @import url("gnome-applications.css");
-@import url("tabs.css");	/*disable for 3.10*/
+/*@import url("tabs.css");*/	/*disable for 3.10*/
 @import url("gnome-applications-dark-overrides.css");
-@import url("window-controls.css");		/*disable for 3.10*/
+/*@import url("window-controls.css");*/		/*disable for 3.10*/
 @import url("unity.css");
 
-/*@import url("gtk-widgets-3_10.css");
-@import url("gtk-widgets-3_10-dark-overrides.css");*/
+@import url("gtk-widgets-3_10.css");
+@import url("gtk-widgets-3_10-dark-overrides.css");
