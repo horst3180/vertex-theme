@@ -39,7 +39,10 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:focus  {
 .toolbar .button:active,
 .toolbar .button:active:hover,
 .header-bar .button:active,
-.header-bar .button:active:hover {
+.header-bar .button:active:hover,
+.primary-toolbar.toolbar .destructive-action.button:active,
+.toolbar .destructive-action.button:active,
+.header-bar .destructive-action.button:active {
     border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
@@ -142,16 +145,13 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:focus  {
 .primary-toolbar.toolbar .suggested-action.button:active,
 .toolbar .suggested-action.button:active,
 .header-bar .suggested-action.button:active {
-    border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/dark/button-active-border-suggested.png"),url("borders/dark/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 /* destructive action buttons borders */
 .primary-toolbar.toolbar .destructive-action.button,
-.primary-toolbar.toolbar .destructive-action.button:active,
 .toolbar .destructive-action.button,
-.toolbar .destructive-action.button:active,
-.header-bar .destructive-action.button,
-.header-bar .destructive-action.button:active {
+.header-bar .destructive-action.button {
     border-image: -gtk-scaled(url("borders/dark/button-border-destructive.png"),url("borders/dark/button-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 

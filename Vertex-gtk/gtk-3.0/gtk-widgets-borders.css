@@ -35,7 +35,8 @@ GtkComboBox.combobox-entry .button:active:hover,
 .primary-toolbar .button.raised:active,
 .primary-toolbar .raised .button:active,
 .inline-toolbar.toolbar .button:active,
-.primary-toolbar GtkComboBox .button:active {
+.primary-toolbar GtkComboBox .button:active,
+.destructive-action.button:active {
     border-image: -gtk-scaled(url("borders/button-active-border.png"),url("borders/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -192,8 +193,7 @@ GtkSwitch.trough:backdrop,
 }
 
 /* suggested action buttons borders */
-.suggested-action.button,
-.suggested-action.button:active {
+.suggested-action.button {
     border-image: -gtk-scaled(url("borders/button-border-suggested.png"),url("borders/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -201,9 +201,17 @@ GtkSwitch.trough:backdrop,
     border-color: transparent;
 }
 
+.suggested-action.button:active,
+.suggested-action.button:active:hover {
+    border-image: -gtk-scaled(url("borders/button-active-border-suggested.png"),url("borders/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 /* destructive action buttons borders */
-.destructive-action.button,
-.destructive-action.button:active {
+.destructive-action.button {
     border-image: -gtk-scaled(url("borders/button-border-destructive.png"),url("borders/button-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
