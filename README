@@ -12,7 +12,6 @@ Please search in the repositories of your distribution because the package names
 ###########################
 #      Installation       #
 ###########################
-
 The extracted zip file contains two different subfolders ("Gnome_3-10_Ubuntu_14-04" and "Gnome_3-12") with the GTK themes for the different versions of Gnome/GTK (or the first one for Ubuntu 14.04). Pick the one that matches your version and copy the content to "/usr/share/themes".
 
 To set the right permissions, execute
