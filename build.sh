@@ -2,8 +2,10 @@
 DIR=$( cd "$( dirname "$0" )" && pwd )
 echo $DIR
 
-#make light variant
-cp -r $DIR/Vertex $DIR/Vertex-Light
+cp -r $DIR/Vertex-gtk $DIR/Vertex-Light
+cp -r $DIR/Vertex-gtk $DIR/Vertex
+
+#make light 3.12 variant
 mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
 mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
 mv $DIR/Vertex-Light/index.theme-light $DIR/Vertex-Light/index.theme
