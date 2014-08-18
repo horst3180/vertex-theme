@@ -1,0 +1,410 @@
+/*Entries*/
+.entry {
+    border-image: -gtk-scaled(url("borders/generic-border.png"),url("borders/generic-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.entry:focus { 
+    border-image: -gtk-scaled(url("borders/generic-border-focused.png"),url("borders/generic-border-focused@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.linked .entry {
+    border-right-width: 0;
+    border-left-width: 0;
+    border-image-width: 2px 0 3px 0;
+    border-radius: 0;
+}
+
+.linked .entry:first-child, GtkComboBox.combobox-entry .entry:first-child, GtkComboBox.combobox-entry .entry:last-child:dir(rtl) {
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-image-width: 2px 0 3px 2px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.linked .entry:last-child, GtkComboBox.combobox-entry .entry:last-child, GtkComboBox.combobox-entry .entry:first-child:dir(rtl) {
+    border-right-width: 1px;
+    border-left-width: 0;
+    border-image-width: 2px 2px 3px 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/*Buttons*/
+.button,
+.button.flat:hover,
+.button:insensitive,
+.inline-toolbar GtkToolButton > .button,
+.spinbutton.vertical .button,
+.primary-toolbar .button:hover {
+    border-image: -gtk-scaled(url("borders/button-border.png"),url("borders/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button:active,
+.button:focus:active,
+.button:focus:active:hover,
+.button.flat:active,
+.button:insensitive:active,
+.button:insensitive.flat:active,
+.button.suggested-action:active,
+.button.destructive-action:active,
+.inline-toolbar GtkToolButton > .button:active,
+.inline-toolbar GtkToolButton > .button:insensitive,
+.inline-toolbar GtkToolButton > .button:insensitive:active,
+.spinbutton.vertical .button:active,
+.primary-toolbar .button:active,
+.button:checked,
+.button:focus:checked,
+.button:focus:checked:hover,
+.button.flat:checked,
+.button:insensitive:checked,
+.button:insensitive.flat:checked,
+.button.suggested-action:checked,
+.button.destructive-action:checked,
+.inline-toolbar GtkToolButton > .button:checked,
+.inline-toolbar GtkToolButton > .button:insensitive,
+.inline-toolbar GtkToolButton > .button:insensitive:checked,
+.spinbutton.vertical .button:checked,
+.primary-toolbar .button:checked {
+    border-image: -gtk-scaled(url("borders/button-active-border.png"),url("borders/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button:focus{ 
+    border-image: -gtk-scaled(url("borders/button-border-default.png"),url("borders/button-border-default@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button.suggested-action,
+.button.suggested-action:insensitive {
+    border-image: -gtk-scaled(url("borders/button-border-suggested.png"),url("borders/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button.destructive-action,
+.button.destructive-action:insensitive {
+    border-image: -gtk-scaled(url("borders/button-border-destructive.png"),url("borders/button-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/*Selectionmode Buttons*/
+.titlebar.selection-mode .button, GtkCalendar.selection-mode.header .button,
+.header-bar.selection-mode .button,
+.titlebar.selection-mode .button:insensitive, GtkCalendar.selection-mode.header .button:insensitive,
+.header-bar.selection-mode .button:insensitive,
+.titlebar.selection-mode .selection-menu:hover, GtkCalendar.selection-mode.header .selection-menu:hover,
+.header-bar.selection-mode .selection-menu:hover {
+  border-image: -gtk-scaled(url("borders/button-border-suggested.png"),url("borders/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .titlebar.selection-mode .button:active, GtkCalendar.selection-mode.header .button:active,
+  .header-bar.selection-mode .button:active,
+  .titlebar.selection-mode .button:checked, GtkCalendar.selection-mode.header .button:checked,
+  .header-bar.selection-mode .button:checked {
+  border-image: -gtk-scaled(url("borders/button-active-border-suggested.png"),url("borders/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+
+.selection-mode.titlebar .titlebutton {
+  border-image: none;
+}
+
+.titlebar.selection-mode .selection-menu, GtkCalendar.selection-mode.header .selection-menu,
+.header-bar.selection-mode .selection-menu {
+      border-image: none; }
+
+/*Linked Buttons*/
+/*Middle*/
+.inline-toolbar GtkToolButton > .button.flat,
+.inline-toolbar.search-bar GtkToolButton > .button.flat,
+.inline-toolbar .button,
+.inline-toolbar.toolbar .button, 
+.linked .button,
+.linked .button:hover,
+.inline-toolbar GtkToolButton:only-child > .button.flat, 
+.inline-toolbar.search-bar GtkToolButton:only-child > .button.flat,  
+GtkComboBox.combobox-entry .button, 
+.linked > GtkComboBox > .button:dir(ltr),
+.inline-toolbar GtkToolButton > .button.flat:insensitive,
+.inline-toolbar.search-bar GtkToolButton > .button.flat:insensitive,
+.inline-toolbar .button:insensitive, 
+.inline-toolbar.toolbar .button:insensitive, 
+.linked .button:insensitive,
+.linked .button:hover:insensitive,
+.inline-toolbar GtkToolButton:only-child > .button.flat:insensitive, 
+.inline-toolbar.search-bar GtkToolButton:only-child > .button.flat:insensitive,  
+GtkComboBox.combobox-entry .button:insensitive, 
+.linked > GtkComboBox > .button:dir(ltr):insensitive {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-image-width: 2px 1px 3px 1px;
+  border-radius: 0; 
+  border-image: -gtk-scaled(url("borders/linked/middle-button-border.png"),url("borders/linked/middle-button-border@2.png")) 2 1 3 1 / 2px 1px 3px 1px stretch;
+}
+
+.inline-toolbar GtkToolButton > .button.flat:active,
+.inline-toolbar.search-bar GtkToolButton > .button.flat:active,
+.inline-toolbar .button:active,
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:active:hover,
+.linked .button:active,
+.linked .button:hover:active,
+.inline-toolbar GtkToolButton:only-child > .button.flat:active, 
+.inline-toolbar.search-bar GtkToolButton:only-child > .button.flat:active,  
+GtkComboBox.combobox-entry .button:active, 
+.linked > GtkComboBox > .button:dir(ltr):active,
+.inline-toolbar GtkToolButton > .button.flat:checked,
+.inline-toolbar.search-bar GtkToolButton > .button.flat:checked,
+.inline-toolbar .button:checked,
+.inline-toolbar.toolbar .button:checked,
+.inline-toolbar.toolbar .button:checked:hover,
+.linked .button:checked,
+.linked .button:hover:checked,
+.inline-toolbar GtkToolButton:only-child > .button.flat:checked, 
+.inline-toolbar.search-bar GtkToolButton:only-child > .button.flat:checked,  
+GtkComboBox.combobox-entry .button:checked, 
+.linked > GtkComboBox > .button:dir(ltr):checked {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-image-width: 2px 1px 3px 1px;
+  border-radius: 0; 
+  border-image: -gtk-scaled(url("borders/linked/middle-button-active-border.png"),url("borders/linked/middle-button-active-border@2.png")) 2 1 3 1 / 2px 1px 3px 1px stretch;
+}
+
+/*Left*/
+.inline-toolbar .button:first-child,
+.inline-toolbar.toolbar .button:first-child,  
+.linked .button:first-child, 
+.inline-toolbar GtkToolButton:first-child > .button.flat, 
+.inline-toolbar.search-bar GtkToolButton:first-child > .button.flat, 
+.inline-toolbar GtkToolButton:only-child > .button.flat:first-child, 
+GtkComboBox.combobox-entry .button:first-child, 
+.linked > GtkComboBox:first-child > .button {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-image-width: 2px 1px 3px 2px;
+  border-radius: 2px 0 0 2px;
+  border-image: -gtk-scaled(url("borders/linked/left-button-border.png"),url("borders/linked/left-button-border@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
+}
+
+.inline-toolbar .button:first-child:active,
+.inline-toolbar.toolbar .button:first-child:active,
+.inline-toolbar.toolbar .button:first-child:active:hover,  
+.linked .button:first-child:active, 
+.inline-toolbar GtkToolButton:first-child > .button.flat:active, 
+.inline-toolbar.search-bar GtkToolButton:first-child > .button.flat:active, 
+.inline-toolbar GtkToolButton:only-child > .button.flat:first-child:active, 
+GtkComboBox.combobox-entry .button:first-child:active, 
+.linked > GtkComboBox:first-child > .button:active,
+.inline-toolbar .button:first-child:checked,
+.inline-toolbar.toolbar .button:first-child:checked,
+.inline-toolbar.toolbar .button:first-child:checked:hover,  
+.linked .button:first-child:checked, 
+.inline-toolbar GtkToolButton:first-child > .button.flat:checked, 
+.inline-toolbar.search-bar GtkToolButton:first-child > .button.flat:checked, 
+.inline-toolbar GtkToolButton:only-child > .button.flat:first-child:checked, 
+GtkComboBox.combobox-entry .button:first-child:checked, 
+.linked > GtkComboBox:first-child > .button:checked {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-image-width: 2px 1px 3px 2px;
+  border-radius: 2px 0 0 2px;
+  border-image: -gtk-scaled(url("borders/linked/left-button-active-border.png"),url("borders/linked/left-button-active-border@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
+}
+
+/*Right*/
+.inline-toolbar .button:last-child,
+.inline-toolbar.toolbar .button:last-child,  
+.linked .button:last-child, 
+.inline-toolbar GtkToolButton:last-child > .button.flat, 
+.inline-toolbar.search-bar GtkToolButton:last-child > .button.flat, 
+.inline-toolbar GtkToolButton:only-child > .button.flat:last-child, 
+GtkComboBox.combobox-entry .button:last-child, 
+.linked > GtkComboBox:last-child > .button {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-image-width: 2px 2px 3px 1px;
+  border-radius: 0 2px 2px 0;
+  border-image: -gtk-scaled(url("borders/linked/right-button-border.png"),url("borders/linked/right-button-border@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
+}
+
+.inline-toolbar .button:last-child:active,
+.inline-toolbar.toolbar .button:last-child:active,
+.inline-toolbar.toolbar .button:last-child:active:hover,  
+.linked .button:last-child:active, 
+.inline-toolbar GtkToolButton:last-child > .button.flat:active, 
+.inline-toolbar.search-bar GtkToolButton:last-child > .button.flat:active, 
+.inline-toolbar GtkToolButton:only-child > .button.flat:last-child:active, 
+GtkComboBox.combobox-entry .button:last-child:active, 
+.linked > GtkComboBox:last-child > .button:active,
+.inline-toolbar .button:last-child:checked,
+.inline-toolbar.toolbar .button:last-child:checked,
+.inline-toolbar.toolbar .button:last-child:checked:hover,  
+.linked .button:last-child:checked, 
+.inline-toolbar GtkToolButton:last-child > .button.flat:checked, 
+.inline-toolbar.search-bar GtkToolButton:last-child > .button.flat:checked, 
+.inline-toolbar GtkToolButton:only-child > .button.flat:last-child:checked, 
+GtkComboBox.combobox-entry .button:last-child:checked, 
+.linked > GtkComboBox:last-child > .button:checked {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-image-width: 2px 2px 3px 1px;
+  border-radius: 0 2px 2px 0;
+  border-image: -gtk-scaled(url("borders/linked/right-button-active-border.png"),url("borders/linked/right-button-active-border@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
+}
+
+/*Single*/
+.inline-toolbar .button:only-child,
+.inline-toolbar.toolbar .button:only-child,  
+.linked .button:only-child, 
+.inline-toolbar GtkToolButton:only-child > .button.flat:only-child, 
+GtkComboBox.combobox-entry .button:only-child, 
+.linked > GtkComboBox:only-child > .button {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-image-width: 2px 2px 3px 2px;
+  border-radius: 2px;
+  border-image: -gtk-scaled(url("borders/button-border.png"),url("borders/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+.inline-toolbar .button:only-child:active,
+.inline-toolbar.toolbar .button:only-child:active,
+.inline-toolbar.toolbar .button:only-child:active:hover, 
+.linked .button:only-child:active, 
+.inline-toolbar GtkToolButton:only-child > .button.flat:only-child:active, 
+GtkComboBox.combobox-entry .button:only-child:active, 
+.linked > GtkComboBox:only-child > .button:active,
+.inline-toolbar .button:only-child:checked,
+.inline-toolbar.toolbar .button:only-child:checked,
+.inline-toolbar.toolbar .button:only-child:checked:hover, 
+.linked .button:only-child:checked, 
+.inline-toolbar GtkToolButton:only-child > .button.flat:only-child:checked, 
+GtkComboBox.combobox-entry .button:only-child:checked, 
+.linked > GtkComboBox:only-child > .button:checked {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-image-width: 2px 2px 3px 2px;
+  border-radius: 2px;
+  border-image: -gtk-scaled(url("borders/button-active-border.png"),url("borders/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+/*OSD */
+.button.osd, .button.osd:active, .button.osd:active:hover, .button.osd:insensitive,
+.button.osd, .button.osd:checked, .button.osd:checked:hover {
+      border-image: none;
+      border: 1px solid alpha(black, 0.75); }
+
+.osd .button, .osd .button:active, .osd .button:active:hover, .osd .button:insensitive,
+.osd .button, .osd .button:checked, .osd .button:checked:hover {
+  border-width: 0 1px 0 1px;
+	border-style: solid;
+  border-radius: 0;
+  border-image: -gtk-scaled(url("assets/osd-separator.png"),url("assets/header-separator-dark@2.png")) 0 1 0 1 / 0 1px 0 1px stretch;
+}
+
+.osd .button:first-child,
+.osd .button:first-child:active,
+.osd .button:first-child:active:hover,
+.osd .button:first-child:checked,
+.osd .button:first-child:checked:hover {
+  border-width: 0px 1px 0 0;
+	border-style: solid;
+  border-image: -gtk-scaled(url("assets/osd-separator.png"),url("assets/header-separator-dark@2.png")) 0 1 0 0 / 0 1px 0 0px stretch;
+}
+
+.osd .button:last-child,
+.osd .button:last-child:active,
+.osd .button:last-child:active:hover,
+.osd .button:last-child:checked,
+.osd .button:last-child:checked:hover {
+  border-width: 0 0 0 1px;
+	border-style: solid;
+  border-image: -gtk-scaled(url("assets/osd-separator.png"),url("assets/header-separator-dark@2.png")) 0 0 0 1 / 0 0px 0 1px stretch;
+}
+
+.osd .button:only-child {
+  border-style: none;
+	border-image: none;
+  box-shadow: none;
+}
+
+.osd .scale.trough, .osd .scale.trough.highlight {
+    border-image: -gtk-scaled(url("borders/scale-trough-osd-border.png"),url("borders/scale-trough-osd-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+    border-radius: 2px;
+    border-width: 1px 5px 2px 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/*Scale trough*/
+.scale.trough {
+    border-image: -gtk-scaled(url("borders/scale-trough-border.png"),url("borders/scale-trough-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+    border-radius: 2px;
+    border-width: 1px 5px 2px 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.scale.trough.vertical {
+    border-image: -gtk-scaled(url("borders/scale-trough-vertical-border.png"),url("borders/scale-trough-vertical-border@2.png")) 6 3 6 2 / 6px 3px 6px 2px stretch;
+    border-radius: 2px;
+    border-width: 5px 2px 5px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.scale.trough.highlight {
+    border-image: -gtk-scaled(url("borders/scale-highlight-border.png"),url("borders/scale-highlight-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+    border-radius: 2px;
+    border-width: 1px 5px 2px 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.scale.trough.vertical.highlight {
+    border-image: -gtk-scaled(url("borders/scale-vertical-highlight-border.png"),url("borders/scale-vertical-highlight-border@2.png")) 6 3 6 2 / 6px 3px 6px 2px stretch;
+    border-radius: 2px;
+    border-width: 5px 2px 5px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button.flat, .menuitem.button.flat, .menuitem.button.flat:active, .menuitem.button.flat:checked, .button:link, .button:visited, 
+.button:link:hover, .button:link:active, .button:link:checked, .button:link:active:hover, .button:link:checked:hover, .button:visited:hover, .button:visited:active, .button:visited:active:hover, 
+.notebook tab .button, .list-row.button, GtkCalendar.button, GtkCalendar.button:hover, 
+.scale-popup .button:hover {
+  border-color: transparent;
+  border-image: none;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  icon-shadow: none; }

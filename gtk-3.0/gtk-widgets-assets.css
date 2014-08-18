@@ -1,0 +1,308 @@
+/*************************
+ * Header bar separator  *
+ *************************/
+.titlebar.selection-mode .header-bar-separator, GtkCalendar.selection-mode.header .header-bar-separator, 
+.titlebar.selection-mode > GtkBox > .separator.vertical, GtkCalendar.selection-mode.header > GtkBox > .separator.vertical,
+.header-bar.selection-mode .header-bar-separator,
+.header-bar.selection-mode > GtkBox > .separator.vertical {
+  -GtkWidget-wide-separators: 1;
+  -GtkWidget-separator-width: 10px;
+  background: transparent;
+  border-width: 0 4px 0 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: -gtk-scaled(url("assets/header-separator-selectionmode.png"),url("assets/header-separator-selectionmode@2.png")) 0 4 0 1 / 0 4px 0 1px stretch; }
+
+.titlebar .header-bar-separator, GtkCalendar.header .header-bar-separator, 
+.titlebar > GtkBox > .separator.vertical, GtkCalendar.header > GtkBox > .separator.vertical,
+.header-bar .header-bar-separator,
+.header-bar > GtkBox > .separator.vertical, .toolbar .separator {
+  -GtkWidget-wide-separators: 1;
+  -GtkWidget-separator-width: 10px;
+  background: transparent;
+  border-width: 0 4px 0 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: -gtk-scaled(url("assets/header-separator.png"),url("assets/header-separator@2.png")) 0 4 0 1 / 0 4px 0 1px stretch; }
+
+/*********************
+ * GtkScale's slider *
+ *********************/
+.scale.slider {
+  background-image: -gtk-scaled(url("assets/slider.svg"));
+}
+
+.scale.slider:hover {
+  background-image: -gtk-scaled(url("assets/slider_hover.svg"));
+}
+
+.scale.slider:active,
+.scale.slider:active:hover {
+  background-image: -gtk-scaled(url("assets/slider_active.svg"));
+}
+
+.scale.slider:insensitive,
+.scale.slider:insensitive:hover {
+  background-image: -gtk-scaled(url("assets/slider_insensitive.svg"));
+}
+
+.osd .scale.slider {
+  background-image: -gtk-scaled(url("assets/dark/slider.svg"));
+}
+
+.osd .scale.slider:hover {
+  background-image: -gtk-scaled(url("assets/dark/slider_hover.svg"));
+}
+
+.osd .scale.slider:active,
+.osd .scale.slider:active:hover {
+  background-image: -gtk-scaled(url("assets/dark/slider_active.svg"));
+}
+
+.osd .scale.slider:insensitive,
+.osd .scale.slider:insensitive:hover {
+  background-image: -gtk-scaled(url("assets/dark/slider_insensitive.svg"));
+}
+
+/*Scrollbar*/
+.scrollbar.trough {
+  border-image: url("assets/scrollbar-trough.svg") 8 7 8 8;
+	border-width: 8px 7px 8px 8px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.scrollbar.trough.horizontal {
+  border-image: url("assets/scrollbar-trough-horizontal.svg") 8 8 7 8;
+	border-width: 8px 8px 7px 8px;
+}
+
+.scrollbar.slider {
+  border-image: url("assets/scrollbar-slider.svg") 8 7 8 8;
+	border-width: 8px 7px 8px 8px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.scrollbar.slider.horizontal {
+  border-image: url("assets/scrollbar-slider-horizontal.svg") 8 8 7 8;
+	border-width: 8px 8px 7px 8px;
+}
+
+.scrollbar.slider:insensitive,
+.scrollbar.slider:hover {
+  border-image: url("assets/scrollbar-slider-hover.svg") 8 7 8 8;
+}
+
+.scrollbar.slider.horizontal:insensitive,
+.scrollbar.slider.horizontal:hover {
+  border-image: url("assets/scrollbar-slider-horizontal-hover.svg") 8 8 7 8;
+}
+
+.scrollbar.slider:active {
+  border-image: url("assets/scrollbar-slider-active.svg") 8 7 8 8;
+}
+
+.scrollbar.slider.horizontal:active {
+  border-image: url("assets/scrollbar-slider-horizontal-active.svg") 8 8 7 8;
+}
+
+/*************
+ * GtkSwitch *
+ *************/
+GtkSwitch.trough {
+  background-image: url("assets/switch-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  color: transparent;
+	border-color: transparent;
+	border-image: none;
+	border-style: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+GtkSwitch.trough:active {
+  background-image: url("assets/switch-on.svg");
+}
+
+GtkSwitch.trough:insensitive {
+	background-color: transparent;
+  background-image: url("assets/switch-off-disabled.svg");
+}
+
+GtkSwitch.trough:active:insensitive {
+  background-image: url("assets/switch-on-disabled.svg");
+}
+
+GtkSwitch.slider {
+  background-image: url("assets/switch-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+GtkSwitch.slider:insensitive {
+  background-color: transparent;
+  background-image: url("assets/switch-slider-insensitive.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.list-row GtkSwitch.trough  {
+  background-image: url("assets/switch-off-list.svg");
+}
+
+.list-row GtkSwitch.trough:active  {
+  background-image: url("assets/switch-on-list.svg");
+}
+
+.list-row GtkSwitch.trough:insensitive  {
+  background-image: url("assets/switch-off-disabled-list.svg");
+}
+
+.list-row GtkSwitch.trough:active:insensitive  {
+  background-image: url("assets/switch-on-disabled-list.svg");
+}
+
+/*************************
+ * Check and Radio items *
+ *************************/
+.check,
+.view.check row,
+.menuitem.check:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"), url("assets/checkbox-unchecked@2.png")); }
+
+.check:insensitive,
+.view.check:insensitive row {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"), url("assets/checkbox-unchecked-insensitive@2.png")); }
+
+.check:inconsistent,
+.view.check:inconsistent row,
+.menuitem.check:inconsistent:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"), url("assets/checkbox-mixed@2.png")); }
+
+.view.check:inconsistent:selected row,
+.menuitem.check:inconsistent:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-selected.png"), url("assets/checkbox-mixed-selected@2.png")); }
+
+.check:inconsistent:insensitive,
+.view.check:inconsistent:insensitive row {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"), url("assets/checkbox-mixed-insensitive@2.png")); }
+
+.check:active, 
+.check:checked,
+.view.check:active row,
+.view.check:checked row {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"), url("assets/checkbox-checked@2.png")); }
+
+.view.check:active:selected row,
+.menuitem.check:active:hover,
+.view.check:checked:selected row,
+.menuitem.check:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png")); }
+
+.check:active:insensitive,
+.check:checked:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive.png"), url("assets/checkbox-checked-insensitive@2.png")); }
+
+.view.check {
+  color: alpha(@theme_fg_color, 0.1);
+  background-image: none;
+  -gtk-icon-source: -gtk-icontheme("checkbox-checked-symbolic"); }
+  .view.check:active {
+    color: @theme_fg_color; }
+    .view.check:active:insensitive {
+      color: @insensitive_fg_color; }
+  .view.check:insensitive {
+    color: alpha(@insensitive_fg_color, 0.1); }
+  .view.check:inconsistent {
+    -gtk-icon-source: -gtk-icontheme("checkbox-mixed-symbolic"); }
+  .view.check:selected, .view.check:selected:focus {
+    color: alpha(@theme_selected_fg_color, 0.1); }
+    .view.check:selected:active, .view.check:selected:focus:active {
+      color: @theme_selected_fg_color; }
+
+.radio,
+.view.radio row,
+.menuitem.radio:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"), url("assets/radio-unchecked@2.png")); }
+
+.radio:insensitive,
+.view.radio:insensitive row {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive.png"), url("assets/radio-unchecked-insensitive@2.png")); }
+
+.radio:inconsistent,
+.view.radio:inconsistent row,
+.menuitem.radio:inconsistent:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"), url("assets/radio-mixed@2.png")); }
+
+.view.radio:inconsistent:selected row,
+.menuitem.radio:inconsistent:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-selected.png"), url("assets/radio-mixed-selected@2.png")); }
+
+.radio:inconsistent:insensitive,
+.view.radio:inconsistent:insensitive row {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive.png"), url("assets/radio-mixed-insensitive@2.png")); }
+
+.radio:active, 
+.radio:checked,
+.view.radio:active row,
+.view.radio:checked row {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"), url("assets/radio-checked@2.png")); }
+
+.view.radio:active:selected row,
+.menuitem.radio:active:hover,
+.view.radio:checked:selected row,
+.menuitem.radio:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png")); }
+
+.radio:active:insensitive,
+.radio:checked:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive.png"), url("assets/radio-checked-insensitive@2.png")); }
+
+.view.radio {
+  color: alpha(@theme_fg_color, 0.1);
+  background-image: none;
+  -gtk-icon-source: -gtk-icontheme("radio-checked-symbolic"); }
+  .view.radio:active {
+    color: @theme_fg_color; }
+    .view.radio:active:insensitive {
+      color: @insensitive_fg_color; }
+  .view.radio:insensitive {
+    color: alpha(@insensitive_fg_color, 0.1); }
+  .view.radio:inconsistent {
+    -gtk-icon-source: -gtk-icontheme("radio-mixed-symbolic"); }
+  .view.radio:selected, .view.radio:selected:focus {
+    color: alpha(@theme_selected_fg_color, 0.1); }
+    .view.radio:selected:active, .view.radio:selected:focus:active {
+      color: @theme_selected_fg_color; }
+
+GtkCheckButton.text-button, GtkRadioButton.text-button {
+  padding: 1px 2px 4px;
+  outline-offset: 0; }
+  GtkCheckButton.text-button:insensitive, GtkCheckButton.text-button:insensitive:active, GtkCheckButton.text-button:insensitive:checked, GtkCheckButton.text-button:insensitive:inconsistent, GtkRadioButton.text-button:insensitive, GtkRadioButton.text-button:insensitive:active, GtkRadioButton.text-button:insensitive:checked, GtkRadioButton.text-button:insensitive:inconsistent {
+    color: @insensitive_fg_color; }
+
+.menuitem.check,
+.menuitem.radio,
+.menuitem.check:hover,
+.menuitem.radio:hover,
+.menuitem.check:insensitive,
+.menuitem.radio:insensitive,
+.menuitem.check:active,
+.menuitem.radio:active,
+.menuitem.check:checked,
+.menuitem.radio:checked,
+.cell.check,
+.cell.radio,
+.cell.check:hover,
+.cell.radio:hover,
+.cell.check:insensitive,
+.cell.radio:insensitive,
+.cell.check:active,
+.cell.radio:active,
+.cell.check:checked,
+.cell.radio:checked {
+    background-color: transparent;
+    icon-shadow: none;
+}

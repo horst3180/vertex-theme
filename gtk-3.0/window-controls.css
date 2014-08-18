@@ -1,0 +1,109 @@
+.header-bar .right .button.titlebutton,
+.titlebar .right .button.titlebutton,
+GtkCalendar .right .header .button.titlebutton {
+    padding-right: 7px;
+    padding-left: 0px; }
+
+.header-bar .left .button.titlebutton,
+.titlebar .left .button.titlebutton,
+GtkCalendar .left .header .button.titlebutton {
+    padding-left: 7px;
+    padding-right: 0px; }
+
+.titlebar .titlebutton:hover {
+    transition: all 200ms ease-out;
+}
+
+.titlebar .titlebutton:hover,
+.titlebar .titlebutton:active,
+.titlebar .titlebutton:active:hover {
+	background-image: none;
+	box-shadow: none;
+	border-color: transparent;
+	border-image: none;
+}
+
+.titlebar .right .titlebutton:first-child,
+.titlebar .right .titlebutton:nth-child(2),
+.titlebar .right .titlebutton:nth-child(3),
+.titlebar .right .titlebutton:last-child,
+.titlebar .left .titlebutton:first-child,
+.titlebar .left .titlebutton:nth-child(2),
+.titlebar .left .titlebutton:nth-child(3) {
+	color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Set correct layout with 
+	gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/DecorationLayout': <':minimize,maximize,close'>}" for buttons on the right
+	or
+	gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/DecorationLayout': <'close,maximize,minimize:'>}"
+	for buttons on the left */
+
+/* minimize */
+.titlebar .left .titlebutton:nth-child(3),
+.titlebar .right .titlebutton:nth-child(2),
+.titlebar .right .titlebutton:first-child {
+	background-image: url('window-controls/min.svg');
+}
+
+.titlebar .left .titlebutton:nth-child(3):backdrop,
+.titlebar .right .titlebutton:nth-child(2):backdrop,
+.titlebar .right .titlebutton:first-child:backdrop {
+	background-image: url('window-controls/min_unfocused.svg');
+}
+
+.titlebar .left .titlebutton:nth-child(3):hover,
+.titlebar .right .titlebutton:nth-child(2):hover,
+.titlebar .right .titlebutton:first-child:hover {
+	background-image: url('window-controls/min_prelight.svg');
+}
+
+.titlebar .left .titlebutton:nth-child(3):active,
+.titlebar .right .titlebutton:nth-child(2):active,
+.titlebar .right .titlebutton:first-child:active {
+	background-image: url('window-controls/min_pressed.svg');
+}
+
+/* maximize */
+.titlebar .left .titlebutton:nth-child(2),
+.titlebar .right .titlebutton:nth-child(3) {
+	background-image: url('window-controls/max.svg');
+}
+
+.titlebar .left .titlebutton:nth-child(2):backdrop,
+.titlebar .right .titlebutton:nth-child(3):backdrop {
+	background-image: url('window-controls/max_unfocused.svg');
+}
+
+.titlebar .left .titlebutton:nth-child(2):hover,
+.titlebar .right .titlebutton:nth-child(3):hover {
+	background-image: url('window-controls/max_prelight.svg');
+}
+
+.titlebar .left .titlebutton:nth-child(2):active,
+.titlebar .right .titlebutton:nth-child(3):active {
+	background-image: url('window-controls/max_pressed.svg');
+}
+
+/* close */
+.titlebar .left .titlebutton:first-child,
+.titlebar .right .titlebutton:last-child {
+	background-image: url('window-controls/close.svg');
+}
+
+.titlebar .left .titlebutton:first-child:backdrop,
+.titlebar .right .titlebutton:last-child:backdrop {
+	background-image: url('window-controls/close_unfocused.svg');
+}
+
+.titlebar .left .titlebutton:first-child:hover,
+.titlebar .right .titlebutton:last-child:hover {
+	background-image: url('window-controls/close_prelight.svg');
+}
+
+.titlebar .left .titlebutton:first-child:active,
+.titlebar .right .titlebutton:last-child:active {
+	background-image: url('window-controls/close_pressed.svg');
+}

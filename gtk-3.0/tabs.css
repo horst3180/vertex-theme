@@ -1,0 +1,67 @@
+/* Terminal */
+TerminalWindow .notebook tab.top.reorderable-page:active {
+	    background-image: linear-gradient(to bottom,
+                                      @theme_bg_color,
+									                    @wm_bg_b);
+}
+
+TerminalWindow .notebook.header.top {
+  box-shadow: inset 0 3px 3px -1px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15), inset 0 1px @borders; }
+
+/*TerminalWindow .notebook.header.top {
+  box-shadow: inset 0 3px 3px -1px rgba(0, 0, 0, 0.15), inset 0 -1px shade(@terminal_bg, 0.8), inset 0 1px @borders; }
+
+TerminalWindow .notebook tab:active, TerminalWindow .notebook tab.active-page,
+TerminalWindow .notebook tab.top:hover, TerminalWindow .notebook tab.top.prelight-page {
+  border-bottom-color: shade(@terminal_bg, 0.8); }*/
+
+/* Nautilus */
+NautilusWindow .sidebar .frame, NautilusNotebook .frame {
+  border-width: 1px 0 0 0;
+	border-color: @borders;
+  border-style: solid;
+}
+
+NautilusWindow .header-bar {
+    border-width: 0;
+}
+
+NautilusWindow .info, NautilusWindow .question, NautilusWindow .warning, NautilusWindow .error {
+	border-width: 0;
+  background-image: linear-gradient(to bottom,
+                                      @notebook_tab_gradient_a,
+	                  								  @theme_base_color); }
+
+NautilusQueryEditor .toolbar:last-child, NautilusQueryEditor .search-bar.toolbar:only-child {
+    border-bottom-width: 0; }
+
+NautilusQueryEditor .toolbar:first-child {
+    background-image: linear-gradient(to bottom, 
+                                      @wm_bg_b, 
+                                      @theme_base_color); }
+
+NautilusQueryEditor .toolbar {
+	background-color: @theme_base_color; }
+
+NautilusNotebook.notebook.header.top {
+  box-shadow: inset 0 3px 3px -1px rgba(0, 0, 0, 0.15), inset 0 -1px alpha(@borders, 0.5), inset 0 1px @borders; }
+
+
+/* Empathy */
+EmpathyChatWindow .notebook tab.top {
+    padding: 6px 20px 4px; }
+
+EmpathyChatWindow .notebook.frame {
+	border-width: 0;
+}
+
+EmpathyChatWindow .notebook.header.frame {
+  border-left-width: 0;
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+EmpathyChatWindow .menubar {
+    background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b,
+                                      @notebook_tab_gradient_a); }
