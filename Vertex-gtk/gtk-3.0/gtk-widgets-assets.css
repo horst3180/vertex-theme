@@ -90,7 +90,8 @@ GtkModelButton.button.check:active:hover,
 }
 
 .cell.check:active:selected,
-.menuitem.check:active:hover {
+.menuitem.check:active:hover,
+GtkModelButton.button.check:active:hover {
     background-image: -gtk-scaled(url("assets/checkbox-checked-hover.png"),url("assets/checkbox-checked-hover@2.png"));
 }
 
@@ -138,7 +139,8 @@ GtkModelButton.button.radio:active:hover,
 }
 
 .cell.radio:active:selected,
-.menuitem.radio:active:hover {
+.menuitem.radio:active:hover,
+GtkModelButton.button.radio:active:hover {
     background-image: -gtk-scaled(url("assets/radio-checked-hover.png"),url("assets/radio-checked-hover@2.png"));
 }
 
