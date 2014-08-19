@@ -36,6 +36,14 @@ NautilusNotebook.notebook.header {
 
 }
 
+/* Gedit */
+GeditStatusbar {
+  background-image: linear-gradient(to bottom,
+                                    shade(@theme_bg_color, 1.1),
+                                    shade(@theme_bg_color, 0.9));
+  box-shadow: inset 0 1px @highlight;
+}
+
 /* Terminal */
 TerminalWindow .notebook tab.reorderable-page:active {
 	    background-image: linear-gradient(to bottom,
