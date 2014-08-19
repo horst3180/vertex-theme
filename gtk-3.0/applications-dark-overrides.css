@@ -1,8 +1,13 @@
+GeditStatusbar {
+  background-image: linear-gradient(to bottom,
+                                    shade(@theme_bg_color, 1.1),
+                                    shade(@theme_bg_color, 0.9));
+}
+
 /* Baobab */
 .cell.baobab-level-cell,
 .cell.baobab-level-cell:hover,
 .cell.baobab-level-cell:selected,
 .cell.baobab-level-cell:selected:hover {
     border-color: alpha(@theme_fg_color, 0.3);
-
 }
