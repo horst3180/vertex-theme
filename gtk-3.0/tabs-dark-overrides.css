@@ -1,0 +1,6 @@
+/* Terminal */
+TerminalWindow .notebook tab.top.reorderable-page:active {
+	    background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b, shade(@notebook_tab_gradient_b, 1.1));
+}
+

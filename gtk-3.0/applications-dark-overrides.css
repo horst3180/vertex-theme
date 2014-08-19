@@ -1,0 +1,8 @@
+/* Baobab */
+.cell.baobab-level-cell,
+.cell.baobab-level-cell:hover,
+.cell.baobab-level-cell:selected,
+.cell.baobab-level-cell:selected:hover {
+    border-color: alpha(@theme_fg_color, 0.3);
+
+}
