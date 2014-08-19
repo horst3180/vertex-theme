@@ -42,7 +42,7 @@
 
 @define-color osd_button_fg @osd_fg;
 @define-color osd_button_fg_hover @theme_selected_bg_color;
-@define-color osd_button_fg_active shade(@osd_fg, 1.10);
+@define-color osd_button_fg_active alpha(@osd_button_fg_hover, 0.5);
 @define-color osd_button_fg_insensitive shade(@osd_fg, 0.50);
 
 @define-color osd_button_border alpha(@osd_highlight, 0.40);
