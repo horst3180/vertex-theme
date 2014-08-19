@@ -617,6 +617,9 @@ GtkComboBox {
 /************
  * Toolbars *
  ************/
+.toolbar, .primary-toolbar {
+  -GtkWidget-window-dragging: true; }
+
 .toolbar, .inline-toolbar, .inline-toolbar.toolbar, .search-bar {
   padding: 1px 5px 1px 5px;
   background-color: @theme_bg_color; }
@@ -915,6 +918,7 @@ GtkTreeView.view.trough:selected {
  * Menus *
  *********/
 .menubar {
+  -GtkWidget-window-dragging: true;
   padding: 0px;
   background-color: @theme_bg_color; }
   .menubar > .menuitem {
