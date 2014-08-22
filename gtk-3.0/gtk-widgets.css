@@ -74,7 +74,7 @@
 .overshoot {
   background-color: alpha(@theme_selected_bg_color, 0.2); }
 
-GtkLabel:insensitive {
+GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkLabel:insensitive {
   color: @insensitive_fg_color; }
 
 .dim-label, .titlebar .subtitle, GtkCalendar.header .subtitle,
