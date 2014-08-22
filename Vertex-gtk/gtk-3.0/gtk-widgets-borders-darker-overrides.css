@@ -200,3 +200,14 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:focus  {
     border-style: solid;
     border-color: transparent;
 }
+
+/*progressbar trough*/
+.primary-toolbar.toolbar .trough,
+.toolbar .trough,
+.header-bar .trough {
+    border-image: -gtk-scaled(url("borders/dark/trough-border.png"),url("borders/dark/trough-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}

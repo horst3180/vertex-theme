@@ -614,7 +614,6 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .header-bar .trough,
 .header-bar .trough.vertical,
 .header-bar .trough.highlight {
-	border: 1px solid shade(@trough_bg_color_a, 0.4);
     background-image: linear-gradient(to bottom,
                                   shade(@trough_bg_color_a, 0.6),
                                   shade(@trough_bg_color_b, 0.6));

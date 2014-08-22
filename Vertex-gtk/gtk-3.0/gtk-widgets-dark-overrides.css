@@ -200,14 +200,14 @@ GtkPopover {
 .notebook tab.right:hover {
     background-color: alpha(white, 0.03);
 }
-
+/*
 .trough,
 .trough.vertical,
 .trough.highlight,
 .trough row,
 .trough row:hover {
 	border: 1px solid shade(@trough_bg_color_a, 0.6);
-}
+}*/
 
 /* scale */
 

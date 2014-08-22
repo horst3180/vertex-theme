@@ -230,6 +230,23 @@ column-header:last-child .button:active:hover {
     border-color: transparent;
 }
 
+/*progressbar trough*/
+.trough {
+    border-image: -gtk-scaled(url("borders/dark/trough-border.png"),url("borders/dark/trough-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.trough.vertical {
+    border-image: -gtk-scaled(url("borders/dark/trough-vertical-border.png"),url("borders/dark/trough-vertical-border@2.png")) 2 3 2 2 / 2px 3px 2px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 2px 1px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 /*Linked Buttons*/
 
 /* Middle entry */
