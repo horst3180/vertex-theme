@@ -247,6 +247,19 @@ GtkPopover {
                                       @theme_bg_color);
 }
 
+/************
+ * Toolbars *
+ ************/
+.toolbar {
+    border-color: @dark_borders;
+    background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b,
+                                      @metacity_bg_b);
+    background-color: @theme_bg_color;
+	color: @dark_fg_color;
+
+}
+
 /***************
  * Header bars *
  ***************/
