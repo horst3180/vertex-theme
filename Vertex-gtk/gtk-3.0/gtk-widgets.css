@@ -1138,7 +1138,7 @@ GtkLinkButton.button:active {
 
 .notebook tab.top,
 .notebook tab.bottom {
-    padding: 6px 20px 4px;
+    padding: 6px 20px 6px;
     border-left: 1px solid;
     border-right: 1px solid;
     border-image: linear-gradient(to bottom,
@@ -1169,13 +1169,30 @@ GtkLinkButton.button:active {
 .notebook tab.bottom:hover {
     border-left: 1px solid shade(@borders, 1.1);
     border-right: 1px solid shade(@borders, 1.1);
+    border-image: none;
+    background-color: alpha(black, 0.02);
 }
 
 /* vertical tabs */
 
-.notebook tab.left,
+.notebook tab.left {
+    padding: 6px 20px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right,
+                                  alpha(@borders, 0.8),
+                                  alpha(@theme_bg_color, 0.0)
+                                  ) 1 0 1 0;
+}
+
 .notebook tab.right {
-    padding: 5px 20px;
+    padding: 6px 20px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to left,
+                                  alpha(@borders, 0.8),
+                                  alpha(@theme_bg_color, 0.0)
+                                  ) 1 0 1 0;
 }
 
 .notebook tab.left:active {
@@ -1200,16 +1217,12 @@ GtkLinkButton.button:active {
 .notebook tab.right:hover {
     border-top: 1px solid shade(@borders, 1.1);
     border-bottom: 1px solid shade(@borders, 1.1);
+    border-image: none;
+    background-color: alpha(black, 0.02);
 }
 
 .notebook tab.reorderable-page {
     padding: 8px 20px 6px;
-}
-
-.notebook tab.reorderable-page:hover {
-    background-color: alpha(@highlight, 0.3);
-    border-left: 1px solid shade(@borders, 1.15);
-    border-right: 1px solid shade(@borders, 1.15);
 }
 
 .notebook tab.reorderable-page:active {

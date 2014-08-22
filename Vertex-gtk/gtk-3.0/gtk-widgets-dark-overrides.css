@@ -1,9 +1,3 @@
-GtkIconView.cell:selected,
-GtkIconView.cell:selected:focus {
-
-
-}
-
 .button,
 GtkComboBox {
     text-shadow: 0 -1px @button_text_shadow;
@@ -198,6 +192,13 @@ GtkPopover {
     border-left: 1px solid shade(@borders, 1.1);
     border-right: 1px solid shade(@borders, 1.1);
 	border-image: none;
+}
+
+.notebook tab.top:hover,
+.notebook tab.bottom:hover,
+.notebook tab.left:hover,
+.notebook tab.right:hover {
+    background-color: alpha(white, 0.03);
 }
 
 .trough,
