@@ -41,7 +41,7 @@
 .primary-toolbar.toolbar .button.raised,
 .primary-toolbar.toolbar .raised .button,
 .primary-toolbar.toolbar GtkComboBox .button,
-.primary-toolbar .button:hover
+.primary-toolbar .button:hover,
 .toolbar .button,
 .toolbar .raised .button,
 .toolbar .button.raised,
