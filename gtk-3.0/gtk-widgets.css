@@ -79,6 +79,13 @@
   opacity: 0.55;
   text-shadow: none; }
 
+GtkAssistant .sidebar {
+  background-color: @theme_base_color; }
+GtkAssistant .sidebar GtkLabel {
+  padding: 6px; }
+GtkAssistant .sidebar GtkLabel.highlight {
+  background-color: shade(@theme_bg_color, 0.9); }
+
 /*********************
  * Spinner Animation *
  *********************/
