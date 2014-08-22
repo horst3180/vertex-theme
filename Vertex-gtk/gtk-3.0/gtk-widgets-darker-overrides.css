@@ -12,7 +12,6 @@
 .header-bar .linked .entry:focus {
     box-shadow: inset 1px 0 alpha(black, 0.5),
                 inset -1px 0 alpha(black, 0.5);
-
 }
 
 .primary-toolbar.toolbar .linked .entry:focus:first-child,
@@ -26,7 +25,6 @@
 .toolbar .linked .entry:focus:last-child,
 .header-bar .linked .entry:focus:last-child {
     box-shadow: inset 1px 0 alpha(black, 0.5);
-
 }
 
 /* remove box shadow from last-child and only-child */
@@ -53,16 +51,16 @@
     background-image: linear-gradient(to bottom, 
                                       @dark_button_gradient_color_a, 
                                       @dark_button_gradient_color_b);
-	color: @dark_fg_color;
-	text-shadow: 0 -1px @dark_wm_title_shadow;
+  	color: @dark_fg_color;
+  	text-shadow: 0 -1px @dark_wm_title_shadow;
     icon-shadow: 0 -1px @dark_wm_title_shadow;
-  outline-color: alpha(@dark_fg_color, 0.3);
+    outline-color: alpha(@dark_fg_color, 0.3);
 }
 
 .primary-toolbar.toolbar GtkComboBox,
 .toolbar GtkComboBox,
 .header-bar GtkComboBox {
-	color: @dark_fg_color;
+  	color: @dark_fg_color;
 }
 
 GtkComboBox.combobox-entry .entry:first-child,
@@ -133,9 +131,8 @@ GtkComboBox.combobox-entry .button:last-child {
 
 .primary-toolbar.toolbar .button {
     background-image: none;
-	background-color: transparent;
-	/*border-image: none;*/
-	text-shadow: 0 -1px @dark_wm_title_shadow;
+  	background-color: transparent;
+	  text-shadow: 0 -1px @dark_wm_title_shadow;
     icon-shadow: 0 -1px @dark_wm_title_shadow;
 }
 
@@ -159,14 +156,6 @@ GtkComboBox.combobox-entry .button:last-child {
                                   @dark_button_active_gradient_color_a,
                                   @dark_button_active_gradient_color_b);
 }
-/*
-.primary-toolbar.toolbar .button:hover {
-    background-image: linear-gradient(to bottom,
-				      alpha(@toolbar_button_prelight, 0),
-                                      alpha(@toolbar_button_prelight, 0.3) 54%,
-                                      alpha(@toolbar_button_prelight, 0)
-                                      );
-}*/
 
 .primary-toolbar.toolbar .linked .button:hover,
 .toolbar .raised .button:hover,
@@ -182,7 +171,7 @@ GtkComboBox.combobox-entry .button:last-child {
 }
 
 .primary-toolbar.toolbar .button:insensitive {
-	background-color: transparent;
+  	background-color: transparent;
 }
 
 .primary-toolbar.toolbar .linked .button:insensitive,
@@ -196,8 +185,8 @@ GtkComboBox.combobox-entry .button:last-child {
 .toolbar .entry:insensitive,
 .header-bar .entry:insensitive {
     background-image: none;
-	background-color: @dark_insensitive_bg_color;
-	color: @dark_insensitive_fg_color;
+    background-color: @dark_insensitive_bg_color;
+    color: @dark_insensitive_fg_color;
 }
 
 /* Pushed + Insensitive button background */
@@ -211,7 +200,7 @@ GtkComboBox.combobox-entry .button:last-child {
                                   shade(@dark_button_active_gradient_color_a, 1.6),
                                   shade(@dark_button_active_gradient_color_a, 1.7));
     background-color: transparent;
-	color: alpha(@theme_selected_fg_color, 0.7);
+    color: alpha(@theme_selected_fg_color, 0.7);
 }
 
 .primary-toolbar.toolbar .entry,
@@ -229,7 +218,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry {
 .header-bar .entry.image,
 GtkWindow > GtkVBox > .dock .entry.image,
 GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry.image {
-	color: @dark_fg_color;
+    color: @dark_fg_color;
 }
 
 .primary-toolbar.toolbar .entry:selected,
@@ -242,7 +231,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 }
 
 .inline-toolbar.toolbar .button {
-	color: @theme_fg_color;
+    color: @theme_fg_color;
     background-image: linear-gradient(to bottom, 
                                       @button_gradient_color_a, 
                                       @button_gradient_color_b);
@@ -337,7 +326,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .toolbar .spinbutton .button:active,
 .header-bar .spinbutton .button:active {
     box-shadow: inset 1px 0 alpha(@inset_dark_color, 0.6);
-	icon-shadow: none;
+    icon-shadow: none;
 }
 
 .primary-toolbar.toolbar .spinbutton .button:last-child:active,
@@ -355,7 +344,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 
 .menubar .menuitem:hover {
     background-color: @menu_bg_color;
-	text-shadow: none;
+    text-shadow: none;
 }
 
 .menuitem.check,

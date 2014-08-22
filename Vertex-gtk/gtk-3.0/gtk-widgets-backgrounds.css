@@ -22,7 +22,6 @@
 .toolbar .button.raised:active:hover,
 .toolbar .raised .button:active:hover {
     box-shadow: inset 0 1px 1px alpha(black, 0.2);
-    /*  background-color: mix(@borders, @theme_bg_color, 0.5); */
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_color_a,
                                   @button_active_gradient_color_b);
@@ -41,23 +40,10 @@
 
 .trough.vertical {
     box-shadow: inset 1px 0 1px alpha(black, 0.2);
-    /*  background-color: mix(@borders, @theme_bg_color, 0.5); */
     background-image: linear-gradient(to right,
                                   @trough_bg_color_a,
                                   @trough_bg_color_b);
 }
-
-/* Primary and inline toolbars pushed button background *//*
-.primary-toolbar .button:active,
-.primary-toolbar .button:active:hover,
-.inline-toolbar .button:active,
-.inline-toolbar .button:active:hover {
-    background-image: linear-gradient(to bottom,
-				      shade(@borders, 0.95),
-                                      shade(@theme_bg_color, 0.88)
-                                      );
-    background-color: transparent;
-}*/
 
 /* Prelit button background */
 .button:hover,
@@ -72,16 +58,6 @@
                                       @button_hover_gradient_color_b
                                       );
 }
-
-/* Prelit button on primary toolbar background */
-/*.primary-toolbar .button:hover {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom,
-				      alpha(@toolbar_button_prelight, 0),
-                                      @toolbar_button_prelight 54%,
-                                      alpha(@toolbar_button_prelight, 0)
-                                      );
-}*/
 
 /* Insensitive button background */
 .button:insensitive,
@@ -104,38 +80,6 @@
 	color: alpha(@theme_selected_fg_color, 0.7);
 }
 
-/* Unfocused window button background *//*
-.button:backdrop,
-.toolbar .button.raised:backdrop,
-.toolbar .raised .button:backdrop,
-.toolbar .button:backdrop:hover,
-.toolbar GtkComboBox .button:backdrop,
-.toolbar GtkComboBox .button:backdrop:hover,
-.primary-toolbar .raised .button:backdrop:hover {
-    background-image: none;
-    background-color: @unfocused_button_background;
-}*/
-
-/* Unfocused window pushed button background *//*
-.button:active:backdrop,
-.toolbar .button:active:backdrop,
-.toolbar .button:active:hover:backdrop {
-    background-image: none;
-    background-color: @unfocused_borders;
-}
-*/
-/* Unfocused window insensitive button background *//*
-.button:insensitive:backdrop,
-.toolbar .button:insensitive:backdrop {
-    background-image: none;
-    background-color: @unfocused_insensitive_bg_color;
-}
-
-.button:insensitive:active:backdrop {
-    background-image: none;
-    background-color: mix(@unfocused_insensitive_bg_color, @unfocused_borders, 0.5);
-}
-*/
 /* Entry background */
 .entry {
     background-image: none;
@@ -167,30 +111,6 @@ GtkComboBox.combobox-entry .button:insensitive,
     box-shadow: none;
 }
 
-/* Unfocused windows entry background *//*
-.entry:backdrop,
-GtkComboBox.combobox-entry .button:backdrop,
-column-header.button:backdrop,
-column-header .button:backdrop,
-column-header.button:insensitive:backdrop,
-column-header .button:insensitive:backdrop,
-.level-bar.trough:backdrop,
-.spinbutton.vertical.entry:backdrop {
-    background-image: none;
-    background-color: @theme_unfocused_base_color;
-    box-shadow: none;
-}*/
-
-/* Unfocused windows insensitive entry background *//*
-.entry:insensitive:backdrop,
-GtkComboBox.combobox-entry .button:insensitive:backdrop,
-.level-bar.trough:insensitive:backdrop,
-.spinbutton.vertical.entry:insensitive:backdrop {
-    background-image: none;
-    background-color: @unfocused_insensitive_bg_color;
-}
-*/
-
 /* Inline toolbars background */
 .inline-toolbar.toolbar  {
     background-image: linear-gradient(to bottom,
@@ -207,12 +127,6 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop,
                                       );
     background-color: transparent;
 }
-
-/* Unfocused window inline toolbars background *//*
-.inline-toolbar.toolbar:backdrop  {
-    background-image: none;
-    background-color: @unfocused_dark_bg;
-}*/
 
 .scale.trough,
 .level-bar.trough {
@@ -264,24 +178,6 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop,
                                   shade(@scale_highlight_bg_b, 1.6),
                                   shade(@scale_highlight_bg_b, 1.7));
 }
-
-/* Active switch background*//*
-.scale.progressbar {
-    box-shadow: inset 0 1px 1px alpha(black, 0.1);
-    background-image: linear-gradient(to bottom,
-                                      @switch_trough_active_bg_a,
-                                      @switch_trough_active_bg_b
-                                      );
-    background-color: transparent;
-}
-
-.scale.progressbar.vertical {
-    background-image: linear-gradient(to right,
-                                      @switch_trough_active_bg_a,
-                                      @switch_trough_active_bg_b
-                                      );
-    background-color: transparent;
-}*/
 
 /* Progressbar backgrounds */
 

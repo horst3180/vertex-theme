@@ -158,36 +158,6 @@ column-header:last-child .button:active:hover {
     border-right-width: 0;
 }
 
-
-/* unfocused window: generic element borders *//*
-.button:backdrop,
-.spinbutton.vertical .button:backdrop,
-GtkComboBox.combobox-entry .entry:backdrop,
-GtkComboBox.combobox-entry .button:backdrop,
-.entry:backdrop,
-GtkSwitch.trough:backdrop,
-.trough:backdrop,
-.inline-toolbar.toolbar.vertical .button:backdrop,
-.inline-toolbar.toolbar.vertical .button:backdrop:insensitive,
-.inline-toolbar.toolbar.vertical .button:backdrop:active,
-.suggested-action.button:backdrop, 
-.toolbar .suggested-action.button:backdrop,
-.destructive-action.button:backdrop {
-    border-image: -gtk-scaled (url("borders/generic-border-backdrop.png"),url("borders/generic-border-backdrop@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
-    border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
-}
-
-.trough row:backdrop {
-    border-image: -gtk-scaled (url("borders/nohl-generic-border-backdrop.png"),url("borders/nohl-generic-border-backdrop@2.png")) 3 / 3px stretch;
-    border-radius: 3px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-}*/
-
 /* pushed colored buttons borders */
 .selection-mode.toolbar .suggested-action.button,
 .selection-mode.toolbar GtkToolButton.suggested-action .button {
