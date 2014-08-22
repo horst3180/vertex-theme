@@ -77,6 +77,9 @@
 GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkLabel:insensitive {
   color: @insensitive_fg_color; }
 
+.button:checked GtkLabel:insensitive {
+  color: alpha(@button_active_text, 0.7); }
+
 .dim-label, .titlebar .subtitle, GtkCalendar.header .subtitle,
 .header-bar .subtitle {
   opacity: 0.55;
