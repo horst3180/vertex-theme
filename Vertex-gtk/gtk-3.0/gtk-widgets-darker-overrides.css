@@ -43,6 +43,7 @@
 .primary-toolbar.toolbar .button.raised,
 .primary-toolbar.toolbar .raised .button,
 .primary-toolbar.toolbar GtkComboBox .button,
+.primary-toolbar .button:hover
 .toolbar .button,
 .toolbar .raised .button,
 .toolbar .button.raised,
@@ -133,7 +134,7 @@ GtkComboBox.combobox-entry .button:last-child {
 .primary-toolbar.toolbar .button {
     background-image: none;
 	background-color: transparent;
-	border-image: none;
+	/*border-image: none;*/
 	text-shadow: 0 -1px @dark_wm_title_shadow;
     icon-shadow: 0 -1px @dark_wm_title_shadow;
 }
@@ -158,14 +159,14 @@ GtkComboBox.combobox-entry .button:last-child {
                                   @dark_button_active_gradient_color_a,
                                   @dark_button_active_gradient_color_b);
 }
-
+/*
 .primary-toolbar.toolbar .button:hover {
     background-image: linear-gradient(to bottom,
 				      alpha(@toolbar_button_prelight, 0),
                                       alpha(@toolbar_button_prelight, 0.3) 54%,
                                       alpha(@toolbar_button_prelight, 0)
                                       );
-}
+}*/
 
 .primary-toolbar.toolbar .linked .button:hover,
 .toolbar .raised .button:hover,

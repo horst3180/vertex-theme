@@ -36,6 +36,8 @@ GtkComboBox.combobox-entry .button:active:hover,
 .primary-toolbar .raised .button:active,
 .inline-toolbar.toolbar .button:active,
 .primary-toolbar GtkComboBox .button:active,
+.primary-toolbar .button:active,
+.primary-toolbar .button:active:hover,
 .destructive-action.button:active {
     border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
@@ -69,12 +71,17 @@ GtkComboBox.combobox-entry .entry:focus,
 .primary-toolbar .button.raised,
 .primary-toolbar .raised .button,
 .inline-toolbar.toolbar .button,
-.primary-toolbar GtkComboBox .button {
+.primary-toolbar GtkComboBox .button,
+.primary-toolbar .button:hover {
     border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent;
+}
+
+.primary-toolbar .button, .primary-toolbar .button:insensitive {
+    border-image: none;
 }
 
 /* focused button borders */

@@ -74,14 +74,14 @@
 }
 
 /* Prelit button on primary toolbar background */
-.primary-toolbar .button:hover {
+/*.primary-toolbar .button:hover {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
 				      alpha(@toolbar_button_prelight, 0),
                                       @toolbar_button_prelight 54%,
                                       alpha(@toolbar_button_prelight, 0)
                                       );
-}
+}*/
 
 /* Insensitive button background */
 .button:insensitive,

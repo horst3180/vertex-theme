@@ -29,9 +29,14 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:focus  {
 .primary-toolbar.toolbar .button.raised,
 .primary-toolbar.toolbar .raised .button,
 .primary-toolbar.toolbar GtkComboBox .button,
+.primary-toolbar.toolbar .button:hover,
 .toolbar .button,
 .header-bar .button {
     border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+.primary-toolbar.toolbar .button, .primary-toolbar.toolbar .button:insensitive {
+    border-image: none;
 }
 
 .primary-toolbar.toolbar .button:active,

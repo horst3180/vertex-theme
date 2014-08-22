@@ -893,19 +893,14 @@ GtkComboBox.combobox-entry .button {
 .primary-toolbar .button *:insensitive {
     background-image: none;
     background-color: transparent;
+    /*border-image: none;*/
 }
 
 /* Remove borders from primary toolbar buttons*/
 .primary-toolbar .button {
-    border-image: none;
-
-    /* setting border-style: none; here would override the border-width values 
-     * we set in gtk-widget-borders.css to zero.
-     */
     border-style: solid;
     border-width: 1px 1px 2px 1px;
     border-color: transparent;
-
     text-shadow: 0 1px @highlight;
 }
 
