@@ -553,8 +553,6 @@ GtkColorButton.button {
       box-shadow: inset 1px 1px alpha(@theme_selected_bg_color, 0.1), 
                   inset 1px 2px alpha(@theme_selected_bg_color, 0.1),
                   inset -1px -1px alpha(@theme_selected_bg_color, 0.2) }
-    /*.spinbutton.vertical.entry:insensitive, .spinbutton.vertical:dir(rtl).entry:insensitive {
-      border-color: @insensitive_borders; }*/
 
 /**************
  * ComboBoxes *
@@ -578,11 +576,6 @@ GtkComboBox {
     -GtkWidget-wide-separators: true;
     -GtkWidget-horizontal-separator: 0;
     -GtkWidget-vertical-separator: 0; }
-
-/*GtkComboBox.combobox-entry .entry:first-child {
-  border-right-width: 0;
-  border-image-width: 2px 0 3px 2px;
-  box-shadow: inset -1px 0 alpha(black, 0.2), inset 0 1px @entry_inset; }*/
 
 /****************
  * Floating Bar *
@@ -919,7 +912,6 @@ GtkTreeView.view.trough:selected {
   background-image: linear-gradient(to bottom,
                                   alpha(shade(@trough_bg_color_a, 0.9), 0.8),
                                   alpha(shade(@trough_bg_color_b, 0.8), 0.8)); }
-
 
 /*********
  * Menus *
@@ -1330,75 +1322,75 @@ GtkSwitch {
   background-color: transparent; }
 
 .scale.trough {
-    margin: 6px 0 5px 0; }
+  margin: 6px 0 5px 0; }
 
 .scale.trough.vertical {
-    margin: 0 5px 0 6px; }
+  margin: 0 5px 0 6px; }
 
 .scale.trough.highlight, .scale.trough.vertical.highlight {
 	border-style: solid;
 	border-color: transparent; }
 
 .scale.progressbar {
-    background-color: @theme_selected_bg_color; }
+  background-color: @theme_selected_bg_color; }
 
 .scale.mark.separator {
-    color: alpha(@theme_fg_color, 0.3); }
+  color: alpha(@theme_fg_color, 0.3); }
 
 .scale.trough {
-   	background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(to bottom,
                                       @trough_bg_color_a,
                                       @trough_bg_color_b); }
 
 .scale.trough.vertical {
-    background-image: linear-gradient(to right,
+  background-image: linear-gradient(to right,
                                       @trough_bg_color_a,
                                       @trough_bg_color_b); }
 
 .scale.trough.highlight {
-   	background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(to bottom,
                                       @scale_highlight_bg_a,
                                       @scale_highlight_bg_b); }
 
 .scale.trough.highlight:insensitive {
-    background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(to bottom,
                                   shade(@scale_highlight_bg_b, 1.3),
                                   shade(@scale_highlight_bg_b, 1.4)); }
 
 .scale.trough.vertical.highlight {
-   	background-image: linear-gradient(to right,
+  background-image: linear-gradient(to right,
                                       @scale_highlight_bg_a,
                                       @scale_highlight_bg_b); }
 
 .scale.trough.vertical.highlight:insensitive {
-    background-image: linear-gradient(to right,
+  background-image: linear-gradient(to right,
                                   shade(@scale_highlight_bg_b, 1.3),
                                   shade(@scale_highlight_bg_b, 1.4)); }
 
 .scale.trough:insensitive {
-    box-shadow: inset 0 1px 2px alpha(black, 0.1);
-    background-image: linear-gradient(to bottom,
+  box-shadow: inset 0 1px 2px alpha(black, 0.1);
+  background-image: linear-gradient(to bottom,
                                   shade(@scale_highlight_bg_b, 1.6),
                                   shade(@scale_highlight_bg_b, 1.7)); }
 
 .scale.trough.vertical:insensitive {
-    box-shadow: inset 1px 0 2px alpha(black, 0.1);
-    background-image: linear-gradient(to right,
+  box-shadow: inset 1px 0 2px alpha(black, 0.1);
+  background-image: linear-gradient(to right,
                                   shade(@scale_highlight_bg_b, 1.6),
                                   shade(@scale_highlight_bg_b, 1.7)); }
 
 .osd .scale.trough {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom,
+  background-color: transparent;
+  background-image: linear-gradient(to bottom,
                                       @osd_trough_bg_a,
                                       @osd_trough_bg_b);
-    box-shadow: inset 0 1px 2px alpha(black, 0.2); }
+  box-shadow: inset 0 1px 2px alpha(black, 0.2); }
 
 .osd .scale.trough.highlight {
-    background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(to bottom,
                                       alpha(@progressbar_background_a, 0.9),
                                       alpha(@progressbar_background_b, 0.9));
-    box-shadow: inset 0 1px #66CBFF }
+  box-shadow: inset 0 1px #66CBFF }
 
 /*****************
  * Progress bars *
@@ -1458,13 +1450,13 @@ GtkProgressBar.trough {
 
 .osd GtkProgressBar.trough,
 GtkProgressBar.osd.trough {
-    padding: 0;
-    border-image: none;
-    border-style: none;
-    border-width: 0;
-    background-image: none;
-    background-color: transparent;
-    border-radius: 0;
+  padding: 0;
+  border-image: none;
+  border-style: none;
+  border-width: 0;
+  background-image: none;
+  background-color: transparent;
+  border-radius: 0;
 }
 
 .osd .scale.progressbar,
@@ -1574,10 +1566,9 @@ GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover .entry:selec
 	border-style: solid;
 	border-top-color: alpha(@theme_selected_bg_color, 0.95);
 	border-bottom-color: alpha(@theme_selected_bg_color, 0.85);
-
-    icon-shadow: 0 -1px alpha(black, 0.2);
-    text-shadow: 0 -1px alpha(black, 0.2);
-    color: @theme_selected_fg_color;
+  icon-shadow: 0 -1px alpha(black, 0.2);
+  text-shadow: 0 -1px alpha(black, 0.2);
+  color: @theme_selected_fg_color;
 }
 
 .cell.check:selected,
