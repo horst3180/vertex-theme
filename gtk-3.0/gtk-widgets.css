@@ -999,7 +999,7 @@ GtkTreeView.view.trough:selected {
     background-color: transparent;
     icon-shadow: none;
     border: 0; }
-  .popover GtkLabel.separator { color: @theme_fg_color; }
+  .popover GtkLabel.separator { color: alpha(@theme_fg_color, 0.8); }
   .popover .button.flat,
   .popover .button.flat:hover {
     text-shadow: none;
