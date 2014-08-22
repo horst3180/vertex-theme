@@ -108,6 +108,7 @@ TerminalWindow .notebook tab.reorderable-page:active:hover {
 
 TerminalWindow .notebook tab.reorderable-page:hover {
     background-color: alpha(@highlight, 0.06);
+    border-color: shade(@terminal_bg, 0.7);
 }
 
 TerminalWindow .notebook tab.top {
