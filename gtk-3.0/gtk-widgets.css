@@ -898,14 +898,9 @@ GtkTreeView.view.progressbar, GtkTreeView.view.progressbar:selected {
                                      @progressbar_background_a,
                                      @progressbar_background_b);
   box-shadow: inset 0 1px #66CBFF; }
-  /*GtkTreeView.view.progressbar:selected {
-    color: @theme_selected_bg_color;
-    box-shadow: none;
-    background-image: linear-gradient(to bottom, @theme_base_color, shade(@theme_base_color, 0.9)); }*/
 
 GtkTreeView.view.trough, GtkTreeView.view.trough:selected {
-	border: 1px solid @progressbar_border;
-	border-radius: 2px;
+  padding: 0 0 1px 0;
   box-shadow: inset 0 1px 1px alpha(black, 0.1);
   background-image: linear-gradient(to bottom,
                                   shade(@trough_bg_color_a, 0.9),
@@ -1407,6 +1402,7 @@ GtkProgressBar {
   border-radius: 1px;
   background-color: transparent;
 	border: 1px solid transparent;
+  border-bottom-width: 2px;
   background-image: linear-gradient(to bottom,
                                       @progressbar_background_a,
                                       @progressbar_background_b);
@@ -1421,7 +1417,9 @@ GtkProgressBar {
     background-image: linear-gradient(to right,
                                       @progressbar_background_a,
                                       @progressbar_background_b);
-    box-shadow: inset 1px 0 #66CBFF; }
+    box-shadow: inset 1px 0 #66CBFF;
+    border-bottom-width: 1px;
+    border-right-width: 2px; }
     .progressbar.vertical.bottom {
       border-bottom-left-radius: 1px;
       border-bottom-right-radius: 1px; }
@@ -1434,16 +1432,17 @@ GtkProgressBar {
     -GtkProgressBar-yspacing: 3px;
     -GtkProgressBar-min-horizontal-bar-height: 3px; }
 
-GtkProgressBar.trough {
-	border: 1px solid @progressbar_border;
-	border-radius: 2px;
+.trough {
+  padding: 2px;
+	/*border: 1px solid @progressbar_border;
+	border-radius: 2px;*/
   box-shadow: inset 0 1px 1px alpha(black, 0.1);
   background-image: linear-gradient(to bottom,
                                   shade(@trough_bg_color_a, 0.9),
                                   shade(@trough_bg_color_b, 0.8)); }
-  GtkProgressBar.trough.vertical {
-      box-shadow: inset 1px 0 1px alpha(black, 0.1);
-      background-image: linear-gradient(to right,
+  .trough.vertical {
+    box-shadow: inset 1px 0 1px alpha(black, 0.1);
+    background-image: linear-gradient(to right,
                                   shade(@trough_bg_color_a, 0.9),
                                   shade(@trough_bg_color_b, 0.8)); }
   /*GtkProgressBar.trough.osd {
@@ -1484,7 +1483,7 @@ GtkLevelBar.vertical {
   -GtkLevelBar-min-block-width: 5;
   -GtkLevelBar-min-block-height: 34; }
 
-.level-bar.trough {
+/*.level-bar.trough {
   padding: 2px;
   border-radius: 2px;
 	border: 1px solid shade(@trough_bg_color_a, 0.8);
@@ -1497,7 +1496,7 @@ GtkLevelBar.vertical {
     box-shadow: inset 1px 0 2px alpha(black, 0.2);
     background-image: linear-gradient(to right,
                                   @trough_bg_color_a,
-                                  @trough_bg_color_b); }
+                                  @trough_bg_color_b); }*/
 .level-bar.fill-block {
   border: 1px solid @progressbar_border;
   background-image: linear-gradient(to bottom,
