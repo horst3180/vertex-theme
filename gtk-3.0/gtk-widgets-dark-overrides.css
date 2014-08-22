@@ -174,3 +174,9 @@ GtkPopover {
                                       @wm_bg_b);
 }
 
+/********
+ * Misc *
+ ********/
+.scale-popup .button.flat:hover {
+  background-color: shade(@theme_bg_color, 1.2); }
+
