@@ -15,10 +15,10 @@
    id="svg33222"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="trough-border.svg"
-   inkscape:export-filename="/home/steffen/.local/share/themes/Vertex-git/gtk-3.0/borders/trough-border@2.png"
-   inkscape:export-xdpi="180"
-   inkscape:export-ydpi="180">
+   sodipodi:docname="trough-vertical-border.svg"
+   inkscape:export-filename="/home/steffen/.local/share/themes/Vertex-3.14-git/gtk-3.0/borders/trough-vertical-border.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs33224">
     <linearGradient
@@ -87,16 +87,16 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313709"
-     inkscape:cx="9.0328344"
+     inkscape:cx="9.2538053"
      inkscape:cy="7.2579781"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="952"
-     inkscape:window-height="758"
-     inkscape:window-x="509"
-     inkscape:window-y="299"
+     inkscape:window-height="722"
+     inkscape:window-x="412"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
@@ -137,7 +137,7 @@
          height="15.000229"
          width="15.000229"
          id="rect3779"
-         style="opacity:0.25;fill:none;stroke:#fbfbfb;stroke-width:0.99977112;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         style="opacity:0.5;fill:none;stroke:#ffffff;stroke-width:0.99977112000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <rect
          style="color:#000000;fill:none;stroke:url(#linearGradient3767);stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect17861"
