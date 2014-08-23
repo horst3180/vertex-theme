@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="65"
+   height="22"
+   id="svg10865"
+   version="1.1"
+   inkscape:version="0.48+devel r12050"
+   sodipodi:docname="toggle-off-us.svg">
+  <defs
+     id="defs10867">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient62852-6-5"
+       id="linearGradient62981-1-1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.85639946,0,0,0.81059641,27.810405,92.069729)"
+       x1="740"
+       y1="486.10501"
+       x2="740"
+       y2="505.3204" />
+    <linearGradient
+       id="linearGradient62852-6-5">
+      <stop
+         id="stop62854-6-7"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1" />
+      <stop
+         style="stop-color:#eeeeec;stop-opacity:1"
+         offset="0.97726452"
+         id="stop62858-8-0" />
+      <stop
+         id="stop62860-5-3"
+         offset="1"
+         style="stop-color:#f5f5f4;stop-opacity:1" />
+    </linearGradient>
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect62989-8-0"
+       effect="spiro" />
+    <linearGradient
+       id="linearGradient62821-5-8">
+      <stop
+         id="stop62823-2-4"
+         offset="0"
+         style="stop-color:#d1d3d1;stop-opacity:1;" />
+      <stop
+         id="stop62825-3-8"
+         offset="1"
+         style="stop-color:#ebebeb;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient62852-6-5-3">
+      <stop
+         id="stop62854-6-7-6"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1" />
+      <stop
+         style="stop-color:#eeeeec;stop-opacity:1"
+         offset="0.97726452"
+         id="stop62858-8-0-3" />
+      <stop
+         id="stop62860-5-3-9"
+         offset="1"
+         style="stop-color:#f5f5f4;stop-opacity:1" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect62829-6-8-0"
+       is_visible="true" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient62821-5-8-1"
+       id="linearGradient62864-0-3-1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3066667,0,0,1,-197.64667,0)"
+       x1="702.58966"
+       y1="484.49405"
+       x2="702.58966"
+       y2="507.42715" />
+    <linearGradient
+       id="linearGradient62821-5-8-1">
+      <stop
+         id="stop62823-2-4-2"
+         offset="0"
+         style="stop-color:#d1d3d1;stop-opacity:1;" />
+      <stop
+         id="stop62825-3-8-9"
+         offset="1"
+         style="stop-color:#ebebeb;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       y2="507.42715"
+       x2="702.58966"
+       y1="484.49405"
+       x1="702.58966"
+       gradientTransform="matrix(1.3066667,0,0,1,-841.64667,-483)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient11647"
+       xlink:href="#linearGradient62821-5-8-1"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="50.925774"
+     inkscape:cy="11.296867"
+     inkscape:document-units="px"
+     inkscape:current-layer="g62929"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:snap-nodes="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-others="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1375"
+     inkscape:window-x="1600"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     showborder="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid11512" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata10870">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1030.3622)">
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/lapo.fedora/SparkleShare/gnome-mockups/system-settings/network/network-panel-summary.png"
+       style="display:inline"
+       id="g62929"
+       transform="translate(-643.91421,517.29894)">
+      <g
+         transform="translate(0,30)"
+         id="g62931">
+        <rect
+           style="fill:url(#linearGradient62864-0-3-1);fill-opacity:1;stroke:#a6a8a6;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill-rule:nonzero;stroke-linejoin:miter;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero"
+           id="rect62935"
+           width="63.856125"
+           height="21.093594"
+           x="644.5"
+           y="483.5"
+           rx="2"
+           ry="2" />
+        <rect
+           style="fill:url(#linearGradient62981-1-1);fill-opacity:1;stroke:#777b7a;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+           id="rect62937"
+           width="29.97398"
+           height="17.022524"
+           x="646.55896"
+           y="485.61429"
+           rx="1"
+           ry="1" />
+        <g
+           transform="translate(-38.048674,-1.9445437)"
+           id="g62939">
+          <rect
+             ry="1"
+             rx="1"
+             y="492"
+             x="695"
+             height="8"
+             width="2"
+             id="rect62941"
+             style="fill:#e8e8e5;fill-opacity:1;stroke:none;display:inline" />
+          <rect
+             ry="1"
+             rx="1"
+             y="492"
+             x="699"
+             height="8"
+             width="2"
+             id="rect62943"
+             style="fill:#e8e8e5;fill-opacity:1;stroke:none;display:inline" />
+          <rect
+             ry="1"
+             rx="1"
+             y="492"
+             x="703"
+             height="8"
+             width="2"
+             id="rect62945"
+             style="fill:#e8e8e5;fill-opacity:1;stroke:none;display:inline" />
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:original-d="m 647.78624,486.57192 27.94632,0"
+           inkscape:path-effect="#path-effect62989-8-0"
+           id="path62947"
+           d="m 647.78624,486.57192 27.94632,0"
+           style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+      <g
+         id="g11665"
+         transform="matrix(0.78906097,0,0,0.78906097,167.78814,111.57844)">
+        <text
+           xml:space="preserve"
+           style="font-size:13.14816952px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Cantarell;-inkscape-font-specification:Cantarell Bold"
+           x="644.02277"
+           y="534.94739"
+           id="text62949-7"
+           sodipodi:linespacing="125%"
+           transform="scale(1.0113976,0.98873084)"><tspan
+             sodipodi:role="line"
+             id="tspan62951-7"
+             x="644.02277"
+             y="534.94739">OFF</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:12.69556618px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2e3436;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell Bold"
+           x="644.46393"
+           y="533.87158"
+           id="text62949"
+           sodipodi:linespacing="125%"
+           transform="scale(1.0113976,0.98873084)"><tspan
+             sodipodi:role="line"
+             id="tspan62951"
+             x="644.46393"
+             y="533.87158">OFF</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
