@@ -495,6 +495,7 @@ StScrollBar StButton#vhandle:active {
 
 /* Common radii */
 
+.search-entry,
 #searchEntry,
 .modal-dialog-button,
 .notification-button,
@@ -518,6 +519,7 @@ StScrollBar StButton#vhandle:active {
 
 /* Entries */
 
+.search-entry,
 #searchEntry,
 .login-dialog StEntry,
 .notification StEntry,
@@ -531,6 +533,7 @@ StScrollBar StButton#vhandle:active {
     padding: 8px 12px 9px 12px;
 }
 
+.search-entry,
 #searchEntry,
 .login-dialog StEntry,
 .run-dialog-entry,
@@ -545,6 +548,8 @@ StScrollBar StButton#vhandle:active {
 
 }
 
+.search-entry:focus,
+.search-entry:hover,
 #searchEntry:focus,
 #searchEntry:hover,
 .login-dialog StEntry:focus,
@@ -562,6 +567,7 @@ StScrollBar StButton#vhandle:active {
 .modal-dialog StEntry:focus {
 }
 
+.search-entry,
 #searchEntry {
     font-size: 1.1em;
 }
@@ -962,6 +968,7 @@ StScrollBar StButton#vhandle:active {
 
 /* Search Box */
 
+.search-entry,
 #searchEntry {
     width: 320px;
 }
@@ -971,6 +978,8 @@ StScrollBar StButton#vhandle:active {
     color: #c0c0c0;
 }
 
+.search-entry:hover .search-entry-icon,
+.search-entry:focus .search-entry-icon,
 #searchEntry:hover .search-entry-icon,
 #searchEntry:focus .search-entry-icon {
     color: white;
@@ -1428,15 +1437,15 @@ StScrollBar StButton#vhandle:active {
     -stipple-color: #787878;
     width: 0.3em;
 }
-
+/*
 #calendarPopup .calendar {
     padding: 10px;
-}
+}*/
 
 .calendar {
-    padding: .4em 1.75em .8em 1.75em;
-    spacing-rows: 2px;
-    spacing-columns: 2px;
+    padding: .4em 1.75em 1.8em 1.75em;
+    /*spacing-rows: 2px;
+    spacing-columns: 2px;*/
 }
 
 .calendar-month-label {
@@ -1535,24 +1544,26 @@ StScrollBar StButton#vhandle:active {
 .calendar-day {
     border: 1px solid rgba(0, 0, 0, .6);
     color: white;
+    border-top-width: 0;
+    border-left-width: 0;
 }
 
-/*.calendar-day-top {
+.calendar-day-top {
     border-top-width: 1px;
 }
 
 .calendar-day-left {
     border-left-width: 1px;
-}*/
+}
 
 .calendar-work-day {
     background-color: rgba(0, 0, 0, .35);
-	box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .3);
+	/*box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .3);*/
 }
 
 .calendar-nonwork-day {
     background-color: rgba(0, 0, 0, .2);
-	box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .15);
+	/*box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .15);*/
 }
 
 .calendar-today {
