@@ -2671,14 +2671,19 @@ column-header .button:insensitive {
 }
 
 column-header.button:hover,
-column-header .button:hover,
+column-header .button:hover {
+    color: mix(@theme_fg_color, @theme_base_color, 0.4);
+    text-shadow: none;
+    icon-shadow: none;
+}
+
 column-header.button:active,
 column-header .button:active,
 column-header.button:active:hover,
 column-header .button:active:hover {
-    color: @internal_element_prelight;
-    text-shadow: none;
-    icon-shadow: none;
+    color: @internal_element_color;
+    background-image: none;
+    box-shadow: none;
 }
 
 column-header .button.dnd {

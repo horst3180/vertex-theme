@@ -88,11 +88,7 @@
 
 /* Entry pushed button background */
 .spinbutton .button:active,
-.spinbutton .button:active:hover,
-column-header.button:active,
-column-header .button:active,
-column-header.button:active:hover,
-column-header .button:active:hover {
+.spinbutton .button:active:hover {
     background-image: linear-gradient(to bottom,
                                       shade(@entry_background_a, 0.9),
                                       @entry_background_b
