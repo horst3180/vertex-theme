@@ -301,9 +301,6 @@ GtkTreeView.separator,
 .entry {
     border-style: solid;
     padding: 4px;
-
-    /* border-image defined in the -assets variants */
-
     color: @theme_text_color;
     background-color: @entry_bg_color;
     transition: all 200ms ease-out;
@@ -312,10 +309,6 @@ GtkTreeView.separator,
 .entry.image.left {
     padding-right: 6px;
 	color: @internal_element_color;
-}
-
-.entry:focus {
-    transition: all 200ms ease-in;
 }
 
 .entry.progressbar,
@@ -838,6 +831,7 @@ GtkScrolledWindow GtkViewport.frame {
 GtkColorButton.button,
 GtkComboBox.combobox-entry .button {
     padding: 1px 4px;
+  transition: all 200ms ease-out;
 }
 
 .button.image-button,
@@ -875,7 +869,8 @@ GtkComboBox.combobox-entry .button {
 
 .primary-toolbar .button:active,
 .inline-toolbar .button:active,
-.button:active {
+.button:active,
+    transition-duration: 50ms; {
     color: @button_active_text;
     text-shadow: 0 -1px @button_active_text_shadow;
     icon-shadow: 0 -1px @button_active_text_shadow;
@@ -897,6 +892,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .button.raised:active,
 .toolbar .raised .button:active,
 .inline-toolbar .button:active {
+    transition-duration: 50ms;
     icon-shadow: 0 -1px @button_active_text_shadow;
     text-shadow: 0 -1px @button_active_text_shadow;
 }
@@ -1087,20 +1083,17 @@ GtkLinkButton.button:active {
 
 .notebook tab GtkLabel {
     color: mix(@theme_fg_color, @theme_bg_color, 0.40);
-    transition: all 200ms ease-out;
     text-shadow: 0 1px @highlight;
 }
 
 .notebook .prelight-page,
 .notebook .prelight-page GtkLabel {
     color: mix (@theme_fg_color, @theme_bg_color, 0.15);
-    transition: all 200ms ease-in;
 }
 
 .notebook .active-page,
 .notebook tab .active-page GtkLabel {
     color: @theme_fg_color;
-    transition: all 200ms ease-in;
 }
 
 /* horizontal tabs */
@@ -1221,7 +1214,6 @@ GtkLinkButton.button:active {
     border-width: 1px;
     padding: 1px;
     icon-shadow: none;
-    transition: all 200ms ease-out;
 }
 
 .notebook .prelight-page .button,
@@ -1230,14 +1222,12 @@ GtkLinkButton.button:active {
 .notebook tab.active-page .button {
     color: mix(@theme_fg_color, @theme_base_color, 0.2);
     icon-shadow: 0 1px @button_text_shadow;
-    transition: all 200ms ease-in;
 }
 
 .notebook .active-page .button:hover,
 .notebook tab .button:hover {
     color: shade(red, 1.3);
     border-color: alpha(black, 0.1);
-    transition: all 200ms ease-in;
 }
 
 .notebook tab .button:active,
@@ -2649,6 +2639,7 @@ GtkIconView.cell:selected:focus {
 column-header.button,
 column-header .button {
     color: @internal_element_color;
+    transition: none;
 }
 
 column-header.button,
@@ -2910,6 +2901,7 @@ GtkPopover.osd > .toolbar .button {
 GtkModelButton.button
 {
     color: @theme_fg_color;
+    transition: none;
 }
 
 GtkModelButton.button:active,
