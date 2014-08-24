@@ -869,8 +869,8 @@ GtkComboBox.combobox-entry .button {
 
 .primary-toolbar .button:active,
 .inline-toolbar .button:active,
-.button:active,
-    transition-duration: 50ms; {
+.button:active {
+    transition-duration: 50ms;
     color: @button_active_text;
     text-shadow: 0 -1px @button_active_text_shadow;
     icon-shadow: 0 -1px @button_active_text_shadow;
@@ -1352,10 +1352,6 @@ GtkFileChooserButton .separator {
 
 GtkFontButton GtkLabel:last-child {
     color: mix(@theme_fg_color, @theme_bg_color, 0.35);
-}
-
-GtkFileChooserButton GtkImage:last-child {
-    color: @internal_element_color;
 }
 
 /**************
