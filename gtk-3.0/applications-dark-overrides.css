@@ -1,3 +1,5 @@
+@define-color documents_collection_bg shade(@theme_bg_color, 1.2);
+
 GeditStatusbar {
   background-image: linear-gradient(to bottom,
                                     shade(@theme_bg_color, 1.05),
@@ -5,10 +7,3 @@ GeditStatusbar {
   box-shadow: inset 0 1px alpha(white, 0.15);
 }
 
-/* Baobab */
-.cell.baobab-level-cell,
-.cell.baobab-level-cell:hover,
-.cell.baobab-level-cell:selected,
-.cell.baobab-level-cell:selected:hover {
-    border-color: alpha(@theme_fg_color, 0.3);
-}

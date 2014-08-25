@@ -1,11 +1,8 @@
-/*
- * Nemo
- */
-
+/* Nemo */
 NemoPathbarButton {
-	color: @dark_fg_color;
-    border-color: @dark_borders;
-    background-image: linear-gradient(to bottom, 
+  color: @dark_fg_color;
+  border-color: @dark_borders;
+  background-image: linear-gradient(to bottom, 
                                       @dark_button_gradient_color_a, 
                                       @dark_button_gradient_color_b);
 	box-shadow: inset 0 1px alpha(white, 0.15); 
@@ -13,16 +10,15 @@ NemoPathbarButton {
 }
 
 NemoPathbarButton:hover {
-    background-image: linear-gradient(to bottom, 
+  background-image: linear-gradient(to bottom, 
                                       @dark_button_hover_gradient_color_a, 
                                       @dark_button_hover_gradient_color_b);
-
 }
 
 NemoPathbarButton:active,
 NemoPathbarButton:checked {
-    border-color: shade(@dark_borders, 0.9);
-    background-image: linear-gradient(to bottom, 
+  border-color: shade(@dark_borders, 0.9);
+  background-image: linear-gradient(to bottom, 
                                       shade(@dark_button_gradient_color_b, 0.9), 
                                       shade(@dark_button_gradient_color_b, 1.0));
 	box-shadow: inset 0 1px 2px alpha(black, 0.1); 
@@ -41,36 +37,30 @@ NemoWindow GtkSeparator.separator.horizontal {
 	color: @dark_borders
 }
 
-/*
- * Gedit
- */
+/* Gedit */
 GeditWindow .pane-separator,
 GeditWindow .pane-separator:hover {
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-    border-color: alpha(@dark_bg_color, 0.2);
-    background-color: alpha(@dark_bg_color, 0.2);
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: alpha(@dark_bg_color, 0.2);
+  background-color: alpha(@dark_bg_color, 0.2);
 }
 
 GeditFileBrowserWidget .toolbar {
-    border-bottom: 1px solid @dark_borders;
+  border-bottom: 1px solid @dark_borders;
 }
-/*
-GeditWindow GeditMenuStackSwitcher.button:active {
-	color: @dark_fg_color;
-}*/
 
 /*
  * Epiphany
- */
+ *//*
 #ephy-page-menu-button.active-menu {
 	color: @theme_fg_color;
 	icon-shadow: none;
-}
+}*/
 
 /*
  * Rhythmbox
- */
+ *//*
 RBSource .toolbar {
 	background-color: @theme_bg_color;
 	border-style: none;
@@ -111,7 +101,7 @@ RBSource .toolbar .button:checked {
 
 RBSource .toolbar .separator {
 	color: transparent;
-}
+}*/
 
 /*
  * Geary
@@ -201,69 +191,19 @@ EmpathyPresenceChooser.combobox-entry .button {
                                       @dark_button_gradient_color_b);
 }
 */
-/*
- * Evince
- *//*
-EvWindow.background EggFindBar.toolbar {
-    border-color: @dark_borders;
+/* Evince */
+EvWindow.background EggFindBar.primary-toolbar.toolbar.horizontal {
+  background-image: none;
+  background-color: shade(@dark_bg_color, 1.1);
 }
 
-EvWindow.background EvToolbar {
-	border-bottom: 1px solid @dark_borders;
-}*/
-/*
-EvWindow.background  GtkOverlay GtkScrolledWindow {
-	border-width: 0 0 0 1px;
-}
-*/
-
-/*
- * Contacts
- *//*
-.toolbar.contacts-selection-toolbar,
-.toolbar.contacts-edit-toolbar {
-	border-color: @dark_borders;
-}
-
-
-LibraryWindow .bottom-toolbar.toolbar {
-    border-color: @dark_borders;
-}*/
-
-/*
- * Gnome-Documents
- *//*
-.toolbar .linked .documents-entry-tag.button,
-.toolbar .linked .documents-entry-tag.button:hover,
-.toolbar .linked .documents-entry-tag.button:active,
-.toolbar .linked .documents-entry-tag.button:active:hover {
-    background-color: transparent;
-    background-image: none;
-    border-image: none;
-    border-width: 0;
-	box-shadow: none;
-}
-
-.toolbar .linked .documents-entry-tag.button:hover {
-    color: shade(@entry_tag_bg, 2.10);
-}
-
-.toolbar .linked .documents-entry-tag.button:active,
-.toolbar .linked .documents-entry-tag.button:active:hover {
-    color: shade(@entry_tag_bg, 0.90);
-	box-shadow: inset 0px 1px 2px alpha(black,0.2);
-}*/
-
-/*
- * bottom toolbars
- */
+/* bottom toolbars */
 .bottom-toolbar.toolbar {
-    border-color: @dark_borders;
+  border-color: @dark_borders;
 	box-shadow: inset 0 1px alpha(white, 0.15);
-    background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(to bottom,
                                       shade(@dark_bg_color, 1.1),
-                                      shade(@dark_bg_color, 0.9)
-                                      );
+                                      shade(@dark_bg_color, 0.9));
 }
 
 

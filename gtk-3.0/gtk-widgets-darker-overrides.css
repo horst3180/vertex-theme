@@ -358,15 +358,16 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
                                       @dark_wm_bg_b);
   border: 1px solid @dark_borders;
   border-width: 0 0 1px 0;
-	color: @dark_fg_color;
-}
+	color: @dark_fg_color; }
 
 .primary-toolbar:insensitive {
   background-image: none;
   background-color: @dark_insensitive_bg_color;
   text-shadow: none;
-	color: @dark_insensitive_fg_color;
-}
+	color: @dark_insensitive_fg_color; }
+
+.search-bar.toolbar {
+  border-color: @dark_borders; }
 
 /***************
  * Header bars *
