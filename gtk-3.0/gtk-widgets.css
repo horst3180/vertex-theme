@@ -74,7 +74,7 @@
 .overshoot {
   background-color: alpha(@theme_selected_bg_color, 0.2); }
 
-GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkLabel:insensitive {
+GtkLabel:insensitive {
   color: @insensitive_fg_color; }
 
 .button:checked GtkLabel:insensitive {
@@ -1549,11 +1549,9 @@ GtkLevelBar.vertical {
     border-color: alpha(black, 0.3);
     box-shadow: none; }
 
-.view {text-shadow: none;}
+.view { text-shadow: none; }
 
-.view:selected, .view:selected:focus, .view:selected:hover, 
-GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover .entry:selected, 
-.entry:selected:focus, .menuitem.button.flat:selected {
+.view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkLabel:backdrop:selected, .entry:selected, .entry:selected:focus, .menuitem.button.flat:selected {
   color: @theme_selected_fg_color;
   background-color: @theme_selected_bg_color;
   outline-color: rgba(255, 255, 255, 0.3);
