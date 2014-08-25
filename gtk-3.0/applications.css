@@ -119,6 +119,7 @@ NautilusNotebook .frame {
 NautilusQueryEditor .search-bar.toolbar {
     border-top-width: 0;
     border-bottom-width: 0;
+    box-shadow: none;
 }
 
 NautilusQueryEditor .toolbar {

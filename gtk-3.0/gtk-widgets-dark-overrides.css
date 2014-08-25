@@ -158,6 +158,12 @@ GtkPopover {
                                       @theme_bg_color);
 }
 
+.search-bar {
+  border-style: solid;
+  border-color: @borders;
+  background-color: shade(@theme_bg_color, 0.9);
+  box-shadow: inset 0 3px 3px -1px rgba(0, 0, 0, 0.17); }
+
 /***************
  * Header bars *
  ***************/
