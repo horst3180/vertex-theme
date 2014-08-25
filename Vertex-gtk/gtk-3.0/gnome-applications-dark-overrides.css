@@ -1,7 +1,6 @@
 @define-color documents_collection_bg #000000;
 
 /* gnome-documents */
-
 .documents-collection-icon {
     background-color: @documents_collection_bg;
     border-radius: 8px;
@@ -18,27 +17,26 @@ NautilusNotebook.notebook tab.top:active,
 NautilusNotebook.notebook tab.reorderable-page:active:hover {
     border-left: 1px solid @borders;
     border-right: 1px solid @borders;
-	border-bottom: 1px solid @borders;
-	border-top-width: 0px;
+    border-bottom: 1px solid @borders;
+    border-top-width: 0px;
     background-color: @wm_bg_b;
     background-image: linear-gradient(to bottom,
                                       @notebook_tab_gradient_a,
-									  shade(@notebook_tab_gradient_b, 0.95));
-	box-shadow: none;
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
+                                      shade(@notebook_tab_gradient_b, 0.95));
+    box-shadow: none;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 NautilusNotebook.notebook.header {
     border-width: 1px 0 1px 0;
-	border-bottom-color: shade(@borders, 1.2);
-	border-top-color: @borders;
-
+    border-bottom-color: shade(@borders, 1.2);
+    border-top-color: @borders;
 }
 
 /* Gedit */
 GeditStatusbar {
-  background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(to bottom,
                                     shade(@theme_bg_color, 1.1),
                                     shade(@theme_bg_color, 0.9));
 }
@@ -46,8 +44,8 @@ GeditStatusbar {
 /* Terminal */
 TerminalWindow .notebook tab.reorderable-page:active {
 	    background-image: linear-gradient(to bottom,
-                                      @metacity_bg_b,
-									  shade(@notebook_tab_gradient_b, 1.1));
+                                        @metacity_bg_b,
+                                        shade(@notebook_tab_gradient_b, 1.1));
 }
 
 /* Baobab */
@@ -73,5 +71,5 @@ GtkIconView.content-view.cell.check:active {
  * bottom toolbars
  */
 .bottom-toolbar.toolbar {
-	box-shadow: inset 0 1px alpha(white, 0.15);
+    box-shadow: inset 0 1px alpha(white, 0.15);
 }

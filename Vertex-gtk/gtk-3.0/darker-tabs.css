@@ -6,7 +6,7 @@ EmpathyChatWindow .notebook tab .active-page GtkLabel,
 GeditWindow .notebook tab .active-page GtkLabel,
 EphyNotebook.notebook tab .active-page GtkLabel {
     color: @dark_fg_color;
-	text-shadow: 0 -1px @dark_wm_title_shadow;
+    text-shadow: 0 -1px @dark_wm_title_shadow;
     icon-shadow: 0 -1px @dark_wm_title_shadow;
     transition: none;
 }
@@ -26,9 +26,9 @@ EphyNotebook.notebook tab.reorderable-page:active:hover {
 									  @dark_notebook_tab_gradient_b);
     border-left: 1px solid @dark_borders;
     border-right: 1px solid @dark_borders;
-	border-bottom: 1px solid @dark_borders;
-	border-top-width: 0px;
-	border-radius: 0 0 2px 2px;
+    border-bottom: 1px solid @dark_borders;
+    border-top-width: 0px;
+    border-radius: 0 0 2px 2px;
 }
 
 TerminalWindow .notebook .active-page .button,
@@ -78,14 +78,14 @@ EmpathyChatWindow .menubar {
 
 EmpathyChatWindow .notebook,
 EmpathyChatWindow .notebook.header.frame.top {
-	border-width: 0;
+    border-width: 0;
 }
 
 /*
  * GNOME Terminal
  */
 TerminalWindow .notebook tab.reorderable-page:active {
-	    background-image: linear-gradient(to bottom,
+    background-image: linear-gradient(to bottom,
                                       @metacity_bg_b,
 									  shade(@dark_notebook_tab_gradient_b, 1.05));
 		border-color: shade(@terminal_bg, 0.7);
@@ -94,8 +94,8 @@ TerminalWindow .notebook tab.reorderable-page:active {
 
 TerminalWindow .notebook.header {
     border-width: 0px;
-	border-top: 1px solid shade(@terminal_bg, 0.7);
-	background-color: @terminal_bg;
+    border-top: 1px solid shade(@terminal_bg, 0.7);
+    background-color: @terminal_bg;
 }
 
 TerminalWindow .notebook {
@@ -114,13 +114,12 @@ TerminalWindow .notebook tab.reorderable-page:hover {
 TerminalWindow .notebook tab.top {
     border-image: linear-gradient(to bottom,
                                   shade(@terminal_bg, 0.7),
-                                  @terminal_bg
-                                  ) 0 1 0 1;
+                                  @terminal_bg) 0 1 0 1;
 }
 
 TerminalWindow .notebook tab GtkLabel {
     color: mix(@dark_fg_color, @dark_bg_color, 0.40);
-	text-shadow: 0 -1px @dark_wm_title_shadow;
+    text-shadow: 0 -1px @dark_wm_title_shadow;
 }
 
 /*
@@ -128,7 +127,7 @@ TerminalWindow .notebook tab GtkLabel {
  */
 NautilusWindow .sidebar .frame,
 NautilusNotebook .frame {
-	border-color: @dark_borders;
+    border-color: @dark_borders;
 }
 
 NautilusWindow > GtkGrid > .pane-separator,
@@ -139,25 +138,24 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
                                   shade(@borders, 1.0) 2px) 0 1 0 0;
 }
 
-
 NautilusNotebook.notebook.header {
-	border-top-color: @dark_borders;
+    border-top-color: @dark_borders;
 }
 
 NautilusNotebook.notebook tab.reorderable-page {
-	border-top-width: 1px;
-	border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
 }
 
 NautilusWindow .info,
 NautilusWindow .question,
 NautilusWindow .warning,
 NautilusWindow .error {
-	border-width: 0;
+    border-width: 0;
     background-image: linear-gradient(to bottom,
                                       @dark_wm_bg_b,
-									  shade(@dark_wm_bg_b, 0.9));
-	color: @dark_fg_color;
+                                      shade(@dark_wm_bg_b, 0.9));
+    color: @dark_fg_color;
     text-shadow: 0 -1px @dark_wm_title_shadow;
 }
 
