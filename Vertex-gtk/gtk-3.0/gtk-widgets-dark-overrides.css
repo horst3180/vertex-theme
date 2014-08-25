@@ -237,6 +237,18 @@ GtkPopover {
                                   shade(@button_active_gradient_color_a, 1.6));
 }
 
+/***************
+ * Search bars *
+ ***************/
+.search-bar {
+    box-shadow: inset 0 5px alpha(black, 0.02),
+				inset 0 4px alpha(black, 0.03),
+				inset 0 3px alpha(black, 0.04), 
+				inset 0 2px alpha(black, 0.05), 
+				inset 0 1px alpha(black, 0.06);
+    background-color: shade(@theme_bg_color, 0.9);
+}
+
 /*******************
  * Inline toolbars *
  *******************/

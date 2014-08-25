@@ -1836,8 +1836,12 @@ GtkMessageDialog {
     border-width: 0 0 1px;
     border-style: solid;
     border-color: shade(@borders, 1.0);
-
-    background-color: shade(@theme_bg_color, 0.97);
+    box-shadow: inset 0 5px alpha(black, 0.01),
+				inset 0 4px alpha(black, 0.015),
+				inset 0 3px alpha(black, 0.02), 
+				inset 0 2px alpha(black, 0.025), 
+				inset 0 1px alpha(black, 0.03);
+    background-color: shade(@theme_bg_color, 1.01);
     padding: 5px 4px 5px 5px;
 }
 
