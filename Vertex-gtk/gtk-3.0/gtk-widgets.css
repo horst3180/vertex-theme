@@ -1835,12 +1835,12 @@ GtkMessageDialog {
 .search-bar {
     border-width: 0 0 1px;
     border-style: solid;
-    border-color: shade(@borders, 1.0);
+    border-color: shade(@borders, 1.05);
     box-shadow: inset 0 5px alpha(black, 0.01),
-				inset 0 4px alpha(black, 0.015),
-				inset 0 3px alpha(black, 0.02), 
-				inset 0 2px alpha(black, 0.025), 
-				inset 0 1px alpha(black, 0.03);
+				        inset 0 4px alpha(black, 0.015),
+				        inset 0 3px alpha(black, 0.02), 
+				        inset 0 2px alpha(black, 0.025), 
+				        inset 0 1px alpha(black, 0.03);
     background-color: shade(@theme_bg_color, 1.01);
     padding: 5px 4px 5px 5px;
 }
@@ -2351,7 +2351,7 @@ GtkProgressBar.osd.progressbar {
     border-bottom-color: @selection_toolbar_border;
 
     box-shadow: inset 0 1px shade(@selection_toolbar_bg_a, 1.15);
-	padding: 6px 3px 5px 3px;
+    padding: 6px 5px 6px 5px;
 }
 
 .selection-mode.toolbar {
@@ -2359,12 +2359,12 @@ GtkProgressBar.osd.progressbar {
 }
 
 .selection-mode.header-bar .title {
-	color: @selection_toolbar_fg;
+    color: @selection_toolbar_fg;
 }
 
 .selection-mode.header-bar .title:backdrop {
-	color: alpha(@selection_toolbar_fg, 0.7);
-	text-shadow: none;
+    color: alpha(@selection_toolbar_fg, 0.7);
+    text-shadow: none;
 }
 
 /* regular button */
@@ -2374,22 +2374,19 @@ GtkProgressBar.osd.progressbar {
     background-image: linear-gradient(to bottom,
                                       @selection_toolbar_button_a,
                                       @selection_toolbar_button_b);
-
-    border-image: none;
-    border-color: @selection_toolbar_button_border;
-    border-width: 1px;
-
-    box-shadow: inset 0 1px shade(@selection_toolbar_button_a, 1.1);
-
     color: @selection_toolbar_button_fg;
 }
 
 .selection-mode.header-bar .button:hover,
 .selection-mode.toolbar .button:hover,
-.selection-mode.toolbar GtkToolButton .button:hover {
+.selection-mode.toolbar GtkToolButton .button:hover,
+.selection-mode.header-bar .selection-menu.button:hover,
+.selection-mode.toolbar .dim-label:hover,
+.selection-mode.toolbar .selection-menu.button:hover,
+.selection-mode.toolbar .selection-menu.button .dim-label:hover {
     background-image: linear-gradient(to bottom,
                                       shade(@selection_toolbar_button_a, 1.05),
-                                      shade(@selection_toolbar_button_b, 1.02));
+                                      shade(@selection_toolbar_button_b, 1.05));
 }
 
 .selection-mode.header-bar .button:active,
@@ -2397,17 +2394,13 @@ GtkProgressBar.osd.progressbar {
 .selection-mode.toolbar .button:active,
 .selection-mode.toolbar .button:hover:active,
 .selection-mode.toolbar GtkToolButton .button:active,
-.selection-mode.toolbar GtkToolButton .button:hover:active {
+.selection-mode.toolbar GtkToolButton .button:hover:active,
+.selection-mode.header-bar .selection-menu.button:active,
+.selection-mode.toolbar .selection-menu.button:active {
+    color: @selection_toolbar_button_fg;
     background-image: linear-gradient(to bottom,
                                       shade(@selection_toolbar_button_b, 0.95),
-                                      shade(@selection_toolbar_button_a, 0.88));
-    box-shadow: none;
-}
-
-.selection-mode.header-bar .button:active,
-.selection-mode.toolbar .button:active,
-.selection-mode.toolbar GtkToolButton .button:active {
-    color: @selection_toolbar_button_fg;
+                                      shade(@selection_toolbar_button_b, 1.0));
 }
 
 .selection-mode.header-bar .button,
@@ -2427,13 +2420,6 @@ GtkProgressBar.osd.progressbar {
     background-image: linear-gradient(to bottom,
                                       @selection_toolbar_suggested_button_a,
                                       @selection_toolbar_suggested_button_b);
-
-    border-image: none;
-    border-color: @selection_toolbar_suggested_button_border;
-    border-width: 1px;
-
-    box-shadow: inset 0 2px alpha(@selection_toolbar_suggested_button_b, 0.2),
-                inset 0 1px @selection_toolbar_suggested_button_a;
     color: @theme_text_color;
 }
 
@@ -2455,8 +2441,8 @@ GtkProgressBar.osd.progressbar {
                                       shade(@selection_toolbar_suggested_button_b, 0.9),
                                       shade(@selection_toolbar_suggested_button_a, 0.92));
     box-shadow: none;
-	color: @theme_fg_color;
-	text-shadow: none;
+    color: @theme_fg_color;
+    text-shadow: none;
 }
 
 .selection-mode.header-bar .suggested-action.button:active,
@@ -2480,52 +2466,12 @@ GtkProgressBar.osd.progressbar {
 .selection-mode.toolbar .selection-menu.button {
     background-image: none;
     border-image: none;
-    border-color: transparent;
-    border: 0px;
-    box-shadow: none;
-
     color: @selection_menu_fg;
 }
 
 .selection-mode.toolbar .dim-label,
 .selection-mode.toolbar .selection-menu.button .dim-label {
     color: @selection_menu_fg;
-}
-
-.selection-mode.header-bar .selection-menu.button:hover,
-.selection-mode.toolbar .dim-label:hover,
-.selection-mode.toolbar .selection-menu.button:hover,
-.selection-mode.toolbar .selection-menu.button .dim-label:hover {
-    background-image: linear-gradient(to bottom,
-				      alpha(@toolbar_button_prelight, 0),
-                                      alpha(@toolbar_button_prelight, 0.4) 54%,
-                                      alpha(@toolbar_button_prelight, 0)
-                                      );
-	border-width: 0 1px 0 1px;
-	border-style: solid;
-    border-image: linear-gradient(to top,
-				      alpha(@toolbar_button_prelight, 0),
-                                      @toolbar_button_prelight 54%,
-                                      alpha(@toolbar_button_prelight, 0)
-                                  ) 0 1 0 1;
-}
-
-.selection-mode.header-bar .selection-menu.button:active,
-.selection-mode.toolbar .selection-menu.button:active {
-    border-width: 1px;
-	border-width: 0 1px 0 1px;
-	border-style: solid;
-    border-image: linear-gradient(to top,
-				      alpha(@toolbar_button_prelight, 0),
-                                      @toolbar_button_prelight 54%,
-                                      alpha(@toolbar_button_prelight, 0)
-                                  ) 0 1 0 1;
-    background-image: linear-gradient(to bottom,
-				      alpha(black, 0),
-                                      alpha(black, 0.06) 54%,
-                                      alpha(black, 0)
-                                      );
-    background-color: transparent;
 }
 
 .selection-mode.header-bar .selection-menu.button,

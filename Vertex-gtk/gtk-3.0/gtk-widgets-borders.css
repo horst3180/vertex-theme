@@ -196,6 +196,40 @@ column-header:last-child .button:active:hover {
     border-color: transparent;
 }
 
+/*selectionmode*/
+.selection-mode.header-bar .button,
+.selection-mode.toolbar .button,
+.selection-mode.toolbar GtkToolButton .button,
+.selection-mode.header-bar .selection-menu.button:hover,
+.selection-mode.toolbar .selection-menu.button:hover {
+  border-image: -gtk-scaled(url("borders/button-border-suggested.png"),url("borders/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; 
+}
+
+.selection-mode.header-bar .button:active,
+.selection-mode.header-bar .button:active:hover,
+.selection-mode.toolbar .button:active,
+.selection-mode.toolbar .button:active:hover,
+.selection-mode.toolbar GtkToolButton .button:active,
+.selection-mode.toolbar GtkToolButton .button:active:hover,
+.selection-mode.header-bar .selection-menu.button:active,
+.selection-mode.toolbar .selection-menu.button:active {
+  border-image: -gtk-scaled(url("borders/button-active-border-suggested.png"),url("borders/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.selection-mode.titlebar .titlebutton,
+.selection-mode.titlebar .titlebutton:active:hover {
+  border-image: none;
+  box-shadow: none;
+}
+
 /* scale */
 
 .scale.trough {

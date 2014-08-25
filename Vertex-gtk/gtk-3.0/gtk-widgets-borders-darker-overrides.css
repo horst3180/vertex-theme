@@ -34,11 +34,11 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:focus  {
 .header-bar .button {
     border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
-
+/*
 .primary-toolbar.toolbar .button, .primary-toolbar.toolbar .button:insensitive {
     border-image: none;
 }
-
+*/
 .primary-toolbar.toolbar .button:active,
 .primary-toolbar.toolbar .button:active:hover,
 .toolbar .button:active,
@@ -158,6 +158,40 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:focus  {
 .toolbar .destructive-action.button,
 .header-bar .destructive-action.button {
     border-image: -gtk-scaled(url("borders/dark/button-border-destructive.png"),url("borders/dark/button-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+/*selectionmode*/
+.selection-mode.header-bar .button,
+.selection-mode.toolbar .button,
+.selection-mode.toolbar GtkToolButton .button,
+.selection-mode.header-bar .selection-menu.button:hover,
+.selection-mode.toolbar .selection-menu.button:hover {
+  border-image: -gtk-scaled(url("borders/dark/button-border-suggested.png"),url("borders/dark/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; 
+}
+
+.selection-mode.header-bar .button:active,
+.selection-mode.header-bar .button:active:hover,
+.selection-mode.toolbar .button:active,
+.selection-mode.toolbar .button:active:hover,
+.selection-mode.toolbar GtkToolButton .button:active,
+.selection-mode.toolbar GtkToolButton .button:active:hover,
+.selection-mode.header-bar .selection-menu.button:active,
+.selection-mode.toolbar .selection-menu.button:active {
+  border-image: -gtk-scaled(url("borders/dark/button-active-border-suggested.png"),url("borders/dark/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.selection-mode.titlebar .titlebutton,
+.selection-mode.titlebar .titlebutton:active:hover {
+  border-image: none;
+  box-shadow: none;
 }
 
 /* scale */

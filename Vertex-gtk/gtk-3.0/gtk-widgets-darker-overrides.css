@@ -694,6 +694,19 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
     border-image: -gtk-scaled(url("assets/dark/header-separator.png"),url("assets/dark/header-separator@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
 }
 
+/**************************
+ * Selection Mode classes *
+ **************************/
+.selection-mode.header-bar {
+    border-bottom-color: shade(@selection_toolbar_border, 0.8);
+    box-shadow: inset 0 1px alpha(#90b6ff, 0.55);
+}
+
+.selection-mode.header-bar > GtkBox > .separator.vertical,
+.selection-mode.toolbar .separator {
+    border-image: -gtk-scaled(url("assets/dark/header-separator-selectionmode.png"),url("assets/dark/header-separator-selectionmode@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
+}
+
 /***********
  * Popover *
  ***********/
@@ -707,15 +720,6 @@ GtkPopover {
  ***************/
 .search-bar {
 	color: @theme_fg_color;
-}
-
-/**************************
- * Selection Mode classes *
- **************************/
-.selection-mode.header-bar .button:active,
-.selection-mode.toolbar .button:active,
-.selection-mode.toolbar GtkToolButton .button:active {
-    border-image: none;
 }
 
 /*******
