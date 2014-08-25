@@ -237,6 +237,23 @@ GtkPopover {
                                   shade(@button_active_gradient_color_a, 1.6));
 }
 
+/*******************
+ * Inline toolbars *
+ *******************/
+.action-bar,
+.inline-toolbar.toolbar {
+  background-image: linear-gradient(to bottom,
+                                    shade(@theme_bg_color, 1.05),
+                                    shade(@theme_bg_color, 0.9));
+}
+
+.inline-toolbar.toolbar.vertical {
+  background-image: linear-gradient(to right,
+                                    shade(@theme_bg_color, 1.05),
+                                    shade(@theme_bg_color, 0.9));
+}
+
+
 /********************
  * Primary Toolbars *
  ********************/
