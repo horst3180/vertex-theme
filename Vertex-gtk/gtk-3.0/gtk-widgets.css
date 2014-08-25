@@ -1248,9 +1248,10 @@ GtkLinkButton.button:active {
  **************/
 GtkComboBox {
     padding: 0;
-
     -GtkComboBox-arrow-scaling: 0.5;
     -GtkComboBox-shadow-type: none;
+    icon-shadow: 0 1px @button_text_shadow;
+    text-shadow: 0 1px @button_text_shadow;
 }
 
 GtkComboBox:insensitive {
@@ -1277,29 +1278,7 @@ GtkComboBox.combobox-entry .button:last-child {
     border-radius: 0 2px 2px 0;
     border-left-width: 0;
 }
-/*
-.primary-toolbar GtkComboBox.combobox-entry .entry:first-child,
-.primary-toolbar GtkComboBox.combobox-entry .button:first-child {
-    border-image-width: 4px 0 4px 4px;
-    border-radius: 3px 0 0 3px;
-    border-right-width: 0;
-}
 
-.primary-toolbar GtkComboBox.combobox-entry .entry:last-child,
-.primary-toolbar GtkComboBox.combobox-entry .button:last-child {
-    border-image-width: 4px 4px 4px 0;
-    border-radius: 0 3px 3px 0;
-    border-left-width: 0;
-}*/
-/*
-GtkComboBox.combobox-entry .entry:focus:first-child {
-    box-shadow: inset -1px 0px alpha(@theme_selected_bg_color, 1.0);
-}
-
-GtkComboBox.combobox-entry .entry:focus:last-child {
-    box-shadow: inset 1px 0px alpha(@theme_selected_bg_color, 1.0);
-}
-*/
 GtkComboBox.combobox-entry .button:last-child,
 GtkComboBox.combobox-entry .button:hover:last-child {
     box-shadow: inset 0 1px @highlight,
@@ -1328,14 +1307,6 @@ GtkComboBox.combobox-entry .button:insensitive:first-child {
 
 GtkComboBox.combobox-entry .button:insensitive:last-child {
     box-shadow: inset 1px 0 @inset_dark_color;
-}
-
-GtkComboBox .button {
-    color: @internal_element_color;
-}
-
-GtkComboBox .button:hover {
-    color: @theme_text_color;
 }
 
 /********************
@@ -2568,7 +2539,6 @@ GtkIconView.cell:selected:focus {
 
 .cell {
     padding: 2px;
-    text-shadow: none;
 }
 
 .cell:selected,
