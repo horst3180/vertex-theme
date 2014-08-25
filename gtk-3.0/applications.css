@@ -290,8 +290,8 @@ GeditWindow .pane-separator:hover {
 GeditStatusbar {
   border-top: 1px solid @borders;
   background-image: linear-gradient(to bottom,
-                                    shade(@theme_bg_color, 0.99),
-                                    shade(@theme_bg_color, 0.93));
+                                    shade(@theme_bg_color, 1.00),
+                                    shade(@theme_bg_color, 0.96));
   box-shadow: inset 0 1px @highlight_shadow;
 }
 

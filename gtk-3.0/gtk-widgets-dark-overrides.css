@@ -148,7 +148,7 @@ GtkPopover {
 .inline-toolbar,
 .inline-toolbar.toolbar {
   background-image: linear-gradient(to bottom,
-                                    shade(@theme_bg_color, 1.1),
+                                    shade(@theme_bg_color, 1.05),
                                     shade(@theme_bg_color, 0.9)); }
 
 
