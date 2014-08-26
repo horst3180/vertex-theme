@@ -80,7 +80,7 @@ GtkLabel:insensitive {
 .button:checked:insensitive GtkLabel {
   color: alpha(@button_active_text, 0.7); }
 
-.dim-label, .titlebar .subtitle, GtkCalendar.header .subtitle,
+.titlebar .subtitle, GtkCalendar.header .subtitle,
 .header-bar .subtitle {
   opacity: 0.55;
   text-shadow: none; }
@@ -91,6 +91,13 @@ GtkAssistant .sidebar GtkLabel {
   padding: 6px; }
 GtkAssistant .sidebar GtkLabel.highlight {
   background-color: shade(@theme_bg_color, 0.9); }
+
+/**************
+ * Dim labels *
+ **************/
+.view.dim-label, .dim-label {
+  color: alpha(currentColor, 0.55);
+  text-shadow: none; }
 
 /*********************
  * Spinner Animation *
