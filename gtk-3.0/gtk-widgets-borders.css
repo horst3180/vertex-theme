@@ -430,7 +430,7 @@ GtkComboBox.combobox-entry .button:only-child:checked,
     border-color: transparent;
 }
 
-.button.flat, .menuitem.button.flat, .menuitem.button.flat:active, .menuitem.button.flat:checked, .button:link, .button:visited, 
+.button.flat, .menuitem.button.flat, /*.menuitem.button.flat:active, .menuitem.button.flat:checked,*/ .button:link, .button:visited, 
 .button:link:hover, .button:link:active, .button:link:checked, .button:link:active:hover, .button:link:checked:hover, .button:visited:hover, .button:visited:active, .button:visited:active:hover, 
 .notebook tab .button, .list-row.button, GtkCalendar.button, GtkCalendar.button:hover, 
 .scale-popup .button:hover {

@@ -436,9 +436,9 @@ GtkAssistant.csd .sidebar {
       color: alpha(@button_active_text, 0.7);
       background-image: linear-gradient(to bottom,
                                         shade(@button_active_gradient_color_a, 1.6),
-                                        shade(@button_active_gradient_color_a, 1.7)) }
+                                        shade(@button_active_gradient_color_a, 1.7)); }
 
-.button.flat, .menuitem.button.flat, .menuitem.button.flat:active, .menuitem.button.flat:checked, 
+.button.flat, /*.menuitem.button.flat, .menuitem.button.flat:active, .menuitem.button.flat:checked, */
 .button:link, .button:visited, .button:link:hover, .button:link:active, button:link:checked, .button:visited:hover, 
 .button:visited:active, .button:visited:checked, .notebook tab .button, .list-row.button, GtkCalendar.button, GtkCalendar.button:hover, 
 .scale-popup .button:hover {
@@ -452,9 +452,24 @@ GtkAssistant.csd .sidebar {
 
 /* menu buttons */
 .menuitem.button.flat {
-  outline-offset: -1px; }
+  outline-offset: -2px; 
+  transition: none; }
   .menuitem.button.flat:hover {
-    background-color: shade(@theme_bg_color, 0.9); }
+    border: 1px solid alpha(black, 0.2);
+    border-bottom-color: alpha(black, 0.25);
+    box-shadow: inset 0 1px @highlight_shadow;
+    background-image: linear-gradient(to bottom,
+                                        alpha(@button_gradient_color_a, 0.4),
+                                        alpha(@button_gradient_color_b, 0.3)); }
+  .menuitem.button.flat:active, .menuitem.button.flat:active:hover,
+  .menuitem.button.flat:checked, .menuitem.button.flat:checked:hover {
+    box-shadow: inset 0 1px 2px alpha(black, 0.15);
+    background-image: linear-gradient(to bottom,
+                                        alpha(@button_active_gradient_color_a, 0.7),
+                                        alpha(@button_active_gradient_color_b, 0.7));
+    border: 1px solid alpha(black, 0.4);
+    border-top-color: alpha(black, 0.55);
+    text-shadow: 0 -1px alpha(@button_active_text_shadow, 0.7); }
 
 GtkColorButton.button {
   padding: 4px; }
@@ -971,6 +986,11 @@ GtkTreeView.view.trough:selected {
     .menu .menuitem.arrow:dir(rtl) {
       -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
 
+.menu.button, .menu.button:insensitive {
+  border-image: none;
+  background-color: transparent; 
+  background-image: none;}
+
 .menuitem .accelerator {
   color: alpha(currentColor,0.7); }
 
@@ -1019,7 +1039,8 @@ GtkTreeView.view.trough:selected {
     icon-shadow: none;
     border: 0; }
   .popover GtkLabel.separator { color: alpha(@theme_fg_color, 0.8); }
-  .popover .button.flat,
+  .pop
+  /*.popover .button.flat,
   .popover .button.flat:hover {
     text-shadow: none;
     transition: none;
@@ -1034,7 +1055,7 @@ GtkTreeView.view.trough:selected {
   .popover .button.flat:active:hover,
   .popover .button.flat:checked:hover {
     color: @theme_selected_fg_color;
-    background-color: @theme_selected_bg_color; }
+    background-color: @theme_selected_bg_color; }*/
   .popover.osd {
     background-image: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -1574,7 +1595,7 @@ GtkLevelBar.vertical {
 
 .view { text-shadow: none; }
 
-.view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, .entry:selected, .entry:selected:focus, .menuitem.button.flat:selected {
+.view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, .entry:selected, .entry:selected:focus {
   color: @theme_selected_fg_color;
   background-color: @theme_selected_bg_color;
   outline-color: rgba(255, 255, 255, 0.3);
