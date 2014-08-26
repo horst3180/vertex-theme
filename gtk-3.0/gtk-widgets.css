@@ -87,8 +87,11 @@ GtkLabel:insensitive {
 
 GtkAssistant .sidebar {
   background-color: @sidebar_bg;
-  border-right: 1px solid @borders;
   border-top: 1px solid @borders; }
+  GtkAssistant .sidebar:dir(ltr) {
+    border-right: 1px solid @borders; }
+  GtkAssistant .sidebar:dir(rtl) {
+    border-left: 1px solid @borders; }
 GtkAssistant.csd .sidebar {
   border-top-style: none; }
  GtkAssistant .sidebar GtkLabel {
@@ -98,6 +101,9 @@ GtkAssistant.csd .sidebar {
   color: @theme_selected_fg_color;
   text-shadow: 0 -1px alpha(black, 0.2); 
   icon-shadow: none; }
+
+GtkTextView {
+  background-color: mix(@theme_bg_color, @theme_base_color, 0.5); }
 
 /**************
  * Dim labels *
