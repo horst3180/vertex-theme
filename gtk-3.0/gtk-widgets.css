@@ -86,11 +86,18 @@ GtkLabel:insensitive {
   text-shadow: none; }
 
 GtkAssistant .sidebar {
-  background-color: @theme_base_color; }
-GtkAssistant .sidebar GtkLabel {
-  padding: 6px; }
-GtkAssistant .sidebar GtkLabel.highlight {
-  background-color: shade(@theme_bg_color, 0.9); }
+  background-color: @sidebar_bg;
+  border-right: 1px solid @borders;
+  border-top: 1px solid @borders; }
+GtkAssistant.csd .sidebar {
+  border-top-style: none; }
+ GtkAssistant .sidebar GtkLabel {
+  padding: 6px 12px; }
+ GtkAssistant .sidebar GtkLabel.highlight {
+  background-color: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
+  text-shadow: 0 -1px alpha(black, 0.2); 
+  icon-shadow: none; }
 
 /**************
  * Dim labels *
