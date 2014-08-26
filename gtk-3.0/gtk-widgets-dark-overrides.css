@@ -158,6 +158,9 @@ GtkPopover {
                                       @theme_bg_color);
 }
 
+.toolbar {
+    background-color: @metacity_bg_b; }
+
 .search-bar {
   border-style: solid;
   border-color: @borders;
