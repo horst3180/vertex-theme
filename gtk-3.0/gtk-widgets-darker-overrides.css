@@ -140,6 +140,11 @@
     background-color: @dark_insensitive_bg_color;
     text-shadow: none;
     icon-shadow: none; }
+  .header-bar .button.flat:insensitive,
+  .toolbar .button.flat:insensitive,
+  .primary-toolbar .button.flat:insensitive {
+    border-image: none;
+    background-color: transparent; }
     .header-bar .button:insensitive:active, 
     .header-bar .button:insensitive.flat:active,
     .toolbar .button:insensitive:active, 
