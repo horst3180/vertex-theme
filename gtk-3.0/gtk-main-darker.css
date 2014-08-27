@@ -155,7 +155,6 @@
 @define-color dark_window_frame alpha(black, 0.85);
 /*******/
 
-
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-darker-overrides.css");
 

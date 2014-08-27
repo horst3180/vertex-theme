@@ -1,3 +1,14 @@
+.header-bar .button.titlebutton,
+.titlebar .button.titlebutton,
+GtkCalendar.header .button.titlebutton {
+    background: none;
+    border-width: 1px 0px 2px 0px;
+    padding-right: 7px;
+    padding-left: 0px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: none; }
+
 .header-bar .right .button.titlebutton,
 .titlebar .right .button.titlebutton,
 GtkCalendar .right .header .button.titlebutton {

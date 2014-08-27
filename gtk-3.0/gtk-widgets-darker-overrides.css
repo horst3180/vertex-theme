@@ -513,3 +513,22 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
   box-shadow: 0 0 0 1px @dark_window_frame, 0 2px 8px 3px @wm_shadow; }
   .window-frame:backdrop {
     box-shadow: 0 0 0 1px @dark_window_frame, 0 2px 5px 1px @wm_shadow; }
+
+.header-bar .button.titlebutton,
+.titlebar .button.titlebutton,
+GtkCalendar.header .button.titlebutton {
+    border-image: none;
+    background: none; }
+
+.header-bar .button.titlebutton:hover,
+.titlebar .button.titlebutton:hover,
+GtkCalendar.header .button.titlebutton:hover {
+    color: alpha(@dark_fg_color, 0.5); }
+
+.header-bar .button.titlebutton:active,
+.titlebar .button.titlebutton:active,
+GtkCalendar.header .button.titlebutton:active {
+    border-image: none;
+    box-shadow: none;
+    icon-shadow: none;
+    color: @theme_selected_bg_color; }
