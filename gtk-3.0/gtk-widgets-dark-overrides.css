@@ -40,7 +40,7 @@ GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selectio
   background-color: alpha(white, 0.05); }
 .list-row.button:active, .list-row.button:active:hover {
   background-color: alpha(white, 0.02); }
-.list-row.button:focus {
+.list-row.button:selected, .list-row.button:selected:hover, .list-row.button:focus, .list-row.button:focus:hover {
   background-color: alpha(white, 0.05); }
 
 .info, .question, .warning, .error {

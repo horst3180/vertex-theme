@@ -218,7 +218,7 @@ GeditWindow .pane-separator:hover {
 .gedit-document-panel {
   background-color: @sidebar_bg;
 }
-
+/*
 .gedit-document-panel-group-row,
 .gedit-document-panel-group-row:hover {
   border-top: 1px solid shade(@sidebar_bg, 0.90);
@@ -227,11 +227,12 @@ GeditWindow .pane-separator:hover {
 
 .gedit-document-panel-document-row:hover {
   background-color: shade(@sidebar_bg, 0.95);
-}
+}*/
 
-.gedit-document-panel-document-row:selected,
-.gedit-document-panel-document-row:selected:hover {
+.gedit-document-panel-document-row.button:selected,
+.gedit-document-panel-document-row.button:selected:hover {
   background-color: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
 }
 
 /* sidepane close button styling (copied from the gtk tab close button) */
