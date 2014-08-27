@@ -1638,7 +1638,7 @@ GtkScrolledWindow GtkViewport.frame {
  *********/
 .list, .list-row {
   background-color: @sidebar_bg;
-  border-color: red; }
+  border-color: @borders; }
 
 .list-row,
 .grid-child {
