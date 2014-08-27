@@ -978,7 +978,6 @@ GtkTreeView.view.trough:selected {
     padding: 4px; }
     .menu .menuitem:hover {
       color: @theme_selected_fg_color;
-      /*background-color: @theme_selected_bg_color;*/
 	    background-image: linear-gradient(to bottom,
                                       alpha(@theme_selected_bg_color, 0.9),
                                       alpha(@theme_selected_bg_color, 0.7));
@@ -1047,23 +1046,6 @@ GtkTreeView.view.trough:selected {
     icon-shadow: none;
     border: 0; }
   .popover GtkLabel.separator { color: alpha(@theme_fg_color, 0.8); }
-  .pop
-  /*.popover .button.flat,
-  .popover .button.flat:hover {
-    text-shadow: none;
-    transition: none;
-    border-width: 1px;
-    border-image: none; }
-  .popover .button.flat:active, .popover .button.flat:active:hover,
-  .popover .button.flat:checked, .popover .button.flat:checked:hover {
-    color: @theme_fg_color;
-    border-image: none; 
-    border-width: 1px;
-    text-shadow: none;}
-  .popover .button.flat:active:hover,
-  .popover .button.flat:checked:hover {
-    color: @theme_selected_fg_color;
-    background-color: @theme_selected_bg_color; }*/
   .popover.osd {
     background-image: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -1487,8 +1469,6 @@ GtkProgressBar {
 
 .trough {
   padding: 2px;
-	/*border: 1px solid @progressbar_border;
-	border-radius: 2px;*/
   box-shadow: inset 0 1px 1px alpha(black, 0.1);
   background-image: linear-gradient(to bottom,
                                   shade(@trough_bg_color_a, 0.9),
