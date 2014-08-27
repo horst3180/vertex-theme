@@ -1,3 +1,7 @@
+.titlebar .subtitle, GtkCalendar.header .subtitle,
+.header-bar .subtitle {
+  text-shadow: 0 -1px alpha(black, 0.7); }
+
 /****************
  * Text Entries *
  ****************/

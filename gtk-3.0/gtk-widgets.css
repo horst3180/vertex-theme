@@ -83,7 +83,7 @@ GtkLabel:insensitive {
 .titlebar .subtitle, GtkCalendar.header .subtitle,
 .header-bar .subtitle {
   opacity: 0.55;
-  text-shadow: none; }
+  text-shadow: 0 1px @highlight_shadow; }
 
 GtkAssistant .sidebar {
   background-color: @sidebar_bg;
@@ -1682,8 +1682,7 @@ GtkScrolledWindow GtkViewport.frame {
     color: @theme_fg_color;
     box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
   .list-row.button:selected, .list-row.button:selected:hover, .list-row.button:focus, .list-row.button:focus:hover {
-    outline-color: alpha(@theme_fg_color, 0.3);
-background-color: alpha(black, 0.05); }
+    outline-color: alpha(@theme_fg_color, 0.3); }
 /*
 .list-row:selected {
   color: @theme_selected_fg_color;
