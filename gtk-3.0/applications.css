@@ -211,8 +211,8 @@ GeditWindow .pane-separator:hover {
 }
 
 .open-document-selector-listbox-row .path-label {
-  font-size: 80%;
-  color: @insensitive_fg_color;
+  font-size: 90%;
+  color: alpha(@theme_fg_color, 0.5);
 }
 
 .gedit-document-panel {
