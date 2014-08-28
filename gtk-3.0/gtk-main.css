@@ -60,9 +60,11 @@
 @define-color scale_highlight_bg_a #525355;
 @define-color scale_highlight_bg_b #616264;
 
-@define-color progressbar_background_a #53A9FE;
-@define-color progressbar_background_b #3D88FF;
+@define-color progressbar_background_a shade(@theme_selected_bg_color, 1.1);
+@define-color progressbar_background_b @theme_selected_bg_color;
 @define-color progressbar_border #404143;
+/*@define-color progressbar_highlight #66CBFF;*/
+@define-color progressbar_highlight mix (alpha(white, 1.0), @progressbar_background_a, 0.7);
 
 /*@define-color trough_bg_color_a #565759;
 @define-color trough_bg_color_b shade(@trough_bg_color_a, 1.1);*/
