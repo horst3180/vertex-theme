@@ -742,12 +742,12 @@ GtkComboBox {
   padding: 6px 6px 5px 6px; }
   .titlebar .title, GtkCalendar.header .title,
   .header-bar .title {
-    font: Bold;
+    font-weight: Bold;
     padding: 0px 12px;
     text-shadow: 0 1px @wm_title_shadow; }
   .titlebar .subtitle, GtkCalendar.header .subtitle,
   .header-bar .subtitle {
-    font-size: 80%;
+    font-size: 82%;
     padding: 0 12px; }
   .titlebar .title:backdrop, GtkCalendar.header .title:backdrop,
   .header-bar .title:backdrop {
