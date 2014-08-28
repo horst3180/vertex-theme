@@ -882,7 +882,7 @@ GtkTreeView.view {
       color: mix(@theme_selected_fg_color, @theme_selected_bg_color, 0.1); }
       GtkTreeView.view.expander:selected:hover {
         color: @selected_fg_color; }
-    GtkTreeView.view.expander:active {
+    GtkTreeView.view.expander:checked {
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
 GtkIconView.cell:selected,
@@ -1704,7 +1704,7 @@ GtkExpander {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
   GtkExpander:hover {
     color: shade(@theme_fg_color, 1.6); }
-  GtkExpander:active {
+  GtkExpander:checked {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
 /************
