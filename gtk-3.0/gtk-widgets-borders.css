@@ -380,6 +380,49 @@ GtkComboBox.combobox-entry .button:only-child:checked,
     border-color: transparent;
 }
 
+.osd.stack-switcher .button, .osd.stack-switcher .button:first-child, .osd.stack-switcher .button:last-child, .osd.stack-switcher .button:only-child,
+.osd.stack-switcher .button:checked:hover, .osd.stack-switcher .button:first-child:checked:hover, .osd.stack-switcher .button:last-child:checked:hover, .osd.stack-switcher .button:only-child:checked:hover,
+.osd.stack-switcher .button:active, .osd.stack-switcher .button:first-child:focus:active:hover, .osd.stack-switcher .button:last-child:active, .osd.stack-switcher .button:only-child:active {
+  border-image: none;
+  border-color: alpha(black, 0.75);
+  border-style: solid; }
+
+.osd.stack-switcher .button, .osd.stack-switcher .button:checked, .osd.stack-switcher .button:active {
+  border-width: 1px 0 1px 0;
+  box-shadow: none;
+}
+
+.osd.stack-switcher .button {
+  border-width: 1px 0 1px 0;
+  box-shadow: inset -1px 0 alpha(white, 0.05), 
+              inset 1px 0 alpha(black, 0.5),
+              inset 0 1px alpha(white, 0.1),
+              inset 0 -1px alpha(black, 0.1);
+}
+
+.osd.stack-switcher .button:first-child, .osd.stack-switcher .button:first-child:checked, .osd.stack-switcher .button:first-child:active {
+  border-width: 1px 0 1px 1px;
+  box-shadow: none;
+}
+
+.osd.stack-switcher .button:first-child {
+  box-shadow: inset -1px 0 alpha(white, 0.05),
+              inset 0 1px alpha(white, 0.1),
+              inset 0 -1px alpha(black, 0.1);
+}
+
+.osd.stack-switcher .button:last-child, .osd.stack-switcher .button:last-child:checked, .osd.stack-switcher .button:last-child:active {
+  border-width: 1px 1px 1px 0;
+  box-shadow: inset 1px 0 alpha(black, 0.5);
+}
+
+.osd.stack-switcher .button:last-child {
+  border-width: 1px 1px 1px 0;
+  box-shadow: inset 1px 0 alpha(black, 0.5),
+              inset 0 1px alpha(white, 0.1),
+              inset 0 -1px alpha(black, 0.1);
+}
+
 /*Scale trough*/
 .scale.trough {
     border-image: -gtk-scaled(url("borders/scale-trough-border.png"),url("borders/scale-trough-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;

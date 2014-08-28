@@ -195,10 +195,9 @@
       background-image: none;
       background-color: transparent;}
     .osd .button:active, .osd .button:checked {
-      color: shade(@theme_selected_bg_color, 0.6); }
+      background-image: none; }
     .osd .button:insensitive {
-      color: alpha(@theme_selected_fg_color, 0.4);
-      background-color: transparent;  }
+      background-color: transparent; }
   .header-bar .button.suggested-action,
   .toolbar .button.suggested-action,
   .primary-toolbar .button.suggested-action {
@@ -492,7 +491,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
     background-image: linear-gradient(to bottom,
                                       alpha(@progressbar_background_a, 0.9),
                                       alpha(@progressbar_background_b, 0.9));
-    box-shadow: inset 0 1px #66CBFF;
+    box-shadow: inset 0 1px @progressbar_highlight;
 }
 
 /*****************

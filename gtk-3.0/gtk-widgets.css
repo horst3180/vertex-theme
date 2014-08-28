@@ -258,7 +258,7 @@ GtkTextView {
       background-image: linear-gradient(to bottom,
                                         shade(@button_active_gradient_color_a, 1.6),
                                         shade(@button_active_gradient_color_a, 1.7)); }
-  .button.osd, .button.osd:focus {
+  .button.osd, .button.osd:focus, .osd.stack-switcher .button {
     /*padding: 12px;*/
     color: @theme_selected_fg_color;
     text-shadow: 0 -1px @osd_text_shadow;
@@ -266,20 +266,23 @@ GtkTextView {
     background-image: linear-gradient(to bottom, @osd_button_bg_a, @osd_button_bg_b);
 	  box-shadow: inset 0 1px alpha(white, 0.1),
                 inset 0 -1px alpha(black, 0.1); }
-    .button.osd:hover {
+    .button.osd:hover, .osd.stack-switcher .button:hover {
       background-image: linear-gradient(to bottom, shade(@osd_button_bg_a, 1.3), shade(@osd_button_bg_b, 1.3)); }
     .button.osd:active, .button.osd:active:hover,
-    .button.osd:checked, .button.osd:checked:hover {
+    .button.osd:checked, .button.osd:checked:hover,
+    .osd.stack-switcher .button:active, .osd.stack-switcher .button:active:hover,
+    .osd.stack-switcher .button:checked, .osd.stack-switcher .button:checked:hover {
       background-image: linear-gradient(to top, shade(@osd_button_bg_a, 0.5), shade(@osd_button_bg_b, 0.5));
 	    box-shadow: none; }
-    .button.osd:insensitive {
+    .button.osd:insensitive, .osd.stack-switcher .button:insensitive {
       border-style: solid;
       background-image: linear-gradient(to bottom, alpha(@osd_button_bg_a, 0.7));
       background-color: transparent;
       color: alpha(@theme_selected_fg_color, 0.4); }
   .osd.stack-switcher .button {
-    background-color: mix(alpha(black, 0.7), @osd_button_bg_b, 0.5); 
-    outline-color: transparent;}
+    outline-offset: -3px; }
+  .osd.stack-switcher .button:checked, .osd.stack-switcher .button:hover {
+    color: @theme_selected_fg_color; }
   .osd .button {
     padding: 6px;
     color: @theme_selected_fg_color;
@@ -291,7 +294,7 @@ GtkTextView {
     .osd .button:hover {
       color: @theme_selected_bg_color;}
     .osd .button:active, .osd .button:checked {
-      color: shade(@theme_selected_bg_color, 0.6); }
+      color: shade(@theme_selected_bg_color, 0.8); }
     .osd .button:insensitive {
       color: alpha(@theme_selected_fg_color, 0.4); }
   .button.suggested-action {
