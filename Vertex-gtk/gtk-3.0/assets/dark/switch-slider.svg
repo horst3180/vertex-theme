@@ -14,7 +14,7 @@
    width="22"
    height="23"
    id="svg2"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="switch-slider.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -25,16 +25,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1053"
+     inkscape:window-width="815"
+     inkscape:window-height="419"
      id="namedview2574"
      showgrid="true"
-     inkscape:zoom="17.999081"
-     inkscape:cx="12.096104"
-     inkscape:cy="5.2646399"
-     inkscape:window-x="0"
-     inkscape:window-y="22"
-     inkscape:window-maximized="1"
+     inkscape:zoom="8.9995405"
+     inkscape:cx="2.9810457"
+     inkscape:cy="14.860107"
+     inkscape:window-x="702"
+     inkscape:window-y="256"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
      inkscape:snap-bbox="true">
     <inkscape:grid
@@ -111,11 +111,11 @@
     <linearGradient
        id="linearGradient3938">
       <stop
-         style="stop-color:#ffffff;stop-opacity:0;"
+         style="stop-color:#bebebe;stop-opacity:1;"
          offset="0"
          id="stop3940" />
       <stop
-         style="stop-color:#ffffff;stop-opacity:0.54901963;"
+         style="stop-color:#ffffff;stop-opacity:1;"
          offset="1"
          id="stop3942" />
     </linearGradient>
@@ -188,6 +188,15 @@
        id="linearGradient4006"
        xlink:href="#linearGradient3969-0-4"
        inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3938"
+       id="linearGradient4015"
+       gradientUnits="userSpaceOnUse"
+       x1="11"
+       y1="10"
+       x2="11"
+       y2="14" />
   </defs>
   <metadata
      id="metadata7">
@@ -1156,20 +1165,23 @@
      sodipodi:rx="10"
      sodipodi:ry="10"
      d="M 21,11 A 10,10 0 1 1 1,11 10,10 0 1 1 21,11 z" />
-  <path
-     sodipodi:type="arc"
-     style="fill:#eeeeee;fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;opacity:0.5"
-     id="path6387"
-     sodipodi:cx="11"
-     sodipodi:cy="11"
-     sodipodi:rx="3"
-     sodipodi:ry="3"
-     d="m 14,11 a 3,3 0 1 1 -6,0 3,3 0 1 1 6,0 z" />
-  <path
-     style="fill:url(#linearGradient6484);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;opacity:1"
-     d="m 11,8 c -1.6568542,0 -3,1.343146 -3,3 0,1.656854 1.3431458,3 3,3 1.656854,0 3,-1.343146 3,-3 0,-1.656854 -1.343146,-3 -3,-3 z m 0,1 c 1.104569,0 2,0.895431 2,2 0,1.104569 -0.895431,2 -2,2 C 9.8954305,13 9,12.104569 9,11 9,9.895431 9.8954305,9 11,9 z"
-     id="path6387-6"
-     inkscape:connector-curvature="0" />
+  <g
+     id="g4009">
+    <path
+       d="m 14,11 c 0,1.656854 -1.343146,3 -3,3 -1.6568542,0 -3,-1.343146 -3,-3 0,-1.6568542 1.3431458,-3 3,-3 1.656854,0 3,1.3431458 3,3 z"
+       sodipodi:ry="3"
+       sodipodi:rx="3"
+       sodipodi:cy="11"
+       sodipodi:cx="11"
+       id="path6387"
+       style="opacity:0.7;fill:#ffffff;fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6387-6"
+       d="m 11,8 c -1.6568542,0 -3,1.343146 -3,3 0,1.656854 1.3431458,3 3,3 1.656854,0 3,-1.343146 3,-3 0,-1.656854 -1.343146,-3 -3,-3 z m 0,1 c 1.104569,0 2,0.895431 2,2 0,1.104569 -0.895431,2 -2,2 C 9.8954305,13 9,12.104569 9,11 9,9.895431 9.8954305,9 11,9 z"
+       style="fill:url(#linearGradient4015);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
   <path
      style="fill:url(#linearGradient6529);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      d="M 11,15 C 8.790861,15 7,13.209139 7,11 7,8.790861 8.790861,7 11,7 c 2.209139,0 4,1.790861 4,4 0,2.209139 -1.790861,4 -4,4 z m 0,-1 c 1.656854,0 3,-1.343146 3,-3 0,-1.656854 -1.343146,-3 -3,-3 -1.6568542,0 -3,1.343146 -3,3 0,1.656854 1.3431458,3 3,3 z"

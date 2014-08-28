@@ -89,9 +89,9 @@ GtkComboBox.combobox-entry .entry:focus,
 .primary-toolbar .button.raised.default,
 .primary-toolbar .raised .button.default,
 .inline-toolbar.toolbar .button.default { 
-    border-image: -gtk-scaled(url("borders/dark/button-border-default.png"),url("borders/dark/button-border-default@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-image: -gtk-scaled(url("borders/dark/button-border-default.png"),url("borders/dark/button-border-default@2.png")) 3 3 3 3 / 3px 3px 3px 3px stretch;
     border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
+    border-width: 1px 1px 1px 1px;
     border-style: solid;
     border-color: transparent;
 }
