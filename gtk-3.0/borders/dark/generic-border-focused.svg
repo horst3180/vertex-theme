@@ -15,7 +15,7 @@
    id="svg33222"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="entry-border-focused.svg"
+   sodipodi:docname="generic-border-focused.svg"
    inkscape:export-filename="/home/steffen/.local/share/themes/neu2/gtk-3.0/borders/dark/generic-border-focused@2.png"
    inkscape:export-xdpi="180"
    inkscape:export-ydpi="180">
@@ -166,17 +166,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="-0.292537"
-     inkscape:cy="4.9827311"
+     inkscape:zoom="11.313709"
+     inkscape:cx="1.7065679"
+     inkscape:cy="7.2890251"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1118"
      inkscape:window-height="650"
-     inkscape:window-x="221"
-     inkscape:window-y="72"
+     inkscape:window-x="252"
+     inkscape:window-y="239"
      inkscape:window-maximized="0"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
@@ -231,5 +231,14 @@
        width="15"
        id="rect17861-2"
        style="color:#000000;fill:none;stroke:#4080fb;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       ry="0.50010675"
+       rx="0.4945825"
+       y="0.49999997"
+       x="2.5"
+       height="12"
+       width="13.000001"
+       id="rect17861-6"
+       style="color:#000000;fill:none;stroke:#4080fb;stroke-width:0.99999994;stroke-miterlimit:4;stroke-opacity:0.17004047;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
 </svg>
