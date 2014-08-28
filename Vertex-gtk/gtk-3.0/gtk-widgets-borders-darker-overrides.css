@@ -34,11 +34,11 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:focus  {
 .header-bar .button {
     border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
-/*
+
 .primary-toolbar.toolbar .button, .primary-toolbar.toolbar .button:insensitive {
     border-image: none;
 }
-*/
+
 .primary-toolbar.toolbar .button:active,
 .primary-toolbar.toolbar .button:active:hover,
 .toolbar .button:active,
