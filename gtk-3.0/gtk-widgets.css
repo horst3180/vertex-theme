@@ -74,11 +74,10 @@
 .overshoot {
   background-color: alpha(@theme_selected_bg_color, 0.2); }
 
-GtkLabel:insensitive {
-  color: @insensitive_fg_color; }
-
-.button:checked:insensitive GtkLabel {
-  color: alpha(@button_active_text, 0.7); }
+GtkLabel.separator {
+  color: alpha(@theme_fg_color, 0.8);; }
+  GtkLabel:insensitive {
+    color: @insensitive_fg_color; }
 
 .titlebar .subtitle, GtkCalendar.header .subtitle,
 .header-bar .subtitle {
@@ -250,6 +249,8 @@ GtkTextView {
     background-color: @insensitive_bg_color;
     text-shadow: none;
     icon-shadow: none; }
+    .button:insensitive > GtkLabel {
+      color: inherit; }
     .button:insensitive:active, .button:insensitive.flat:active, 
     .primary-toolbar .button:insensitive:active,
     .button:insensitive:checked, .button:insensitive.flat:checked, 
@@ -258,6 +259,11 @@ GtkTextView {
       background-image: linear-gradient(to bottom,
                                         shade(@button_active_gradient_color_a, 1.6),
                                         shade(@button_active_gradient_color_a, 1.7)); }
+      .button:insensitive:active > GtkLabel, .button:insensitive.flat:active > GtkLabel,
+      .primary-toolbar .button:insensitive:active > GtkLabel,
+      .button:insensitive:checked > GtkLabel, .button:insensitive.flat:checked > GtkLabel,
+      .primary-toolbar .button:insensitive:checked > GtkLabel {
+        color: inherit; }
   .button.osd, .button.osd:focus, .osd.stack-switcher .button {
     /*padding: 12px;*/
     color: @theme_selected_fg_color;
@@ -324,6 +330,8 @@ GtkTextView {
       background-image: linear-gradient(to bottom, alpha(@suggested_action_button_a, 0.8));
 	    text-shadow: none;
 	    icon-shadow: none; }
+      .button.suggested-action:insensitive > GtkLabel {
+        color: inherit; }
   .button.destructive-action {
     color: @destructive_action_button_fg;
     background-image: linear-gradient(to bottom,
@@ -351,6 +359,8 @@ GtkTextView {
       background-image: linear-gradient(to bottom, alpha(@destructive_action_button_a, 0.8));
 	    text-shadow: none;
 	    icon-shadow: none; }
+      .button.destructive-action:insensitive > GtkLabel {
+        color: inherit; }
   .button.image-button {
     padding: 8px; }
   .button.text-button {
@@ -440,6 +450,10 @@ GtkTextView {
     background-color: @insensitive_bg_color;
     text-shadow: none;
     icon-shadow: none; }
+    .inline-toolbar GtkToolButton > .button:insensitive > GtkLabel,
+    .inline-toolbar.toolbar GtkToolButton > .button:insensitive > GtkLabel,
+    .inline-toolbar.toolbar .button:insensitive > GtkLabel {
+      color: inherit; }
   .inline-toolbar GtkToolButton > .button:insensitive:active,
   .inline-toolbar.toolbar GtkToolButton > .button:insensitive:active,
   .inline-toolbar.toolbar .button:insensitive:active,
@@ -450,6 +464,13 @@ GtkTextView {
       background-image: linear-gradient(to bottom,
                                         shade(@button_active_gradient_color_a, 1.6),
                                         shade(@button_active_gradient_color_a, 1.7)); }
+    .inline-toolbar GtkToolButton > .button:insensitive:active > GtkLabel,
+    .inline-toolbar.toolbar GtkToolButton > .button:insensitive:active > GtkLabel,
+    .inline-toolbar.toolbar .button:insensitive:active > GtkLabel,
+    .inline-toolbar GtkToolButton > .button:insensitive:checked > GtkLabel,
+    .inline-toolbar.toolbar GtkToolButton > .button:insensitive:checked > GtkLabel,
+    .inline-toolbar.toolbar .button:insensitive:checked > GtkLabel {
+      color: inherit; }
 
 .button.flat, /*.menuitem.button.flat, .menuitem.button.flat:active, .menuitem.button.flat:checked, */
 .button:link, .button:visited, .button:link:hover, .button:link:active, button:link:checked, .button:visited:hover, 
@@ -797,6 +818,9 @@ GtkComboBox {
         background-image: linear-gradient(to bottom, @selection_toolbar_bg_a);
         text-shadow: none;
         icon-shadow: none; }
+        .titlebar.selection-mode .button:insensitive > GtkLabel, GtkCalendar.selection-mode.header .button:insensitive > GtkLabel,
+        .header-bar.selection-mode .button:insensitive > GtkLabel {
+          color: inherit; }
       .titlebar.selection-mode .button.suggested-action, GtkCalendar.selection-mode.header .button.suggested-action,
       .header-bar.selection-mode .button.suggested-action {
         color: @theme_fg_color;
@@ -821,6 +845,9 @@ GtkComboBox {
           background-image: linear-gradient(to bottom, @insenstive_bg_color);
           text-shadow: none;
           icon-shadow: none; }
+          .titlebar.selection-mode .button.suggested-action:insensitive > GtkLabel, GtkCalendar.selection-mode.header .button.suggested-action:insensitive > GtkLabel,
+          .header-bar.selection-mode .button.suggested-action:insensitive > GtkLabel {
+            color: inherit; }
     .titlebar.selection-mode .selection-menu, GtkCalendar.selection-mode.header .selection-menu,
     .header-bar.selection-mode .selection-menu {
       background-image: none;
@@ -1049,7 +1076,6 @@ GtkTreeView.view.trough:selected {
     background-color: transparent;
     icon-shadow: none;
     border: 0; }
-  .popover GtkLabel.separator { color: alpha(@theme_fg_color, 0.8); }
   .popover.osd {
     background-image: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -1845,6 +1871,11 @@ GtkInfoBar {
 .error .button:insensitive,
 .question .button:insensitive {
 	color: @insensitive_fg_color; }
+  .info .button:insensitive > GtkLabel,
+  .question .button:insensitive > GtkLabel,
+  .warning .button:insensitive > GtkLabel,
+  .error .button:insensitive > GtkLabel {
+    color: inherit; }
 
 .info .button:active,
 .warning .button:active,
