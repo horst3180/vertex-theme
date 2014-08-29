@@ -497,7 +497,7 @@ GtkColorButton.button {
 .primary-toolbar .button.text-button,
 .toolbar .button.text-button,
 .action-bar .button.text-button {
-    padding: 4px 19px 4px 19px;
+    padding: 4px 16px 4px 16px;
 }
 
 .header-bar .button.image-button,
@@ -843,16 +843,13 @@ GtkComboBox {
 /************
  * Pathbars *
  ************/
-.path-bar .button {
-  padding-left: 4px;
-  padding-right: 4px; }
-  .path-bar .button:first-child {
-    padding-left: 8px; }
-  .path-bar .button:last-child {
-    padding-right: 8px; }
-  .path-bar .button:only-child {
-    padding-left: 12px;
-    padding-right: 12px; }
+.path-bar .button,
+.path-bar .button:first-child,
+.path-bar .button:last-child,
+.path-bar .button:only-child,
+.path-bar .button.text-button {
+  padding-left: 12px;
+  padding-right: 12px; }
 
 .path-bar .button GtkLabel:last-child {
   padding-left: 2px; }
