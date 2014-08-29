@@ -1006,6 +1006,7 @@ GtkTreeView.view.trough:selected {
   background-color: @theme_base_color; }
   .menu .menuitem {
     text-shadow: none;
+    icon-shadow: none;
     padding: 4px; }
     .menu .menuitem:hover {
       color: @theme_selected_fg_color;
@@ -1016,7 +1017,8 @@ GtkTreeView.view.trough:selected {
 	    border-style: solid;
 	    border-top-color: alpha(@theme_selected_bg_color, 0.95);
 	    border-bottom-color: alpha(@theme_selected_bg_color, 0.85);
-	    text-shadow: 0 -1px alpha(black, 0.2); }
+	    text-shadow: 0 -1px alpha(black, 0.2); 
+      icon-shadow: 0 -1px alpha(black, 0.2); }
     .menu .menuitem:insensitive {
           color: mix (@theme_fg_color, @theme_base_color, 0.6); }
     .menu .menuitem.arrow {
