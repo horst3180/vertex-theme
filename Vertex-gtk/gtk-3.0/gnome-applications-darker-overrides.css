@@ -99,6 +99,22 @@ GeditWindow GeditMenuStackSwitcher.button:active {
     icon-shadow: none;
 }
 
+EphyToolbar.incognito-mode .button,
+EphyToolbar.incognito-mode .title,
+EphyToolbar.incognito-mode .title:backdrop,
+EphyToolbar.incognito-mode .subtitle,
+EphyToolbar.incognito-mode .subtitle:backdrop {
+    color: @theme_fg_color;
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+EphyToolbar.incognito-mode .entry,
+EphyToolbar.incognito-mode .entry.image {
+    color: @theme_fg_color;
+    background-color: @theme_base_color
+}
+
 /*
  * Rhythmbox
  */
