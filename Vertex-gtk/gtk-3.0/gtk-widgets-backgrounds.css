@@ -3,7 +3,8 @@
 .toolbar .button.raised,
 .toolbar .raised .button,
 .toolbar GtkComboBox .button,
-.spinbutton.vertical .button {
+.spinbutton.vertical .button,
+.primary-toolbar .linked .button {
     background-image: linear-gradient(to bottom, 
                                       @button_gradient_color_a, 
                                       @button_gradient_color_b);

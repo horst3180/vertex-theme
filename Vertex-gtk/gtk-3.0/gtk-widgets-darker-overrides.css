@@ -61,6 +61,8 @@
 .toolbar GtkComboBox,
 .header-bar GtkComboBox {
   	color: @dark_fg_color;
+  	text-shadow: 0 -1px @dark_wm_title_shadow;
+    icon-shadow: 0 -1px @dark_wm_title_shadow;
 }
 
 GtkComboBox.combobox-entry .entry:first-child,
