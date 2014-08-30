@@ -512,15 +512,8 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .toolbar .suggested-action.button:active *:insensitive,
 .header-bar .suggested-action.button:insensitive,
 .header-bar .suggested-action.button:active *:insensitive {
-    background-color: @dark_insentitive_bg_color;
-	background-image: none;
-    border: 1px solid @dark_borders;
-}
-
-.primary-toolbar.toolbar .suggested-action.button GtkLabel:insensitive,
-.toolbar .suggested-action.button GtkLabel:insensitive,
-.header-bar .suggested-action.button GtkLabel:insensitive {
-    color: @dark_insensitive_fg_color;
+    background-color: alpha(@dark_suggested_action_button_a, 0.8);
+	  background-image: none;
 }
 
 /******************************
@@ -555,10 +548,12 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 }
 
 .destructive-action.button:insensitive {
-	text-shadow: none;
-	icon-shadow: none;
+    color: alpha(@destructive_action_button_fg, 0.6);
+    background-color: alpha(@destructive_action_button_a, 0.8);
+    background-image: none;
+    text-shadow: none;
+    icon-shadow: none;
 }
-
 
 /*************
  * GtkSwitch *
