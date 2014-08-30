@@ -108,8 +108,12 @@ GtkTextView {
  * Dim labels *
  **************/
 .view.dim-label, .dim-label {
-  color: alpha(currentColor, 0.55);
+  color: alpha(@theme_fg_color, 0.55);
   text-shadow: none; }
+
+.view.dim-label:selected, .dim-label:selected, .view.dim-label:selected:focus, .dim-label:selected:focus {
+    color: alpha(@theme_selected_fg_color, 0.65);
+}
 
 /*********************
  * Spinner Animation *
@@ -287,7 +291,7 @@ GtkTextView {
       color: alpha(@theme_selected_fg_color, 0.4); }
   .osd.stack-switcher .button {
     outline-offset: -3px; }
-  .osd.stack-switcher .button:checked, .osd.stack-switcher .button:hover {
+  .osd.stack-switcher .button:checked, .osd.stack-switcher .button:checked:hover, .osd.stack-switcher .button:active:hover, .osd.stack-switcher .button:hover {
     color: @theme_selected_fg_color; }
   .osd .button {
     padding: 6px;
@@ -299,7 +303,7 @@ GtkTextView {
     icon-shadow: 0 -1px @osd_text_shadow; }
     .osd .button:hover {
       color: @theme_selected_bg_color;}
-    .osd .button:active, .osd .button:checked {
+    .osd .button:active, .osd .button:checked, .osd .button:active:hover, .osd .button:checked:hover {
       color: shade(@theme_selected_bg_color, 0.8); }
     .osd .button:insensitive {
       color: alpha(@theme_selected_fg_color, 0.4); }
