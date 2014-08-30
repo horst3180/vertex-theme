@@ -15,10 +15,10 @@ EphyToolbar .location-entry .button {
 /* Nautilus */
 NautilusNotebook.notebook tab.top:active,
 NautilusNotebook.notebook tab.reorderable-page:active:hover {
-    border-left: 1px solid @borders;
+    /*border-left: 1px solid @borders;
     border-right: 1px solid @borders;
     border-bottom: 1px solid @borders;
-    border-top-width: 0px;
+    border-top-width: 0px;*/
     background-color: @wm_bg_b;
     background-image: linear-gradient(to bottom,
                                       @notebook_tab_gradient_a,
@@ -65,6 +65,15 @@ GtkIconView.content-view.cell.check {
 GtkIconView.content-view.cell.check:active {
     background-image: url("assets/dark/grid-selection-checked.svg");
     background-color: transparent;
+}
+
+/*
+ * Rhythmbox
+ */
+RBSource .toolbar {
+    background-color: @theme_bg_color;
+    border-style: none;
+    background-image: none;
 }
 
 /*

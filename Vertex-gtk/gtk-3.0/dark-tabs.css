@@ -1,0 +1,27 @@
+NemoNotebook.notebook tab.top:active,
+NemoNotebook.notebook tab.top:active:hover,
+GeditWindow .notebook tab.top:active,
+GeditWindow .notebook tab.top:active:hover,
+EphyNotebook.notebook tab.top:active,
+EphyNotebook.notebook tab.top:active:hover {
+    border-image: -gtk-scaled(url("tabs/dark/tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+}
+
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.top:active:hover {
+    border-image: -gtk-scaled(url("tabs/dark/nautilus_tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+    background-color: red;
+}
+
+TerminalWindow .notebook tab.reorderable-page:active {
+    background-image: linear-gradient(to bottom, @metacity_bg_b, shade(@metacity_bg_b, 0.9));
+    border-image: -gtk-scaled(url("tabs/dark/terminal_tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+}
+
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover {
+    background-color: shade(@theme_bg_color, 0.8);
+}

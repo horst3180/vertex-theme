@@ -24,11 +24,11 @@ EphyNotebook.notebook tab.reorderable-page:active:hover {
     background-image: linear-gradient(to bottom,
                                       @dark_notebook_tab_gradient_a,
 									  @dark_notebook_tab_gradient_b);
-    border-left: 1px solid @dark_borders;
+    /*border-left: 1px solid @dark_borders;
     border-right: 1px solid @dark_borders;
     border-bottom: 1px solid @dark_borders;
     border-top-width: 0px;
-    border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;*/
 }
 
 TerminalWindow .notebook .active-page .button,
@@ -67,6 +67,61 @@ EphyNotebook.notebook .active-page .button:active {
                                   @dark_button_active_gradient_color_b);
 }
 
+NemoWindow .notebook tab.reorderable-page:active,
+NemoWindow .notebook tab.reorderable-page:active:hover,
+EmpathyChatWindow .notebook tab.reorderable-page:active,
+EmpathyChatWindow .notebook tab.reorderable-page:active:hover,
+GeditWindow .notebook tab.reorderable-page:active,
+GeditWindow .notebook tab.reorderable-page:active:hover,
+EphyNotebook.notebook tab.reorderable-page:active,
+EphyNotebook.notebook tab.reorderable-page:active:hover {
+    border-image: -gtk-scaled(url("tabs/darker/tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+    border-width: 0px 5px 1px 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+NautilusNotebook.notebook tab.reorderable-page:active,
+NautilusNotebook.notebook tab.reorderable-page:active:hover {
+    border-image: -gtk-scaled(url("tabs/darker/nautilus_tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+    border-width: 0px 5px 1px 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+NautilusNotebook.notebook tab.top,
+NemoWindow .notebook tab.top,
+EmpathyChatWindow .notebook tab.top,
+GeditWindow .notebook tab.top,
+EphyNotebook.notebook tab.top,
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover,
+NautilusNotebook.notebook.header,
+NemoWindow .notebook.header,
+EmpathyChatWindow .notebook.header,
+GeditWindow .notebook.header,
+EphyNotebook.notebook.header {
+    background-color: shade(@theme_base_color, 0.98);
+    box-shadow: inset 0 5px alpha(black, 0.015),
+				        inset 0 4px alpha(black, 0.035),
+				        inset 0 3px alpha(black, 0.07), 
+				        inset 0 2px alpha(black, 0.09), 
+				        inset 0 1px alpha(black, 0.12);
+    border-top-width: 0;
+    border-bottom-width: 1px;
+}
+
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover {
+    background-color: shade(@theme_base_color, 0.95);
+}
+
 /*
  * Empathy
  */
@@ -85,36 +140,8 @@ EmpathyChatWindow .notebook.header.frame.top {
  * GNOME Terminal
  */
 TerminalWindow .notebook tab.reorderable-page:active {
-    background-image: linear-gradient(to bottom,
-                                      @metacity_bg_b,
-									  shade(@dark_notebook_tab_gradient_b, 1.05));
-		border-color: shade(@terminal_bg, 0.7);
-		border-image: none;
-}
-
-TerminalWindow .notebook.header {
-    border-width: 0px;
-    border-top: 1px solid shade(@terminal_bg, 0.7);
-    background-color: @terminal_bg;
-}
-
-TerminalWindow .notebook {
-    border-color: shade(@terminal_bg, 0.7);
-}
-
-TerminalWindow .notebook tab.reorderable-page:active:hover {
-    border-top-style: none;
-}
-
-TerminalWindow .notebook tab.reorderable-page:hover {
-    background-color: alpha(@highlight, 0.06);
-    border-color: shade(@terminal_bg, 0.7);
-}
-
-TerminalWindow .notebook tab.top {
-    border-image: linear-gradient(to bottom,
-                                  shade(@terminal_bg, 0.7),
-                                  @terminal_bg) 0 1 0 1;
+    background-image: linear-gradient(to bottom, @metacity_bg_b, shade(@metacity_bg_b, 0.9));
+    border-image: -gtk-scaled(url("tabs/darker/terminal_tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
 }
 
 TerminalWindow .notebook tab GtkLabel {
@@ -140,9 +167,11 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
 
 NautilusNotebook.notebook.header {
     border-top-color: @dark_borders;
+    border-top-width: 1px;
 }
 
-NautilusNotebook.notebook tab.reorderable-page {
+NautilusNotebook.notebook tab.reorderable-page,
+NautilusNotebook.notebook tab.reorderable-page:hover {
     border-top-width: 1px;
     border-bottom-width: 1px;
 }
