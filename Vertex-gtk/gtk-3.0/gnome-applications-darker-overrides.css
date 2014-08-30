@@ -1,14 +1,32 @@
 /*
  * Nautilus
- */
-/*NautilusWindow .sidebar .view {
-    background-color: @dark_bg_color;
-    color: @dark_fg_color;
-    text-shadow: 0 -1px @dark_wm_title_shadow;
-    icon-shadow: 0 -1px @dark_wm_title_shadow;
-    box-shadow: inset  -1px 0px shade(@dark_bg_color, 0.6);
+ *//*
+NautilusWindow .sidebar .view,
+NautilusWindow .sidebar .view.image {
+	background-color: #56575A;
+	color: alpha(@dark_fg_color, 1.0);
+	text-shadow: 0 -1px alpha(@dark_wm_title_shadow, 0.5);
+  icon-shadow: 0 -1px alpha(@dark_wm_title_shadow, 0.5);
 }
 
+NautilusWindow .sidebar .view.cell:selected,
+NautilusWindow .sidebar .view.cell:selected:hover,
+NautilusWindow .sidebar .view.cell:selected:focus {
+	background-image: linear-gradient(to bottom,
+                                      shade(@theme_selected_bg_color, 0.85),
+                                      shade(@theme_selected_bg_color, 1.05));
+	border-top-color: shade(@theme_selected_bg_color, 1.05);
+	border-bottom-color: shade(@theme_selected_bg_color, 1.05);
+	text-shadow: 0 -1px alpha(@dark_wm_title_shadow, 0.2);
+	color: @theme_selected_fg_color;
+}
+
+NautilusWindow > GtkGrid > .pane-separator,
+NautilusWindow > GtkGrid > .pane-separator:hover {
+    border-width: 0 1px 0 0;
+    border-image: linear-gradient(to bottom, @dark_borders) 0 1 0 0;
+}*/
+/*
 NautilusWindow * {
 	-GtkPaned-handle-size: 0px;
 }

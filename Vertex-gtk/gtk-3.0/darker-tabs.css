@@ -79,6 +79,7 @@ EphyNotebook.notebook tab.reorderable-page:active:hover {
     border-width: 0px 5px 1px 5px;
     border-style: solid;
     border-color: transparent;
+    box-shadow: none;
 }
 
 NautilusNotebook.notebook tab.reorderable-page:active,
@@ -105,11 +106,11 @@ EmpathyChatWindow .notebook.header,
 GeditWindow .notebook.header,
 EphyNotebook.notebook.header {
     background-color: shade(@theme_base_color, 0.98);
-    box-shadow: inset 0 5px alpha(black, 0.015),
-				        inset 0 4px alpha(black, 0.035),
-				        inset 0 3px alpha(black, 0.07), 
-				        inset 0 2px alpha(black, 0.09), 
-				        inset 0 1px alpha(black, 0.12);
+    box-shadow: inset 0 5px alpha(black, 0.005),
+				        inset 0 4px alpha(black, 0.025),
+				        inset 0 3px alpha(black, 0.065), 
+				        inset 0 2px alpha(black, 0.085), 
+				        inset 0 1px alpha(black, 0.11);
     border-top-width: 0;
     border-bottom-width: 1px;
 }
@@ -120,6 +121,26 @@ EmpathyChatWindow .notebook tab.top:hover,
 GeditWindow .notebook tab.top:hover,
 EphyNotebook.notebook tab.top:hover {
     background-color: shade(@theme_base_color, 0.95);
+    border-image: linear-gradient(to bottom,
+                                  @dark_borders 0px,
+                                  @borders 0px,
+                                  alpha(@borders, 0.1)) 0 1 0 1;
+}
+
+NautilusNotebook.notebook tab.top,
+NemoWindow .notebook tab.top,
+EmpathyChatWindow .notebook tab.top,
+GeditWindow .notebook tab.top,
+EphyNotebook.notebook tab.top,
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover {
+    border-image: linear-gradient(to bottom,
+                                  @dark_borders 0px,
+                                  @borders 0px,
+                                  alpha(@borders, 0.2)) 0 1 0 1;
 }
 
 /*
@@ -161,8 +182,8 @@ NautilusWindow > GtkGrid > .pane-separator,
 NautilusWindow > GtkGrid > .pane-separator:hover {
     border-width: 0 1px 0 0;
     border-image: linear-gradient(to bottom,
-                                  @dark_borders,
-                                  shade(@borders, 1.0) 2px) 0 1 0 0;
+                                  @dark_borders 1px,
+                                  shade(@borders, 1.0) 1px) 0 1 0 0;
 }
 
 NautilusNotebook.notebook.header {
@@ -174,6 +195,11 @@ NautilusNotebook.notebook tab.reorderable-page,
 NautilusNotebook.notebook tab.reorderable-page:hover {
     border-top-width: 1px;
     border-bottom-width: 1px;
+}
+
+NautilusWindow .sidebar .view,
+NautilusWindow .sidebar .view.image {
+	background-color: @theme_bg_color;
 }
 
 NautilusWindow .info,
@@ -188,3 +214,7 @@ NautilusWindow .error {
     text-shadow: 0 -1px @dark_wm_title_shadow;
 }
 
+
+.gedit-document-panel {
+    background-color: @theme_bg_color;
+}
