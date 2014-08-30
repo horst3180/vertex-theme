@@ -78,7 +78,12 @@ TerminalWindow .scrollbar.slider.vertical:active {
  * Nautilus
  */
 .nautilus-canvas-item {
-    border-radius: 3px;
+    border-radius: 2px;
+}
+
+.nautilus-canvas-item:selected {
+    color: @theme_selected_fg_color;
+    text-shadow: 0 -1px alpha(black, 0.2);
 }
 
 .nautilus-desktop.nautilus-canvas-item {

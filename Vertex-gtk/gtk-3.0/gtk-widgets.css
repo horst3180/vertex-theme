@@ -2464,13 +2464,15 @@ GtkTreeView:selected:focus {
 
 GtkIconView.cell:selected,
 GtkIconView.cell:selected:focus {
-    border-radius: 4px;
+    border-radius: 2px;
     /* FIXME: this probably needs to be better;
      * see https://bugzilla.gnome.org/show_bug.cgi?id=644157
      */
     outline-color: @treeview_focus_border;
     outline-style: solid;
     outline-offset: 3px;
+    background-image: none;
+    border-style: none;
 }
 
 .view {
@@ -2728,6 +2730,11 @@ GtkInfoBar {
 .dim-label {
     color: alpha(currentColor, 0.55);
     text-shadow: none;
+}
+
+.view.dim-label:selected,
+.dim-label:selected {
+    color: alpha(@theme_selected_fg_color, 0.65);
 }
 
 /*************************
