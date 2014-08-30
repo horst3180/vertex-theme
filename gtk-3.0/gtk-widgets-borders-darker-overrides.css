@@ -29,48 +29,36 @@
 .header-bar .button.flat:active,
 .header-bar .button:insensitive:active,
 .header-bar .button:insensitive.flat:active,
-.header-bar .button.suggested-action:active,
-.header-bar .button.destructive-action:active,
 .toolbar .button:active,
 .toolbar .button:focus:active,
 .toolbar .button:focus:active:hover,
 .toolbar .button.flat:active,
 .toolbar .button:insensitive:active,
 .toolbar .button:insensitive.flat:active,
-.toolbar .button.suggested-action:active,
-.toolbar .button.destructive-action:active,
 .primary-toolbar .button:active,
 .primary-toolbar .button:focus:active,
 .primary-toolbar .button:focus:active:hover,
 .primary-toolbar .button.flat:active,
 .primary-toolbar .button:insensitive:active,
 .primary-toolbar .button:insensitive.flat:active,
-.primary-toolbar .button.suggested-action:active,
-.primary-toolbar .button.destructive-action:active,
 .header-bar .button:checked,
 .header-bar .button:focus:checked,
 .header-bar .button:focus:checked:hover,
 .header-bar .button.flat:checked,
 .header-bar .button:insensitive:checked,
 .header-bar .button:insensitive.flat:checked,
-.header-bar .button.suggested-action:checked,
-.header-bar .button.destructive-action:checked,
 .toolbar .button:checked,
 .toolbar .button:focus:checked,
 .toolbar .button:focus:checked:hover,
 .toolbar .button.flat:checked,
 .toolbar .button:insensitive:checked,
 .toolbar .button:insensitive.flat:checked,
-.toolbar .button.suggested-action:checked,
-.toolbar .button.destructive-action:checked,
 .primary-toolbar .button:checked,
 .primary-toolbar .button:focus:checked,
 .primary-toolbar .button:focus:checked:hover,
 .primary-toolbar .button.flat:checked,
 .primary-toolbar .button:insensitive:checked,
-.primary-toolbar .button:insensitive.flat:checked,
-.primary-toolbar .button.suggested-action:checked,
-.primary-toolbar .button.destructive-action:checked {
+.primary-toolbar .button:insensitive.flat:checked {
   border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
@@ -89,6 +77,25 @@
   border-image: -gtk-scaled(url("borders/dark/button-border-suggested.png"),url("borders/dark/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
+.header-bar .button.suggested-action:active,
+.toolbar .button.suggested-action:active,
+.primary-toolbar .button.suggested-action:active,
+.header-bar .button.suggested-action:checked,
+.toolbar .button.suggested-action:checked,
+.primary-toolbar .button.suggested-action:checked,
+.header-bar .button.suggested-action:active:hover,
+.toolbar .button.suggested-action:active:hover,
+.primary-toolbar .button.suggested-action:active:hover,
+.header-bar .button.suggested-action:checked:hover,
+.toolbar .button.suggested-action:checked:hover,
+.primary-toolbar .button.suggested-action:checked:hover {
+    border-image: -gtk-scaled(url("borders/dark/button-active-border-suggested.png"),url("borders/dark/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 .header-bar .button.destructive-action,
 .header-bar .button.destructive-action:insensitive,
 .toolbar .button.destructive-action,
@@ -97,6 +104,26 @@
 .primary-toolbar .button.destructive-action:insensitive {
   border-image: -gtk-scaled(url("borders/dark/button-border-destructive.png"),url("borders/dark/button-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
+
+.header-bar .button.destructive-action:active,
+.toolbar .button.destructive-action:active,
+.primary-toolbar .button.destructive-action:active,
+.header-bar .button.destructive-action:checked,
+.toolbar .button.destructive-action:checked,
+.primary-toolbar .button.destructive-action:checked,
+.header-bar .button.destructive-action:active:hover,
+.toolbar .button.destructive-action:active:hover,
+.primary-toolbar .button.destructive-action:active:hover,
+.header-bar .button.destructive-action:checked:hover,
+.toolbar .button.destructive-action:checked:hover,
+.primary-toolbar .button.destructive-action:checked:hover {
+    border-image: -gtk-scaled(url("borders/dark/button-active-border-destructive.png"),url("borders/dark/button-active-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 
 /*Selectionmode Buttons*/
 .titlebar.selection-mode .button, 
@@ -116,6 +143,11 @@
 
 .selection-mode.titlebar .titlebutton {
   border-image: none;
+}
+
+.selection-mode.titlebar .titlebutton:active,
+.selection-mode.titlebar .titlebutton:checked {
+  border-width: 1px 0 2px 0;
 }
 
 .titlebar.selection-mode .selection-menu, 

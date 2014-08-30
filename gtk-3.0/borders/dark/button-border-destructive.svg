@@ -14,8 +14,11 @@
    height="16px"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="button-border-suggested.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="button-border-destructive.svg"
+   inkscape:export-filename="/home/steffen/.local/share/themes/Vertex-git/gtk-3.0/borders/dark/button-border-destructive@2.png"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180">
   <defs
      id="defs33224">
     <linearGradient
@@ -32,7 +35,7 @@
     <linearGradient
        id="linearGradient3837">
       <stop
-         style="stop-color:#90b6ff;stop-opacity:1;"
+         style="stop-color:#ff9090;stop-opacity:1;"
          offset="0"
          id="stop3839" />
       <stop
@@ -78,11 +81,11 @@
     <linearGradient
        id="linearGradient3845-3">
       <stop
-         style="stop-color:#2266ec;stop-opacity:0.50785339;"
+         style="stop-color:#ec2222;stop-opacity:0.50785339;"
          offset="0"
          id="stop3847-6" />
       <stop
-         style="stop-color:#2266ec;stop-opacity:0.50980395;"
+         style="stop-color:#ec2222;stop-opacity:0.50980395;"
          offset="1"
          id="stop3849-4" />
     </linearGradient>
@@ -179,19 +182,19 @@
      pagecolor="#eaeaea"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.627417"
-     inkscape:cx="6.9106543"
-     inkscape:cy="8.8563486"
+     inkscape:cx="3.7378258"
+     inkscape:cy="8.8342515"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1176"
      inkscape:window-height="723"
-     inkscape:window-x="0"
-     inkscape:window-y="22"
+     inkscape:window-x="150"
+     inkscape:window-y="152"
      inkscape:window-maximized="0"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
@@ -213,7 +216,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -274,6 +277,8 @@
        height="13.999999"
        width="15"
        id="rect17861-1-0"
-       style="color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:0.57414448;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:0.57414449000000001;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.8"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

@@ -14,11 +14,8 @@
    height="16px"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="button-border-suggested.svg"
-   inkscape:export-filename="/home/steffen/.local/share/themes/Adwaita2/gtk-3.0/borders/button-border-suggested.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="button-border-suggested.svg">
   <defs
      id="defs33224">
     <linearGradient
@@ -35,7 +32,7 @@
     <linearGradient
        id="linearGradient3837">
       <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
+         style="stop-color:#90b6ff;stop-opacity:1;"
          offset="0"
          id="stop3839" />
       <stop
@@ -162,19 +159,19 @@
      pagecolor="#eaeaea"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="22.627417"
-     inkscape:cx="-3.6517532"
+     inkscape:cx="5.0765961"
      inkscape:cy="1.8073779"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1176"
-     inkscape:window-height="1034"
-     inkscape:window-x="249"
-     inkscape:window-y="85"
+     inkscape:window-height="1036"
+     inkscape:window-x="0"
+     inkscape:window-y="21"
      inkscape:window-maximized="0"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
@@ -230,7 +227,7 @@
        height="12"
        width="13.000001"
        id="rect17861-6"
-       style="opacity:0.3;color:#000000;fill:none;stroke:url(#linearGradient3843);stroke-width:0.99999994000000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.75;color:#000000;fill:none;stroke:url(#linearGradient3843);stroke-width:0.99999994000000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
        ry="1.5"
        rx="1.5"

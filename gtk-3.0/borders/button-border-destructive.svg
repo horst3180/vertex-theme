@@ -14,8 +14,11 @@
    height="16px"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="button-border-suggested.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="button-border-destructive.svg"
+   inkscape:export-filename="/home/steffen/.local/share/themes/Vertex-git/gtk-3.0/borders/button-border-destructive@2.png"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180">
   <defs
      id="defs33224">
     <linearGradient
@@ -32,7 +35,7 @@
     <linearGradient
        id="linearGradient3837">
       <stop
-         style="stop-color:#90b6ff;stop-opacity:1;"
+         style="stop-color:#ff9090;stop-opacity:1;"
          offset="0"
          id="stop3839" />
       <stop
@@ -78,11 +81,11 @@
     <linearGradient
        id="linearGradient3845-3">
       <stop
-         style="stop-color:#2266ec;stop-opacity:0.50785339;"
+         style="stop-color:#ec2222;stop-opacity:0.50785339;"
          offset="0"
          id="stop3847-6" />
       <stop
-         style="stop-color:#2266ec;stop-opacity:0.50980395;"
+         style="stop-color:#ec2222;stop-opacity:0.50980395;"
          offset="1"
          id="stop3849-4" />
     </linearGradient>
@@ -159,39 +162,48 @@
        y1="13"
        x1="8"
        gradientUnits="userSpaceOnUse"
-       id="linearGradient3779-7"
-       xlink:href="#linearGradient3845-3-9"
+       id="linearGradient3830-7"
+       xlink:href="#linearGradient3845-3-8-6"
        inkscape:collect="always" />
     <linearGradient
-       id="linearGradient3845-3-9">
+       id="linearGradient3845-3-8-6">
       <stop
-         style="stop-color:#2266ec;stop-opacity:0.50785339;"
+         style="stop-color:#000000;stop-opacity:0.18039216;"
          offset="0"
-         id="stop3847-6-4" />
+         id="stop3847-6-3-9" />
       <stop
-         style="stop-color:#2266ec;stop-opacity:0.50980395;"
+         style="stop-color:#000000;stop-opacity:0.25490198;"
          offset="1"
-         id="stop3849-4-2" />
+         id="stop3849-4-3-7" />
     </linearGradient>
+    <linearGradient
+       y2="14"
+       x2="8"
+       y1="13"
+       x1="8"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3826"
+       xlink:href="#linearGradient3845-3-8-6"
+       inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#eaeaea"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="6.9106543"
-     inkscape:cy="8.8563486"
+     inkscape:zoom="8"
+     inkscape:cx="-10.224826"
+     inkscape:cy="3.8975706"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1176"
-     inkscape:window-height="723"
+     inkscape:window-height="1034"
      inkscape:window-x="0"
-     inkscape:window-y="22"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
@@ -213,7 +225,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -247,7 +259,7 @@
        height="12"
        width="13.000001"
        id="rect17861-6"
-       style="opacity:0.55;color:#000000;fill:none;stroke:url(#linearGradient3843);stroke-width:0.99999994000000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.75;color:#000000;fill:none;stroke:url(#linearGradient3843);stroke-width:0.99999994000000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
        ry="1.5"
        rx="1.5"
@@ -273,7 +285,7 @@
        x="0.5"
        height="13.999999"
        width="15"
-       id="rect17861-1-0"
-       style="color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:0.57414448;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       id="rect17861-1-6-3"
+       style="color:#000000;fill:none;stroke:url(#linearGradient3826);stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
 </svg>

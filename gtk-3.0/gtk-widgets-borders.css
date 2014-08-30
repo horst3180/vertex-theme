@@ -58,8 +58,6 @@
 .button.flat:active,
 .button:insensitive:active,
 .button:insensitive.flat:active,
-.button.suggested-action:active,
-.button.destructive-action:active,
 .inline-toolbar GtkToolButton > .button:active,
 .inline-toolbar GtkToolButton > .button:insensitive,
 .inline-toolbar GtkToolButton > .button:insensitive:active,
@@ -71,8 +69,6 @@
 .button.flat:checked,
 .button:insensitive:checked,
 .button:insensitive.flat:checked,
-.button.suggested-action:checked,
-.button.destructive-action:checked,
 .inline-toolbar GtkToolButton > .button:checked,
 .inline-toolbar GtkToolButton > .button:insensitive,
 .inline-toolbar GtkToolButton > .button:insensitive:checked,
@@ -102,9 +98,31 @@
     border-color: transparent;
 }
 
+.button.suggested-action:active,
+.button.suggested-action:active:hover,
+.button.suggested-action:checked,
+.button.suggested-action:checked:hover {
+    border-image: -gtk-scaled(url("borders/button-active-border-suggested.png"),url("borders/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 .button.destructive-action,
 .button.destructive-action:insensitive {
     border-image: -gtk-scaled(url("borders/button-border-destructive.png"),url("borders/button-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button.destructive-action:active,
+.button.destructive-action:checked,
+.button.destructive-action:active:hover,
+.button.destructive-action:checked:hover {
+    border-image: -gtk-scaled(url("borders/button-active-border-destructive.png"),url("borders/button-active-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;

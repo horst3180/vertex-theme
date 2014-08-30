@@ -225,9 +225,7 @@
       color: @suggested_action_button_fg;
       background-image: linear-gradient(to bottom,
                                       @dark_suggested_action_button_b,
-                                      @dark_suggested_action_button_a);
-      text-shadow: 0 1px @suggested_action_button_shadow;
-      icon-shadow: 0 1px @suggested_action_button_shadow; }
+                                      @dark_suggested_action_button_a); }
     .header-bar .button.suggested-action:insensitive,
     .toolbar .button.suggested-action:insensitive,
     .primary-toolbar .button.suggested-action:insensitive {
@@ -262,9 +260,7 @@
       color: @destructive_action_button_fg;
       background-image: linear-gradient(to bottom,
                                       @destructive_action_button_b,
-                                      @destructive_action_button_a);
-      text-shadow: 0 1px @destructive_action_button_shadow;
-      icon-shadow: 0 1px @destructive_action_button_shadow; }
+                                      @destructive_action_button_a); }
     .header-bar .button.destructive-action:insensitive,
     .toolbar .button.destructive-action:insensitive,
     .primary-toolbar .button.destructive-action:insensitive {

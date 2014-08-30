@@ -326,9 +326,7 @@ GtkTextView {
       color: @suggested_action_button_fg;
       background-image: linear-gradient(to bottom,
                                       @suggested_action_button_b,
-                                      @suggested_action_button_a);
-      text-shadow: 0 1px @suggested_action_button_shadow;
-      icon-shadow: 0 1px @suggested_action_button_shadow; }
+                                      @suggested_action_button_a); }
     .button.suggested-action:insensitive {
       color: alpha(@suggested_action_button_fg, 0.7);
       background-image: linear-gradient(to bottom, alpha(@suggested_action_button_a, 0.8));
@@ -355,9 +353,7 @@ GtkTextView {
       color: @destructive_action_button_fg;
       background-image: linear-gradient(to bottom,
                                       @destructive_action_button_b,
-                                      @destructive_action_button_a);
-      text-shadow: 0 1px @destructive_action_button_shadow;
-      icon-shadow: 0 1px @destructive_action_button_shadow; }
+                                      @destructive_action_button_a); }
     .button.destructive-action:insensitive {
       color: alpha(@destructive_action_button_fg, 0.7);
       background-image: linear-gradient(to bottom, alpha(@destructive_action_button_a, 0.8));
@@ -695,8 +691,11 @@ GtkComboBox {
 .toolbar, .primary-toolbar, .location-bar {
   -GtkWidget-window-dragging: true; }
 
+.toolbar.menubar {
+  padding: 4px; }
+
 .toolbar, .inline-toolbar, .inline-toolbar.toolbar, .search-bar, .location-bar {
-  padding: 1px 5px 1px 5px;
+  padding: 4px;
   background-color: @theme_bg_color; }
   .osd .toolbar, .osd .inline-toolbar, .osd .search-bar, .osd .location-bar,
   .osd.toolbar, .osd.inline-toolbar, .osd.search-bar, .osd.location-bar {
@@ -712,7 +711,7 @@ GtkComboBox {
     background-color: transparent; }
 
 .primary-toolbar {
-  padding: 5px 5px 5px 5px;
+  padding: 4px;
   background-image: linear-gradient(to bottom,
                                       @theme_bg_color,
                                       @wm_bg_b);
