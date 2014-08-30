@@ -2,13 +2,20 @@
     transition: all 200ms ease-out;
 }
 
+.titlebar .titlebutton,
 .titlebar .titlebutton:hover,
 .titlebar .titlebutton:active,
-.titlebar .titlebutton:active:hover {
+.titlebar .titlebutton:active:hover,
+.selection-mode.titlebar .titlebutton,
+.selection-mode.titlebar .titlebutton:backdrop,
+.selection-mode.titlebar .titlebutton:hover,
+.selection-mode.titlebar .titlebutton:active,
+.selection-mode.titlebar .titlebutton:active:hover {
 	background-image: none;
 	box-shadow: none;
 	border-color: transparent;
 	border-image: none;
+	color: transparent;
 }
 
 .titlebar .right .titlebutton:nth-child(2),
@@ -17,7 +24,6 @@
 .titlebar .left .titlebutton:first-child,
 .titlebar .left .titlebutton:nth-child(2),
 .titlebar .left .titlebutton:nth-child(3) {
-	color: transparent;
 	background-position: center;
 	background-repeat: no-repeat;
 }

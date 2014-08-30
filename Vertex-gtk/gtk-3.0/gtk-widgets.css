@@ -2181,6 +2181,7 @@ GtkProgressBar.osd.progressbar {
                                       @suggested_action_button_b);
 
     color: @suggested_action_button_fg;
+    outline-color: alpha(@suggested_action_button_fg, 0.4);
 }
 
 .toolbar .suggested-action.button:hover,
@@ -2199,8 +2200,6 @@ GtkProgressBar.osd.progressbar {
                                       @suggested_action_button_a);
 
     color: @suggested_action_button_fg;
-    text-shadow: 0 1px @suggested_action_button_shadow;
-    icon-shadow: 0 1px @suggested_action_button_shadow;
 }
 
 .toolbar .suggested-action.button,
@@ -2230,6 +2229,7 @@ GtkProgressBar.osd.progressbar {
                                       @destructive_action_button_b);
 
     color: @destructive_action_button_fg;
+    outline-color: alpha(@destructive_action_button_fg, 0.4);
 }
 
 .destructive-action.button:hover {
@@ -2350,6 +2350,7 @@ GtkProgressBar.osd.progressbar {
                                       @selection_toolbar_suggested_button_a,
                                       @selection_toolbar_suggested_button_b);
     color: @theme_text_color;
+    box-shadow: none;
 }
 
 .selection-mode.header-bar .suggested-action.button:hover,
@@ -2848,7 +2849,8 @@ GtkModelButton.button:selected {
     font: Bold;
 }
 
-.titlebar .titlebutton {
+.titlebar .titlebutton,
+.selection-mode.titlebar .titlebutton {
     icon-shadow: 0px 1px @wm_title_shadow;
     color: @wm_title;
     background: none;
@@ -2862,12 +2864,12 @@ GtkModelButton.button:selected {
 }
 
 .selection-mode.titlebar .titlebutton {
-    border-width: 1px 0px 2px 0px;
-    border-color: transparent;
-    box-shadow: none;
+    icon-shadow: 0 -1px @selection_toolbar_button_shadow;
+    color: @selection_toolbar_button_fg;
 }
 
-.titlebar .titlebutton:hover {
+.titlebar .titlebutton:hover,
+.selection-mode.titlebar .titlebutton:hover {
     border-width: 1px 0px 2px 0px;
     background-image: none;
     color: red;
@@ -2875,23 +2877,31 @@ GtkModelButton.button:selected {
     border-image: none;
 }
 
-.titlebar .titlebutton:active {
+.titlebar .titlebutton:active,
+.titlebar .titlebutton:active:hover,
+.selection-mode.titlebar .titlebutton:active,
+.selection-mode.titlebar .titlebutton:active:hover {
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: alpha(@theme_fg_color, 0.6);
+    transition: none;
     icon-shadow: none;
     box-shadow: none;
+    border-width: 1px 0px 2px 0px;
 }
 
-.titlebar .titlebutton:active:hover {
-    background-image: none;
-    color: black;
-    transition: none;
+.selection-mode.titlebar .titlebutton:active,
+.selection-mode.titlebar .titlebutton:active:hover {
+    color: alpha(@selection_toolbar_button_fg, 0.7);
 }
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
     border-image: none;
     icon-shadow: none;
+}
+
+.selection-mode.titlebar .titlebutton:backdrop {
+    color: alpha(@selection_toolbar_button_fg, 0.7);
 }
 
 .window-frame {

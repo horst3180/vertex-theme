@@ -737,10 +737,24 @@ GtkPopover {
 }
 
 .titlebar .titlebutton,
-.titlebar .titlebutton:active:hover {
+.titlebar .titlebutton:active:hover,
+.selection-mode.titlebar .titlebutton,
+.selection-mode.titlebar .titlebutton:hover {
     border-color: transparent;
     border-style: solid;
     border-image: none;
+    border-width: 1px 0px 2px 0px;
+}
+
+.titlebar .titlebutton:hover,
+.selection-mode.titlebar .titlebutton:hover {
+    border-width: 1px 0px 2px 0px;
+}
+
+.titlebar .titlebutton:active,
+.titlebar .titlebutton:active:hover,
+.selection-mode.titlebar .titlebutton:active,
+.selection-mode.titlebar .titlebutton:active:hover {
     border-width: 1px 0px 2px 0px;
 }
 

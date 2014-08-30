@@ -5,7 +5,7 @@ GtkComboBox {
 
 .button:active,
 GtkComboBox:active {
-    text-shadow: 0 1px @button_active_text_shadow;
+    text-shadow: 0 -1px @button_active_text_shadow;
 }
 
 .button:active:insensitive,
@@ -24,8 +24,8 @@ GtkComboBox:active:insensitive {
 .toolbar .button.raised:active,
 .toolbar .raised .button:active,
 .inline-toolbar .button:active {
-    text-shadow: 0 1px @button_active_text_shadow;
-    icon-shadow: 0 1px @button_active_text_shadow;
+    text-shadow: 0 -1px @button_active_text_shadow;
+    icon-shadow: 0 -1px @button_active_text_shadow;
 }
 
 .toolbar .button.raised:insensitive,
@@ -60,7 +60,7 @@ GtkTreeMenu .menuitem,
 }
 
 .spinbutton.vertical .button:active {
-    icon-shadow: 0 1px @button_active_text_shadow;
+    icon-shadow: 0 -1px @button_active_text_shadow;
 }
 
 GtkColorSwatch,
