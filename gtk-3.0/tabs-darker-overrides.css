@@ -65,6 +65,8 @@ EphyNotebook.notebook .active-page .button:active {
 
 NemoNotebook.notebook tab.top:active,
 NemoNotebook.notebook tab.top:active:hover,
+EmpathyChatWindow .notebook tab.top:active,
+EmpathyChatWindow .notebook tab.top:active:hover,
 GeditWindow .notebook tab.top:active,
 GeditWindow .notebook tab.top:active:hover,
 EphyNotebook.notebook tab.top:active,
