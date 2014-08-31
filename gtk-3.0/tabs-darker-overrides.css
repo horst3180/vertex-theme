@@ -106,10 +106,10 @@ GeditWindow .notebook.header.top,
 EphyNotebook.notebook.header.top {
   background-color: shade(@theme_base_color, 0.98);
     box-shadow: inset 0 5px alpha(black, 0.005),
-				        inset 0 4px alpha(black, 0.025),
-				        inset 0 3px alpha(black, 0.065), 
-				        inset 0 2px alpha(black, 0.085), 
-				        inset 0 1px alpha(black, 0.11),
+				        inset 0 4px alpha(black, 0.020),
+				        inset 0 3px alpha(black, 0.050), 
+				        inset 0 2px alpha(black, 0.075), 
+				        inset 0 1px alpha(black, 0.09),
               inset 0 -1px alpha(@borders, 0.5);
   border-bottom-width: 0px;
 }
@@ -140,10 +140,10 @@ NautilusNotebook.notebook tab.top,
 NautilusNotebook.notebook.header.top,
 NautilusNotebook.notebook tab.top:hover {
     box-shadow: inset 0 6px alpha(black, 0.005),
-				        inset 0 5px alpha(black, 0.025),
-				        inset 0 4px alpha(black, 0.065), 
-				        inset 0 3px alpha(black, 0.085), 
-				        inset 0 2px alpha(black, 0.11),
+				        inset 0 5px alpha(black, 0.020),
+				        inset 0 4px alpha(black, 0.050), 
+				        inset 0 3px alpha(black, 0.075), 
+				        inset 0 2px alpha(black, 0.09),
               inset 0 -1px alpha(@borders, 0.5),
               inset 0 1px @dark_borders;
 }
@@ -185,12 +185,7 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
     border-width: 0 1px 0 0;
     border-image: linear-gradient(to bottom,
                                   @dark_borders 1px,
-                                  shade(@borders, 1.0) 1px) 0 1 0 0;
-}
-
-NautilusWindow .sidebar .view,
-NautilusWindow .sidebar .view.image {
-	background-color: @theme_bg_color;
+                                  shade(@borders, 0.95) 1px) 0 1 0 0;
 }
 
 NautilusWindow .info, NautilusWindow .question, NautilusWindow .warning, NautilusWindow .error {
@@ -230,8 +225,4 @@ NautilusWindow .question .button,
 NautilusWindow .question .button:insensitive {
     border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
   background-color: transparent;
-}
-
-.gedit-document-panel {
-    background-color: @theme_bg_color;
 }
