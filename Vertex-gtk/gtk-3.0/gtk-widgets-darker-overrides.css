@@ -232,6 +232,26 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
     background-color: @theme_selected_bg_color;
 }
 
+.primary-toolbar.toolbar .entry.progressbar,
+.primary-toolbar.toolbar .entry.progressbar:focus,
+.toolbar .entry.progressbar,
+.toolbar .entry.progressbar:focus,
+.header-bar .entry.progressbar,
+.header-bar .entry.progressbar:focus {
+    margin-left: 2px;
+    margin-right: 2px;
+    border-image: none;
+    border-style: none;
+    background-color: transparent;
+    background-image: linear-gradient(to top, 
+                                      transparent 2px,
+                                      @highlight 2px,
+                                      @highlight 3px,
+                                      shade(@theme_selected_bg_color, 0.9) 3px,
+                                      shade(@theme_selected_bg_color, 0.9) 5px,
+                                      transparent 5px);
+}
+
 .inline-toolbar.toolbar .button {
     color: @theme_fg_color;
     background-image: linear-gradient(to bottom, 
