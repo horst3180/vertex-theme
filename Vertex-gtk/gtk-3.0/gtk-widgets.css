@@ -1583,7 +1583,7 @@ GtkCheckButton:selected:focus {
 .toolbar {
     border-style: none;
     border-color: @borders;
-    padding: 3px 5px 3px 5px;
+    padding: 4px 5px 4px 5px;
     background-color: @theme_bg_color;
 }
 
@@ -1663,7 +1663,7 @@ GtkCheckButton:selected:focus {
     background-image: linear-gradient(to bottom,
                                       shade(@theme_bg_color, 1.00),
                                       shade(@theme_bg_color, 0.96));
-    padding: 4px 6px 3px 6px;
+    padding: 4px 5px 4px 5px;
 }
 
 .action-bar .button.text-button {
@@ -1780,7 +1780,7 @@ GtkMessageDialog {
 				        inset 0 2px alpha(black, 0.025), 
 				        inset 0 1px alpha(black, 0.03);
     background-color: shade(@theme_bg_color, 1.01);
-    padding: 5px 4px 5px 5px;
+    padding: 4px 5px 4px 5px;
 }
 
 .search-bar .button.close-button {
@@ -1801,8 +1801,7 @@ GtkMessageDialog {
     border-style: solid;
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding: 4px 5px 4px 5px;
     background-image: linear-gradient(to bottom,
                                       @theme_bg_color,
                                       @wm_bg_b

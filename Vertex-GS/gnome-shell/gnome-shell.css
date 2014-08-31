@@ -256,7 +256,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .popup-inactive-menu-item, .popup-inactive-menu-item:insensitive {
-    color: white;
+    color: #D4D4D4;
 }
 
 .popup-menu-icon {
