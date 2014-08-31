@@ -30,7 +30,7 @@ GeditWindow .notebook tab.top:active,
 GeditWindow .notebook tab.top:active:hover,
 EphyNotebook.notebook tab.top:active,
 EphyNotebook.notebook tab.top:active:hover {
-    border-image: -gtk-scaled(url("tabs/tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+    border-image: -gtk-scaled(url("tabs/tab_active.png"),url("tabs/tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
     border-width: 0px 5px 1px 5px;
     border-style: solid;
     border-color: transparent;
@@ -43,7 +43,7 @@ EphyNotebook.notebook tab.top:active:hover {
 
 NautilusNotebook.notebook tab.top:active,
 NautilusNotebook.notebook tab.top:active:hover {
-    border-image: -gtk-scaled(url("tabs/nautilus_tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+    border-image: -gtk-scaled(url("tabs/nautilus_tab_active.png"),url("tabs/nautilus_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
     border-width: 0px 5px 1px 5px;
     border-style: solid;
     border-color: transparent;
@@ -96,7 +96,7 @@ EphyNotebook.notebook tab.top:hover {
  */
 TerminalWindow .notebook tab.reorderable-page:active {
     background-image: linear-gradient(to bottom, @metacity_bg_b, shade(@metacity_bg_b, 0.99));
-    border-image: -gtk-scaled(url("tabs/terminal_tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+    border-image: -gtk-scaled(url("tabs/terminal_tab_active.png"),url("tabs/terminal_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
     border-width: 0px 5px 1px 5px;
     border-style: solid;
     border-color: transparent;
@@ -138,8 +138,8 @@ TerminalWindow .notebook tab GtkLabel,
 TerminalWindow .notebook tab .prelight-page GtkLabel,
 TerminalWindow .notebook tab .button,
 TerminalWindow .notebook .prelight-page .button {
-    text-shadow: 0 -1px black;
-    icon-shadow: 0 -1px black;
+    text-shadow: 0 -1px shade(@terminal_bg, 0.5);
+    icon-shadow: 0 -1px shade(@terminal_bg, 0.5);
     color: alpha(@theme_selected_fg_color, 0.5);
 }
 
