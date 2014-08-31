@@ -107,10 +107,10 @@ GeditWindow .notebook.header,
 EphyNotebook.notebook.header {
     background-color: shade(@theme_base_color, 0.98);
     box-shadow: inset 0 5px alpha(black, 0.005),
-				        inset 0 4px alpha(black, 0.025),
-				        inset 0 3px alpha(black, 0.065), 
-				        inset 0 2px alpha(black, 0.085), 
-				        inset 0 1px alpha(black, 0.11);
+				        inset 0 4px alpha(black, 0.020),
+				        inset 0 3px alpha(black, 0.050), 
+				        inset 0 2px alpha(black, 0.075), 
+				        inset 0 1px alpha(black, 0.09);
     border-top-width: 0;
     border-bottom-width: 1px;
 }
@@ -183,7 +183,7 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
     border-width: 0 1px 0 0;
     border-image: linear-gradient(to bottom,
                                   @dark_borders 1px,
-                                  shade(@borders, 1.0) 1px) 0 1 0 0;
+                                  shade(@borders, 0.95) 1px) 0 1 0 0;
 }
 
 NautilusNotebook.notebook.header {
@@ -197,11 +197,6 @@ NautilusNotebook.notebook tab.reorderable-page:hover {
     border-bottom-width: 1px;
 }
 
-NautilusWindow .sidebar .view,
-NautilusWindow .sidebar .view.image {
-	background-color: @theme_bg_color;
-}
-
 NautilusWindow .info,
 NautilusWindow .question,
 NautilusWindow .warning,
@@ -212,8 +207,4 @@ NautilusWindow .error {
                                       shade(@dark_wm_bg_b, 0.9));
     color: @dark_fg_color;
     text-shadow: 0 -1px @dark_wm_title_shadow;
-}
-
-.gedit-document-panel {
-    background-color: @theme_bg_color;
 }
