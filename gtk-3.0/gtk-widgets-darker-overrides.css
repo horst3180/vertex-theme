@@ -11,12 +11,35 @@
   color: @dark_fg_color;
   background-color: @dark_entry_bg_color;
   box-shadow: inset 0 1px alpha(black,0.2); }
+  .header-bar .entry.flat, 
+  .header-bar .entry.flat:focus,
+  .toolbar .entry.flat, 
+  .toolbar .entry.flat:focus,
+  .primary-toolbar .entry.flat, 
+  .primary-toolbar .entry.flat:focus {
+    background-color: @dark_entry_bg_color;
+    border: none;
+    border-radius: 0; }
   .header-bar .entry:insensitive,
   .toolbar .entry:insensitive,
   .primary-toolbar .entry:insensitive {
     color: @dark_insensitive_fg_color;
     background-color: @dark_insensitive_bg_color;
     /*box-shadow: none;*/ }
+  .header-bar .entry.progressbar, 
+  .header-bar .entry.progressbar:focus,
+  .toolbar .entry.progressbar, 
+  .toolbar .entry.progressbar:focus,
+  .primary-toolbar .entry.progressbar, 
+  .primary-toolbar .entry.progressbar:focus {
+    border-radius: 0;
+    border-width: 0 0 2px;
+    border-color: @theme_selected_bg_color;
+    border-style: solid;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-image: none; }
   .header-bar .linked .entry,
   .toolbar .linked .entry,
   .primary-toolbar .linked .entry {  
