@@ -156,26 +156,6 @@ GtkModelButton.button.radio:active:insensitive,
     background-image: -gtk-scaled(url("assets/dark/radio-mixed-insensitive.png"),url("assets/dark/radio-mixed-insensitive@2.png"));
 }
 
-.sidebar .view.radio:active,
-.sidebar .view.radio:active:focus,
-.sidebar .view.radio:active:hover {
-    background-image: url("assets/dark/sidebar-radio-checked-dark.svg");
-}
-
-.sidebar .view.radio:hover {
-    background-image: url("assets/dark/sidebar-radio-prelight.svg");
-}
-
-.sidebar .view.radio:active:selected,
-.sidebar .view.radio:active:selected:focus {
-    background-image: url("assets/dark/sidebar-radio-selected-dark.svg");
-}
-
-.sidebar .view.radio:selected:hover,
-.sidebar .view.radio:selected:focus {
-    background-image: url("assets/dark/sidebar-radio-selected-prelight.svg");    
-}
-
 /*********************
  * GtkScale's slider *
  *********************/
