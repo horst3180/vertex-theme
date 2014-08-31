@@ -71,7 +71,7 @@ GeditWindow .notebook tab.top:active,
 GeditWindow .notebook tab.top:active:hover,
 EphyNotebook.notebook tab.top:active,
 EphyNotebook.notebook tab.top:active:hover {
-  border-image: -gtk-scaled(url("tabs/darker/tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+  border-image: -gtk-scaled(url("tabs/darker/tab_active.png"),url("tabs/darker/tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
   border-width: 0px 5px 1px 5px;
   border-style: solid;
   border-color: transparent;
@@ -81,7 +81,7 @@ EphyNotebook.notebook tab.top:active:hover {
 
 NautilusNotebook.notebook tab.top:active,
 NautilusNotebook.notebook tab.top:active:hover {
-  border-image: -gtk-scaled(url("tabs/darker/nautilus_tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+  border-image: -gtk-scaled(url("tabs/darker/nautilus_tab_active.png"),url("tabs/darker/nautilus_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
   border-width: 0px 5px 1px 5px;
   border-style: solid;
   border-color: transparent;
@@ -165,7 +165,7 @@ EmpathyChatWindow .notebook.header.frame.top {
  */
 TerminalWindow .notebook tab.top.reorderable-page:active {
     background-image: linear-gradient(to bottom, @metacity_bg_b, shade(@metacity_bg_b, 0.9));
-    border-image: -gtk-scaled(url("tabs/darker/terminal_tab_active.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+    border-image: -gtk-scaled(url("tabs/darker/terminal_tab_active.png"),url("tabs/darker/terminal_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
 }
 
 TerminalWindow .notebook tab GtkLabel {
