@@ -537,17 +537,18 @@ GtkColorButton.button {
 /*********
  * Links *
  *********/
-*:link {
+*:link, .button:link, .button:visited {
   color: @link_color; }
-  *:link:hover, *:link:active, *:link:visited {
+  *:link:hover, .button:hover:link, .button:hover:visited, *:link:active, .button:active:link, .button:active:visited, *:link:visited, .button:visited {
     color: shade(@link_color, 0.8); }
+  *:link:selected, .button:selected:link, .button:selected:visited, .titlebar.selection-mode .subtitle:link, GtkCalendar.selection-mode.header .subtitle:link,
+  .header-bar.selection-mode .subtitle:link, *:selected *:link, *:selected .button:link, *:selected .button:visited {
+    color: #ffffff; }
 
 .button:link, .button:visited {
-  color: @theme_selected_bg_color;
   text-shadow: none; }
   .button:link:hover, .button:link:active, .button:link:checked, .button:visited:hover, .button:visited:active,
   .button:visited:checked {
-    color: shade(@theme_selected_bg_color, 0.8);
     text-shadow: none; }
 
 /*****************
