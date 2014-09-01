@@ -543,7 +543,7 @@ GtkColorButton.button {
     color: shade(@link_color, 0.8); }
   *:link:selected, .button:selected:link, .button:selected:visited, .titlebar.selection-mode .subtitle:link, GtkCalendar.selection-mode.header .subtitle:link,
   .header-bar.selection-mode .subtitle:link, *:selected *:link, *:selected .button:link, *:selected .button:visited {
-    color: #ffffff; }
+    color: @theme_selected_fg_color; }
 
 .button:link, .button:visited {
   text-shadow: none; }
