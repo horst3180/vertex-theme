@@ -1321,6 +1321,7 @@ GtkTreeView.view.trough:selected {
     .notebook tab .active-page GtkLabel, .notebook tab GtkLabel.active-page {
       color: @theme_fg_color; }
     .notebook tab .button {
+      padding: 0;
       border: 1px solid transparent;
       transition: none;
       color: mix (@theme_fg_color, @theme_bg_color, 0.65);

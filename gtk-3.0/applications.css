@@ -106,11 +106,6 @@ NautilusNotebook.notebook {
   background-color: @theme_base_color;
 }
 
-NautilusNotebook.notebook tab.top {
-  padding: 2px 20px 0px;
-  background-color: transparent;
-}
-
 NautilusNotebook .frame {
   border-width: 0;
 }
