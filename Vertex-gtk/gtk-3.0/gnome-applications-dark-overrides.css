@@ -58,12 +58,12 @@ TerminalWindow .notebook tab.reorderable-page:active {
 }
 
 GtkIconView.content-view.cell.check {
-    background-image: url("assets/dark/grid-selection-unchecked.svg");
+    background-image: url("assets/grid-selection-unchecked-dark.svg");
     background-color: transparent;
 }
 
 GtkIconView.content-view.cell.check:active {
-    background-image: url("assets/dark/grid-selection-checked.svg");
+    background-image: url("assets/grid-selection-checked-dark.svg");
     background-color: transparent;
 }
 

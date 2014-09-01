@@ -63,15 +63,15 @@ TerminalWindow .scrollbar.trough {
 }
 
 TerminalWindow .scrollbar.slider.vertical {
-    border-image: url("assets/dark/scrollbar-slider.svg") 8 7 8 8;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-dark.png"),url("assets/scrollbar-slider-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
 }
 
 TerminalWindow .scrollbar.slider.vertical:hover {
-    border-image: url("assets/dark/scrollbar-slider-hover.svg") 8 7 8 8;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"),url("assets/scrollbar-slider-hover-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
 }
 
 TerminalWindow .scrollbar.slider.vertical:active {
-    border-image: url("assets/dark/scrollbar-slider-active.svg") 8 7 8 8;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"),url("assets/scrollbar-slider-active-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
 }
 
 /*

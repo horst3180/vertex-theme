@@ -193,7 +193,7 @@ EmpathyRosterWindow.background .button {
     background-image: linear-gradient(to bottom, 
                                       @dark_button_gradient_color_a, 
                                       @dark_button_gradient_color_b);
-    border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/dark/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     text-shadow: 0 -1px @dark_wm_title_shadow;
     icon-shadow: 0 -1px @dark_wm_title_shadow;
 }
@@ -209,7 +209,7 @@ EmpathyRosterWindow.background .button:active {
     background-image: linear-gradient(to bottom,
                                   @dark_button_active_gradient_color_a,
                                   @dark_button_active_gradient_color_b);
-    border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 EmpathyRosterWindow.background .button:insensitive {
@@ -238,12 +238,12 @@ EmpathyPresenceChooser.combobox-entry .button,
 EmpathyPresenceChooser.combobox-entry .entry {
     color: @dark_fg_color;
     background-color: @dark_entry_bg_color;
-    border-image: -gtk-scaled(url("borders/dark/generic-border.png"),url("borders/dark/generic-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/generic-border-dark.png"),url("borders/generic-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 EmpathyPresenceChooser.combobox-entry .entry:active,
 EmpathyPresenceChooser.combobox-entry .entry:focus {
-    border-image: -gtk-scaled(url("borders/dark/generic-border-focused.png"),url("borders/dark/generic-border-focused@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/generic-border-focused-dark.png"),url("borders/generic-border-focused-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 EmpathyPresenceChooser.combobox-entry .button:insensitive, 

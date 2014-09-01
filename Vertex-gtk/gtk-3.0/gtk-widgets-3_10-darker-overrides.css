@@ -35,16 +35,16 @@ NemoStatusBar.toolbar .button:active {
 }
 
 NemoStatusBar.toolbar .scale.slider {
-    background-image: -gtk-scaled(url("assets/slider.svg"));
+    background-image: -gtk-scaled(url("assets/slider.png"),url("assets/slider@2.png"));
 }
 
 NemoStatusBar.toolbar .scale.slider:hover {
-    background-image: -gtk-scaled(url("assets/slider_hover.svg"));
+    background-image: -gtk-scaled(url("assets/slider-hover.png"),url("assets/slider-hover@2.png"));
 }
 
 NemoStatusBar.toolbar .scale.slider:active,
 NemoStatusBar.toolbar .scale.slider:active:hover {
-    background-image: -gtk-scaled(url("assets/slider_active.svg"));
+    background-image: -gtk-scaled(url("assets/slider-active.png"),url("assets/slider-active@2.png"));
 }
 
 NemoStatusBar.toolbar .scale.highlight {
@@ -89,7 +89,7 @@ EphyToolbar .button {
 	color: @dark_fg_color;
 	text-shadow: 0 -1px @dark_wm_title_shadow;
     icon-shadow: 0 -1px @dark_wm_title_shadow;
-    border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 EphyToolbar  .button:hover {
@@ -101,7 +101,7 @@ EphyToolbar  .button:hover {
 
 EphyToolbar .button:active,
 EphyToolbar .button:active:hover {
-    border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     background-image: linear-gradient(to bottom,
                                   @dark_button_active_gradient_color_a,
                                   @dark_button_active_gradient_color_b);
@@ -111,48 +111,48 @@ EphyToolbar  .button:insensitive {
     background-image: none;
 	background-color: @dark_insensitive_bg_color;
 	color: @dark_insensitive_fg_color;
-    border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 	icon-shadow: none;
 	text-shadow: none;
 }
 
 EphyToolbar .linked .button:first-child,
 EphyToolbar .linked .button:insensitive:first-child {
-    border-image: -gtk-scaled(url("borders/dark/linked/left-button-border.png"),url("borders/dark/linked/left-button-border@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/left-button-border-dark.png"),url("borders/left-button-border-dark@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
 }
 
 EphyToolbar .linked .button:active:hover:first-child {
-    border-image: -gtk-scaled(url("borders/dark/linked/left-button-active-border.png"),url("borders/dark/linked/left-button-active-border@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/left-button-active-border-dark.png"),url("borders/left-button-active-border-dark@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
 }
 
 EphyToolbar .linked .button:last-child,
 EphyToolbar .linked .button:insensitive:last-child {
-    border-image: -gtk-scaled(url("borders/dark/linked/right-button-border.png"),url("borders/dark/linked/right-button-border@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
+    border-image: -gtk-scaled(url("borders/right-button-border-dark.png"),url("borders/right-button-border-dark@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
 }
 
 EphyToolbar .linked .button:active:hover:last-child {
-    border-image: -gtk-scaled(url("borders/dark/linked/right-button-active-border.png"),url("borders/dark/linked/right-button-active-border@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
+    border-image: -gtk-scaled(url("borders/right-button-active-border-dark.png"),url("borders/right-button-active-border-dark@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
 }
 
 
 EphyToolbar .entry:first-child {
-    border-image: -gtk-scaled(url("borders/dark/generic-border.png"),url("borders/dark/generic-border@2.png")) 2 2 3 2 / 2px 0 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/generic-border-dark.png"),url("borders/generic-border-dark@2.png")) 2 2 3 2 / 2px 0 3px 2px stretch;
     color: @dark_fg_color;
     background-color: @dark_entry_bg_color;
     box-shadow: inset 0 1px alpha(black,0.2);
 }
 
 EphyToolbar .entry:last-child {
-    border-image: -gtk-scaled(url("borders/dark/generic-border.png"),url("borders/dark/generic-border@2.png")) 2 2 3 2 / 2px 2px 3px 0 stretch;
+    border-image: -gtk-scaled(url("borders/generic-border-dark.png"),url("borders/generic-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 0 stretch;
     color: @dark_fg_color;
     background-color: @dark_entry_bg_color;
     box-shadow: inset 0 1px alpha(black,0.2);
 }
 
 EphyToolbar .entry:focus:first-child {
-    border-image: -gtk-scaled(url("borders/dark/generic-border-focused.png"),url("borders/dark/generic-border-focused@2.png")) 2 2 3 2 / 2px 0 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/generic-border-focused-dark.png"),url("borders/generic-border-focused-dark@2.png")) 2 2 3 2 / 2px 0 3px 2px stretch;
 }
 
 EphyToolbar .entry:focus:last-child {
-    border-image: -gtk-scaled(url("borders/dark/generic-border-focused.png"),url("borders/dark/generic-border-focused@2.png")) 2 2 3 2 / 2px 2px 3px 0 stretch;
+    border-image: -gtk-scaled(url("borders/generic-border-focused-dark.png"),url("borders/generic-border-focused-dark@2.png")) 2 2 3 2 / 2px 2px 3px 0 stretch;
 }

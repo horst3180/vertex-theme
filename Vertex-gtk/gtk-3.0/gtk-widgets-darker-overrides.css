@@ -387,13 +387,13 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .primary-toolbar.toolbar .scale.slider,
 .toolbar .scale.slider,
 .header-bar .scale.slider {
-    background-image: -gtk-scaled(url("assets/dark/slider.svg"));
+    background-image: -gtk-scaled(url("assets/slider-dark.png"),url("assets/slider-dark@2.png"));
 }
 
 .primary-toolbar.toolbar .scale.slider:hover,
 .toolbar .scale.slider:hover,
 .header-bar .scale.slider:hover {
-    background-image: -gtk-scaled(url("assets/dark/slider_hover.svg"));
+    background-image: -gtk-scaled(url("assets/slider-hover-dark.png"),url("assets/slider-hover-dark@2.png"));
 }
 
 .primary-toolbar.toolbar .scale.slider:active,
@@ -402,7 +402,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .toolbar .scale.slider:active:hover,
 .header-bar .scale.slider:active,
 .header-bar .scale.slider:active:hover {
-    background-image: -gtk-scaled(url("assets/dark/slider_active.svg"));
+    background-image: -gtk-scaled(url("assets/slider-active-dark.png"),url("assets/slider-active-dark@2.png"));
 }
 
 .primary-toolbar.toolbar .scale.slider:insensitive,
@@ -411,7 +411,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .toolbar .scale.slider:insensitive:hover,
 .header-bar .scale.slider:insensitive,
 .header-bar .scale.slider:insensitive:hover {
-    background-image: -gtk-scaled(url("assets/dark/slider_insensitive.svg"));
+    background-image: -gtk-scaled(url("assets/slider-insensitive-dark.png"),url("assets/slider-insensitive-dark@2.png"));
 }
 
 .primary-toolbar.toolbar .scale.trough,
@@ -581,7 +581,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .primary-toolbar.toolbar GtkSwitch.trough,
 .toolbar GtkSwitch.trough,
 .header-bar GtkSwitch.trough {
-    background-image: url("assets/dark/switch-off.svg");
+    background-image: -gtk-scaled(url("assets/switch-off-dark.png"),url("assets/switch-off-dark@2.png"));
 	border-color: transparent;
 	border-image: none;
 	border-style: none;
@@ -592,31 +592,31 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .primary-toolbar.toolbar GtkSwitch.trough:active,
 .toolbar GtkSwitch.trough:active,
 .header-bar GtkSwitch.trough:active {
-    background-image: url("assets/dark/switch-on.svg");
+    background-image: -gtk-scaled(url("assets/switch-on-dark.png"),url("assets/switch-on-dark@2.png"));
 }
 
 .primary-toolbar.toolbar GtkSwitch.trough:insensitive,
 .toolbar GtkSwitch.trough:insensitive,
 .header-bar GtkSwitch.trough:insensitive {
-    background-image: url("assets/dark/switch-off-disabled.svg");
+    background-image: -gtk-scaled(url("assets/switch-off-disabled-dark.png"),url("assets/switch-off-disabled-dark@2.png"));
 }
 
 .primary-toolbar.toolbar GtkSwitch.trough:active:insensitive,
 .toolbar GtkSwitch.trough:active:insensitive,
 .header-bar GtkSwitch.trough:active:insensitive {
-    background-image: url("assets/dark/switch-on-disabled.svg");
+    background-image: -gtk-scaled(url("assets/switch-on-disabled-dark.png"),url("assets/switch-on-disabled-dark@2.png"));
 }
 
 .primary-toolbar.toolbar GtkSwitch.slider,
 .toolbar GtkSwitch.slider,
 .header-bar GtkSwitch.slider {
-    background-image: url("assets/dark/switch-slider.svg");
+    background-image: -gtk-scaled(url("assets/switch-slider-dark.png"),url("assets/switch-slider-dark@2.png"));
 }
 
 .primary-toolbar.toolbar GtkSwitch.slider:insensitive,
 .toolbar GtkSwitch.slider:insensitive,
 .header-bar GtkSwitch.slider:insensitive {
-    background-image: url("assets/dark/switch-slider-insensitive.svg");
+    background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"),url("assets/switch-slider-insensitive-dark@2.png"));
 }
 
 /****************
@@ -708,7 +708,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 .toolbar .separator,
 .header-bar > GtkBox > .separator.vertical,
 .header-bar .separator {
-    border-image: -gtk-scaled(url("assets/dark/header-separator.png"),url("assets/dark/header-separator@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
+    border-image: -gtk-scaled(url("assets/header-separator-dark.png"),url("assets/header-separator-dark@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
 }
 
 /**************************
@@ -721,7 +721,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 
 .selection-mode.header-bar > GtkBox > .separator.vertical,
 .selection-mode.toolbar .separator {
-    border-image: -gtk-scaled(url("assets/dark/header-separator-selectionmode.png"),url("assets/dark/header-separator-selectionmode@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
+    border-image: -gtk-scaled(url("assets/header-separator-selectionmode-dark.png"),url("assets/header-separator-selectionmode-dark@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
 }
 
 /***********

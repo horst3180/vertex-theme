@@ -11,21 +11,21 @@
  * Pane separators *
  *******************/
 .pane-separator {
-    background-image: url("assets/dark/pane-separator-grip-dark.svg");
+    background-image: url("assets/pane-separator-grip-dark.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .pane-separator:hover {
-    background-image: url("assets/dark/pane-separator-grip-prelight-dark.svg");
+    background-image: url("assets/pane-separator-grip-prelight-dark.svg");
 }
 
 .pane-separator.vertical {
-    background-image: url("assets/dark/pane-separator-grip-vertical-dark.svg");
+    background-image: url("assets/pane-separator-grip-vertical-dark.svg");
 }
 
 .pane-separator.vertical:hover {
-    background-image: url("assets/dark/pane-separator-grip-vertical-prelight-dark.svg");
+    background-image: url("assets/pane-separator-grip-vertical-prelight-dark.svg");
 }
 
 /*************************
@@ -36,23 +36,23 @@
 .header-bar > GtkBox > .separator.vertical,
 .header-bar .separator {
     -GtkWidget-wide-separators: 1;
-    -GtkWidget-separator-width: 5px;
+    -GtkWidget-separator-width: 10px;
     background: transparent;
     border-width: 0 4px 0 1px;
     border-style: solid;
     border-color: transparent;
-    border-image: -gtk-scaled(url("assets/dark/header-separator.png"),url("assets/dark/header-separator@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
+    border-image: -gtk-scaled(url("assets/header-separator-dark.png"),url("assets/header-separator-dark@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
 }
 
 .selection-mode.header-bar > GtkBox > .separator.vertical,
 .selection-mode.toolbar .separator {
     -GtkWidget-wide-separators: 1;
-    -GtkWidget-separator-width: 5px;
+    -GtkWidget-separator-width: 10px;
     background: transparent;
     border-width: 0 4px 0 1px;
     border-style: solid;
     border-color: transparent;
-    border-image: -gtk-scaled(url("assets/dark/header-separator-selectionmode.png"),url("assets/dark/header-separator-selectionmode@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
+    border-image: -gtk-scaled(url("assets/header-separator-selectionmode-dark.png"),url("assets/header-separator-selectionmode-dark@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
 }
 
 /*************************
@@ -66,7 +66,7 @@ GtkModelButton.button.check:hover,
 .menuitem.check:hover,
 .check,
 .view.cell.check {
-    background-image: -gtk-scaled(url("assets/dark/checkbox-unchecked.png"),url("assets/dark/checkbox-unchecked@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"),url("assets/checkbox-unchecked-dark@2.png"));
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -74,7 +74,7 @@ GtkModelButton.button.check:hover,
 GtkModelButton.button.check:insensitive,
 .menuitem.check:insensitive,
 .check:insensitive {
-    background-image: -gtk-scaled(url("assets/dark/checkbox-unchecked-insensitive.png"),url("assets/dark/checkbox-unchecked-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"),url("assets/checkbox-unchecked-insensitive-dark@2.png"));
 }
 
 .check row:insensitive {
@@ -86,26 +86,33 @@ GtkModelButton.button.check:active:hover,
 .menuitem.check:active,
 .check:active,
 .view.cell.check:active {
-    background-image: -gtk-scaled(url("assets/dark/checkbox-checked.png"),url("assets/dark/checkbox-checked@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-checked-dark.png"),url("assets/checkbox-checked-dark@2.png"));
 }
 
 .cell.check:active:selected,
-.menuitem.check:active:hover {
-    background-image: -gtk-scaled(url("assets/dark/checkbox-checked-hover.png"),url("assets/dark/checkbox-checked-hover@2.png"));
+.menuitem.check:active:hover,
+GtkModelButton.button.check:active:hover {
+    background-image: -gtk-scaled(url("assets/checkbox-checked-selected-dark.png"),url("assets/checkbox-checked-selected-dark@2.png"));
 }
 
 GtkModelButton.button.check:active:insensitive,
 .menuitem.check:active:insensitive,
 .check:active:insensitive {
-    background-image: -gtk-scaled(url("assets/dark/checkbox-checked-insensitive.png"),url("assets/dark/checkbox-checked-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"),url("assets/checkbox-checked-insensitive-dark@2.png"));
 }
 
 .check:inconsistent {
-    background-image: -gtk-scaled(url("assets/dark/checkbox-mixed.png"),url("assets/dark/checkbox-mixed@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-mixed-dark.png"),url("assets/checkbox-mixed-dark@2.png"));
+}
+
+.cell.check:inconsistent:active:selected,
+.menuitem.check:inconsistent:active:hover,
+GtkModelButton.button.check:inconsistent:active:hover {
+    background-image: -gtk-scaled(url("assets/checkbox-mixed-selected-dark.png"),url("assets/checkbox-mixed-selected-dark@2.png"));
 }
 
 .check:inconsistent:insensitive {
-    background-image: -gtk-scaled(url("assets/dark/checkbox-mixed-insensitive.png"),url("assets/dark/checkbox-mixed-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"),url("assets/checkbox-mixed-insensitive-dark@2.png"));
 }
 
 GtkModelButton.button.radio,
@@ -114,7 +121,7 @@ GtkModelButton.button.radio:hover,
 .menuitem.radio,
 .menuitem.radio:hover,
 .view.cell.radio {
-    background-image: -gtk-scaled(url("assets/dark/radio-unchecked.png"),url("assets/dark/radio-unchecked@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-unchecked-dark.png"),url("assets/radio-unchecked-dark@2.png"));
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -122,7 +129,7 @@ GtkModelButton.button.radio:hover,
 GtkModelButton.button.radio:insensitive,
 .menuitem.radio:insensitive,
 .radio:insensitive {
-    background-image: -gtk-scaled(url("assets/dark/radio-unchecked-insensitive.png"),url("assets/dark/radio-unchecked-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"),url("assets/radio-unchecked-insensitive-dark@2.png"));
 }
 
 .radio row:insensitive {
@@ -134,164 +141,170 @@ GtkModelButton.button.radio:active:hover,
 .radio:active,
 .menuitem.radio:active,
 .view.cell.radio:active {
-    background-image: -gtk-scaled(url("assets/dark/radio-checked.png"),url("assets/dark/radio-checked@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-checked-dark.png"),url("assets/radio-checked-dark@2.png"));
 }
 
 .cell.radio:active:selected,
-.menuitem.radio:active:hover {
-    background-image: -gtk-scaled(url("assets/dark/radio-checked-hover.png"),url("assets/dark/radio-checked-hover@2.png"));
+.menuitem.radio:active:hover,
+GtkModelButton.button.radio:active:hover {
+    background-image: -gtk-scaled(url("assets/radio-checked-selected-dark.png"),url("assets/radio-checked-selected-dark@2.png"));
 }
 
 GtkModelButton.button.radio:active:insensitive,
 .menuitem.radio:active:insensitive,
 .radio:active:insensitive {
-    background-image: -gtk-scaled(url("assets/dark/radio-checked-insensitive.png"),url("assets/dark/radio-checked-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"),url("assets/radio-checked-insensitive-dark@2.png"));
 }
 
 .radio:inconsistent {
-    background-image: -gtk-scaled(url("assets/dark/radio-mixed.png"),url("assets/dark/radio-mixed@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-mixed-dark.png"),url("assets/radio-mixed-dark@2.png"));
+}
+
+.cell.radio:inconsistent:active:selected,
+.menuitem.radio:inconsistent:active:hover,
+GtkModelButton.button.radio:inconsistent:active:hover {
+    background-image: -gtk-scaled(url("assets/radio-mixed-selected-dark.png"),url("assets/radio-mixed-selected-dark@2.png"));
 }
 
 .radio:inconsistent:insensitive {
-    background-image: -gtk-scaled(url("assets/dark/radio-mixed-insensitive.png"),url("assets/dark/radio-mixed-insensitive@2.png"));
+    background-image: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"),url("assets/radio-mixed-insensitive-dark@2.png"));
 }
 
 /*********************
  * GtkScale's slider *
  *********************/
 .scale.slider {
-    background-image: -gtk-scaled(url("assets/dark/slider.svg"));
+    background-image: -gtk-scaled(url("assets/slider-dark.png"),url("assets/slider-dark@2.png"));
 }
 
 .scale.slider:hover {
-    background-image: -gtk-scaled(url("assets/dark/slider_hover.svg"));
+    background-image: -gtk-scaled(url("assets/slider-hover-dark.png"),url("assets/slider-hover-dark@2.png"));
 }
 
 .scale.slider:active,
 .scale.slider:active:hover {
-    background-image: -gtk-scaled(url("assets/dark/slider_active.svg"));
+    background-image: -gtk-scaled(url("assets/slider-active-dark.png"),url("assets/slider-active-dark@2.png"));
 }
 
 .scale.slider:insensitive,
 .scale.slider:insensitive:hover {
-    background-image: -gtk-scaled(url("assets/dark/slider_insensitive.svg"));
+    background-image: -gtk-scaled(url("assets/slider-insensitive-dark.png"),url("assets/slider-insensitive-dark@2.png"));
 }
 
 /********************************
  * Touch text selection handles *
  ********************************/
 .cursor-handle.bottom {
-    background-image: -gtk-scaled(url("assets/dark/scale-slider-up-backdrop-dark.png"),url("assets/dark/scale-slider-up-backdrop-dark@2.png"));
+    background-image: -gtk-scaled(url("assets/scale-slider-up-backdrop-dark.png"),url("assets/scale-slider-up-backdrop-dark@2.png"));
 }
 
 .cursor-handle.top {
-    background-image: -gtk-scaled(url("assets/dark/scale-slider-down-backdrop-dark.png"),url("assets/dark/scale-slider-down-backdrop-dark@2.png"));
+    background-image: -gtk-scaled(url("assets/scale-slider-down-backdrop-dark.png"),url("assets/scale-slider-down-backdrop-dark@2.png"));
 }
 
 /****************
  * Content view *
  ****************/
 .content-view.view {
-    background-image: url("assets/dark/noise-texture-dark.png");
+    background-image: url("assets/noise-texture-dark.png");
 }
 
 /*Scrollbar*/
 .scrollbar.trough {
-    border-image: url("assets/dark/scrollbar-trough.svg") 8 7 8 8;
+    border-image: -gtk-scaled(url("assets/scrollbar-trough-dark.png"),url("assets/scrollbar-trough-dark@2.png"))  8 7 8 8 / 8px 7px 8px 8px;
 	border-width: 8px 7px 8px 8px;
     background-color: transparent;
     border-radius: 0;
 }
 
 .scrollbar.trough.horizontal {
-    border-image: url("assets/dark/scrollbar-trough-horizontal.svg") 8 8 7 8;
+    border-image: -gtk-scaled(url("assets/scrollbar-trough-horizontal-dark.png"),url("assets/scrollbar-trough-horizontal-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
 	border-width: 8px 8px 7px 8px;
 }
 
 .scrollbar.slider {
-    border-image: url("assets/dark/scrollbar-slider.svg") 8 7 8 8;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-dark.png"),url("assets/scrollbar-slider-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
 	border-width: 8px 7px 8px 8px;
     background-color: transparent;
     border-radius: 0;
 }
 
 .scrollbar.slider.horizontal {
-    border-image: url("assets/dark/scrollbar-slider-horizontal.svg") 8 8 7 8;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-dark.png"),url("assets/scrollbar-slider-horizontal-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
 	border-width: 8px 8px 7px 8px;
 }
 
-.scrollbar.slider:hover {
-    border-image: url("assets/dark/scrollbar-slider-hover.svg") 8 7 8 8;
-}
-
-.scrollbar.slider.horizontal:hover {
-    border-image: url("assets/dark/scrollbar-slider-horizontal-hover.svg") 8 8 7 8;
-}
-
 .scrollbar.slider:insensitive,
-.scrollbar.slider:active {
-    border-image: url("assets/dark/scrollbar-slider-active.svg") 8 7 8 8;
+.scrollbar.slider:hover {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"),url("assets/scrollbar-slider-hover-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
 }
 
 .scrollbar.slider.horizontal:insensitive,
+.scrollbar.slider.horizontal:hover {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-hover-dark.png"),url("assets/scrollbar-slider-horizontal-hover-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+}
+
+.scrollbar.slider:active {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"),url("assets/scrollbar-slider-active-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
+}
+
 .scrollbar.slider.horizontal:active {
-    border-image: url("assets/dark/scrollbar-slider-horizontal-active.svg") 8 8 7 8;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-active-dark.png"),url("assets/scrollbar-slider-horizontal-active-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
 }
 
 /*************
  * GtkSwitch *
  *************/
 GtkSwitch.trough {
-    background-image: url("assets/dark/switch-off.svg");
+    background-image: -gtk-scaled(url("assets/switch-off-dark.png"),url("assets/switch-off-dark@2.png"));
     background-repeat: no-repeat;
     background-position: 0 center;
     color: transparent;
-	border-color: transparent;
-	border-image: none;
-	border-style: none;
-	box-shadow: none;
-	text-shadow: none;
+    border-color: transparent;
+    border-image: none;
+    border-style: none;
+    box-shadow: none;
+    text-shadow: none;
 }
 
 GtkSwitch.trough:active {
-    background-image: url("assets/dark/switch-on.svg");
+    background-image: -gtk-scaled(url("assets/switch-on-dark.png"),url("assets/switch-on-dark@2.png"));
 }
 
-
 GtkSwitch.trough:insensitive {
-	background-color: transparent;
-    background-image: url("assets/dark/switch-off-disabled.svg");
+    background-color: transparent;
+    background-image: -gtk-scaled(url("assets/switch-off-disabled-dark.png"),url("assets/switch-off-disabled-dark@2.png"));
 }
 
 GtkSwitch.trough:active:insensitive {
-    background-image: url("assets/dark/switch-on-disabled.svg");
+    background-image: -gtk-scaled(url("assets/switch-on-disabled-dark.png"),url("assets/switch-on-disabled-dark@2.png"));
 }
 
 GtkSwitch.slider {
-    background-image: url("assets/dark/switch-slider.svg");
+    background-image: -gtk-scaled(url("assets/switch-slider-dark.png"),url("assets/switch-slider-dark@2.png"));
     background-repeat: no-repeat;
     background-position: 0 center;
 }
 
 GtkSwitch.slider:insensitive {
     background-color: transparent;
-    background-image: url("assets/dark/switch-slider-insensitive.svg");
+    background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"),url("assets/switch-slider-insensitive-dark@2.png"));
     background-repeat: no-repeat;
     background-position: 0 center;
 }
 /*
 .list-row GtkSwitch.trough  {
-    background-image: url("assets/dark/switch-off-list.svg");
+    background-image: -gtk-scaled(url("assets/switch-off-list.png"),url("assets/switch-off-list@2.png"));
 }
 
 .list-row GtkSwitch.trough:active  {
-    background-image: url("assets/dark/switch-on-list.svg");
+    background-image: -gtk-scaled(url("assets/switch-on-list.png"),url("assets/switch-on-list@2.png"));
 }
 
 .list-row GtkSwitch.trough:insensitive  {
-    background-image: url("assets/dark/switch-off-disabled-list.svg");
+    background-image: -gtk-scaled(url("assets/switch-off-disabled-list.png"),url("assets/switch-off-disabled-list@2.png"));
 }
 
 .list-row GtkSwitch.trough:active:insensitive  {
-    background-image: url("assets/dark/switch-on-disabled-list.svg");
+    background-image: -gtk-scaled(url("assets/switch-on-disabled-list.png"),url("assets/switch-on-disabled-list@2.png"));
 }*/
