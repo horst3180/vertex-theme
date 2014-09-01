@@ -104,6 +104,12 @@ GtkAssistant.csd .sidebar {
 GtkTextView {
   background-color: mix(@theme_bg_color, @theme_base_color, 0.5); }
 
+GtkFlowBox .grid-child {
+  padding: 3px;
+  border-radius: 3px; }
+  GtkFlowBox .grid-child:selected {
+    outline-offset: -2px; }
+
 /**************
  * Dim labels *
  **************/
@@ -1619,7 +1625,7 @@ GtkLevelBar.vertical {
 
 .view { text-shadow: none; }
 
-.view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, .entry:selected, .entry:selected:focus {
+.view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkFlowBox .grid-child:selected, .entry:selected, .entry:selected:focus {
   color: @theme_selected_fg_color;
   background-color: @theme_selected_bg_color;
   outline-color: rgba(255, 255, 255, 0.3);
