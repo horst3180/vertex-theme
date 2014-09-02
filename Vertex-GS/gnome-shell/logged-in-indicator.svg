@@ -14,7 +14,7 @@
    height="80"
    id="svg7355"
    version="1.1"
-   inkscape:version="0.48.2 r9819"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="logged-in-indicator.svg">
   <metadata
      id="metadata4175">
@@ -70,16 +70,6 @@
          offset="1"
          style="stop-color:#ffffff;stop-opacity:0;" />
     </linearGradient>
-    <radialGradient
-       xlink:href="#linearGradient36471"
-       id="radialGradient7463"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.1891549,0,0,0.55513246,-9.281289,36.12653)"
-       cx="49.067139"
-       cy="242.50381"
-       fx="49.067139"
-       fy="242.50381"
-       r="37.00671" />
     <linearGradient
        id="linearGradient36471">
       <stop

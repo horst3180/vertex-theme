@@ -15,7 +15,7 @@
    id="svg33222"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="shutdown-button-border.svg"
+   sodipodi:docname="shutdown-button-border-hover.svg"
    inkscape:export-filename="/home/steffen/.local/share/themes/neu2/gtk-3.0/borders/dark/button-border.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -83,15 +83,6 @@
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0.99999997,-1)" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3845-0"
-       id="linearGradient3851-6"
-       x1="8"
-       y1="13"
-       x2="8"
-       y2="14"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        id="linearGradient3845-0">
       <stop
          style="stop-color:#000000;stop-opacity:0.18039216;"
@@ -122,27 +113,6 @@
        y2="14"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0.99999997,-1)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3772-3"
-       id="linearGradient3778-8"
-       x1="8"
-       y1="1"
-       x2="8"
-       y2="14"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(0.99999997,-1)" />
-    <linearGradient
-       id="linearGradient3772-3">
-      <stop
-         style="stop-color:#e86060;stop-opacity:1;"
-         offset="0"
-         id="stop3774-7" />
-      <stop
-         style="stop-color:#ce3535;stop-opacity:1;"
-         offset="1"
-         id="stop3776-4" />
-    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -184,7 +154,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

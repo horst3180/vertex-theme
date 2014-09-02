@@ -14,8 +14,8 @@
    height="22"
    id="svg10865"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="toggle-off-us.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="classic-toggle-off-intl.svg">
   <defs
      id="defs10867">
     <linearGradient
@@ -48,36 +48,6 @@
        id="path-effect62989-8-0"
        effect="spiro" />
     <linearGradient
-       id="linearGradient62821-5-8">
-      <stop
-         id="stop62823-2-4"
-         offset="0"
-         style="stop-color:#d1d3d1;stop-opacity:1;" />
-      <stop
-         id="stop62825-3-8"
-         offset="1"
-         style="stop-color:#ebebeb;stop-opacity:1;" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient62852-6-5-3">
-      <stop
-         id="stop62854-6-7-6"
-         offset="0"
-         style="stop-color:#ffffff;stop-opacity:1" />
-      <stop
-         style="stop-color:#eeeeec;stop-opacity:1"
-         offset="0.97726452"
-         id="stop62858-8-0-3" />
-      <stop
-         id="stop62860-5-3-9"
-         offset="1"
-         style="stop-color:#f5f5f4;stop-opacity:1" />
-    </linearGradient>
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect62829-6-8-0"
-       is_visible="true" />
-    <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient62821-5-8-1"
        id="linearGradient62864-0-3-1"
@@ -98,16 +68,6 @@
          offset="1"
          style="stop-color:#ebebeb;stop-opacity:1;" />
     </linearGradient>
-    <linearGradient
-       y2="507.42715"
-       x2="702.58966"
-       y1="484.49405"
-       x1="702.58966"
-       gradientTransform="matrix(1.3066667,0,0,1,-841.64667,-483)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient11647"
-       xlink:href="#linearGradient62821-5-8-1"
-       inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -146,7 +106,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

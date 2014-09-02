@@ -83,15 +83,6 @@
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0.99999997,-1)" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3845-0"
-       id="linearGradient3851-6"
-       x1="8"
-       y1="13"
-       x2="8"
-       y2="14"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        id="linearGradient3845-0">
       <stop
          style="stop-color:#000000;stop-opacity:0.18039216;"

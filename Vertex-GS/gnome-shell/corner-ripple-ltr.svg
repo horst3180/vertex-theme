@@ -14,8 +14,8 @@
    height="52"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="ripple.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="corner-ripple-ltr.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -29,28 +29,6 @@
          offset="1"
          id="stop3861" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient3849">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop3851" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0;"
-         offset="1"
-         id="stop3853" />
-    </linearGradient>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3849"
-       id="radialGradient3855"
-       cx="0"
-       cy="0"
-       fx="0"
-       fy="0"
-       r="51"
-       gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3857"
@@ -124,7 +102,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
