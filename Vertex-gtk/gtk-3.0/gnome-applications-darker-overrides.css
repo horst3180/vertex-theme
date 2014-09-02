@@ -50,7 +50,7 @@ NautilusWindow .info .button:focus,
 NautilusWindow .warning .button:focus,
 NautilusWindow .error .button:focus,
 NautilusWindow .question .button:focus {
-    border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 /*
@@ -193,7 +193,7 @@ EmpathyRosterWindow.background .button {
     background-image: linear-gradient(to bottom, 
                                       @dark_button_gradient_color_a, 
                                       @dark_button_gradient_color_b);
-    border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/dark/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     text-shadow: 0 -1px @dark_wm_title_shadow;
     icon-shadow: 0 -1px @dark_wm_title_shadow;
 }
