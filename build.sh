@@ -1,8 +1,14 @@
 #!/bin/sh
 DIR=$( cd "$( dirname "$0" )" && pwd )
 
+rm $DIR/Vertex-gtk/assets.svg
+rm $DIR/Vertex-gtk/assets.txt
+rm $DIR/Vertex-gtk/borders.txt
+rm $DIR/Vertex-gtk/render-assets.sh
+rm $DIR/Vertex-gtk/render-borders.sh
+
 mkdir -p $DIR/Gnome_3-12
-mkdir -p $DIR/Gnome_3-10
+mkdir -p $DIR/Gnome_3-10_Ubuntu_14-04
 
 #make light 3.12 variant
 cp -r $DIR/Vertex-gtk $DIR/Vertex-Light
@@ -23,13 +29,13 @@ cp -r $DIR/Vertex $DIR/Gnome_3-12/
 mv $DIR/Vertex-Light/gtk-3.0/gtk-main-3-10.css $DIR/Vertex-Light/gtk-3.0/gtk-main.css
 mv $DIR/Vertex-Light/gtk-3.0/gtk-main-dark-3-10.css $DIR/Vertex-Light/gtk-3.0/gtk-main-dark.css
 
-mv $DIR/Vertex-Light $DIR/Gnome_3-10/
+mv $DIR/Vertex-Light $DIR/Gnome_3-10_Ubuntu_14-04/
 
 #make dark 3.10 variant
 mv $DIR/Vertex/gtk-3.0/gtk-main-darker-3-10.css $DIR/Vertex/gtk-3.0/gtk-main-darker.css
 mv $DIR/Vertex/gtk-3.0/gtk-main-dark-3-10.css $DIR/Vertex/gtk-3.0/gtk-main-dark.css
 
-mv $DIR/Vertex $DIR/Gnome_3-10/
+mv $DIR/Vertex $DIR/Gnome_3-10_Ubuntu_14-04/
 
 cd $DIR
-zip -r Vertex-theme Chrome Gnome_3-10 Gnome_3-12 Vertex_alt_metacity Vertex-GS LICENSE README
+zip -r Vertex-theme Chrome Gnome_3-10_Ubuntu_14-04 Gnome_3-12 Vertex_alt_metacity Vertex-GS LICENSE README
