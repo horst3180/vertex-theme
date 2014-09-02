@@ -907,7 +907,7 @@ GtkTreeView.view {
   -GtkTreeView-tree-line-width: 1;
   -GtkTreeView-tree-line-pattern: '';
   -GtkTreeView-expander-size: 16;
-  border-color: alpha(@theme_fg_color, 0.3); }
+  border-color: alpha(black, 0.13); }
   GtkTreeView.view.expander {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
     color: @theme_fg_color; }
