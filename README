@@ -12,7 +12,7 @@ Please search in the repositories of your distribution because the package names
 ###########################
 #      Installation       #
 ###########################
-The extracted zip file contains two different subfolders ("Gnome_3-10_Ubuntu_14-04" and "Gnome_3-12") with the GTK themes for the different versions of Gnome/GTK (or the first one for Ubuntu 14.04). Pick the one that matches your version and copy the content to "/usr/share/themes".
+The extracted zip file contains two different subfolders ("Gnome-3.10_Ubuntu-14.04" and "Gnome-3.12") with the GTK themes for the different versions of Gnome/GTK (or the first one for Ubuntu 14.04). Pick the one that matches your version and copy the content to "/usr/share/themes".
 
 To set the right permissions, execute
 
@@ -35,13 +35,13 @@ gsettings set org.gnome.desktop.wm.preferences theme "Vertex-light"
 
 for the light version
 
-To install the Gnome-Shell theme, copy the "Vertex GS" folder to "/usr/share/themes" and set the permissions
+To install the Gnome-Shell theme, copy the "Vertex-GS" folder to "/usr/share/themes" and set the permissions
 
-sudo chmod -R 755 "/usr/share/themes/Vertex GS"
+sudo chmod -R 755 "/usr/share/themes/Vertex-GS"
 
 and apply the theme with 
 
-gsettings set org.gnome.shell.extensions.user-theme name "Vertex GS"
+gsettings set org.gnome.shell.extensions.user-theme name "Vertex-GS"
 
 Instead of applying the theme with the gsettings commands you can select them in Gnome Tweak Tool like any other theme.
 
