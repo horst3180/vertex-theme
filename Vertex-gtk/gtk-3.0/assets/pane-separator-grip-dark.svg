@@ -13,8 +13,8 @@
    height="24"
    id="svg32934"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="pane-separator-grip.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="pane-separator-grip-dark.svg">
   <defs
      id="defs32936" />
   <sodipodi:namedview
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
