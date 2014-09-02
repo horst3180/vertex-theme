@@ -29,139 +29,139 @@
  * GtkScale's slider *
  *********************/
 .scale.slider {
-  background-image: -gtk-scaled(url("assets/slider.svg"));
+  background-image: -gtk-scaled(url("assets/slider.png"),url("assets/slider@2.png"));
 }
 
 .scale.slider:hover {
-  background-image: -gtk-scaled(url("assets/slider_hover.svg"));
+  background-image: -gtk-scaled(url("assets/slider-hover.png"),url("assets/slider-hover@2.png"));
 }
 
 .scale.slider:active,
 .scale.slider:active:hover {
-  background-image: -gtk-scaled(url("assets/slider_active.svg"));
+  background-image: -gtk-scaled(url("assets/slider-active.png"),url("assets/slider-active@2.png"));
 }
 
 .scale.slider:insensitive,
 .scale.slider:insensitive:hover {
-  background-image: -gtk-scaled(url("assets/slider_insensitive.svg"));
+  background-image: -gtk-scaled(url("assets/slider-insensitive.png"),url("assets/slider-insensitive@2.png"));
 }
 
 .osd .scale.slider {
-  background-image: -gtk-scaled(url("assets/dark/slider.svg"));
+  background-image: -gtk-scaled(url("assets/slider-dark.png"),url("assets/slider-dark@2.png"));
 }
 
 .osd .scale.slider:hover {
-  background-image: -gtk-scaled(url("assets/dark/slider_hover.svg"));
+  background-image: -gtk-scaled(url("assets/slider-hover-dark.png"),url("assets/slider-hover-dark@2.png"));
 }
 
 .osd .scale.slider:active,
 .osd .scale.slider:active:hover {
-  background-image: -gtk-scaled(url("assets/dark/slider_active.svg"));
+  background-image: -gtk-scaled(url("assets/slider-active-dark.png"),url("assets/slider-active-dark@2.png"));
 }
 
 .osd .scale.slider:insensitive,
 .osd .scale.slider:insensitive:hover {
-  background-image: -gtk-scaled(url("assets/dark/slider_insensitive.svg"));
+  background-image: -gtk-scaled(url("assets/slider-insensitive-dark.png"),url("assets/slider-insensitive-dark@2.png"));
 }
 
 /*Scrollbar*/
 .scrollbar.trough {
-  border-image: url("assets/scrollbar-trough.svg") 8 7 8 8;
+  border-image: -gtk-scaled(url("assets/scrollbar-trough.png"),url("assets/scrollbar-trough@2.png"))  8 7 8 8 / 8px 7px 8px 8px;
 	border-width: 8px 7px 8px 8px;
   background-color: transparent;
   border-radius: 0;
 }
 
 .scrollbar.trough.horizontal {
-  border-image: url("assets/scrollbar-trough-horizontal.svg") 8 8 7 8;
-	border-width: 8px 8px 7px 8px;
+  border-image: -gtk-scaled(url("assets/scrollbar-trough-horizontal.png"),url("assets/scrollbar-trough-horizontal@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+  border-width: 8px 8px 7px 8px;
 }
 
 .scrollbar.slider {
-  border-image: url("assets/scrollbar-slider.svg") 8 7 8 8;
-	border-width: 8px 7px 8px 8px;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider.png"),url("assets/scrollbar-slider@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
+  border-width: 8px 7px 8px 8px;
   background-color: transparent;
   border-radius: 0;
 }
 
 .scrollbar.slider.horizontal {
-  border-image: url("assets/scrollbar-slider-horizontal.svg") 8 8 7 8;
-	border-width: 8px 8px 7px 8px;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal.png"),url("assets/scrollbar-slider-horizontal@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+  border-width: 8px 8px 7px 8px;
 }
 
 .scrollbar.slider:insensitive,
 .scrollbar.slider:hover {
-  border-image: url("assets/scrollbar-slider-hover.svg") 8 7 8 8;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-hover.png"),url("assets/scrollbar-slider-hover@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
 }
 
 .scrollbar.slider.horizontal:insensitive,
 .scrollbar.slider.horizontal:hover {
-  border-image: url("assets/scrollbar-slider-horizontal-hover.svg") 8 8 7 8;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-hover.png"),url("assets/scrollbar-slider-horizontal-hover@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
 }
 
 .scrollbar.slider:active {
-  border-image: url("assets/scrollbar-slider-active.svg") 8 7 8 8;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-active.png"),url("assets/scrollbar-slider-active@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
 }
 
 .scrollbar.slider.horizontal:active {
-  border-image: url("assets/scrollbar-slider-horizontal-active.svg") 8 8 7 8;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-active.png"),url("assets/scrollbar-slider-horizontal-active@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
 }
 
 /*************
  * GtkSwitch *
  *************/
 GtkSwitch.trough {
-  background-image: url("assets/switch-off.svg");
+  background-image: -gtk-scaled(url("assets/switch-off.png"),url("assets/switch-off@2.png"));
   background-repeat: no-repeat;
   background-position: 0 center;
   color: transparent;
-	border-color: transparent;
-	border-image: none;
-	border-style: none;
-	box-shadow: none;
-	text-shadow: none;
+  border-color: transparent;
+  border-image: none;
+  border-style: none;
+  box-shadow: none;
+  text-shadow: none;
 }
 
 GtkSwitch.trough:active {
-  background-image: url("assets/switch-on.svg");
+  background-image: -gtk-scaled(url("assets/switch-on.png"),url("assets/switch-on@2.png"));
 }
 
 GtkSwitch.trough:insensitive {
-	background-color: transparent;
-  background-image: url("assets/switch-off-disabled.svg");
+  background-color: transparent;
+  background-image: -gtk-scaled(url("assets/switch-off-disabled.png"),url("assets/switch-off-disabled@2.png"));
 }
 
 GtkSwitch.trough:active:insensitive {
-  background-image: url("assets/switch-on-disabled.svg");
+  background-image: -gtk-scaled(url("assets/switch-on-disabled.png"),url("assets/switch-on-disabled@2.png"));
 }
 
 GtkSwitch.slider {
-  background-image: url("assets/switch-slider.svg");
+  background-image: -gtk-scaled(url("assets/switch-slider.png"),url("assets/switch-slider@2.png"));
   background-repeat: no-repeat;
   background-position: 0 center;
 }
 
 GtkSwitch.slider:insensitive {
   background-color: transparent;
-  background-image: url("assets/switch-slider-insensitive.svg");
+  background-image: -gtk-scaled(url("assets/switch-slider-insensitive.png"),url("assets/switch-slider-insensitive@2.png"));
   background-repeat: no-repeat;
   background-position: 0 center;
 }
 
 .list-row GtkSwitch.trough  {
-  background-image: url("assets/switch-off-list.svg");
+  background-image: -gtk-scaled(url("assets/switch-off-list.png"),url("assets/switch-off-list@2.png"));
 }
 
 .list-row GtkSwitch.trough:active  {
-  background-image: url("assets/switch-on-list.svg");
+  background-image: -gtk-scaled(url("assets/switch-on-list.png"),url("assets/switch-on-list@2.png"));
 }
 
 .list-row GtkSwitch.trough:insensitive  {
-  background-image: url("assets/switch-off-disabled-list.svg");
+  background-image: -gtk-scaled(url("assets/switch-off-disabled-list.png"),url("assets/switch-off-disabled-list@2.png"));
 }
 
 .list-row GtkSwitch.trough:active:insensitive  {
-  background-image: url("assets/switch-on-disabled-list.svg");
+  background-image: -gtk-scaled(url("assets/switch-on-disabled-list.png"),url("assets/switch-on-disabled-list@2.png"));
 }
 
 /*************************

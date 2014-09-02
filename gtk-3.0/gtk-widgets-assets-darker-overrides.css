@@ -5,13 +5,13 @@
 .titlebar.selection-mode > GtkBox > .separator.vertical, GtkCalendar.selection-mode.header > GtkBox > .separator.vertical,
 .header-bar.selection-mode .header-bar-separator,
 .header-bar.selection-mode > GtkBox > .separator.vertical {
-  border-image: -gtk-scaled(url("assets/dark/header-separator-selectionmode.png"),url("assets/dark/header-separator-selectionmode@2.png")) 0 4 0 1 / 0 4px 0 1px stretch; }
+  border-image: -gtk-scaled(url("assets/header-separator-selectionmode-dark.png"),url("assets/header-separator-selectionmode-dark@2.png")) 0 4 0 1 / 0 4px 0 1px stretch; }
 
 .titlebar .header-bar-separator, GtkCalendar.header .header-bar-separator, 
 .titlebar > GtkBox > .separator.vertical, GtkCalendar.header > GtkBox > .separator.vertical,
 .header-bar .header-bar-separator,
 .header-bar > GtkBox > .separator.vertical, .toolbar .separator {
-  border-image: -gtk-scaled(url("assets/dark/header-separator.png"),url("assets/dark/header-separator@2.png")) 0 4 0 1 / 0 4px 0 1px stretch; }
+  border-image: -gtk-scaled(url("assets/header-separator-dark.png"),url("assets/header-separator-dark@2.png")) 0 4 0 1 / 0 4px 0 1px stretch; }
 
 /*********************
  * GtkScale's slider *
@@ -19,13 +19,13 @@
 .header-bar .scale.slider,
 .toolbar .scale.slider,
 .primary-toolbar .scale.slider {
-  background-image: -gtk-scaled(url("assets/dark/slider.svg"));
+  background-image: -gtk-scaled(url("assets/slider-dark.png"),url("assets/slider-dark@2.png"));
 }
 
 .header-bar .scale.slider:hover,
 .toolbar .scale.slider:hover,
 .primary-toolbar .scale.slider:hover {
-  background-image: -gtk-scaled(url("assets/dark/slider_hover.svg"));
+  background-image: -gtk-scaled(url("assets/slider-hover-dark.png"),url("assets/slider-hover-dark@2.png"));
 }
 
 .header-bar .scale.slider:active,
@@ -34,7 +34,7 @@
 .toolbar .scale.slider:active:hover,
 .primary-toolbar .scale.slider:active,
 .primary-toolbar .scale.slider:active:hover {
-  background-image: -gtk-scaled(url("assets/dark/slider_active.svg"));
+  background-image: -gtk-scaled(url("assets/slider-active-dark.png"),url("assets/slider-active-dark@2.png"));
 }
 
 .header-bar .scale.slider:insensitive,
@@ -43,7 +43,7 @@
 .toolbar .scale.slider:insensitive:hover,
 .primary-toolbar .scale.slider:insensitive,
 .primary-toolbar .scale.slider:insensitive:hover {
-  background-image: -gtk-scaled(url("assets/dark/slider_insensitive.svg"));
+  background-image: -gtk-scaled(url("assets/slider-insensitive-dark.png"),url("assets/slider-insensitive-dark@2.png"));
 }
 
 /*************
@@ -52,7 +52,7 @@
 .header-bar GtkSwitch.trough,
 .toolbar GtkSwitch.trough,
 .primary-toolbar GtkSwitch.trough {
-  background-image: url("assets/dark/switch-off.svg");
+  background-image: -gtk-scaled(url("assets/switch-off-dark.png"),url("assets/switch-off-dark@2.png"));
   background-repeat: no-repeat;
   background-position: 0 center;
   color: transparent;
@@ -66,32 +66,32 @@
 .header-bar GtkSwitch.trough:active,
 .toolbar GtkSwitch.trough:active,
 .primary-toolbar GtkSwitch.trough:active {
-  background-image: url("assets/dark/switch-on.svg");
+    background-image: -gtk-scaled(url("assets/switch-on-dark.png"),url("assets/switch-on-dark@2.png"));
 }
 
 .header-bar GtkSwitch.trough:insensitive,
 .toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar GtkSwitch.trough:insensitive {
 	background-color: transparent;
-  background-image: url("assets/dark/switch-off-disabled.svg");
+    background-image: -gtk-scaled(url("assets/switch-off-disabled-dark.png"),url("assets/switch-off-disabled-dark@2.png"));
 }
 
 .header-bar GtkSwitch.trough:active:insensitive,
 .toolbar GtkSwitch.trough:active:insensitive,
 .primary-toolbar GtkSwitch.trough:active:insensitive {
-  background-image: url("assets/dark/switch-on-disabled.svg");
+    background-image: -gtk-scaled(url("assets/switch-on-disabled-dark.png"),url("assets/switch-on-disabled-dark@2.png"));
 }
 
 .header-bar GtkSwitch.slider,
 .toolbar GtkSwitch.slider,
 .primary-toolbar GtkSwitch.slider {
-  background-image: url("assets/dark/switch-slider.svg");
+    background-image: -gtk-scaled(url("assets/switch-slider-dark.png"),url("assets/switch-slider-dark@2.png"));
 }
 
 .header-bar GtkSwitch.slider:insensitive,
 .toolbar GtkSwitch.slider:insensitive,
 .primary-toolbar GtkSwitch.slider:insensitive {
-  background-image: url("assets/dark/switch-slider-insensitive.svg");
+    background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"),url("assets/switch-slider-insensitive-dark@2.png"));
 }
 
 

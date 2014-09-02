@@ -2,13 +2,13 @@
 .header-bar .entry,
 .toolbar .entry,
 .primary-toolbar .entry {
-  border-image: -gtk-scaled(url("borders/dark/generic-border.png"),url("borders/dark/generic-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/generic-border-dark.png"),url("borders/generic-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 .header-bar .entry:focus,
 .toolbar .entry:focus,
 .primary-toolbar .entry:focus { 
-  border-image: -gtk-scaled(url("borders/dark/generic-border-focused.png"),url("borders/dark/generic-border-focused@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/generic-border-focused-dark.png"),url("borders/generic-border-focused-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 /*Buttons*/
@@ -20,7 +20,7 @@
 .toolbar .button:insensitive,
 .primary-toolbar .button.flat:hover,
 .primary-toolbar .button:hover {
-  border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 .header-bar .button:active,
@@ -59,13 +59,13 @@
 .primary-toolbar .button.flat:checked,
 .primary-toolbar .button:insensitive:checked,
 .primary-toolbar .button:insensitive.flat:checked {
-  border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 .header-bar .button:focus,
 .toolbar .button:focus,
 .primary-toolbar .button:focus { 
-  border-image: -gtk-scaled(url("borders/dark/button-border-default.png"),url("borders/dark/button-border-default@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+  border-image: -gtk-scaled(url("borders/button-border-default-dark.png"),url("borders/button-border-default-dark@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
 }
 
 .header-bar .button.suggested-action,
@@ -74,7 +74,7 @@
 .toolbar .button.suggested-action:insensitive,
 .primary-toolbar .button.suggested-action,
 .primary-toolbar .button.suggested-action:insensitive {
-  border-image: -gtk-scaled(url("borders/dark/button-border-suggested.png"),url("borders/dark/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/button-border-suggested-dark.png"),url("borders/button-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 .header-bar .button.suggested-action:active,
@@ -89,7 +89,7 @@
 .header-bar .button.suggested-action:checked:hover,
 .toolbar .button.suggested-action:checked:hover,
 .primary-toolbar .button.suggested-action:checked:hover {
-    border-image: -gtk-scaled(url("borders/dark/button-active-border-suggested.png"),url("borders/dark/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
@@ -102,7 +102,7 @@
 .toolbar .button.destructive-action:insensitive,
 .primary-toolbar .button.destructive-action,
 .primary-toolbar .button.destructive-action:insensitive {
-  border-image: -gtk-scaled(url("borders/dark/button-border-destructive.png"),url("borders/dark/button-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/button-border-destructive-dark.png"),url("borders/button-border-destructive-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 .header-bar .button.destructive-action:active,
@@ -117,7 +117,7 @@
 .header-bar .button.destructive-action:checked:hover,
 .toolbar .button.destructive-action:checked:hover,
 .primary-toolbar .button.destructive-action:checked:hover {
-    border-image: -gtk-scaled(url("borders/dark/button-active-border-destructive.png"),url("borders/dark/button-active-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-active-border-destructive-dark.png"),url("borders/button-active-border-destructive-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
@@ -132,14 +132,14 @@
 .header-bar.selection-mode .button:insensitive,
 .titlebar.selection-mode .selection-menu:hover, 
 .header-bar.selection-mode .selection-menu:hover {
-  border-image: -gtk-scaled(url("borders/dark/button-border-suggested.png"),url("borders/dark/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch; }
+  border-image: -gtk-scaled(url("borders/button-border-suggested-dark.png"),url("borders/button-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch; }
   .titlebar.selection-mode .button:active, 
   GtkCalendar.selection-mode.header .button:active,
   .header-bar.selection-mode .button:active,
   .titlebar.selection-mode .button:checked, 
   GtkCalendar.selection-mode.header .button:checked,
   .header-bar.selection-mode .button:checked {
-    border-image: -gtk-scaled(url("borders/dark/button-active-border-suggested.png"),url("borders/dark/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch; }
+    border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch; }
 
 .selection-mode.titlebar .titlebutton {
   border-image: none;
@@ -186,7 +186,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .primary-toolbar .linked .button:hover:insensitive,
 .primary-toolbar GtkComboBox.combobox-entry .button:insensitive, 
 .primary-toolbar .linked > GtkComboBox > .button:dir(ltr):insensitive {
-  border-image: -gtk-scaled(url("borders/dark/linked/middle-button-border.png"),url("borders/dark/linked/middle-button-border@2.png")) 2 1 3 1 / 2px 1px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/middle-button-border-dark.png"),url("borders/middle-button-border-dark@2.png")) 2 1 3 1 / 2px 1px 3px 1px stretch;
 }
 
 .header-bar .linked .button:active,
@@ -213,7 +213,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .primary-toolbar .linked .button:hover:checked,
 .primary-toolbar GtkComboBox.combobox-entry .button:checked, 
 .primary-toolbar .linked > GtkComboBox > .button:dir(ltr):checked {
-  border-image: -gtk-scaled(url("borders/dark/linked/middle-button-active-border.png"),url("borders/dark/linked/middle-button-active-border@2.png")) 2 1 3 1 / 2px 1px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/middle-button-active-border-dark.png"),url("borders/middle-button-active-border-dark@2.png")) 2 1 3 1 / 2px 1px 3px 1px stretch;
 }
 
 /*Left*/
@@ -226,7 +226,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .primary-toolbar .linked .button:first-child, 
 .primary-toolbar GtkComboBox.combobox-entry .button:first-child, 
 .primary-toolbar .linked > GtkComboBox:first-child > .button {
-  border-image: -gtk-scaled(url("borders/dark/linked/left-button-border.png"),url("borders/dark/linked/left-button-border@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/left-button-border-dark.png"),url("borders/left-button-border-dark@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
 }
 
 .header-bar .linked .button:first-child:active, 
@@ -247,7 +247,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .primary-toolbar .linked .button:first-child:checked, 
 .primary-toolbar GtkComboBox.combobox-entry .button:first-child:checked, 
 .primary-toolbar .linked > GtkComboBox:first-child > .button:checked {
-  border-image: -gtk-scaled(url("borders/dark/linked/left-button-active-border.png"),url("borders/dark/linked/left-button-active-border@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/left-button-active-border-dark.png"),url("borders/left-button-active-border-dark@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
 }
 
 /*Right*/
@@ -260,7 +260,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .primary-toolbar .linked .button:last-child, 
 .primary-toolbar GtkComboBox.combobox-entry .button:last-child, 
 .primary-toolbar .linked > GtkComboBox:last-child > .button {
-  border-image: -gtk-scaled(url("borders/dark/linked/right-button-border.png"),url("borders/dark/linked/right-button-border@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/right-button-border-dark.png"),url("borders/right-button-border-dark@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
 }
 
 .header-bar .linked .button:last-child:active, 
@@ -281,7 +281,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .primary-toolbar .linked .button:last-child:checked, 
 .primary-toolbar GtkComboBox.combobox-entry .button:last-child:checked, 
 .primary-toolbar .linked > GtkComboBox:last-child > .button:checked {
-  border-image: -gtk-scaled(url("borders/dark/linked/right-button-active-border.png"),url("borders/dark/linked/right-button-active-border@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/right-button-active-border-dark.png"),url("borders/right-button-active-border-dark@2.png")) 2 2 3 1 / 2px 2px 3px 1px stretch;
 }
 
 /*Single*/
@@ -294,7 +294,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .primary-toolbar .linked .button:only-child, 
 .primary-toolbar GtkComboBox.combobox-entry .button:only-child, 
 .primary-toolbar .linked > GtkComboBox:only-child > .button {
-  border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 .header-bar .linked .button:only-child:active, 
@@ -315,7 +315,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .primary-toolbar .linked .button:only-child:checked, 
 .primary-toolbar GtkComboBox.combobox-entry .button:only-child:checked, 
 .primary-toolbar .linked > GtkComboBox:only-child > .button:checked {
-  border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 /*OSD */
@@ -329,7 +329,7 @@ GtkCalendar.selection-mode.header .selection-menu,
   border-width: 0 1px 0 1px;
 	border-style: solid;
   border-radius: 0;
-  border-image: -gtk-scaled(url("assets/osd-separator.png"),url("assets/header-separator-dark@2.png")) 0 1 0 1 / 0 1px 0 1px stretch;
+  border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 1 0 1 / 0 1px 0 1px stretch;
 }
 
 .osd .button:first-child,
@@ -337,7 +337,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .osd .button:first-child:active:hover {
   border-width: 0px 1px 0 0;
 	border-style: solid;
-  border-image: -gtk-scaled(url("assets/osd-separator.png"),url("assets/header-separator-dark@2.png")) 0 1 0 0 / 0 1px 0 0px stretch;
+  border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 1 0 0 / 0 1px 0 0px stretch;
 }
 
 .osd .button:last-child,
@@ -347,7 +347,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 .osd .button:last-child:checked:hover {
   border-width: 0 0 0 1px;
 	border-style: solid;
-  border-image: -gtk-scaled(url("assets/osd-separator.png"),url("assets/header-separator-dark@2.png")) 0 0 0 1 / 0 0px 0 1px stretch;
+  border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 0 0 1 / 0 0px 0 1px stretch;
 }
 
 .osd .button:only-child {
@@ -357,7 +357,7 @@ GtkCalendar.selection-mode.header .selection-menu,
 }
 
 .osd .scale.trough, .osd .scale.trough.highlight {
-  border-image: -gtk-scaled(url("borders/scale-trough-osd-border.png"),url("borders/scale-trough-osd-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+  border-image: -gtk-scaled(url("borders/scale-trough-osd-border-dark.png"),url("borders/scale-trough-osd-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
   border-radius: 2px;
   border-width: 1px 5px 2px 5px;
   border-style: solid;
@@ -411,13 +411,13 @@ GtkCalendar.selection-mode.header .selection-menu,
 .header-bar .scale.trough,
 .toolbar .scale.trough,
 .primary-toolbar .scale.trough {
-  border-image: -gtk-scaled(url("borders/dark/scale-trough-border.png"),url("borders/dark/scale-trough-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+  border-image: -gtk-scaled(url("borders/scale-trough-border-dark.png"),url("borders/scale-trough-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
 }
 
 .header-bar .scale.trough.highlight,
 .toolbar .scale.trough.highlight,
 .primary-toolbar .scale.trough.highlight {
-  border-image: -gtk-scaled(url("borders/dark/scale-highlight-border.png"),url("borders/dark/scale-highlight-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+  border-image: -gtk-scaled(url("borders/scale-highlight-border-dark.png"),url("borders/scale-highlight-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
 }
 
 .button.flat, .menuitem.button.flat, /*.menuitem.button.flat:active, .menuitem.button.flat:checked,*/ .button:link, .button:visited, 
