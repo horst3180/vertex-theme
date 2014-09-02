@@ -13,8 +13,8 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    width="37"
-   height="18"
-   sodipodi:docname="nautilus_tab_active.svg"
+   height="17"
+   sodipodi:docname="tab_active.svg"
    inkscape:export-filename="/home/steffen/Sachen/Vertex_git/Vertex-theme/Vertex-gtk/gtk-3.0/tabs/darker/nautilus_tab_active@2.png"
    inkscape:export-xdpi="180"
    inkscape:export-ydpi="180">
@@ -37,8 +37,9 @@
        id="filter3867"
        x="-0.13613793"
        width="1.2722759"
-       y="-0.21933333"
-       height="1.4386667">
+       y="-0.21933334"
+       height="1.4386667"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="1.645"
@@ -64,15 +65,15 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1033"
-     inkscape:window-height="750"
+     inkscape:window-height="722"
      id="namedview4"
      showgrid="true"
      showguides="true"
-     inkscape:zoom="32"
-     inkscape:cx="1.1924567"
-     inkscape:cy="16.046944"
-     inkscape:window-x="375"
-     inkscape:window-y="256"
+     inkscape:zoom="8"
+     inkscape:cx="25.021089"
+     inkscape:cy="6.7074818"
+     inkscape:window-x="331"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer6"
      fit-margin-top="0"
@@ -95,9 +96,9 @@
      id="layer6"
      inkscape:label="Ebene#1"
      style="display:inline"
-     transform="translate(-131.827,-1051.173)">
+     transform="translate(-131.827,-1052.173)">
     <rect
-       style="fill:#151516;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3867);opacity:0.4"
+       style="opacity:0.4;fill:#151516;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3867)"
        id="rect2997"
        width="29"
        height="18"

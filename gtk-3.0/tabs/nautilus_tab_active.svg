@@ -32,37 +32,6 @@
   </metadata>
   <defs
      id="defs6">
-    <filter
-       id="filter3057"
-       inkscape:label="Drop Shadow"
-       color-interpolation-filters="sRGB">
-      <feFlood
-         id="feFlood3059"
-         flood-opacity="0.5"
-         flood-color="rgb(0,0,0)"
-         result="flood" />
-      <feComposite
-         id="feComposite3061"
-         in2="SourceGraphic"
-         in="flood"
-         operator="in"
-         result="composite1" />
-      <feGaussianBlur
-         id="feGaussianBlur3063"
-         stdDeviation="2"
-         result="blur" />
-      <feOffset
-         id="feOffset3065"
-         dx="-2.58127e-15"
-         dy="-2.41474e-15"
-         result="offset" />
-      <feComposite
-         id="feComposite3067"
-         in2="offset"
-         in="SourceGraphic"
-         operator="over"
-         result="composite2" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3915">
