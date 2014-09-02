@@ -1,11 +1,11 @@
 #!/bin/sh
 DIR=$( cd "$( dirname "$0" )" && pwd )
 
-rm $DIR/Vertex-gtk/assets.svg
-rm $DIR/Vertex-gtk/assets.txt
-rm $DIR/Vertex-gtk/borders.txt
-rm $DIR/Vertex-gtk/render-assets.sh
-rm $DIR/Vertex-gtk/render-borders.sh
+rm $DIR/Vertex-gtk/gtk-3.0/assets.svg
+rm $DIR/Vertex-gtk/gtk-3.0/assets.txt
+rm $DIR/Vertex-gtk/gtk-3.0/borders.txt
+rm $DIR/Vertex-gtk/gtk-3.0/render-assets.sh
+rm $DIR/Vertex-gtk/gtk-3.0/render-borders.sh
 
 mkdir -p $DIR/Gnome_3-12
 mkdir -p $DIR/Gnome_3-10_Ubuntu_14-04
