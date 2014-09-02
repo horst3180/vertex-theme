@@ -47,7 +47,10 @@
 .toolbar .button.raised,
 .toolbar .linked .button,
 .toolbar GtkComboBox .button,
-.header-bar .button {
+.header-bar .button,
+.primary-toolbar.toolbar .spinbutton .button,
+.toolbar .spinbutton .button,
+.header-bar .spinbutton .button {
     background-image: linear-gradient(to bottom, 
                                       @dark_button_gradient_color_a, 
                                       @dark_button_gradient_color_b);
@@ -165,7 +168,10 @@ GtkComboBox.combobox-entry .button:last-child {
 .toolbar .linked .button:hover,
 .toolbar GtkComboBox .button:hover,
 .toolbar .button:hover,
-.header-bar .button:hover {
+.header-bar .button:hover,
+.primary-toolbar.toolbar .spinbutton .button:hover,
+.toolbar .spinbutton .button:hover,
+.header-bar .spinbutton .button:hover {
     background-image: linear-gradient(to bottom,
 				      				  shade(@dark_button_hover_gradient_color_a, 1.1),
                                       shade(@dark_button_hover_gradient_color_b, 1.1)
@@ -185,7 +191,10 @@ GtkComboBox.combobox-entry .button:last-child {
 .header-bar .button:insensitive,
 .primary-toolbar.toolbar .entry:insensitive,
 .toolbar .entry:insensitive,
-.header-bar .entry:insensitive {
+.header-bar .entry:insensitive,
+.primary-toolbar.toolbar .spinbutton .button:insensitive,
+.toolbar .spinbutton .button:insensitive,
+.header-bar .spinbutton .button:insensitive {
     background-image: none;
     background-color: @dark_insensitive_bg_color;
     color: @dark_insensitive_fg_color;
@@ -298,13 +307,13 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
     border-style: none;
     border-image: none;
     box-shadow: inset 0 1px alpha(@highlight, 0.2),
-				inset 1px 0 alpha(black, 0.5);
+				        inset 1px 0 alpha(black, 0.5);
 }
 
 .primary-toolbar.toolbar .spinbutton .button:insensitive,
 .toolbar .spinbutton .button:insensitive,
 .header-bar .spinbutton .button:insensitive {
-    box-shadow: inset 1px 0 alpha(@inset_dark_color, 0.8);
+    box-shadow: inset 1px 0 alpha(black, 0.4);
 }
 
 .primary-toolbar.toolbar .spinbutton .button:active,
@@ -334,27 +343,27 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .primary-toolbar.toolbar .spinbutton .button:last-child:insensitive,
 .toolbar .spinbutton .button:last-child:insensitive,
 .header-bar .spinbutton .button:last-child:insensitive {
-    box-shadow: inset 1px 0 alpha(black, 0.2);
+    box-shadow: inset 1px 0 alpha(black, 0.4);
 }
 
 .primary-toolbar.toolbar .spinbutton .button:dir(rtl),
 .toolbar .spinbutton .button:dir(rtl),
 .header-bar .spinbutton .button:dir(rtl) {
     box-shadow: inset 0 1px alpha(@highlight, 0.2),
-				inset -1px 0 @inset_dark_color;
+				inset -1px 0 alpha(black, 0.4);
 }
 
 .primary-toolbar.toolbar .spinbutton .button:active,
 .toolbar .spinbutton .button:active,
 .header-bar .spinbutton .button:active {
-    box-shadow: inset 1px 0 alpha(@inset_dark_color, 0.6);
+    box-shadow: inset 1px 0 alpha(black, 0.4);
     icon-shadow: none;
 }
 
 .primary-toolbar.toolbar .spinbutton .button:last-child:active,
 .toolbar .spinbutton .button:last-child:active,
 .header-bar .spinbutton .button:last-child:active {
-    box-shadow: inset 1px 0 alpha(@inset_dark_color, 0.6);
+    box-shadow: inset 1px 0 alpha(black, 0.4);
 }
 
 /* this controls the general appearance of the menubar */
