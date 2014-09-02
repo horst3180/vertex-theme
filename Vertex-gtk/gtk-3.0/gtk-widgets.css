@@ -1999,7 +1999,7 @@ GtkOverlay.osd {
     border-width: 0 1px 0 1px;
     border-style: solid;
     border-radius: 0;
-    border-image: -gtk-scaled(url("assets/osd-separator.png"),url("assets/header-separator-dark@2.png")) 0 1 0 1 / 0 1px 0 1px stretch;
+    border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 1 0 1 / 0 1px 0 1px stretch;
 }
 
 .osd .button:hover {
@@ -2029,7 +2029,7 @@ GtkOverlay.osd {
     background-image: none;
     border-width: 0px 1px 0 0;
     border-style: solid;
-    border-image: -gtk-scaled(url("assets/osd-separator.png"),url("assets/header-separator-dark@2.png")) 0 1 0 0 / 0 1px 0 0px stretch;
+    border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 1 0 0 / 0 1px 0 0px stretch;
 
 }
 
@@ -2040,7 +2040,7 @@ GtkOverlay.osd {
     background-image: none;
     border-width: 0 0 0 1px;
     border-style: solid;
-    border-image: -gtk-scaled(url("assets/osd-separator.png"),url("assets/header-separator-dark@2.png")) 0 0 0 1 / 0 0px 0 1px stretch;
+    border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 0 0 1 / 0 0px 0 1px stretch;
 }
 
 .osd .button:only-child,

@@ -129,7 +129,7 @@ NautilusWindow * {
 }
 
 NautilusNotebook.notebook tab.top {
-    padding: 4px 20px 2px;
+    padding: 4px 20px 3px;
 }
 
 NautilusNotebook.notebook {
@@ -1198,12 +1198,12 @@ GdMainIconView.content-view {
 }
 
 GtkIconView.content-view.cell.check {
-    background-image: url("assets/grid-selection-unchecked.svg");
+    background-image: -gtk-scaled(url("assets/grid-selection-unchecked.png"),url("assets/grid-selection-unchecked@2.png"));
     background-color: transparent;
 }
 
 GtkIconView.content-view.cell.check:active {
-    background-image: url("assets/grid-selection-checked.svg");
+    background-image: -gtk-scaled(url("assets/grid-selection-checked.png"),url("assets/grid-selection-checked@2.png"));
     background-color: transparent;
 }
 

@@ -58,15 +58,14 @@ TerminalWindow .notebook tab.reorderable-page:active {
 }
 
 GtkIconView.content-view.cell.check {
-    background-image: url("assets/grid-selection-unchecked-dark.svg");
+    background-image: -gtk-scaled(url("assets/grid-selection-unchecked-dark.png"),url("assets/grid-selection-unchecked-dark@2.png"));
     background-color: transparent;
 }
 
 GtkIconView.content-view.cell.check:active {
-    background-image: url("assets/grid-selection-checked-dark.svg");
+    background-image: -gtk-scaled(url("assets/grid-selection-checked-dark.png"),url("assets/grid-selection-checked-dark@2.png"));
     background-color: transparent;
 }
-
 /*
  * Rhythmbox
  */
