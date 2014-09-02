@@ -220,7 +220,7 @@ NautilusWindow .info .button:focus,
 NautilusWindow .warning .button:focus,
 NautilusWindow .error .button:focus,
 NautilusWindow .question .button:focus {
-    border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 NautilusWindow .info .button,
@@ -231,6 +231,6 @@ NautilusWindow .error .button,
 NautilusWindow .error .button:insensitive,
 NautilusWindow .question .button,
 NautilusWindow .question .button:insensitive {
-    border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
   background-color: transparent;
 }
