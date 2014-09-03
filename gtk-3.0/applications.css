@@ -100,11 +100,11 @@ NautilusNotebook.notebook {
   border-right-width: 0;
   border-left-width: 0;
   border-bottom-width: 0;
-}
-
-NautilusNotebook.notebook {
   background-color: @theme_base_color;
 }
+
+NautilusNotebook.notebook tab.top {
+  padding: 6px 20px 5px; }
 
 NautilusNotebook .frame {
   border-width: 0;
