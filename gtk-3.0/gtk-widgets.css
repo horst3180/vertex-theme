@@ -1059,7 +1059,9 @@ GtkTreeView.view.trough:selected {
   border-style: solid;
   border-radius: 3px;
   background-color: shade(@theme_base_color, 0.98);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+  icon-shadow: none; }
   .popover > .list, 
   .popover > .view, 
   .popover > .toolbar .popover.osd > .toolbar, 
@@ -1690,6 +1692,7 @@ GtkScrolledWindow GtkViewport.frame {
 
 .list-row.button, .list-row.button:hover, .list-row.button:active, .list-row.button:active:hover,
 .list-row.button:selected:active, .list-row.button:selected, .list-row.button:selected:hover, .list-row.button:focus, .list-row.button:focus:active:hover {
+  transition: none;
   border-style: none;
   border-radius: 0;
   box-shadow: none;
@@ -1718,7 +1721,9 @@ GtkScrolledWindow GtkViewport.frame {
     color: @theme_selected_fg_color; }
   .list-row.button:selected:active:hover {
     box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+    color: @theme_selected_fg_color;
     background-color: shade(@theme_selected_bg_color, 0.97); }
+
 /*********************
  * App Notifications *
  *********************/

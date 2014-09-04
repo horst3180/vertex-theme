@@ -201,33 +201,17 @@ GeditWindow .pane-separator:hover {
   padding: 6px 6px 6px 12px;
 }
 
-.open-document-selector-listbox-row .name-label {
-  color: @theme_fg_color;
+.open-document-selector-listbox-row .path-label {
+  font-size: smaller;
+  color: alpha(@theme_fg_color, 0.5);
 }
 
-.open-document-selector-listbox-row .path-label {
-  font-size: 90%;
-  color: alpha(@theme_fg_color, 0.5);
+.open-document-selector-listbox-row:selected .path-label {
+  color: alpha(@theme_selected_fg_color, 0.5);
 }
 
 .gedit-document-panel {
   background-color: @sidebar_bg;
-}
-/*
-.gedit-document-panel-group-row,
-.gedit-document-panel-group-row:hover {
-  border-top: 1px solid shade(@sidebar_bg, 0.90);
-  background-color: @sidebar_bg;
-}
-
-.gedit-document-panel-document-row:hover {
-  background-color: shade(@sidebar_bg, 0.95);
-}*/
-
-.gedit-document-panel-document-row.button:selected,
-.gedit-document-panel-document-row.button:selected:hover {
-  background-color: @theme_selected_bg_color;
-  color: @theme_selected_fg_color;
 }
 
 /* sidepane close button styling (copied from the gtk tab close button) */
@@ -245,25 +229,33 @@ GeditWindow .pane-separator:hover {
 }
 
 .gedit-document-panel .prelight-row .button  {
-  color: shade(red, 1.3);
+  color: @theme_fg_color;
   border-color: alpha(black, 0.1);
-  transition: all 200ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+.gedit-document-panel .prelight-row:selected .button  {
+  color: alpha(@theme_selected_fg_color, 0.6);
+  border-color: alpha(white, 0.2);
 }
 
 .gedit-document-panel .list-row .button:hover,
 .gedit-document-panel .prelight-row .button:hover {
-  color: @theme_fg_color;
-  border-color: alpha(black, 0.1);
-  transition: all 200ms ease-in;
+  color: shade(red, 1.3);
+  border-color: alpha(black, 0.2);
+  transition: all 100ms ease-in;
   border-width: 1px;
 }
 
+.gedit-document-panel .prelight-row:selected .button:hover {
+  color: @theme_selected_fg_color;
+  border-color: alpha(white, 0.5);
+}
+
 .gedit-document-panel .prelight-row .button:active {
-  color: @button_active_text;
+  color: @theme_fg_color;
   background-color: alpha(black, 0.08);
   box-shadow: inset 0 1px alpha(black, 0.05);
-  icon-shadow: 0 1px @button_active_text_shadow;
-
   border-color: alpha(black, 0.27)
                 alpha(black, 0.13)
                 alpha(black, 0.13)
@@ -279,7 +271,7 @@ GeditWindow .pane-separator:hover {
 .gedit-document-panel-placeholder-row {
   border: none;
   background-color: mix(@sidebar_bg, @theme_selected_bg_color, 0.20);
-  transition: all 200ms ease-in;
+  transition: all 100ms ease-in;
 }
 
 GeditStatusbar {
@@ -304,7 +296,7 @@ GeditStatusMenuButton:checked.button.flat {
   border-color: shade(@button_active_gradient_color_a, 0.9); }
 
 GeditViewFrame .gedit-search-slider {
-  background-color: shade(@theme_bg_color, 1.05);
+  background-color: shade(@theme_bg_color, 1.02);
   padding: 6px;
   border-color: shade(@borders, 1.1);
   border-radius: 0 0 3px 3px;
@@ -313,7 +305,6 @@ GeditViewFrame .gedit-search-slider {
 }
 
 GeditFileBrowserWidget .toolbar {
-  padding: 3px;
   border-bottom: 1px solid @borders;
   background-color: shade(@theme_bg_color, 0.95);
 }
