@@ -545,12 +545,12 @@ style "default"
         }
 }
 
-style "toplevel_hack"
-{
-        engine "adwaita"
-        {
-        }
-}
+#style "toplevel_hack"
+#{
+#        engine "adwaita"
+#        {
+#        }
+#}
 
 style "ooo_stepper_hack"
 {
@@ -750,12 +750,12 @@ style "menu"
     }
 }
 
-style "menu_framed_box"
-{
-	engine "adwaita"
-	{
-        }
-}
+#style "menu_framed_box"
+#{
+#	engine "adwaita"
+#	{
+#        }
+#}
 
 style "menu_item"
 {
@@ -2385,7 +2385,7 @@ class "GtkToolbar"	                style "toolbar"
 
 widget_class "*<GtkMenuBar>*"			style "menubar"
 widget_class "*<GtkMenu>*"			style "menu"
-widget_class "*<GtkMenu>*"			style "menu_framed_box"
+#widget_class "*<GtkMenu>*"			style "menu_framed_box"
 widget_class "*<GtkMenuItem>*"			style "menu_item"
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*"	style "menubar_item"
 widget_class "*<GtkCheckButton>*"               style "checkbutton"
@@ -2438,7 +2438,7 @@ widget "gtk-tooltips*" 			style "eclipse-tooltips"
 widget "*swt-toolbar-flat"		style "null"
 
 # Openoffice, Libreoffice
-class "GtkWindow"                             style "toplevel_hack"
+#class "GtkWindow"                             style "toplevel_hack"
 widget "*openoffice-toplevel*"                style "ooo_stepper_hack"
 widget "*openoffice-toplevel*GtkEntry"        style "libreoffice_entry"
 widget "*openoffice-toplevel*GtkSpinButton"   style "libreoffice_entry"

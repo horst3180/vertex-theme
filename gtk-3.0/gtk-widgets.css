@@ -1698,6 +1698,9 @@ GtkScrolledWindow GtkViewport.frame {
   border-image: none;
   border-width: 0; }
 
+.list-row:selected .button.flat:focus, .list-row:selected .button.flat {
+  border-image: none; }
+
 .list-row.button {
   background-color: transparent; }
   .list-row.button:hover {

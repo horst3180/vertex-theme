@@ -32,7 +32,7 @@
   background-image: -gtk-scaled(url("assets/slider.png"),url("assets/slider@2.png"));
 }
 
-.list-row:selected .slider {
+.list-row:selected .scale.slider {
   background-image: -gtk-scaled(url("assets/slider-selected.png"),url("assets/slider-selected@2.png"));
 }
 
@@ -40,7 +40,7 @@
   background-image: -gtk-scaled(url("assets/slider-hover.png"),url("assets/slider-hover@2.png"));
 }
 
-.list-row:selected .slider:hover {
+.list-row:selected .scale.slider:hover {
   background-image: -gtk-scaled(url("assets/slider-hover-selected.png"),url("assets/slider-hover-selected@2.png"));
 }
 
@@ -128,7 +128,8 @@
 /*************
  * GtkSwitch *
  *************/
-GtkSwitch.trough {
+GtkSwitch.trough,
+.list-row:selected GtkSwitch.trough {
   background-image: -gtk-scaled(url("assets/switch.png"),url("assets/switch@2.png"));
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -166,19 +167,19 @@ GtkSwitch.slider:insensitive {
   background-position: 0 center;
 }
 
-.list-row GtkSwitch.trough  {
+.list-row:selected GtkSwitch.trough {
   background-image: -gtk-scaled(url("assets/switch-selected.png"),url("assets/switch-selected@2.png"));
 }
 
-.list-row GtkSwitch.trough:active  {
+.list-row:selected GtkSwitch.trough:active {
   background-image: -gtk-scaled(url("assets/switch-active-selected.png"),url("assets/switch-active-selected@2.png"));
 }
 
-.list-row GtkSwitch.trough:insensitive  {
+.list-row:selected GtkSwitch.trough:insensitive {
   background-image: -gtk-scaled(url("assets/switch-insensitive-selected.png"),url("assets/switch-insensitive-selected@2.png"));
 }
 
-.list-row GtkSwitch.trough:active:insensitive  {
+.list-row:selected GtkSwitch.trough:active:insensitive {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-selected.png"),url("assets/switch-active-insensitive-selected@2.png"));
 }
 
