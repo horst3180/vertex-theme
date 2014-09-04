@@ -52,7 +52,7 @@
 .header-bar GtkSwitch.trough,
 .toolbar GtkSwitch.trough,
 .primary-toolbar GtkSwitch.trough {
-  background-image: -gtk-scaled(url("assets/switch-off-dark.png"),url("assets/switch-off-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-dark.png"),url("assets/switch-dark@2.png"));
   background-repeat: no-repeat;
   background-position: 0 center;
   color: transparent;
@@ -66,32 +66,32 @@
 .header-bar GtkSwitch.trough:active,
 .toolbar GtkSwitch.trough:active,
 .primary-toolbar GtkSwitch.trough:active {
-    background-image: -gtk-scaled(url("assets/switch-on-dark.png"),url("assets/switch-on-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-dark.png"),url("assets/switch-active-dark@2.png"));
 }
 
 .header-bar GtkSwitch.trough:insensitive,
 .toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar GtkSwitch.trough:insensitive {
 	background-color: transparent;
-    background-image: -gtk-scaled(url("assets/switch-off-disabled-dark.png"),url("assets/switch-off-disabled-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-insensitive-dark.png"),url("assets/switch-insensitive-dark@2.png"));
 }
 
 .header-bar GtkSwitch.trough:active:insensitive,
 .toolbar GtkSwitch.trough:active:insensitive,
 .primary-toolbar GtkSwitch.trough:active:insensitive {
-    background-image: -gtk-scaled(url("assets/switch-on-disabled-dark.png"),url("assets/switch-on-disabled-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-isensitive-dark.png"),url("assets/switch-active-isensitive-dark@2.png"));
 }
 
 .header-bar GtkSwitch.slider,
 .toolbar GtkSwitch.slider,
 .primary-toolbar GtkSwitch.slider {
-    background-image: -gtk-scaled(url("assets/switch-slider-dark.png"),url("assets/switch-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-slider-dark.png"),url("assets/switch-slider-dark@2.png"));
 }
 
 .header-bar GtkSwitch.slider:insensitive,
 .toolbar GtkSwitch.slider:insensitive,
 .primary-toolbar GtkSwitch.slider:insensitive {
-    background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"),url("assets/switch-slider-insensitive-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"),url("assets/switch-slider-insensitive-dark@2.png"));
 }
 
 

@@ -32,8 +32,16 @@
   background-image: -gtk-scaled(url("assets/slider.png"),url("assets/slider@2.png"));
 }
 
+.list-row:selected .slider {
+  background-image: -gtk-scaled(url("assets/slider-selected.png"),url("assets/slider-selected@2.png"));
+}
+
 .scale.slider:hover {
   background-image: -gtk-scaled(url("assets/slider-hover.png"),url("assets/slider-hover@2.png"));
+}
+
+.list-row:selected .slider:hover {
+  background-image: -gtk-scaled(url("assets/slider-hover-selected.png"),url("assets/slider-hover-selected@2.png"));
 }
 
 .scale.slider:active,
@@ -41,9 +49,19 @@
   background-image: -gtk-scaled(url("assets/slider-active.png"),url("assets/slider-active@2.png"));
 }
 
+.list-row:selected .scale.slider:active,
+.list-row:selected .scale.slider:active:hover {
+  background-image: -gtk-scaled(url("assets/slider-active-selected.png"),url("assets/slider-active-selected@2.png"));
+}
+
 .scale.slider:insensitive,
 .scale.slider:insensitive:hover {
   background-image: -gtk-scaled(url("assets/slider-insensitive.png"),url("assets/slider-insensitive@2.png"));
+}
+
+.list-row:selected .scale.slider:insensitive,
+.list-row:selected .scale.slider:insensitive:hover {
+  background-image: -gtk-scaled(url("assets/slider-insensitive-selected.png"),url("assets/slider-insensitive-selected@2.png"));
 }
 
 .osd .scale.slider {
@@ -111,7 +129,7 @@
  * GtkSwitch *
  *************/
 GtkSwitch.trough {
-  background-image: -gtk-scaled(url("assets/switch-off.png"),url("assets/switch-off@2.png"));
+  background-image: -gtk-scaled(url("assets/switch.png"),url("assets/switch@2.png"));
   background-repeat: no-repeat;
   background-position: 0 center;
   color: transparent;
@@ -123,16 +141,16 @@ GtkSwitch.trough {
 }
 
 GtkSwitch.trough:active {
-  background-image: -gtk-scaled(url("assets/switch-on.png"),url("assets/switch-on@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active.png"),url("assets/switch-active@2.png"));
 }
 
 GtkSwitch.trough:insensitive {
   background-color: transparent;
-  background-image: -gtk-scaled(url("assets/switch-off-disabled.png"),url("assets/switch-off-disabled@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-insensitive.png"),url("assets/switch-insensitive@2.png"));
 }
 
 GtkSwitch.trough:active:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-on-disabled.png"),url("assets/switch-on-disabled@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-isensitive.png"),url("assets/switch-active-isensitive@2.png"));
 }
 
 GtkSwitch.slider {
@@ -149,41 +167,55 @@ GtkSwitch.slider:insensitive {
 }
 
 .list-row GtkSwitch.trough  {
-  background-image: -gtk-scaled(url("assets/switch-off-list.png"),url("assets/switch-off-list@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-selected.png"),url("assets/switch-selected@2.png"));
 }
 
 .list-row GtkSwitch.trough:active  {
-  background-image: -gtk-scaled(url("assets/switch-on-list.png"),url("assets/switch-on-list@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-selected.png"),url("assets/switch-active-selected@2.png"));
 }
 
 .list-row GtkSwitch.trough:insensitive  {
-  background-image: -gtk-scaled(url("assets/switch-off-disabled-list.png"),url("assets/switch-off-disabled-list@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-insensitive-selected.png"),url("assets/switch-insensitive-selected@2.png"));
 }
 
 .list-row GtkSwitch.trough:active:insensitive  {
-  background-image: -gtk-scaled(url("assets/switch-on-disabled-list.png"),url("assets/switch-on-disabled-list@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive-selected.png"),url("assets/switch-active-insensitive-selected@2.png"));
 }
 
 /*************************
  * Check and Radio items *
  *************************/
-.check,
-.menuitem.check:hover {
+.check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"), url("assets/checkbox-unchecked@2.png")); }
+
+.view.check:selected row,
+.menuitem.check:hover,
+.list-row:selected .check {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-selected.png"), url("assets/checkbox-unchecked-selected@2.png")); }
 
 .check:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"), url("assets/checkbox-unchecked-insensitive@2.png")); }
 
-.check:inconsistent,
-.menuitem.check:inconsistent:hover {
+.view.check:insensitive:selected row,
+.menuitem.check:insensitive:hover,
+.list-row:selected .check:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-selected.png"), url("assets/checkbox-unchecked-insensitive-selected@2.png")); }
+
+.check:inconsistent {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"), url("assets/checkbox-mixed@2.png")); }
 
 .view.check:inconsistent:selected row,
-.menuitem.check:inconsistent:hover {
+.menuitem.check:inconsistent:hover,
+.list-row:selected .check:inconsistent {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-selected.png"), url("assets/checkbox-mixed-selected@2.png")); }
 
 .check:inconsistent:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"), url("assets/checkbox-mixed-insensitive@2.png")); }
+
+.view.check:inconsistent:insensitive:selected row,
+.menuitem.check:inconsistent:insensitive:hover,
+.list-row:selected .check:inconsistent:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-selected.png"), url("assets/checkbox-mixed-selected@2.png")); }
 
 .check:active, 
 .check:checked {
@@ -192,30 +224,54 @@ GtkSwitch.slider:insensitive {
 .view.check:active:selected row,
 .menuitem.check:active:hover,
 .view.check:checked:selected row,
-.menuitem.check:checked:hover {
+.menuitem.check:checked:hover,
+.list-row:selected .check:active,
+.list-row:selected .check:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png")); }
 
 .check:active:insensitive,
 .check:checked:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive.png"), url("assets/checkbox-checked-insensitive@2.png")); }
 
-.radio,
-.menuitem.radio:hover {
+.view.check:active:insensitive:selected row,
+.menuitem.check:active:insensitive:hover,
+.view.check:checked:insensitive:selected row,
+.menuitem.check:checked:insensitive:hover,
+.list-row:selected .check:active:insensitive,
+.list-row:selected .check:checked:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-selected.png"), url("assets/checkbox-checked-insensitive-selected@2.png")); }
+
+.radio {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"), url("assets/radio-unchecked@2.png")); }
+
+.view.radio:selected row,
+.menuitem.radio:hover,
+.list-row:selected .radio {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-selected.png"), url("assets/radio-unchecked-selected@2.png")); }
 
 .radio:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive.png"), url("assets/radio-unchecked-insensitive@2.png")); }
 
-.radio:inconsistent,
-.menuitem.radio:inconsistent:hover {
+.view.radio:insensitive:selected row,
+.menuitem.radio:insensitive:hover,
+.list-row:selected .radio:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-selected.png"), url("assets/radio-unchecked-insensitive-selected@2.png")); }
+
+.radio:inconsistent {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"), url("assets/radio-mixed@2.png")); }
 
 .view.radio:inconsistent:selected row,
-.menuitem.radio:inconsistent:hover {
+.menuitem.radio:inconsistent:hover,
+.list-row:selected .radio:inconsistent {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-selected.png"), url("assets/radio-mixed-selected@2.png")); }
 
 .radio:inconsistent:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive.png"), url("assets/radio-mixed-insensitive@2.png")); }
+
+.view.radio:inconsistent:insensitive:selected row,
+.menuitem.radio:inconsistent:insensitive:hover,
+.list-row:selected .radio:inconsistent:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-selected.png"), url("assets/radio-mixed-selected@2.png")); }
 
 .radio:active, 
 .radio:checked {
@@ -224,12 +280,22 @@ GtkSwitch.slider:insensitive {
 .view.radio:active:selected row,
 .menuitem.radio:active:hover,
 .view.radio:checked:selected row,
-.menuitem.radio:checked:hover {
+.menuitem.radio:checked:hover,
+.list-row:selected .radio:active,
+.list-row:selected .radio:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png")); }
 
 .radio:active:insensitive,
 .radio:checked:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive.png"), url("assets/radio-checked-insensitive@2.png")); }
+
+.view.radio:active:insensitive:selected row,
+.menuitem.radio:active:insensitive:hover,
+.view.radio:checked:insensitive:selected row,
+.menuitem.radio:checked:insensitive:hover,
+.list-row:selected .radio:active:insensitive,
+.list-row:selected .radio:checked:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-selected.png"), url("assets/radio-checked-insensitive-selected@2.png")); }
 
 /*Selectionmode*/
 GtkIconView.view.check,

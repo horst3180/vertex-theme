@@ -1692,7 +1692,6 @@ GtkScrolledWindow GtkViewport.frame {
 
 .list-row.button, .list-row.button:hover, .list-row.button:active, .list-row.button:active:hover,
 .list-row.button:selected:active, .list-row.button:selected, .list-row.button:selected:hover, .list-row.button:focus, .list-row.button:focus:active:hover {
-  transition: none;
   border-style: none;
   border-radius: 0;
   box-shadow: none;
@@ -1723,6 +1722,14 @@ GtkScrolledWindow GtkViewport.frame {
     box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.5);
     color: @theme_selected_fg_color;
     background-color: shade(@theme_selected_bg_color, 0.97); }
+    .list-row:selected .button.flat {
+      color: @theme_selected_fg_color; }
+      .list-row:selected .button.flat:focus {
+        border-image: none; }
+    .list-row:selected .button.flat:hover {
+      color: @theme_fg_color; }
+    .list-row:selected .button.flat:active {
+      color: @button_active_text; }
 
 /*********************
  * App Notifications *

@@ -89,6 +89,24 @@
     border-color: transparent;
 }
 
+.list-row:selected .button:focus, 
+.list-row:selected .button:focus:hover {
+    border-image: -gtk-scaled(url("borders/button-border.png"),url("borders/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.list-row:selected .button:active,
+.list-row:selected .button:focus:active {
+    border-image: -gtk-scaled(url("borders/button-active-border-selected.png"),url("borders/button-active-border-selected@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 .button.suggested-action,
 .button.suggested-action:insensitive {
     border-image: -gtk-scaled(url("borders/button-border-suggested.png"),url("borders/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
@@ -450,6 +468,14 @@ GtkComboBox.combobox-entry .button:only-child:checked,
     border-color: transparent;
 }
 
+.list-row:selected .scale.trough {
+    border-image: -gtk-scaled(url("borders/scale-trough-border-selected.png"),url("borders/scale-trough-border-selected@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+    border-radius: 2px;
+    border-width: 1px 5px 2px 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 .scale.trough.vertical {
     border-image: -gtk-scaled(url("borders/scale-trough-vertical-border.png"),url("borders/scale-trough-vertical-border@2.png")) 6 3 6 2 / 6px 3px 6px 2px stretch;
     border-radius: 2px;
@@ -460,6 +486,14 @@ GtkComboBox.combobox-entry .button:only-child:checked,
 
 .scale.trough.highlight {
     border-image: -gtk-scaled(url("borders/scale-highlight-border.png"),url("borders/scale-highlight-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+    border-radius: 2px;
+    border-width: 1px 5px 2px 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.list-row:selected .scale.trough.highlight {
+    border-image: -gtk-scaled(url("borders/scale-highlight-border-selected.png"),url("borders/scale-highlight-border-selected@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
     border-radius: 2px;
     border-width: 1px 5px 2px 5px;
     border-style: solid;
@@ -477,6 +511,15 @@ GtkComboBox.combobox-entry .button:only-child:checked,
 /*progressbar trough*/
 .trough {
     border-image: -gtk-scaled(url("borders/trough-border.png"),url("borders/trough-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.list-row:selected .trough,
+GtkTreeView.view.trough:selected {
+    border-image: -gtk-scaled(url("borders/trough-border-selected.png"),url("borders/trough-border-selected@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
