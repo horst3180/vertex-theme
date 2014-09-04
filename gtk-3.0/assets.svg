@@ -19,6 +19,17 @@
   <defs
      id="defs4114">
     <linearGradient
+       id="linearGradient6943">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.36078432;"
+         offset="0"
+         id="stop6945" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.86274511;"
+         offset="1"
+         id="stop6947" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient6844">
       <stop
          style="stop-color:#000000;stop-opacity:0;"
@@ -2915,7 +2926,7 @@
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3845-23"
+       xlink:href="#linearGradient6943"
        id="linearGradient3011-7"
        gradientUnits="userSpaceOnUse"
        x1="8"
@@ -3565,7 +3576,7 @@
       <stop
          id="stop3847-98"
          offset="0"
-         style="stop-color:#000000;stop-opacity:0.36078432;" />
+         style="stop-color:#000000;stop-opacity:0.45882353;" />
       <stop
          id="stop3849-15"
          offset="1"
@@ -5602,12 +5613,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="287.1677"
-     inkscape:cy="226.73643"
+     inkscape:zoom="16"
+     inkscape:cx="290.9853"
+     inkscape:cy="148.45873"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      showguides="false"
      inkscape:guide-bbox="true"
      inkscape:window-width="1920"
@@ -5661,7 +5672,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -11394,7 +11405,7 @@
     <g
        inkscape:label="Layer 1"
        id="button-border-dark"
-       transform="translate(273,812.36223)">
+       transform="translate(273,812.36218)">
       <rect
          ry="1.5127127"
          rx="1.4870903"
