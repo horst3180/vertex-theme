@@ -268,6 +268,14 @@ column-header:last-child .button:active:hover {
     border-color: transparent;
 }
 
+.trough row:selected {
+    border-image: -gtk-scaled(url("borders/trough-border-selected.png"),url("borders/trough-border-selected@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 .trough.vertical {
     border-image: -gtk-scaled(url("borders/trough-vertical-border.png"),url("borders/trough-vertical-border@2.png")) 2 3 2 2 / 2px 3px 2px 2px stretch;
     border-radius: 2px;

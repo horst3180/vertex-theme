@@ -256,7 +256,7 @@ GtkModelButton.button.radio:inconsistent:active:hover {
  * GtkSwitch *
  *************/
 GtkSwitch.trough {
-    background-image: -gtk-scaled(url("assets/switch-off.png"),url("assets/switch-off@2.png"));
+    background-image: -gtk-scaled(url("assets/switch.png"),url("assets/switch@2.png"));
     background-repeat: no-repeat;
     background-position: 0 center;
     color: transparent;
@@ -268,16 +268,16 @@ GtkSwitch.trough {
 }
 
 GtkSwitch.trough:active {
-    background-image: -gtk-scaled(url("assets/switch-on.png"),url("assets/switch-on@2.png"));
+    background-image: -gtk-scaled(url("assets/switch-active.png"),url("assets/switch-active@2.png"));
 }
 
 GtkSwitch.trough:insensitive {
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/switch-off-disabled.png"),url("assets/switch-off-disabled@2.png"));
+    background-image: -gtk-scaled(url("assets/switch-insensitive.png"),url("assets/switch-insensitive@2.png"));
 }
 
 GtkSwitch.trough:active:insensitive {
-    background-image: -gtk-scaled(url("assets/switch-on-disabled.png"),url("assets/switch-on-disabled@2.png"));
+    background-image: -gtk-scaled(url("assets/switch-active-insensitive.png"),url("assets/switch-active-insensitive@2.png"));
 }
 
 GtkSwitch.slider {
@@ -293,18 +293,18 @@ GtkSwitch.slider:insensitive {
     background-position: 0 center;
 }
 
-.list-row GtkSwitch.trough  {
-    background-image: -gtk-scaled(url("assets/switch-off-list.png"),url("assets/switch-off-list@2.png"));
+.list-row GtkSwitch.trough {
+  background-image: -gtk-scaled(url("assets/switch-selected.png"),url("assets/switch-selected@2.png"));
 }
 
-.list-row GtkSwitch.trough:active  {
-    background-image: -gtk-scaled(url("assets/switch-on-list.png"),url("assets/switch-on-list@2.png"));
+.list-row GtkSwitch.trough:active {
+  background-image: -gtk-scaled(url("assets/switch-active-selected.png"),url("assets/switch-active-selected@2.png"));
 }
 
-.list-row GtkSwitch.trough:insensitive  {
-    background-image: -gtk-scaled(url("assets/switch-off-disabled-list.png"),url("assets/switch-off-disabled-list@2.png"));
+.list-row GtkSwitch.trough:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-insensitive-selected.png"),url("assets/switch-insensitive-selected@2.png"));
 }
 
-.list-row GtkSwitch.trough:active:insensitive  {
-    background-image: -gtk-scaled(url("assets/switch-on-disabled-list.png"),url("assets/switch-on-disabled-list@2.png"));
+.list-row GtkSwitch.trough:active:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive-selected.png"),url("assets/switch-active-insensitive-selected@2.png"));
 }

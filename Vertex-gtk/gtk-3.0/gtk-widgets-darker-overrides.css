@@ -590,7 +590,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .primary-toolbar.toolbar GtkSwitch.trough,
 .toolbar GtkSwitch.trough,
 .header-bar GtkSwitch.trough {
-    background-image: -gtk-scaled(url("assets/switch-off-dark.png"),url("assets/switch-off-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-dark.png"),url("assets/switch-dark@2.png"));
 	border-color: transparent;
 	border-image: none;
 	border-style: none;
@@ -601,19 +601,20 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .primary-toolbar.toolbar GtkSwitch.trough:active,
 .toolbar GtkSwitch.trough:active,
 .header-bar GtkSwitch.trough:active {
-    background-image: -gtk-scaled(url("assets/switch-on-dark.png"),url("assets/switch-on-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-dark.png"),url("assets/switch-active-dark@2.png"));
 }
 
 .primary-toolbar.toolbar GtkSwitch.trough:insensitive,
 .toolbar GtkSwitch.trough:insensitive,
 .header-bar GtkSwitch.trough:insensitive {
-    background-image: -gtk-scaled(url("assets/switch-off-disabled-dark.png"),url("assets/switch-off-disabled-dark@2.png"));
+  background-color: transparent;
+  background-image: -gtk-scaled(url("assets/switch-insensitive-dark.png"),url("assets/switch-insensitive-dark@2.png"));
 }
 
 .primary-toolbar.toolbar GtkSwitch.trough:active:insensitive,
 .toolbar GtkSwitch.trough:active:insensitive,
 .header-bar GtkSwitch.trough:active:insensitive {
-    background-image: -gtk-scaled(url("assets/switch-on-disabled-dark.png"),url("assets/switch-on-disabled-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-isensitive-dark.png"),url("assets/switch-active-isensitive-dark@2.png"));
 }
 
 .primary-toolbar.toolbar GtkSwitch.slider,

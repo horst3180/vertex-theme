@@ -17,6 +17,7 @@ tooltip-generic-border
 tooltip-generic-border-focused
 osd-border
 trough-border
+trough-border-selected
 scale-trough-border
 scale-trough-osd-border
 scale-highlight-border
