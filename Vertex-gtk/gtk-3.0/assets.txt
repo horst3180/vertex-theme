@@ -40,6 +40,8 @@ switch-active-insensitive
 switch-active-insensitive-selected
 switch-slider
 switch-slider-insensitive
+grid-selection-unchecked
+grid-selection-checked
 checkbox-checked-dark
 checkbox-checked-selected-dark
 checkbox-checked-insensitive-dark
@@ -72,10 +74,11 @@ slider-dark
 slider-hover-dark
 slider-active-dark
 slider-insensitive-dark
-switch-active
-switch-insensitive
-switch-active-insensitive
-grid-selection-unchecked
-grid-selection-checked
+switch-dark
+switch-active-dark
+switch-insensitive-dark
+switch-active-insensitive-dark
+switch-slider-dark
+switch-slider-insensitive-dark
 grid-selection-unchecked-dark
 grid-selection-checked-dark
