@@ -115,18 +115,6 @@ EphyNotebook.notebook.header {
     border-bottom-width: 1px;
 }
 
-NautilusNotebook.notebook tab.top:hover,
-NemoWindow .notebook tab.top:hover,
-EmpathyChatWindow .notebook tab.top:hover,
-GeditWindow .notebook tab.top:hover,
-EphyNotebook.notebook tab.top:hover {
-    background-color: shade(@theme_base_color, 0.95);
-    border-image: linear-gradient(to bottom,
-                                  @dark_borders 0px,
-                                  @borders 0px,
-                                  alpha(@borders, 0.1)) 0 1 0 1;
-}
-
 NautilusNotebook.notebook tab.top,
 NemoWindow .notebook tab.top,
 EmpathyChatWindow .notebook tab.top,
@@ -141,6 +129,18 @@ EphyNotebook.notebook tab.top:hover {
                                   @dark_borders 0px,
                                   @borders 0px,
                                   alpha(@borders, 0.2)) 0 1 0 1;
+}
+
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover {
+    background-color: shade(@theme_base_color, 0.95);
+    border-image: linear-gradient(to bottom,
+                                  @dark_borders 0px,
+                                  @borders 0px,
+                                  alpha(@borders, 0.1)) 0 1 0 1;
 }
 
 /*
