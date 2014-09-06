@@ -31,7 +31,6 @@
 }
 
 .notebook tab {
-    padding: 10px;
     border-color: @borders;
     background-color: shade(@theme_bg_color, 1.01);
     background-image: none;
@@ -47,8 +46,8 @@
 }
 
 .notebook tab.top {
-    /*padding-top: 10px;
-    padding-bottom: 1px;*/
+    padding-top: 6px;
+    padding-bottom: 4px;
 	padding-left: 4px;
 	padding-right: 4px;
     border-width: 1px 1px 0 1px;
