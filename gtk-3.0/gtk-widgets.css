@@ -1,5 +1,6 @@
 * {
   padding: 0;
+  background-clip: padding-box;
   -GtkToolButton-icon-spacing: 4;
   -GtkTextView-error-underline-color: @error_color;
   -GtkPaned-handle-size: 1;
