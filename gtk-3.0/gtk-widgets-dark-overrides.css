@@ -44,6 +44,12 @@ GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selectio
 .list-row:selected .button.flat:focus, .list-row:selected .button.flat {
   border-image: none; }
 
+/*********************
+ * App Notifications *
+ *********************/
+.app-notification {
+  border-color: alpha(black, 0.5); }
+
 .info, .question, .warning, .error {
     text-shadow: 0 -1px @infobar_text_shadow; }
 

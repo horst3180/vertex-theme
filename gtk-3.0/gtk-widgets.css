@@ -1741,12 +1741,12 @@ GtkScrolledWindow GtkViewport.frame {
 .app-notification {
   border-width: 0 1px 1px;
   border-style: solid;
-  border-color: @borders;
+  border-color: alpha(black, 0.2);
   border-radius: 0 0 3px 3px;
-    background-image: linear-gradient(to bottom,
-                                      @app_notification_a,
-                                      @app_notification_b);
-  padding: 0 4px; }
+  background-image: linear-gradient(to bottom,
+                                    @app_notification_a,
+                                    @app_notification_b);
+  padding: 10px; }
   .app-notification .button {
     padding: 6px; }
 
