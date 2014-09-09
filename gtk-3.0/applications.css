@@ -83,55 +83,12 @@ TerminalWindow .scrollbar.slider.vertical:active {
   text-shadow: none;
 }
 
-NautilusWindow .sidebar .frame {
-  border-style: none;
-}
-
-NautilusWindow > GtkGrid > .pane-separator,
-NautilusWindow > GtkGrid > .pane-separator:hover {
-  border-width: 0 1px 0 0;
-  border-style: solid;
-  border-color: @borders;
-  background-color: @sidebar_bg;
-  color: shade (@theme_bg_color, 0.9);
-}
-
 NautilusNotebook.notebook {
-  border-right-width: 0;
-  border-left-width: 0;
-  border-bottom-width: 0;
   background-color: @theme_base_color;
 }
 
 NautilusNotebook.notebook tab.top {
   padding: 6px 20px 5px; }
-
-NautilusNotebook .frame {
-  border-width: 0;
-}
-
-NautilusQueryEditor .search-bar.toolbar {
-  border-top-width: 0;
-  border-bottom-width: 0;
-  box-shadow: none;
-}
-
-NautilusQueryEditor .toolbar {
-  padding-top: 3px;
-  padding-bottom: 2px;
-  border-width: 1px 0 0 0;
-  border-style: solid;
-}
-
-NautilusQueryEditor .toolbar:nth-child(2) {
-  border-color: @borders;
-}
-
-NautilusQueryEditor .toolbar:last-child,
-NautilusQueryEditor .search-bar.toolbar:only-child {
-  border-bottom-width: 1px;
-  border-bottom-color: @borders;
-}
 
 /* Nemo */
 NemoWindow * {

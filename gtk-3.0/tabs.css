@@ -146,28 +146,6 @@ TerminalWindow .notebook tab .button:hover {
     color: alpha(@theme_selected_fg_color, 0.8);
 }
 
-/* Nautilus */
-NautilusWindow .sidebar .frame {
-  border-width: 0;
-}
-
-NautilusWindow .info, NautilusWindow .question, NautilusWindow .warning, NautilusWindow .error {
-	border-width: 0;
-  background-image: linear-gradient(to bottom,
-                                      @notebook_tab_gradient_a,
-	                  								  @theme_base_color); }
-
-NautilusQueryEditor .toolbar:last-child, NautilusQueryEditor .search-bar.toolbar:only-child {
-  border-bottom-width: 0; }
-
-NautilusQueryEditor .toolbar:first-child {
-  background-image: linear-gradient(to bottom, 
-                                      @wm_bg_b, 
-                                      @theme_base_color); }
-
-NautilusQueryEditor .toolbar {
-	background-color: @theme_base_color; }
-
 /* Empathy */
 EmpathyChatWindow .notebook tab.top {
   padding: 6px 20px 4px; }
