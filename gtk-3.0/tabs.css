@@ -7,6 +7,8 @@ TerminalWindow .notebook {
   -GtkNotebook-tab-overlap: 6;
 }
 
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.top:active:hover,
 NemoNotebook.notebook tab.top:active,
 NemoNotebook.notebook tab.top:active:hover,
 EmpathyChatWindow .notebook tab.top:active,
@@ -16,16 +18,6 @@ GeditWindow .notebook tab.top:active:hover,
 EphyNotebook.notebook tab.top:active,
 EphyNotebook.notebook tab.top:active:hover {
   border-image: -gtk-scaled(url("tabs/tab_active.png"),url("tabs/tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
-  border-width: 0px 5px 1px 5px;
-  border-style: solid;
-  border-color: transparent;
-  box-shadow: none;
-  background-color: transparent;
-}
-
-NautilusNotebook.notebook tab.top:active,
-NautilusNotebook.notebook tab.top:active:hover {
-  border-image: -gtk-scaled(url("tabs/nautilus_tab_active.png"),url("tabs/nautilus_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
   border-width: 0px 5px 1px 5px;
   border-style: solid;
   border-color: transparent;
@@ -66,9 +58,7 @@ EphyNotebook.notebook tab.top:hover {
   background-color: shade(@theme_base_color, 0.95);
 }
 
-NautilusNotebook.notebook tab.top,
-NautilusNotebook.notebook.header.top,
-NautilusNotebook.notebook tab.top:hover,
+
 EmpathyChatWindow .notebook tab.top,
 EmpathyChatWindow .notebook tab.top:hover {
   box-shadow: inset 0 5px alpha(black, 0.01),
@@ -157,13 +147,7 @@ TerminalWindow .notebook tab .button:hover {
 }
 
 /* Nautilus */
-NautilusWindow .sidebar .frame, NautilusNotebook .frame {
-  border-width: 1px 0 0 0;
-	border-color: @borders;
-  border-style: solid;
-}
-
-NautilusWindow .header-bar {
+NautilusWindow .sidebar .frame {
   border-width: 0;
 }
 

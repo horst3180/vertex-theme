@@ -63,6 +63,8 @@ EphyNotebook.notebook .active-page .button:active {
                                   @dark_button_active_gradient_color_b);
 }
 
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.top:active:hover,
 NemoNotebook.notebook tab.top:active,
 NemoNotebook.notebook tab.top:active:hover,
 EmpathyChatWindow .notebook tab.top:active,
@@ -72,16 +74,6 @@ GeditWindow .notebook tab.top:active:hover,
 EphyNotebook.notebook tab.top:active,
 EphyNotebook.notebook tab.top:active:hover {
   border-image: -gtk-scaled(url("tabs/darker/tab_active.png"),url("tabs/darker/tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
-  border-width: 0px 5px 1px 5px;
-  border-style: solid;
-  border-color: transparent;
-  box-shadow: none;
-  background-color: transparent;
-}
-
-NautilusNotebook.notebook tab.top:active,
-NautilusNotebook.notebook tab.top:active:hover {
-  border-image: -gtk-scaled(url("tabs/darker/nautilus_tab_active.png"),url("tabs/darker/nautilus_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
   border-width: 0px 5px 1px 5px;
   border-style: solid;
   border-color: transparent;
@@ -136,26 +128,6 @@ EphyNotebook.notebook tab.top:hover {
                                   alpha(@borders, 0.2)) 0 1 0 1;
 }
 
-NautilusNotebook.notebook tab.top,
-NautilusNotebook.notebook tab.top:hover {
-    border-image: linear-gradient(to bottom,
-                                  @dark_borders 1px,
-                                  @borders 1px,
-                                  alpha(@borders, 0.2)) 0 1 0 1;
-}
-
-NautilusNotebook.notebook tab.top,
-NautilusNotebook.notebook.header.top,
-NautilusNotebook.notebook tab.top:hover {
-    box-shadow: inset 0 6px alpha(black, 0.005),
-				        inset 0 5px alpha(black, 0.020),
-				        inset 0 4px alpha(black, 0.050), 
-				        inset 0 3px alpha(black, 0.075), 
-				        inset 0 2px alpha(black, 0.09),
-              inset 0 -1px alpha(@borders, 0.5),
-              inset 0 1px @dark_borders;
-}
-
 /*
  * Empathy
  */
@@ -182,20 +154,6 @@ TerminalWindow .notebook tab GtkLabel {
 }
 
 /* Nautilus */
-NautilusWindow .sidebar .frame, NautilusNotebook .frame {
-  border-width: 1px 0 0 0;
-	border-color: @dark_borders;
-  border-style: solid;
-}
-
-NautilusWindow > GtkGrid > .pane-separator,
-NautilusWindow > GtkGrid > .pane-separator:hover {
-    border-width: 0 1px 0 0;
-    border-image: linear-gradient(to bottom,
-                                  @dark_borders 1px,
-                                  shade(@borders, 0.95) 1px) 0 1 0 0;
-}
-
 NautilusWindow .info, NautilusWindow .question, NautilusWindow .warning, NautilusWindow .error {
 	border-width: 0;
   background-image: linear-gradient(to bottom,
