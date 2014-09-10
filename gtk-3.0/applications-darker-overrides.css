@@ -51,14 +51,6 @@ GeditFileBrowserWidget .toolbar {
 }
 
 /*
- * Epiphany
- *//*
-#ephy-page-menu-button.active-menu {
-	color: @theme_fg_color;
-	icon-shadow: none;
-}*/
-
-/*
  * Rhythmbox
  *//*
 RBSource .toolbar {

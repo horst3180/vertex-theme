@@ -369,15 +369,17 @@ GtkComboBox.combobox-entry .button:only-child:checked,
 }
 
 /*OSD */
-.button.osd, .button.osd:active, .button.osd:active:hover, .button.osd:insensitive,
-.button.osd, .button.osd:checked, .button.osd:checked:hover {
-      border-image: none;
-      border: 1px solid alpha(black, 0.75); }
+.button.osd, .button.osd:insensitive, 
+.button.osd:active, .button.osd:active:hover, 
+.button.osd:checked, .button.osd:checked:hover {
+  border-image: none;
+  border: 1px solid alpha(black, 0.75); }
 
-.osd .button, .osd .button:active, .osd .button:active:hover, .osd .button:insensitive,
-.osd .button, .osd .button:checked, .osd .button:checked:hover {
+.osd .button, .osd .button:insensitive, 
+.osd .button:active, .osd .button:active:hover,
+.osd .button:checked, .osd .button:checked:hover {
   border-width: 0 1px 0 1px;
-	border-style: solid;
+  border-style: solid;
   border-radius: 0;
   border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 1 0 1 / 0 1px 0 1px stretch;
 }
@@ -388,7 +390,7 @@ GtkComboBox.combobox-entry .button:only-child:checked,
 .osd .button:first-child:checked,
 .osd .button:first-child:checked:hover {
   border-width: 0px 1px 0 0;
-	border-style: solid;
+  border-style: solid;
   border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 1 0 0 / 0 1px 0 0px stretch;
 }
 
@@ -398,22 +400,24 @@ GtkComboBox.combobox-entry .button:only-child:checked,
 .osd .button:last-child:checked,
 .osd .button:last-child:checked:hover {
   border-width: 0 0 0 1px;
-	border-style: solid;
+  border-style: solid;
   border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 0 0 1 / 0 0px 0 1px stretch;
 }
 
-.osd .button:only-child {
+.osd .button:only-child,
+.osd .button:only-child:active, .osd .button:only-child:active:hover,
+.osd .button:only-child:checked, .osd .button:only-child:checked:hover {
   border-style: none;
-	border-image: none;
+  border-image: none;
   box-shadow: none;
 }
 
 .osd .scale.trough, .osd .scale.trough.highlight {
-    border-image: -gtk-scaled(url("borders/scale-trough-osd-border.png"),url("borders/scale-trough-osd-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
-    border-radius: 2px;
-    border-width: 1px 5px 2px 5px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/scale-trough-osd-border.png"),url("borders/scale-trough-osd-border@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+  border-radius: 2px;
+  border-width: 1px 5px 2px 5px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .osd.stack-switcher .button, .osd.stack-switcher .button:first-child, .osd.stack-switcher .button:last-child, .osd.stack-switcher .button:only-child,

@@ -309,9 +309,11 @@ GtkFlowBox .grid-child {
     text-shadow: 0 -1px @osd_text_shadow;
     icon-shadow: 0 -1px @osd_text_shadow; }
     .osd .button:hover {
-      color: @theme_selected_bg_color;}
+      color: @theme_selected_bg_color;
+      background-image: none; }
     .osd .button:active, .osd .button:checked, .osd .button:active:hover, .osd .button:checked:hover {
-      color: shade(@theme_selected_bg_color, 0.8); }
+      color: shade(@theme_selected_bg_color, 0.8);
+      background-image: none; }
     .osd .button:insensitive {
       color: alpha(@theme_selected_fg_color, 0.4); }
   .button.suggested-action {
@@ -1053,6 +1055,7 @@ GtkTreeView.view.trough:selected {
  * Popovers   *
  ***************/
 .popover {
+  background-clip: initial;
   margin: 10px;
   padding: 2px;
   border-color: darker(@theme_base_color);
