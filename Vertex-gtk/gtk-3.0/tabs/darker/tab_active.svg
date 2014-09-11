@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg2"
@@ -32,6 +33,29 @@
   </metadata>
   <defs
      id="defs6">
+    <linearGradient
+       id="linearGradient3765">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="0"
+         id="stop3767" />
+      <stop
+         id="stop3775"
+         offset="0.25"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop3773"
+         offset="0.5"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.75"
+         id="stop3779" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3769" />
+    </linearGradient>
     <filter
        inkscape:collect="always"
        id="filter3867"
@@ -54,6 +78,15 @@
          id="path3917"
          inkscape:connector-curvature="0" />
     </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3765"
+       id="linearGradient3771"
+       x1="5"
+       y1="0.5"
+       x2="32"
+       y2="0.5"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -70,8 +103,8 @@
      showgrid="true"
      showguides="true"
      inkscape:zoom="16"
-     inkscape:cx="18.378091"
-     inkscape:cy="4.8546918"
+     inkscape:cx="18.471841"
+     inkscape:cy="9.8546918"
      inkscape:window-x="331"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -146,5 +179,13 @@
        d="m 135.827,1054.173 0,12 c 0,1.662 1.338,3 3,3 l 23,0 c 1.662,0 3,-1.338 3,-3 l 0,-12 -1,0 0,12 c 0,1.108 -0.892,2 -2,2 l -23,0 c -1.108,0 -2,-0.892 -2,-2 l 0,-12 -1,0 z"
        id="rect3987"
        inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:0.06000001000000000;fill:url(#linearGradient3771);fill-opacity:1;stroke:#102b68;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2995"
+       width="27"
+       height="1"
+       x="5"
+       y="0"
+       transform="translate(131.827,1052.173)" />
   </g>
 </svg>

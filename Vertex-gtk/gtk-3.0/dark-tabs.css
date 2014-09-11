@@ -1,3 +1,5 @@
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.top:active:hover,
 NemoNotebook.notebook tab.top:active,
 NemoNotebook.notebook tab.top:active:hover,
 GeditWindow .notebook tab.top:active,
@@ -5,12 +7,6 @@ GeditWindow .notebook tab.top:active:hover,
 EphyNotebook.notebook tab.top:active,
 EphyNotebook.notebook tab.top:active:hover {
     border-image: -gtk-scaled(url("tabs/dark/tab_active.png"),url("tabs/dark/tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
-}
-
-NautilusNotebook.notebook tab.top:active,
-NautilusNotebook.notebook tab.top:active:hover {
-    border-image: -gtk-scaled(url("tabs/dark/nautilus_tab_active.png"),url("tabs/dark/nautilus_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
-    background-color: transparent;
 }
 
 TerminalWindow .notebook tab.reorderable-page:active {

@@ -23,12 +23,7 @@ EphyNotebook.notebook tab.reorderable-page:active,
 EphyNotebook.notebook tab.reorderable-page:active:hover {
     background-image: linear-gradient(to bottom,
                                       @dark_notebook_tab_gradient_a,
-									  @dark_notebook_tab_gradient_b);
-    /*border-left: 1px solid @dark_borders;
-    border-right: 1px solid @dark_borders;
-    border-bottom: 1px solid @dark_borders;
-    border-top-width: 0px;
-    border-radius: 0 0 2px 2px;*/
+                                      @dark_notebook_tab_gradient_b);
 }
 
 TerminalWindow .notebook .active-page .button,
@@ -63,10 +58,12 @@ GeditWindow .notebook .active-page .button:active,
 EphyNotebook.notebook .active-page .button:active {
     border-color: alpha(black, 0.5);
     background-image: linear-gradient(to bottom,
-                                  @dark_button_active_gradient_color_a,
-                                  @dark_button_active_gradient_color_b);
+                                      @dark_button_active_gradient_color_a,
+                                      @dark_button_active_gradient_color_b);
 }
 
+NautilusNotebook.notebook tab.reorderable-page:active,
+NautilusNotebook.notebook tab.reorderable-page:active:hover,
 NemoWindow .notebook tab.reorderable-page:active,
 NemoWindow .notebook tab.reorderable-page:active:hover,
 EmpathyChatWindow .notebook tab.reorderable-page:active,
@@ -80,14 +77,6 @@ EphyNotebook.notebook tab.reorderable-page:active:hover {
     border-style: solid;
     border-color: transparent;
     box-shadow: none;
-}
-
-NautilusNotebook.notebook tab.reorderable-page:active,
-NautilusNotebook.notebook tab.reorderable-page:active:hover {
-    border-image: -gtk-scaled(url("tabs/darker/nautilus_tab_active.png"),url("tabs/darker/nautilus_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
-    border-width: 0px 5px 1px 5px;
-    border-style: solid;
-    border-color: transparent;
 }
 
 NautilusNotebook.notebook tab.top,
@@ -167,44 +156,5 @@ TerminalWindow .notebook tab.reorderable-page:active {
 
 TerminalWindow .notebook tab GtkLabel {
     color: mix(@dark_fg_color, @dark_bg_color, 0.40);
-    text-shadow: 0 -1px @dark_wm_title_shadow;
-}
-
-/*
- * Nautilus
- */
-NautilusWindow .sidebar .frame,
-NautilusNotebook .frame {
-    border-color: @dark_borders;
-}
-
-NautilusWindow > GtkGrid > .pane-separator,
-NautilusWindow > GtkGrid > .pane-separator:hover {
-    border-width: 0 1px 0 0;
-    border-image: linear-gradient(to bottom,
-                                  @dark_borders 1px,
-                                  shade(@borders, 0.95) 1px) 0 1 0 0;
-}
-
-NautilusNotebook.notebook.header {
-    border-top-color: @dark_borders;
-    border-top-width: 1px;
-}
-
-NautilusNotebook.notebook tab.reorderable-page,
-NautilusNotebook.notebook tab.reorderable-page:hover {
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-}
-
-NautilusWindow .info,
-NautilusWindow .question,
-NautilusWindow .warning,
-NautilusWindow .error {
-    border-width: 0;
-    background-image: linear-gradient(to bottom,
-                                      @dark_wm_bg_b,
-                                      shade(@dark_wm_bg_b, 0.9));
-    color: @dark_fg_color;
     text-shadow: 0 -1px @dark_wm_title_shadow;
 }

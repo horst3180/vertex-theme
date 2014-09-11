@@ -24,6 +24,8 @@ TerminalWindow .notebook {
     -GtkNotebook-tab-overlap: 6;
 }
 
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.top:active:hover,
 NemoNotebook.notebook tab.top:active,
 NemoNotebook.notebook tab.top:active:hover,
 GeditWindow .notebook tab.top:active,
@@ -38,15 +40,6 @@ EphyNotebook.notebook tab.top:active:hover {
     background-image: linear-gradient(to bottom,
                                       @notebook_tab_gradient_a,
 									                    @notebook_tab_gradient_b);
-    box-shadow: none;
-}
-
-NautilusNotebook.notebook tab.top:active,
-NautilusNotebook.notebook tab.top:active:hover {
-    border-image: -gtk-scaled(url("tabs/nautilus_tab_active.png"),url("tabs/nautilus_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
-    border-width: 0px 5px 1px 5px;
-    border-style: solid;
-    border-color: transparent;
     box-shadow: none;
 }
 
@@ -185,41 +178,6 @@ TerminalWindow .notebook .active-page .button {
 TerminalWindow .notebook tab .button:hover {
     border-color: alpha(white, 0.1);
     color: alpha(@theme_selected_fg_color, 0.8);
-}
-
-/*
- * Nautilus
- */
-NautilusWindow .sidebar .frame,
-NautilusNotebook .frame {
-    border-width: 1px 0 0 0;
-    border-color: @borders;
-}
-
-NautilusWindow .header-bar {
-    border-width: 0;
-}
-
-NautilusNotebook.notebook tab.top,
-NautilusNotebook.notebook tab.top:hover,
-NautilusNotebook.notebook.header {
-    border-width: 1px 0 1px 0;
-
-}
-
-NautilusNotebook.notebook tab.top,
-NautilusNotebook.notebook tab.top:hover {
-    border-width: 1px;
-}
-
-NautilusWindow .info,
-NautilusWindow .question,
-NautilusWindow .warning,
-NautilusWindow .error {
-    border-width: 0;
-    background-image: linear-gradient(to bottom,
-                                      @notebook_tab_gradient_a,
-							                        @theme_base_color);
 }
 
 /*
