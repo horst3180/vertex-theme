@@ -16,7 +16,7 @@
    width="37"
    height="17"
    sodipodi:docname="tab_active.svg"
-   inkscape:export-filename="/home/steffen/Sachen/Vertex_git/Vertex_3_14/gtk-3.0/tabs/tab_active@2.png"
+   inkscape:export-filename="/home/steffen/Sachen/Vertex_git/Vertex-theme/Vertex-gtk/gtk-3.0/tabs/tab_active@2.png"
    inkscape:export-xdpi="180"
    inkscape:export-ydpi="180">
   <metadata
@@ -137,8 +137,8 @@
      showgrid="true"
      showguides="true"
      inkscape:zoom="11.313709"
-     inkscape:cx="17.72468"
-     inkscape:cy="-5.9551358"
+     inkscape:cx="0.17959377"
+     inkscape:cy="1.0717375"
      inkscape:window-x="331"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -214,7 +214,7 @@
        id="rect3987-9"
        inkscape:connector-curvature="0" />
     <rect
-       style="opacity:0.8;fill:url(#linearGradient3036);fill-opacity:1;stroke:#102b68;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       style="opacity:0.6;fill:url(#linearGradient3036);fill-opacity:1;stroke:#102b68;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
        id="rect2995"
        width="27"
        height="1"
