@@ -86,10 +86,10 @@ TerminalWindow .scrollbar.slider.vertical:active {
 NautilusNotebook.notebook {
   background-color: @theme_base_color;
 }
-
+/*
 NautilusNotebook.notebook tab.top {
   padding: 6px 20px 5px; }
-
+*/
 /* Nemo */
 NemoWindow * {
 	-GtkPaned-handle-size: 1px;
@@ -369,7 +369,26 @@ BaobabRingschart.subfolder-tip {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-/* Epiphany *//*
+/* Epiphany */
+#ephy-page-menu-button.active-menu {
+  background-image: none;
+  background-color: @theme_base_color;
+  border-image: none;
+  border-color: @theme_base_color;
+  border-radius: 3px 3px 0 0;
+  color: @theme_fg_color;
+  icon-shadow: none;
+}
+
+EphyWindow.background GtkProgressBar.osd.progressbar {
+  background-color: @theme_selected_bg_color;
+  border-radius: 0;
+}
+
+EphyWindow.background GtkProgressBar.osd.trough {
+	box-shadow: none;
+}
+/*
 EphyNotebook.notebook {
   border-width: 1px 0 0 0;
 }
@@ -381,14 +400,6 @@ EphyNotebook.notebook tab {
 EphyToolbar.toolbar .button {
   padding-left: 4px;
   padding-right: 4px;
-}
-
-#ephy-page-menu-button.active-menu {
-  background-image: none;
-  background-color: @theme_base_color;
-  border-image: none;
-  border-color: @theme_base_color;
-  border-radius: 3px 3px 0 0;
 }
 
 EphyOverview GtkScrolledWindow {
@@ -414,15 +425,7 @@ EphyWindow.background EphyEmbed.vertical GtkScrolledWindow,
 EphyWindow.background  {
   border-bottom-width: 0;
 }
-
-EphyWindow.background GtkProgressBar.osd.trough {
-	box-shadow: none;
-}
-
-EphyWindow.background GtkProgressBar.osd.progressbar {
-  background-color: @theme_selected_bg_color;
-  border-radius: 0;
-}*/
+*/
 
 /* GNOME Photos *//*
 .photos-icon-bg {
@@ -478,7 +481,7 @@ GtkLabel.pin-label {
 	font: regular 50;
 }*/
 
-/* Totem *//*
+/* Totem */
 TotemMainToolbar.header-bar {
 	border-width: 0;
 }
@@ -489,7 +492,7 @@ TotemGrilo.vertical .search-bar {
 
 GtkApplicationWindow.background GtkStack GtkVBox.vertical GtkOverlay GtkRevealer.top {
 	background-color: @borders;
-}*/
+}
 
 /* Geary *//*
 GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal,
