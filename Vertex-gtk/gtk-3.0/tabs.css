@@ -6,15 +6,6 @@ GeditWindow .notebook {
     border-top-width: 0;
 }
 
-NautilusNotebook.notebook.header,
-NemoWindow .notebook.header,
-EmpathyChatWindow .notebook.header,
-EphyNotebook.notebook.header,
-GeditWindow .notebook.header {
-    border-bottom: 1px solid alpha(black, 0.1);
-}
-
-
 NautilusNotebook.notebook,
 NemoWindow .notebook,
 EmpathyChatWindow .notebook,
@@ -28,6 +19,8 @@ NautilusNotebook.notebook tab.top:active,
 NautilusNotebook.notebook tab.top:active:hover,
 NemoNotebook.notebook tab.top:active,
 NemoNotebook.notebook tab.top:active:hover,
+EmpathyChatWindow .notebook tab.top:active,
+EmpathyChatWindow .notebook tab.top:active:hover,
 GeditWindow .notebook tab.top:active,
 GeditWindow .notebook tab.top:active:hover,
 EphyNotebook.notebook tab.top:active,
@@ -73,7 +66,7 @@ EphyNotebook.notebook.header {
 				inset 0 2px alpha(black, 0.025), 
 				inset 0 1px alpha(black, 0.03);
     border-top-width: 0;
-    border-bottom-width: 1px;
+    border-bottom: 1px solid alpha(black, 0.1);
 }
 
 NautilusNotebook.notebook tab.top,
@@ -201,13 +194,13 @@ NemoNotebook.notebook.header {
  * Empathy
  */
 EmpathyChatWindow .notebook {
+    border-color: transparent;
     border-width: 0;
-    border-bottom-width: 1px;
 }
 
 EmpathyChatWindow .notebook.header.frame.top {
-    border-left-width: 0;
-    border-right-width: 0;
+    border-width: 0 0 1px 0;
+    border-color: alpha(black, 0.1);
 }
 
 EmpathyChatWindow .notebook tab.top {
@@ -218,4 +211,5 @@ EmpathyChatWindow .menubar {
     background-image: linear-gradient(to bottom,
                                       @metacity_bg_b,
                                       @notebook_tab_gradient_a);
+    border-bottom: 1px solid @borders;
 }

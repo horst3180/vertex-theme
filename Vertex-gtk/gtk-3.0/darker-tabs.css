@@ -139,11 +139,7 @@ EmpathyChatWindow .menubar {
     background-image: linear-gradient(to bottom,
                                       @metacity_bg_b,
                                       @dark_notebook_tab_gradient_a);
-}
-
-EmpathyChatWindow .notebook,
-EmpathyChatWindow .notebook.header.frame.top {
-    border-width: 0;
+    border-bottom: 1px solid @dark_borders;
 }
 
 /*
