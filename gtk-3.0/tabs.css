@@ -58,18 +58,6 @@ EphyNotebook.notebook tab.top:hover {
   background-color: shade(@theme_base_color, 0.95);
 }
 
-
-EmpathyChatWindow .notebook tab.top,
-EmpathyChatWindow .notebook tab.top:hover {
-  box-shadow: inset 0 5px alpha(black, 0.01),
-              inset 0 4px alpha(black, 0.015),
-      				inset 0 3px alpha(black, 0.02), 
-			      	inset 0 2px alpha(black, 0.025), 
-		      		inset 0 1px alpha(black, 0.03),
-              inset 0 -1px alpha(@borders, 0.5),
-              inset 0 1px @borders;
-}
-
 NautilusNotebook.notebook tab.top,
 NemoWindow .notebook tab.top,
 EmpathyChatWindow .notebook tab.top,
@@ -85,7 +73,6 @@ EphyNotebook.notebook tab.top:hover {
                                   shade(@borders, 1.1) 1px,
                                   alpha(@borders, 0.2)) 0 1 0 1;
 }
-
 
 /* Terminal */
 TerminalWindow .notebook tab.top.reorderable-page:active {
@@ -150,17 +137,12 @@ TerminalWindow .notebook tab .button:hover {
 EmpathyChatWindow .notebook tab.top {
   padding: 6px 20px 4px; }
 
-EmpathyChatWindow .notebook.frame {
-	border-width: 0;
-}
-
+EmpathyChatWindow .notebook.frame,
 EmpathyChatWindow .notebook.header.frame {
-  border-left-width: 0;
-  border-right-width: 0;
-  border-radius: 0;
-}
+  border-width: 0; }
 
 EmpathyChatWindow .menubar {
   background-image: linear-gradient(to bottom,
                                       @metacity_bg_b,
-                                      @notebook_tab_gradient_a); }
+                                      @notebook_tab_gradient_a);
+  border-bottom: 1px solid @borders; }

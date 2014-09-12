@@ -388,44 +388,6 @@ EphyWindow.background GtkProgressBar.osd.progressbar {
 EphyWindow.background GtkProgressBar.osd.trough {
 	box-shadow: none;
 }
-/*
-EphyNotebook.notebook {
-  border-width: 1px 0 0 0;
-}
-
-EphyNotebook.notebook tab {
-  border-width: 0;
-}
-
-EphyToolbar.toolbar .button {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-EphyOverview GtkScrolledWindow {
-  background-color: @theme_base_color;
-}
-
-EphyWindow.background EphyEmbed.vertical GtkScrolledWindow.frame {
-  border-color: @borders;
-  border-width: 1px 0;
-  border-radius: 0;
-}
-
-EphyWindow.background EphyEmbed.vertical EphyOverview .documents-scrolledwin {
-  border-style: none;
-}
-
-EphyWindow.background EphyNotebook.notebook EphyEmbed.vertical GtkScrolledWindow {
-  border-top-width: 0;
-  border-bottom-width: 0;
-}
-
-EphyWindow.background EphyEmbed.vertical GtkScrolledWindow,
-EphyWindow.background  {
-  border-bottom-width: 0;
-}
-*/
 
 /* GNOME Photos *//*
 .photos-icon-bg {
@@ -494,7 +456,8 @@ GtkApplicationWindow.background GtkStack GtkVBox.vertical GtkOverlay GtkRevealer
 	background-color: @borders;
 }
 
-/* Geary *//*
+/*FIXME this could cause problems, disabled for now*/
+/* Geary *//*  
 GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal,
 GtkPaned.horizontal.sidebar-pane-separator {
  	-GtkPaned-handle-size: 1;
