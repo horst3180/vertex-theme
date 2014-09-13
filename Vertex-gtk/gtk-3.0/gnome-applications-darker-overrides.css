@@ -317,19 +317,15 @@ LibraryWindow .bottom-toolbar.toolbar {
 /*********
 * Marlin *
 *********/
-/*
-MarlinViewChromeLocationBar .button {
+
+MarlinViewChromeLocationBar .button.raised:focus {
     background-image: none;
-}
-
-MarlinViewChromeLocationBar .button:focus {
-
 }
 
 MarlinViewChromeLocationBar .button:active {
     background-image: none;
     background-color: alpha(black, 0.2);
-}*/
+}
 
 /*********
  * Panel *
