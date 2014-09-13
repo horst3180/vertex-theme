@@ -2919,4 +2919,3 @@ GtkModelButton.button:selected {
 .window-frame:backdrop {
     box-shadow: 0 0 0 1px @window_frame, 0 2px 5px 1px @wm_shadow;
 }
-
