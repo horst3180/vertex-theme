@@ -334,20 +334,31 @@ GtkDialog .sidebar .view:prelight:selected {
 .source-list.badge:selected:focus,
 .source-list.badge:prelight:selected {
     background-image: none;
-    background-color: alpha (#000, 0.4);
-    color: green;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
     border-radius: 10px;
     padding: 0 6px;
     margin: 0 3px;
-    text-shadow: 0 1px alpha (#000, 0.1);
-    icon-shadow: 0 1px alpha (#000, 0.1);
     border-width: 0;
 }
 
 .source-list.badge:selected,
+.source-list.badge:selected:focus,
 .source-list.badge:prelight:selected {
-    color: yellow;
+    background-color: @theme_selected_fg_color;
+    color: @theme_selected_bg_color;
 }
+
+/***********************
+ * Thin Pane Separator *
+ ***********************/
+
+GraniteWidgetsThinPaned {
+    background-color: @theme_base_color;
+    border-left: 1px solid @borders;
+    border-right: 1px solid @borders;
+}
+
 
 /***********
  * Welcome *
@@ -401,14 +412,21 @@ GraniteWidgetsPopOver * {
     background-color: transparent;
 }
 
+/* Granite App Menu */
+GraniteWidgetsAppMenu .button:active {
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b);
+}
+/*
 GraniteWidgetsPopOver .button {
-    /*background-image: none;
-    background-color: transparent;   */ 
+    background-image: none;
+    background-color: transparent;
 }
 
 GraniteWidgetsPopOver .button:active,
 GraniteWidgetsPopOver .button:hover:active {
-    /*background-image: none;
+    background-image: none;
     background-color: alpha (#000, 0.05);
-    border-color: shade (@theme_base_color, 0.74);*/
-}
+    border-color: shade (@theme_base_color, 0.74);
+}*/

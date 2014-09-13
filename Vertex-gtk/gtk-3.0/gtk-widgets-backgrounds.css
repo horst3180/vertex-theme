@@ -21,7 +21,8 @@
 .toolbar .button.raised:active,
 .toolbar .raised .button:active,
 .toolbar .button.raised:active:hover,
-.toolbar .raised .button:active:hover {
+.toolbar .raised .button:active:hover,
+.primary-toolbar .button:hover:active {
     box-shadow: inset 0 1px 1px alpha(black, 0.2);
     background-image: linear-gradient(to bottom,
                                   @button_active_gradient_color_a,
@@ -52,12 +53,12 @@
 .toolbar .button.raised:hover,
 .toolbar .raised .button:hover,
 .toolbar GtkComboBox .button:hover,
-.spinbutton.vertical .button:hover {
+.spinbutton.vertical .button:hover,
+.primary-toolbar .button:hover {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
-				      @button_hover_gradient_color_a,
-                                      @button_hover_gradient_color_b
-                                      );
+                                      @button_hover_gradient_color_a,
+                                      @button_hover_gradient_color_b);
 }
 
 /* Insensitive button background */

@@ -5,6 +5,7 @@
 @import url("gtk-widgets-dark-overrides.css");
 @import url("gtk-widgets-assets-dark.css");
 @import url("gnome-applications.css");
+@import url("granite.css"); /*disable for 3.10*/
 @import url("tabs.css");	/*disable for 3.10*/
 @import url("dark-tabs.css");	/*disable for 3.10*/
 @import url("gnome-applications-dark-overrides.css");

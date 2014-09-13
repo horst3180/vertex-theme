@@ -295,6 +295,10 @@ GtkTreeView.separator,
     background-color: @theme_base_color;
 }
 
+.toolbar .pane-separator {
+    background-color: transparent;
+}
+
 /****************
  * Text Entries *
  ****************/
@@ -320,14 +324,14 @@ GtkTreeView.separator,
     background-color: transparent;
     background-image: linear-gradient(to top, 
                                       transparent 2px,
-                                      @highlight 2px,
-                                      @highlight 3px,
+                                      transparent 3px,
                                       shade(@theme_selected_bg_color, 0.9) 3px,
                                       shade(@theme_selected_bg_color, 0.9) 5px,
                                       transparent 5px);
     background-size: auto;
     box-shadow: none;
     text-shadow: none;
+    color: @theme_fg_color;
 }
 
 .entry.progressbar.pulse,
@@ -1820,22 +1824,6 @@ GtkMessageDialog {
 
     border-color: shade (@theme_bg_color, 0.91);
     text-shadow: none;
-}
-
-/* progressbars on primary toolbar entries are special */
-.primary-toolbar .toolbar .entry.progressbar,
-.primary-toolbar.toolbar .entry.progressbar {
-    background-image: linear-gradient(to bottom,
-                                      @trough_bg_color_a,
-                                      @trough_bg_color_b
-                                      );
-    border-width: 1px;
-    border-radius: 2px;
-    border-style: solid;
-    border-color: shade(@internal_element_color, 1.10);
-    border-image: none;
-
-    color: @theme_text_color;
 }
 
 /*******************

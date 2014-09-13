@@ -30,6 +30,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:focus  {
 .primary-toolbar.toolbar .raised .button,
 .primary-toolbar.toolbar GtkComboBox .button,
 .primary-toolbar.toolbar .button:hover,
+.primary-toolbar .button:hover,
 .toolbar .button,
 .header-bar .button {
     border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;

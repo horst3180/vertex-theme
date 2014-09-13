@@ -1,3 +1,14 @@
+.toolbar .pane-separator {
+    background-image: url("assets/pane-separator-grip-dark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.toolbar .pane-separator:hover {
+    background-image: url("assets/pane-separator-grip-prelight-dark.svg");
+}
+
+
 /* linked entries/buttons */
 
 /* Set up shadows and hilights for button visual separation */
@@ -254,8 +265,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
     background-color: transparent;
     background-image: linear-gradient(to top, 
                                       transparent 2px,
-                                      @highlight 2px,
-                                      @highlight 3px,
+                                      transparent 3px,
                                       shade(@theme_selected_bg_color, 0.9) 3px,
                                       shade(@theme_selected_bg_color, 0.9) 5px,
                                       transparent 5px);

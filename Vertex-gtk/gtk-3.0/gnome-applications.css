@@ -1083,11 +1083,6 @@ BirdieWidgetsTweetList * {
 
 MarlinViewChromeLocationBar .button {
     padding: 4px 8px 5px 8px;
-    border-image: -gtk-scaled(url("borders/generic-border.png"),url("borders/generic-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
 }
 
 MarlinViewChromeLocationBar .button:focus {
@@ -1269,11 +1264,16 @@ PantheonTerminalPantheonTerminalWindow.background {
  * Noise
  */
 NoiseLibraryWindow GtkPaned.vertical,
-NoiseLibraryWindow GtkPaned.horizontal {	
+NoiseLibraryWindow GtkPaned.horizontal,
+NoiseLibraryWindow GtkPaned.vertical:hover,
+NoiseLibraryWindow GtkPaned.horizontal:hover {	
     -GtkPaned-handle-size: 1;
-    border-width: 0 1px 0 0;
-    border-style: solid;
-    border-color: @borders;
+    background-color: @borders;
+    background-image: none;
+}
+
+NoiseInfoPanel.content-view {
+    background-color: @content_view_bg;
 }
 
 /****************
