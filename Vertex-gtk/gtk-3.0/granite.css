@@ -430,3 +430,17 @@ GraniteWidgetsPopOver .button:hover:active {
     background-color: alpha (#000, 0.05);
     border-color: shade (@theme_base_color, 0.74);
 }*/
+/*
+GtkDialog .titlebar,
+GtkMessageDialog .titlebar,
+GtkDialog .titlebar.default-decoration,
+GtkMessageDialog .titlebar.default-decoration {
+    border: none;
+
+    background-image: none;
+    background-color: blue;
+
+    box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
+                inset -1px 0 0 0 alpha (#fff, 0.20),
+                inset 0 1px 0 0 #fff;
+}*/

@@ -762,7 +762,8 @@ GtkPopover {
 /*******
  * CSD *
  *******/
-.titlebar {
+.titlebar,
+.titlebar.default-decoration {
     text-shadow: 0 -1px @dark_wm_title_shadow;
     background-image: linear-gradient(to bottom,
                                       @dark_wm_bg_a,

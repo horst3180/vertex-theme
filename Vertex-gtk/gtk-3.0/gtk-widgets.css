@@ -2803,7 +2803,8 @@ GtkModelButton.button:selected {
 /*******
  * CSD *
  *******/
-.titlebar {
+.titlebar,
+.titlebar.default-decoration {
     text-shadow: 0 1px @wm_title_shadow;
     background-image: linear-gradient(to bottom,
                                       @wm_bg_a,
@@ -2815,21 +2816,21 @@ GtkModelButton.button:selected {
     border-color: @borders;
 }
 
+.titlebar.default-decoration {
+    border-width: 0;
+}
+
+GtkDialog .titlebar.default-decoration,
+GtkMessageDialog .titlebar.default-decoration {
+    border-width: 0 0 1px;
+}
+
 .tiled .titlebar {
     border-radius: 0;
 }
 
 .maximized .titlebar {
     border-radius: 0;
-}
-
-/* this is the default titlebar that is added by GTK
- * when client-side decorations are in use and the application
- * did not set a custom titlebar.
- */
-.titlebar.default-decoration {
-    border: none;
-    box-shadow: none;
 }
 
 .titlebar .title {

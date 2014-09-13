@@ -312,6 +312,37 @@ LibraryWindow .bottom-toolbar.toolbar {
     box-shadow: inset 0px 1px 2px alpha(black,0.2);
 }
 
+/* Elementary Apps */
+
+/*********
+* Marlin *
+*********/
+/*
+MarlinViewChromeLocationBar .button {
+    background-image: none;
+}
+
+MarlinViewChromeLocationBar .button:focus {
+
+}
+
+MarlinViewChromeLocationBar .button:active {
+    background-image: none;
+    background-color: alpha(black, 0.2);
+}*/
+
+/*********
+ * Panel *
+ ********/
+
+.panel {
+    background-color: transparent;
+}
+
+/****************
+ * Widgets      *
+ ****************/
+
 /*
  * bottom toolbars
  */
