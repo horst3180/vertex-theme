@@ -399,12 +399,11 @@ GraniteWidgetsPopOver {
     background-color: transparent;
 
     background-image: linear-gradient(to bottom,
-                                  alpha (#f9f9f9, 0.97),
-                                  alpha (#f9f9f9, 0.97) 80%,
-                                  alpha (#f0f0f0, 0.97)
-                                  );
+                                  alpha(shade(@theme_base_color, 0.98), 0.97),
+                                  alpha(shade(@theme_base_color, 0.98), 0.97) 80%,
+                                  alpha(shade(@theme_base_color, 0.92), 0.97));
 
-    border: 1px solid alpha(black, 0.3);;
+    border: 1px solid alpha(black, 0.3);
 }
 
 GraniteWidgetsPopOver .sidebar.view,
@@ -415,8 +414,8 @@ GraniteWidgetsPopOver * {
 /* Granite App Menu */
 GraniteWidgetsAppMenu .button:active {
     background-image: linear-gradient(to bottom,
-                                  @button_active_gradient_color_a,
-                                  @button_active_gradient_color_b);
+                                        @button_active_gradient_color_a,
+                                        @button_active_gradient_color_b);
 }
 /*
 GraniteWidgetsPopOver .button {
