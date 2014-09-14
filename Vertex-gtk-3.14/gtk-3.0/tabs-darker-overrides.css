@@ -1,0 +1,151 @@
+TerminalWindow .notebook .prelight-page GtkLabel,
+TerminalWindow .notebook tab .active-page GtkLabel,
+NautilusWindow .notebook tab .active-page GtkLabel,
+NemoWindow .notebook tab .active-page GtkLabel,
+EmpathyChatWindow .notebook tab .active-page GtkLabel,
+GeditWindow .notebook tab .active-page GtkLabel,
+EphyNotebook.notebook tab .active-page GtkLabel {
+  color: @dark_fg_color;
+  text-shadow: 0 -1px @dark_wm_title_shadow;
+  icon-shadow: 0 -1px @dark_wm_title_shadow;
+  transition: none;
+}
+
+NautilusNotebook.notebook tab.top.reorderable-page:active,
+NautilusNotebook.notebook tab.top.reorderable-page:active:hover,
+NemoWindow .notebook tab.top.reorderable-page:active,
+NemoWindow .notebook tab.top.reorderable-page:active:hover,
+EmpathyChatWindow .notebook tab.top.reorderable-page:active,
+EmpathyChatWindow .notebook tab.top.reorderable-page:active:hover,
+GeditWindow .notebook tab.top.reorderable-page:active,
+GeditWindow .notebook tab.top.reorderable-page:active:hover,
+EphyNotebook.notebook tab.top.reorderable-page:active,
+EphyNotebook.notebook tab.top.reorderable-page:active:hover {
+  background-image: linear-gradient(to bottom,
+                                      @dark_notebook_tab_gradient_a,
+									                    @dark_notebook_tab_gradient_b);
+}
+
+TerminalWindow .notebook .active-page .button,
+TerminalWindow .notebook .prelight-page .button,
+NautilusWindow .notebook .active-page .button,
+NemoWindow .notebook .active-page .button,
+EmpathyChatWindow .notebook .active-page .button,
+GeditWindow .notebook .active-page .button,
+EphyNotebook.notebook .active-page .button {
+  color: @dark_fg_color;
+  icon-shadow: 0 -1px @dark_wm_title_shadow;
+}
+
+TerminalWindow .notebook .active-page .button:hover,
+TerminalWindow .notebook .prelight-page .button:hover,
+NautilusWindow .notebook .active-page .button:hover,
+NemoWindow .notebook .active-page .button:hover,
+EmpathyChatWindow .notebook .active-page .button:hover,
+GeditWindow .notebook .active-page .button:hover,
+EphyNotebook.notebook .active-page .button:hover {
+  icon-shadow: 0 -1px @dark_wm_title_shadow;
+  border-color: alpha(white, 0.1);
+  color: shade(red, 1.3);
+  background-image: none;
+}
+
+TerminalWindow .notebook .active-page .button:active,
+TerminalWindow .notebook .prelight-page .button:active,
+NautilusWindow .notebook .active-page .button:active,
+NemoWindow .notebook .active-page .button:active,
+EmpathyChatWindow .notebook .active-page .button:active,
+GeditWindow .notebook .active-page .button:active,
+EphyNotebook.notebook .active-page .button:active {
+  border-color: alpha(black, 0.5);
+  background-image: linear-gradient(to bottom,
+                                  @dark_button_active_gradient_color_a,
+                                  @dark_button_active_gradient_color_b);
+}
+
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.top:active:hover,
+NemoNotebook.notebook tab.top:active,
+NemoNotebook.notebook tab.top:active:hover,
+EmpathyChatWindow .notebook tab.top:active,
+EmpathyChatWindow .notebook tab.top:active:hover,
+GeditWindow .notebook tab.top:active,
+GeditWindow .notebook tab.top:active:hover,
+EphyNotebook.notebook tab.top:active,
+EphyNotebook.notebook tab.top:active:hover {
+  border-image: -gtk-scaled(url("tabs/darker/tab_active.png"),url("tabs/darker/tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+  border-width: 0px 5px 1px 5px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+NautilusNotebook.notebook tab.top,
+NemoWindow .notebook tab.top,
+EmpathyChatWindow .notebook tab.top,
+GeditWindow .notebook tab.top,
+EphyNotebook.notebook tab.top,
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover,
+NautilusNotebook.notebook.header.top,
+NemoWindow .notebook.header.top,
+EmpathyChatWindow .notebook.header.top,
+GeditWindow .notebook.header.top,
+EphyNotebook.notebook.header.top {
+  background-color: shade(@theme_base_color, 0.98);
+    box-shadow: inset 0 5px alpha(black, 0.005),
+				        inset 0 4px alpha(black, 0.020),
+				        inset 0 3px alpha(black, 0.050), 
+				        inset 0 2px alpha(black, 0.075), 
+				        inset 0 1px alpha(black, 0.09),
+              inset 0 -1px alpha(@borders, 0.5);
+  border-bottom-width: 0px;
+}
+
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover {
+  background-color: shade(@theme_base_color, 0.95);
+}
+
+NemoWindow .notebook tab.top,
+EmpathyChatWindow .notebook tab.top,
+GeditWindow .notebook tab.top,
+EphyNotebook.notebook tab.top,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover {
+    border-image: linear-gradient(to bottom,
+                                  @dark_borders 0px,
+                                  @borders 0px,
+                                  alpha(@borders, 0.2)) 0 1 0 1;
+}
+
+/* Empathy */
+EmpathyChatWindow .menubar {
+  background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b,
+                                      @dark_notebook_tab_gradient_a);
+  border-bottom: 1px solid @dark_borders;
+}
+
+EmpathyChatWindow .notebook.header.frame.top {
+  box-shadow: inset 0 3px 3px -1px rgba(0, 0, 0, 0.15), inset 0 -1px alpha(@borders, 0.5); }
+
+/* GNOME Terminal */
+TerminalWindow .notebook tab.top.reorderable-page:active {
+    background-image: linear-gradient(to bottom, @metacity_bg_b, shade(@metacity_bg_b, 0.9));
+    border-image: -gtk-scaled(url("tabs/darker/terminal_tab_active.png"),url("tabs/darker/terminal_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+}
+
+TerminalWindow .notebook tab GtkLabel {
+    color: mix(@dark_fg_color, @dark_bg_color, 0.40);
+    text-shadow: 0 -1px @dark_wm_title_shadow;
+}

@@ -1,0 +1,148 @@
+NautilusNotebook.notebook,
+NemoWindow .notebook,
+EmpathyChatWindow .notebook,
+GeditWindow .notebook,
+EphyNotebook.notebook,
+TerminalWindow .notebook {
+  -GtkNotebook-tab-overlap: 6;
+}
+
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.top:active:hover,
+NemoNotebook.notebook tab.top:active,
+NemoNotebook.notebook tab.top:active:hover,
+EmpathyChatWindow .notebook tab.top:active,
+EmpathyChatWindow .notebook tab.top:active:hover,
+GeditWindow .notebook tab.top:active,
+GeditWindow .notebook tab.top:active:hover,
+EphyNotebook.notebook tab.top:active,
+EphyNotebook.notebook tab.top:active:hover {
+  border-image: -gtk-scaled(url("tabs/tab_active.png"),url("tabs/tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+  border-width: 0px 5px 1px 5px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+NautilusNotebook.notebook tab.top,
+NemoWindow .notebook tab.top,
+EmpathyChatWindow .notebook tab.top,
+GeditWindow .notebook tab.top,
+EphyNotebook.notebook tab.top,
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover,
+NautilusNotebook.notebook.header.top,
+NemoWindow .notebook.header.top,
+EmpathyChatWindow .notebook.header.top,
+GeditWindow .notebook.header.top,
+EphyNotebook.notebook.header.top {
+  background-color: shade(@theme_base_color, 0.98);
+  box-shadow: inset 0 5px alpha(black, 0.01),
+              inset 0 4px alpha(black, 0.015),
+              inset 0 3px alpha(black, 0.02), 
+              inset 0 2px alpha(black, 0.025), 
+              inset 0 1px alpha(black, 0.03),
+              inset 0 -1px alpha(@borders, 0.5);
+  border-bottom-width: 0px;
+}
+
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover {
+  background-color: shade(@theme_base_color, 0.95);
+}
+
+NautilusNotebook.notebook tab.top,
+NemoWindow .notebook tab.top,
+EmpathyChatWindow .notebook tab.top,
+GeditWindow .notebook tab.top,
+EphyNotebook.notebook tab.top,
+NautilusNotebook.notebook tab.top:hover,
+NemoWindow .notebook tab.top:hover,
+EmpathyChatWindow .notebook tab.top:hover,
+GeditWindow .notebook tab.top:hover,
+EphyNotebook.notebook tab.top:hover {
+    border-image: linear-gradient(to bottom,
+                                  @borders 0px,
+                                  shade(@borders, 1.1) 1px,
+                                  alpha(@borders, 0.2)) 0 1 0 1;
+}
+
+/* Terminal */
+TerminalWindow .notebook tab.top.reorderable-page:active {
+  background-image: linear-gradient(to bottom, @metacity_bg_b, shade(@metacity_bg_b, 0.99));
+  border-image: -gtk-scaled(url("tabs/terminal_tab_active.png"),url("tabs/terminal_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+  border-width: 0px 5px 1px 5px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+TerminalWindow .notebook.header.top,
+TerminalWindow .notebook tab.top {
+  background-color: shade(@terminal_bg, 1.1);
+  box-shadow: inset 0 5px alpha(black, 0.01),
+              inset 0 4px alpha(black, 0.015),
+              inset 0 3px alpha(black, 0.02), 
+              inset 0 2px alpha(black, 0.025), 
+              inset 0 1px alpha(black, 0.03),
+              inset 0 -1px shade(@terminal_bg, 0.7),
+              inset 0 1px shade(@terminal_bg, 0.7);
+  border-bottom-width: 0px;
+}
+
+TerminalWindow .notebook tab.top {
+  border-image: linear-gradient(to bottom,
+                                  shade(@terminal_bg, 0.7),
+                                  @terminal_bg) 0 1 0 1;
+}
+
+TerminalWindow .notebook tab.top:hover {
+  background-color: shade(@terminal_bg, 1.2);
+  border-color: shade(@terminal_bg, 0.7);
+}
+
+TerminalWindow .notebook tab GtkLabel,
+TerminalWindow .notebook tab .prelight-page GtkLabel,
+TerminalWindow .notebook tab .button,
+TerminalWindow .notebook .prelight-page .button {
+    text-shadow: 0 -1px shade(@terminal_bg, 0.5);
+    icon-shadow: 0 -1px shade(@terminal_bg, 0.5);
+    color: alpha(@theme_selected_fg_color, 0.5);
+}
+
+TerminalWindow .notebook tab .prelight-page GtkLabel {
+    color: alpha(@theme_selected_fg_color, 0.8);
+}
+
+TerminalWindow .notebook tab .active-page GtkLabel,
+TerminalWindow .notebook .active-page .button {
+    text-shadow: 0 1px @highlight_shadow;
+    icon-shadow: 0 1px @highlight_shadow;
+    color: @theme_fg_color;
+}
+
+TerminalWindow .notebook tab .button:hover {
+    border-color: alpha(white, 0.1);
+    color: alpha(@theme_selected_fg_color, 0.8);
+}
+
+/* Empathy */
+EmpathyChatWindow .notebook tab.top {
+  padding: 6px 20px 4px; }
+
+EmpathyChatWindow .notebook.frame,
+EmpathyChatWindow .notebook.header.frame {
+  border-width: 0; }
+
+EmpathyChatWindow .menubar {
+  background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b,
+                                      @notebook_tab_gradient_a);
+  border-bottom: 1px solid @borders; }
