@@ -60,6 +60,10 @@ TerminalWindow .scrollbar.slider.vertical:active {
 }
 
 /* Nautilus */
+NautilusWindow * {
+    -GtkPaned-handle-size: 1px;
+}
+
 .nautilus-canvas-item {
   border-radius: 2px;
 }
@@ -90,6 +94,16 @@ NautilusNotebook.notebook {
 NautilusNotebook.notebook tab.top {
   padding: 6px 20px 5px; }
 */
+
+NautilusWindow > GtkGrid > .pane-separator,
+NautilusWindow > GtkGrid > .pane-separator:hover {
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: shade(@borders, 1.1);
+    background-color: @sidebar_bg;
+    color: shade (@theme_bg_color, 0.9);
+}
+
 /* Nemo */
 NemoWindow * {
 	-GtkPaned-handle-size: 1px;
@@ -144,6 +158,10 @@ NemoPathbarButton:checked {
 }
 
 /*Gedit*/
+GeditWindow *{
+    -GtkPaned-handle-size: 1;
+}
+
 GeditWindow .pane-separator,
 GeditWindow .pane-separator:hover {
   border-width: 0 1px 1px 1px;
@@ -411,6 +429,13 @@ EvWindow.background EggFindBar.primary-toolbar.toolbar.horizontal {
 
 /* Shotwell */
 LibraryWindow GtkPaned.horizontal {
+  -GtkPaned-handle-size: 1;
+  background-color: transparent;
+  border-width: 1px 1px 0 0;
+  border-color: shade(#474747, 0.7);
+}
+
+LibraryWindow GtkPaned.horizontal {
 	/*-GtkPaned-handle-size: 1;*/
 	background-image: none;
 	border-width: 0;
@@ -456,8 +481,8 @@ GtkApplicationWindow.background GtkStack GtkVBox.vertical GtkOverlay GtkRevealer
 	background-color: @borders;
 }
 
-/*FIXME this could cause problems, disabled for now*/
-/* Geary *//*  
+
+/* Geary */ /*FIXME this could cause problems*/
 GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal,
 GtkPaned.horizontal.sidebar-pane-separator {
  	-GtkPaned-handle-size: 1;
@@ -476,7 +501,7 @@ GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal GtkFrame.frame {
 
 MainWindow.background GtkBox.vertical MainToolbar {
 	border-bottom: 1px solid @borders
-}*/
+}
 
 /* Noise *//*
 NoiseLibraryWindow GtkPaned.vertical,
@@ -490,6 +515,21 @@ NoiseInfoPanel.content-view {
 }
 */
 
+/* File-roller */
+FrWindow.background GtkPaned.horizontal {
+    -GtkPaned-handle-size: 1;
+}
+
+FrWindow > GtkGrid > .pane-separator,
+FrWindow > GtkGrid > .pane-separator:hover {
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: @borders;
+}
+
+FrWindow.background GtkBox.vertical GtkTreeView.view {
+    background-color: @sidebar_bg;
+}
 
 /*Widgets*/
 
