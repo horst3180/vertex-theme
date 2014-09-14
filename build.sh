@@ -19,6 +19,7 @@ mkdir -p $DIR/Gnome-3.10_Ubuntu-14.04
 
 #make light 3.14 variant
 cp -r $DIR/Vertex-gtk-3.14 $DIR/Vertex-Light
+rm -rf $DIR/Vertex-Light/gtk-2.0-dark
 mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
 mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
 mv $DIR/Vertex-Light/index.theme-light $DIR/Vertex-Light/index.theme
@@ -37,6 +38,7 @@ mv $DIR/Vertex-Dark $DIR/Gnome-3.14/
 
 #make default 3.14 variant
 cp -r $DIR/Vertex-gtk-3.14 $DIR/Vertex
+rm -rf $DIR/Vertex/gtk-2.0-dark
 rm $DIR/Vertex/index.theme-light
 rm $DIR/Vertex/index.theme-dark
 
@@ -44,6 +46,7 @@ mv $DIR/Vertex $DIR/Gnome-3.14/
 
 #make light 3.12 variant
 cp -r $DIR/Vertex-gtk $DIR/Vertex-Light
+rm -rf $DIR/Vertex-Light/gtk-2.0-dark
 mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
 mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
 mv $DIR/Vertex-Light/index.theme-light $DIR/Vertex-Light/index.theme
@@ -62,6 +65,7 @@ cp -r $DIR/Vertex-Dark $DIR/Gnome-3.12/
 
 #make default 3.12 variant
 cp -r $DIR/Vertex-gtk $DIR/Vertex
+rm -rf $DIR/Vertex/gtk-2.0-dark
 rm $DIR/Vertex/index.theme-light
 rm $DIR/Vertex/index.theme-dark
 
