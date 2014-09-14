@@ -2,8 +2,8 @@
 #      Requirements       #
 ###########################
 
-* Gnome/GTK 3.10 or 3.12
-* Compatible with Ubuntu 14.04
+* Gnome/GTK 3.10, 3.12 and 3.14
+* Compatible with Ubuntu 14.04 and Elementary OS Freya
 * GTK3: gnome-themes-standard package or a package which contains the adwaita engine
 * GTK2: Murrine engine and pixbuf engine
 
@@ -12,7 +12,7 @@ Please search in the repositories of your distribution because the package names
 ###########################
 #      Installation       #
 ###########################
-The extracted zip file contains two different subfolders ("Gnome-3.10_Ubuntu-14.04" and "Gnome-3.12") with the GTK themes for the different versions of Gnome/GTK (or the first one for Ubuntu 14.04). Pick the one that matches your version and copy the content to "/usr/share/themes".
+The extracted zip file contains three different subfolders ("Gnome-3.10_Ubuntu-14.04" "Gnome-3.12" and "Gnome-3.14") with the GTK themes for the different versions of Gnome/GTK (For Elementary OS Freya use the Gnome-3.12 version). Pick the one that matches your version and copy the content to "/usr/share/themes".
 
 To set the right permissions, execute
 
@@ -22,6 +22,10 @@ or
 
 sudo chmod -R 755 /usr/share/themes/Vertex-Light
 
+or
+
+sudo chmod -R 755 /usr/share/themes/Vertex-Dark
+
 
 To set the theme, run the following commands in Terminal,
 
@@ -30,10 +34,15 @@ gsettings set org.gnome.desktop.wm.preferences theme "Vertex"
 
 for the version with dark header-bars and toolbars or
 
-gsettings set org.gnome.desktop.interface gtk-theme "Vertex-light"
-gsettings set org.gnome.desktop.wm.preferences theme "Vertex-light"
+gsettings set org.gnome.desktop.interface gtk-theme "Vertex-Light"
+gsettings set org.gnome.desktop.wm.preferences theme "Vertex-Light"
 
-for the light version
+for the light version or
+
+gsettings set org.gnome.desktop.interface gtk-theme "Vertex-Dark"
+gsettings set org.gnome.desktop.wm.preferences theme "Vertex-Dark"
+
+for the dark version
 
 To install the Gnome-Shell theme, copy the "Vertex-GS" folder to "/usr/share/themes" and set the permissions
 
@@ -62,4 +71,7 @@ If the metacity theme doesn't show up in gnome-tweak-tool copy the theme folder 
 
 
 You may face the issue that sublime text 2 won't load the theme correctly. This is due to either a bug in sublime or libpng. To fix this, download and extract the sublime-text-fix.tar.gz file and follow the instructions in the included README
+
+
+If you experience Gnome-Shell crashes, replace the "gnome-shell.css" file in the "Vertex-GS/gnome-shell/" folder with the "gnome-shell-no-crash.css" file
 

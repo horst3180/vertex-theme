@@ -1,4 +1,4 @@
-The theme supports Gnome 3.10 and 3.12, aswell as Ubuntu 14.04. Also the tabs you are seeing in nautilus, gedit, etc. are only included in the Gnome 3.12 version due to the reworked tab system in this version.
+The theme supports Gnome 3.10, 3.12 and, aswell as Ubuntu 14.04 and Elementary OS Freya. Also the tabs you are seeing in nautilus, gedit, etc. are only included in the Gnome 3.12 and above versions due to the reworked tab system.
 
 A Chrome/Chromium theme is included.
 
