@@ -7,8 +7,40 @@ rm $DIR/Vertex-gtk/gtk-3.0/borders.txt
 rm $DIR/Vertex-gtk/gtk-3.0/render-assets.sh
 rm $DIR/Vertex-gtk/gtk-3.0/render-borders.sh
 
+rm $DIR/Vertex-gtk-3.14/gtk-3.0/assets.svg
+rm $DIR/Vertex-gtk-3.14/gtk-3.0/assets.txt
+rm $DIR/Vertex-gtk-3.14/gtk-3.0/borders.txt
+rm $DIR/Vertex-gtk-3.14/gtk-3.0/render-assets.sh
+rm $DIR/Vertex-gtk-3.14/gtk-3.0/render-borders.sh
+
+mkdir -p $DIR/Gnome-3.14
 mkdir -p $DIR/Gnome-3.12
 mkdir -p $DIR/Gnome-3.10_Ubuntu-14.04
+
+#make light 3.14 variant
+cp -r $DIR/Vertex-gtk-3.14 $DIR/Vertex-Light
+mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
+mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
+mv $DIR/Vertex-Light/index.theme-light $DIR/Vertex-Light/index.theme
+rm $DIR/Vertex-Light/index.theme-dark
+
+cp -r $DIR/Vertex-Light $DIR/Gnome-3.14/
+
+#make dark 3.14 variant
+cp -r $DIR/Vertex-gtk-3.14 $DIR/Vertex-Dark
+rm -rf $DIR/Vertex-Dark/gtk-2.0
+mv $DIR/Vertex-Dark/gtk-2.0-dark $DIR/Vertex-Dark/gtk-2.0
+mv $DIR/Vertex-Dark/gtk-3.0/gtk-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk.css
+mv $DIR/Vertex-Dark/index.theme-dark $DIR/Vertex-Dark/index.theme
+
+cp -r $DIR/Vertex-Dark $DIR/Gnome-3.14/
+
+#make default 3.14 variant
+cp -r $DIR/Vertex-gtk-3.14 $DIR/Vertex
+rm $DIR/Vertex/index.theme-light
+rm $DIR/Vertex/index.theme-dark
+
+cp -r $DIR/Vertex $DIR/Gnome-3.14/
 
 #make light 3.12 variant
 cp -r $DIR/Vertex-gtk $DIR/Vertex-Light
