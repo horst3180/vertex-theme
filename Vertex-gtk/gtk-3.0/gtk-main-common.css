@@ -79,9 +79,11 @@
  * Fallback Mode *
  *****************/
 @define-color os_chrome_bg_color black;
-@define-color os_chrome_fg_color #ccc;
-@define-color os_chrome_selected_bg_color #333;
-@define-color os_chrome_selected_fg_color white;
+@define-color os_chrome_bg_color_a shade(@os_chrome_bg_color_b, 1.3);
+@define-color os_chrome_bg_color_b #3D3E40;
+@define-color os_chrome_fg_color #F3F3F5;
+@define-color os_chrome_selected_bg_color shade(@os_chrome_bg_color_a, 0.6);
+@define-color os_chrome_selected_fg_color @theme_selected_fg_color;
 
 /************
  * Tooltips *

@@ -882,9 +882,13 @@ PanelToplevel,
 PanelWidget,
 PanelAppletFrame,
 PanelApplet {
-    background-color: @os_chrome_bg_color;
-    background-image: none;
     color: @os_chrome_fg_color;
+    background-image: linear-gradient(to bottom, 
+                                      @os_chrome_bg_color_a, 
+                                      @os_chrome_bg_color_b);
+    box-shadow: inset 0 2px alpha(white, 0.15),
+                inset 0 1px black,
+                inset 0 -1px black;
 }
 
 ClockBox,
@@ -895,7 +899,7 @@ PanelApplet > GtkMenuBar.menubar {
 
 .gnome-panel-menu-bar.menubar .menuitem:hover,
 PanelApplet > GtkMenuBar.menubar .menuitem:hover {
-    text-shadow: 0 1px @os_chrome_bg_color;
+    /*text-shadow: 0 1px @os_chrome_bg_color;*/
 }
 
 .gnome-panel-menu-bar.menubar .menu,
@@ -924,25 +928,35 @@ PanelApplet > GtkMenuBar.menubar .menuitem:hover {
 PanelApplet .button,
 PanelApplet .button:hover {
     padding: 4px;
-
     border-image: none;
-    border-width: 0;
-    border-radius: 0;
-
+    border-width: 1px;
     background-image: none;
-    background-color: @os_chrome_bg_color;
-
+    background-color: transparent;
     color: @os_chrome_fg_color;
     text-shadow: none;
+    box-shadow: inset -2px 0 alpha(white, 0.08),
+                inset 2px 0 alpha(white, 0.08),
+                inset 1px 0 black,
+                inset -1px 0 black;
+                
+}
+
+PanelApplet .button:hover {
+    background-color: alpha(white, 0.08);
 }
 
 PanelApplet .button:active:hover,
 PanelApplet .button:active {
     border-image: none;
-    background-image: none;
-    background-color: @os_chrome_selected_bg_color;
-    border-width: 0;
-    border-radius: 0;
+    border-width: 1px;
+    background-image: linear-gradient(to bottom, 
+                                      shade(@os_chrome_bg_color_b, 0.6), 
+                                      shade(@os_chrome_bg_color_a, 0.6));
+    box-shadow: inset 0 1px 2px alpha(black, 0.2),
+                inset 0 -1px 2px alpha(black, 0.2),
+                inset 0 1px shade(@os_chrome_bg_color_a, 0.8),
+                inset 1px 0 black,
+                inset -1px 0 black;
 }
 
 PanelApplet:hover {
@@ -956,7 +970,7 @@ PanelApplet:hover:active {
 }
 
 WnckPager {
-    background-color: lighter(@os_chrome_selected_bg_color);
+    background-color: alpha(@os_chrome_selected_bg_color, 0.5);
 }
 
 NaTrayApplet {
