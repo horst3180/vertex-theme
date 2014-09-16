@@ -2733,7 +2733,7 @@ GtkPopover {
     border-color: darker(@theme_base_color);
     border-width: 1px;
     border-style: solid;
-    box-shadow: 0 2px 3px @wm_shadow;
+    box-shadow: 0 1px 4px @wm_shadow;
     margin: 10px;
     padding: 2px;
     color: @theme_fg_color;
