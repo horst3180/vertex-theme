@@ -1791,9 +1791,14 @@ GtkCalendar {
   padding: 8px; }*/
 .message-dialog {
   -GtkDialog-button-spacing: 0;
-    -GtkDialog-action-area-border: 4px;
- }
+    -GtkDialog-action-area-border: 4px; }
 
+GtkFileChooserDialog * {
+    -GtkPaned-handle-size: 1; }
+GtkFileChooserDialog .pane-separator {
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: @borders; }
 GtkFileChooserDialog .search-bar {
   background-color: shade(@theme_bg_color, 1.02); 
   box-shadow: none; }
