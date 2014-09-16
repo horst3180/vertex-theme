@@ -592,6 +592,7 @@ PanelApplet .button:hover {
     background-color: transparent;
     color: @os_chrome_fg_color;
 	  text-shadow: 0 -1px alpha(black, 0.8);
+    icon-shadow: none;
     box-shadow: inset -2px 0 alpha(white, 0.05),
                 inset 2px 0 alpha(white, 0.05),
                 inset 0 2px alpha(white, 0.12),
