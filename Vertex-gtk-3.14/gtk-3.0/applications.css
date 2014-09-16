@@ -531,6 +531,116 @@ FrWindow.background GtkBox.vertical GtkTreeView.view {
     background-color: @sidebar_bg;
 }
 
+/* Fallback Mode Panel */
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelToplevel,
+PanelWidget,
+PanelAppletFrame,
+PanelApplet {
+    color: @os_chrome_fg_color;
+	  text-shadow: 0 -1px alpha(black, 0.8);
+    background-image: linear-gradient(to bottom, 
+                                      @os_chrome_bg_color_a, 
+                                      @os_chrome_bg_color_b);
+    box-shadow: inset 0 2px alpha(white, 0.15),
+                inset 0 1px black,
+                inset 0 -1px black;
+}
+
+ClockBox,
+.gnome-panel-menu-bar.menubar,
+PanelApplet > GtkMenuBar.menubar {
+    font: bold;
+}
+
+.gnome-panel-menu-bar.menubar .menuitem:hover,
+PanelApplet > GtkMenuBar.menubar .menuitem:hover {
+    /*text-shadow: 0 1px @os_chrome_bg_color;*/
+}
+
+.gnome-panel-menu-bar.menubar .menu,
+PanelApplet > GtkMenuBar.menubar .menu {
+    font: regular;
+}
+
+.gnome-panel-menu-bar.menubar .menu:hover,
+PanelApplet > GtkMenuBar.menubar .menu:hover {
+    text-shadow: none;
+}
+
+.gnome-panel-menu-bar .menuitem:hover,
+PanelApplet > GtkMenuBar.menubar .menuitem:hover,
+.gnome-panel-menu-bar .menuitem:hover,
+PanelApplet > GtkMenuBar.menubar .menuitem:hover {
+    background-color: @os_chrome_selected_bg_color;
+    color: @os_chrome_selected_fg_color;
+}
+
+.gnome-panel-menu-bar .menuitem:hover,
+PanelApplet > GtkMenuBar.menubar .menuitem:hover {
+    color: @os_chrome_selected_fg_color;
+}
+
+PanelApplet .button,
+PanelApplet .button:hover {
+    padding: 4px;
+    border-image: none;
+    border-width: 3px;
+    border-radius: 5px;
+    background-image: none;
+    background-color: transparent;
+    color: @os_chrome_fg_color;
+	  text-shadow: 0 -1px alpha(black, 0.8);
+    box-shadow: inset -2px 0 alpha(white, 0.05),
+                inset 2px 0 alpha(white, 0.05),
+                inset 0 2px alpha(white, 0.12),
+                inset 0 1px alpha(black, 0.6),
+                inset 0 -1px alpha(black, 0.8),
+                inset 1px 0 alpha(black, 0.6),
+                inset -1px 0 alpha(black, 0.6);
+                
+}
+
+PanelApplet .button:hover {
+    background-color: alpha(white, 0.08);
+}
+
+PanelApplet .button:active:hover,
+PanelApplet .button:active {
+    border-image: none;
+    border-width: 3px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, 
+                                      shade(@os_chrome_bg_color_b, 0.6), 
+                                      shade(@os_chrome_bg_color_a, 0.6));
+    box-shadow: inset 0 1px 2px alpha(black, 0.2),
+                inset 0 1px shade(@os_chrome_bg_color_a, 0.8),
+                inset 1px 0 black,
+                inset -1px 0 black,
+                inset 0 1px black,
+                inset 0 -1px black;
+}
+
+PanelApplet:hover {
+    color: @os_chrome_selected_fg_color;
+}
+
+PanelApplet:active,
+PanelApplet:hover:active {
+    color: @os_chrome_selected_fg_color;
+    text-shadow: 0 1px @os_chrome_bg_color;
+}
+
+WnckPager {
+    background-color: alpha(@os_chrome_selected_bg_color, 0.5);
+}
+
+NaTrayApplet {
+    -NaTrayApplet-icon-padding: 12;
+    -NaTrayApplet-icon-size: 16;
+}
+
 /*Widgets*/
 
 /* Sourcelist *//*

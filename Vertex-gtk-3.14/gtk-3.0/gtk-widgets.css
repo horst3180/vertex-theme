@@ -1063,7 +1063,7 @@ GtkTreeView.view.trough:selected {
   border-style: solid;
   border-radius: 3px;
   background-color: shade(@theme_base_color, 0.98);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px @wm_shadow;
   text-shadow: none;
   icon-shadow: none; }
   .popover > .list, 
@@ -2024,7 +2024,7 @@ GtkVolumeButton.button {
     border-radius: 0; }
   .window-frame.csd.popup {
     border-radius: 0;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08); }
   .window-frame.csd.tooltip {
     border-radius: 3px;
     box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4); }
