@@ -16,7 +16,7 @@ style "default"
 	GtkToolbar::internal-padding	= 4
         GtkToolButton::icon-spacing     = 4
 
-        GtkWidget::tooltip-radius       = 3
+        GtkWidget::tooltip-radius       = 2
         GtkWidget::tooltip-alpha        = 235
         GtkWidget::new-tooltip-style    = 1 #for compatibility
 
@@ -547,9 +547,9 @@ style "default"
 
 style "toplevel_hack"
 {
-        engine "adwaita"
-        {
-        }
+        #engine "adwaita"
+        #{
+        #}
 }
 
 style "ooo_stepper_hack"
@@ -752,9 +752,9 @@ style "menu"
 
 style "menu_framed_box"
 {
-	engine "adwaita"
-	{
-        }
+	#engine "adwaita"
+	#{
+  #      }
 }
 
 style "menu_item"
@@ -984,7 +984,7 @@ style "menubar_item"
 style "button"
 {
   xthickness	= 4
-  ythickness	= 3
+  ythickness	= 4
 
   engine "pixmap"
   {
@@ -1026,7 +1026,7 @@ style "button"
 style "button_nohilight"
 {
   xthickness	= 4
-  ythickness	= 3
+  ythickness	= 4
 
   engine "pixmap"
   {
@@ -1073,7 +1073,7 @@ style "checkbutton"
 
 style "entry"
 {
-	xthickness	= 3
+	xthickness	= 4
 	ythickness   	= 4
 
         base[NORMAL] = "#2B2B2C"
@@ -1325,7 +1325,7 @@ style "notebook_combobox_entry"
 
 style "combobox_entry_button"
 {
-        fg[ACTIVE] = @text_color
+  xthickness    = 6
 
 	engine "pixmap"
 	{
@@ -1413,7 +1413,7 @@ style "spinbutton"
 {
   bg[NORMAL] = @bg_color
 
-  xthickness	= 3
+  xthickness	= 4
   ythickness	= 4
 
   engine "pixmap"
@@ -1972,8 +1972,8 @@ style "combobox"
 
 style "combobox_button"
 {
-  xthickness = 2
-  ythickness = 2
+  xthickness = 3
+  ythickness = 3
 }
 
 style "range"
@@ -2162,6 +2162,25 @@ style "treeview_header"
     }
 }
 
+# Treeview Rows
+style "treeview"
+{
+  xthickness = 2
+	ythickness = 0
+
+	engine  "pixmap"
+	{
+	image
+	{
+		function 			= FLAT_BOX
+		state    			= SELECTED
+		file				= "/Menu/menuitem.png"
+		border				= {1,1,1,1}
+        stretch         	= TRUE
+  	}
+}
+}    
+
 style "scrolled_window"
 {
         xthickness      = 1
@@ -2286,11 +2305,39 @@ style "toolbar"
 	{
         image
         {
-                function		= SHADOW
+          function                = BOX
+          file                    = "Toolbar/toolbar.png"
+          stretch                 = TRUE
+          border                  = { 1, 1, 1, 1 }
         }
-        }
+	  	image
+		{
+		      function				= HANDLE
+		      overlay_file			= "Handles/handle-h.png"
+		      overlay_stretch 	= FALSE
+		      orientation			= HORIZONTAL
+    		}
+    		image
+		{
+		      function				= HANDLE
+		      overlay_file			= "Handles/handle-v.png"
+		      overlay_stretch 	= FALSE
+		      orientation			= VERTICAL
+    		}
+    		image
+		{
+		       function        = VLINE
+		       recolorable        = TRUE
+		       file                = "Others/null.png"
+		}
+		image
+		{
+		      function            = HLINE
+		      recolorable        = TRUE
+		      file                = "Others/null.png"
+		}
+  }
 }
-
 style "inline_toolbar"
 {
         GtkToolbar::button-relief       = GTK_RELIEF_NORMAL
@@ -2407,6 +2454,8 @@ class "GtkSeparatorMenuItem"		style "separator_menu_item"
 class "GtkScrolledWindow"		style "scrolled_window"
 class "GtkFrame"	                style "frame"
 class "GtkToolbar"	                style "toolbar"
+class "*HandleBox"          style "toolbar"
+class "GtkTreeView"					style "treeview"
 
 widget_class "*<GtkMenuBar>*"			style "menubar"
 widget_class "*<GtkMenu>*"			style "menu"
@@ -2417,7 +2466,7 @@ widget_class "*<GtkCheckButton>*"               style "checkbutton"
 widget_class "*<GtkComboBox>"                   style "combobox"
 widget_class "*<GtkComboBox>*<GtkButton>"       style "combobox_button"
 widget_class "*<GtkComboBox>*<GtkSeparator>"	style "combobox_separator"
-widget_class "*HandleBox"                       style "handlebox"
+widget_class "*HandleBox"                       style "toolbar"
 widget_class "*<GtkTreeView>*<GtkButton>*"      style "treeview_header"
 widget_class "*<GtkFileChooserDefault>*<GtkToolbar>" style "inline_toolbar"
 widget_class "*<GtkFileChooserDefault>*<GtkToolbar>*<GtkButton>" style "button_nohilight"
