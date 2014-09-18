@@ -1972,12 +1972,18 @@ GtkOverlay.osd {
 .osd .button:prelight,
 .osd .button:active,
 .osd .button:hover:active,
-.osd .button:active:insensitive {
+.osd .button:active:insensitive,
+.osd.toolbar .button,
+.osd.toolbar .button:prelight,
+.osd.toolbar .button:active,
+.osd.toolbar .button:hover:active,
+.osd.toolbar .button:active:insensitive  {
     background-color: transparent;
     background-image: none;
     box-shadow: none;
 }
 
+.osd.toolbar .button,
 .osd .button {
     padding: 4px;
     color: @osd_fg;
