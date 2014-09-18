@@ -325,7 +325,8 @@ GtkCalendar.selection-mode.header .selection-menu,
   border: 1px solid alpha(black, 0.75); }
 
 .osd .button, .osd .button:active, .osd .button:active:hover, .osd .button:insensitive,
-.osd .button, .osd .button:checked, .osd .button:checked:hover, .osd .button:insensitive {
+.osd .button, .osd .button:checked, .osd .button:checked:hover, .osd .button:insensitive,
+.popover.osd .button:hover {
   border-width: 0 1px 0 1px;
 	border-style: solid;
   border-radius: 0;
@@ -334,7 +335,8 @@ GtkCalendar.selection-mode.header .selection-menu,
 
 .osd .button:first-child,
 .osd .button:first-child:active,
-.osd .button:first-child:active:hover {
+.osd .button:first-child:active:hover,
+.popover.osd .button:first-child:hover {
   border-width: 0px 1px 0 0;
 	border-style: solid;
   border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 1 0 0 / 0 1px 0 0px stretch;
@@ -344,13 +346,15 @@ GtkCalendar.selection-mode.header .selection-menu,
 .osd .button:last-child:active,
 .osd .button:last-child:active:hover,
 .osd .button:last-child:checked,
-.osd .button:last-child:checked:hover {
+.osd .button:last-child:checked:hover,
+.popover.osd .button:last-child:hover {
   border-width: 0 0 0 1px;
 	border-style: solid;
   border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 0 0 1 / 0 0px 0 1px stretch;
 }
 
-.osd .button:only-child {
+.osd .button:only-child,
+.popover.osd .button:only-child:hover {
   border-style: none;
 	border-image: none;
   box-shadow: none;

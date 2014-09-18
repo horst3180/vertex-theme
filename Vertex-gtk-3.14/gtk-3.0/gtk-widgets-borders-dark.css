@@ -376,8 +376,11 @@ GtkComboBox.combobox-entry .button:only-child:checked,
   border: 1px solid alpha(black, 0.75); }
 
 .osd .button, .osd .button:insensitive, 
-.osd .button:active, .osd .button:active:hover,
-.osd .button:checked, .osd .button:checked:hover {
+.osd .button:active, .osd .button:active:hover, 
+.osd .button:checked, .osd .button:checked:hover,
+.popover.osd .button, .popover.osd .button:insensitive, 
+.popover.osd .button:active, .popover.osd .button:active:hover, 
+.popover.osd .button:checked, .popover.osd .button:checked:hover {
   border-width: 0 1px 0 1px;
   border-style: solid;
   border-radius: 0;
@@ -388,7 +391,12 @@ GtkComboBox.combobox-entry .button:only-child:checked,
 .osd .button:first-child:active,
 .osd .button:first-child:active:hover,
 .osd .button:first-child:checked,
-.osd .button:first-child:checked:hover {
+.osd .button:first-child:checked:hover,
+.popover.osd .button:first-child,
+.popover.osd .button:first-child:active,
+.popover.osd .button:first-child:active:hover,
+.popover.osd .button:first-child:checked,
+.popover.osd .button:first-child:checked:hover {
   border-width: 0px 1px 0 0;
   border-style: solid;
   border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 1 0 0 / 0 1px 0 0px stretch;
@@ -398,7 +406,12 @@ GtkComboBox.combobox-entry .button:only-child:checked,
 .osd .button:last-child:active,
 .osd .button:last-child:active:hover,
 .osd .button:last-child:checked,
-.osd .button:last-child:checked:hover {
+.osd .button:last-child:checked:hover,
+.popover.osd .button:last-child,
+.popover.osd .button:last-child:active,
+.popover.osd .button:last-child:active:hover,
+.popover.osd .button:last-child:checked,
+.popover.osd .button:last-child:checked:hover {
   border-width: 0 0 0 1px;
   border-style: solid;
   border-image: -gtk-scaled(url("borders/osd-border.png"),url("assets/osd-border@2.png")) 0 0 0 1 / 0 0px 0 1px stretch;
@@ -406,7 +419,10 @@ GtkComboBox.combobox-entry .button:only-child:checked,
 
 .osd .button:only-child,
 .osd .button:only-child:active, .osd .button:only-child:active:hover,
-.osd .button:only-child:checked, .osd .button:only-child:checked:hover {
+.osd .button:only-child:checked, .osd .button:only-child:checked:hover,
+.popover.osd .button:only-child,
+.popover.osd .button:only-child:active, .popover.osd .button:only-child:active:hover,
+.popover.osd .button:only-child:checked, .popover.osd .button:only-child:checked:hover {
   border-style: none;
   border-image: none;
   box-shadow: none;
