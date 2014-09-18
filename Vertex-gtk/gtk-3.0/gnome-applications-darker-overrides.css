@@ -144,6 +144,7 @@ RBSource .toolbar {
 
 RBSource .toolbar .button {
     text-shadow: none;
+    transition: none;
     color: @theme_fg_color;
     icon-shadow: 0 1px @button_text_shadow;
     text-shadow: 0 1px @button_text_shadow;
@@ -151,8 +152,9 @@ RBSource .toolbar .button {
 
 RBSource .toolbar .button:hover {
     background-image: linear-gradient(to bottom,
-				                      @button_hover_gradient_color_a,
+                                      @button_hover_gradient_color_a,
                                       @button_hover_gradient_color_b);
+    border-image: -gtk-scaled(url("borders/button-border.png"),url("borders/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 RBSource .toolbar .button:active:hover,

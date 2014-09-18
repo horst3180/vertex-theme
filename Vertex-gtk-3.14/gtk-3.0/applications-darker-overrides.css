@@ -58,7 +58,7 @@ RBButtonBar.toolbar {
 }
 
 RBButtonBar.toolbar .button.flat {
-  text-shadow: none;
+  transition: none;
   color: @theme_fg_color;
   icon-shadow: 0 1px @button_text_shadow;
   text-shadow: 0 1px @button_text_shadow;
