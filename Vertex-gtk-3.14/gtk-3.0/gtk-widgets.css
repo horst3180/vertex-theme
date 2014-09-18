@@ -1779,8 +1779,21 @@ GtkCalendar {
 /***********
  * Dialogs *
  ***********/
-/*.message-dialog .dialog-action-area .button {
-  padding: 8px; }*/
+.message-dialog .dialog-action-area .button:focus {
+    background-image: linear-gradient(to bottom,
+				                              @button_hover_gradient_color_a,
+                                      @button_hover_gradient_color_b);
+
+  outline-color: alpha(@theme_fg_color, 0.3); }
+
+.message-dialog .dialog-action-area .button:active,
+.message-dialog .dialog-action-area .button:checked {
+    background-image: linear-gradient(to bottom,
+				                              @button_active_gradient_color_a,
+                                      @button_active_gradient_color_b);
+
+  outline-color: alpha(@button_active_text, 0.3); }
+
 .message-dialog {
   -GtkDialog-button-spacing: 0;
     -GtkDialog-action-area-border: 4px; }
