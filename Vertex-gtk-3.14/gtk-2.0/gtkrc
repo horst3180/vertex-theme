@@ -1,7 +1,10 @@
 gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#3c3c3e\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#4080fb\nselected_fg_color:#FFFFFF\ntext_color:#3c3c3e\nbg_color:#F3F3F5\ninsensitive_bg_color:#F4F4F2\ntooltip_bg_color:#343434"
 
+gtk-icon-sizes		= "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1
 gtk-primary-button-warps-slider = 1
+
+include "panel.rc"	# This includes the file that handles the panels.
 
 style "default" {
 
@@ -530,8 +533,8 @@ style "default" {
 
 style "toplevel_hack" {
 
-  #engine "adwaita" {
-  #}
+  engine "adwaita" {
+  }
 }
 
 style "ooo_stepper_hack" {
@@ -722,8 +725,8 @@ style "menu" {
 
 style "menu_framed_box" {
 
-  #engine "adwaita" {
-  #}
+  engine "adwaita" {
+  }
 }
 
 style "menu_item"

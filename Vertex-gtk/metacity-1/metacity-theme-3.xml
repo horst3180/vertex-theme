@@ -59,7 +59,7 @@
 	<distance name="left_width" value="1" />
 </frame_geometry>
 
-<frame_geometry name="small" title_scale="small" parent="normal" hide_buttons="true" rounded_top_left="false" rounded_top_right="false">
+<frame_geometry name="small" title_scale="small" parent="normal" hide_buttons="true" rounded_top_left="3" rounded_top_right="3">
 	<distance name="title_vertical_pad" value="7"/>
 	<border name="title_border" left="10" right="10" top="0" bottom="1"/>
 	<border name="button_border" left="3" right="3" top="0" bottom="2"/>
@@ -88,7 +88,7 @@
 	<border name="button_border" left="3" right="3" top="0" bottom="0"/>
 </frame_geometry>
 
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="small">
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="3" rounded_top_right="3" parent="small">
 	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 

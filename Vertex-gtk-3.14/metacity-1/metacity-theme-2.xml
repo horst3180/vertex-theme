@@ -10,14 +10,15 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_border_focused" value="#6d6d6d" />
-<constant name="C_border_unfocused" value="#6d6d6d" />
-<constant name="C_title_focused" value="#3c3c3e" />
+<constant name="C_border_focused" value="#000000" />
+<constant name="C_border_unfocused" value="#000000" />
+<constant name="C_title_focused" value="#F3F3F5" />
 <constant name="C_title_focused_hilight" value="#ffffff" />
-<constant name="C_title_unfocused" value="#868686" />
-<constant name="C_titlebar_bg_a" value="#f7f7f7" />
-<constant name="C_titlebar_bg_b" value="#f3f3f5" />
-<constant name="C_titlebar_bg_highlight" value="#ffffff" />
+<constant name="C_title_focused_hilight_dark" value="#111113" />
+<constant name="C_title_unfocused" value="#afafb1" />
+<constant name="C_titlebar_bg_a" value="#4d4f52" />
+<constant name="C_titlebar_bg_b" value="#454749" />
+<constant name="C_titlebar_bg_highlight" value="#6d7077" />
 <!-- geometries -->
 
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="3" rounded_top_right="3">
@@ -25,31 +26,29 @@
 	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="5"/>
-	<distance name="right_titlebar_edge" value="5"/>
-	<distance name="title_vertical_pad" value="5"/>
+	<distance name="right_titlebar_edge" value="2"/>
+	<distance name="title_vertical_pad" value="2"/>
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
-	<border name="button_border" left="4" right="4" top="1" bottom="0"/>
+	<border name="button_border" left="3" right="3" top="1" bottom="1"/>
 	<aspect_ratio name="button" value="1.0"/>
 </frame_geometry>
 
-<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="4" rounded_top_right="4" parent="normal">
+<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="3" rounded_top_right="3" parent="normal">
 </frame_geometry>
 
-<frame_geometry name="max" title_scale="small" has_title="false" hide_buttons="true" parent="normal" rounded_top_left="false" rounded_top_right="false">
+<frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
+	<distance name="bottom_height" value="0" />
 	<distance name="left_titlebar_edge" value="1"/>
-	<distance name="right_titlebar_edge" value="8"/>
+	<distance name="right_titlebar_edge" value="1"/>
 	<distance name="title_vertical_pad" value="4"/> <!-- 
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
 							or you'll have bigger buttons		-->
-	<border name="button_border" left="5" right="5" top="1" bottom="0"/>
-	<border name="title_border" left="10" right="10" top="0" bottom="0"/>
-	<distance name="bottom_height" value="0" />
 </frame_geometry>
 
-<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="false" rounded_top_right="false">
+<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="3" rounded_top_right="3">
 	<distance name="title_vertical_pad" value="7"/>
 	<border name="title_border" left="10" right="10" top="0" bottom="1"/>
 	<border name="button_border" left="3" right="3" top="0" bottom="2"/>
@@ -65,11 +64,11 @@
 	<distance name="right_width" value="0" />
 	<distance name="bottom_height" value="0" />
 	<distance name="title_vertical_pad" value="0" />
+	<border name="title_border" left="10" right="10" top="0" bottom="0" />
 	<border name="button_border" left="3" right="3" top="0" bottom="0"/>
-	<border name="title_border" left="0" right="0" top="0" bottom="0" />
 </frame_geometry>
 
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="small">
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="3" rounded_top_right="3" parent="small">
 	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 
@@ -78,15 +77,18 @@
 	<!-- title -->
 
 <draw_ops name="title_focused">
-	<title x="(0 `max` ((width - title_width) / 2)) + 3"
-               y="(0 `max` ((height - title_height) / 2)) + 2"
-               color="C_title_focused_hilight" />
+	<title x="(0 `max` ((width - title_width) / 2)) + 2"
+               y="(0 `max` ((height - title_height) / 2))"
+               color="C_title_focused_hilight_dark" />
 	<title x="(0 `max` ((width - title_width) / 2)) + 2"
                y="(0 `max` ((height - title_height) / 2)) + 1"
                color="C_title_focused" />
 </draw_ops>
 
 <draw_ops name="title_unfocused">
+	<title x="(0 `max` ((width - title_width) / 2)) + 2"
+               y="(0 `max` ((height - title_height) / 2))"
+               color="C_title_focused_hilight_dark" />
 	<title x="(0 `max` ((width - title_width) / 2)) + 2"
                y="(0 `max` ((height - title_height) / 2)) + 1"
                color="C_title_unfocused"/>
@@ -110,11 +112,27 @@
 
 		<tint color="C_titlebar_bg_highlight" alpha="1.0" x="3" y="1" width="width-6" height="1"/>
 
-		<arc color="C_titlebar_bg_highlight" x="1" y="1" width="6" height="6" start_angle="0" extent_angle="-60"/>
-		<arc color="C_titlebar_bg_highlight" x="width-10" y="1" width="8" height="8" start_angle="0" extent_angle="60"/>
+	  <!-- Highlighting of the left arch -->
+	  <line color="#65676d" x1="3" x2="3" y1="1" y2="1"/>
+	  <line color="#56585c" x1="3" x2="3" y1="2" y2="2"/>
+	  <line color="#616469" x1="2" x2="2" y1="2" y2="2"/>
+	  <line color="#616469" x1="1" x2="1" y1="3" y2="3"/>
 
-		<arc color="C_border_focused" x="0" y="0" width="6" height="6" start_angle="270" extent_angle="90"/>
-		<arc color="C_border_focused" x="width-7" y="0" width="6" height="6" start_angle="0" extent_angle="90"/>
+	  <!-- Darkening of the left arch -->
+	  <line color="C_border_focused" x1="1" x2="1" y1="1" y2="1"/>
+	  <line color="#2c2d30" x1="2" x2="2" y1="1" y2="1"/>
+	  <line color="#2c2d30" x1="1" x2="1" y1="2" y2="2"/>
+
+	  <!-- Highlighting of the right arch -->
+	  <line color="#65676d" x1="width-4" x2="width-4" y1="1" y2="1"/>
+	  <line color="#56585c" x1="width-4" x2="width-4" y1="2" y2="2"/>
+	  <line color="#616469" x1="width-3" x2="width-3" y1="2" y2="2"/>
+	  <line color="#616469" x1="width-2" x2="width-2" y1="3" y2="3"/>
+
+	  <!-- Darkening of the right arch -->
+	  <line color="C_border_focused" x1="width-2" x2="width-2" y1="1" y2="1"/>
+	  <line color="#2c2d30" x1="width-3" x2="width-3" y1="1" y2="1"/>
+	  <line color="#2c2d30" x1="width-2" x2="width-2" y1="2" y2="2"/>
 </draw_ops>
 
 <draw_ops name="titlebar_unfocused">
@@ -301,6 +319,7 @@
 <frame_style name="normal_max_focused" geometry="max">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
 	<piece position="titlebar" draw_ops="titlebar_max" />
+	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
 	<button function="close" state="pressed" draw_ops="close_focused_pressed" />
 	<button function="close" state="prelight" draw_ops="close_focused_prelight" />
@@ -329,6 +348,7 @@
 <frame_style name="normal_max_unfocused" geometry="max">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
 	<piece position="titlebar" draw_ops="titlebar_max" />
+	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
 	<button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
 	<button function="close" state="pressed" draw_ops="close_unfocused_pressed"/>

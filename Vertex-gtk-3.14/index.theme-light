@@ -4,9 +4,11 @@ Name=Vertex-Light
 Comment=A theme
 Encoding=UTF-8
 
-Name[de_DE]=index.theme
+Name[en]=index.theme
 
 [X-GNOME-Metatheme]
 GtkTheme=Vertex-Light
 MetacityTheme=Vertex-Light
-ButtonLayout=:minimize,maximize,close
+IconTheme=GNOME
+CursorTheme=DMZ-Black
+ButtonLayout=menu:minimize,maximize,close
