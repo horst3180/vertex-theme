@@ -1559,6 +1559,7 @@ GtkMenuButton .menuitem.separator,
 .menuitem.check:active,
 .menuitem.radio:active {
     background-color: transparent;
+    border-style: none;
 }
 
 /****************
@@ -2505,6 +2506,7 @@ GtkIconView.cell:selected:focus {
 .cell.check:selected,
 .cell.radio:selected {
     background-color: transparent;
+    border-style: none;
 }
 
 column-header.button,

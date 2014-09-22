@@ -61,14 +61,18 @@
 
 /* draw regular check and radio items using our SVG assets */
 GtkModelButton.button.check,
-GtkModelButton.button.check:hover,
 .menuitem.check,
-.menuitem.check:hover,
 .check,
-.view.cell.check {
+.cell.check {
     background-image: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"),url("assets/checkbox-unchecked-dark@2.png"));
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.cell.check:selected,
+.menuitem.check:hover,
+GtkModelButton.button.check:hover {
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked-selected-dark.png"),url("assets/checkbox-unchecked-selected-dark@2.png"));
 }
 
 GtkModelButton.button.check:insensitive,
@@ -116,15 +120,20 @@ GtkModelButton.button.check:inconsistent:active:hover {
 }
 
 GtkModelButton.button.radio,
-GtkModelButton.button.radio:hover,
 .radio,
 .menuitem.radio,
-.menuitem.radio:hover,
-.view.cell.radio {
+.cell.radio {
     background-image: -gtk-scaled(url("assets/radio-unchecked-dark.png"),url("assets/radio-unchecked-dark@2.png"));
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.cell.radio:selected,
+.menuitem.radio:hover,
+GtkModelButton.button.radio:hover {
+    background-image: -gtk-scaled(url("assets/radio-unchecked-selected-dark.png"),url("assets/radio-unchecked-selected-dark@2.png"));
+}
+
 
 GtkModelButton.button.radio:insensitive,
 .menuitem.radio:insensitive,

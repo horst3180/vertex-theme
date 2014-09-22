@@ -2,6 +2,7 @@ checkbox-checked
 checkbox-checked-selected
 checkbox-checked-insensitive
 checkbox-unchecked
+checkbox-unchecked-selected
 checkbox-unchecked-insensitive
 checkbox-mixed
 checkbox-mixed-selected
@@ -10,6 +11,7 @@ radio-checked
 radio-checked-selected
 radio-checked-insensitive
 radio-unchecked
+radio-unchecked-selected
 radio-unchecked-insensitive
 radio-mixed
 radio-mixed-selected
@@ -46,6 +48,7 @@ checkbox-checked-dark
 checkbox-checked-selected-dark
 checkbox-checked-insensitive-dark
 checkbox-unchecked-dark
+checkbox-unchecked-selected-dark
 checkbox-unchecked-insensitive-dark
 checkbox-mixed-dark
 checkbox-mixed-selected-dark
@@ -54,6 +57,7 @@ radio-checked-dark
 radio-checked-selected-dark
 radio-checked-insensitive-dark
 radio-unchecked-dark
+radio-unchecked-selected-dark
 radio-unchecked-insensitive-dark
 radio-mixed-dark
 radio-mixed-selected-dark
