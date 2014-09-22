@@ -4,11 +4,9 @@ Name=Vertex-Dark
 Comment=A theme
 Encoding=UTF-8
 
-Name[en]=index.theme
-
 [X-GNOME-Metatheme]
 GtkTheme=Vertex-Dark
 MetacityTheme=Vertex-Dark
-IconTheme=GNOME
+IconTheme=gnome
 CursorTheme=DMZ-Black
 ButtonLayout=menu:minimize,maximize,close

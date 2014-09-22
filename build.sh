@@ -24,6 +24,8 @@ mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
 mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-2-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-2.xml
 rm $DIR/Vertex-Light/metacity-1/metacity-theme-2-dark.xml
+mv $DIR/Vertex-Light/metacity-1/metacity-theme-1-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-1.xml
+rm $DIR/Vertex-Light/metacity-1/metacity-theme-1-dark.xml
 mv $DIR/Vertex-Light/index.theme-light $DIR/Vertex-Light/index.theme
 rm $DIR/Vertex-Light/index.theme-dark
 
@@ -37,6 +39,8 @@ mv $DIR/Vertex-Dark/gtk-2.0-dark $DIR/Vertex-Dark/gtk-2.0
 mv $DIR/Vertex-Dark/gtk-3.0/gtk-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk.css
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-2-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-2.xml
 rm $DIR/Vertex-Dark/metacity-1/metacity-theme-2-light.xml
+mv $DIR/Vertex-Dark/metacity-1/metacity-theme-1-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-1.xml
+rm $DIR/Vertex-Dark/metacity-1/metacity-theme-1-light.xml
 mv $DIR/Vertex-Dark/index.theme-dark $DIR/Vertex-Dark/index.theme
 
 mv $DIR/Vertex-Dark $DIR/Gnome-3.14/
@@ -46,6 +50,8 @@ cp -r $DIR/Vertex-gtk-3.14 $DIR/Vertex
 rm -rf $DIR/Vertex/gtk-2.0-dark
 rm $DIR/Vertex/metacity-1/metacity-theme-2-light.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-2-dark.xml
+rm $DIR/Vertex/metacity-1/metacity-theme-1-light.xml
+rm $DIR/Vertex/metacity-1/metacity-theme-1-dark.xml
 rm $DIR/Vertex/index.theme-light
 rm $DIR/Vertex/index.theme-dark
 
@@ -58,6 +64,8 @@ mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
 mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-2-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-2.xml
 rm $DIR/Vertex-Light/metacity-1/metacity-theme-2-dark.xml
+mv $DIR/Vertex-Light/metacity-1/metacity-theme-1-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-1.xml
+rm $DIR/Vertex-Light/metacity-1/metacity-theme-1-dark.xml
 mv $DIR/Vertex-Light/index.theme-light $DIR/Vertex-Light/index.theme
 rm $DIR/Vertex-Light/index.theme-dark
 
@@ -71,6 +79,8 @@ mv $DIR/Vertex-Dark/gtk-2.0-dark $DIR/Vertex-Dark/gtk-2.0
 mv $DIR/Vertex-Dark/gtk-3.0/gtk-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk.css
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-2-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-2.xml
 rm $DIR/Vertex-Dark/metacity-1/metacity-theme-2-light.xml
+mv $DIR/Vertex-Dark/metacity-1/metacity-theme-1-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-1.xml
+rm $DIR/Vertex-Dark/metacity-1/metacity-theme-1-light.xml
 mv $DIR/Vertex-Dark/index.theme-dark $DIR/Vertex-Dark/index.theme
 
 cp -r $DIR/Vertex-Dark $DIR/Gnome-3.12/
@@ -80,6 +90,8 @@ cp -r $DIR/Vertex-gtk $DIR/Vertex
 rm -rf $DIR/Vertex/gtk-2.0-dark
 rm $DIR/Vertex/metacity-1/metacity-theme-2-light.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-2-dark.xml
+rm $DIR/Vertex/metacity-1/metacity-theme-1-light.xml
+rm $DIR/Vertex/metacity-1/metacity-theme-1-dark.xml
 rm $DIR/Vertex/index.theme-light
 rm $DIR/Vertex/index.theme-dark
 
