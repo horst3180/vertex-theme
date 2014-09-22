@@ -61,6 +61,72 @@ style "theme-panel" {
   }
 }
 
+style "xfce-panel" {
+
+  xthickness = 4 # The spacing (padding) inside and between applets. Add a lower value for a more compact look.
+  ythickness = 0
+
+  bg_pixmap[NORMAL] = "/Panel/xfce-panel-bg.png" # Disable for normal panel backgrounds.
+
+	fg[NORMAL] = "#F3F3F5"
+	fg[PRELIGHT] = "#F3F3F5"
+	fg[ACTIVE] = "#F3F3F5"
+	text[NORMAL] = "#F3F3F5"
+	text[PRELIGHT] = "#F3F3F5"
+	text[ACTIVE] = "#F3F3F5"
+
+	bg[NORMAL]	= "#1d1d1f"
+	
+  engine "pixmap" {
+
+    image {
+      function	= BOX
+      recolorable	= TRUE
+      state		= NORMAL
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = PRELIGHT
+      file = "Panel/panel-button-hover.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = ACTIVE
+      file = "Panel/panel-button-active.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = SELECTED
+      file = "Panel/panel-button-active.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = INSENSITIVE
+    }
+
+    image {
+      function = ARROW
+      recolorable = TRUE
+      arrow_direction = DOWN
+    }
+  }
+}
+
+
 style "theme-panel-light" {
 
   xthickness = 1
@@ -129,8 +195,11 @@ widget "*fast-user-switch*"             style "theme-panel"
 widget "*CPUFreq*Applet*"               style "theme-panel"
 widget "*indicator-applet*"             style "theme-panel"
 class "PanelApp*"                       style "theme-panel"
+class "*Panel*Applet*" 			            style "theme-panel"
 class "PanelToplevel*"                  style "theme-panel"
 widget_class "*PanelToplevel*"          style "theme-panel"
+class "*Mail*"                          style "theme-panel"
+widget_class "*Mail*"                   style "theme-panel"
 widget_class "*notif*"                  style "theme-panel"
 widget_class "*Notif*"                  style "theme-panel"
 widget_class "*Tray*"                   style "theme-panel" 
@@ -138,14 +207,17 @@ widget_class "*tray*"                   style "theme-panel"
 widget_class "*computertemp*"           style "theme-panel"
 widget_class "*Applet*Tomboy*"          style "theme-panel"
 widget_class "*Applet*Netstatus*"       style "theme-panel"
+widget_class "*BonoboDockItem"          style "theme-panel"
+class "*BonoboDockItem"                 style "theme-panel"
+widget_class "*GtkBgbox*"	              style "theme-panel"
 
 # Fixes for tooltip text in some apps.
 widget_class "*Notif*Beagle*"           style "theme-panel-light"
 widget_class "*Notif*Brasero*"          style "theme-panel-light"
 
 # XFCE panel theming.
-widget "*Xfce*Panel*"                   style "theme-panel"
-class "*Xfce*Panel*"                    style "theme-panel"
+widget "*Xfce*Panel*"                   style "xfce-panel"
+class "*Xfce*Panel*"                    style "xfce-panel"
 
 # lxpanel and fbpanel
 widget "*.tclock.*"                     style "theme-panel"

@@ -20,6 +20,8 @@ mkdir -p $DIR/Gnome-3.10_Ubuntu-14.04
 #make light 3.14 variant
 cp -r $DIR/Vertex-gtk-3.14 $DIR/Vertex-Light
 rm -rf $DIR/Vertex-Light/gtk-2.0-dark
+rm -rf $DIR/Vertex-Light/xfwm4
+mv $DIR/Vertex-Light/xfwm4-light $DIR/Vertex-Light/xfwm4
 mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
 mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-2-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-2.xml
@@ -34,6 +36,7 @@ mv $DIR/Vertex-Light $DIR/Gnome-3.14/
 #make dark 3.14 variant
 cp -r $DIR/Vertex-gtk-3.14 $DIR/Vertex-Dark
 rm -rf $DIR/Vertex-Dark/gtk-2.0
+rm -rf $DIR/Vertex-Dark/xfwm4-light
 rm $DIR/Vertex-Dark/index.theme-light
 mv $DIR/Vertex-Dark/gtk-2.0-dark $DIR/Vertex-Dark/gtk-2.0
 mv $DIR/Vertex-Dark/gtk-3.0/gtk-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk.css
@@ -48,6 +51,7 @@ mv $DIR/Vertex-Dark $DIR/Gnome-3.14/
 #make default 3.14 variant
 cp -r $DIR/Vertex-gtk-3.14 $DIR/Vertex
 rm -rf $DIR/Vertex/gtk-2.0-dark
+rm -rf $DIR/Vertex/xfwm4-light
 rm $DIR/Vertex/metacity-1/metacity-theme-2-light.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-2-dark.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-1-light.xml
@@ -62,6 +66,8 @@ cp -r $DIR/Vertex-gtk $DIR/Vertex-Light
 rm -rf $DIR/Vertex-Light/gtk-2.0-dark
 mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
 mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
+rm -rf $DIR/Vertex-Light/xfwm4
+mv $DIR/Vertex-Light/xfwm4-light $DIR/Vertex-Light/xfwm4
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-2-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-2.xml
 rm $DIR/Vertex-Light/metacity-1/metacity-theme-2-dark.xml
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-1-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-1.xml
@@ -74,6 +80,7 @@ cp -r $DIR/Vertex-Light $DIR/Gnome-3.12/
 #make dark 3.12 variant
 cp -r $DIR/Vertex-gtk $DIR/Vertex-Dark
 rm -rf $DIR/Vertex-Dark/gtk-2.0
+rm -rf $DIR/Vertex-Dark/xfwm4-light
 rm $DIR/Vertex-Dark/index.theme-light
 mv $DIR/Vertex-Dark/gtk-2.0-dark $DIR/Vertex-Dark/gtk-2.0
 mv $DIR/Vertex-Dark/gtk-3.0/gtk-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk.css
@@ -88,6 +95,7 @@ cp -r $DIR/Vertex-Dark $DIR/Gnome-3.12/
 #make default 3.12 variant
 cp -r $DIR/Vertex-gtk $DIR/Vertex
 rm -rf $DIR/Vertex/gtk-2.0-dark
+rm -rf $DIR/Vertex/xfwm4-light
 rm $DIR/Vertex/metacity-1/metacity-theme-2-light.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-2-dark.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-1-light.xml
