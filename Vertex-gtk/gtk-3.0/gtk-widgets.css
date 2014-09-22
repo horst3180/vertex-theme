@@ -1630,6 +1630,7 @@ GtkCheckButton:selected:focus {
                                       @wm_bg_b);
     background-color: @theme_bg_color;
     padding: 5px 5px 4px 5px;
+	border-width: 0 0 1px 0;
 }
 
 .header-bar .button.text-button {

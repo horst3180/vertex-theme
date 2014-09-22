@@ -706,6 +706,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
                                       @metacity_bg_b,
                                       @dark_wm_bg_b);
     background-color: @dark_bg_color;
+	border-width: 0 0 1px 0;
 	border-color: @dark_borders;
 }
 
