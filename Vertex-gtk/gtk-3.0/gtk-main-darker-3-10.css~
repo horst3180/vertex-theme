@@ -11,7 +11,7 @@
 /*@import url("tabs.css");*/	/*disable for 3.10*/
 /*@import url("darker-tabs.css");*/		/*disable for 3.10*/
 @import url("gnome-applications-darker-overrides.css");
-@import url("unity-darker.css");
+@import url("unity-dark.css");
 
 @import url("gtk-widgets-3_10.css");
 @import url("gtk-widgets-3_10-darker-overrides.css");
