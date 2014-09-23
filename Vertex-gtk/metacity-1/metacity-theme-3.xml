@@ -28,7 +28,7 @@
 	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="1"/>
 	<distance name="right_titlebar_edge" value="1"/>
-	<distance name="title_vertical_pad" value="1"/>
+	<distance name="title_vertical_pad" value="2"/>
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
 	<border name="button_border" left="4" right="4" top="1" bottom="0"/>
 	<aspect_ratio name="button" value="1.0"/>
@@ -42,12 +42,10 @@
 	<distance name="right_width" value="0" />
 	<distance name="left_titlebar_edge" value="1"/>
 	<distance name="right_titlebar_edge" value="1"/>
-	<distance name="title_vertical_pad" value="5"/> <!-- 
+	<distance name="title_vertical_pad" value="1"/> <!-- 
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
 							or you'll have bigger buttons		-->
-	<border name="button_border" left="5" right="5" top="1" bottom="0"/>
-	<border name="title_border" left="10" right="10" top="0" bottom="0"/>
 	<distance name="bottom_height" value="0" />
 </frame_geometry>
 
@@ -223,80 +221,77 @@
 
 <!--close-->
 <draw_ops name="close_focused">
-	<image filename="close.svg" x="0" y="height/2-6" width="17" height="15"/>
-	<!--<arc color="#ff0000" x="1" y="4" width="13" height="13" start_angle="90" extent_angle="90"/>
-	<arc color="#ff0000" x="1" y="4" width="13" height="13" start_angle="270" extent_angle="-90"/>-->
-
+	<image filename="close.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="close_focused_pressed">
-	<image filename="close_pressed.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="close_pressed.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="close_focused_prelight">
-	<image filename="close_prelight.svg" x="0" y="height/2-6" width="17" height="15" />
+	<image filename="close_prelight.svg" x="0" y="height/2-7" width="17" height="15" />
 </draw_ops>
 
 <draw_ops name="close_unfocused">
-	<image filename="close_unfocused.svg" x="0" y="height/2-6" width="17" height="15" />
+	<image filename="close_unfocused.svg" x="0" y="height/2-7" width="17" height="15" />
 </draw_ops>
 
 <draw_ops name="close_unfocused_prelight">
-	<image filename="close_prelight.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="close_prelight.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused_pressed">
-	<image filename="close_pressed.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="close_pressed.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <!--maximize-->
 <draw_ops name="maximize_focused">
-	<image filename="max.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="max.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="maximize_focused_pressed">
-	<image filename="max_pressed.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="max_pressed.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="maximize_focused_prelight">
-	<image filename="max_prelight.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="max_prelight.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused">
-	<image filename="max_unfocused.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="max_unfocused.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused_prelight">
-	<image filename="max_prelight.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="max_prelight.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused_pressed">
-	<image filename="max_pressed.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="max_pressed.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <!--minimize-->
 <draw_ops name="minimize_focused">
-	<image filename="min.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="min.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="minimize_focused_pressed">
-	<image filename="min_pressed.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="min_pressed.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="minimize_focused_prelight">
-	<image filename="min_prelight.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="min_prelight.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="minimize_unfocused">
-	<image filename="min_unfocused.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="min_unfocused.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="minimize_unfocused_prelight">
-	<image filename="min_prelight.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="min_prelight.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 <draw_ops name="minimize_unfocused_pressed">
-	<image filename="min_pressed.svg" x="0" y="height/2-6" width="17" height="15"/>
+	<image filename="min_pressed.svg" x="0" y="height/2-7" width="17" height="15"/>
 </draw_ops>
 
 

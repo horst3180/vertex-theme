@@ -27,7 +27,7 @@
 	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="2"/>
 	<distance name="right_titlebar_edge" value="2"/>
-	<distance name="title_vertical_pad" value="5"/>
+	<distance name="title_vertical_pad" value="2"/>
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
 	<border name="button_border" left="3" right="3" top="1" bottom="1"/>
 	<aspect_ratio name="button" value="1.0"/>
