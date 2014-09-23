@@ -2614,8 +2614,7 @@ GtkCalendar {
 
 GtkCalendar.view {
     border-radius: 3px;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid @borders;
     padding: 2px;
 }
 
@@ -2625,6 +2624,7 @@ GtkCalendar.header {
                                       shade(@theme_bg_color, 1.04),
                                       shade(@theme_bg_color, 0.89));
     border-width: 0;
+    border-bottom: 1px solid @borders;
 }
 
 GtkCalendar.button,
