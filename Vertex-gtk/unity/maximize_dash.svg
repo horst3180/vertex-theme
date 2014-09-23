@@ -15,7 +15,7 @@
    id="svg4306"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="maximize_focused_normal.svg"
+   sodipodi:docname="close_dash.svg"
    style="enable-background:new">
   <defs
      id="defs4308">
@@ -90,8 +90,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313709"
-     inkscape:cx="14.519803"
-     inkscape:cy="13.075385"
+     inkscape:cx="14.505215"
+     inkscape:cy="13.132666"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -166,7 +166,7 @@
        sodipodi:cy="7"
        sodipodi:rx="4"
        sodipodi:ry="4"
-       d="M 12,7 A 4,4 0 1 1 4,7 4,4 0 1 1 12,7 z"
+       d="M 12,7 C 12,9.209139 10.209139,11 8,11 5.790861,11 4,9.209139 4,7 4,4.790861 5.790861,3 8,3 c 2.209139,0 4,1.790861 4,4 z"
        transform="translate(4,1033.3622)" />
   </g>
 </svg>

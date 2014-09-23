@@ -22,7 +22,7 @@ UnityDecoration {
 UnityDecoration.top {
 	border: 1px solid @dark_window_frame;
     border-bottom-width: 0;
-    border-radius: 3px 3px 0 0;
+    border-radius: 4px 4px 0 0;
     padding: 1px 6px 0 6px;
 
     background-clip: border-box;
