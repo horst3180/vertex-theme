@@ -44,7 +44,10 @@
 .button:insensitive,
 .inline-toolbar GtkToolButton > .button,
 .spinbutton.vertical .button,
-.primary-toolbar .button:hover {
+.primary-toolbar .button:hover,
+.header-bar .button.titlebutton:hover,
+.titlebar .button.titlebutton:hover,
+GtkCalendar.header .button.titlebutton:hover {
     border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -73,7 +76,13 @@
 .inline-toolbar GtkToolButton > .button:insensitive,
 .inline-toolbar GtkToolButton > .button:insensitive:checked,
 .spinbutton.vertical .button:checked,
-.primary-toolbar .button:checked {
+.primary-toolbar .button:checked,
+.header-bar .button.titlebutton:active,
+.titlebar .button.titlebutton:active,
+GtkCalendar.header .button.titlebutton:active,
+.header-bar .button.titlebutton:checked,
+.titlebar .button.titlebutton:checked,
+GtkCalendar.header .button.titlebutton:checked {
     border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;

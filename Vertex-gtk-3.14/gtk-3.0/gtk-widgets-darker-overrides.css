@@ -135,7 +135,10 @@
   .toolbar .button:hover, 
   .toolbar .button.flat:hover,
   .primary-toolbar .button:hover, 
-  .primary-toolbar .button.flat:hover {
+  .primary-toolbar .button.flat:hover,
+  .header-bar .button.titlebutton:hover,
+  .titlebar .button.titlebutton:hover,
+  GtkCalendar.header .button.titlebutton:hover {
     color: @dark_fg_color;
     background-image: linear-gradient(to bottom,
 				                              @dark_button_hover_gradient_color_a,
@@ -153,7 +156,13 @@
   .toolbar .button:checked, 
   .toolbar .button.flat:checked,
   .primary-toolbar .button:checked, 
-  .primary-toolbar .button.flat:checked {
+  .primary-toolbar .button.flat:checked,
+  .header-bar .button.titlebutton:active,
+  .titlebar .button.titlebutton:active,
+  GtkCalendar.header .button.titlebutton:active,
+  .header-bar .button.titlebutton:checked,
+  .titlebar .button.titlebutton:checked,
+  GtkCalendar.header .button.titlebutton:checked {
     background-image: linear-gradient(to bottom,
                                       @dark_button_active_gradient_color_a,
                                       @dark_button_active_gradient_color_b);
@@ -603,13 +612,8 @@ GtkCalendar.header .button.titlebutton {
 
 .header-bar .button.titlebutton:hover,
 .titlebar .button.titlebutton:hover,
-GtkCalendar.header .button.titlebutton:hover {
-    color: alpha(@dark_fg_color, 0.5); }
+GtkCalendar.header .button.titlebutton:hover {}
 
 .header-bar .button.titlebutton:active,
 .titlebar .button.titlebutton:active,
-GtkCalendar.header .button.titlebutton:active {
-    border-image: none;
-    box-shadow: none;
-    icon-shadow: none;
-    color: @theme_selected_bg_color; }
+GtkCalendar.header .button.titlebutton:active {}

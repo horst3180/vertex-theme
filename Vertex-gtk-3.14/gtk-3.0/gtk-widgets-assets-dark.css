@@ -27,24 +27,48 @@
 .header-bar.selection-mode .header-bar-separator,
 .header-bar.selection-mode > GtkBox > .separator.vertical {
   -GtkWidget-wide-separators: 1;
-  -GtkWidget-separator-width: 10px;
+  -GtkWidget-separator-width: 9px;
   background: transparent;
   border-width: 0 4px 0 1px;
   border-style: solid;
   border-color: transparent;
   border-image: -gtk-scaled(url("assets/header-separator-selectionmode-dark.png"),url("assets/header-separator-selectionmode-dark@2.png")) 0 4 0 1 / 0 4px 0 1px stretch; }
 
+.titlebar.selection-mode .left .header-bar-separator, 
+.titlebar.selection-mode > GtkBox.left > .separator.vertical, 
+.header-bar.selection-mode .left .header-bar-separator,
+.header-bar.selection-mode > GtkBox.left > .separator.vertical {
+  -GtkWidget-wide-separators: 1;
+  -GtkWidget-separator-width: 9px;
+  background: transparent;
+  border-width: 0 1px 0 4px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: -gtk-scaled(url("assets/header-separator-selectionmode-left-dark.png"),url("assets/header-separator-selectionmode-left-dark@2.png")) 0 1 0 4 / 0 1px 0 4px stretch; }
+
 .titlebar .header-bar-separator, GtkCalendar.header .header-bar-separator, 
 .titlebar > GtkBox > .separator.vertical, GtkCalendar.header > GtkBox > .separator.vertical,
 .header-bar .header-bar-separator,
 .header-bar > GtkBox > .separator.vertical, .toolbar .separator {
   -GtkWidget-wide-separators: 1;
-  -GtkWidget-separator-width: 10px;
+  -GtkWidget-separator-width: 9px;
   background: transparent;
   border-width: 0 4px 0 1px;
   border-style: solid;
   border-color: transparent;
   border-image: -gtk-scaled(url("assets/header-separator-dark.png"),url("assets/header-separator-dark@2.png")) 0 4 0 1 / 0 4px 0 1px stretch; }
+
+.titlebar .left .header-bar-separator, 
+.titlebar > GtkBox.left > .separator.vertical, 
+.header-bar .left .header-bar-separator,
+.header-bar > GtkBox.left > .separator.vertical {
+  -GtkWidget-wide-separators: 1;
+  -GtkWidget-separator-width: 9px;
+  background: transparent;
+  border-width: 0 1px 0 4px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: -gtk-scaled(url("assets/header-separator-left-dark.png"),url("assets/header-separator-left-dark@2.png")) 0 1 0 4 / 0 1px 0 4px stretch; }
 
 /*********************
  * GtkScale's slider *

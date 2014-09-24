@@ -23,7 +23,9 @@ radio-mixed-selected
 radio-mixed-insensitive
 radio-mixed-insensitive-selected
 header-separator
+header-separator-left
 header-separator-selectionmode
+header-separator-selectionmode-left
 scrollbar-slider
 scrollbar-slider-hover
 scrollbar-slider-active
@@ -77,7 +79,9 @@ radio-mixed-selected-dark
 radio-mixed-insensitive-dark
 radio-mixed-insensitive-selected-dark
 header-separator-dark
+header-separator-left-dark
 header-separator-selectionmode-dark
+header-separator-selectionmode-left-dark
 scrollbar-slider-dark
 scrollbar-slider-hover-dark
 scrollbar-slider-active-dark

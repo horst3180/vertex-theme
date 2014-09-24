@@ -19,7 +19,10 @@
 .toolbar .button.flat:hover,
 .toolbar .button:insensitive,
 .primary-toolbar .button.flat:hover,
-.primary-toolbar .button:hover {
+.primary-toolbar .button:hover,
+.header-bar .button.titlebutton:hover,
+.titlebar .button.titlebutton:hover,
+GtkCalendar.header .button.titlebutton:hover {
   border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
@@ -58,7 +61,13 @@
 .primary-toolbar .button:focus:checked:hover,
 .primary-toolbar .button.flat:checked,
 .primary-toolbar .button:insensitive:checked,
-.primary-toolbar .button:insensitive.flat:checked {
+.primary-toolbar .button:insensitive.flat:checked,
+.header-bar .button.titlebutton:active,
+.titlebar .button.titlebutton:active,
+GtkCalendar.header .button.titlebutton:active,
+.header-bar .button.titlebutton:checked,
+.titlebar .button.titlebutton:checked,
+GtkCalendar.header .button.titlebutton:checked {
   border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 

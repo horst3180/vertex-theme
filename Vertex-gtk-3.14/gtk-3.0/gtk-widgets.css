@@ -235,7 +235,10 @@ GtkFlowBox .grid-child {
   text-shadow: 0 1px @highlight_shadow;
   icon-shadow: 0 1px @highlight_shadow; }
   .button:focus { outline-color: transparent; }
-  .button:hover, .button.flat:hover, .primary-toolbar .button:hover {
+  .button:hover, .button.flat:hover, .primary-toolbar .button:hover,
+  .header-bar .button.titlebutton:hover,
+  .titlebar .button.titlebutton:hover,
+  GtkCalendar.header .button.titlebutton:hover {
     color: @theme_fg_color;
     background-image: linear-gradient(to bottom,
 				                              @button_hover_gradient_color_a,
@@ -244,7 +247,13 @@ GtkFlowBox .grid-child {
     icon-shadow: 0 1px @highlight_shadow;
     -gtk-image-effect: highlight; }
   .button:active, .button.flat:active, .primary-toolbar .button:active,
-  .button:checked, .button.flat:checked, .primary-toolbar .button:checked {
+  .button:checked, .button.flat:checked, .primary-toolbar .button:checked,
+  .header-bar .button.titlebutton:active,
+  .titlebar .button.titlebutton:active,
+  GtkCalendar.header .button.titlebutton:active,
+  .header-bar .button.titlebutton:checked,
+  .titlebar .button.titlebutton:checked,
+  GtkCalendar.header .button.titlebutton:checked {
     color: @button_active_text;
     background-image: linear-gradient(to bottom,
                                       @button_active_gradient_color_a,
@@ -2043,20 +2052,21 @@ GtkVolumeButton.button {
 .header-bar .button.titlebutton,
 .titlebar .button.titlebutton,
 GtkCalendar.header .button.titlebutton {
-    border-image: none;
-    background: none;
     padding-left: 3px;
-    padding-right: 3px; }
+    padding-right: 3px;
+    border-image: none;
+    background-image: none;
+    color: @wm_title; }
+
+.header-bar .button.titlebutton:backdrop,
+.titlebar .button.titlebutton:backdrop,
+GtkCalendar.header .button.titlebutton:backdrop {
+    color: @wm_unfocused_title; }
 
 .header-bar .button.titlebutton:hover,
 .titlebar .button.titlebutton:hover,
-GtkCalendar.header .button.titlebutton:hover {
-    color: alpha(@theme_fg_color, 0.5); }
+GtkCalendar.header .button.titlebutton:hover { }
 
 .header-bar .button.titlebutton:active,
 .titlebar .button.titlebutton:active,
-GtkCalendar.header .button.titlebutton:active {
-    color: alpha(@theme_fg_color, 0.5);
-    box-shadow: none;
-    icon-shadow: none;
-    color: @theme_selected_bg_color; }
+GtkCalendar.header .button.titlebutton:active { }
