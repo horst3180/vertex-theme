@@ -104,6 +104,10 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
     color: shade (@theme_bg_color, 0.9);
 }
 
+NautilusQueryEditor .search-bar.toolbar {
+  padding-top: 4px;
+}
+
 /* Nemo */
 NemoWindow * {
 	-GtkPaned-handle-size: 1px;
