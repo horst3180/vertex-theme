@@ -399,7 +399,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 /************************
  * Header-bar separator *
  ************************/
-.header-bar .separator, .titlebar .separator {
+.header-bar > .separator, .titlebar > .separator {
   color: rgba(0, 0, 0, 0.3); }
 
 /***************
