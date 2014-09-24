@@ -1817,6 +1817,7 @@ GtkFileChooserDialog .dialog-action-box {
 .sidebar .view {
   border: none;
   background-color: @sidebar_bg;
+  color: alpha(@theme_fg_color, 0.8);
   icon-shadow: 0 1px @highlight_shadow;
   text-shadow: 0 1px @highlight_shadow; }
   .sidebar .scrollbar.trough,
@@ -1836,6 +1837,7 @@ GtkFileChooserDialog .dialog-action-box {
     border-style: solid;
     border-top-color: alpha(@theme_selected_bg_color, 0.95);
     border-bottom-color: alpha(@theme_selected_bg_color, 0.85);
+    color: @theme_selected_fg_color;
     icon-shadow: 0 -1px alpha(black, 0.2);
     text-shadow: 0 -1px alpha(black, 0.2); }
   .sidebar .separator,

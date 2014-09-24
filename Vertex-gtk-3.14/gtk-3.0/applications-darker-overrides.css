@@ -182,6 +182,28 @@ EvWindow.background EggFindBar.primary-toolbar.toolbar.horizontal {
   background-color: shade(@dark_bg_color, 1.1);
 }
 
+/*********
+* Marlin *
+*********/
+MarlinViewChromeLocationBar .button.raised:focus {
+  background-image: none;
+}
+
+MarlinViewChromeLocationBar .button:active,
+MarlinViewChromeLocationBar .button:checked {
+  background-image: none;
+  background-color: alpha(black, 0.2);
+}
+
+/*********
+ * Panel *
+ ********/
+.panel {
+  background-color: transparent;
+}
+
+/*Widgets*/
+
 /* bottom toolbars */
 .bottom-toolbar.toolbar {
   border-color: @dark_borders;

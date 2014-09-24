@@ -144,5 +144,6 @@
 @import url("gtk-widgets-assets.css");
 @import url("applications.css");
 
+@import url("granite.css");
 @import url("window-controls.css");
 @import url("tabs.css");

@@ -396,6 +396,12 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 .search-bar.toolbar {
   border-color: @dark_borders; }
 
+/************************
+ * Header-bar separator *
+ ************************/
+.header-bar .separator, .titlebar .separator {
+  color: rgba(0, 0, 0, 0.3); }
+
 /***************
  * Header bars *
  ***************/

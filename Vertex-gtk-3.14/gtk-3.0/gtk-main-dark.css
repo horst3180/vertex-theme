@@ -144,6 +144,7 @@
 @import url("gtk-widgets-assets-dark.css");
 @import url("applications.css");
 @import url("applications-dark-overrides.css");
+@import url("granite.css");
 @import url("window-controls.css");
 @import url("tabs.css");
 @import url("tabs-dark-overrides.css");

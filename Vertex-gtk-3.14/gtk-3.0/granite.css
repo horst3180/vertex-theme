@@ -412,8 +412,7 @@ GraniteWidgetsPopOver * {
 }
 
 /* Granite App Menu */
-GraniteWidgetsAppMenu .button:active,
-GraniteWidgetsAppMenu .button:checked {
+GraniteWidgetsAppMenu .button:active {
     background-image: linear-gradient(to bottom,
                                         @button_active_gradient_color_a,
                                         @button_active_gradient_color_b);
