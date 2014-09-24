@@ -536,7 +536,6 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 .header-bar GtkProgressBar.trough,
 .toolbar GtkProgressBar.trough,
 .primary-toolbar GtkProgressBar.trough {
-	border: 1px solid shade(@trough_bg_color_a, 0.4);
   background-image: linear-gradient(to bottom,
                                   shade(@dark_trough_bg_color_a, 0.9),
                                   shade(@dark_trough_bg_color_b, 0.8)); }

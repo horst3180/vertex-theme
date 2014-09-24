@@ -424,6 +424,17 @@ GtkCalendar.selection-mode.header .selection-menu,
   border-image: -gtk-scaled(url("borders/scale-highlight-border-dark.png"),url("borders/scale-highlight-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
 }
 
+/*progressbar trough*/
+.header-bar .trough,
+.toolbar .trough,
+.primary-toolbar .trough {
+    border-image: -gtk-scaled(url("borders/trough-border-dark.png"),url("borders/trough-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
 .button.flat, .menuitem.button.flat, /*.menuitem.button.flat:active, .menuitem.button.flat:checked,*/ .button:link, .button:visited, 
 .button:link:hover, .button:link:active, .button:link:checked, .button:link:active:hover, .button:link:checked:hover, .button:visited:hover, .button:visited:active, .button:visited:active:hover, 
 .notebook tab .button, .list-row.button, GtkCalendar.button, GtkCalendar.button:hover, 
