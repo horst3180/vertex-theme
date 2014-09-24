@@ -608,7 +608,9 @@ PanelApplet .button:hover {
 }
 
 PanelApplet .button:active:hover,
-PanelApplet .button:active {
+PanelApplet .button:active,
+PanelApplet .button:checked:hover,
+PanelApplet .button:checked {
     border-image: none;
     border-width: 3px;
     border-radius: 5px;
