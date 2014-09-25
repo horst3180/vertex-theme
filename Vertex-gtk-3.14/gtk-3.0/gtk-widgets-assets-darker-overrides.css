@@ -110,7 +110,7 @@ GtkCalendar.selection-mode.header > GtkBox > .separator.vertical,
 .header-bar GtkSwitch.trough:active:insensitive,
 .toolbar GtkSwitch.trough:active:insensitive,
 .primary-toolbar GtkSwitch.trough:active:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-active-isensitive-dark.png"),url("assets/switch-active-isensitive-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive-dark.png"),url("assets/switch-active-insensitive-dark@2.png"));
 }
 
 .header-bar GtkSwitch.slider,
