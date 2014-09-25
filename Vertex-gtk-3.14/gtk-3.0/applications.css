@@ -485,6 +485,10 @@ GtkApplicationWindow.background GtkStack GtkVBox.vertical GtkOverlay GtkRevealer
 	background-color: @borders;
 }
 
+TotemGrilo.vertical GdMainView.frame {
+  border-width: 1px 0 0 0;
+}
+
 
 /* Geary */ /*FIXME this could cause problems*/
 GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal,
