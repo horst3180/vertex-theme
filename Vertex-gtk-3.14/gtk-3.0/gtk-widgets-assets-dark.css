@@ -195,7 +195,7 @@ GtkSwitch.trough:insensitive {
 }
 
 GtkSwitch.trough:active:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-active-isensitive-dark.png"),url("assets/switch-active-isensitive-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive-dark.png"),url("assets/switch-active-insensitive-dark@2.png"));
 }
 
 GtkSwitch.slider {
