@@ -624,7 +624,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 .primary-toolbar.toolbar GtkSwitch.trough:active:insensitive,
 .toolbar GtkSwitch.trough:active:insensitive,
 .header-bar GtkSwitch.trough:active:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-active-isensitive-dark.png"),url("assets/switch-active-isensitive-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive-dark.png"),url("assets/switch-active-insensitive-dark@2.png"));
 }
 
 .primary-toolbar.toolbar GtkSwitch.slider,
