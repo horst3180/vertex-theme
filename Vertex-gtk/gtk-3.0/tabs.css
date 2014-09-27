@@ -35,14 +35,14 @@ EphyNotebook.notebook tab.top:active:hover {
 									                    @notebook_tab_gradient_b);
     box-shadow: none;
 }
-
+/*
 NautilusNotebook.notebook tab.reorderable-page:hover,
 NemoNotebook.notebook tab.reorderable-page:hover,
 GeditWindow .notebook tab.reorderable-page:hover,
 EphyNotebook .notebook tab.reorderable-page:hover {
     border-top: 1px solid alpha(black, 0.03);
     border-bottom: 1px solid alpha(black, 0.02);
-}
+}*/
 
 NautilusNotebook.notebook tab.top,
 NemoWindow .notebook tab.top,
@@ -65,8 +65,8 @@ EphyNotebook.notebook.header {
 				inset 0 3px alpha(black, 0.02), 
 				inset 0 2px alpha(black, 0.025), 
 				inset 0 1px alpha(black, 0.03);
-    border-top-width: 0;
-    border-bottom: 1px solid alpha(black, 0.1);
+    border-top-style: none;
+    border-bottom: 1px solid shade(@borders, 1.2);
 }
 
 NautilusNotebook.notebook tab.top,
