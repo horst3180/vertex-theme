@@ -1036,13 +1036,13 @@ GtkTreeView.view.trough:selected {
     padding: 4px; }
     .menu .menuitem:hover {
       color: @theme_selected_fg_color;
-	    background-image: linear-gradient(to bottom,
-                                      alpha(@theme_selected_bg_color, 0.9),
-                                      alpha(@theme_selected_bg_color, 0.7));
+      background-image: linear-gradient(to bottom,
+                                      mix(@theme_selected_bg_color, @theme_base_color, 0.1),
+                                      mix(@theme_selected_bg_color, @theme_base_color, 0.3));
 	    border-width: 1px 0;
 	    border-style: solid;
-	    border-top-color: alpha(@theme_selected_bg_color, 0.95);
-	    border-bottom-color: alpha(@theme_selected_bg_color, 0.85);
+	    border-top-color: mix(@theme_selected_bg_color, @theme_base_color, 0.05);
+	    border-bottom-color: mix(@theme_selected_bg_color, @theme_base_color, 0.15);
 	    text-shadow: 0 -1px alpha(black, 0.2); 
       icon-shadow: 0 -1px alpha(black, 0.2); }
     .menu .menuitem:insensitive {
@@ -1646,15 +1646,15 @@ GtkLevelBar.vertical {
 
 .cell:selected,
 .cell:selected:focus {
-	background-image: linear-gradient(to bottom,
-                                      #548efc,
-                                      #78a5fc);
+  background-image: linear-gradient(to bottom,
+                                  mix(@theme_selected_bg_color, @theme_base_color, 0.1),
+                                  mix(@theme_selected_bg_color, @theme_base_color, 0.3));
 	background-color: @theme_selected_bg_color;
 	border-width: 1px 0;
 	border-style: solid;
-	border-top-color: alpha(@theme_selected_bg_color, 0.95);
-	border-bottom-color: alpha(@theme_selected_bg_color, 0.85);
-  icon-shadow: 0 -1px alpha(black, 0.2);
+  border-top-color: mix(@theme_selected_bg_color, @theme_base_color, 0.05);
+  border-bottom-color: mix(@theme_selected_bg_color, @theme_base_color, 0.15);
+  icon-shadow: none;
   text-shadow: 0 -1px alpha(black, 0.2);
   color: @theme_selected_fg_color;
 }
@@ -1843,13 +1843,13 @@ GtkFileChooserDialog .dialog-action-box {
   .sidebar:selected,
   .sidebar .view:selected {
     background-image: linear-gradient(to bottom,
-                                      alpha(@theme_selected_bg_color, 0.9),
-                                      alpha(@theme_selected_bg_color, 0.7));
-    background-color: @theme_base_color;
+                                    mix(@theme_selected_bg_color, @theme_base_color, 0.1),
+                                    mix(@theme_selected_bg_color, @theme_base_color, 0.3));
+    background-color: @theme_selected_bg_color;
     border-width: 1px 0;
     border-style: solid;
-    border-top-color: alpha(@theme_selected_bg_color, 0.95);
-    border-bottom-color: alpha(@theme_selected_bg_color, 0.85);
+    border-top-color: mix(@theme_selected_bg_color, @theme_base_color, 0.05);
+    border-bottom-color: mix(@theme_selected_bg_color, @theme_base_color, 0.15);
     color: @theme_selected_fg_color;
     icon-shadow: 0 -1px alpha(black, 0.2);
     text-shadow: 0 -1px alpha(black, 0.2); }

@@ -26,14 +26,9 @@ GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selectio
   text-shadow: 0 -1px alpha(black, 0.7); }
 
 .cell:selected, .cell:selected:focus, .menu .menuitem:hover, .sidebar:selected, .sidebar .view:selected {
-	background-image: linear-gradient(to bottom,
-                                      #3a67be,
-                                      #3e78e6);
-	background-color: shade(@theme_selected_bg_color, 0.9);
-	border-width: 1px 0;
-	border-style: solid;
-	border-top-color: #3f7cf1;
-	border-bottom-color: #3c73dc;
+  background-image: linear-gradient(to top,
+                                    mix(@theme_selected_bg_color, @theme_base_color, 0.1),
+                                    mix(@theme_selected_bg_color, @theme_base_color, 0.3));
 }
 
 .list-row.button:hover {

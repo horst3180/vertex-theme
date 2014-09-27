@@ -143,14 +143,9 @@ GtkPopover {
 .sidebar .view.cell:selected,
 .sidebar .view.cell:selected:hover,
 .sidebar .view.cell:selected:focus {
-	background-image: linear-gradient(to bottom,
-                                      #3a67be,
-                                      #3e78e6);
-	background-color: shade(@theme_selected_bg_color, 0.9);
-	border-width: 1px 0;
-	border-style: solid;
-	border-top-color: #3f7cf1;
-	border-bottom-color: #3c73dc;
+  background-image: linear-gradient(to top,
+                                  mix(@theme_selected_bg_color, @theme_base_color, 0.1),
+                                  mix(@theme_selected_bg_color, @theme_base_color, 0.3));
 }
 
 .menuitem.check,
@@ -200,14 +195,6 @@ GtkPopover {
 .notebook tab.right:hover {
     background-color: alpha(white, 0.03);
 }
-/*
-.trough,
-.trough.vertical,
-.trough.highlight,
-.trough row,
-.trough row:hover {
-	border: 1px solid shade(@trough_bg_color_a, 0.6);
-}*/
 
 /* scale */
 
