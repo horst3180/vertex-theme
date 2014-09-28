@@ -643,19 +643,19 @@ StScrollBar StButton#vhandle:active {
     padding-right: 4px;
 }
 
-.panel-corner {
+.panel-corner,
+.panel-corner:overview:hover {
     -panel-corner-radius: 4px;
     -panel-corner-background-color: rgba(0,0,0,0.78);
     -panel-corner-border-width: 1px;
-	-panel-corner-border-color: rgba(0,0,0,1.0);
+    -panel-corner-border-color: rgba(0,0,0,1.0);
 }
-/*
-.panel-corner:active,
-.panel-corner:overview,
-.panel-corner:focus {
-    -panel-corner-border-color: rgba(255,255,255,0.8);
+
+.panel-corner:hover {
+    -panel-corner-border-color: #2c2d2c;
+    -panel-corner-background-color: #585858;
 }
-*/
+
 .panel-corner.lock-screen,
 .panel-corner.unlock-screen,
 .panel-corner.login-screen {
@@ -2081,17 +2081,17 @@ StScrollBar StButton#vhandle:active {
 
 .ws-switcher-active-up {
     height: 30px;
-    border: 0px;
-    background: rgba(255,255,255,0.5);
-	border-image: url("entry-border-focused.svg") 3;
+    background: rgba(0,0,0,0.33);
+    border: 1px solid #4080fb;
+    background-image: url("ws-switch-arrow-up.png");
     border-radius: 2px;
 }
 
 .ws-switcher-active-down {
     height: 30px;
-    border: 0px;
-    background: rgba(255,255,255,0.5);
-	border-image: url("entry-border-focused.svg") 3;
+    border: 1px solid #4080fb;
+    background: rgba(0,0,0,0.33);
+    background-image: url("ws-switch-arrow-down.png");
     border-radius: 2px;
 }
 
