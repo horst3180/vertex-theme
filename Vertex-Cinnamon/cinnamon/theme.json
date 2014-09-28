@@ -1,0 +1,10 @@
+{ 
+   "cinnamon-theme": {
+   "name": "Vertex-Cinnamon", 
+   "author": "horst3180", 
+   "version": "20140928",
+   "type":   "custom",
+   "thumbnail": "thumbnail.png", 
+   "url": "" 
+    }
+}
