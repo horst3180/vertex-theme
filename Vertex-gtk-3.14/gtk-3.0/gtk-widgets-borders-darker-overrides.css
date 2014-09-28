@@ -424,12 +424,14 @@ GtkCalendar.selection-mode.header .selection-menu,
 .header-bar .scale.trough,
 .toolbar .scale.trough,
 .primary-toolbar .scale.trough {
+  border-width: 1px 5px 2px 5px;
   border-image: -gtk-scaled(url("borders/scale-trough-border-dark.png"),url("borders/scale-trough-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
 }
 
 .header-bar .scale.trough.highlight,
 .toolbar .scale.trough.highlight,
 .primary-toolbar .scale.trough.highlight {
+  border-width: 1px 5px 2px 5px;
   border-image: -gtk-scaled(url("borders/scale-highlight-border-dark.png"),url("borders/scale-highlight-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
 }
 
