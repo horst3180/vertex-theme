@@ -44,13 +44,13 @@ gsettings set org.gnome.desktop.wm.preferences theme "Vertex-Dark"
 
 for the dark version
 
-To install the Gnome-Shell theme, copy the "Vertex-GS" folder to "/usr/share/themes" and set the permissions
+To install the Gnome-Shell theme, copy the "Vertex-Gnome-Shell" folder to "/usr/share/themes" and set the permissions
 
-sudo chmod -R 755 "/usr/share/themes/Vertex-GS"
+sudo chmod -R 755 "/usr/share/themes/Vertex-Gnome-Shell"
 
 and apply the theme with 
 
-gsettings set org.gnome.shell.extensions.user-theme name "Vertex-GS"
+gsettings set org.gnome.shell.extensions.user-theme name "Vertex-Gnome-Shell"
 
 Instead of applying the theme with the gsettings commands you can select them in Gnome Tweak Tool like any other theme.
 
@@ -73,5 +73,5 @@ If the metacity theme doesn't show up in gnome-tweak-tool copy the theme folder 
 You may face the issue that sublime text 2 won't load the theme correctly. This is due to either a bug in sublime or libpng. To fix this, download and extract the sublime-text-fix.tar.gz file and follow the instructions in the included README
 
 
-If you experience Gnome-Shell crashes, replace the "gnome-shell.css" file in the "Vertex-GS/gnome-shell/" folder with the "gnome-shell-no-crash.css" file
+If you experience Gnome-Shell crashes, replace the "gnome-shell.css" file in the "Vertex-Gnome-Shell/gnome-shell/" folder with the "gnome-shell-no-crash.css" file
 
