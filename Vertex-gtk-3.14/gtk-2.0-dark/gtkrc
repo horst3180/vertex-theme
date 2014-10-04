@@ -1095,6 +1095,60 @@ style "entry" {
   }
 }
 
+style "ff_entry" {
+
+  xthickness = 3
+  ythickness = 4
+	
+  base[NORMAL] = "#dbdbdb" #Spotify and other non gtk apps use 
+                           #this as the entry text-area-input
+  base[INSENSITIVE] = "#cdcdcd"        
+  text[SELECTED] = "#fff"
+  text[NORMAL] = "#333333"
+  text[INSENSITIVE] = "#727272"
+  
+  engine "pixmap" {
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = NORMAL
+      shadow = IN
+      file = "Entry/ff-entry.svg"
+      border = { 3, 3, 4, 4 }
+      stretch = TRUE
+    }
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = INSENSITIVE
+      shadow = IN
+      file = "Entry/ff-entry.svg"
+      border = { 3, 3, 4, 4 }
+      stretch = TRUE
+    }
+
+    image {
+      function = FLAT_BOX
+      detail = "entry_bg"
+      state = NORMAL
+      file = "Entry/ff-entry-bg.svg"
+      border = { 0, 0, 0, 0 }
+      stretch = TRUE
+    }
+
+    image {
+      function = FLAT_BOX
+      detail = "entry_bg"
+      state = INSENSITIVE
+      file = "Entry/ff-entry-bg.svg"
+      border = { 0, 0, 0, 0 }
+      stretch = TRUE
+    }
+  }
+}
+
 style "notebook_entry" {
 
   engine "pixmap" {
@@ -2456,6 +2510,11 @@ widget_class "*<GtkCustomMenu>*<GtkCustomMenuItem>*"                style "chrom
 # We use this weird selector to target an offscreen entry as created
 # by Chrome/Chromium to derive the style for its toolbar
 widget_class "<GtkEntry>"                                           style "standalone_entry"
+
+# Firefox #
+class "GtkInvisible"                                                style "ff_entry"
+widget "GtkInvisible"                                               style "ff_entry"
+widget "MozillaGtkWidget.GtkFixed.GtkEntry"                         style	"ff_entry"
 
 # Eclipse/SWT
 widget "gtk-tooltips*"                                              style "eclipse-tooltips"
