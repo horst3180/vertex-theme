@@ -98,11 +98,11 @@ GtkCalendar.header .button.titlebutton:checked {
 .header-bar .button.suggested-action:checked:hover,
 .toolbar .button.suggested-action:checked:hover,
 .primary-toolbar .button.suggested-action:checked:hover {
-    border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .header-bar .button.destructive-action,
@@ -126,11 +126,11 @@ GtkCalendar.header .button.titlebutton:checked {
 .header-bar .button.destructive-action:checked:hover,
 .toolbar .button.destructive-action:checked:hover,
 .primary-toolbar .button.destructive-action:checked:hover {
-    border-image: -gtk-scaled(url("borders/button-active-border-destructive-dark.png"),url("borders/button-active-border-destructive-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-active-border-destructive-dark.png"),url("borders/button-active-border-destructive-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 
@@ -141,14 +141,16 @@ GtkCalendar.header .button.titlebutton:checked {
 .header-bar.selection-mode .button:insensitive,
 .titlebar.selection-mode .selection-menu:hover, 
 .header-bar.selection-mode .selection-menu:hover {
-  border-image: -gtk-scaled(url("borders/button-border-suggested-dark.png"),url("borders/button-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch; }
+  border-image: -gtk-scaled(url("borders/button-border-suggested-dark.png"),url("borders/button-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
   .titlebar.selection-mode .button:active, 
   GtkCalendar.selection-mode.header .button:active,
   .header-bar.selection-mode .button:active,
   .titlebar.selection-mode .button:checked, 
   GtkCalendar.selection-mode.header .button:checked,
   .header-bar.selection-mode .button:checked {
-    border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch; }
+    border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  }
 
 .selection-mode.titlebar .titlebutton {
   border-image: none;
@@ -439,11 +441,11 @@ GtkCalendar.selection-mode.header .selection-menu,
 .header-bar .trough,
 .toolbar .trough,
 .primary-toolbar .trough {
-    border-image: -gtk-scaled(url("borders/trough-border-dark.png"),url("borders/trough-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/trough-border-dark.png"),url("borders/trough-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .button.flat, .menuitem.button.flat, /*.menuitem.button.flat:active, .menuitem.button.flat:checked,*/ .button:link, .button:visited, 

@@ -369,7 +369,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
   padding: 1px 2px 4px;
   outline-offset: 0; }
   GtkCheckButton.text-button:insensitive, GtkCheckButton.text-button:insensitive:active, GtkCheckButton.text-button:insensitive:checked, GtkCheckButton.text-button:insensitive:inconsistent, GtkRadioButton.text-button:insensitive, GtkRadioButton.text-button:insensitive:active, GtkRadioButton.text-button:insensitive:checked, GtkRadioButton.text-button:insensitive:inconsistent {
-    color: @insensitive_fg_color; }
+  color: @insensitive_fg_color; }
 
 .menuitem.check,
 .menuitem.radio,
@@ -391,6 +391,6 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
 .cell.radio:active,
 .cell.check:checked,
 .cell.radio:checked {
-    background-color: transparent;
-    icon-shadow: none;
+  background-color: transparent;
+  icon-shadow: none;
 }

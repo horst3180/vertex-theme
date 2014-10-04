@@ -1,41 +1,41 @@
 /*Entries*/
 .entry {
-    border-image: -gtk-scaled(url("borders/generic-border-dark.png"),url("borders/generic-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/generic-border-dark.png"),url("borders/generic-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .entry:focus { 
-    border-image: -gtk-scaled(url("borders/generic-border-focused-dark.png"),url("borders/generic-border-focused-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/generic-border-focused-dark.png"),url("borders/generic-border-focused-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .linked .entry {
-    border-right-width: 0;
-    border-left-width: 0;
-    border-image-width: 2px 0 3px 0;
-    border-radius: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-image-width: 2px 0 3px 0;
+  border-radius: 0;
 }
 
 .linked .entry:first-child, GtkComboBox.combobox-entry .entry:first-child, GtkComboBox.combobox-entry .entry:last-child:dir(rtl) {
-    border-right-width: 0;
-    border-left-width: 1px;
-    border-image-width: 2px 0 3px 2px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
+  border-right-width: 0;
+  border-left-width: 1px;
+  border-image-width: 2px 0 3px 2px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .linked .entry:last-child, GtkComboBox.combobox-entry .entry:last-child, GtkComboBox.combobox-entry .entry:first-child:dir(rtl) {
-    border-right-width: 1px;
-    border-left-width: 0;
-    border-image-width: 2px 2px 3px 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+  border-right-width: 1px;
+  border-left-width: 0;
+  border-image-width: 2px 2px 3px 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 /*Buttons*/
@@ -48,11 +48,11 @@
 .header-bar .button.titlebutton:hover,
 .titlebar .button.titlebutton:hover,
 GtkCalendar.header .button.titlebutton:hover {
-    border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .button:active,
@@ -83,77 +83,77 @@ GtkCalendar.header .button.titlebutton:active,
 .header-bar .button.titlebutton:checked,
 .titlebar .button.titlebutton:checked,
 GtkCalendar.header .button.titlebutton:checked {
-    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .button:focus{ 
-    border-image: -gtk-scaled(url("borders/button-border-default-dark.png"),url("borders/button-border-default-dark@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-border-default-dark.png"),url("borders/button-border-default-dark@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .list-row:selected .button, .list-row:selected .button.flat:hover,
 .list-row:selected .button:focus, .list-row:selected .button.flat:focus:hover {
-    border-image: -gtk-scaled(url("borders/button-border-selected-dark.png"),url("borders/button-border-selected-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-border-selected-dark.png"),url("borders/button-border-selected-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .list-row:selected .button:active:hover, .list-row:selected .button:checked, .list-row:selected .button:checked:hover,
 .list-row:selected .button.flat:active:hover, .list-row:selected .button.flat:focus:active:hover {
-    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .button.suggested-action,
 .button.suggested-action:insensitive {
-    border-image: -gtk-scaled(url("borders/button-border-suggested-dark.png"),url("borders/button-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-border-suggested-dark.png"),url("borders/button-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .button.suggested-action:active,
 .button.suggested-action:active:hover,
 .button.suggested-action:checked,
 .button.suggested-action:checked:hover {
-    border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .button.destructive-action,
 .button.destructive-action:insensitive {
-    border-image: -gtk-scaled(url("borders/button-border-destructive-dark.png"),url("borders/button-border-destructive-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-border-destructive-dark.png"),url("borders/button-border-destructive-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .button.destructive-action:active,
 .button.destructive-action:checked,
 .button.destructive-action:active:hover,
 .button.destructive-action:checked:hover {
-    border-image: -gtk-scaled(url("borders/button-active-border-destructive-dark.png"),url("borders/button-active-border-destructive-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/button-active-border-destructive-dark.png"),url("borders/button-active-border-destructive-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 /*Selectionmode Buttons*/
@@ -167,7 +167,8 @@ GtkCalendar.header .button.titlebutton:checked {
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
-  border-color: transparent; }
+  border-color: transparent;
+}
   .titlebar.selection-mode .button:active, GtkCalendar.selection-mode.header .button:active,
   .header-bar.selection-mode .button:active,
   .titlebar.selection-mode .button:checked, GtkCalendar.selection-mode.header .button:checked,
@@ -176,7 +177,8 @@ GtkCalendar.header .button.titlebutton:checked {
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
-  border-color: transparent; }
+  border-color: transparent;
+  }
 
 .selection-mode.titlebar .titlebutton {
   border-image: none;
@@ -490,77 +492,77 @@ GtkComboBox.combobox-entry .button:only-child:checked,
 
 /*Scale trough*/
 .scale.trough {
-    border-image: -gtk-scaled(url("borders/scale-trough-border-dark.png"),url("borders/scale-trough-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
-    border-radius: 2px;
-    border-width: 1px 5px 2px 5px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/scale-trough-border-dark.png"),url("borders/scale-trough-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+  border-radius: 2px;
+  border-width: 1px 5px 2px 5px;
+  border-style: solid;
+  border-color: transparent;
 }
 /*
 .list-row:selected .scale.trough {
-    border-image: -gtk-scaled(url("borders/scale-trough-border-selected.png"),url("borders/scale-trough-border-selected@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
-    border-radius: 2px;
-    border-width: 1px 5px 2px 5px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/scale-trough-border-selected.png"),url("borders/scale-trough-border-selected@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+  border-radius: 2px;
+  border-width: 1px 5px 2px 5px;
+  border-style: solid;
+  border-color: transparent;
 }
 */
 .scale.trough.vertical {
-    border-image: -gtk-scaled(url("borders/scale-trough-vertical-border-dark.png"),url("borders/scale-trough-vertical-border-dark@2.png")) 6 3 6 2 / 6px 3px 6px 2px stretch;
-    border-radius: 2px;
-    border-width: 5px 2px 5px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/scale-trough-vertical-border-dark.png"),url("borders/scale-trough-vertical-border-dark@2.png")) 6 3 6 2 / 6px 3px 6px 2px stretch;
+  border-radius: 2px;
+  border-width: 5px 2px 5px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .scale.trough.highlight {
-    border-image: -gtk-scaled(url("borders/scale-highlight-border-dark.png"),url("borders/scale-highlight-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
-    border-radius: 2px;
-    border-width: 1px 5px 2px 5px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/scale-highlight-border-dark.png"),url("borders/scale-highlight-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+  border-radius: 2px;
+  border-width: 1px 5px 2px 5px;
+  border-style: solid;
+  border-color: transparent;
 }
 /*
 .list-row:selected .scale.trough.highlight {
-    border-image: -gtk-scaled(url("borders/scale-highlight-border-selected.png"),url("borders/scale-highlight-border-selected@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
-    border-radius: 2px;
-    border-width: 1px 5px 2px 5px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/scale-highlight-border-selected.png"),url("borders/scale-highlight-border-selected@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
+  border-radius: 2px;
+  border-width: 1px 5px 2px 5px;
+  border-style: solid;
+  border-color: transparent;
 }
 */
 .scale.trough.vertical.highlight {
-    border-image: -gtk-scaled(url("borders/scale-vertical-highlight-border-dark.png"),url("borders/scale-vertical-highlight-border-dark@2.png")) 6 3 6 2 / 6px 3px 6px 2px stretch;
-    border-radius: 2px;
-    border-width: 5px 2px 5px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/scale-vertical-highlight-border-dark.png"),url("borders/scale-vertical-highlight-border-dark@2.png")) 6 3 6 2 / 6px 3px 6px 2px stretch;
+  border-radius: 2px;
+  border-width: 5px 2px 5px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 /*progressbar trough*/
 .trough {
-    border-image: -gtk-scaled(url("borders/trough-border-dark.png"),url("borders/trough-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/trough-border-dark.png"),url("borders/trough-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 /*
 .list-row:selected .trough,
 GtkTreeView.view.trough:selected {
-    border-image: -gtk-scaled(url("borders/trough-border-selected.png"),url("borders/trough-border-selected@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/trough-border-selected.png"),url("borders/trough-border-selected@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 */
 .trough.vertical {
-    border-image: -gtk-scaled(url("borders/trough-vertical-border-dark.png"),url("borders/trough-vertical-border-dark@2.png")) 2 3 2 2 / 2px 3px 2px 2px stretch;
-    border-radius: 2px;
-    border-width: 1px 2px 1px 1px;
-    border-style: solid;
-    border-color: transparent;
+  border-image: -gtk-scaled(url("borders/trough-vertical-border-dark.png"),url("borders/trough-vertical-border-dark@2.png")) 2 3 2 2 / 2px 3px 2px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 2px 1px 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .button.flat, .menuitem.button.flat, /*.menuitem.button.flat:active, .menuitem.button.flat:checked,*/ .button:link, .button:visited, 

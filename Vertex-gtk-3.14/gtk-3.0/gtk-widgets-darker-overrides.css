@@ -197,7 +197,6 @@
                                         shade(@dark_button_active_gradient_color_a, 1.6),
                                         shade(@dark_button_active_gradient_color_a, 1.7)); }
   .button.osd, .button.osd:focus {
-    /*padding: 12px;*/
     color: @theme_selected_fg_color;
     text-shadow: 0 -1px @osd_text_shadow;
     icon-shadow: 0 -1px @osd_text_shadow;
@@ -501,42 +500,42 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 .header-bar .scale.mark.separator,
 .toolbar .scale.mark.separator,
 .primary-toolbar .scale.mark.separator {
-    color: alpha(@dark_fg_color, 0.3); }
+  color: alpha(@dark_fg_color, 0.3); }
 
 .header-bar .scale.trough,
 .toolbar .scale.trough,
 .primary-toolbar .scale.trough {
-   	background-image: linear-gradient(to bottom,
-                                      @dark_trough_bg_color_a,
-                                      @dark_trough_bg_color_b); }
+  background-image: linear-gradient(to bottom,
+                                    @dark_trough_bg_color_a,
+                                    @dark_trough_bg_color_b); }
 
 .header-bar .scale.trough.highlight,
 .toolbar .scale.trough.highlight,
 .primary-toolbar .scale.trough.highlight {
-   	background-image: linear-gradient(to bottom,
-                                      @dark_scale_highlight_bg_a,
-                                      @dark_scale_highlight_bg_b); }
+  background-image: linear-gradient(to bottom,
+                                    @dark_scale_highlight_bg_a,
+                                    @dark_scale_highlight_bg_b); }
 
 .header-bar .scale.trough.highlight:insensitive,
 .toolbar .scale.trough.highlight:insensitive,
 .primary-toolbar .scale.trough.highlight:insensitive {
-    background-image: linear-gradient(to bottom,
-                                  shade(@dark_scale_highlight_bg_b, 0.6),
-                                  shade(@dark_scale_highlight_bg_b, 0.7)); }
+  background-image: linear-gradient(to bottom,
+                                    shade(@dark_scale_highlight_bg_b, 0.6),
+                                    shade(@dark_scale_highlight_bg_b, 0.7)); }
 
 .header-bar .scale.trough:insensitive,
 .toolbar .scale.trough:insensitive,
 .primary-toolbar .scale.trough:insensitive {
-    box-shadow: inset 0 1px 2px alpha(black, 0.1);
-    background-image: linear-gradient(to bottom,
-                                  shade(@dark_trough_bg_color_a, 1.5),
-                                  shade(@dark_trough_bg_color_a, 1.6)); }
+  box-shadow: inset 0 1px 2px alpha(black, 0.1);
+  background-image: linear-gradient(to bottom,
+                                    shade(@dark_trough_bg_color_a, 1.5),
+                                    shade(@dark_trough_bg_color_a, 1.6)); }
 
 .osd .scale.trough.highlight {
-    background-image: linear-gradient(to bottom,
-                                      alpha(@progressbar_background_a, 0.9),
-                                      alpha(@progressbar_background_b, 0.9));
-    box-shadow: inset 0 1px @progressbar_highlight;
+  background-image: linear-gradient(to bottom,
+                                    alpha(@progressbar_background_a, 0.9),
+                                    alpha(@progressbar_background_b, 0.9));
+  box-shadow: inset 0 1px @progressbar_highlight;
 }
 
 /*****************
@@ -607,8 +606,8 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 .header-bar .button.titlebutton,
 .titlebar .button.titlebutton,
 GtkCalendar.header .button.titlebutton {
-    border-image: none;
-    background: none; }
+  border-image: none;
+  background: none; }
 
 .header-bar .button.titlebutton:hover,
 .titlebar .button.titlebutton:hover,

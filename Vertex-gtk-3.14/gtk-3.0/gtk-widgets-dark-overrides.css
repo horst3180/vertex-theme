@@ -46,13 +46,13 @@ GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selectio
   border-color: alpha(black, 0.5); }
 
 .info, .question, .warning, .error {
-    text-shadow: 0 -1px @infobar_text_shadow; }
+  text-shadow: 0 -1px @infobar_text_shadow; }
 
 .menubar {
 	background-color: @metacity_bg_b; }
 
 .spinbutton.vertical.entry:insensitive {
-    border-color: shade(@insensitive_borders, 1.4); }
+  border-color: shade(@insensitive_borders, 1.4); }
 
 .notebook tab.top:hover, .notebook tab.top.prelight-page,
 .notebook tab.bottom:hover, .notebook tab.bottom.prelight-page,
@@ -113,32 +113,33 @@ GtkColorButton.button GtkColorSwatch {
   border-radius: 1.5px;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px alpha(white, 0.15); }
 
-/* scale */
-
+/************
+ * GtkScale *
+ ************/
 .scale.trough.highlight:insensitive {
-    background-image: linear-gradient(to bottom,
-                                  shade(@scale_highlight_bg_b, 0.6),
-                                  shade(@scale_highlight_bg_b, 0.7));
+  background-image: linear-gradient(to bottom,
+                                    shade(@scale_highlight_bg_b, 0.6),
+                                    shade(@scale_highlight_bg_b, 0.7));
 }
 
 .scale.trough.vertical.highlight:insensitive {
-    background-image: linear-gradient(to right,
+background-image: linear-gradient(to right,
                                   shade(@scale_highlight_bg_b, 0.6),
                                   shade(@scale_highlight_bg_b, 0.7));
 }
 
 .scale.trough:insensitive {
-    box-shadow: inset 0 1px 2px alpha(black, 0.1);
-    background-image: linear-gradient(to bottom,
-                                  shade(@trough_bg_color_a, 1.5),
-                                  shade(@trough_bg_color_a, 1.6));
+  box-shadow: inset 0 1px 2px alpha(black, 0.1);
+  background-image: linear-gradient(to bottom,
+                                    shade(@trough_bg_color_a, 1.5),
+                                    shade(@trough_bg_color_a, 1.6));
 }
 
 .scale.trough.vertical:insensitive {
-    box-shadow: inset 1px 0 2px alpha(black, 0.1);
-    background-image: linear-gradient(to right,
-                                  shade(@trough_bg_color_a, 1.5),
-                                  shade(@trough_bg_color_a, 1.6));
+  box-shadow: inset 1px 0 2px alpha(black, 0.1);
+  background-image: linear-gradient(to right,
+                                    shade(@trough_bg_color_a, 1.5),
+                                    shade(@trough_bg_color_a, 1.6));
 }
 
 /************
@@ -153,13 +154,13 @@ GtkColorButton.button GtkColorSwatch {
 
 
 .primary-toolbar {
-    background-image: linear-gradient(to bottom,
-                                      @metacity_bg_b,
-                                      @theme_bg_color);
+  background-image: linear-gradient(to bottom,
+                                    @metacity_bg_b,
+                                    @theme_bg_color);
 }
 
 .toolbar {
-    background-color: @metacity_bg_b; }
+  background-color: @metacity_bg_b; }
 
 .search-bar {
   border-style: solid;
@@ -171,16 +172,16 @@ GtkColorButton.button GtkColorSwatch {
  * Header bars *
  ***************/
 .header-bar {
-    background-image: linear-gradient(to bottom,
-                                      @metacity_bg_b,
-                                      @theme_bg_color);
+  background-image: linear-gradient(to bottom,
+                                    @metacity_bg_b,
+                                    @theme_bg_color);
 }
 
 .titlebar {
-    text-shadow: 0 -1px @button_text_shadow;
-    background-image: linear-gradient(to bottom,
-                                      @wm_bg_a,
-                                      @wm_bg_b);
+  text-shadow: 0 -1px @button_text_shadow;
+  background-image: linear-gradient(to bottom,
+                                    @wm_bg_a,
+                                    @wm_bg_b);
 }
 
 .titlebar.selection-mode, GtkCalendar.selection-mode.header, .header-bar.selection-mode {

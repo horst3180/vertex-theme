@@ -68,10 +68,10 @@ NemoWindow .notebook tab.top:hover,
 EmpathyChatWindow .notebook tab.top:hover,
 GeditWindow .notebook tab.top:hover,
 EphyNotebook.notebook tab.top:hover {
-    border-image: linear-gradient(to bottom,
-                                  @borders 0px,
-                                  shade(@borders, 1.1) 1px,
-                                  alpha(@borders, 0.2)) 0 1 0 1;
+  border-image: linear-gradient(to bottom,
+                                @borders 0px,
+                                shade(@borders, 1.1) 1px,
+                                alpha(@borders, 0.2)) 0 1 0 1;
 }
 
 /* Terminal */
@@ -112,25 +112,25 @@ TerminalWindow .notebook tab GtkLabel,
 TerminalWindow .notebook tab .prelight-page GtkLabel,
 TerminalWindow .notebook tab .button,
 TerminalWindow .notebook .prelight-page .button {
-    text-shadow: 0 -1px shade(@terminal_bg, 0.5);
-    icon-shadow: 0 -1px shade(@terminal_bg, 0.5);
-    color: alpha(@theme_selected_fg_color, 0.5);
+  text-shadow: 0 -1px shade(@terminal_bg, 0.5);
+  icon-shadow: 0 -1px shade(@terminal_bg, 0.5);
+  color: alpha(@theme_selected_fg_color, 0.5);
 }
 
 TerminalWindow .notebook tab .prelight-page GtkLabel {
-    color: alpha(@theme_selected_fg_color, 0.8);
+  color: alpha(@theme_selected_fg_color, 0.8);
 }
 
 TerminalWindow .notebook tab .active-page GtkLabel,
 TerminalWindow .notebook .active-page .button {
-    text-shadow: 0 1px @highlight_shadow;
-    icon-shadow: 0 1px @highlight_shadow;
-    color: @theme_fg_color;
+  text-shadow: 0 1px @highlight_shadow;
+  icon-shadow: 0 1px @highlight_shadow;
+  color: @theme_fg_color;
 }
 
 TerminalWindow .notebook tab .button:hover {
-    border-color: alpha(white, 0.1);
-    color: alpha(@theme_selected_fg_color, 0.8);
+  border-color: alpha(white, 0.1);
+  color: alpha(@theme_selected_fg_color, 0.8);
 }
 
 /* Empathy */

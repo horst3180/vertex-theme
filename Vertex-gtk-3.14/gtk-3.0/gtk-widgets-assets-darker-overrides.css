@@ -4,15 +4,15 @@
 .header-bar .pane-separator,
 .toolbar .pane-separator,
 .primary-toolbar .pane-separator {
-    background-image: url("assets/pane-separator-grip-dark.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("assets/pane-separator-grip-dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header-bar .pane-separator:hover,
 .toolbar .pane-separator:hover,
 .primary-toolbar .pane-separator:hover {
-    background-image: url("assets/pane-separator-grip-prelight-dark.svg");
+  background-image: url("assets/pane-separator-grip-prelight-dark.svg");
 }
 
 /*************************
@@ -124,5 +124,3 @@ GtkCalendar.selection-mode.header > GtkBox > .separator.vertical,
 .primary-toolbar GtkSwitch.slider:insensitive {
   background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"),url("assets/switch-slider-insensitive-dark@2.png"));
 }
-
-

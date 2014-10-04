@@ -3,30 +3,29 @@ NemoPathbarButton {
   color: @dark_fg_color;
   border-color: @dark_borders;
   background-image: linear-gradient(to bottom, 
-                                      @dark_button_gradient_color_a, 
-                                      @dark_button_gradient_color_b);
+                                    @dark_button_gradient_color_a, 
+                                    @dark_button_gradient_color_b);
 	box-shadow: inset 0 1px alpha(white, 0.15); 
-
 }
 
 NemoPathbarButton:hover {
   background-image: linear-gradient(to bottom, 
-                                      @dark_button_hover_gradient_color_a, 
-                                      @dark_button_hover_gradient_color_b);
+                                    @dark_button_hover_gradient_color_a, 
+                                    @dark_button_hover_gradient_color_b);
 }
 
 NemoPathbarButton:active,
 NemoPathbarButton:checked {
   border-color: shade(@dark_borders, 0.9);
   background-image: linear-gradient(to bottom, 
-                                      shade(@dark_button_gradient_color_b, 0.9), 
-                                      shade(@dark_button_gradient_color_b, 1.0));
+                                    shade(@dark_button_gradient_color_b, 0.9), 
+                                    shade(@dark_button_gradient_color_b, 1.0));
 	box-shadow: inset 0 1px 2px alpha(black, 0.1); 
 }
 
 NemoStatusBar GtkLabel {
-	text-shadow: none;
-	color: @dark_fg_color;
+  text-shadow: none;
+  color: @dark_fg_color;
 }
 
 NemoWindow GtkEventBox {
@@ -91,100 +90,13 @@ RBButtonBar.toolbar .button.flat:checked:hover {
   border-image: -gtk-scaled(url("borders/button-active-border.png"),url("borders/button-active-border@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
 }
 
-/*FIXME this could cause problems, disabled for now*/
-/* Geary *//*
-MainWindow.background GtkBox.vertical MainToolbar {
-	border-bottom: 1px solid @dark_borders
-}*/
-
-/* Empathy *//*
-EmpathyRosterWindow.background {
-    background-image: linear-gradient(to bottom,
-                                      @metacity_bg_b,
-                                      @dark_bg_color);
-	color: @dark_fg_color;
-}
-
-EmpathyRosterWindow.background .button {
-    color: @dark_fg_color;
-    background-image: linear-gradient(to bottom, 
-                                      @dark_button_gradient_color_a, 
-                                      @dark_button_gradient_color_b);
-    border-image: -gtk-scaled(url("borders/dark/button-border.png"),url("borders/dark/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-	text-shadow: 0 -1px @dark_wm_title_shadow;
-    icon-shadow: 0 -1px @dark_wm_title_shadow;
-}
-
-EmpathyRosterWindow.background .button:hover {
-    background-image: linear-gradient(to bottom,
-				      				  shade(@dark_button_hover_gradient_color_a, 1.1),
-                                      shade(@dark_button_hover_gradient_color_b, 1.1)
-                                      );
-}
-
-EmpathyRosterWindow.background .button:active {
-    background-image: linear-gradient(to bottom,
-                                  @dark_button_active_gradient_color_a,
-                                  @dark_button_active_gradient_color_b);
-    border-image: -gtk-scaled(url("borders/dark/button-active-border.png"),url("borders/dark/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-}
-
-EmpathyRosterWindow.background .button:insensitive {
-    background-image: none;
-	background-color: @dark_insensitive_bg;
-	color: @dark_insensitive_fg_color;
-}
-
-EmpathyRosterView.list {
-	color: @theme_fg_color;
-}
-
-EmpathyPresenceChooser.combobox-entry .button:last-child,
-EmpathyPresenceChooser.combobox-entry .button:last-child:hover {
-    box-shadow: inset 0 1px alpha(@highlight_shadow, 0.2),
-				inset 1px 0 alpha(black, 0.5);
-}
-
-EmpathyPresenceChooser.combobox-entry .button:first-child,
-EmpathyPresenceChooser.combobox-entry .button:first-child:hover {
-    box-shadow: inset 0 1px alpha(@highlight_shadow, 0.2),
-				inset -1px 0 alpha(black, 0.5);
-}
-
-EmpathyPresenceChooser.combobox-entry .entry {
-	color: @dark_fg_color;
-	background-color: @dark_entry_bg_color;
-    border-image: -gtk-scaled(url("borders/dark/generic-border.png"),url("borders/dark/generic-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-}
-
-EmpathyPresenceChooser.combobox-entry .entry:active,
-EmpathyPresenceChooser.combobox-entry .entry:focus {
-    border-image: -gtk-scaled(url("borders/dark/generic-border-focused.png"),url("borders/dark/generic-border-focused@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
-}
-
-EmpathyPresenceChooser.combobox-entry .button:insensitive, 
-EmpathyPresenceChooser.combobox-entry .entry:insensitive {
-  background-image: none;
-	background-color: @dark_insensitive_bg;
-	color: @dark_insensitive_fg_color;
-}
-
-EmpathyPresenceChooser.combobox-entry .button {
-    color: @dark_fg_color;
-    background-image: linear-gradient(to bottom, 
-                                      @dark_button_gradient_color_a, 
-                                      @dark_button_gradient_color_b);
-}
-*/
 /* Evince */
 EvWindow.background EggFindBar.primary-toolbar.toolbar.horizontal {
   background-image: none;
   background-color: shade(@dark_bg_color, 1.1);
 }
 
-/*********
-* Marlin *
-*********/
+/* Marlin */
 MarlinViewChromeLocationBar .button.raised:focus {
   background-image: none;
 }
@@ -195,20 +107,18 @@ MarlinViewChromeLocationBar .button:checked {
   background-color: alpha(black, 0.2);
 }
 
-/*********
- * Panel *
- ********/
+/* Panel */
 .panel {
   background-color: transparent;
 }
 
 /*Widgets*/
 
-/* bottom toolbars */
+/* Bottom Toolbars */
 .bottom-toolbar.toolbar {
   border-color: @dark_borders;
 	box-shadow: inset 0 1px alpha(white, 0.15);
   background-image: linear-gradient(to bottom,
-                                      shade(@dark_bg_color, 1.1),
-                                      shade(@dark_bg_color, 0.9));
+                                    shade(@dark_bg_color, 1.1),
+                                    shade(@dark_bg_color, 0.9));
 }
