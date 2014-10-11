@@ -37,7 +37,11 @@
 .titlebar.selection-mode .left .header-bar-separator, 
 .titlebar.selection-mode > GtkBox.left > .separator.vertical, 
 .header-bar.selection-mode .left .header-bar-separator,
-.header-bar.selection-mode > GtkBox.left > .separator.vertical {
+.header-bar.selection-mode > GtkBox.left > .separator.vertical,
+.titlebar.selection-mode .right:dir(rtl) .header-bar-separator, 
+.titlebar.selection-mode > GtkBox.right:dir(rtl) > .separator.vertical, 
+.header-bar.selection-mode .right:dir(rtl) .header-bar-separator,
+.header-bar.selection-mode > GtkBox.right:dir(rtl) > .separator.vertical {
   -GtkWidget-wide-separators: 1;
   -GtkWidget-separator-width: 9px;
   background: transparent;
@@ -61,7 +65,11 @@
 .titlebar .left .header-bar-separator, 
 .titlebar > GtkBox.left > .separator.vertical, 
 .header-bar .left .header-bar-separator,
-.header-bar > GtkBox.left > .separator.vertical {
+.header-bar > GtkBox.left > .separator.vertical,
+.titlebar .right:dir(rtl) .header-bar-separator, 
+.titlebar > GtkBox.right:dir(rtl) > .separator.vertical, 
+.header-bar .right:dir(rtl) .header-bar-separator,
+.header-bar > GtkBox.right:dir(rtl) > .separator.vertical {
   -GtkWidget-wide-separators: 1;
   -GtkWidget-separator-width: 9px;
   background: transparent;
@@ -345,19 +353,19 @@ GtkSwitch.slider:insensitive {
 /*Selectionmode*/
 GtkIconView.view.check,
 GtkFlowBox.view.check {
-  color: alpha(@theme_fg_color, 0.1);
+  color: mix(@theme_fg_color, @theme_bg_color, 0.7);
   background-image: none;
   -gtk-icon-source: -gtk-icontheme("checkbox-checked-symbolic"); }
 
 GtkIconView.view.check:hover,
 GtkFlowBox.view.check:hover {
-  color: alpha(@theme_fg_color, 0.3); }
+    color: mix(@theme_fg_color, @theme_bg_color, 0.4); }
 
 GtkIconView.view.check:active,
 GtkFlowBox.view.check:active,
 GtkIconView.view.check:checked,
 GtkFlowBox.view.check:checked {
-  color: @theme_fg_color; }
+  color: @theme_selected_bg_color; }
 
 GtkCheckButton.text-button, GtkRadioButton.text-button {
   padding: 1px 2px 4px;

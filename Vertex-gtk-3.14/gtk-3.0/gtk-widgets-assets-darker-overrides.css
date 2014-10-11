@@ -29,7 +29,11 @@ GtkCalendar.selection-mode.header > GtkBox > .separator.vertical,
 .titlebar.selection-mode .left .header-bar-separator, 
 .titlebar.selection-mode > GtkBox.left > .separator.vertical, 
 .header-bar.selection-mode .left .header-bar-separator,
-.header-bar.selection-mode > GtkBox.left > .separator.vertical {
+.header-bar.selection-mode > GtkBox.left > .separator.vertical,
+.titlebar.selection-mode .right:dir(rtl) .header-bar-separator, 
+.titlebar.selection-mode > GtkBox.right:dir(rtl) > .separator.vertical, 
+.header-bar.selection-mode .right:dir(rtl) .header-bar-separator,
+.header-bar.selection-mode > GtkBox.right:dir(rtl) > .separator.vertical {
   border-image: -gtk-scaled(url("assets/header-separator-selectionmode-left-dark.png"),url("assets/header-separator-selectionmode-left-dark@2.png")) 0 1 0 4 / 0 1px 0 4px stretch; }
 
 .titlebar .header-bar-separator, GtkCalendar.header .header-bar-separator, 
@@ -41,7 +45,11 @@ GtkCalendar.selection-mode.header > GtkBox > .separator.vertical,
 .titlebar .left .header-bar-separator, 
 .titlebar > GtkBox.left > .separator.vertical, 
 .header-bar .left .header-bar-separator,
-.header-bar > GtkBox.left > .separator.vertical {
+.header-bar > GtkBox.left > .separator.vertical,
+.titlebar .right:dir(rtl) .header-bar-separator, 
+.titlebar > GtkBox.right:dir(rtl) > .separator.vertical, 
+.header-bar .right:dir(rtl) .header-bar-separator,
+.header-bar > GtkBox.right:dir(rtl) > .separator.vertical {
   border-image: -gtk-scaled(url("assets/header-separator-left-dark.png"),url("assets/header-separator-left-dark@2.png")) 0 1 0 4 / 0 1px 0 4px stretch; }
 
 /*********************

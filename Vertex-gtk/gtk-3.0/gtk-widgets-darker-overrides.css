@@ -756,7 +756,8 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
     border-image: -gtk-scaled(url("assets/header-separator-selectionmode-dark.png"),url("assets/header-separator-selectionmode-dark@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
 }
 
-.selection-mode.header-bar > GtkBox.left > .separator.vertical {
+.selection-mode.header-bar > GtkBox.left > .separator.vertical,
+.selection-mode.header-bar > GtkBox.right:dir(rtl) > .separator.vertical {
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 10px;
     background: transparent;

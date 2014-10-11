@@ -45,7 +45,9 @@
 }
 
 .header-bar > GtkBox.left > .separator.vertical,
-.header-bar .left .separator {
+.header-bar .left .separator,
+.header-bar > GtkBox.right:dir(rtl) > .separator.vertical,
+.header-bar .right:dir(rtl) .separator {
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 10px;
     background: transparent;
@@ -66,7 +68,8 @@
     border-image: -gtk-scaled(url("assets/header-separator-selectionmode.png"),url("assets/header-separator-selectionmode@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
 }
 
-.selection-mode.header-bar > GtkBox.left > .separator.vertical {
+.selection-mode.header-bar > GtkBox.left > .separator.vertical,
+.selection-mode.header-bar > GtkBox.right:dir(rtl) > .separator.vertical {
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 10px;
     background: transparent;
