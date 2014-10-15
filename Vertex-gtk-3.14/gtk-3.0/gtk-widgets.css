@@ -1354,6 +1354,11 @@ GtkTreeView.view.trough:selected {
 	background-image: none;
 	border-style: none; }
 
+.scrollbars-junction.frame,
+.frame.scrollbar.trough {
+  border: none;
+}
+
 /**********
  * Switch *
  **********/
