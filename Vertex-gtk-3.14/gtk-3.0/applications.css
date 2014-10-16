@@ -52,11 +52,11 @@ TerminalWindow .scrollbar.slider.vertical {
 }
 
 TerminalWindow .scrollbar.slider.vertical:hover {
-    border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"),url("assets/scrollbar-slider-hover-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"),url("assets/scrollbar-slider-hover-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
 }
 
 TerminalWindow .scrollbar.slider.vertical:active {
-    border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"),url("assets/scrollbar-slider-active-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"),url("assets/scrollbar-slider-active-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
 }
 
 /* Nautilus */
@@ -105,7 +105,9 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
 }
 
 NautilusQueryEditor .search-bar.toolbar {
-  padding-top: 4px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* Nemo */
@@ -127,11 +129,11 @@ NemoWindow .pane-separator:hover {
   border-style: solid;
   border-color: @borders;
 }
-
+/*
 NemoWindow .notebook tab.top {
   padding: 4px 20px 2px;
 }
-
+*/
 NemoNotebook.notebook {
   border-width: 1px 0 0 0;
 }

@@ -157,6 +157,7 @@ background-image: linear-gradient(to right,
   background-image: linear-gradient(to bottom,
                                     @metacity_bg_b,
                                     @theme_bg_color);
+  border-image: linear-gradient(to bottom, @metacity_bg_b, @borders) 1 0 1 0; /*temporary hack for rhythmbox 3.1*/
 }
 
 .toolbar {
