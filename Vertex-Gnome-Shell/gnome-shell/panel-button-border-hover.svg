@@ -19,13 +19,25 @@
   <defs
      id="defs4">
     <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3759">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3761" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3763" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient3758">
       <stop
-         style="stop-color:#ffffff;stop-opacity:0.23529412;"
+         style="stop-color:#ffffff;stop-opacity:0.15686275;"
          offset="0"
          id="stop3760" />
       <stop
-         style="stop-color:#ffffff;stop-opacity:0.07843138;"
+         style="stop-color:#ffffff;stop-opacity:0;"
          offset="1"
          id="stop3762" />
     </linearGradient>
@@ -48,6 +60,15 @@
        xlink:href="#linearGradient3758"
        inkscape:collect="always"
        gradientTransform="translate(16,0)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3759"
+       id="linearGradient3765"
+       x1="7"
+       y1="0"
+       x2="7"
+       y2="10"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -57,18 +78,18 @@
      inkscape:pageopacity="0.50196078"
      inkscape:pageshadow="2"
      inkscape:zoom="22.4"
-     inkscape:cx="11.193548"
+     inkscape:cx="2.4658694"
      inkscape:cy="4.7243626"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="866"
-     inkscape:window-height="605"
-     inkscape:window-x="317"
-     inkscape:window-y="50"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1035"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1"
      guidetolerance="10000"
      objecttolerance="10000">
     <inkscape:grid
@@ -96,7 +117,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;opacity:0.12"
+       style="fill:url(#linearGradient3765);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;opacity:0.12000000000000000"
        id="rect2988"
        width="17"
        height="10"

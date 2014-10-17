@@ -55,7 +55,7 @@ stage {
 /* Scroll Bars */
 
 StScrollBar {
-    padding: 0px;
+    padding: 8px;
 }
 
 StScrollView.vfade {
@@ -643,17 +643,11 @@ StScrollBar StButton#vhandle:active {
     padding-right: 4px;
 }
 
-.panel-corner,
-.panel-corner:overview:hover {
+.panel-corner {
     -panel-corner-radius: 4px;
     -panel-corner-background-color: rgba(0,0,0,0.78);
     -panel-corner-border-width: 1px;
     -panel-corner-border-color: rgba(0,0,0,1.0);
-}
-
-.panel-corner:hover {
-    -panel-corner-border-color: #2c2d2c;
-    -panel-corner-background-color: #585858;
 }
 
 .panel-corner.lock-screen,
