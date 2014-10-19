@@ -1042,6 +1042,7 @@ style "entry" {
   ythickness = 4
 
   base[NORMAL] = "#2B2B2C"
+  base[NORMAL] = "#ffffff"  #Opera uses this color for the url entry#
   base[INSENSITIVE] = @insensitive_bg_color
 
   engine "pixmap" {
@@ -2389,7 +2390,7 @@ style "chrome-gtk-frame" {
   ChromeGtkFrame::frame-color = "#454749"
   ChromeGtkFrame::inactive-frame-color = "#454749"
 
-  ChromeGtkFrame::frame-gradient-size = 16
+  ChromeGtkFrame::frame-gradient-size = 0
   ChromeGtkFrame::frame-gradient-color = shade(0.5, @bg_color)
 
   ChromeGtkFrame::incognito-frame-color = shade(0.85, @bg_color)
