@@ -9,6 +9,7 @@
 @import url("gtk-widgets-borders-darker-overrides.css");
 @import url("gtk-widgets-darker-overrides.css");
 @import url("window-controls.css");	/*disable for 3.10*/
+@import url("window-controls-darker-overrides.css");	/*disable for 3.10*/
 @import url("tabs.css");	/*disable for 3.10*/
 @import url("darker-tabs.css");		/*disable for 3.10*/
 @import url("gnome-applications-darker-overrides.css");

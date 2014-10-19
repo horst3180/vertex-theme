@@ -179,5 +179,6 @@
 
 @import url("granite.css");
 @import url("window-controls.css");
+@import url("window-controls-darker-overrides.css");
 @import url("tabs.css");
 @import url("tabs-darker-overrides.css");
