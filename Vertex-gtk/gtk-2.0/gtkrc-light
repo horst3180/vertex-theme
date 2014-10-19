@@ -1,4 +1,4 @@
-gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#3c3c3e\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#4080fb\nselected_fg_color:#FFFFFF\ntext_color:#3c3c3e\nbg_color:#F3F3F5\ninsensitive_bg_color:#F4F4F2\ntooltip_bg_color:#343434"
+gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#3c3c3e\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#4080fb\nselected_fg_color:#FFFFFF\ntext_color:#3c3c3e\nbg_color:#F3F3F5\ninsensitive_bg_color:#F4F4F2\ntooltip_bg_color:#343434\nlink_color:#4080fb"
 
 gtk-icon-sizes		= "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1
@@ -70,6 +70,13 @@ style "default" {
   GtkTreeView::odd_row_color = shade(0.98, @base_color)
 
   GtkExpander::expander-size = 11
+
+  GnomeHRef::link_color = @link_color
+  GtkHTML::link-color = @link_color
+  GtkIMHtmlr::hyperlink-color = @link_color
+  GtkIMHtml::hyperlink-color = @link_color
+  GtkWidget::link-color = @link_color
+  GtkWidget::visited-link-color = @text_color
 
   # Colors
 
