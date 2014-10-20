@@ -77,7 +77,7 @@
 
 @define-color toolbar_button_prelight alpha(black, 0.3);
 
-@define-color content_view_bg #242424;
+@define-color content_view_bg @theme_base_color;
 @define-color list_box_bg @content_view_bg;
 @define-color list_box_hover_bg shade(@list_box_bg, 1.15);
 
@@ -93,7 +93,7 @@
 
 @define-color treeview_focus_border @theme_selected_bg_color;
 
-@define-color view_separators shade(@theme_base_color, 0.95);
+@define-color view_separators shade(@theme_base_color, 0.75);
 @define-color view_symbolic_color shade(@theme_text_color, 0.70);
 
 @define-color expander_row_selected_color alpha (@theme_base_color, 0.60);

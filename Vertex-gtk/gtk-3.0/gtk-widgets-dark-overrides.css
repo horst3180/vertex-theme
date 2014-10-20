@@ -224,15 +224,6 @@ GtkPopover {
                                   shade(@button_active_gradient_color_a, 1.6));
 }
 
-/*********
- * Lists *
- *********/
-.list, 
-.list-row {
-  background-color: @theme_base_color;
-  border-color: @borders;
-}
-
 /***************
  * Search bars *
  ***************/
