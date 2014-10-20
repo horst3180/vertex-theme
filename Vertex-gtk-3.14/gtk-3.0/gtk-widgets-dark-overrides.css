@@ -31,6 +31,13 @@ GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selectio
                                     mix(@theme_selected_bg_color, @theme_base_color, 0.3));
 }
 
+/*********
+ * Lists *
+ *********/
+.list, .list-row {
+  background-color: @theme_base_color;
+  border-color: @borders; }
+
 .list-row.button:hover {
   background-color: alpha(white, 0.05); }
 .list-row.button:active, .list-row.button:active:hover {
@@ -156,7 +163,7 @@ background-image: linear-gradient(to right,
 .primary-toolbar {
   background-image: linear-gradient(to bottom,
                                     @metacity_bg_b,
-                                    @theme_bg_color);
+                                    @metacity_bg_c);
   border-image: linear-gradient(to bottom, @metacity_bg_b, @borders) 1 0 1 0; /*temporary hack for rhythmbox 3.1*/
 }
 
@@ -175,7 +182,7 @@ background-image: linear-gradient(to right,
 .header-bar {
   background-image: linear-gradient(to bottom,
                                     @metacity_bg_b,
-                                    @theme_bg_color);
+                                    @metacity_bg_c);
 }
 
 .titlebar {

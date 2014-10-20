@@ -1,4 +1,4 @@
-gtk-color-scheme	= "base_color:#2B2B2C\nfg_color:#F3F3F5\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#4080fb\nselected_fg_color:#FFFFFF\ntext_color:#F3F3F5\nbg_color:#3D3E40\ninsensitive_bg_color:#434446\ntooltip_bg_color:#343434\nlink_color:#4080fb"
+gtk-color-scheme	= "base_color:#2B2B2C\nfg_color:#F3F3F5\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#4080fb\nselected_fg_color:#FFFFFF\ntext_color:#F3F3F5\nbg_color:#353638\ninsensitive_bg_color:#434446\ntooltip_bg_color:#343434\nlink_color:#4080fb"
 
 gtk-icon-sizes		= "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1
@@ -715,7 +715,7 @@ style "menu" {
 
   GtkMenuItem::arrow-scaling = 0.4
 
-  bg[NORMAL] = shade (1.08, @bg_color)
+  bg[NORMAL] = @base_color
   bg[INSENSITIVE] = @base_color
   bg[PRELIGHT] = @base_color
 

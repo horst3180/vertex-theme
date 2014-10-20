@@ -224,6 +224,15 @@ GtkPopover {
                                   shade(@button_active_gradient_color_a, 1.6));
 }
 
+/*********
+ * Lists *
+ *********/
+.list, 
+.list-row {
+  background-color: @theme_base_color;
+  border-color: @borders;
+}
+
 /***************
  * Search bars *
  ***************/
@@ -262,9 +271,9 @@ GtkPopover {
  ********************/
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
-    background-image: linear-gradient(to bottom,
-                                      @metacity_bg_b,
-                                      @theme_bg_color);
+  background-image: linear-gradient(to bottom,
+                                    @metacity_bg_b,
+                                    @metacity_bg_c);
 }
 
 /************
@@ -284,9 +293,9 @@ GtkPopover {
  * Header bars *
  ***************/
 .header-bar {
-    background-image: linear-gradient(to bottom,
-                                      @metacity_bg_b,
-                                      @theme_bg_color);
+  background-image: linear-gradient(to bottom,
+                                    @metacity_bg_b,
+                                    @metacity_bg_c);
 }
 
 .titlebar {
