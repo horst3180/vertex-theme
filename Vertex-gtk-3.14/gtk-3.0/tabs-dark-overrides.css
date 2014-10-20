@@ -11,9 +11,20 @@ EphyNotebook.notebook tab.top:active:hover {
   border-image: -gtk-scaled(url("tabs/dark/tab_active.png"),url("tabs/dark/tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
 }
 
+TerminalWindow .notebook .active-page .button:hover,
+TerminalWindow .notebook .prelight-page .button:hover,
+NautilusWindow .notebook .active-page .button:hover,
+NemoWindow .notebook .active-page .button:hover,
+EmpathyChatWindow .notebook .active-page .button:hover,
+GeditWindow .notebook .active-page .button:hover,
+EphyNotebook.notebook .active-page .button:hover {
+  color: shade(red, 1.3);
+}
+
 TerminalWindow .notebook tab.top.reorderable-page:active {
   background-image: linear-gradient(to bottom, @metacity_bg_b, shade(@metacity_bg_b, 0.9));
   border-image: -gtk-scaled(url("tabs/dark/terminal_tab_active.png"),url("tabs/dark/terminal_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+  border-width: 0px 5px 1px 5px;
 }
 
 NautilusNotebook.notebook tab.top:hover,

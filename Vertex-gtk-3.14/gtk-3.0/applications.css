@@ -36,7 +36,8 @@ TerminalWindow GtkNotebook.notebook {
 
 TerminalWindow .notebook tab.reorderable-page,
 TerminalWindow .notebook tab.reorderable-page:hover {
-  padding: 4px 20px 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 TerminalWindow .scrollbars-junction,
