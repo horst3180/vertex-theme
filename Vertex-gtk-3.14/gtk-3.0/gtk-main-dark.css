@@ -71,7 +71,7 @@
 @define-color trough_bg_color_a @button_active_gradient_color_a;
 @define-color trough_bg_color_b @button_active_gradient_color_b;
 
-@define-color sidebar_bg shade(@theme_bg_color, 0.95);
+@define-color sidebar_bg @theme_bg_color;
 
 @define-color app_notification_a shade(@wm_bg_a, 1.02);
 @define-color app_notification_b shade(@wm_bg_b, 1.05);

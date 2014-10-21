@@ -58,6 +58,9 @@ GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selectio
 .menubar {
 	background-color: @metacity_bg_b; }
 
+.menu {
+  background-color: shade(@theme_base_color, 0.95); }
+
 .spinbutton.vertical.entry:insensitive {
   border-color: shade(@insensitive_borders, 1.4); }
 
@@ -124,8 +127,12 @@ GtkColorButton.button GtkColorSwatch {
  * Notebooks and *
  * Tabs          *
  *****************/
+.notebook {
+  background-color: shade(@theme_base_color, 1.12); }
+
 .notebook tab .button:hover {
   border: 1px solid alpha(white, 0.1); }
+
 .notebook tab .button:active,
 .notebook tab .button:active:hover {
   border: 1px solid @borders; }
@@ -210,7 +217,7 @@ background-image: linear-gradient(to right,
  *********************/
 .window-frame.csd.popup {
   border-radius: 0;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3), 0 0 0 1px shade(@theme_base_color, 0.6); }
 
 /********
  * Misc *

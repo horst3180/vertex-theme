@@ -353,7 +353,7 @@ GtkFlowBox .grid-child {
       background-image: linear-gradient(to bottom, alpha(@suggested_action_button_a, 0.8));
 	    text-shadow: none;
 	    icon-shadow: none; }
-      .button.suggested-action:insensitive > GtkLabel {
+      .button.suggested-action:insensitive > GtkLabel, .button.suggested-action GtkLabel:insensitive {
         color: inherit; }
   .button.destructive-action {
     color: @destructive_action_button_fg;
@@ -380,7 +380,7 @@ GtkFlowBox .grid-child {
       background-image: linear-gradient(to bottom, alpha(@destructive_action_button_a, 0.8));
 	    text-shadow: none;
 	    icon-shadow: none; }
-      .button.destructive-action:insensitive > GtkLabel {
+      .button.destructive-action:insensitive > GtkLabel, .button.destructive-action GtkLabel:insensitive {
         color: inherit; }
   .button.image-button {
     padding: 8px; }
