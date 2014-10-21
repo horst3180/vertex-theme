@@ -120,6 +120,16 @@ GtkColorButton.button GtkColorSwatch {
   border-radius: 1.5px;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px alpha(white, 0.15); }
 
+/*****************
+ * Notebooks and *
+ * Tabs          *
+ *****************/
+.notebook tab .button:hover {
+  border: 1px solid alpha(white, 0.1); }
+.notebook tab .button:active,
+.notebook tab .button:active:hover {
+  border: 1px solid @borders; }
+
 /************
  * GtkScale *
  ************/

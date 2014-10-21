@@ -57,7 +57,7 @@ GeditWindow .notebook .active-page .button:active,
 EphyNotebook.notebook .active-page .button:active {
   border-color: alpha(black, 0.5);
   color: @dark_fg_color;
-  background-image: linear-gradient(to bottom, shade(@dark_bg_color, 0.9), shade(@dark_bg_color, 0.97));
+  background-image: linear-gradient(to bottom, shade(@dark_bg_color, 0.75), shade(@dark_bg_color, 0.82));
 }
 
 NautilusNotebook.notebook tab.top:active,
