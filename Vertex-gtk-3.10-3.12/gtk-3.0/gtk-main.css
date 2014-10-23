@@ -1,0 +1,16 @@
+@import url("gtk-main-common.css");
+@import url("gtk-widgets-backgrounds.css");
+@import url("gtk-widgets-borders.css");
+@import url("gtk-widgets.css");
+
+@import url("gtk-widgets-assets.css");
+@import url("gnome-applications.css");
+@import url("granite.css"); /*disable for 3.10*/
+@import url("tabs.css");	/*disable for 3.10*/
+
+
+@import url("window-controls.css");		/*disable for 3.10*/
+
+@import url("unity.css");
+
+/*@import url("gtk-widgets-3_10.css");*/

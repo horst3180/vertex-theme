@@ -3,7 +3,6 @@ button-border-suggested
 button-border-destructive
 button-border-default
 button-active-border
-button-active-border-selected
 button-active-border-suggested
 button-active-border-destructive
 left-button-border
@@ -20,15 +19,12 @@ osd-border
 trough-border
 trough-border-selected
 scale-trough-border
-scale-trough-border-selected
 scale-trough-osd-border
 scale-highlight-border
-scale-highlight-border-selected
 trough-vertical-border
 scale-trough-vertical-border
 scale-vertical-highlight-border
 button-border-dark
-button-border-selected-dark
 button-border-suggested-dark
 button-border-destructive-dark
 button-border-default-dark

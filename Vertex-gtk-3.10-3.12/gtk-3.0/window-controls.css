@@ -12,9 +12,9 @@ GtkCalendar.header .button.titlebutton,
 .header-bar .button.titlebutton:hover,
 .titlebar .button.titlebutton:hover,
 GtkCalendar.header .button.titlebutton:hover,
-.header-bar .button.titlebutton:checked,
-.titlebar .button.titlebutton:checked,
-GtkCalendar.header .button.titlebutton:checked {
+.header-bar .button.titlebutton:active,
+.titlebar .button.titlebutton:active,
+GtkCalendar.header .button.titlebutton:active {
   background: none;
   border-width: 1px 0px 2px 0px;
   border-color: transparent;
@@ -26,14 +26,14 @@ GtkCalendar.header .button.titlebutton:checked {
 .header-bar .right .button.titlebutton,
 .titlebar .right .button.titlebutton,
 GtkCalendar .right .header .button.titlebutton {
-  padding-left: 3px;
-  padding-right: 4px; }
+  padding-left: 0px;
+  padding-right: 1px; }
 
 .header-bar .left .button.titlebutton,
 .titlebar .left .button.titlebutton,
 GtkCalendar .left .header .button.titlebutton {
-  padding-left: 4px;
-  padding-right: 3px; }
+  padding-left: 1px;
+  padding-right: 0px; }
 
 .titlebar .right .titlebutton,
 .titlebar .left .titlebutton,
@@ -51,12 +51,12 @@ GtkCalendar .left .header .button.titlebutton {
 /* Generic titlebutton */
 .titlebar .right .titlebutton,
 .titlebar .left .titlebutton {
-  background-image: url('assets/titlebutton.png');
+  background-image: url('window-controls/titlebutton.svg');
 }
 
 .titlebar .right .titlebutton:backdrop,
 .titlebar .left .titlebutton:backdrop {
-  background-image: -gtk-scaled(url('assets/titlebutton_unfocused.png'),url('assets/titlebutton_unfocused@2.png'));
+  background-image: url('window-controls/titlebutton_unfocused.svg');
 }
 
 /* :hover and :active states */
@@ -66,7 +66,7 @@ GtkCalendar .left .header .button.titlebutton {
 .titlebar .right:dir(rtl) .titlebutton:nth-child(3):hover,
 .titlebar .left .titlebutton:nth-child(3):hover,
 .titlebar .left:dir(rtl) .titlebutton:nth-last-child(3):hover {
-  background-image: -gtk-scaled(url('assets/min_prelight.png'),url('assets/min_prelight@2.png'));
+  background-image: url('window-controls/min_prelight.svg');
 }
 
 /* Maximize */
@@ -74,7 +74,7 @@ GtkCalendar .left .header .button.titlebutton {
 .titlebar .right:dir(rtl) .titlebutton:nth-child(2):hover,
 .titlebar .left .titlebutton:nth-child(2):hover,
 .titlebar .left:dir(rtl) .titlebutton:nth-last-child(2):hover {
-  background-image: -gtk-scaled(url('assets/max_prelight.png'),url('assets/max_prelight@2.png'));
+  background-image: url('window-controls/max_prelight.svg');
 }
 
 /* Close */
@@ -82,12 +82,12 @@ GtkCalendar .left .header .button.titlebutton {
 .titlebar .right:dir(rtl) .titlebutton:first-child:hover,
 .titlebar .left .titlebutton:first-child:hover,
 .titlebar .left:dir(rtl) .titlebutton:last-child:hover {
-  background-image: -gtk-scaled(url('assets/close_prelight.png'),url('assets/close_prelight@2.png'));
+  background-image: url('window-controls/close_prelight.svg');
 }
 
 .titlebar .right .titlebutton:active:hover,
 .titlebar .left .titlebutton:active:hover {
-  background-image: -gtk-scaled(url('assets/titlebutton_pressed.png'),url('assets/titlebutton_pressed@2.png'));
+  background-image: url('window-controls/titlebutton_pressed.svg');
 }
 
 /*GtkMenuButton*/
@@ -123,8 +123,8 @@ GtkCalendar .left .header .button.titlebutton {
   border-style: solid;
   border-color: transparent; }
 
-.titlebar .left GtkMenuButton.titlebutton:first-child:checked,
-.titlebar .right GtkMenuButton.titlebutton:last-child:checked {
+.titlebar .left GtkMenuButton.titlebutton:first-child:active,
+.titlebar .right GtkMenuButton.titlebutton:last-child:active {
   color: @button_active_text;
   background-image: linear-gradient(to bottom,
                                     @button_active_gradient_color_a,

@@ -1,0 +1,19 @@
+@import url("gtk-main-common.css");
+@import url("gtk-widgets-backgrounds.css");
+@import url("gtk-widgets-borders.css");
+@import url("gtk-widgets.css");
+@import url("gtk-widgets-assets.css");
+@import url("gnome-applications.css");
+@import url("granite.css"); /*disable for 3.10*/
+
+@import url("gtk-widgets-borders-darker-overrides.css");
+@import url("gtk-widgets-darker-overrides.css");
+@import url("window-controls.css");	/*disable for 3.10*/
+@import url("window-controls-darker-overrides.css");	/*disable for 3.10*/
+@import url("tabs.css");	/*disable for 3.10*/
+@import url("darker-tabs.css");		/*disable for 3.10*/
+@import url("gnome-applications-darker-overrides.css");
+@import url("unity-darker.css");
+
+/*@import url("gtk-widgets-3_10.css");
+@import url("gtk-widgets-3_10-darker-overrides.css");*/

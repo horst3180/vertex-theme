@@ -1,0 +1,445 @@
+/*Widgets*/
+
+/************
+ * Tooltips *
+ ************/
+
+.overlay-bar {
+    background-color: alpha (#000, 0.7);
+    border-radius: 3px;
+    border-width: 0;
+    padding: 3px 6px;
+    margin: 3px;
+    text-shadow: 0 1px 2px alpha (#000, 0.6);
+}
+
+.overlay-bar GtkLabel {
+    color: white;
+    text-shadow: 0 1px 2px alpha (#000, 0.6);
+}
+
+/*********
+* Frames *
+*********/
+
+/* avoid borders when a viewport is
+ * packed into a ScrolledWindow, Pane, Static Notebook, or Popover */
+/*GtkScrolledWindow GtkViewport.frame,
+GtkPaned .frame,*/
+GraniteWidgetsPopOver .frame,
+GraniteWidgetsStaticNotebook .frame {
+    border: none;
+}
+
+/*************************** 
+* Overlay Button *
+***************************/
+/*
+GtkOverlay > .button,
+GtkOverlay > .button:hover,
+GtkOverlay > .button:focus {
+    background-image: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+
+    box-shadow: 0 1px 0 1px alpha (#000, 0.30);
+    text-shadow: 0 1px 0 1px alpha (#000, 0.30);
+
+    background-clip: border-box;
+}
+
+GtkOverlay > .button:active,
+GtkOverlay > .button:hover:active {
+    background-color: #fff;
+    color: @text_color;
+    border-color: #fff;
+    text-shadow: none;
+}
+
+GtkOverlay > .button:focus,
+GtkOverlay > .button:focus:active {
+    border-color: @selected_bg_color;
+}
+
+GtkOverlay > .button:focus:active {
+    background-color: @selected_bg_color;
+}
+*/
+/*************************** 
+* Secondary Toolbar Button *
+***************************/
+
+.secondary-toolbar.toolbar .button {
+    padding: 0 3px 0 3px;
+}
+
+/**************
+* Help Button *
+**************/
+
+.help_button {
+    border-radius: 100px;
+    padding: 3px 9px;
+}
+
+/*********
+* Linked *
+*********/
+/*
+GtkOverlay .linked .button:last-child,
+GtkOverlay .linked .button:active:last-child,
+GtkOverlay .linked .button:active:hover:last-child,
+GtkOverlay .linked .button:insensitive:last-child {
+    border-right-width: 2px;
+}
+*/
+/********************
+* Notebook and Tabs *
+********************/
+/*
+.dynamic-notebook .notebook.header {
+    background-image: linear-gradient(to bottom,
+                                  alpha (#000, 0.10),
+                                  alpha (#000, 0.00) 15%
+                                  ),
+                        linear-gradient(to bottom,
+                                  shade (@titlebar_color, 0.8),
+                                  shade (@titlebar_color, 0.9)
+                                  );
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: shade (@titlebar_color, 0.56);
+    border-radius: 0;
+}
+
+.dynamic-notebook .notebook {
+    -GtkNotebook-tab-overlap: 1px;
+    border-width: 0;
+}
+
+.dynamic-notebook .notebook .button {
+    color: shade (@text_color, 1.20);
+}
+
+.dynamic-notebook GtkImage {
+    color: shade (@title_color, 0.75);
+}
+
+.dynamic-notebook GtkImage:insensitive {
+    color: @insensitive_color;
+}
+
+.dynamic-notebook .notebook .button:hover {
+    background-color: alpha (#000, 0.05);
+    border-color: alpha (#000, 0.25);
+    box-shadow: inset 0 0 0 1px alpha (#000, 0.05);
+    color: shade (@text_color, 1.10);
+}
+
+.dynamic-notebook .notebook .button:hover:active {
+    background-color: alpha (#000, 0.10);
+}
+
+.dynamic-notebook .notebook tab {
+    padding: 3px;
+
+    border-radius: 0;
+
+    background-image: none;
+    background-color: transparent;
+
+    border-width: 0 1px 0 0;
+
+    border-image: linear-gradient(to bottom,
+                                  transparent,
+                                  alpha (#000, 0.20)
+                                  ) 0 1 0 0;
+}
+
+.dynamic-notebook .notebook tab > GtkImage {
+    color: shade (@titlebar_color, 0.35);
+}
+
+.dynamic-notebook .notebook tab:nth-child(first) {
+    border-width: 0 1px 0 1px;
+    border-image: linear-gradient(to bottom,
+                                  transparent,
+                                  alpha (#000, 0.20)
+                                  ) 0 1 0 1;
+}
+
+.dynamic-notebook .notebook tab:active {
+    background-image: linear-gradient(to bottom,
+                                  shade (@titlebar_color, 0.88),
+                                  shade (@titlebar_color, 0.84)
+                                  );
+    border-color: shade (@titlebar_color, 0.56);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0 1px 1px;
+
+    text-shadow: 0 1px alpha (#fff, 0.4);
+    icon-shadow: 0 1px alpha (#fff, 0.4);
+
+    box-shadow: inset 0 0 0 1px alpha (#fff, 0.20),
+                0 0 0 1px shade (@titlebar_color, 0.56);
+
+    border-image: none;
+
+    color: @text_color;
+}
+
+.dynamic-notebook .notebook tab > .entry {
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+
+.dynamic-notebook .notebook tab > .button,
+.dynamic-notebook .notebook tab > .button:hover,
+.dynamic-notebook .notebook tab > .button:hover:active {
+    background-image:   none;
+    background-color:   alpha (#000, 0.02);
+
+    border-color: alpha (#000, 0.29);
+}
+
+.dynamic-notebook .notebook tab > .button:hover:active {
+    background-color:   alpha (#000, 0.10);
+}
+*/
+/*********************
+* Secondary Toolbars *
+*********************/
+
+.secondary-toolbar.toolbar {
+    padding: 3px;
+    border-bottom: 1px solid @borders;
+}
+
+/******************
+* Bottom Toolbars *
+******************/
+
+.bottom-toolbar.toolbar {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: @borders;
+    box-shadow: inset 0 1px alpha(white, 0.95);
+    padding: 5px;
+    text-shadow: 0 1px @button_text_shadow;
+    background-image: linear-gradient(to bottom,
+                                      shade(@theme_bg_color, 0.99),
+                                      shade(@theme_bg_color, 0.93));
+}
+
+.bottom-toolbar.toolbar .button {
+    padding: 2px 3px 2px 3px;
+}
+
+/***************
+ * Action bars *
+ ***************/
+/*
+GtkDialog .action-bar {
+    background-image: none;
+    background-color: @bg_color;
+    border-top-color: shade (@bg_color, 0.80);            
+}
+*/
+/***************
+ * Search bars *
+ ***************/
+/*
+GtkDialog .search-bar {
+    background-image: none;
+    background-color: @bg_color;
+    border-color: shade (@bg_color, 0.60);
+    box-shadow: none;
+}
+*/
+/**************************
+* Suggested Action Button *
+**************************/
+/*
+GtkOverlay .suggested-action.button {
+    background-image: none;
+    background-color: @selected_bg_color;
+    border-color: @selected_bg_color;
+}
+*/
+/************************
+* Sidebar & Source List *
+************************/
+
+.source-list,
+.source-list.view {
+    background-color: @sidebar_bg;
+    color: @theme_fg_color;
+
+    -gtk-icon-style: regular;
+}
+
+.source-list {
+    -GtkTreeView-horizontal-separator: 1px;
+    -GtkTreeView-vertical-separator: 6px;
+}
+
+.source-list.category-expander {
+    color: transparent;
+}
+
+.source-list.view:prelight {
+    background-color: shade (@sidebar_bg, 1.10);
+}
+
+.source-list.view:selected,
+.source-list.view:prelight:selected,
+.source-list.view:selected:focus,
+.source-list.category-expander:hover {
+    color: @theme_selected_fg_color;
+}
+/*
+GtkDialog .sidebar .view:selected,
+GtkDialog .sidebar .view:prelight:selected {
+    background-image: none;
+    background-color: alpha (#000, 0.05);
+
+    border-image: linear-gradient(to bottom,
+                                  alpha (#000, 0.15),
+                                  alpha (#fff, 0.30)
+                                  ) 1 1 1 1;
+
+    box-shadow: inset 0 1px 0 0 alpha (#000, 0.02),
+                inset 0 -1px 0 0 alpha (#000, 0.10);
+}*/
+/*
+.sidebar-pane-separator,
+.sidebar-pane-separator:prelight,
+.sidebar-pane-separator:selected {
+    border: 1px solid red;
+    -GtkPaned-handle-size: 3;
+    background-image: none;
+    background-color: green;
+}*/
+
+.source-list .scrollbar.trough,
+.source-list .scrollbars-junction {
+    background-color: @theme_bg_color;
+}
+
+.source-list.badge,
+.source-list.badge:prelight,
+.source-list.badge:selected,
+.source-list.badge:selected:focus,
+.source-list.badge:prelight:selected {
+    background-image: none;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    border-radius: 10px;
+    padding: 0 6px;
+    margin: 0 3px;
+    border-width: 0;
+}
+
+.source-list.badge:selected,
+.source-list.badge:selected:focus,
+.source-list.badge:prelight:selected {
+    background-color: @theme_selected_fg_color;
+    color: @theme_selected_bg_color;
+}
+
+/***********************
+ * Thin Pane Separator *
+ ***********************/
+
+GraniteWidgetsThinPaned {
+    background-color: @theme_base_color;
+    border-left: 1px solid @borders;
+    border-right: 1px solid @borders;
+}
+
+
+/***********
+ * Welcome *
+ **********/
+
+GraniteWidgetsWelcome {
+    background-color: @base_color;
+}
+
+GraniteWidgetsWelcome GtkLabel {
+    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+    font: open sans 11;
+    text-shadow: none;
+}
+
+GraniteWidgetsWelcome .h1,
+GraniteWidgetsWelcome .h3 {
+    color: alpha(@theme_fg_color, 0.8);
+}
+
+/***********
+ * Popover *
+ **********/
+
+GraniteWidgetsPopOver {
+
+    -GraniteWidgetsPopOver-arrow-width: 21;
+    -GraniteWidgetsPopOver-arrow-height: 10;
+    -GraniteWidgetsPopOver-border-radius: 3px;
+    -GraniteWidgetsPopOver-border-width: 1;
+    -GraniteWidgetsPopOver-shadow-size: 12;
+    
+    border: 1px solid alpha(black, 0.3);
+    margin: 0;
+}
+
+.popover_bg {
+    background-color: transparent;
+
+    background-image: linear-gradient(to bottom,
+                                  alpha(shade(@theme_base_color, 0.98), 0.97),
+                                  alpha(shade(@theme_base_color, 0.98), 0.97) 80%,
+                                  alpha(shade(@theme_base_color, 0.92), 0.97));
+
+    border: 1px solid alpha(black, 0.3);
+}
+
+GraniteWidgetsPopOver .sidebar.view,
+GraniteWidgetsPopOver * {
+    background-color: transparent;
+}
+
+/* Granite App Menu */
+GraniteWidgetsAppMenu .button:active {
+    background-image: linear-gradient(to bottom,
+                                        @button_active_gradient_color_a,
+                                        @button_active_gradient_color_b);
+}
+/*
+GraniteWidgetsPopOver .button {
+    background-image: none;
+    background-color: transparent;
+}
+
+GraniteWidgetsPopOver .button:active,
+GraniteWidgetsPopOver .button:hover:active {
+    background-image: none;
+    background-color: alpha (#000, 0.05);
+    border-color: shade (@theme_base_color, 0.74);
+}*/
+/*
+GtkDialog .titlebar,
+GtkMessageDialog .titlebar,
+GtkDialog .titlebar.default-decoration,
+GtkMessageDialog .titlebar.default-decoration {
+    border: none;
+
+    background-image: none;
+    background-color: blue;
+
+    box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
+                inset -1px 0 0 0 alpha (#fff, 0.20),
+                inset 0 1px 0 0 #fff;
+}*/
