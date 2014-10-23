@@ -19,6 +19,9 @@
 @define-color wm_button_active_color_c shade(@theme_bg_color, 0.9);*/
 @define-color content_view_bg white;
 @define-color link_color #2a76c6;
+@define-color theme_unfocused_base_color @theme_base_color;
+@define-color theme_unfocused_fg_color @theme_fg_color;
+@define-color theme_unfocused_bg_color @theme_bg_color;
 
 @define-color selected_bg_color @theme_selected_bg_color;
 @define-color fg_color @theme_selected_fg_color;

@@ -5,6 +5,9 @@
 @define-color theme_text_color #3c3c3e;
 @define-color theme_fg_color @theme_text_color;
 @define-color theme_selected_fg_color #ffffff;
+@define-color theme_unfocused_base_color @theme_base_color;
+@define-color theme_unfocused_fg_color @theme_fg_color;
+@define-color theme_unfocused_bg_color @theme_bg_color;
 
 @define-color placeholder_text_color shade(@text_color, 3.5);
 
