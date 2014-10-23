@@ -711,6 +711,7 @@ GtkComboBox {
   -GtkWidget-window-dragging: true; }
 
 .toolbar.menubar {
+  border-bottom: 1px solid @borders;
   padding: 4px; }
 
 .toolbar, .inline-toolbar, .inline-toolbar.toolbar, .search-bar, .location-bar {

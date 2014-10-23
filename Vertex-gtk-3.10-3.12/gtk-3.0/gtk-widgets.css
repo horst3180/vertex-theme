@@ -1616,7 +1616,7 @@ GtkCheckButton:selected:focus {
  ********************/
 .toolbar.menubar {
     -GtkToolbar-button-relief: normal;
-    
+    border-bottom: 1px solid @borders;
     padding: 6px 6px 5px 6px; /* weird padding to compensate border-images
                                  and eventual top border presence, 
                                  see selection mode toolbars */
