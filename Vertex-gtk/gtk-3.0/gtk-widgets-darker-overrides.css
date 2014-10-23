@@ -380,6 +380,9 @@
 /************
  * Toolbars *
  ************/
+.toolbar.menubar {
+  border-bottom: 1px solid @dark_borders; }
+
 .toolbar {
   background-image: linear-gradient(to bottom, @metacity_bg_b);
   background-color: @theme_bg_color;

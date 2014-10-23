@@ -659,6 +659,10 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar .entry:selected  {
 /************
  * Toolbars *
  ************/
+.toolbar.menubar {
+    border-bottom: 1px solid @dark_borders;
+}
+
 .toolbar {
     border-color: @dark_borders;
     background-image: linear-gradient(to bottom,
