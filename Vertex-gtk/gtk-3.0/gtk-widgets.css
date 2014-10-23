@@ -1633,8 +1633,6 @@ GtkLevelBar.vertical {
     padding: 6px;
     border-width: 1px 0 0; }
 
-GtkScrolledWindow .frame {
-  border-radius: 2px; }
 GtkScrolledWindow GtkViewport.frame {
   border-style: none; }
 
