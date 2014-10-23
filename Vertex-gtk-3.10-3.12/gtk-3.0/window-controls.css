@@ -51,12 +51,12 @@ GtkCalendar .left .header .button.titlebutton {
 /* Generic titlebutton */
 .titlebar .right .titlebutton,
 .titlebar .left .titlebutton {
-  background-image: url('window-controls/titlebutton.svg');
+  background-image: -gtk-scaled(url('assets/titlebutton.png'),url('assets/titlebutton@2.png'));
 }
 
 .titlebar .right .titlebutton:backdrop,
 .titlebar .left .titlebutton:backdrop {
-  background-image: url('window-controls/titlebutton_unfocused.svg');
+  background-image: -gtk-scaled(url('assets/titlebutton-unfocused.png'),url('assets/titlebutton-unfocused@2.png'));
 }
 
 /* :hover and :active states */
@@ -66,7 +66,7 @@ GtkCalendar .left .header .button.titlebutton {
 .titlebar .right:dir(rtl) .titlebutton:nth-child(3):hover,
 .titlebar .left .titlebutton:nth-child(3):hover,
 .titlebar .left:dir(rtl) .titlebutton:nth-last-child(3):hover {
-  background-image: url('window-controls/min_prelight.svg');
+  background-image: -gtk-scaled(url('assets/titlebutton-min-prelight.png'),url('assets/titlebutton-min-prelight@2.png'));
 }
 
 /* Maximize */
@@ -74,7 +74,7 @@ GtkCalendar .left .header .button.titlebutton {
 .titlebar .right:dir(rtl) .titlebutton:nth-child(2):hover,
 .titlebar .left .titlebutton:nth-child(2):hover,
 .titlebar .left:dir(rtl) .titlebutton:nth-last-child(2):hover {
-  background-image: url('window-controls/max_prelight.svg');
+  background-image: -gtk-scaled(url('assets/titlebutton-max-prelight.png'),url('assets/titlebutton-max-prelight@2.png'));
 }
 
 /* Close */
@@ -82,12 +82,12 @@ GtkCalendar .left .header .button.titlebutton {
 .titlebar .right:dir(rtl) .titlebutton:first-child:hover,
 .titlebar .left .titlebutton:first-child:hover,
 .titlebar .left:dir(rtl) .titlebutton:last-child:hover {
-  background-image: url('window-controls/close_prelight.svg');
+  background-image: -gtk-scaled(url('assets/titlebutton-close-prelight.png'),url('assets/titlebutton-close-prelight@2.png'));
 }
 
 .titlebar .right .titlebutton:active:hover,
 .titlebar .left .titlebutton:active:hover {
-  background-image: url('window-controls/titlebutton_pressed.svg');
+  background-image: -gtk-scaled(url('assets/titlebutton-pressed.png'),url('assets/titlebutton-pressed@2.png'));
 }
 
 /*GtkMenuButton*/

@@ -27,6 +27,10 @@ scale-highlight-border-selected
 trough-vertical-border
 scale-trough-vertical-border
 scale-vertical-highlight-border
+tab-active
+terminal-tab-active
+tab-active-darker
+terminal-tab-active-darker
 button-border-dark
 button-border-selected-dark
 button-border-suggested-dark
@@ -49,3 +53,5 @@ scale-highlight-border-dark
 trough-vertical-border-dark
 scale-trough-vertical-border-dark
 scale-vertical-highlight-border-dark
+tab-active-dark
+terminal-tab-active-dark

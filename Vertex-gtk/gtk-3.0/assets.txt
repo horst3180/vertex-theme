@@ -107,8 +107,8 @@ switch-active-insensitive-dark
 switch-slider-dark
 switch-slider-insensitive-dark
 titlebutton
-titlebutton_unfocused
-titlebutton_pressed
-close_prelight
-max_prelight
-min_prelight
+titlebutton-unfocused
+titlebutton-pressed
+titlebutton-close-prelight
+titlebutton-max-prelight
+titlebutton-min-prelight

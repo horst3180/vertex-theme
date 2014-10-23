@@ -90,3 +90,9 @@ switch-slider-dark
 switch-slider-insensitive-dark
 grid-selection-unchecked-dark
 grid-selection-checked-dark
+titlebutton
+titlebutton-unfocused
+titlebutton-pressed
+titlebutton-close-prelight
+titlebutton-max-prelight
+titlebutton-min-prelight

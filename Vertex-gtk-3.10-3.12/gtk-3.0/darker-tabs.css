@@ -72,7 +72,7 @@ GeditWindow .notebook tab.reorderable-page:active,
 GeditWindow .notebook tab.reorderable-page:active:hover,
 EphyNotebook.notebook tab.reorderable-page:active,
 EphyNotebook.notebook tab.reorderable-page:active:hover {
-    border-image: -gtk-scaled(url("tabs/darker/tab_active.png"),url("tabs/darker/tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+    border-image: -gtk-scaled(url("borders/tab-active-darker.png"),url("borders/tab-active-darker@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
     border-width: 0px 5px 1px 5px;
     border-style: solid;
     border-color: transparent;
@@ -147,7 +147,7 @@ EmpathyChatWindow .menubar {
  */
 TerminalWindow .notebook tab.reorderable-page:active {
     background-image: linear-gradient(to bottom, @metacity_bg_b, shade(@metacity_bg_b, 0.9));
-    border-image: -gtk-scaled(url("tabs/darker/terminal_tab_active.png"),url("tabs/darker/terminal_tab_active@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
+    border-image: -gtk-scaled(url("borders/terminal-tab-active-darker.png"),url("borders/terminal-tab-active-darker@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
 }
 
 TerminalWindow .notebook tab GtkLabel {
