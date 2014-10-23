@@ -1058,6 +1058,7 @@ GtkTreeView.view.trough:selected {
 .menuitem .accelerator {
   color: alpha(currentColor,0.7); }
 
+.touch-selection,
 .context-menu {
     font: initial;
     text-shadow: none; }
