@@ -416,7 +416,7 @@ GtkFlowBox .grid-child {
       animation: needs_attention 150ms ease-in;
       background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(@theme_selected_bg_color), 
                                                                                     to(transparent)), 
-                        -gtk-gradient(radial, center center, 0, center center, 0.5, to(rgba(255, 255, 255, 0.76923)),  
+                        -gtk-gradient(radial, center center, 0, center center, 0.5, to(rgba(255, 255, 255, 0.2)),  
                                                                                     to(transparent));
       background-size: 6px 6px, 6px 6px;
       background-repeat: no-repeat;

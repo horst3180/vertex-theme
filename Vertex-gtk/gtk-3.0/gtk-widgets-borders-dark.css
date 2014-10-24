@@ -22,7 +22,7 @@
   border-radius: 0;
 }
 
-.linked .entry:first-child, GtkComboBox.combobox-entry .entry:first-child, GtkComboBox.combobox-entry .entry:last-child:dir(rtl) {
+.linked .entry:first-child, GtkComboBox.combobox-entry .entry:first-child {
   border-right-width: 0;
   border-left-width: 1px;
   border-image-width: 2px 0 3px 2px;
@@ -30,7 +30,7 @@
   border-top-right-radius: 0;
 }
 
-.linked .entry:last-child, GtkComboBox.combobox-entry .entry:last-child, GtkComboBox.combobox-entry .entry:first-child:dir(rtl) {
+.linked .entry:last-child, GtkComboBox.combobox-entry .entry:last-child {
   border-right-width: 1px;
   border-left-width: 0;
   border-image-width: 2px 2px 3px 0;
@@ -87,6 +87,7 @@
 .button:insensitive,
 .inline-toolbar GtkToolButton > .button,
 .spinbutton.vertical .button,
+.spinbutton.vertical .button:insensitive,
 .primary-toolbar .button:hover,
 .header-bar .button.titlebutton:hover,
 .titlebar .button.titlebutton:hover,
