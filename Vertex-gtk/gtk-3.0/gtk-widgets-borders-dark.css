@@ -38,6 +38,49 @@
   border-top-left-radius: 0;
 }
 
+.linked.vertical .entry, 
+.linked.vertical .entry:insensitive {
+  border-image: -gtk-scaled(url("borders/middle-vertical-entry-border-dark.png"),url("borders/middle-vertical-entry-border-dark@2.png")) 1 2 1 2 / 1px 2px 1px 2px stretch;
+  border-radius: 0;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.linked.vertical .entry:focus {
+  border-image: -gtk-scaled(url("borders/middle-vertical-entry-border-focused-dark.png"),url("borders/middle-vertical-entry-border-focused-dark@2.png")) 2 3 2 3 / 2px 3px 2px 3px stretch;
+}
+
+.linked.vertical .entry:first-child, 
+.linked.vertical .entry:first-child:insensitive, 
+.linked.vertical > GtkComboBox.combobox-entry .entry:first-child,
+.linked.vertical > GtkComboBox.combobox-entry .entry:first-child:insensitive {
+  border-image: -gtk-scaled(url("borders/top-vertical-entry-border-dark.png"),url("borders/top-vertical-entry-border-dark@2.png")) 2 2 1 2 / 2px 2px 1px 2px stretch;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.linked.vertical .entry:first-child:focus, 
+.linked.vertical > GtkComboBox.combobox-entry .entry:first-child:focus {
+  border-image: -gtk-scaled(url("borders/top-vertical-entry-border-focused-dark.png"),url("borders/top-vertical-entry-border-focused-dark@2.png")) 3 3 2 3 / 3px 3px 2px 3px stretch;
+}
+
+.linked.vertical .entry:last-child, 
+.linked.vertical .entry:last-child:insensitive,
+.linked.vertical > GtkComboBox.combobox-entry .entry:last-child,
+.linked.vertical > GtkComboBox.combobox-entry .entry:last-child:insensitive {
+  border-image: -gtk-scaled(url("borders/bottom-vertical-entry-border-dark.png"),url("borders/bottom-vertical-entry-border-dark@2.png")) 1 2 3 2 / 1px 2px 3px 2px stretch;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.linked.vertical .entry:last-child:focus, 
+.linked.vertical > GtkComboBox.combobox-entry .entry:last-child:focus {
+  border-image: -gtk-scaled(url("borders/bottom-vertical-entry-border-focused-dark.png"),url("borders/bottom-vertical-entry-border-focused-dark@2.png")) 2 3 4 3 / 2px 3px 4px 3px stretch;
+}
+
 /*Buttons*/
 .button,
 .button.flat:hover,
@@ -382,6 +425,82 @@ GtkComboBox.combobox-entry .button:only-child:checked,
   border-image-width: 2px 2px 3px 2px;
   border-radius: 2px;
   border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+/*Vertical Linked Buttons*/
+/*Middle*/
+.linked.vertical .button,
+.linked.vertical .button:hover,
+.linked.vertical > GtkComboBox.combobox-entry .button, 
+.linked.vertical > GtkComboBox.combobox-entry .button:insensitive {
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-image-width: 1px 1px 1px 1px;
+  border-radius: 0; 
+  border-image: -gtk-scaled(url("borders/middle-vertical-button-border-dark.png"),url("borders/middle-vertical-button-border-dark@2.png")) 1 1 1 1 / 1px 1px 1px 1px stretch;
+}
+
+.linked.vertical .button:active,
+.linked.vertical .button:hover:active,
+.linked.vertical > GtkComboBox.combobox-entry .button:active, 
+.linked.vertical > GtkComboBox.combobox-entry .button:active:insensitive,
+.linked.vertical .button:checked,
+.linked.vertical .button:hover:checked,
+.linked.vertical > GtkComboBox.combobox-entry .button:checked, 
+.linked.vertical > GtkComboBox.combobox-entry .button:checked:insensitive  {
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-image-width: 1px 1px 1px 1px;
+  border-radius: 0; 
+  border-image: -gtk-scaled(url("borders/middle-vertical-button-active-border-dark.png"),url("borders/middle-vertical-button-active-border-dark@2.png")) 1 1 1 1 / 1px 1px 1px 1px stretch;
+}
+
+/*Top*/
+.linked.vertical .button:first-child, 
+.linked.vertical > GtkComboBox.combobox-entry .button:first-child, 
+.linked.vertical > GtkComboBox:first-child > .button {
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  border-image-width: 3px 2px 1px 2px;
+  border-radius: 2px 2px 0 0;
+  border-image: -gtk-scaled(url("borders/top-vertical-button-border-dark.png"),url("borders/top-vertical-button-border-dark@2.png")) 3 2 1 2 / 3px 2px 1px 2px stretch;
+}
+
+.linked.vertical .button:first-child:active, 
+.linked.vertical > GtkComboBox.combobox-entry .button:first-child:active, 
+.linked.vertical > GtkComboBox:first-child > .button:active,
+.linked.vertical .button:first-child:checked, 
+.linked.vertical > GtkComboBox.combobox-entry .button:first-child:checked, 
+.linked.vertical > GtkComboBox:first-child > .button:checked {
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  border-image-width: 2px 2px 1px 2px;
+  border-radius: 2px 2px 0 0;
+  border-image: -gtk-scaled(url("borders/top-vertical-button-active-border-dark.png"),url("borders/top-vertical-button-active-border-dark@2.png")) 2 2 1 2 / 2px 2px 1px 2px stretch;
+}
+
+/*Bottom*/
+.linked.vertical .button:last-child, 
+.linked.vertical > GtkComboBox.combobox-entry .button:last-child, 
+.linked.vertical > GtkComboBox:last-child > .button {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+  border-image-width: 1px 2px 3px 2px;
+  border-radius: 0 0 2px 2px;
+  border-image: -gtk-scaled(url("borders/bottom-vertical-button-border-dark.png"),url("borders/bottom-vertical-button-border-dark@2.png")) 1 2 3 2 / 1px 2px 3px 2px stretch;
+}
+
+.linked.vertical .button:last-child:active, 
+.linked.vertical > GtkComboBox.combobox-entry .button:last-child:active, 
+.linked.vertical > GtkComboBox:last-child > .button:active,
+.linked.vertical .button:last-child:checked, 
+.linked.vertical > GtkComboBox.combobox-entry .button:last-child:checked, 
+.linked.vertical > GtkComboBox:last-child > .button:checked {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+  border-image-width: 1px 2px 3px 2px;
+  border-radius: 0 0 2px 2px;
+  border-image: -gtk-scaled(url("borders/bottom-vertical-button-active-border-dark.png"),url("borders/bottom-vertical-button-active-border-dark@2.png")) 1 2 3 2 / 1px 2px 3px 2px stretch;
 }
 
 /*OSD */
