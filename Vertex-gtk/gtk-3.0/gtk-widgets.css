@@ -1952,8 +1952,12 @@ GtkInfoBar {
   padding: 4px;
   /* not working */
   border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.5);
   text-shadow: none; }
+  .tooltip.background {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-clip: padding-box; }
+  .tooltip.window-frame.csd {
+    background-color: transparent; }
 
 .tooltip * {
   padding: 4px;
