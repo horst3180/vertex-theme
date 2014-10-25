@@ -8,3 +8,5 @@ If you install from git, run the "build.sh" sript first to build all variants of
 For installation instructions please read the included README in the zip archive. If you have any issues, please read the Troubleshooting section in the README.
 
 Bug reports are appreciated.
+
+![alt tag](http://fc09.deviantart.net/fs70/f/2014/297/d/b/vertex___theme_by_horst3180-d7s7ycx.jpg)
