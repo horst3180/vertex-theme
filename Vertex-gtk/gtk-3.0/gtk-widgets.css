@@ -2000,11 +2000,11 @@ GtkVolumeButton.button {
 .window-frame {
   border-radius: 3px 3px 0 0;
   border-width: 0px;
-  box-shadow: 0 0 0 1px @window_frame, 0 2px 8px 3px @wm_shadow;
+  box-shadow: 0 0 0 1px @window_frame, 0 2px 8px 1px @wm_shadow;
   /* this is used for the resize cursor area */
   margin: 10px; }
   .window-frame:backdrop {
-    box-shadow: 0 0 0 1px @window_frame, 0 2px 5px 1px @wm_shadow; }
+    box-shadow: 0 0 0 1px @window_frame, 0 2px 5px 0 @wm_shadow; }
   .window-frame.tiled {
     border-radius: 0; }
   .window-frame.csd.popup {
