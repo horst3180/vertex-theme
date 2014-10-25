@@ -182,29 +182,14 @@ GtkFlowBox .grid-child {
     box-shadow: inset 0 1px @entry_inset; }
     .linked .entry:insensitive {  
       box-shadow: none; }
-  .linked .entry:first-child, GtkComboBox.combobox-entry .entry:first-child {
-    box-shadow: inset -1px 0 alpha(black, 0.2), inset 0 1px @entry_inset; }
-    .linked .entry:first-child:insensitive, GtkComboBox.combobox-entry .entry:first-child:insensitive {
-      box-shadow: inset -1px 0 alpha(black, 0.2); }
-    .linked .entry:first-child:dir(rtl), GtkComboBox.combobox-entry .entry:last-child:dir(rtl) {
-      box-shadow: inset 1px 0 alpha(black, 0.2), inset 0 1px @entry_inset; }
-      .linked .entry:first-child:dir(rtl):insensitive, GtkComboBox.combobox-entry .entry:last-child:dir(rtl):insensitive {
-        box-shadow: inset 1px 0 alpha(black, 0.2); }
-  .linked .entry:last-child, GtkComboBox.combobox-entry .entry:last-child {
-    box-shadow: inset 0 1px @entry_inset; }
-    .linked .entry:last-child:insensitive, GtkComboBox.combobox-entry .entry:last-child:insensitive {
-      box-shadow: none; }
-    .linked .entry:last-child:dir(rtl), GtkComboBox.combobox-entry .entry:last-child:dir(rtl) {
-      box-shadow: inset 0 1px @entry_inset; }
-      .linked .entry:last-child:dir(rtl):insensitive, GtkComboBox.combobox-entry .entry:last-child:dir(rtl):insensitive {
-        box-shadow: none; }
   .linked.vertical .entry {
     box-shadow: none; }
     .linked.vertical .entry:first-child, .linked.vertical > GtkComboBox.combobox-entry .entry:first-child {
       box-shadow: inset 0 1px @entry_inset; }
     .linked.vertical .entry:last-child, .linked.vertical > GtkComboBox.combobox-entry .entry:last-child {
       box-shadow: none; }
-  .linked.vertical .entry:insensitive, .linked.vertical .entry:first-child:insensitive, .linked.vertical > GtkComboBox.combobox-entry .entry:first-child:insensitive,
+  .linked.vertical .entry:insensitive, .linked.vertical .entry:first-child:insensitive, 
+  .linked.vertical > GtkComboBox.combobox-entry .entry:first-child:insensitive,
   .linked.vertical .entry:last-child:insensitive, .linked.vertical > GtkComboBox.combobox-entry .entry:last-child:insensitive {
     box-shadow: none; }
   .entry.error {
@@ -616,35 +601,20 @@ GtkColorButton.button {
       border-radius: 0;
       box-shadow: inset 0 1px 2px alpha(black, 0.2);
       icon-shadow: 0 -1px @button_active_text_shadow; }
-  .spinbutton.vertical .button {
-    padding: 4px; }
     .spinbutton.vertical .button:first-child, .spinbutton.vertical .button:first-child:active {
-      border-image-width: 2px 2px 0 2px;
-      border-width: 1px 1px 0 1px;
-      border-radius: 2px 2px 0 0;
       box-shadow: none; }
       .spinbutton.vertical .button:first-child:active {
         box-shadow: inset 0 1px 2px alpha(black, 0.2); }
     .spinbutton.vertical .button:last-child, .spinbutton.vertical .button:last-child:active {
-        border-image-width: 0 2px 3px 2px;
-        border-width: 0 1px 2px 1px;
-	      border-radius: 0 0 2px 2px;
         box-shadow: none; }
       .spinbutton.vertical .button:last-child:active {
         box-shadow: inset 0 1px 2px alpha(black, 0.2); }
   .spinbutton.vertical.entry {
+    box-shadow: inset 0 1px @entry_inset;
     padding-left: 5px;
-    padding-right: 5px;
-    border-image: none;
-    border-color: @borders;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 0; }
-    .spinbutton.vertical.entry:focus {
-      border-color: @theme_selected_bg_color;
-      box-shadow: inset 1px 1px alpha(@theme_selected_bg_color, 0.1), 
-                  inset 1px 2px alpha(@theme_selected_bg_color, 0.1),
-                  inset -1px -1px alpha(@theme_selected_bg_color, 0.2) }
+    padding-right: 5px; }
+    .spinbutton.vertical.entry:insensitive {
+      box-shadow: none; }
 
 /*special case spinbutton inside linked entries*/
 .linked.vertical > .spinbutton .button:last-child, .linked.vertical > .spinbutton .button,

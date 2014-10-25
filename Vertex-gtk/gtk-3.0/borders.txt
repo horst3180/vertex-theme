@@ -18,6 +18,12 @@ bottom-vertical-button-border
 top-vertical-button-active-border
 middle-vertical-button-active-border
 bottom-vertical-button-active-border
+left-entry-border
+middle-entry-border
+right-entry-border
+left-entry-focused-border
+middle-entry-focused-border
+right-entry-focused-border
 top-vertical-entry-border
 middle-vertical-entry-border
 bottom-vertical-entry-border
@@ -63,6 +69,12 @@ bottom-vertical-button-border-dark
 top-vertical-button-active-border-dark
 middle-vertical-button-active-border-dark
 bottom-vertical-button-active-border-dark
+left-entry-border-dark
+middle-entry-border-dark
+right-entry-border-dark
+left-entry-focused-border-dark
+middle-entry-focused-border-dark
+right-entry-focused-border-dark
 top-vertical-entry-border-dark
 middle-vertical-entry-border-dark
 bottom-vertical-entry-border-dark
