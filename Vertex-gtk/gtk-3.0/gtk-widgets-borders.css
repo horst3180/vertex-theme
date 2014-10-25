@@ -87,7 +87,6 @@
 .button:insensitive,
 .inline-toolbar GtkToolButton > .button,
 .spinbutton.vertical .button,
-.spinbutton.vertical .button:insensitive,
 .primary-toolbar .button:hover,
 .header-bar .button.titlebutton:hover,
 .titlebar .button.titlebutton:hover,
