@@ -37,7 +37,7 @@
 }
 
 .linked .entry:first-child:focus, GtkComboBox.combobox-entry .entry:first-child:focus {
-  border-image: -gtk-scaled(url("borders/left-entry-focused-border.png"),url("borders/left-entry-focused-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/left-entry-focused-border-dark.png"),url("borders/left-entry-focused-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
 .linked .entry:last-child, GtkComboBox.combobox-entry .entry:last-child {
