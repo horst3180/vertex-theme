@@ -3,7 +3,7 @@ style "theme-panel" {
   xthickness = 4 # The spacing (padding) inside and between applets. Add a lower value for a more compact look.
   ythickness = 0
 
-  bg_pixmap[NORMAL] = "/Panel/panel-bg.png" # Disable for normal panel backgrounds.
+  #bg_pixmap[NORMAL] = "/Panel/panel-bg.png" # Disable for normal panel backgrounds.
 
 	fg[NORMAL] = "#F3F3F5"
 	fg[PRELIGHT] = "#F3F3F5"
@@ -11,6 +11,8 @@ style "theme-panel" {
 	text[NORMAL] = "#F3F3F5"
 	text[PRELIGHT] = "#F3F3F5"
 	text[ACTIVE] = "#F3F3F5"
+
+	bg[NORMAL]	= "#3C3E40"
 	
   engine "pixmap" {
 
@@ -66,7 +68,7 @@ style "xfce-panel" {
   xthickness = 4 # The spacing (padding) inside and between applets. Add a lower value for a more compact look.
   ythickness = 0
 
-  bg_pixmap[NORMAL] = "/Panel/xfce-panel-bg.png" # Disable for normal panel backgrounds.
+  #bg_pixmap[NORMAL] = "/Panel/xfce-panel-bg.png" # Disable for normal panel backgrounds.
 
 	fg[NORMAL] = "#F3F3F5"
 	fg[PRELIGHT] = "#F3F3F5"
@@ -75,7 +77,7 @@ style "xfce-panel" {
 	text[PRELIGHT] = "#F3F3F5"
 	text[ACTIVE] = "#F3F3F5"
 
-	bg[NORMAL]	= "#1d1d1f"
+	bg[NORMAL]	= "#3C3E40"
 	
   engine "pixmap" {
 
