@@ -1,3 +1,88 @@
+/* set default namespace to XUL */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/**************************** Tab Container ***************************/
+#tabcontainer {
+  box-shadow: inset 0px -1px #151516,
+              inset 0px 1px #151516,
+              inset 0 5px rgba(0,0,0,0.01),
+              inset 0 4px rgba(0,0,0,0.015),
+              inset 0 3px rgba(0,0,0,0.02), 
+              inset 0 2px rgba(0,0,0,0.025), 
+              inset 0 1px rgba(0,0,0,0.03) !important;
+  background-color: #2A2A2B !important;
+}
+
+.toolbar-primary {
+  background-color: #2A2A2B !important;
+}
+
+
+/**************************** Mail Toolbars ***************************/
+#mail-toolbox,
+.mail-toolbox,
+#chat-view-toolbox {
+  -moz-appearance: none !important;
+  border-bottom: 1px solid #151516 !important;
+  border-top: none !important;
+  box-shadow: inset 0px 1px rgba(255,255,255,0.15) !important;
+
+  background: -moz-linear-gradient(#3f4042, #37383a) !important;
+}
+
+/* Tab background */
+tab {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+/*Active tab */
+.tab-background-middle[selected="true"] {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.tab-background-start[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+.tab-background-end[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before {
+  background-image: url("images/tabActiveStart.svg") !important;
+}
+
+.tab-background-end[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+.tab-background-start[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before {
+  background-image: url("images/tabActiveEnd.svg") !important;
+}
+
+.tab-background-middle[selected=true] {
+  background-image: url("images/tabActiveMiddle.svg") !important;
+}
+
+
+.tab-background-start[selected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-end[selected=true]:-moz-locale-dir(rtl)::after {
+  background-image: none !important;
+}
+
+.tab-background-end[selected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-start[selected=true]:-moz-locale-dir(rtl)::after {
+  background-image: none !important;
+}
+
+.tab-background-middle::after[selected=true] {
+  background-image: none !important;
+}
+
+/* Inactive tab */
+.tabmail-tab > .tab-stack  > .tab-background:not([selected=true]) {
+  background-image: none !important;
+}
+
+.tabmail-tab > .tab-stack > .tab-content:not([selected=true]) > .tab-text {
+  color: #ffffff !important;
+}
+
+/* Color text when the tab is hovered */
+.tabmail-tab:hover > .tab-stack > .tab-content:not([selected=true]) > .tab-text {
+  color: #ffffff !important;
+}
+
 /* Replace the default close tab icon with a white one */
 .tab-close-button {
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHhSURBVDiNpZMxq9pQGIbfUxT0gA6xIIhQqhWdMonQErj+AMnUqf4AFbpl6urNT+gi3CUG6eJvaJ3awVYynsCVOnhDGm46hBA5UThdVI4Xp94PzvC98H58PN97iBACz6kXz3IDyMgNIYQAeAPgJQBXCPH3qCsAmgAeAdwLeW0hBI49AdCybXvs+/5G07QeAAWAomlaz/f9jW3bYwAtAOTskwY0LMsah2GYep4nfN9/0DStdzQ/eJ4nwjBMLcsaA2icfOS0DSHk7WKxmFWr1ddCCGSzWWQyGQ8ADodDZb/fgxCC7Xb7u9vt9oUQP55CdHVdnzmOwzjniOMYSZJUkiSpxHEMzjkcx2G6rs8AuGduMg9CSLlYLH6cTCbvm81mSwbsui4bDAbzKIo+CyH+nPSnZ9w3Go1fpVKJcs4hP0VRaK1W+wlgf3E5iYHS6XTeTafTSRRFld1udzE5n8+jUCh4/X5/sFqtvp9PLENcLpdfOOevkiQBAKzXawYA9Xq9BQCUUuRyuU273f5wDeLjaDT6GgTBLk1TMMaYYRhzwzDmjDGWpimCINgNh8Nvx0BdDdKNqqp3pmk6lNJbAGUAZUrprWmajqqqdwBurgZJGqIB+ASgLOnlo6bJ5osg/W89+zf+A+a5JmPghr43AAAAAElFTkSuQmCC) !important;
@@ -11,14 +96,15 @@
 
 /************************* Left Treeview ***************************/
 #folderTree {
-    background-image: none !important;
-    background-color: #353638 !important;
+  background-image: none !important;
+  background-color: #353638 !important;
+  border-right: 1px solid #151516 !important;
 }
 
 tree {
   -moz-appearance: none !important;
   color: #F3F3F5 !important;
-  background-color: #2B2B2C !important; 
+  background-color: #2B2B2C !important;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell-text,
@@ -42,7 +128,7 @@ textbox,
   -moz-appearance: none !important;
   border-width: 1px !important;
   border-radius: 2px !important;
-  border-image: url("images/generic-border-dark.png") 2 2 3 2 / 2px 2px 3px 2px stretch !important;
+  border-image: url("images/entry-border.svg") 2 2 3 2 / 2px 2px 3px 2px stretch !important;
   color: #F3F3F5 !important;
   background-color: #2B2B2C !important;
   background-clip: padding-box !important;
@@ -64,7 +150,7 @@ textbox[focused="true"],
   -moz-appearance: none !important;
   border-width: 1px !important;
   border-radius: 2px !important;
-  border-image: url("images/generic-border-focused-dark.png") 2 2 3 2 / 2px 2px 3px 2px stretch !important;
+  border-image: url("images/entry-border-focused.svg") 2 2 3 2 / 2px 2px 3px 2px stretch !important;
   color: #F3F3F5 !important;
   background-color: #2B2B2C !important;
   background-clip: padding-box !important;
@@ -78,6 +164,27 @@ textbox[disabled="true"],
   color: #898995 !important;
   background: #434446 !important;
   box-shadow: none !important;
+}
+
+/************************* Preferences Window ***************************/
+richlistitem {   
+  -moz-appearance: none !important;
+  color: #F3F3F5 !important;
+  background-color: #2B2B2C !important; 
+}
+
+radio[pane] {
+  -moz-appearance: none !important;
+  color: #F3F3F5 !important;
+  background-color: #2B2B2C !important; 
+  border: 1px solid black;
+}
+
+radio[pane][selected="true"] {
+  -moz-appearance: none !important;
+  color: #F3F3F5 !important;
+  background-color: #426AE9 !important; 
+  border: 1px solid black;
 }
 
 /*
