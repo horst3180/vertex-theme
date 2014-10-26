@@ -1108,7 +1108,7 @@ GtkTreeView.view.trough:selected {
     border: 0; }
   .popover.osd {
     background-image: none;
-    background-color: alpha(shade(#3D3E40, 0.85), 0.75);
+    background-color: alpha(shade(#3D3E40, 0.85), 0.85);
     border: 1px solid black;
     box-shadow: none;
     color: @theme_selected_fg_color; }

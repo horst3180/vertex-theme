@@ -65,7 +65,7 @@
 /***********
  * Popover *
  ***********/
-@define-color osd_popover_bg alpha(@osd_base, 0.90);
+@define-color osd_popover_bg alpha(shade(#3D3E40, 0.85), 0.85);
 
 /*********************
  * Error/Warning/... *
