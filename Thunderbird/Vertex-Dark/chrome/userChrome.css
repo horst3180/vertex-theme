@@ -205,6 +205,11 @@ radio[pane][selected="true"] {
   border: 1px solid black;
 }
 
+/************************* List ***************************/
+.listcell-label {
+  color: white !important;
+}
+
 /*
 .numberbox-input-box,
 .spinnbuttons-box,
