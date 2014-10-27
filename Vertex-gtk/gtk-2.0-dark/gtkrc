@@ -2520,9 +2520,9 @@ widget_class "*<GtkCustomMenu>*<GtkCustomMenuItem>*"                style "chrom
 widget_class "<GtkEntry>"                                           style "standalone_entry"
 
 # Firefox #
-class "GtkInvisible"                                                style "ff_entry"
-widget "GtkInvisible"                                               style "ff_entry"
-widget "MozillaGtkWidget.GtkFixed.GtkEntry"                         style	"ff_entry"
+#class "GtkInvisible"                                                style "ff_entry"
+#widget "GtkInvisible"                                               style "ff_entry"
+#widget "MozillaGtkWidget.GtkFixed.GtkEntry"                         style	"ff_entry"
 
 # Eclipse/SWT
 widget "gtk-tooltips*"                                              style "eclipse-tooltips"
