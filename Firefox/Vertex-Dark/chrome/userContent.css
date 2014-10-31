@@ -1,0 +1,82 @@
+/************ Fixes Color of Input/Entry Boxes within Web-Pages **************/
+input,
+textarea,
+select {
+  border-width: 1px !important;
+  border-radius: 2px;
+  background-color: white;
+  color: #333333;
+  -moz-appearance: none;
+}
+/*
+input[type="radio"],
+input[type="checkbox"] {
+border: 2px inset white ! important;
+background-color: white ! important;
+color: ThreeDFace ! important;
+-moz-appearance: none !important;
+}
+
+*|*::-moz-radio {
+background-color: white;
+-moz-appearance: none !important;
+}
+*/
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  border-width: 1px !important;
+  border-radius: 2px;
+  background-color: #eeeeee;
+  color: #333333;
+  -moz-appearance: none;
+}
+/*
+body {
+background-color: white;
+color: #333333;
+display: block;
+margin: 8px;
+-moz-appearance: none !important;
+}*/
+
+#header-search {
+  -moz-appearance: none !important;
+  padding-bottom: 3px !important;
+  color: #F3F3F5 !important;
+  background-color: #313133 !important;
+  border-radius: 2px !important;
+  border: 1px solid #171717 !important;
+  border-top-color: #0f0f0f !important;
+  transition: none !important;
+  box-shadow: 0 1px rgba(255,255,255,0.15),
+              inset 0 1px rgba(0,0,0,0.1) !important;
+}
+
+#header-search[focused="true"] {
+  -moz-appearance: none !important;
+  padding-bottom: 3px !important;
+  color: #F3F3F5 !important;
+  background-color: #313133 !important;
+  border-radius: 2px !important;
+  border: 1px solid #171717 !important;
+  border-top-color: #0f0f0f !important;
+  transition: none !important;
+  box-shadow: 0 1px rgba(255,255,255,0.15),
+              inset 0 1px #3a6cce,
+              inset 0 -1px #3a6cce,
+              inset 1px 0 #3a6cce,
+              inset -1px 0 #3a6cce !important;
+}
+
+#header-search input,
+#header-search textarea {
+    -moz-appearance: none !important;
+  border: none !important;
+  color: #F3F3F5 !important;
+  background-color: #313133 !important;
+}
+

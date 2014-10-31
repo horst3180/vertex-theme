@@ -3,18 +3,20 @@
 
 /**************************** Tab Container ***************************/
 #tabcontainer {
-  box-shadow: inset 0px -1px #151516,
-              inset 0px 1px #151516,
-              inset 0 5px rgba(0,0,0,0.01),
-              inset 0 4px rgba(0,0,0,0.015),
-              inset 0 3px rgba(0,0,0,0.02), 
-              inset 0 2px rgba(0,0,0,0.025), 
-              inset 0 1px rgba(0,0,0,0.03) !important;
-  background-color: #2A2A2B !important;
+  box-shadow: inset 0 -5px rgba(0,0,0,0.02),
+              inset 0 -4px rgba(0,0,0,0.025),
+              inset 0 -3px rgba(0,0,0,0.03), 
+              inset 0 -2px rgba(0,0,0,0.035), 
+              inset 0 -1px #151516 !important;
+  background: -moz-linear-gradient(#454749, #37393B) !important;
+  margin: 0 !important;
 }
 
-.toolbar-primary {
-  background-color: #2A2A2B !important;
+.tab-background {
+  -moz-appearance: none !important;
+  -moz-margin-end: -2px!important;
+  -moz-margin-start: -2px!important;
+  border-width: 0 !important;
 }
 
 /**************************** Mail Toolbars ***************************/
@@ -22,11 +24,13 @@
 .mail-toolbox,
 #chat-view-toolbox {
   -moz-appearance: none !important;
-  border-bottom: 1px solid #151516 !important;
   border-top: none !important;
-  box-shadow: inset 0px 1px rgba(255,255,255,0.15) !important;
+  box-shadow: inset 0 2px rgba(255,255,255,0.15),
+              inset 0 -1px #151516 !important;
 
-  background: -moz-linear-gradient(#3f4042, #37383a) !important;
+  background: -moz-linear-gradient(#444547, #333436) !important;
+  color: #F3F3F5 !important;
+  margin-top: -1px !important;
 }
 
 /* Tab background */
@@ -99,63 +103,27 @@ tab {
 }
 
 /************************ Primary Toolbar Buttons *********************/
-.mail-toolbox .toolbarbutton-menubutton-button,
-.mail-toolbox .toolbarbutton-menubutton-dropmarker,
-.mail-toolbox .toolbarbutton-1,
-.toolbox-top .toolbarbutton-menubutton-button,
-.toolbox-top .toolbarbutton-menubutton-dropmarker,
-.toolbox-top .toolbarbutton-1 {
+.toolbarbutton-menubutton-button,
+.toolbarbutton-menubutton-dropmarker,
+.toolbarbutton-1 {
   -moz-appearance: none !important;    
+  border-radius: 2px !important; 
+  padding: 1px 5px !important; 
+  border: 1px solid rgba(0,0,0,0.0) !important; 
   color: #F3F3F5 !important;
 }
 
-.mail-toolbox toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text,
-.toolbox-top toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
-  color: #F3F3F5 !important;
+.toolbarbutton-menubutton-dropmarker,
+toolbar[iconsize="small"][mode="icons"] .toolbarbutton-menubutton-button,
+toolbar[iconsize="small"][mode="icons"] .toolbarbutton-1 {
+  padding-left: 3px !important;
+  padding-right: 3px !important;
 }
 
-.mail-toolbox .toolbarbutton-menubutton-button[disabled="true"] > .toolbarbutton-icon,
-.mail-toolbox .toolbarbutton-1[disabled="true"] > .toolbarbutton-icon,
-.mail-toolbox .toolbarbutton-menubutton-button[disabled="true"],
-.mail-toolbox .toolbarbutton-menubutton-dropmarker[disabled="true"],
-.mail-toolbox .toolbarbutton-1[disabled="true"],
-.toolbox-top .toolbarbutton-menubutton-button[disabled="true"] > .toolbarbutton-icon,
-.toolbox-top .toolbarbutton-1[disabled="true"] > .toolbarbutton-icon,
-.toolbox-top .toolbarbutton-menubutton-button[disabled="true"],
-.toolbox-top .toolbarbutton-menubutton-dropmarker[disabled="true"],
-.toolbox-top .toolbarbutton-1[disabled="true"] {
-  opacity: .5 !important;
-  color: #F3F3F5 !important;
+.toolbarbutton-1 {
+  -moz-box-orient: vertical !important;
 }
 
-.mail-toolbox .toolbarbutton-menubutton-button:not([disabled="true"]):not(:active):hover,
-.mail-toolbox toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
-.mail-toolbox .toolbarbutton-1:not([disabled="true"]):not([checked="true"]):not(:active):hover,
-.toolbox-top .toolbarbutton-menubutton-button:not([disabled="true"]):not(:active):hover,
-.toolbox-top toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
-.toolbox-top .toolbarbutton-1:not([disabled="true"]):not([checked="true"]):not(:active):hover {
-  border-image: url("images/button-border-dark.png") 2 2 3 2 / 2px 2px 3px 2px stretch !important;
-}
-
-.mail-toolbox .toolbarbutton-menubutton-button:not([disabled="true"]):hover:active,
-.mail-toolbox toolbarbutton[type="menu-button"]:hover:active > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
-.mail-toolbox toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker,
-.mail-toolbox .toolbarbutton-1:not([disabled="true"]):hover:active,
-.mail-toolbox .toolbarbutton-1[checked="true"],
-.mail-toolbox .toolbarbutton-1[open="true"],
-
-.toolbox-top .toolbarbutton-menubutton-button:not([disabled="true"]):hover:active,
-.toolbox-top toolbarbutton[type="menu-button"]:hover:active > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
-.toolbox-top toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker,
-.toolbox-top .toolbarbutton-1:not([disabled="true"]):hover:active,
-.toolbox-top .toolbarbutton-1[checked="true"],
-.toolbox-top .toolbarbutton-1[open="true"] {
-  border-image: url("images/button-active-border-dark.png") 2 2 3 2 / 2px 2px 3px 2px stretch !important;
-  box-shadow:  0px 1px 2px rgba(0, 0, 0, 0.2) inset !important; 
-  text-shadow: none !important;
-}
-
-/*
 toolbarbutton[type="menu-button"] {
   -moz-appearance: none !important;
   padding: 0 !important;
@@ -207,31 +175,70 @@ toolbar[iconsize="small"][mode="icons"] toolbarbutton[type="menu-button"] {
   box-shadow: none!important;   
   -moz-transition: none!important; 
   background: transparent !important; 
-  }
+}
 
-#tabbar-toolbar > .toolbarbutton-1:not([disabled="true"]):not(:active):hover {
-  background: rgb(23,23,23) !important;
-  border: 1px solid red !important;   
-  box-shadow:  0px 1px 1px rgba(255, 255, 255, 0.04) inset!important;
-  -moz-transition: background-color .1s ease-in,
-                   border-color .2s ease-in,
-                   box-shadow .3s ease-in !important;  
-  }  
+.toolbarbutton-menubutton-button[disabled="true"],
+.toolbarbutton-menubutton-dropmarker[disabled="true"],
+.toolbarbutton-1[disabled="true"] {
+  opacity: .8 !important;
+  color: #676f74 !important;
+}
 
-#tabbar-toolbar > .toolbarbutton-1:not([disabled="true"]):hover:active {
-  border: 1px solid green !important;
-  background-color: rgb(23,23,23) !important;
-  background-image: -moz-linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.16) 49%, 
-               rgba(0,0,0,.08) 51%, rgba(0,0,0,.16))!important;
-  box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.65) inset, 0pt 1px 0pt rgba(255, 255, 255, 0.18)!important; 
-  text-shadow: none !important;
-}*/
-/*
-.toolbarbutton-1[checked="true"]:not(:active):hover {
+.toolbarbutton-menubutton-button[disabled="true"] > .toolbarbutton-icon,
+.toolbarbutton-1[disabled="true"] > .toolbarbutton-icon {
+  opacity: .5 !important;
+  color: #676f74 !important;
+}
+
+#tabbar-toolbar > .toolbarbutton-1:not([disabled="true"]):not(:active):hover,
+.toolbarbutton-menubutton-button:not([disabled="true"]):not(:active):hover,
+toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover >
+                  .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
+.toolbarbutton-1:not([disabled="true"]):not([checked="true"]):not(:active):hover {
+  background-color: rgba(0,0,0,0) !important;
+  border-color: #1e1f20 !important;
+  border-bottom-color: #040404 !important;
+  background-image: linear-gradient(to bottom,
+                                      #54565a,
+                                      #363738
+                                      ) !important;
+  background-clip: padding-box !important;
+  transition: none !important;
+  box-shadow: 0 1px rgba(0,0,0,0.1),
+              inset 0 1px rgba(255,255,255,0.15) !important;
+  color: #F3F3F5 !important;
+}
+
+#tabbar-toolbar > .toolbarbutton-1:not([disabled="true"]):hover:active,
+.toolbarbutton-menubutton-button:not([disabled="true"]):hover:active,
+toolbarbutton[type="menu-button"]:hover:active >
+                   .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
+toolbarbutton[type="menu-button"][open="true"] >
+                                          .toolbarbutton-menubutton-dropmarker,
+.toolbarbutton-1:not([disabled="true"]):hover:active,
+.toolbarbutton-1[checked="true"],
+.toolbarbutton-1[open="true"] {
+  background-color: rgba(0,0,0,0) !important;
+  border-color: #0d0d0d !important;
+  border-left-color: #1b1b1b !important;
+  border-right-color: #1b1b1b !important;
+  border-bottom-color: #1e1e1e !important;
+  background-image: linear-gradient(to bottom,
+                                      #262627,
+                                      #363739
+                                      ) !important;
+  background-clip: padding-box !important;
+  transition: none !important;
+  box-shadow: 0 1px rgba(255,255,255,0.2),
+              inset 0 1px 2px rgba(0,0,0,0.2) !important;
+  color: #F3F3F5 !important;
+}
+
+/*.toolbarbutton-1[checked="true"]:not(:active):hover {
   background-color: rgba(0%, 0%, 0%, .3) !important;
   -moz-transition: background-color .4s !important;
-  color: green !important;
-}
+  color: rgb(0,148,235) !important;
+}*/
 
 .toolbarbutton-menubutton-button > .toolbarbutton-icon,
 .toolbarbutton-1 > .toolbarbutton-icon {
@@ -247,8 +254,13 @@ toolbar[iconsize="small"] .toolbarbutton-1 > .toolbarbutton-icon {
   height: 16px !important;
 }
 
-.toolbarbutton-1[checked="true"] {
+toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
+  color: #F3F3F5 !important;
+}
+
+/*.toolbarbutton-1[checked="true"] {
   color: #006AA8 !important;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.85) !important;
 }*/
 
 /************************* Text Input Boxes ***************************/
