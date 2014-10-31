@@ -93,6 +93,10 @@ GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selectio
 .popover .separator, .separator {
   color: alpha(@borders, 0.3); }
 
+.sidebar .separator,
+.sidebar .view .separator {
+  color: alpha(black, 0.2); }
+
 /*
 GtkPopover {
     box-shadow: 0 2px 8px 3px alpha(@wm_shadow, 0.4);
