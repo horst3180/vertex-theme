@@ -83,23 +83,36 @@
        y="0"
        rx="1.0041529"
        ry="1.0020721" />
-    <rect
-       style="opacity:0.14999999999999999;fill:none;stroke:#4080fb;stroke-width:0.99977112000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect3779"
-       width="15.000229"
-       height="15.000229"
-       x="1.4998856"
-       y="-0.50011444"
-       rx="1.4870903"
-       ry="1.5127127" />
-    <rect
-       ry="1.5"
-       rx="1.5"
-       y="-0.5"
-       x="1.5"
-       height="13.999999"
-       width="15"
-       id="rect17861-2"
-       style="color:#000000;fill:none;stroke:#4080fb;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <g
+       inkscape:label="Layer 1"
+       id="generic-border-focused-dark">
+      <rect
+         ry="1.5127127"
+         rx="1.4870903"
+         y="-0.50011444"
+         x="1.4998856"
+         height="15.000229"
+         width="15.000229"
+         id="rect3779-69"
+         style="opacity:0.15;fill:none;stroke:#ffffff;stroke-width:0.99977112;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:0.74509804;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect17861-2-1"
+         width="15"
+         height="13.999999"
+         x="1.5"
+         y="-0.5"
+         rx="1.5"
+         ry="1.5" />
+      <rect
+         style="color:#000000;fill:none;stroke:#4080fb;stroke-width:0.99999994;stroke-miterlimit:4;stroke-opacity:0.78431373;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect17861-6-86"
+         width="13.000001"
+         height="12"
+         x="2.5"
+         y="0.49999997"
+         rx="0.4945825"
+         ry="0.50010675" />
+    </g>
   </g>
 </svg>
