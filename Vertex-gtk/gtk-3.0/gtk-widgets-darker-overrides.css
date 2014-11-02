@@ -1,5 +1,4 @@
-.titlebar .subtitle, GtkCalendar.header .subtitle,
-.header-bar .subtitle {
+.titlebar .subtitle, .header-bar .subtitle {
   text-shadow: 0 -1px alpha(black, 0.7); }
 
 /****************
@@ -137,8 +136,7 @@
   .primary-toolbar .button:hover, 
   .primary-toolbar .button.flat:hover,
   .header-bar .button.titlebutton:hover,
-  .titlebar .button.titlebutton:hover,
-  GtkCalendar.header .button.titlebutton:hover {
+  .titlebar .button.titlebutton:hover {
     color: @dark_fg_color;
     background-image: linear-gradient(to bottom,
 				                              @dark_button_hover_gradient_color_a,
@@ -159,10 +157,8 @@
   .primary-toolbar .button.flat:checked,
   .header-bar .button.titlebutton:active,
   .titlebar .button.titlebutton:active,
-  GtkCalendar.header .button.titlebutton:active,
   .header-bar .button.titlebutton:checked,
-  .titlebar .button.titlebutton:checked,
-  GtkCalendar.header .button.titlebutton:checked {
+  .titlebar .button.titlebutton:checked {
     background-image: linear-gradient(to bottom,
                                       @dark_button_active_gradient_color_a,
                                       @dark_button_active_gradient_color_b);
@@ -429,35 +425,35 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
     text-shadow: 0 -1px @dark_wm_title_shadow; }
   .titlebar .subtitle, .header-bar .subtitle {
 	  color: @dark_fg_color; }
-  .titlebar.selection-mode, GtkCalendar.selection-mode.header,
+  .titlebar.selection-mode,
   .header-bar.selection-mode {
     box-shadow: inset 0 1px alpha(white, 0.3); }
     .titlebar.selection-mode .button, .header-bar.selection-mode .button {
       text-shadow: 0 -1px @selection_button_text_shadow;
       icon-shadow: 0 -1px @selection_button_text_shadow; }
-      /*.titlebar.selection-mode .button:insensitive, GtkCalendar.selection-mode.header .button:insensitive,
+      /*.titlebar.selection-mode .button:insensitive,
       .header-bar.selection-mode .button:insensitive {
         color: alpha(@theme_selected_fg_color, 0.7);
         background-image: linear-gradient(to bottom, @selection_toolbar_bg_a);
         text-shadow: none;
         icon-shadow: none; }
-      .titlebar.selection-mode .button.suggested-action, GtkCalendar.selection-mode.header .button.suggested-action,
+      .titlebar.selection-mode .button.suggested-action,
       .header-bar.selection-mode .button.suggested-action {
         color: @theme_fg_color;
         background-image: linear-gradient(to bottom, @button_gradient_color_a, @button_gradient_color_b);
         text-shadow: 0 1px @highlight_shadow;
         icon-shadow: 0 1px @highlight_shadow; }
-        .titlebar.selection-mode .button.suggested-action:hover, GtkCalendar.selection-mode.header .button.suggested-action:hover,
+        .titlebar.selection-mode .button.suggested-action:hover,
         .header-bar.selection-mode .button.suggested-action:hover {
           background-image: linear-gradient(to bottom, @button_hover_gradient_color_a, @button_hover_gradient_color_b); }
-        .titlebar.selection-mode .button.suggested-action:active, GtkCalendar.selection-mode.header .button.suggested-action:active,
+        .titlebar.selection-mode .button.suggested-action:active,
         .header-bar.selection-mode .button.suggested-action:active {
           color: @button_active_text;
           background-image: linear-gradient(to bottom, @button_active_gradient_color_a, @button_active_gradient_color_b);
           text-shadow: 0 -1px @button_active_text_shadow;
           icon-shadow: 0 -1px @button_active_text_shadow;
           box-shadow: inset 0 1px 2px alpha(black, 0.2); }
-        .titlebar.selection-mode .button.suggested-action:insensitive, GtkCalendar.selection-mode.header .button.suggested-action:insensitive,
+        .titlebar.selection-mode .button.suggested-action:insensitive,
         .header-bar.selection-mode .button.suggested-action:insensitive {
           color: @insensitive_fg_color;
           background-image: linear-gradient(to bottom, @insenstive_bg_color);
@@ -613,15 +609,12 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
     box-shadow: 0 0 0 1px @dark_window_frame, 0 2px 5px 0 @wm_shadow; }
 
 .header-bar .button.titlebutton,
-.titlebar .button.titlebutton,
-GtkCalendar.header .button.titlebutton {
+.titlebar .button.titlebutton {
   border-image: none;
   background: none; }
-
+/*
 .header-bar .button.titlebutton:hover,
-.titlebar .button.titlebutton:hover,
-GtkCalendar.header .button.titlebutton:hover {}
+.titlebar .button.titlebutton:hover {}
 
 .header-bar .button.titlebutton:active,
-.titlebar .button.titlebutton:active,
-GtkCalendar.header .button.titlebutton:active {}
+.titlebar .button.titlebutton:active {}*/

@@ -108,8 +108,7 @@
 .spinbutton.vertical .button,
 .primary-toolbar .button:hover,
 .header-bar .button.titlebutton:hover,
-.titlebar .button.titlebutton:hover,
-GtkCalendar.header .button.titlebutton:hover {
+.titlebar .button.titlebutton:hover {
   border-image: -gtk-scaled(url("borders/button-border.png"),url("borders/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
@@ -141,10 +140,8 @@ GtkCalendar.header .button.titlebutton:hover {
 .primary-toolbar .button:checked,
 .header-bar .button.titlebutton:active,
 .titlebar .button.titlebutton:active,
-GtkCalendar.header .button.titlebutton:active,
 .header-bar .button.titlebutton:checked,
-.titlebar .button.titlebutton:checked,
-GtkCalendar.header .button.titlebutton:checked {
+.titlebar .button.titlebutton:checked {
   border-image: -gtk-scaled(url("borders/button-active-border.png"),url("borders/button-active-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
@@ -219,11 +216,11 @@ GtkCalendar.header .button.titlebutton:checked {
 }
 
 /*Selectionmode Buttons*/
-.titlebar.selection-mode .button, GtkCalendar.selection-mode.header .button,
+.titlebar.selection-mode .button,
 .header-bar.selection-mode .button,
-.titlebar.selection-mode .button:insensitive, GtkCalendar.selection-mode.header .button:insensitive,
+.titlebar.selection-mode .button:insensitive,
 .header-bar.selection-mode .button:insensitive,
-.titlebar.selection-mode .selection-menu:hover, GtkCalendar.selection-mode.header .selection-menu:hover,
+.titlebar.selection-mode .selection-menu:hover,
 .header-bar.selection-mode .selection-menu:hover {
   border-image: -gtk-scaled(url("borders/button-border-suggested.png"),url("borders/button-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
   border-radius: 2px;
@@ -232,9 +229,9 @@ GtkCalendar.header .button.titlebutton:checked {
   border-color: transparent;
 }
 
-.titlebar.selection-mode .button:active, GtkCalendar.selection-mode.header .button:active,
+.titlebar.selection-mode .button:active,
 .header-bar.selection-mode .button:active,
-.titlebar.selection-mode .button:checked, GtkCalendar.selection-mode.header .button:checked,
+.titlebar.selection-mode .button:checked,
 .header-bar.selection-mode .button:checked {
   border-image: -gtk-scaled(url("borders/button-active-border-suggested.png"),url("borders/button-active-border-suggested@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
   border-radius: 2px;
@@ -247,7 +244,7 @@ GtkCalendar.header .button.titlebutton:checked {
   border-image: none;
 }
 
-.titlebar.selection-mode .selection-menu, GtkCalendar.selection-mode.header .selection-menu, .header-bar.selection-mode .selection-menu {
+.titlebar.selection-mode .selection-menu, .header-bar.selection-mode .selection-menu {
   border-image: none; }
 
 /*Linked Buttons*/
@@ -719,8 +716,9 @@ GtkTreeView.view.trough:selected {
 
 .button.flat, .menuitem.button.flat, /*.menuitem.button.flat:active, .menuitem.button.flat:checked,*/ .button:link, .button:visited, 
 .button:link:hover, .button:link:active, .button:link:checked, .button:link:active:hover, .button:link:checked:hover, .button:visited:hover, .button:visited:active, .button:visited:active:hover, 
-.notebook tab .button, .list-row.button, GtkCalendar.button, GtkCalendar.button:hover, 
-.scale-popup .button:hover {
+.notebook tab .button, .list-row.button, .scale-popup .button:hover,
+GtkCalendar.button, .header-bar GtkCalendar.button.titlebutton,
+.titlebar GtkCalendar.button.titlebutton, GtkCalendar.button:hover, GtkCalendar.button:backdrop {
   border-color: transparent;
   border-image: none;
   background-color: transparent;

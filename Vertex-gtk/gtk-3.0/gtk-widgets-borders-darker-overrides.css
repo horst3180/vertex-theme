@@ -61,8 +61,7 @@
 .primary-toolbar .button.flat:hover,
 .primary-toolbar .button:hover,
 .header-bar .button.titlebutton:hover,
-.titlebar .button.titlebutton:hover,
-GtkCalendar.header .button.titlebutton:hover {
+.titlebar .button.titlebutton:hover {
   border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
@@ -104,10 +103,8 @@ GtkCalendar.header .button.titlebutton:hover {
 .primary-toolbar .button:insensitive.flat:checked,
 .header-bar .button.titlebutton:active,
 .titlebar .button.titlebutton:active,
-GtkCalendar.header .button.titlebutton:active,
 .header-bar .button.titlebutton:checked,
-.titlebar .button.titlebutton:checked,
-GtkCalendar.header .button.titlebutton:checked {
+.titlebar .button.titlebutton:checked {
   border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
@@ -184,10 +181,8 @@ GtkCalendar.header .button.titlebutton:checked {
 }
 
 .titlebar.selection-mode .button:active, 
-GtkCalendar.selection-mode.header .button:active,
 .header-bar.selection-mode .button:active,
 .titlebar.selection-mode .button:checked, 
-GtkCalendar.selection-mode.header .button:checked,
 .header-bar.selection-mode .button:checked {
   border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
@@ -202,7 +197,6 @@ GtkCalendar.selection-mode.header .button:checked,
 }
 
 .titlebar.selection-mode .selection-menu, 
-GtkCalendar.selection-mode.header .selection-menu,
 .header-bar.selection-mode .selection-menu {
   border-image: none;
 }
@@ -492,8 +486,9 @@ GtkCalendar.selection-mode.header .selection-menu,
 
 .button.flat, .menuitem.button.flat, /*.menuitem.button.flat:active, .menuitem.button.flat:checked,*/ .button:link, .button:visited, 
 .button:link:hover, .button:link:active, .button:link:checked, .button:link:active:hover, .button:link:checked:hover, .button:visited:hover, .button:visited:active, .button:visited:active:hover, 
-.notebook tab .button, .list-row.button, GtkCalendar.button, GtkCalendar.button:hover, 
-.scale-popup .button:hover {
+.notebook tab .button, .list-row.button, .scale-popup .button:hover,
+GtkCalendar.button, .header-bar GtkCalendar.button.titlebutton,
+.titlebar GtkCalendar.button.titlebutton, GtkCalendar.button:hover, GtkCalendar.button:backdrop {
   border-color: transparent;
   border-image: none;
   background-color: transparent;

@@ -8,13 +8,10 @@
 
 .header-bar .button.titlebutton,
 .titlebar .button.titlebutton,
-GtkCalendar.header .button.titlebutton,
 .header-bar .button.titlebutton:hover,
 .titlebar .button.titlebutton:hover,
-GtkCalendar.header .button.titlebutton:hover,
 .header-bar .button.titlebutton:checked,
-.titlebar .button.titlebutton:checked,
-GtkCalendar.header .button.titlebutton:checked {
+.titlebar .button.titlebutton:checked {
   background: none;
   border-width: 1px 0px 2px 0px;
   border-color: transparent;
@@ -24,14 +21,12 @@ GtkCalendar.header .button.titlebutton:checked {
   box-shadow: none; }
 
 .header-bar .right .button.titlebutton,
-.titlebar .right .button.titlebutton,
-GtkCalendar .right .header .button.titlebutton {
+.titlebar .right .button.titlebutton {
   padding-left: 3px;
   padding-right: 4px; }
 
 .header-bar .left .button.titlebutton,
-.titlebar .left .button.titlebutton,
-GtkCalendar .left .header .button.titlebutton {
+.titlebar .left .button.titlebutton {
   padding-left: 4px;
   padding-right: 3px; }
 
