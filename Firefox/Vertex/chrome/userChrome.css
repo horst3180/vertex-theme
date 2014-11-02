@@ -190,10 +190,21 @@
 }
 
 /************************* Text Input Boxes ***************************/
+#notification-popup-box {
+  background-color: transparent !important;
+  border-image: url("images/urlbar-arrow.png") 0 8 0 0 / 0 8px 0 0 !important;
+}
+
+#identity-box {
+  background-color: #313133 !important;
+}
+
+.searchbar-textbox {
+  padding: 2px !important;
+}
 
 #nav-bar textbox {
   -moz-appearance: none !important;
-  padding-bottom: 3px !important;
   color: #F3F3F5 !important;
   background-color: #313133 !important;
   border-radius: 2px !important;
@@ -206,7 +217,6 @@
 
 #nav-bar textbox[focused="true"] {
   -moz-appearance: none !important;
-  padding-bottom: 3px !important;
   color: #F3F3F5 !important;
   background-color: #313133 !important;
   border-radius: 2px !important;
@@ -222,7 +232,6 @@
 
 #nav-bar textbox[disabled="true"] {
   -moz-appearance: none !important;
-  padding-bottom: 3px !important;
   color: #7F7F8A !important;
   background-color: #434446 !important;
   border-radius: 2px !important;
@@ -231,19 +240,6 @@
   transition: none !important;
   box-shadow: 0 1px rgba(255,255,255,0.15) !important;
 }
-
-#identity-box {
-  background-color: #313133 !important;
-  /*border-right: 1px solid rgba(0,0,0,0) !important;
-  border-image: linear-gradient(to bottom,
-                                      rgba(255,255,255,0),
-                                      rgba(255,255,255,0.2),
-                                      rgba(255,255,255,0)
-                                      ) 0 1 0 0 / 0px 1px 0px 0px stretch !important;
-  margin-right: 3px !important;*/
-}
-
-
 
 /* Places toolbar *//* ::::: bookmark buttons ::::: */
 
@@ -279,6 +275,11 @@ toolbarbutton.bookmark-item {
   background-repeat: no-repeat !important;
   background-size: 1px 18px !important;
   box-shadow: none !important;
+}
+
+#PanelUI-button {
+  background: none !important;
+  border-image: url("images/navbar-separator.png") 0 0 0 2 / 0 0 0 2px !important;
 }
 
 /*hover*/
@@ -317,7 +318,6 @@ toolbarbutton.bookmark-item:hover,
                                       #54565a,
                                       #47494A
                                       ) !important;
-  color: rgb(255,255,255);
   background-clip: padding-box !important;
   transition: none !important;
   box-shadow: 0 1px rgba(0,0,0,0.1),
@@ -326,6 +326,7 @@ toolbarbutton.bookmark-item:hover,
   text-shadow: 0 -1px rgba(0,0,0,0.7) !important;
 }
 /*active*/
+#nav-bar .toolbarbutton-1[checked]:not(:active):hover > .toolbarbutton-icon,
 #TabsToolbar .toolbarbutton-1:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
 #TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
 .tabbrowser-arrowscrollbox > .scrollbutton-up:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,

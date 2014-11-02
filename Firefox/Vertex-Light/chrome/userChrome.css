@@ -193,10 +193,16 @@
 }
 
 /************************* Text Input Boxes ***************************/
+#identity-box {
+  background-color: #ffffff !important;
+}
+
+.searchbar-textbox {
+  padding: 2px !important;
+}
 
 #nav-bar textbox {
   -moz-appearance: none !important;
-  padding-bottom: 3px !important;
   color: #3c3c3c !important;
   background-color: #ffffff !important;
   border-radius: 2px !important;
@@ -210,7 +216,6 @@
 
 #nav-bar textbox[focused="true"] {
   -moz-appearance: none !important;
-  padding-bottom: 3px !important;
   color: #3c3c3c !important;
   background-color: #ffffff !important;
   border-radius: 2px !important;
@@ -225,7 +230,6 @@
 
 #nav-bar textbox[disabled="true"] {
   -moz-appearance: none !important;
-  padding-bottom: 3px !important;
   color: #7F7F8A !important;
   background-color: #F4F4F4 !important;
   border-radius: 2px !important;
@@ -234,19 +238,6 @@
   transition: none !important;
   box-shadow: 0 1px rgba(255,255,255,0.75) !important;
 }
-
-#identity-box {
-  background-color: #ffffff !important;
-  /*border-right: 1px solid rgba(0,0,0,0) !important;
-  border-image: linear-gradient(to bottom,
-                                      rgba(255,255,255,0),
-                                      rgba(255,255,255,0.2),
-                                      rgba(255,255,255,0)
-                                      ) 0 1 0 0 / 0px 1px 0px 0px stretch !important;
-  margin-right: 3px !important;*/
-}
-
-
 
 /* Places toolbar *//* ::::: bookmark buttons ::::: */
 
@@ -329,6 +320,7 @@ toolbarbutton.bookmark-item:hover,
 }
 
 /*active*/
+#nav-bar .toolbarbutton-1[checked]:not(:active):hover > .toolbarbutton-icon,
 #TabsToolbar .toolbarbutton-1:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
 #TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
 .tabbrowser-arrowscrollbox > .scrollbutton-up:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
@@ -355,13 +347,6 @@ toolbarbutton.bookmark-item[open="true"],
   color: #ffffff !important;
   text-shadow: 0 -1px rgba(0,0,0,0.5) !important;
 }
-
-/*
-#nav-bar .toolbarbutton-1[checked]:not(:active):hover > .toolbarbutton-icon {
-  background-color: rgba(0,0,0,.35)!important;
-  transition: background-color .4s!important;
-  border: 1px solid green !important;
-}*/
 
 /*back-button*/
 window:not([chromehidden~="toolbar"]) #urlbar-container > #back-button:not([open]):not(:active):not([disabled]) > .toolbarbutton-icon {

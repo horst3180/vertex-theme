@@ -30,6 +30,7 @@
 
   background: -moz-linear-gradient(#444547, #333436) !important;
   color: #F3F3F5 !important;
+  text-shadow: 0 -1px rgba(0,0,0,0.7) !important;
   margin-top: -1px !important;
 }
 
@@ -75,6 +76,7 @@ tab {
 /* Active tab */
 .tabmail-tab > .tab-stack > .tab-content > .tab-text {
   color: #F3F3F5 !important;
+  text-shadow: 0 -1px rgba(0,0,0,0.7) !important;
 }
 
 /* Inactive tab */
@@ -91,40 +93,59 @@ tab {
   color: #ffffff !important;
 }
 
+.tab-close-button {
+  -moz-appearance: none !important;
+}
+
 /* Replace the default close tab icon with a white one */
 .tab-close-button {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHhSURBVDiNpZMxq9pQGIbfUxT0gA6xIIhQqhWdMonQErj+AMnUqf4AFbpl6urNT+gi3CUG6eJvaJ3awVYynsCVOnhDGm46hBA5UThdVI4Xp94PzvC98H58PN97iBACz6kXz3IDyMgNIYQAeAPgJQBXCPH3qCsAmgAeAdwLeW0hBI49AdCybXvs+/5G07QeAAWAomlaz/f9jW3bYwAtAOTskwY0LMsah2GYep4nfN9/0DStdzQ/eJ4nwjBMLcsaA2icfOS0DSHk7WKxmFWr1ddCCGSzWWQyGQ8ADodDZb/fgxCC7Xb7u9vt9oUQP55CdHVdnzmOwzjniOMYSZJUkiSpxHEMzjkcx2G6rs8AuGduMg9CSLlYLH6cTCbvm81mSwbsui4bDAbzKIo+CyH+nPSnZ9w3Go1fpVKJcs4hP0VRaK1W+wlgf3E5iYHS6XTeTafTSRRFld1udzE5n8+jUCh4/X5/sFqtvp9PLENcLpdfOOevkiQBAKzXawYA9Xq9BQCUUuRyuU273f5wDeLjaDT6GgTBLk1TMMaYYRhzwzDmjDGWpimCINgNh8Nvx0BdDdKNqqp3pmk6lNJbAGUAZUrprWmajqqqdwBurgZJGqIB+ASgLOnlo6bJ5osg/W89+zf+A+a5JmPghr43AAAAAElFTkSuQmCC) !important;
+  list-style-image: url("images/tab-close-selected.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+.tab-close-button:hover > .toolbarbutton-icon {
+  border-radius: 2px !important;
+  background-color: rgba(255,0,0,0.8) !important;
+}
+
+.tab-close-button:active > .toolbarbutton-icon {
+  border-radius: 2px !important;
+  background-color: rgba(255,0,0,0.4) !important;
 }
 
 /* Replace default appmenu icon with a white one */
 .button-appmenu {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/gD+AP7rGNSCAAAACXBIWXMAAA3WAAAN1gGQb3mcAAAACXZwQWcAAAAYAAAAGAB4TKWmAAAAsklEQVRIx2NgGAUDDRjR+GoMDAxSFJr5hoGB4QqMw4ImKfXt27f9lJjOxcXliMxHt4Dh3bt3VA0idAueycjITKfQzGd4fcDAwLCKlj6Qev/+PUVxICgo6MjAwHALpw8ePXpETQ9gxoG+vv4Qj4Pnz59TFAeSkpL44+DGjRvU9ADWoqKAQjMn4PUBA63j4MGDBxTFgYKCAv44OHPmDDU9gBEHOgwMDFkUmjmNAam4HgUDDwCCaCsver+O4AAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMS0xMS0xNFQxMzozMjo0OSswMTowMJj/EB0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTEtMTEtMTRUMTM6MzI6NDkrMDE6MDDpoqihAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==) !important;
--moz-image-region: auto !important;
+  list-style-image: url("images/appmenu.png") !important;
+  -moz-image-region: auto !important;
 }
 
 /************************ Primary Toolbar Buttons *********************/
-.toolbarbutton-menubutton-button,
-.toolbarbutton-menubutton-dropmarker,
-.toolbarbutton-1 {
+.mail-toolbox .toolbarbutton-menubutton-button,
+.mail-toolbox .toolbarbutton-menubutton-dropmarker,
+.mail-toolbox .toolbarbutton-1,
+.toolbox-top .toolbarbutton-menubutton-button,
+.toolbox-top .toolbarbutton-menubutton-dropmarker,
+.toolbox-top .toolbarbutton-1 {
   -moz-appearance: none !important;    
   border-radius: 2px !important; 
-  padding: 1px 5px !important; 
   border: 1px solid rgba(0,0,0,0.0) !important; 
   color: #F3F3F5 !important;
+  text-shadow: 0 -1px rgba(0,0,0,0.7) !important;
 }
 
-.toolbarbutton-menubutton-dropmarker,
-toolbar[iconsize="small"][mode="icons"] .toolbarbutton-menubutton-button,
-toolbar[iconsize="small"][mode="icons"] .toolbarbutton-1 {
+.mail-toolbox .toolbarbutton-menubutton-dropmarker,
+.mail-toolbox toolbar[iconsize="small"][mode="icons"] .toolbarbutton-menubutton-button,
+.mail-toolbox toolbar[iconsize="small"][mode="icons"] .toolbarbutton-1 {
   padding-left: 3px !important;
   padding-right: 3px !important;
 }
 
-.toolbarbutton-1 {
+.mail-toolbox .toolbarbutton-1 {
   -moz-box-orient: vertical !important;
 }
 
-toolbarbutton[type="menu-button"] {
+.mail-toolbox toolbarbutton[type="menu-button"],
+.toolbox-top toolbarbutton[type="menu-button"] {
   -moz-appearance: none !important;
   padding: 0 !important;
   background: none !important;
@@ -132,39 +153,39 @@ toolbarbutton[type="menu-button"] {
   box-shadow: none !important;
 }
 
-.toolbarbutton-1,
-toolbarbutton[type="menu-button"] {
+.mail-toolbox .toolbarbutton-1,
+.mail-toolbox toolbarbutton[type="menu-button"] {
   margin: 1px 3px !important;
 }
 
-toolbox[labelalign="end"] .toolbarbutton-1,
-toolbox[labelalign="end"] .toolbarbutton-menubutton-button {
+.mail-toolbox[labelalign="end"] .toolbarbutton-1,
+.mail-toolbox[labelalign="end"] .toolbarbutton-menubutton-button {
   -moz-box-orient: horizontal !important;
 }
 
-toolbar[iconsize="small"][mode="icons"] .toolbarbutton-1,
-toolbar[iconsize="small"][mode="icons"] toolbarbutton[type="menu-button"] {
+.mail-toolbox[iconsize="small"][mode="icons"] .toolbarbutton-1,
+.mail-toolbox[iconsize="small"][mode="icons"] toolbarbutton[type="menu-button"] {
   margin-left: 2px !important;
   margin-right: 2px !important;
 }
 
-.toolbarbutton-menubutton-dropmarker {
+.mail-toolbox .toolbarbutton-menubutton-dropmarker {
   -moz-border-start-style: none !important;
 }
 
-.toolbarbutton-menubutton-button:-moz-locale-dir(ltr),
-.toolbarbutton-menubutton-dropmarker:-moz-locale-dir(rtl) {
+.mail-toolbox .toolbarbutton-menubutton-button:-moz-locale-dir(ltr),
+.mail-toolbox .toolbarbutton-menubutton-dropmarker:-moz-locale-dir(rtl) {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
 
-.toolbarbutton-menubutton-dropmarker  {
+.mail-toolbox .toolbarbutton-menubutton-dropmarker  {
   padding-left: 6px !important;
   padding-right: 6px !important;
 }
 
-.toolbarbutton-menubutton-button:-moz-locale-dir(rtl),
-.toolbarbutton-menubutton-dropmarker:-moz-locale-dir(ltr) {
+.mail-toolbox .toolbarbutton-menubutton-button:-moz-locale-dir(rtl),
+.mail-toolbox .toolbarbutton-menubutton-dropmarker:-moz-locale-dir(ltr) {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
@@ -177,24 +198,31 @@ toolbar[iconsize="small"][mode="icons"] toolbarbutton[type="menu-button"] {
   background: transparent !important; 
 }
 
-.toolbarbutton-menubutton-button[disabled="true"],
-.toolbarbutton-menubutton-dropmarker[disabled="true"],
-.toolbarbutton-1[disabled="true"] {
+.mail-toolbox .toolbarbutton-menubutton-button[disabled="true"],
+.mail-toolbox .toolbarbutton-menubutton-dropmarker[disabled="true"],
+.mail-toolbox .toolbarbutton-1[disabled="true"],
+.toolbox-top .toolbarbutton-menubutton-button[disabled="true"],
+.toolbox-top .toolbarbutton-menubutton-dropmarker[disabled="true"],
+.toolbox-top .toolbarbutton-1[disabled="true"] {
   opacity: .8 !important;
   color: #676f74 !important;
 }
 
-.toolbarbutton-menubutton-button[disabled="true"] > .toolbarbutton-icon,
-.toolbarbutton-1[disabled="true"] > .toolbarbutton-icon {
+.mail-toolbox .toolbarbutton-menubutton-button[disabled="true"] > .toolbarbutton-icon,
+.mail-toolbox .toolbarbutton-1[disabled="true"] > .toolbarbutton-icon,
+.toolbox-top .toolbarbutton-menubutton-button[disabled="true"] > .toolbarbutton-icon,
+.toolbox-top .toolbarbutton-1[disabled="true"] > .toolbarbutton-icon {
   opacity: .5 !important;
   color: #676f74 !important;
 }
 
 #tabbar-toolbar > .toolbarbutton-1:not([disabled="true"]):not(:active):hover,
-.toolbarbutton-menubutton-button:not([disabled="true"]):not(:active):hover,
-toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover >
-                  .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
-.toolbarbutton-1:not([disabled="true"]):not([checked="true"]):not(:active):hover {
+.mail-toolbox .toolbarbutton-menubutton-button:not([disabled="true"]):not(:active):hover,
+.mail-toolbox toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
+.mail-toolbox .toolbarbutton-1:not([disabled="true"]):not([checked="true"]):not(:active):hover,
+.toolbox-top .toolbarbutton-menubutton-button:not([disabled="true"]):not(:active):hover,
+.toolbox-top toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
+.toolbox-top .toolbarbutton-1:not([disabled="true"]):not([checked="true"]):not(:active):hover {
   background-color: rgba(0,0,0,0) !important;
   border-color: #1e1f20 !important;
   border-bottom-color: #040404 !important;
@@ -207,17 +235,22 @@ toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover >
   box-shadow: 0 1px rgba(0,0,0,0.1),
               inset 0 1px rgba(255,255,255,0.15) !important;
   color: #F3F3F5 !important;
+  text-shadow: 0 -1px rgba(0,0,0,0.7) !important;
 }
 
 #tabbar-toolbar > .toolbarbutton-1:not([disabled="true"]):hover:active,
-.toolbarbutton-menubutton-button:not([disabled="true"]):hover:active,
-toolbarbutton[type="menu-button"]:hover:active >
-                   .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
-toolbarbutton[type="menu-button"][open="true"] >
-                                          .toolbarbutton-menubutton-dropmarker,
-.toolbarbutton-1:not([disabled="true"]):hover:active,
-.toolbarbutton-1[checked="true"],
-.toolbarbutton-1[open="true"] {
+.mail-toolbox .toolbarbutton-menubutton-button:not([disabled="true"]):hover:active,
+.mail-toolbox toolbarbutton[type="menu-button"]:hover:active > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
+.mail-toolbox toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker,
+.mail-toolbox .toolbarbutton-1:not([disabled="true"]):hover:active,
+.mail-toolbox .toolbarbutton-1[checked="true"],
+.mail-toolbox .toolbarbutton-1[open="true"],
+.toolbox-top .toolbarbutton-menubutton-button:not([disabled="true"]):hover:active,
+.toolbox-top toolbarbutton[type="menu-button"]:hover:active > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
+.toolbox-top toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker,
+.toolbox-top .toolbarbutton-1:not([disabled="true"]):hover:active,
+.toolbox-top .toolbarbutton-1[checked="true"],
+.toolbox-top .toolbarbutton-1[open="true"] {
   background-color: rgba(0,0,0,0) !important;
   border-color: #0d0d0d !important;
   border-left-color: #1b1b1b !important;
@@ -232,6 +265,7 @@ toolbarbutton[type="menu-button"][open="true"] >
   box-shadow: 0 1px rgba(255,255,255,0.2),
               inset 0 1px 2px rgba(0,0,0,0.2) !important;
   color: #F3F3F5 !important;
+  text-shadow: 0 -1px rgba(0,0,0,0.7) !important;
 }
 
 /*.toolbarbutton-1[checked="true"]:not(:active):hover {
@@ -240,22 +274,24 @@ toolbarbutton[type="menu-button"][open="true"] >
   color: rgb(0,148,235) !important;
 }*/
 
-.toolbarbutton-menubutton-button > .toolbarbutton-icon,
-.toolbarbutton-1 > .toolbarbutton-icon {
+.mail-toolbox .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+.mail-toolbox .toolbarbutton-1 > .toolbarbutton-icon {
   -moz-margin-end: 0 !important;
   width: 18px !important;
   height: 18px !important;
 }
 
-toolbar[iconsize="small"] .toolbarbutton-menubutton-button > .toolbarbutton-icon,
-toolbar[iconsize="small"] .toolbarbutton-1 > .toolbarbutton-icon {
+.mail-toolbox[iconsize="small"] .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+.mail-toolbox[iconsize="small"] .toolbarbutton-1 > .toolbarbutton-icon {
   margin: 1px !important;
   width: 16px !important;
   height: 16px !important;
 }
 
-toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
+.mail-toolbox toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text,
+.toolbox-top toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
   color: #F3F3F5 !important;
+  text-shadow: 0 -1px rgba(0,0,0,0.7) !important;
 }
 
 /*.toolbarbutton-1[checked="true"] {
@@ -264,7 +300,8 @@ toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
 }*/
 
 /************************* Text Input Boxes ***************************/
-.mail-toolbox textbox {
+.mail-toolbox textbox,
+.toolbox-top textbox {
   -moz-appearance: none !important;
   border-width: 1px !important;
   border-radius: 2px !important;
@@ -276,7 +313,8 @@ toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
   padding-bottom: 3px !important;
 }
 
-.mail-toolbox textbox[focused="true"] {
+.mail-toolbox textbox[focused="true"],
+.toolbox-top textbox[focused="true"] {
   -moz-appearance: none !important;
   border-width: 1px !important;
   border-radius: 2px !important;
@@ -288,7 +326,8 @@ toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
   padding-bottom: 3px !important;
 }
 
-.mail-toolbox textbox[disabled="true"] {
+.mail-toolbox textbox[disabled="true"],
+.toolbox-top textbox[disabled="true"] {
   border-image: url("images/generic-border-dark.png") 2 2 3 2 / 2px 2px 3px 2px stretch !important;
   color: #898995 !important;
   background: #434446 !important;
@@ -342,6 +381,11 @@ toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
 .spinbuttons-down[disabled="true"] {
   background-image: url("images/arrow-down-dis.gif") !important;
 }*/
+
+/************************ Quick Filter Bar *********************/
+#quick-filter-bar {
+  border-bottom: 1px solid #CBCBCB !important;
+}
 
 /*************************** Dropmarker *******************************/
 dropmarker {
