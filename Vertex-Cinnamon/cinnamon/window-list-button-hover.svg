@@ -7,7 +7,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="17"
@@ -17,58 +16,7 @@
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="window-list-button-hover.svg">
   <defs
-     id="defs4">
-    <linearGradient
-       id="linearGradient3758">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0.23529412;"
-         offset="0"
-         id="stop3760" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0.07843138;"
-         offset="1"
-         id="stop3762" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3758"
-       id="linearGradient3764"
-       x1="0"
-       y1="0"
-       x2="0"
-       y2="10"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3758-4"
-       id="linearGradient3764-3"
-       x1="0"
-       y1="0"
-       x2="0"
-       y2="10"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       id="linearGradient3758-4">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0.11764706"
-         offset="0"
-         id="stop3760-6" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0"
-         offset="1"
-         id="stop3762-4" />
-    </linearGradient>
-    <linearGradient
-       y2="10"
-       x2="0"
-       y1="0"
-       x1="0"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient3781"
-       xlink:href="#linearGradient3758"
-       inkscape:collect="always"
-       gradientTransform="translate(16,0)" />
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"

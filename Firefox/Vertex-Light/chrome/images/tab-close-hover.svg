@@ -118,16 +118,6 @@
     <polygon
        id="glyphShape-close"
        points="8,6.5 10.5,4 12,5.5 9.5,8 12,10.5 10.5,12 8,9.5 5.5,12 4,10.5 6.5,8 4,5.5 5.5,4 " />
-    <polygon
-       id="glyphShape-close-topHighlight"
-       points="8,6.5 10.5,4 12,5.5 9.5,8 11.5,6 10.5,5 8,7.5 5.5,5 4.5,6 4,5.5 5.5,4 " />
-    <rect
-       id="glyphShape-background"
-       x="2"
-       y="2"
-       rx="2"
-       width="12"
-       height="12" />
   </defs>
   <g
      id="icon-close-LWT-dark-0"

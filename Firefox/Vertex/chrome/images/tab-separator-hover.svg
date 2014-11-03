@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="tab-separator.svg">
+   sodipodi:docname="tab-separator-hover.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -33,15 +33,6 @@
        inkscape:collect="always"
        xlink:href="#linearGradient3757"
        id="linearGradient3763"
-       x1="0"
-       y1="22"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3757-9"
-       id="linearGradient3763-7"
        x1="0"
        y1="22"
        x2="0"
@@ -89,15 +80,6 @@
          offset="1"
          id="stop3761-8-7" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3757-8"
-       id="linearGradient3763-0"
-       x1="0"
-       y1="22"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
     <linearGradient
        id="linearGradient3757-8">
       <stop
@@ -154,7 +136,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

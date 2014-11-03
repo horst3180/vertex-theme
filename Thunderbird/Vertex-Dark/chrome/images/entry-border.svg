@@ -15,18 +15,9 @@
    id="svg6876"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="entry-border-focused.svg">
+   sodipodi:docname="entry-border.svg">
   <defs
      id="defs6878">
-    <linearGradient
-       y2="14"
-       x2="8"
-       y1="1"
-       x1="8"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient3818-38"
-       xlink:href="#linearGradient8539"
-       inkscape:collect="always" />
     <linearGradient
        id="linearGradient8539">
       <stop
@@ -94,7 +85,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

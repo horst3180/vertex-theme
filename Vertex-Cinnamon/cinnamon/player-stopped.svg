@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1">
- <g fill="#bebebe">
-  <rect rx=".53250" ry=".53250" height="12" width="2" y="1" x="6.1621"/>
-  <rect rx=".49537" ry=".49537" height="2" width="4.6952" y="1" x="6.1621"/>
-  <path stroke-linejoin="round" d="m7.6573 12.516a2.9953 2.9953 0 0 1 -5.9905 0 2.9953 2.9953 0 1 1 5.9905 0z" stroke="#bebebe" stroke-width="1.0095"/>
- </g>
- <path d="m9.6734 10.832v4.425h4.425v-4.425h-4.4242z" fill="#ef2929"/>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="16"
+   width="16"
+   version="1.1"
+   id="svg1095"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="player-stopped.svg">
+  <metadata
+     id="metadata1111">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1109" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview1107" />
+  <g
+     fill="#bebebe"
+     id="g1097">
+    <rect
+       rx=".53250"
+       ry=".53250"
+       height="12"
+       width="2"
+       y="1"
+       x="6.1621"
+       id="rect1099" />
+    <rect
+       rx=".49537"
+       ry=".49537"
+       height="2"
+       width="4.6952"
+       y="1"
+       x="6.1621"
+       id="rect1101" />
+    <path
+       stroke-linejoin="round"
+       d="m7.6573 12.516a2.9953 2.9953 0 0 1 -5.9905 0 2.9953 2.9953 0 1 1 5.9905 0z"
+       stroke="#bebebe"
+       stroke-width="1.0095"
+       id="path1103" />
+  </g>
+  <path
+     d="m9.6734 10.832v4.425h4.425v-4.425h-4.4242z"
+     fill="#ef2929"
+     id="path1105" />
 </svg>

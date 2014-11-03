@@ -39,26 +39,6 @@
        y2="10"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3758-4"
-       id="linearGradient3764-3"
-       x1="0"
-       y1="0"
-       x2="0"
-       y2="10"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       id="linearGradient3758-4">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0.11764706"
-         offset="0"
-         id="stop3760-6" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0"
-         offset="1"
-         id="stop3762-4" />
-    </linearGradient>
-    <linearGradient
        y2="10"
        x2="0"
        y1="0"
