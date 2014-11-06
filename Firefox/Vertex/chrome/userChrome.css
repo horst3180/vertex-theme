@@ -259,22 +259,21 @@ toolbarbutton.bookmark-item {
 }
 
 /* separator (between navbar menubuttons with dropmarker) colors */
-#nav-bar .toolbarbutton-1/*:not(:hover):not(:active):not([open])*/ > .toolbarbutton-menubutton-dropmarker::before,
+#nav-bar .toolbarbutton-1:not(:hover):not(:active):not([open]) > .toolbarbutton-menubutton-dropmarker::before,
 #nav-bar .toolbarbutton-1:active > .toolbarbutton-menubutton-dropmarker::before,
 #nav-bar .toolbaritem-combined-buttons > .toolbarbutton-1:-moz-any(:not(:hover):not([open]),[disabled]) + .toolbarbutton-1:-moz-any(:not(:hover):not([open]),[disabled])::before{
   content: "" !important;
   display: -moz-box !important;
-  width: 1px !important;
+  width: 2px !important;
   height: 18px !important;
   -moz-margin-end: -1px !important;
-  background-image: linear-gradient(rgba(255,255,255,.0),
-					                          rgba(255,255,255,.2),
-					                          rgba(255,255,255,.0)) !important;
+  border-image: url("images/navbar-separator.png") 0 0 0 2 / 0 0 0 2px !important;
   background-clip: padding-box !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-size: 1px 18px !important;
+  background-size: 2px 18px !important;
   box-shadow: none !important;
+  margin-left: -1px !important;
 }
 
 #PanelUI-button {
