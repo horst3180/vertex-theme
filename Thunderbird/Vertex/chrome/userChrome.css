@@ -123,9 +123,9 @@ tab {
 .mail-toolbox .toolbarbutton-menubutton-button,
 .mail-toolbox .toolbarbutton-menubutton-dropmarker,
 .mail-toolbox .toolbarbutton-1,
-.toolbox-top .toolbarbutton-menubutton-button,
-.toolbox-top .toolbarbutton-menubutton-dropmarker,
-.toolbox-top .toolbarbutton-1 {
+#ab-toolbox .toolbarbutton-menubutton-button,
+#ab-toolbox .toolbarbutton-menubutton-dropmarker,
+#ab-toolbox .toolbarbutton-1 {
   -moz-appearance: none !important;    
   border-radius: 2px !important; 
   border: 1px solid rgba(0,0,0,0.0) !important; 
@@ -145,7 +145,7 @@ tab {
 }
 
 .mail-toolbox toolbarbutton[type="menu-button"],
-.toolbox-top toolbarbutton[type="menu-button"] {
+#ab-toolbox toolbarbutton[type="menu-button"] {
   -moz-appearance: none !important;
   padding: 0 !important;
   background: none !important;
@@ -201,28 +201,28 @@ tab {
 .mail-toolbox .toolbarbutton-menubutton-button[disabled="true"],
 .mail-toolbox .toolbarbutton-menubutton-dropmarker[disabled="true"],
 .mail-toolbox .toolbarbutton-1[disabled="true"],
-.toolbox-top .toolbarbutton-menubutton-button[disabled="true"],
-.toolbox-top .toolbarbutton-menubutton-dropmarker[disabled="true"],
-.toolbox-top .toolbarbutton-1[disabled="true"] {
-  opacity: .8 !important;
-  color: #676f74 !important;
+#ab-toolbox .toolbarbutton-menubutton-button[disabled="true"],
+#ab-toolbox .toolbarbutton-menubutton-dropmarker[disabled="true"],
+#ab-toolbox .toolbarbutton-1[disabled="true"] {
+  opacity: .5 !important;
+  color: #F3F3F5 !important;
 }
 
 .mail-toolbox .toolbarbutton-menubutton-button[disabled="true"] > .toolbarbutton-icon,
 .mail-toolbox .toolbarbutton-1[disabled="true"] > .toolbarbutton-icon,
-.toolbox-top .toolbarbutton-menubutton-button[disabled="true"] > .toolbarbutton-icon,
-.toolbox-top .toolbarbutton-1[disabled="true"] > .toolbarbutton-icon {
+#ab-toolbox .toolbarbutton-menubutton-button[disabled="true"] > .toolbarbutton-icon,
+#ab-toolbox .toolbarbutton-1[disabled="true"] > .toolbarbutton-icon {
   opacity: .5 !important;
-  color: #676f74 !important;
+  color: #F3F3F5 !important;
 }
 
 #tabbar-toolbar > .toolbarbutton-1:not([disabled="true"]):not(:active):hover,
 .mail-toolbox .toolbarbutton-menubutton-button:not([disabled="true"]):not(:active):hover,
 .mail-toolbox toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
 .mail-toolbox .toolbarbutton-1:not([disabled="true"]):not([checked="true"]):not(:active):hover,
-.toolbox-top .toolbarbutton-menubutton-button:not([disabled="true"]):not(:active):hover,
-.toolbox-top toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
-.toolbox-top .toolbarbutton-1:not([disabled="true"]):not([checked="true"]):not(:active):hover {
+#ab-toolbox .toolbarbutton-menubutton-button:not([disabled="true"]):not(:active):hover,
+#ab-toolbox toolbarbutton[type="menu-button"]:not([open="true"]):not(:active):hover > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
+#ab-toolbox .toolbarbutton-1:not([disabled="true"]):not([checked="true"]):not(:active):hover {
   background-color: rgba(0,0,0,0) !important;
   border-color: #1e1f20 !important;
   border-bottom-color: #040404 !important;
@@ -245,12 +245,12 @@ tab {
 .mail-toolbox .toolbarbutton-1:not([disabled="true"]):hover:active,
 .mail-toolbox .toolbarbutton-1[checked="true"],
 .mail-toolbox .toolbarbutton-1[open="true"],
-.toolbox-top .toolbarbutton-menubutton-button:not([disabled="true"]):hover:active,
-.toolbox-top toolbarbutton[type="menu-button"]:hover:active > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
-.toolbox-top toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker,
-.toolbox-top .toolbarbutton-1:not([disabled="true"]):hover:active,
-.toolbox-top .toolbarbutton-1[checked="true"],
-.toolbox-top .toolbarbutton-1[open="true"] {
+#ab-toolbox .toolbarbutton-menubutton-button:not([disabled="true"]):hover:active,
+#ab-toolbox toolbarbutton[type="menu-button"]:hover:active > .toolbarbutton-menubutton-dropmarker:not([disabled="true"]),
+#ab-toolbox toolbarbutton[type="menu-button"][open="true"] > .toolbarbutton-menubutton-dropmarker,
+#ab-toolbox .toolbarbutton-1:not([disabled="true"]):hover:active,
+#ab-toolbox .toolbarbutton-1[checked="true"],
+#ab-toolbox .toolbarbutton-1[open="true"] {
   background-color: rgba(0,0,0,0) !important;
   border-color: #0d0d0d !important;
   border-left-color: #1b1b1b !important;
@@ -289,7 +289,7 @@ tab {
 }
 
 .mail-toolbox toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text,
-.toolbox-top toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
+#ab-toolbox toolbarbutton:hover:not([disabled]):not(:-moz-lwtheme) .toolbarbutton-text {
   color: #F3F3F5 !important;
   text-shadow: 0 -1px rgba(0,0,0,0.7) !important;
 }
@@ -301,7 +301,7 @@ tab {
 
 /************************* Text Input Boxes ***************************/
 .mail-toolbox textbox,
-.toolbox-top textbox {
+#ab-toolbox textbox {
   -moz-appearance: none !important;
   border-width: 1px !important;
   border-radius: 2px !important;
@@ -314,7 +314,7 @@ tab {
 }
 
 .mail-toolbox textbox[focused="true"],
-.toolbox-top textbox[focused="true"] {
+#ab-toolbox textbox[focused="true"] {
   -moz-appearance: none !important;
   border-width: 1px !important;
   border-radius: 2px !important;
@@ -327,7 +327,7 @@ tab {
 }
 
 .mail-toolbox textbox[disabled="true"],
-.toolbox-top textbox[disabled="true"] {
+#ab-toolbox textbox[disabled="true"] {
   border-image: url("images/generic-border-dark.png") 2 2 3 2 / 2px 2px 3px 2px stretch !important;
   color: #898995 !important;
   background: #434446 !important;
