@@ -54,7 +54,10 @@ gsettings set org.gnome.shell.extensions.user-theme name "Vertex-Gnome-Shell"
 
 Instead of applying the theme with the gsettings commands you can select them in Gnome Tweak Tool like any other theme.
 
-To install the Chrome/Chromium theme open the "Chrome" folder in the extracted archive and drag and drop the Vertex.crx or Vertex-light.crx file into the Chrome/Chromium window. The source of the Chrome themes is located in the source "Chrome/source" folder 
+To install the Chrome/Chromium theme open the "Chrome" folder in the extracted archive and drag and drop the Vertex.crx or Vertex-light.crx file into the Chrome/Chromium window. The source of the Chrome themes is located in the source "Chrome/source" folder.
+
+To install the Firefox theme copy the Firefox/Vertex/chrome folder to ~/.mozilla/firefox/yourprofile.default/ and restart Firefox.
+Themes for the variants Vertex-Light and Vertex-Dark are in the Firefox folder, too. Installation is the same.
 
 Also included is an alternative metacity theme with hidden buttons when maximized. Installation is the same as above
 
