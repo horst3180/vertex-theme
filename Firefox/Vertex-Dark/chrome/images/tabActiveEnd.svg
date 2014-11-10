@@ -35,12 +35,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="740"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
      id="namedview16"
      showgrid="true"
      inkscape:zoom="10.766271"
-     inkscape:cx="13.654166"
+     inkscape:cx="13.932814"
      inkscape:cy="10.116812"
      inkscape:window-x="0"
      inkscape:window-y="23"
@@ -95,10 +95,10 @@
      x="-25"
      y="0"
      ry="3"
-     transform="matrix(0.98784195,0,0,0.86090878,8.963526,4.7191259)" />
+     transform="matrix(0.98784195,0,0,0.86090878,-3.0364741,4.7191259)" />
   <g
      id="g3863"
-     transform="translate(-27,1)">
+     transform="translate(-39,1)">
     <rect
        ry="2"
        y="1"

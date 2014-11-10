@@ -4,9 +4,7 @@
 /**************************** Tab Container ***************************/
 #tabbrowser-tabs,
 #TabsToolbar .toolbarbutton-1,
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button,
-.tabbrowser-arrowscrollbox > .scrollbutton-up,
-.tabbrowser-arrowscrollbox > .scrollbutton-down {
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button {
   box-shadow: inset 0 -5px rgba(0,0,0,0.02),
               inset 0 -4px rgba(0,0,0,0.025),
               inset 0 -3px rgba(0,0,0,0.03), 
@@ -15,21 +13,8 @@
   background: -moz-linear-gradient(#454749, #37393B) !important;
 }
 
-.tab-background,
-.tabs-newtab-button {
-  -moz-appearance: none !important;
-  -moz-margin-end: -2px!important;
-  -moz-margin-start: -2px!important;
-  border-width: 0 !important;
-}
-
-
 .toolbar-primary {
   background-color: #2A2A2B !important;
-}
-
-.tabs-newtab-button {
-  width: 36px !important;
 }
 
 .tabs-newtab-button > .toolbarbutton-icon,
@@ -40,9 +25,7 @@
 }
 
 #TabsToolbar .toolbarbutton-1,
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button,
-.tabbrowser-arrowscrollbox > .scrollbutton-up,
-.tabbrowser-arrowscrollbox > .scrollbutton-down {
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button {
   -moz-appearance: none !important;
   border-style: none !important;
   padding: 0 3px !important;
@@ -104,7 +87,7 @@
     list-style-image: url("images/tab-close.svg") !important;
 }
 
-/* Tab background */
+/*Selected tab background */
 .tabbrowser-tab[selected="true"],
 .tabbrowser-tab[selected="true"]:hover,
 .tabbrowser-tab:not([selected="true"]):hover {
@@ -117,11 +100,8 @@
   background-color: rgba(0,0,0,0) !important;
   color: #A7A7A8 !important;
   text-shadow: 0 -1px rgba(0,0,0,0.7) !important;
-  -moz-margin-end: 0 !important;
-  -moz-margin-start: 0 !important;
 }
 
-/*Active tab */
 .tab-background-middle[selected="true"] {
   background-color: rgba(0,0,0,0) !important;
 }
@@ -154,39 +134,31 @@
   background-image: none !important;
 }
 
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
-.tabs-newtab-button:hover {
-  background-color: rgba(255,255,255,0.0) !important;
-  background-image: linear-gradient(to bottom,
-                                      rgba(255,255,255,0),
-                                      rgba(255,255,255,0.1)
-                                      ) !important;
-  background-repeat: repeat-x !important;
-  border-left: 2px solid !important;
-  border-right: 2px solid !important;
-  border-image: url("images/tab-separator-hover.svg") 0 2 1 2 / 0px 2px 1px 2px stretch !important;
-  -moz-margin-end: -2px !important;
-  -moz-margin-start: -2px !important;
-}
-
-.tabbrowser-tab[pinned]:hover > .tab-stack > .tab-background:not([selected=true]) {
-  -moz-margin-end: -6px !important;
-  -moz-margin-start: -2px !important;
-}
-
-.tabs-newtab-button:hover {
-  -moz-margin-end: -2px !important;
-  -moz-margin-start: -2px !important;
-}
-
+/* Background tab separators (2px wide).
+   Also show separators beside the selected tab when dragging it. */
 #tabbrowser-tabs[movingtab] > .tabbrowser-tab[beforeselected]:not([last-visible-tab])::after,
 .tabbrowser-tab:not([selected]):not([afterselected-visible]):not([afterhovered]):not([first-visible-tab]):not(:hover)::before,
 #tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected]):not([beforehovered]):not(:hover)::after {
-  -moz-appearance: none !important;
-  background: none !important;
-  border-left: 0px solid !important;
-  border-right: 2px solid !important;
-  border-image: url("images/tab-separator.svg") 0 2 0 0 / 0px 2px 0px 0px stretch !important;
+  -moz-margin-start: -1px !important;
+  -moz-margin-end: -1px !important;
+  background-image: url(images/tab-separator.svg) !important;
+  background-position: left bottom 1px !important;
+  background-repeat: no-repeat !important;
+  background-size: 2px 100% !important;
+  content: "" !important;
+  display: -moz-box !important;
+  width: 2px !important;
+}
+
+/* new tab button border and gradient on hover */
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
+.tabs-newtab-button:hover {
+  background-image: url(images/tab-start-hover.svg),
+                    url(images/tab-middle-hover.svg),
+                    url(images/tab-end-hover.svg) !important;
+  background-position: left bottom, 30px bottom, right bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: 30px 100%, calc(100% - (2 * 30px)) 100%, 30px 100% !important;
 }
 
 /************************* Text Input Boxes ***************************/
@@ -284,8 +256,6 @@ toolbarbutton.bookmark-item {
 /*hover*/
 #TabsToolbar .toolbarbutton-1:not([disabled]):hover > .toolbarbutton-icon,
 #TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled]):hover > .toolbarbutton-icon,
-.tabbrowser-arrowscrollbox > .scrollbutton-up:not([disabled]):hover > .toolbarbutton-icon,
-.tabbrowser-arrowscrollbox > .scrollbutton-down:not([disabled]):hover > .toolbarbutton-icon,
 #nav-bar #forward-button:hover > .toolbarbutton-icon,
 toolbarbutton.bookmark-item:hover,
 #nav-bar .toolbarbutton-1:not([disabled]):-moz-any(:hover,[open]) > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
@@ -328,8 +298,6 @@ toolbarbutton.bookmark-item:hover,
 #nav-bar .toolbarbutton-1[checked]:not(:active):hover > .toolbarbutton-icon,
 #TabsToolbar .toolbarbutton-1:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
 #TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
-.tabbrowser-arrowscrollbox > .scrollbutton-up:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
-.tabbrowser-arrowscrollbox > .scrollbutton-down:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
 #nav-bar #forward-button:not([disabled]):-moz-any([open],[checked],:hover:active) > .toolbarbutton-icon,
 toolbarbutton.bookmark-item:hover:active:not([disabled="true"]),
 toolbarbutton.bookmark-item[open="true"],
