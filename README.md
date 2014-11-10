@@ -4,7 +4,7 @@ Chrome/Chromium and Frefox themes are included.
 
 Requirements: gnome-themes-standard package for the GTK3 theme. Murrine and pixbuf engines for the GTK2 theme.
 
-If you install from git, run the "build.sh" sript first to build all variants of the theme. This will also give you a zip file with everything included.
+If you install from git, run the "build.sh" script first to build all variants of the theme. This will also give you a zip file with everything included.
 For installation instructions please read the included README in the zip archive. If you have any issues, please read the Troubleshooting section in the README.
 
 Bug reports are appreciated.
