@@ -120,8 +120,6 @@
   background-color: rgba(0,0,0,0) !important;
   color: #818182 !important;
   text-shadow: 0 1px rgba(255,255,255,0.95) !important;
-  -moz-margin-end: 0 !important;
-  -moz-margin-start: 0 !important;
 }
 
 /*Active tab */
