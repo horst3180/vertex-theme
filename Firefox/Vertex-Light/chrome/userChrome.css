@@ -55,12 +55,12 @@
   background-image: none !important;
   padding: 3px !important;
   padding-top: 2px !important;
-  box-shadow: inset 0 1px rgba(255,255,255,0.5),
-              inset 0 -1px #b9b9b9 !important;
+  box-shadow: inset 0 1px #b9b9b9,
+              inset 0 2px rgba(255,255,255,0.5) !important;
 }
 
-#navigator-toolbox {
-  margin: -1px !important;
+#navigator-toolbox:after {
+  background-color: #b9b9b9 !important;
 }
 
 /**************************** Navbar ***************************/
@@ -68,8 +68,7 @@
   -moz-appearance: none !important;
   border-top: none !important;
   box-shadow: inset 0 1px #b9b9b9,
-              inset 0 2px rgba(255,255,255,1.0),
-              inset 0 -1px #b9b9b9 !important;
+              inset 0 2px rgba(255,255,255,1.0) !important;
 
   background: -moz-linear-gradient(#EFF0F1, #DDDEE0) !important;
   color: #3c3c3c !important;
