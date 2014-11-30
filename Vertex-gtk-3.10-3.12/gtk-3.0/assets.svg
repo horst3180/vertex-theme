@@ -19,6 +19,17 @@
   <defs
      id="defs4114">
     <linearGradient
+       id="linearGradient7630">
+      <stop
+         style="stop-color:#6b6b6d;stop-opacity:1;"
+         offset="0"
+         id="stop7632" />
+      <stop
+         style="stop-color:#5b5b5d;stop-opacity:1;"
+         offset="1"
+         id="stop7634" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient7710">
       <stop
          id="stop7712"
@@ -1525,19 +1536,8 @@
        y1="17"
        x1="9"
        id="linearGradient3788-8"
-       xlink:href="#linearGradient3782-96"
+       xlink:href="#linearGradient7630"
        inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient3782-96">
-      <stop
-         id="stop3784-8"
-         offset="0"
-         style="stop-color:#7f7f81;stop-opacity:1;" />
-      <stop
-         id="stop3786-9"
-         offset="1"
-         style="stop-color:#6f6f71;stop-opacity:1;" />
-    </linearGradient>
     <linearGradient
        gradientTransform="matrix(1.0769231,0,0,1,-1.1538462,1020.3622)"
        gradientUnits="userSpaceOnUse"
@@ -5691,19 +5691,8 @@
        y1="17"
        x1="9"
        id="linearGradient3788-8-9"
-       xlink:href="#linearGradient3782-96-2"
+       xlink:href="#linearGradient7630"
        inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient3782-96-2">
-      <stop
-         id="stop3784-8-2"
-         offset="0"
-         style="stop-color:#7f7f81;stop-opacity:1;" />
-      <stop
-         id="stop3786-9-1"
-         offset="1"
-         style="stop-color:#6f6f71;stop-opacity:1;" />
-    </linearGradient>
     <linearGradient
        gradientUnits="userSpaceOnUse"
        y2="17"
@@ -7432,9 +7421,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="288.20467"
-     inkscape:cy="173.45487"
+     inkscape:zoom="1"
+     inkscape:cx="150.12268"
+     inkscape:cy="343.73867"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -7554,7 +7543,7 @@
            rx="2"
            ry="1" />
         <rect
-           style="opacity:0.4;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="opacity:0.25;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
            id="rect2991-1-2"
            width="4"
            height="20.000017"
@@ -11966,7 +11955,7 @@
          id="35"
          transform="translate(14,-140.99997)">
         <rect
-           style="fill:#818183;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:#6d6d6f;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
            id="rect2991-125"
            width="4"
            height="20.000017"
@@ -11975,7 +11964,7 @@
            rx="2"
            ry="2.0000174" />
         <rect
-           style="fill:url(#linearGradient3788-8);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:url(#linearGradient3788-8);fill-opacity:1.0;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
            id="rect3780-52"
            width="2"
            height="18"
@@ -16085,7 +16074,7 @@
            rx="2"
            ry="1" />
         <rect
-           style="opacity:0.4;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="opacity:0.25;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
            id="rect2991-1-2-1"
            width="4"
            height="20.000017"
@@ -19858,7 +19847,7 @@
          id="35-8"
          transform="translate(14,-140.99997)">
         <rect
-           style="fill:#818183;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:#6d6d6f;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
            id="rect2991-125-4"
            width="4"
            height="20.000017"
@@ -19867,7 +19856,7 @@
            rx="2"
            ry="2.0000174" />
         <rect
-           style="fill:url(#linearGradient3788-8-9);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:url(#linearGradient3788-8-9);fill-opacity:1.0;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
            id="rect3780-52-1"
            width="2"
            height="18"

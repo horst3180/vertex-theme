@@ -150,8 +150,8 @@
 @define-color dark_button_active_gradient_color_a shade(@dark_button_gradient_color_b, 0.7);
 @define-color dark_button_active_gradient_color_b shade(@dark_button_gradient_color_a, 0.7);
 
-@define-color dark_button_hover_gradient_color_a shade (@dark_button_gradient_color_a, 1.10);
-@define-color dark_button_hover_gradient_color_b shade (@dark_button_gradient_color_b, 1.02);
+@define-color dark_button_hover_gradient_color_a shade (@dark_button_gradient_color_a, 1.2);
+@define-color dark_button_hover_gradient_color_b shade (@dark_button_gradient_color_b, 1.1);
 
 @define-color dark_notebook_tab_gradient_a @dark_wm_bg_b;
 @define-color dark_notebook_tab_gradient_b shade(@dark_wm_bg_b, 0.9);
