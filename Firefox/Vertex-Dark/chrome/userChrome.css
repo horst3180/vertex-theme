@@ -13,6 +13,18 @@
   background: -moz-linear-gradient(#454749, #37393B) !important;
 }
 
+#private-browsing-indicator {
+  background:  url("images/privatebrowsing-mask.png"),
+              -moz-linear-gradient(#454749, #37393B) !important;
+  box-shadow: inset 0 -5px rgba(0,0,0,0.02),
+              inset 0 -4px rgba(0,0,0,0.025),
+              inset 0 -3px rgba(0,0,0,0.03), 
+              inset 0 -2px rgba(0,0,0,0.035), 
+              inset 0 -1px rgba(0,0,0,0.05) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
 .toolbar-primary {
   background-color: #2A2A2B !important;
 }
@@ -408,4 +420,35 @@ dropmarker[disabled="true"] {
   height: 4px!important;
   margin: 4px !important;
   margin-left: 7px !important;
+}
+
+/*************************** Search Popup *******************************/
+.search-panel-current-engine {
+  border-bottom: 1px solid #151516 !important;
+}
+
+.search-panel-header {
+  background-color: #353638 !important;
+  border-top: 1px solid #151516 !important;
+  margin: 0 1px;
+  padding: 3px 5px;
+  color: #F3F3F5 !important;
+}
+
+.search-panel-input-value {
+  color: white !important;
+}
+
+.searchbar-engine-one-off-item {
+  border-right: 1px solid #202021 !important;
+  background-image: none !important;
+}
+
+.addengine-item:first-of-type,
+.search-panel-one-offs {
+  border-top: 1px solid #151516 !important;
+}
+
+.searchbar-engine-one-off-item:not(.last-row) {
+  border-bottom: 1px solid #202021 !important;
 }

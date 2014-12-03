@@ -1,3 +1,6 @@
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
 /************ Fixes Color of Input/Entry Boxes within Web-Pages **************/
 input,
 textarea,
@@ -78,5 +81,160 @@ margin: 8px;
   border: none !important;
   color: #F3F3F5 !important;
   background-color: #313133 !important;
+}
+
+/************ about pages **************/
+@-moz-document url("about:privatebrowsing") {
+
+  html|body {
+    background-color: #2b2b2c !important;
+    color: #F3F3F5 !important;
+  }
+
+}
+
+@-moz-document url("about:newtab") {
+
+  :root {
+    background-color: #2b2b2c !important;
+  }
+
+  /* SCROLLBOX */
+  #newtab-scrollbox:not([page-disabled]) {
+    color: #F3F3F5 !important;
+    background-color: #2b2b2c !important;
+  }
+
+  /* UNDO */
+  #newtab-undo-container {
+    border-color: #151516 !important;
+    background-color: rgba(255,255,255,.2) !important;
+    color: #F3F3F5 !important;
+  }
+
+  .newtab-undo-button {
+    color: #FF5317 !important;
+  }
+
+  #newtab-intro-panel h1 {
+    color: #B2BDC4 !important;
+  }
+
+  /* SITES */
+  .newtab-site {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+  }
+
+  .newtab-cell:not([ignorehover]) > .newtab-site:hover,
+  .newtab-site[dragged] {
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    box-shadow: 0 0 6px 2px #4cb1ff !important;
+    margin: -1px !important;
+  }
+
+  /* TITLES */
+  #newtab-intro-what,
+  .newtab-sponsored,
+  .newtab-title {
+    color: #B9B9BA !important;
+  }
+
+  .newtab-site:hover .newtab-title {
+    color: #F3F3F5 !important;
+  }
+
+  /* SEARCH */
+  #newtab-search-logo[active],
+  #newtab-search-logo:hover {
+    background-color: #444547 !important;
+    border: 1px solid rgba(0, 0, 0, 0.5) !important;
+  }
+
+  #newtab-search-text {
+    color: #F3F3F5 !important;
+    background: #232324 padding-box !important;
+    border: 1px solid #171717 !important;
+    border-top-color: #0f0f0f !important;
+    transition: none !important;
+    box-shadow: 0 1px rgba(255,255,255,0.1),
+                inset 0 1px rgba(0,0,0,0.1) !important;
+  }
+
+  #newtab-search-text:focus,
+  #newtab-search-text[autofocus] {
+    border-color: #3a6cce !important;
+  }
+
+  #newtab-search-submit {
+    background-image: linear-gradient(to bottom,
+                                        #4f5154,
+                                        #353537
+                                        ) !important;
+    border: 1px solid #171717 !important;
+    border-top-color: #0f0f0f !important;
+    box-shadow: 0 1px rgba(255,255,255,0.1),
+                inset 0 1px rgba(255,255,255,0.15) !important;
+  }
+
+  #newtab-search-text:focus + #newtab-search-submit,
+  #newtab-search-text + #newtab-search-submit:hover,
+  #newtab-search-text[autofocus] + #newtab-search-submit {
+    border-color: #59b5fc #45a3e7 #3294d5 !important;
+  }
+
+  #newtab-search-text:focus + #newtab-search-submit,
+  #newtab-search-text[autofocus] + #newtab-search-submit {
+    background-image: linear-gradient(#4cb1ff, #1793e5) !important;
+    box-shadow: 0 1px 0 hsla(0,0%,100%,.2) inset,
+                0 0 0 1px hsla(0,0%,100%,.1) inset,
+                0 1px 0 hsla(210,54%,20%,.03) !important;
+  }
+
+  #newtab-search-text + #newtab-search-submit:hover {
+    background-image: linear-gradient(#66bdff, #0d9eff) !important;
+    box-shadow: 0 1px 0 hsla(0,0%,100%,.2) inset,
+                0 0 0 1px hsla(0,0%,100%,.1) inset,
+                0 1px 0 hsla(210,54%,20%,.03),
+                0 0 4px hsla(206,100%,20%,.2) !important;
+  }
+
+  #newtab-search-text + #newtab-search-submit:hover:active {
+    box-shadow: 0 1px 1px hsla(211,79%,6%,.1) inset,
+                0 0 1px hsla(211,79%,6%,.2) inset !important;
+  }
+
+  #newtab-customize-panel .panel-arrowcontent,
+  #newtab-search-panel .panel-arrowcontent {
+    background: #353638 !important;
+  }
+
+  .newtab-customize-panel-item:not(:last-child),
+  .newtab-search-panel-engine:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  }
+
+  .newtab-customize-panel-item > label,
+  .newtab-search-panel-engine > label {
+    color: #F3F3F5 !important;
+  }
+
+  .searchSuggestionTable {
+    background-color: #1E1E1F !important;
+    border-color: #1a1a1a !important;
+    box-shadow: none !important;
+  }
+
+  .searchSuggestionRow.formHistory + .searchSuggestionRow.remote > td {
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
+  }
+
+}
+
+@-moz-document url("about:blank") {
+
+  * {
+    background-color: #2b2b2c;
+  }
+
 }
 
