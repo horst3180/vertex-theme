@@ -481,20 +481,8 @@ GtkLabel.pin-label {
 }*/
 
 /* Totem */
-TotemMainToolbar.header-bar {
-	border-width: 0;
-}
-
-TotemGrilo.vertical .search-bar {
-	border-width: 1px 0 0 0;
-}
-
-GtkApplicationWindow.background GtkStack GtkVBox.vertical GtkOverlay GtkRevealer.top {
-	background-color: @borders;
-}
-
 TotemGrilo.vertical GdMainView.frame {
-  border-width: 1px 0 0 0;
+  border-width: 0;
 }
 
 
