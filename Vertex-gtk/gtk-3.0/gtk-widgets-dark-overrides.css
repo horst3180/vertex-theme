@@ -99,6 +99,27 @@ GtkPopover {
     box-shadow: 0 2px 8px 3px alpha(@wm_shadow, 0.4);
 }
 */
+.popover > .list, 
+.popover > .view, 
+.popover > .toolbar .popover.osd > .toolbar, 
+.popover > .inline-toolbar .popover.osd > .toolbar, 
+.popover > .search-bar .popover.osd > .toolbar, 
+.popover > .location-bar .popover.osd > .toolbar,
+.popover > .toolbar .popover.osd > .inline-toolbar, 
+.popover > .inline-toolbar .popover.osd > .inline-toolbar, 
+.popover > .search-bar .popover.osd > .inline-toolbar, 
+.popover > .location-bar .popover.osd > .inline-toolbar,
+.popover > .toolbar .popover.osd > .search-bar, 
+.popover > .inline-toolbar .popover.osd > .search-bar, 
+.popover > .search-bar .popover.osd > .search-bar,
+.popover > .location-bar .popover.osd > .search-bar,
+.popover > .toolbar .popover.osd > .location-bar,
+.popover > .inline-toolbar .popover.osd > .location-bar, 
+.popover > .search-bar .popover.osd > .location-bar, 
+.popover > .location-bar .popover.osd > .location-bar {
+  border-style: none;
+  background-color: transparent; }
+
 /*****************
  * Color Chooser *
  *****************/
