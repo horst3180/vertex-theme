@@ -911,6 +911,10 @@ GtkTreeView.view {
         color: @selected_fg_color; }
     GtkTreeView.view.expander:checked {
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+    GtkTreeView.view.dnd {
+      border-style: solid none;
+      border-width: 1px;
+      border-color: @theme_selected_bg_color; }
 
 GtkIconView.cell:selected,
 GtkIconView.cell:selected:focus {
