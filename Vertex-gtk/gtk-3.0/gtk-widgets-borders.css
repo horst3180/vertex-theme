@@ -149,7 +149,7 @@
   border-color: transparent;
 }
 
-.button:focus{ 
+.button:focus { 
   border-image: -gtk-scaled(url("borders/button-border-default.png"),url("borders/button-border-default@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
@@ -245,7 +245,8 @@
 }
 
 .titlebar.selection-mode .selection-menu, .header-bar.selection-mode .selection-menu {
-  border-image: none; }
+  border-image: none;
+}
 
 /*Linked Buttons*/
 /*Middle*/

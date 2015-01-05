@@ -244,8 +244,10 @@
   border-image: none;
 }
 
-.titlebar.selection-mode .selection-menu, .header-bar.selection-mode .selection-menu {
-      border-image: none; }
+.titlebar.selection-mode .selection-menu,
+.header-bar.selection-mode .selection-menu {
+  border-image: none;
+}
 
 /*Linked Buttons*/
 /*Middle*/
