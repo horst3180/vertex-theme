@@ -1715,7 +1715,7 @@ GtkCalendar {
     GtkCalendar.button:hover, .header-bar GtkCalendar.button.titlebutton:hover,
     .titlebar GtkCalendar.button.titlebutton:hover {
       color: @theme_fg_color; }
-  GtkCalendar.highlight, GtkCalendar.highlight:backdrop {
+  GtkCalendar:inconsistent, GtkCalendar.highlight {
     color: alpha(currentColor,0.55); }
 
 /***********
