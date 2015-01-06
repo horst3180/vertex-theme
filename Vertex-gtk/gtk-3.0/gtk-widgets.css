@@ -1007,7 +1007,10 @@ GtkTreeView.view.trough:selected {
 .menu {
   margin: 4px;
   padding: 0px;
-  background-color: @theme_base_color; }
+  background-color: @theme_base_color;
+  border: 1px solid @borders; }
+  .csd .menu {
+    border: none; }
   .menu .menuitem {
     text-shadow: none;
     icon-shadow: none;
