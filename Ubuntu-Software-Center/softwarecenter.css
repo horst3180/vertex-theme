@@ -1,0 +1,88 @@
+/* 
+   do not use text-shadow until bugzilla.gnome.org bug #686209 is 
+   fixed - its leaking memory
+*/
+
+#featured-star {
+    border-color: #F89516;  /* yellow */
+    color: #FFC51D;         /* orange */
+}
+
+.grid-lines {
+    border-color: @borders;
+}
+
+#screenshot-preview {
+    border-color: @borders;
+    color: @theme_fg_color;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+.backforward-left-button {
+    border-radius: 3px 0 0 3px;
+}
+
+.backforward-right-button {
+    border-radius: 0 3px 3px 0;
+}
+
+.subtle,
+#subtle-label {
+    color: alpha(@theme_fg_color, 0.7); /* non-link text color */
+}
+
+.cellrenderer-button {
+    border-radius: 3px;
+}
+
+.cellrenderer-avgrating-label {
+}
+
+.cellrenderer-avgrating-label:selected {
+}
+
+.more-link {
+    -GtkButton-inner-border: 0;
+    -GtkButton-default-border: 0;
+    -GtkButton-default-outside-border: 0;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    border-color: @borders;
+}
+
+.frame-header-title {
+    /* intentionally left blank */
+}
+
+.item-view-separator {
+    border-color: @borders;
+    border-width: 1px;
+}
+
+.light-aubergine-bg {
+    background-color: @theme_base_color;
+}
+
+.super-light-aubergine-bg {
+    background-color: @theme_base_color;
+    border-color: @borders;
+}
+
+GtkViewport {
+    background-color: @theme_base_color;
+    border-width: 0;
+    padding: 0;
+}
+
+GtkTreeView {
+    background-color: @theme_base_color;
+}
+
+GtkTreeView:selected {
+    background-color: @selected_bg_color;
+}
+
+#toolbar-popup {
+    padding: 0;
+}
