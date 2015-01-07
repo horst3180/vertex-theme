@@ -1,148 +1,7 @@
-style "theme-panel" {
+style "panel" {
 
-  xthickness = 4 # The spacing (padding) inside and between applets. Add a lower value for a more compact look.
+  xthickness = 0
   ythickness = 0
-
-  #bg_pixmap[NORMAL] = "/Panel/panel-bg.png" # Disable for normal panel backgrounds.
-
-	fg[NORMAL] = "#F3F3F5"
-	fg[PRELIGHT] = "#F3F3F5"
-	fg[ACTIVE] = "#F3F3F5"
-	text[NORMAL] = "#F3F3F5"
-	text[PRELIGHT] = "#F3F3F5"
-	text[ACTIVE] = "#F3F3F5"
-
-	bg[NORMAL]	= "#3C3E40"
-	
-  engine "pixmap" {
-
-    image {
-      function	= BOX
-      recolorable	= TRUE
-      state		= NORMAL
-    }
-
-    image {
-      function = BOX
-      recolorable = TRUE
-      state = PRELIGHT
-      file = "Panel/panel-button-hover.png"
-      border = { 4, 4, 1, 1 }
-      stretch = TRUE
-    }
-
-    image {
-      function = BOX
-      recolorable = TRUE
-      state = ACTIVE
-      file = "Panel/panel-button-active.png"
-      border = { 4, 4, 1, 1 }
-      stretch = TRUE
-    }
-
-    image {
-      function = BOX
-      recolorable = TRUE
-      state = SELECTED
-      file = "Panel/panel-button-active.png"
-      border = { 4, 4, 1, 1 }
-      stretch = TRUE
-    }
-
-    image {
-      function = BOX
-      recolorable = TRUE
-      state = INSENSITIVE
-    }
-
-    image {
-      function = ARROW
-      recolorable = TRUE
-      arrow_direction = DOWN
-    }
-  }
-}
-
-style "xfce-panel" {
-
-  xthickness = 4 # The spacing (padding) inside and between applets. Add a lower value for a more compact look.
-  ythickness = 0
-
-  #bg_pixmap[NORMAL] = "/Panel/xfce-panel-bg.png" # Disable for normal panel backgrounds.
-
-	fg[NORMAL] = "#F3F3F5"
-	fg[PRELIGHT] = "#F3F3F5"
-	fg[ACTIVE] = "#F3F3F5"
-	text[NORMAL] = "#F3F3F5"
-	text[PRELIGHT] = "#F3F3F5"
-	text[ACTIVE] = "#F3F3F5"
-
-	bg[NORMAL]	= "#3C3E40"
-	
-  engine "pixmap" {
-
-    image {
-      function	= BOX
-      recolorable	= TRUE
-      state		= NORMAL
-    }
-
-    image {
-      function = BOX
-      recolorable = TRUE
-      state = PRELIGHT
-      file = "Panel/panel-button-hover.png"
-      border = { 4, 4, 1, 1 }
-      stretch = TRUE
-    }
-
-    image {
-      function = BOX
-      recolorable = TRUE
-      state = ACTIVE
-      file = "Panel/panel-button-active.png"
-      border = { 4, 4, 1, 1 }
-      stretch = TRUE
-    }
-
-    image {
-      function = BOX
-      recolorable = TRUE
-      state = SELECTED
-      file = "Panel/panel-button-active.png"
-      border = { 4, 4, 1, 1 }
-      stretch = TRUE
-    }
-
-    image {
-      function = BOX
-      recolorable = TRUE
-      state = INSENSITIVE
-    }
-
-    image {
-      function = ARROW
-      recolorable = TRUE
-      arrow_direction = DOWN
-    }
-  }
-}
-
-
-style "theme-panel-light" {
-
-  xthickness = 1
-  ythickness = 0
-
-  fg[NORMAL] = @fg_color
-
-  engine "murrine" {
-    textstyle = 0
-    roundness = 0
-  }
-}
-
-style "theme-panel-text" {
 
   fg[NORMAL] = "#F3F3F5"
   fg[PRELIGHT] = "#F3F3F5"
@@ -150,34 +9,236 @@ style "theme-panel-text" {
   text[NORMAL] = "#F3F3F5"
   text[PRELIGHT] = "#F3F3F5"
   text[ACTIVE] = "#F3F3F5"
-
+  bg[NORMAL] = "#3C3E40"
 }
 
-style "theme-main-menu-text" = "theme-panel-text" {
+class	"PanelToplevel*"                        style "panel"
+class "*Mail*"                                style "panel"
+class "*notif*"                               style "panel"
+class "*Notif*"                               style "panel"
+class "*Tray*"                                style "panel"
+class "*tray*"                                style "panel"
+widget_class "*Mail*"                         style "panel"
+widget_class "*notif*"                        style "panel"
+widget_class "*Notif*"                        style "panel"
+widget_class "*Tray*"                         style "panel"
+widget_class "*tray*"                         style "panel"
+widget "*TrayIcon*"                           style "panel"
+widget_class "*BonoboDockItem"                style "panel"
+class "*BonoboDockItem"                       style "panel"
+class "*Panel*Applet*"                        style "panel"
+widget_class "*Panel*GtkToggleButton"         style "panel"
+widget_class "*Panel*GtkButton"               style "panel"
+widget_class "*.Panel*Button*GtkLabel"        style "panel"
+widget_class "*.Panel*GtkLabel"               style "panel"
+widget "*PanelWidget*"                        style "panel"
+widget "*PanelApplet*"                        style "panel"
+widget "*CPUFreq*Applet*"                     style "panel"
+class "PanelApp*"                             style "panel"
+widget_class "*computertemp*"                 style "panel"
+widget_class "*Applet*Tomboy*"                style "panel"
+widget_class "*Applet*Netstatus*"             style "panel"
+widget "*.tclock.*"                           style "panel"
+widget "*.taskbar.*"                          style "panel"
+widget_class "*GtkBgbox*"                     style "panel"
+widget_class "*Netstatus*"                    style "panel"
+widget_class "*Tomboy*Tray*"                  style "panel"
+widget "*fast-user-switch*"                   style "panel"
+widget_class "*PanelToplevel*"                style "panel"
+class "Xfce*Panel*"                           style "panel"
+widget_class "*Xfce*Panel*"                   style "panel"
+widget_class "*PanelApplet*"                  style "panel"
+widget_class "*PanelWidget*"                  style "panel"
+widget "*Xfce*Panel*"                         style "panel"
 
-  fg[PRELIGHT] = "#ffffff"
-  text[PRELIGHT] = "#ffffff"
+#############################################################
+#THIS MAKES THE APPLICATIONS PLACES SYSTEM MENU ON THE PANEL
+#USE PANEL STYLE
+#############################################################
+style "panelbar" {
 
-}
-
-style "theme-panel-handle" {
+  fg[NORMAL] = "#F3F3F5"
+  fg[ACTIVE] = "#F3F3F5"
+  fg[PRELIGHT] = "#F3F3F5"
+  fg[SELECTED] = "#F3F3F5"
 
   engine "pixmap" {
 
     image {
-      function = HANDLE
+      function = BOX
+      state = NORMAL
+      file = "Panel/panel-menubar.png"
+      border = { 3 , 3 , 3 , 3}
+      stretch = TRUE
     }
 
     image {
-      function = HANDLE
+      function = BOX
+      state = ACTIVE
+      file = "Panel/panel-bg.png"
+      border = { 2 , 2 , 2 , 2}
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      state = INSENSITIVE
+      file = "Panel/panel-bg.png"
+      border = { 2 , 2 , 2 , 2}
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      state = PRELIGHT
+      recolorable = TRUE
+      file = "Panel/menubar-item.png"
+      border = { 5 , 5 , 5 , 0}
+      stretch = TRUE
     }
   }
 }
 
+class "*Panel*MenuBar*"               style "panelbar"
+widget_class "*Panel*MenuBar*"        style "panelbar"
+widget_class "*Panel*MenuBar*Item*"   style:highest "panelbar"
+
+
+style "panelbuttons" { 
+
+  xthickness = 4
+  ythickness = 3
+	GtkWidget::focus_padding = 2
+
+  engine "pixmap" {
+
+    image {
+      function = BOX
+      recolorable	= TRUE
+      state = NORMAL
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = PRELIGHT
+      file = "Panel/panel-button-hover.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = ACTIVE
+      file = "Panel/panel-button-active.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = SELECTED
+      file = "Panel/panel-button-active.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = INSENSITIVE
+    }
+
+    image {
+      function = ARROW
+      recolorable = TRUE
+      arrow_direction = DOWN
+    }
+  }
+}
+
+widget "*tasklist*"                                 style "panelbuttons"
+widget_class "*Xfce*Panel*.GtkToggleButton"         style "panelbuttons"
+widget_class "*Xfce*NetkTasklist*GtkToggleButton"   style "panelbuttons"
+
+
+style "paneltogglebuttons" { 
+
+  xthickness = 2
+  ythickness = 2
+
+	engine "pixmap" {
+      
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = NORMAL
+    }
+		
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = PRELIGHT
+      file = "Panel/panel-button-hover.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = ACTIVE
+      file = "Panel/panel-button-active.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+		
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = ACTIVE
+      file = "Panel/panel-button-active.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = INSENSITIVE
+      file = "Panel/panel-bg.png"
+      border = { 2 , 2 , 2 , 2}
+      stretch = TRUE
+    } 
+
+    image {
+      function = BOX
+      recolorable = TRUE
+      state = ACTIVE
+      file = "Panel/panel-button-active.png"
+      border = { 4, 4, 1, 1 }
+      stretch = TRUE
+    }
+  }
+}
+
+widget_class "*PanelToplevel*Button"                  style "paneltogglebuttons"
+widget_class "*Panel*GtkToggleButton"                 style "paneltogglebuttons"
+widget_class "*Xfce*Panel*Button*"                    style "paneltogglebuttons"
+widget_class "*<XfceArrowButton>"                     style "paneltogglebuttons"
+widget_class "*<XfceActionsPlugin>*"                  style "paneltogglebuttons"
+widget_class "*XfcePanelPlugin.GtkButton"             style "paneltogglebuttons"
+widget "*dict*Applet*"                               style "paneltogglebuttons"
+widget_class "*Xfce*NetkTasklist*GtkToggleButton"     style "paneltogglebuttons"
+widget_class "*Tasklist*"                             style:highest "panelbuttons"
+
+
 style "switcher" = "gtk_color" {
 
-  xthickness = 3
-  ythickness = 3
+  xthickness = 0
+  ythickness = 0
 
   bg[NORMAL] = "#333336"
   bg[PRELIGHT] = "#636369"
@@ -187,78 +248,34 @@ style "switcher" = "gtk_color" {
   fg[PRELIGHT] = "#F3F3F5"
   fg[SELECTED] = "#F3F3F5"
 
+	engine "murrine" {}
+
 }
 
-widget_class "*Pager*"                  style "switcher"
+widget_class "*Pager*"            style:highest "switcher"
+widget_class "*Panel*Fish*"       style "switcher"
+widget "*dict*Applet*"           style "paneltogglebuttons"
 
-widget "*PanelWidget*"                  style "theme-panel"
-widget "*PanelApplet*"                  style "theme-panel"
-widget "*fast-user-switch*"             style "theme-panel"
-widget "*CPUFreq*Applet*"               style "theme-panel"
-widget "*indicator-applet*"             style "theme-panel"
-class "PanelApp*"                       style "theme-panel"
-class "*Panel*Applet*" 			            style "theme-panel"
-class "PanelToplevel*"                  style "theme-panel"
-widget_class "*PanelToplevel*"          style "theme-panel"
-class "*Mail*"                          style "theme-panel"
-widget_class "*Mail*"                   style "theme-panel"
-widget_class "*notif*"                  style "theme-panel"
-widget_class "*Notif*"                  style "theme-panel"
-widget_class "*Tray*"                   style "theme-panel" 
-widget_class "*tray*"                   style "theme-panel"
-widget_class "*computertemp*"           style "theme-panel"
-widget_class "*Applet*Tomboy*"          style "theme-panel"
-widget_class "*Applet*Netstatus*"       style "theme-panel"
-widget_class "*BonoboDockItem"          style "theme-panel"
-class "*BonoboDockItem"                 style "theme-panel"
-widget_class "*GtkBgbox*"	              style "theme-panel"
 
-# Fixes for tooltip text in some apps.
-widget_class "*Notif*Beagle*"           style "theme-panel-light"
-widget_class "*Notif*Brasero*"          style "theme-panel-light"
+style "panel-progressbar" {
 
-# XFCE panel theming.
-widget "*Xfce*Panel*"                   style "xfce-panel"
-class "*Xfce*Panel*"                    style "xfce-panel"
+  xthickness	= 1
+  ythickness	= 1
+	
+  #bg[NORMAL]  = "#ff0000"
+  bg[SELECTED]	=  @selected_bg_color
+  #bg[INSENSITIVE]	= "#171717"
+  bg[ACTIVE]	= "#272729"
 
-# lxpanel and fbpanel
-widget "*.tclock.*"                     style "theme-panel"
-widget "*.taskbar.*"                    style "theme-panel"
-widget_class "*GtkBgbox*"               style "theme-panel"
-
-# Make sure panel text color doesn't change
-widget_class "*Panel*MenuBar*"          style "theme-main-menu-text"
-widget_class "*Panel*<GtkMenuBar>*"     style "theme-main-menu-text"
-widget "*.clock-applet-button.*"        style "theme-panel-text"
-widget "*PanelApplet*"                  style "theme-panel-text"
-
-# Hide ugly handle
-class "PanelAppletFrame"                style:highest "theme-panel-handle"
-
-# The following removes the arrows from the panel
-
-style "panel-arrow-remove" {
-
-  engine "pixmap" {
-
-    image {
-      function = ARROW
-      recolorable = TRUE
-      overlay_file = "Panel/arrow-blank.png"
-      overlay_border = {2,2,2,2}
-      overlay_stretch = FALSE
-      arrow_direction = UP
-    }
-
-    image {
-      function = ARROW
-      recolorable = TRUE
-      overlay_file = "Panel/arrow-blank.png"
-      overlay_border = {2,2,2,2}
-      overlay_stretch = FALSE
-      arrow_direction = DOWN
-    }
+  engine "murrine" {
+    progressbarstyle = 0
+    glazestyle = 1
+    roundness = 1
+    reliefstyle = 0
+    trough_border_shades = {0.8, 0.8}
+    border_shades = { 0.4, 0.4 }
+    textstyle = 1	
   }
 }
 
-widget_class "*PanelToplevel*"          style "panel-arrow-remove"
+widget_class "*Panel*<GtkProgressBar>"      style "panel-progressbar"
