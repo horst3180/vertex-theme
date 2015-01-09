@@ -192,15 +192,13 @@ GtkFlowBox .grid-child {
   .linked.vertical .entry:last-child:insensitive, .linked.vertical > GtkComboBox.combobox-entry .entry:last-child:insensitive {
     box-shadow: none; }
   .entry.error {
-    color: @error_color; }
-    .entry.error:focus {
-      background-color: mix(@error_color, @entry_bg_color, 0.8); }
+    color: @error_color;
+    background-color: mix(@error_color, @entry_bg_color, 0.8); }
     .entry.error:selected, .entry.error:selected:focus {
       background-color: @error_color; }
   .entry.warning {
-    color: @warning_color; }
-    .entry.warning:focus {
-      background-color: mix(@warning_color, @entry_bg_color, 0.8); }
+    color: @warning_color;
+    background-color: mix(@warning_color, @entry_bg_color, 0.8); }
     .entry.warning:selected, .entry.warning:selected:focus {
       background-color: @warning_color; }
   .entry.image {

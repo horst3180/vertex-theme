@@ -103,6 +103,18 @@
       .primary-toolbar .linked .entry:last-child:dir(rtl):insensitive, 
       .primary-toolbar GtkComboBox.combobox-entry .entry:last-child:dir(rtl):insensitive {
         /*box-shadow: none; */}
+  .header-bar .entry.error {
+    color: @error_color;
+    background-color: mix(@error_color, @dark_entry_bg_color, 0.8); }
+    .header-bar .entry.error:selected,
+    .header-bar .entry.error:selected:focus {
+      background-color: @error_color; }
+  .header-bar .entry.warning {
+    color: @warning_color;
+    background-color: mix(@warning_color, @dark_entry_bg_color, 0.8); }
+    .header-bar .entry.warning:selected,
+    .header-bar .entry.warning:selected:focus {
+      background-color: @warning_color; }
   .header-bar .entry.image,
   .toolbar .entry.image,
   .primary-toolbar .entry.image {
