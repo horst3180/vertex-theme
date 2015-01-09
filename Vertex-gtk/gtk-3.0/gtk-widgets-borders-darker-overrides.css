@@ -70,7 +70,11 @@
 .primary-toolbar .button.flat:hover,
 .primary-toolbar .button:hover,
 .header-bar .button.titlebutton:hover,
-.titlebar .button.titlebutton:hover {
+.titlebar .button.titlebutton:hover,
+.header-bar.selection-mode .button.suggested-action,
+.header-bar.selection-mode .button.suggested-action:insensitive,
+.titlebar.selection-mode .button.suggested-action,
+.titlebar.selection-mode .button.suggested-action:insensitive {
   border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
@@ -110,6 +114,10 @@
 .primary-toolbar .button.flat:checked,
 .primary-toolbar .button:insensitive:checked,
 .primary-toolbar .button:insensitive.flat:checked,
+.header-bar .button.titlebutton:active,
+.titlebar .button.titlebutton:active,
+.header-bar .button.titlebutton:checked,
+.titlebar .button.titlebutton:checked,
 .header-bar .button.titlebutton:active,
 .titlebar .button.titlebutton:active,
 .header-bar .button.titlebutton:checked,

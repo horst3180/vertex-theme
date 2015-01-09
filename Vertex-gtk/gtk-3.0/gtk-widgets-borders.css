@@ -108,7 +108,11 @@
 .spinbutton.vertical .button,
 .primary-toolbar .button:hover,
 .header-bar .button.titlebutton:hover,
-.titlebar .button.titlebutton:hover {
+.titlebar .button.titlebutton:hover,
+.header-bar.selection-mode .button.suggested-action,
+.header-bar.selection-mode .button.suggested-action:insensitive,
+.titlebar.selection-mode .button.suggested-action,
+.titlebar.selection-mode .button.suggested-action:insensitive {
   border-image: -gtk-scaled(url("borders/button-border.png"),url("borders/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
@@ -196,7 +200,11 @@
 }
 
 .button.destructive-action,
-.button.destructive-action:insensitive {
+.button.destructive-action:insensitive,
+.header-bar.selection-mode .button.destructive-action,
+.header-bar.selection-mode .button.destructive-action:insensitive,
+.titlebar.selection-mode .button.destructive-action,
+.titlebar.selection-mode .button.destructive-action:insensitive {
   border-image: -gtk-scaled(url("borders/button-border-destructive.png"),url("borders/button-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
@@ -207,7 +215,15 @@
 .button.destructive-action:active,
 .button.destructive-action:checked,
 .button.destructive-action:active:hover,
-.button.destructive-action:checked:hover {
+.button.destructive-action:checked:hover,
+.header-bar.selection-mode .button.destructive-action:active,
+.header-bar.selection-mode .button.destructive-action:checked,
+.header-bar.selection-mode .button.destructive-action:active:hover,
+.header-bar.selection-mode .button.destructive-action:checked:hover,
+.titlebar.selection-mode .button.destructive-action:active,
+.titlebar.selection-mode .button.destructive-action:checked,
+.titlebar.selection-mode .button.destructive-action:active:hover,
+.titlebar.selection-mode .button.destructive-action:checked:hover {
   border-image: -gtk-scaled(url("borders/button-active-border-destructive.png"),url("borders/button-active-border-destructive@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;

@@ -834,7 +834,10 @@ GtkComboBox {
         text-shadow: 0 1px @highlight_shadow;
         icon-shadow: 0 1px @highlight_shadow; }
         .titlebar.selection-mode .button.suggested-action:hover, .header-bar.selection-mode .button.suggested-action:hover {
-          background-image: linear-gradient(to bottom, @button_hover_gradient_color_a, @button_hover_gradient_color_b); }
+          color: @theme_fg_color;
+          background-image: linear-gradient(to bottom, @button_hover_gradient_color_a, @button_hover_gradient_color_b);
+          text-shadow: 0 1px @highlight_shadow;
+          icon-shadow: 0 1px @highlight_shadow; }
         .titlebar.selection-mode .button.suggested-action:active, .header-bar.selection-mode .button.suggested-action:active,
         .titlebar.selection-mode .button.suggested-action:checked, .header-bar.selection-mode .button.suggested-action:checked {
           color: @button_active_text;
@@ -849,6 +852,36 @@ GtkComboBox {
           icon-shadow: none; }
           .titlebar.selection-mode .button.suggested-action:insensitive > GtkLabel, .header-bar.selection-mode .button.suggested-action:insensitive > GtkLabel {
             color: inherit; }
+
+      .titlebar.selection-mode .button.destructive-action, .header-bar.selection-mode .button.destructive-action {
+        color: @destructive_action_button_fg;
+        background-image: linear-gradient(to bottom,
+                                          @destructive_action_button_a,
+                                          @destructive_action_button_b);
+        text-shadow: 0 -1px @destructive_action_button_shadow;
+        icon-shadow: 0 -1px @destructive_action_button_shadow;
+        outline-color: alpha(@suggested_action_button_fg, 0.3); }
+        .titlebar.selection-mode .button.destructive-action:hover, .header-bar.selection-mode .button.destructive-action:hover {
+          color: @destructive_action_button_fg;
+          background-image: linear-gradient(to bottom,
+                                          shade(@destructive_action_button_a, 1.10),
+                                          shade(@destructive_action_button_b, 1.05));
+          text-shadow: 0 -1px @destructive_action_button_shadow;
+          icon-shadow: 0 -1px @destructive_action_button_shadow; }
+        .titlebar.selection-mode .button.destructive-action:active, .header-bar.selection-mode .button.destructive-action:active,
+        .titlebar.selection-mode .button.destructive-action:checked, .header-bar.selection-mode .button.destructive-action:checked {
+          color: @destructive_action_button_fg;
+          background-image: linear-gradient(to bottom,
+                                          @destructive_action_button_b,
+                                          @destructive_action_button_a); }
+        .titlebar.selection-mode .button.destructive-action:insensitive, .header-bar.selection-mode .button.destructive-action:insensitive {
+          color: alpha(@destructive_action_button_fg, 0.7);
+          background-image: linear-gradient(to bottom, alpha(@destructive_action_button_a, 0.8));
+	        text-shadow: none;
+	        icon-shadow: none; }
+          .titlebar.selection-mode .button.destructive-action:insensitive > GtkLabel, .header-bar.selection-mode .button.destructive-action:insensitive > GtkLabel {
+            color: inherit; }
+
     .titlebar.selection-mode .selection-menu, .header-bar.selection-mode .selection-menu {
       background-image: none;
       background-color: transparent;

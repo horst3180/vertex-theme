@@ -450,24 +450,27 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
         color: alpha(@theme_selected_fg_color, 0.7);
         background-image: linear-gradient(to bottom, @selection_toolbar_bg_a);
         text-shadow: none;
-        icon-shadow: none; }
+        icon-shadow: none; }*/
       .titlebar.selection-mode .button.suggested-action,
       .header-bar.selection-mode .button.suggested-action {
-        color: @theme_fg_color;
-        background-image: linear-gradient(to bottom, @button_gradient_color_a, @button_gradient_color_b);
-        text-shadow: 0 1px @highlight_shadow;
-        icon-shadow: 0 1px @highlight_shadow; }
+        color: @dark_fg_color;
+        background-image: linear-gradient(to bottom, @dark_button_gradient_color_a, @dark_button_gradient_color_b);
+        text-shadow: 0 -1px @selection_button_text_shadow;
+        icon-shadow: 0 -1px @selection_button_text_shadow; }
         .titlebar.selection-mode .button.suggested-action:hover,
         .header-bar.selection-mode .button.suggested-action:hover {
-          background-image: linear-gradient(to bottom, @button_hover_gradient_color_a, @button_hover_gradient_color_b); }
+          color: @dark_fg_color;
+          background-image: linear-gradient(to bottom, @dark_button_hover_gradient_color_a, @dark_button_hover_gradient_color_b);
+          text-shadow: 0 -1px @selection_button_text_shadow;
+          icon-shadow: 0 -1px @selection_button_text_shadow; }
         .titlebar.selection-mode .button.suggested-action:active,
         .header-bar.selection-mode .button.suggested-action:active {
           color: @button_active_text;
-          background-image: linear-gradient(to bottom, @button_active_gradient_color_a, @button_active_gradient_color_b);
+          background-image: linear-gradient(to bottom, @dark_button_active_gradient_color_a, @dark_button_active_gradient_color_b);
           text-shadow: 0 -1px @button_active_text_shadow;
           icon-shadow: 0 -1px @button_active_text_shadow;
           box-shadow: inset 0 1px 2px alpha(black, 0.2); }
-        .titlebar.selection-mode .button.suggested-action:insensitive,
+        /*.titlebar.selection-mode .button.suggested-action:insensitive,
         .header-bar.selection-mode .button.suggested-action:insensitive {
           color: @insensitive_fg_color;
           background-image: linear-gradient(to bottom, @insenstive_bg_color);
