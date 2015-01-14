@@ -84,8 +84,19 @@ tab {
 }
 
 /* Replace the default close tab icon with a white one */
+.tab-close-button[selected="true"],
+.tab-close-button:hover,
+.tab-close-button:active,
+.tabbrowser-tab:not([selected="true"]):hover .tab-close-button {
+    list-style-image: url("images/tab-close-selected.svg") !important;
+}
+
 .tab-close-button {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHhSURBVDiNpZMxq9pQGIbfUxT0gA6xIIhQqhWdMonQErj+AMnUqf4AFbpl6urNT+gi3CUG6eJvaJ3awVYynsCVOnhDGm46hBA5UThdVI4Xp94PzvC98H58PN97iBACz6kXz3IDyMgNIYQAeAPgJQBXCPH3qCsAmgAeAdwLeW0hBI49AdCybXvs+/5G07QeAAWAomlaz/f9jW3bYwAtAOTskwY0LMsah2GYep4nfN9/0DStdzQ/eJ4nwjBMLcsaA2icfOS0DSHk7WKxmFWr1ddCCGSzWWQyGQ8ADodDZb/fgxCC7Xb7u9vt9oUQP55CdHVdnzmOwzjniOMYSZJUkiSpxHEMzjkcx2G6rs8AuGduMg9CSLlYLH6cTCbvm81mSwbsui4bDAbzKIo+CyH+nPSnZ9w3Go1fpVKJcs4hP0VRaK1W+wlgf3E5iYHS6XTeTafTSRRFld1udzE5n8+jUCh4/X5/sFqtvp9PLENcLpdfOOevkiQBAKzXawYA9Xq9BQCUUuRyuU273f5wDeLjaDT6GgTBLk1TMMaYYRhzwzDmjDGWpimCINgNh8Nvx0BdDdKNqqp3pmk6lNJbAGUAZUrprWmajqqqdwBurgZJGqIB+ASgLOnlo6bJ5osg/W89+zf+A+a5JmPghr43AAAAAElFTkSuQmCC) !important;
+    list-style-image: url("images/tab-close.svg") !important;
+}
+
+.tab-close-button > .toolbarbutton-icon {
+  margin: -7px !important;
 }
 
 /* Replace default appmenu icon with a white one */
