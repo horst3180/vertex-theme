@@ -84,19 +84,23 @@ tab {
 }
 
 /* Replace the default close tab icon with a white one */
-.tab-close-button[selected="true"],
-.tab-close-button:hover,
-.tab-close-button:active,
-.tabbrowser-tab:not([selected="true"]):hover .tab-close-button {
-    list-style-image: url("images/tab-close-selected.svg") !important;
+.tab-close-button {
+  -moz-appearance: none !important;
 }
 
 .tab-close-button {
-    list-style-image: url("images/tab-close.svg") !important;
+    list-style-image: url("images/tab-close-selected.svg") !important;
+    -moz-image-region: auto !important;
 }
 
-.tab-close-button > .toolbarbutton-icon {
-  margin: -7px !important;
+.tab-close-button:hover > .toolbarbutton-icon {
+  border-radius: 2px !important;
+  background-color: rgba(255,0,0,0.6) !important;
+}
+
+.tab-close-button:active > .toolbarbutton-icon {
+  border-radius: 2px !important;
+  background-color: rgba(255,0,0,0.4) !important;
 }
 
 /* Replace default appmenu icon with a white one */
