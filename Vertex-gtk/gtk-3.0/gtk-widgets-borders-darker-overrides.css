@@ -424,6 +424,17 @@
   box-shadow: none;
 }
 
+.osd .button.flat, .osd .button.flat:hover {
+  border-color: transparent;
+  border-image: none;
+  border: 1px solid transparent; }
+
+.osd .button.flat:active, .osd .button.flat:checked,
+.osd .button.flat:first-child:active, .osd .button.flat:first-child:checked,
+.osd .button.flat:last-child:active, .osd .button.flat:last-child:checked {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-image: none; }
+
 .osd .scale.trough, .osd .scale.trough.highlight {
   border-image: -gtk-scaled(url("borders/scale-trough-osd-border-dark.png"),url("borders/scale-trough-osd-border-dark@2.png")) 2 6 3 6 / 2px 6px 3px 6px stretch;
   border-radius: 2px;

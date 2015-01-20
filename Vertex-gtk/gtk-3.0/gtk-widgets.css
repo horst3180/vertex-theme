@@ -114,6 +114,15 @@ GtkFlowBox .grid-child {
   GtkFlowBox .grid-child:selected {
     outline-offset: -2px; }
 
+.osd {
+  color: @theme_selected_fg_color;
+  border: none;
+  background-color: alpha(shade(#3D3E40, 0.85), 0.85);
+  background-clip: padding-box;
+  box-shadow: none;
+  text-shadow: 0 -1px $osd_text_shadow;
+  icon-shadow: 0 -1px $osd_text_shadow; }
+
 /**************
  * Dim labels *
  **************/
@@ -316,6 +325,33 @@ GtkFlowBox .grid-child {
       background-image: none; }
     .osd .button:insensitive {
       color: alpha(@theme_selected_fg_color, 0.4); }
+    .osd .button.flat {
+      border-color: transparent;
+      border-image: none;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: none;
+      text-shadow: none;
+      icon-shadow: none;
+      border: 1px solid transparent;
+      text-shadow: 0 -1px @osd_text_shadow;
+      icon-shadow: 0 -1px @osd_text_shadow; }
+    .osd .button.flat:hover {
+      color: @theme_selected_bg_color;
+      border-image: none;
+      border: 1px solid transparent; }
+    .osd .button.flat:insensitive {
+      color: alpha(@theme_selected_bg_color, 0.4); }
+    .osd .button.flat:active, .osd .button.flat:checked {
+      color: alpha(@theme_selected_bg_color, 0.7);
+      outline-color: alpha(@theme_selected_bg_color, 0.4);
+      background-image: linear-gradient(to top, shade(@osd_button_bg_a, 0.5), shade(@osd_button_bg_b, 0.5));
+      text-shadow: 0 -1px @osd_text_shadow;
+      icon-shadow: 0 -1px @osd_text_shadow;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.75);
+      border-image: none;
+      border-radius: 2px; }
   .button.suggested-action {
     color: @suggested_action_button_fg;
     background-image: linear-gradient(to bottom,
