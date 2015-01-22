@@ -21,8 +21,8 @@
 
 /* default text style */
 stage {
-    font-family: "Cantarell";
-    font-size: 9pt;
+    font-family: "San Francisco Display Medium";
+    font-size: 12pt;
     color: white;
 }
 
@@ -953,6 +953,11 @@ StScrollBar StButton#vhandle:active {
     border-radius: 6px 0px 0px 6px;
 }
 
+.bottom #dash {
+    border-image: url('bottom_dash.svg') 12 12 12 5;
+    padding: 5px 6px 0 6px;
+}
+
 .placeholder {
     background-image: url("dash-placeholder.svg");
     background-size: contain;
@@ -1036,6 +1041,14 @@ StScrollBar StButton#vhandle:active {
     -x-offset: 8px;
 }
 
+.bottom .dash-label {
+    padding: 4px 12px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 3px;
+    text-align: center;
+    -y-offset: 8px;
+}
+
 /* Application Launchers, Grid and List results */
 
 .icon-grid {
@@ -1109,22 +1122,44 @@ StScrollBar StButton#vhandle:active {
     padding: 2px 0px;
 }
 
+.bottom .dash-item-container > StButton {
+    padding: 0px 2px;
+}
+
 .dash-item-container > .app-well-app.running > .overview-icon {
     background-image: none;
-	  box-shadow: none;
+	box-shadow: none;
     border-image: url("button-running.svg") 6;
     padding: 10px 11px 10px 13px;
+}
+
+.bottom .dash-item-container > .app-well-app.running > .overview-icon {
+    background-image: none;
+    box-shadow: none;
+    border-image: url("bottom_button-running.svg") 6;
+    padding: 11px 10px 13px 10px;
 }
 
 .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
     border-image: url("button-running-active.svg") 6;
     background-image: none;
-	  background-color: transparent;
+	background-color: transparent;
     box-shadow: none;
     background-gradient-start: rgba(255, 255, 255, .0);
     background-gradient-end: rgba(255, 255, 255, .0);
     background-gradient-direction: vertical;
     padding: 10px 11px 10px 13px;
+}
+
+.bottom .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
+    border-image: url("bottom_button-running-active.svg") 6;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    background-gradient-start: rgba(255, 255, 255, .0);
+    background-gradient-end: rgba(255, 255, 255, .0);
+    background-gradient-direction: vertical;
+    padding: 11px 10px 13px 10px;
 }
 
 .dash-item-container > .app-well-app.running:hover > .overview-icon {
@@ -1132,27 +1167,53 @@ StScrollBar StButton#vhandle:active {
     padding: 10px 11px 10px 13px;
 }
 
+.bottom .dash-item-container > .app-well-app.running:hover > .overview-icon {
+    border-image: url("bottom_button-running-hover.svg") 6;
+    padding: 11px 10px 13px 10px;
+}
+
 .dash-item-container > .app-well-app > .overview-icon {
     padding: 10px 11px 10px 13px;
 }
 
+.bottom .dash-item-container > .app-well-app > .overview-icon {
+    padding: 11px 10px 13px 10px;
+}
+
 .dash-item-container > .app-well-app:hover > .overview-icon {
     background-image: none;
-	  box-shadow: none;
+	box-shadow: none;
     border-image: url("button-hover.svg") 6;
     padding: 10px 11px 10px 13px;
+}
 
+.bottom .dash-item-container > .app-well-app:hover > .overview-icon {
+    background-image: none;
+    box-shadow: none;
+    border-image: url("bottom_button-hover.svg") 6;
+    padding: 11px 10px 13px 10px;
 }
 
 .dash-item-container > .app-well-app:active > .overview-icon {
     background-image: none;
-	  background-color: transparent;
+	background-color: transparent;
     box-shadow: none;
     background-gradient-start: rgba(255, 255, 255, .0);
     background-gradient-end: rgba(255, 255, 255, .0);
     background-gradient-direction: vertical;
     border-image: url("button-active.svg") 6;
     padding: 10px 11px 10px 13px;
+}
+
+.bottom .dash-item-container > .app-well-app:active > .overview-icon {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    background-gradient-start: rgba(255, 255, 255, .0);
+    background-gradient-end: rgba(255, 255, 255, .0);
+    background-gradient-direction: vertical;
+    border-image: url("bottom_button-active.svg") 6;
+    padding: 11px 10px 13px 10px;
 }
 
 .list-search-result-content {
