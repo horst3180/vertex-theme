@@ -45,6 +45,8 @@ rm -rf $DIR/Vertex-Dark/xfwm4-light
 rm $DIR/Vertex-Dark/index.theme-light
 mv $DIR/Vertex-Dark/gtk-2.0-dark $DIR/Vertex-Dark/gtk-2.0
 mv $DIR/Vertex-Dark/gtk-3.0/gtk-contained-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk-contained.css
+rm $DIR/Vertex-Dark/gtk-3.0/gtk-contained-light.css
+rm $DIR/Vertex-Dark/gtk-3.0/gtk-dark.css
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-3-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-3.xml
 rm $DIR/Vertex-Dark/metacity-1/metacity-theme-3-light.xml
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-2-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-2.xml
@@ -58,8 +60,7 @@ mv $DIR/Vertex-Dark $DIR/Gnome-3.14/
 #make default 3.14 variant
 cp -r $DIR/Vertex-gtk $DIR/Vertex
 rm -rf $DIR/Vertex/gtk-2.0-dark
-rm $DIR/Vertex-Dark/gtk-3.0/gtk-contained-dark.css
-rm $DIR/Vertex-Dark/gtk-3.0/gtk-contained-light.css
+rm $DIR/Vertex/gtk-3.0/gtk-contained-light.css
 rm -rf $DIR/Vertex/xfwm4-light
 rm $DIR/Vertex/metacity-1/metacity-theme-3-light.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-3-dark.xml
