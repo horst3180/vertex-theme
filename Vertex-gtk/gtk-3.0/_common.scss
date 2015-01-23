@@ -523,21 +523,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
       padding: 1px 3px;
     }
     &.needs-attention > GtkLabel,
-    &.needs-attention > GtkImage {
-      animation: needs_attention 150ms ease-in;
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($selected_bg_color), to(transparent)),
-                        -gtk-gradient(radial, center center, 0, center center, 0.5, to(rgba(255, 255, 255, 0.2)), to(transparent));
-      background-size: 6px 6px, 6px 6px;
-      background-repeat: no-repeat;
-      background-position: right 3px, right 4px;
-      //@if $variant == 'light' { background-position: right 3px, right 4px; } //FIXME is this neccessary?
-      //@else { background-position: right 3px, right 2px; }
-      &:dir(rtl) {
-        background-position: left 3px, left 4px;
-        //@if $variant == 'light' { background-position: left 3px, left 4px; }
-        //@else { background-position: left 3px, left 2px; }
-      }
-    }
+    &.needs-attention > GtkImage { @extend %needs_attention }
     &.needs-attention:active > GtkLabel,
     &.needs-attention:active > GtkImage,
     &.needs-attention:checked > GtkLabel,
@@ -546,6 +532,22 @@ $_dot_color: if($variant=='light', $selected_bg_color,
       background-image: none;
     }
   }
+
+%needs_attention {
+  animation: needs_attention 150ms ease-in;
+  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($selected_bg_color), to(transparent)),
+                    -gtk-gradient(radial, center center, 0, center center, 0.5, to(rgba(255, 255, 255, 0.2)), to(transparent));
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  background-position: right 3px, right 4px;
+  //@if $variant == 'light' { background-position: right 3px, right 4px; } //FIXME is this neccessary?
+  //@else { background-position: right 3px, right 2px; }
+  &:dir(rtl) {
+    background-position: left 3px, left 4px;
+    //@if $variant == 'light' { background-position: left 3px, left 4px; }
+    //@else { background-position: left 3px, left 2px; }
+  }
+}
 
   //inline-toolbar buttons
   .inline-toolbar & { @extend %linked; }
@@ -2598,6 +2600,18 @@ GtkFileChooserDialog {
   }
   &:selected { @extend %selected_gradient; }
   &.separator { @extend .separator; }
+}
+
+.sidebar-item {
+  padding: 10px 4px;
+  > GtkLabel {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  &.needs-attention > GtkLabel {
+    @extend %needs_attention;
+    background-size: 6px 6px, 0 0;
+  }
 }
 
 GtkPaned {
