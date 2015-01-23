@@ -7421,19 +7421,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="150.12268"
-     inkscape:cy="343.73867"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="410.3054"
+     inkscape:cy="494.11285"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1226"
-     inkscape:window-height="721"
-     inkscape:window-x="138"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
+     inkscape:window-x="0"
      inkscape:window-y="23"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:snap-bbox="true">
     <inkscape:grid
        type="xygrid"
@@ -12419,7 +12419,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="button-border"
+       id="button-normal-border"
        transform="translate(273,552.36224)">
       <rect
          ry="1.5127127"
@@ -12557,7 +12557,7 @@
     <g
        transform="translate(272,616.36223)"
        inkscape:label="Layer 1"
-       id="button-border-default">
+       id="button-focused-border">
       <rect
          ry="1.5127127"
          rx="1.4870903"
@@ -12706,7 +12706,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="generic-border"
+       id="entry-normal-border"
        transform="translate(317,552.36224)">
       <rect
          ry="1.5127127"
@@ -12730,7 +12730,7 @@
     <g
        transform="translate(316,574.36224)"
        inkscape:label="Layer 1"
-       id="generic-border-focused">
+       id="entry-focused-border">
       <rect
          ry="1.5127127"
          rx="1.4870903"
@@ -12974,7 +12974,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="left-button-border"
+       id="left-button-normal-border"
        transform="translate(273,637.36223)">
       <g
          clip-path="url(#clipPath3009)"
@@ -13066,7 +13066,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="middle-button-border"
+       id="middle-button-normal-border"
        transform="translate(288,637.36223)">
       <g
          clip-path="url(#clipPath3019)"
@@ -13160,7 +13160,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="right-button-border"
+       id="right-button-normal-border"
        transform="translate(301,637.36223)">
       <g
          transform="matrix(-1,0,0,1,14,0)"
@@ -13206,7 +13206,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="button-border-dark"
+       id="button-normal-border-dark"
        transform="translate(273,812.36218)">
       <rect
          ry="1.5127127"
@@ -13368,7 +13368,7 @@
     <g
        transform="translate(271.99999,875.36223)"
        inkscape:label="Layer 1"
-       id="button-border-default-dark">
+       id="button-focused-border-dark">
       <rect
          ry="2.5050423"
          rx="2.5008998"
@@ -13528,7 +13528,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="generic-border-dark"
+       id="entry-normal-border-dark"
        transform="translate(317,812.36223)">
       <rect
          ry="1.5127127"
@@ -13552,7 +13552,7 @@
     <g
        transform="translate(316,834.36223)"
        inkscape:label="Layer 1"
-       id="generic-border-focused-dark">
+       id="entry-focused-border-dark">
       <rect
          ry="1.5127127"
          rx="1.4870903"
@@ -13694,7 +13694,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="left-button-border-dark"
+       id="left-button-normal-border-dark"
        transform="translate(273,896.36223)">
       <g
          clip-path="url(#clipPath3009-8)"
@@ -13774,7 +13774,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="middle-button-border-dark"
+       id="middle-button-normal-border-dark"
        transform="translate(288,896.36223)">
       <g
          clip-path="url(#clipPath3019-7)"
@@ -13880,7 +13880,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="right-button-border-dark"
+       id="right-button-normal-border-dark"
        transform="translate(301,896.36223)">
       <g
          transform="matrix(-1,0,0,1,14,0)"
@@ -19915,10 +19915,10 @@
          rx="0"
          y="553.36218"
          x="402"
-         height="14.999997"
-         width="15"
+         height="13.999997"
+         width="14"
          id="rect7319"
-         style="opacity:0.55479449000000003;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="opacity:0.55479449;fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
       <g
          inkscape:label="#g6308"
          transform="translate(401,553.36218)"
@@ -19966,10 +19966,10 @@
        id="titlebutton-unfocused"
        inkscape:label="#g7349">
       <rect
-         style="opacity:0.55479449000000003;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="opacity:0.55479449;fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          id="rect7319-4"
-         width="15"
-         height="14.999997"
+         width="14"
+         height="13.999997"
          x="420"
          y="553.36218"
          rx="0"
@@ -20026,10 +20026,10 @@
          rx="0"
          y="553.36218"
          x="438"
-         height="14.999997"
-         width="15"
+         height="13.999994"
+         width="14"
          id="rect7319-4-6"
-         style="opacity:0.55479449000000003;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="opacity:0.55479449;fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
       <g
          inkscape:label="#g6397"
          transform="translate(437,553.36218)"
@@ -20072,10 +20072,10 @@
        id="titlebutton-close-prelight"
        inkscape:label="#g7404">
       <rect
-         style="opacity:0.55479449000000003;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="opacity:0.55479449;fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          id="rect7319-8"
-         width="15"
-         height="14.999997"
+         width="14"
+         height="13.999997"
          x="402"
          y="571.36218"
          rx="0"
@@ -20141,10 +20141,10 @@
          rx="0"
          y="571.36218"
          x="420"
-         height="14.999997"
-         width="15"
+         height="13.999994"
+         width="14"
          id="rect7319-8-3"
-         style="opacity:0.55479449000000003;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="opacity:0.55479449;fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
       <g
          inkscape:label="#g6489"
          transform="translate(419,571.36218)"
@@ -20202,10 +20202,10 @@
        id="titlebutton-min-prelight"
        inkscape:label="#g7462">
       <rect
-         style="opacity:0.55479449000000003;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         style="opacity:0.55479449;fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          id="rect7319-8-3-9"
-         width="15"
-         height="14.999997"
+         width="14"
+         height="13.999997"
          x="438"
          y="571.36218"
          rx="0"
@@ -20622,7 +20622,7 @@
          style="fill:#1e1e1f;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="top-vertical-button-border"
+       id="top-vertical-button-normal-border"
        transform="translate(76,12.999997)"
        inkscape:label="#g7463">
       <g
@@ -20667,7 +20667,7 @@
          style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="middle-vertical-button-border"
+       id="middle-vertical-button-normal-border"
        transform="translate(76,12.999997)"
        inkscape:label="#g7455">
       <g
@@ -20721,7 +20721,7 @@
          style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="bottom-vertical-button-border"
+       id="bottom-vertical-button-normal-border"
        transform="translate(76,12.999997)"
        inkscape:label="#g7448">
       <g
@@ -20892,7 +20892,7 @@
          style="fill:#3c3c3c;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="top-vertical-button-border-dark"
+       id="top-vertical-button-normal-border-dark"
        transform="translate(78,263)"
        inkscape:label="#g7463">
       <g
@@ -20937,7 +20937,7 @@
          style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="middle-vertical-button-border-dark"
+       id="middle-vertical-button-normal-border-dark"
        transform="translate(78,263)"
        inkscape:label="#g7455">
       <g
@@ -20991,7 +20991,7 @@
          style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="bottom-vertical-button-border-dark"
+       id="bottom-vertical-button-normal-border-dark"
        transform="translate(78,263)"
        inkscape:label="#g7448">
       <g
@@ -21145,7 +21145,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="bottom-vertical-entry-border"
+       id="bottom-vertical-entry-normal-border"
        transform="translate(450,651.36215)"
        clip-path="url(#clipPath8067)">
       <rect
@@ -21168,7 +21168,7 @@
          ry="1.5" />
     </g>
     <g
-       id="top-vertical-entry-border"
+       id="top-vertical-entry-normal-border"
        inkscape:label="#g8073"
        transform="translate(79,9)">
       <g
@@ -21205,7 +21205,7 @@
          style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="middle-vertical-entry-border"
+       id="middle-vertical-entry-normal-border"
        inkscape:label="#g8081"
        transform="translate(79,9)">
       <g
@@ -21242,7 +21242,7 @@
          style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="top-vertical-entry-border-focused"
+       id="top-vertical-entry-focused-border"
        inkscape:label="#g8192"
        transform="translate(79,9)">
       <g
@@ -21298,7 +21298,7 @@
          style="fill:#4080fb;fill-opacity:0.16862745;stroke:#4080fb;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.16862745;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="middle-vertical-entry-border-focused"
+       id="middle-vertical-entry-focused-border"
        inkscape:label="#g8272"
        transform="translate(79,9)">
       <g
@@ -21368,7 +21368,7 @@
          y="648.36218" />
     </g>
     <g
-       id="bottom-vertical-entry-border-focused"
+       id="bottom-vertical-entry-focused-border"
        inkscape:label="#g8264"
        transform="translate(79,9)">
       <g
@@ -21423,7 +21423,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="bottom-vertical-entry-border-dark"
+       id="bottom-vertical-entry-normal-border-dark"
        transform="translate(452,901.36218)"
        clip-path="url(#clipPath8067-2)">
       <rect
@@ -21447,7 +21447,7 @@
     </g>
     <g
        transform="translate(81,259)"
-       id="top-vertical-entry-border-dark"
+       id="top-vertical-entry-normal-border-dark"
        inkscape:label="#g8073">
       <g
          clip-path="url(#clipPath8005-2)"
@@ -21475,7 +21475,7 @@
     </g>
     <g
        transform="translate(81,259)"
-       id="middle-vertical-entry-border-dark"
+       id="middle-vertical-entry-normal-border-dark"
        inkscape:label="#g8081">
       <g
          clip-path="url(#clipPath8036-7)"
@@ -21503,7 +21503,7 @@
     </g>
     <g
        transform="translate(81,259)"
-       id="top-vertical-entry-border-focused-dark"
+       id="top-vertical-entry-focused-border-dark"
        inkscape:label="#g8192">
       <g
          clip-path="url(#clipPath8130-7)"
@@ -21550,7 +21550,7 @@
     </g>
     <g
        transform="translate(81,259)"
-       id="middle-vertical-entry-border-focused-dark"
+       id="middle-vertical-entry-focused-border-dark"
        inkscape:label="#g8272">
       <g
          clip-path="url(#clipPath8157-9)"
@@ -21611,7 +21611,7 @@
     </g>
     <g
        transform="translate(81,259)"
-       id="bottom-vertical-entry-border-focused-dark"
+       id="bottom-vertical-entry-focused-border-dark"
        inkscape:label="#g8264">
       <g
          clip-path="url(#clipPath8184-0)"
@@ -21665,7 +21665,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="right-entry-border"
+       id="right-entry-normal-border"
        transform="translate(353,637.36218)"
        clip-path="url(#clipPath6854)">
       <rect
@@ -21688,7 +21688,7 @@
          ry="1.5" />
     </g>
     <g
-       id="left-entry-border"
+       id="left-entry-normal-border"
        inkscape:label="#g7646">
       <g
          clip-path="url(#clipPath6788)"
@@ -21724,7 +21724,7 @@
          style="opacity:0.14999999999999999;fill:#000000;fill-opacity:1;stroke:#4080fb;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     </g>
     <g
-       id="middle-entry-border"
+       id="middle-entry-normal-border"
        inkscape:label="#g7652">
       <g
          clip-path="url(#clipPath6819)"
@@ -21937,7 +21937,7 @@
     </g>
     <g
        inkscape:label="Layer 1"
-       id="right-entry-border-dark"
+       id="right-entry-normal-border-dark"
        transform="translate(353,896.36218)"
        clip-path="url(#clipPath6854-2)">
       <rect
@@ -21961,7 +21961,7 @@
     </g>
     <g
        transform="translate(0,259)"
-       id="left-entry-border-dark"
+       id="left-entry-normal-border-dark"
        inkscape:label="#g7646">
       <g
          clip-path="url(#clipPath6788-2)"
@@ -21998,7 +21998,7 @@
     </g>
     <g
        transform="translate(0,259)"
-       id="middle-entry-border-dark"
+       id="middle-entry-normal-border-dark"
        inkscape:label="#g7652">
       <g
          clip-path="url(#clipPath6819-7)"

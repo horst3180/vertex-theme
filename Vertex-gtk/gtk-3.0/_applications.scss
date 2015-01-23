@@ -1,0 +1,421 @@
+$terminal_bg: nth($_base_color, 2);
+$terminal_fg: white;
+
+//
+// Evolution
+//
+// needed for webkit/GtkStyle/Evolution compatibility
+GtkHTML {
+  background-color: $base_color;
+  color: $text_color;
+
+  &:active {
+    color: $selected_fg_color;
+    background-color: $selected_bg_color;
+  }
+}
+
+//
+// Sushi
+//
+// used by gnome-font-viewer and sushi
+SushiFontWidget {
+  padding: 6px 12px;
+}
+
+//
+// GNOME Terminal
+//
+VteTerminal {
+  background-color: $terminal_bg;
+  color: $terminal_fg;
+}
+
+TerminalWindow {
+
+  .notebook tab.reorderable-page,
+  .notebook tab.reorderable-page:hover {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .scrollbars-junction, .scrollbar.trough {
+    background-color: $terminal_bg;
+	  border-color: $terminal_bg;
+	  border-image: none;
+  }
+
+  .scrollbar.slider.vertical {
+    @include _border(scrollbar-slider-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
+
+    &:hover { @include _border(scrollbar-slider-hover-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px); }
+
+    &:active { @include _border(scrollbar-slider-active-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px); }
+  }
+}
+
+//
+// Nautilus
+//
+NautilusWindow {
+  @extend %thin_separator;
+}
+
+.nautilus-canvas-item {
+  border-radius: 2px;
+}
+
+.nautilus-desktop.nautilus-canvas-item {
+  color: $selected_fg_color;
+  text-shadow: 1px 1px black;
+
+  &:active { color: $text_color; }
+  &:selected { color: $selected_fg_color; }
+  &:active, &:prelight, &:selected { text-shadow: none; }
+}
+
+NautilusNotebook.notebook {
+  background-color: $base_color;
+}
+
+NautilusQueryEditor .search-bar.toolbar {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  box-shadow: none;
+}
+
+//
+// Nemo
+//
+NemoWindow {
+  @extend %thin_separator;
+}
+
+NemoWindow .sidebar .frame {
+	border-width: 0;
+}
+
+NemoWindow GtkSeparator.separator.horizontal {
+	color: $borders_color;
+}
+
+.nemo-desktop.nemo-canvas-item {
+  @extend .nautilus-desktop.nautilus-canvas-item;
+}
+
+//
+// Gedit
+//
+GeditWindow {
+  @extend %thin_separator;
+
+  @if $darker=='true' {
+    .gedit-headerbar-paned { background-color: darken(nth($_bg_color, 2), 5%); }
+
+    .pane-separator,
+    .pane-separator:hover { border-color: transparentize(nth($_bg_color, 2), 0.7); }
+  }
+}
+
+.open-document-selector-listbox-row {
+  padding: 6px 6px 6px 12px;
+
+  .path-label {
+    font-size: smaller;
+    color: transparentize($fg_color, 0.3);
+  }
+  &:selected .path-label { color: transparentize($selected_fg_color, 0.1); }
+}
+
+.gedit-document-panel {
+  background-color: $sidebar_bg;
+}
+
+// sidepane close button styling
+.gedit-document-panel {
+
+  .list-row .button {
+    @include button(undecorated);
+
+    color: transparent;
+    border: 1px solid transparent;
+    padding: 1px;
+    icon-shadow: none;
+
+    &:hover {
+      color: $fg_color;
+      border-color: transparentize($fg_color, 0.8);
+      border-width: 1px;
+    }
+    &:active {
+      border-color: transparentize(black, 0.8);
+      background-color: transparentize(black, 0.9);
+    }
+  }
+  .prelight-row .button  {
+    color: transparentize($fg_color, 0.3);
+    border-color: transparent;
+  }
+  .list-row:selected .button,
+  .prelight-row:selected .button {
+    color: transparentize($selected_fg_color, 0.3);
+    border-color: transparentize($selected_fg_color, 1);
+
+    &:hover {
+      color: $selected_fg_color;
+      border-color: transparentize($selected_fg_color, 0.5);
+    }
+    &:active {
+      border-image: none;
+      border-color: transparentize(black, 0.8);
+      background-color: transparentize(black, 0.9);
+    }
+  }
+}
+
+.gedit-document-panel-dragged-row {
+  border: 1px solid $borders_color;
+  background-color: darken($sidebar_bg, 5%);
+  color: $fg_color;
+}
+
+.gedit-document-panel-placeholder-row {
+  border: none;
+  background-color: mix($sidebar_bg, $selected_bg_color, 80%);
+  transition: all 100ms ease-in;
+}
+
+GeditStatusbar {
+  border-top: 1px solid $borders_color;
+  background-color: transparent;
+  box-shadow: inset 0 1px $highlight_shadow;
+
+  @if $variant==light {
+    background-image: linear-gradient(to bottom,
+                                      $bg_color,
+                                      darken($bg_color, 4%));
+  }
+  @else {
+    background-image: linear-gradient(to bottom,
+                                      lighten($bg_color, 1%),
+                                      darken($bg_color, 2%));
+  }
+}
+
+GeditStatusMenuButton.button.flat,
+GeditStatusMenuButton:prelight.button.flat,
+GeditStatusMenuButton:checked.button.flat {
+  border-image: none;
+  border-width: 1px 1px 0 1px;
+  border-color: transparentize($borders_color, 1);
+  border-radius: 0;
+}
+
+GeditStatusMenuButton:prelight.button.flat {
+  border-color: $borders_color;
+}
+
+GeditStatusMenuButton:checked.button.flat {
+  border-color: darken($button_active_gradient_color_a, 5%);
+}
+
+GeditViewFrame .gedit-search-slider {
+  padding: 6px;
+  background-color: lighten($bg_color, 2%);
+  border-color: lighten($borders_color, 5%);
+  border-radius: 0 0 3px 3px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+}
+
+GeditFileBrowserWidget .toolbar {
+  border-bottom: 1px solid $borders_color;
+}
+
+.gedit-search-entry-occurrences-tag {
+  color: transparentize($fg_color, 0.4);
+  margin: 2px;
+  padding: 2px;
+}
+
+//
+// Gnome Documents
+//
+.documents-load-more.button {
+  border-image: none;
+  border-color: $borders_color;
+  border-width: 1px 0 0;
+  border-radius: 0;
+  
+  &:active, &:checked { border-color: darken($button_active_gradient_color_a, 5%); }
+}
+
+.documents-icon-bg,
+.documents-collection-icon {
+  background-color: mix($bg_color, $fg_color, 50%);
+  border-radius: 3px;
+  color: $fg_color;
+}
+
+.documents-entry-tag {
+  background-color: $selected_bg_color;
+  color: $selected_fg_color;
+  border-radius: 2px;
+  border-width: 0;
+  margin: 2px;
+  padding: 4px;
+
+  &:hover { background-color: lighten($selected_bg_color, 4%) }
+  &:active { background-color: darken($selected_bg_color, 4%) }
+
+  .toolbar .linked &.button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    icon-shadow: none;
+
+    &:hover { color: transparentize($selected_fg_color, 0.3) }
+  }
+}
+
+.content-view.document-page {
+  border-style: solid;
+  border-width: 3px 3px 6px 4px;
+  border-image: url("assets/thumbnail-frame.png") 3 3 6 4;
+}
+
+//
+// Baobab
+//
+.cell.baobab-level-cell,
+.cell.baobab-level-cell:hover,
+.cell.baobab-level-cell:selected,
+.cell.baobab-level-cell:selected:hover {
+	background-image: none;
+}
+
+//
+// Shotwell
+//
+LibraryWindow {
+
+  GtkPaned.horizontal {
+    -GtkPaned-handle-size: 1;
+    background-color: $bg_color;
+	  background-image: none;
+	  border-width: 0;
+  }
+  GtkFrame.frame { border-width: 0; }
+  .bottom-toolbar.toolbar { border-color: transparentize(black, 0.25); }
+}
+
+//
+// Totem
+//
+TotemGrilo.vertical GdMainView.frame {
+  border-width: 0;
+}
+
+//
+// Geary
+//
+// FIXME this could cause problems
+GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal,
+GtkPaned.horizontal.sidebar-pane-separator {
+  -GtkPaned-handle-size: 1;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: $borders_color;
+}
+
+GtkPaned.horizontal.sidebar-pane-separator GtkBox.vertical.sidebar GtkFrame.frame {
+	border-width: 0 0 1px 0;
+}
+
+GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal GtkFrame.frame {
+	border-width: 0;
+}
+
+MainWindow.background GtkBox.vertical MainToolbar {
+	border-bottom: 1px solid $borders_color;
+}
+
+//
+// File-roller
+//
+FrWindow {
+  @extend %thin_separator;
+}
+
+FrWindow.background GtkBox.vertical GtkTreeView.view {
+  background-color: $sidebar_bg;
+}
+
+//
+// Fallback Mode/Budgie Panel
+//
+PanelToplevel,
+.gnome-panel-menu-bar {
+  color: nth($_fg_color, 2);
+  text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+  background-image: linear-gradient(to bottom, 
+                                    nth($_wm_bg_a, 2), 
+                                    nth($_wm_bg_b, 2));
+  box-shadow: inset 0 2px nth($_wm_highlight, 2),
+              inset 0 1px black,
+              inset 0 -1px black;
+}
+
+// Applications Places System menubar
+.gnome-panel-menu-bar .menuitem:hover,
+PanelApplet > GtkMenuBar.menubar .menuitem:hover {
+  border-radius: 0;
+}
+
+// Panel buttons
+PanelApplet .button, PanelApplet .button:focus {
+  @include button(normal, $dark:'true', $border:'false');
+
+  @extend %panelbutton;
+
+  &:hover {
+    @include button(hover, $dark:'true', $border:'false');
+
+    @extend %panelbutton;
+  }
+  &:active,
+  &:active:hover,
+  &:checked,
+  &:checked:hover {
+    @include button(active, $dark:'true', $border:'false');
+
+    border-image: none; 
+    border-width: 3px;
+    border-radius: 5.5px;
+    icon-shadow: none;
+
+    box-shadow: inset 0 1px 2px transparentize(black, 0.8),
+                inset 1px 0 transparentize(black, 0.4),
+                inset -1px 0 transparentize(black, 0.4),
+                inset 0 1px transparentize(black, 0.1),
+                inset 0 -1px transparentize(black, 0.45);
+  }
+}
+
+%panelbutton {
+  border-image: none; 
+  border-width: 3px;
+  border-radius: 5px;
+  icon-shadow: none;
+
+  box-shadow: inset -2px 0 transparentize(white, 0.95),
+              inset 2px 0 transparentize(white, 0.95),
+              inset 0 2px transparentize(white, 0.88),
+              inset 0 1px transparentize(black, 0.4),
+              inset 0 -1px transparentize(black, 0.2),
+              inset 1px 0 transparentize(black, 0.4),
+              inset -1px 0 transparentize(black, 0.4);
+
+}

@@ -22,6 +22,8 @@ radio-mixed
 radio-mixed-selected
 radio-mixed-insensitive
 radio-mixed-insensitive-selected
+grid-selection-unchecked
+grid-selection-checked
 header-separator
 header-separator-left
 header-separator-selectionmode
@@ -78,6 +80,8 @@ radio-mixed-dark
 radio-mixed-selected-dark
 radio-mixed-insensitive-dark
 radio-mixed-insensitive-selected-dark
+grid-selection-unchecked-dark
+grid-selection-checked-dark
 header-separator-dark
 header-separator-left-dark
 header-separator-selectionmode-dark
