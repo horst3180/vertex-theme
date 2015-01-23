@@ -12,6 +12,8 @@ $darker_shadow_pos: if($darker=='true', -1, 1);
   @return unquote("alpha(#{$c},#{$a})");
 }
 
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
 @mixin _shadows($shadow1, $shadow2:none, $shadow3:none, $shadow4:none) {
 //
 // Helper function to stack up to 4 box-shadows;

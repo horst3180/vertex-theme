@@ -131,7 +131,7 @@ GtkFlowBox .grid-child {
 
 .entry {
   padding: 4px 8px 5px;
-  transition: all 200ms ease-out;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   background-color: transparent;
   color: #3c3c3e;
   background-image: linear-gradient(to bottom, #ffffff);
@@ -313,7 +313,7 @@ GtkFlowBox .grid-child {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#4080fb), to(transparent)); } }
 .button {
   padding: 4px 8px 5px;
-  transition: all 200ms ease-out;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #3c3c3e;
   outline-color: rgba(60, 60, 62, 0.3);
   background-image: linear-gradient(to bottom, #f4f4f4, #e2e2e4);
@@ -336,10 +336,10 @@ GtkFlowBox .grid-child {
     icon-shadow: 0 1px white;
     transition: none; }
     .button.flat:hover {
-      transition: all 200ms ease-out;
+      transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transition-duration: 350ms; }
       .button.flat:hover:active {
-        transition: all 200ms ease-out; }
+        transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   .button:focus {
     border-image: -gtk-scaled(url("borders/button-focused-border.png"), url("borders/button-focused-border@2.png")) 3 3 4 3/3px 3px 4px 3px stretch;
     border-radius: 2px;
@@ -1916,7 +1916,7 @@ column-header .button, column-header .button:hover, column-header .button:active
   -GtkNotebook-has-tab-gap: false;
   -GtkWidget-focus-padding: 0;
   -GtkWidget-focus-line-width: 0;
-  transition: all 200ms ease-out; }
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   .notebook.frame {
     border: 1px solid #b9b9b9;
     border-radius: 2px; }
@@ -2605,6 +2605,11 @@ GtkScrolledWindow GtkViewport.frame {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
+
+.list-row, list-row.button {
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  .list-row:hover, list-row.button:hover {
+    transition: none; }
 
 .app-notification,
 .app-notification.frame {
