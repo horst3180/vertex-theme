@@ -254,12 +254,14 @@ GtkFlowBox .grid-child {
     border-color: transparent; }
 
 .linked.vertical .entry, .spinbutton.vertical.entry, .spinbutton.vertical.entry:dir(rtl), .spinbutton.vertical.entry:dir(ltr) {
+  box-shadow: none;
   border-image: -gtk-scaled(url("borders/middle-vertical-entry-normal-border-dark.png"), url("borders/middle-vertical-entry-normal-border-dark@2.png")) 0 1 1 1/0 1px 1px 1px stretch;
   border-radius: 0;
   border-width: 0 1px 0 1px;
   border-style: solid;
   border-color: transparent; }
   .linked.vertical .entry:focus, .spinbutton.vertical.entry:focus {
+    box-shadow: none;
     border-image: -gtk-scaled(url("borders/middle-vertical-entry-focused-border-dark.png"), url("borders/middle-vertical-entry-focused-border-dark@2.png")) 2 2 2 2/2px 2px 2px 2px stretch;
     border-radius: 0;
     border-width: 0 1px 0 1px;
@@ -279,12 +281,14 @@ GtkFlowBox .grid-child {
     border-style: solid;
     border-color: transparent; }
 .linked.vertical .entry:last-child {
+  box-shadow: none;
   border-image: -gtk-scaled(url("borders/bottom-vertical-entry-normal-border-dark.png"), url("borders/bottom-vertical-entry-normal-border-dark@2.png")) 0 2 3 2/0 2px 3px 2px stretch;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
   .linked.vertical .entry:last-child:focus {
+    box-shadow: none;
     border-image: -gtk-scaled(url("borders/bottom-vertical-entry-focused-border-dark.png"), url("borders/bottom-vertical-entry-focused-border-dark@2.png")) 2 3 4 3/2px 3px 4px 3px stretch;
     border-radius: 0 0 2px 2px;
     border-width: 0 1px 2px 1px;
