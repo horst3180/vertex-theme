@@ -2992,6 +2992,9 @@ GtkVolumeButton.button {
 .context-menu {
   font: initial; }
 
+.monospace {
+  font: Monospace; }
+
 .overlay-bar {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 2px;
