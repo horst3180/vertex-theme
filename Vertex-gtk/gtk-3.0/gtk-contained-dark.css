@@ -312,8 +312,8 @@ GtkFlowBox .grid-child {
   to {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#4080fb), to(transparent)); } }
 .button {
-  transition: all 200ms ease-out;
   padding: 4px 8px 5px;
+  transition: all 200ms ease-out;
   color: #F3F3F5;
   outline-color: rgba(243, 243, 245, 0.3);
   background-image: linear-gradient(to bottom, #4f5053, #343436);
@@ -333,7 +333,13 @@ GtkFlowBox .grid-child {
     text-shadow: none;
     icon-shadow: none;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    transition: none; }
+    .button.flat:hover {
+      transition: all 200ms ease-out;
+      transition-duration: 350ms; }
+      .button.flat:hover:active {
+        transition: all 200ms ease-out; }
   .button:focus {
     border-image: -gtk-scaled(url("borders/button-focused-border-dark.png"), url("borders/button-focused-border-dark@2.png")) 3 3 4 3/3px 3px 4px 3px stretch;
     border-radius: 2px;
