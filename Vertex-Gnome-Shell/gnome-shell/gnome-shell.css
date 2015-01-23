@@ -21,8 +21,8 @@
 
 /* default text style */
 stage {
-    font-family: "San Francisco Display Medium";
-    font-size: 12pt;
+    font-family: "Cantarell";
+    font-size: 9pt;
     color: white;
 }
 
@@ -942,12 +942,14 @@ StScrollBar StButton#vhandle:active {
 
 /* Dash */
 
-#dash {
+#dash,
+.left #dash {
     border-image: url('dash.png') 5 12 12 12;
     padding: 6px 5px 6px 0;
 }
 
-#dash:rtl {
+#dash:rtl,
+.left #dash:rtl {
     border-left: 0px;
     border-right: 0px;
     border-radius: 6px 0px 0px 6px;
@@ -956,6 +958,16 @@ StScrollBar StButton#vhandle:active {
 .bottom #dash {
     border-image: url('bottom_dash.svg') 12 12 12 5;
     padding: 5px 6px 0 6px;
+}
+
+.right #dash {
+    border-image: url('right_dash.svg') 5 12 12 12;
+    padding: 6px 0 5px 5px;
+}
+
+.top #dash {
+    border-image: url('top_dash.svg') 12 12 12 5;
+    padding: 6px 0 5px 5px;
 }
 
 .placeholder {
