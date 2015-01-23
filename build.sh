@@ -12,6 +12,9 @@ rm $DIR/Vertex-gtk/gtk-3.0/assets.txt
 rm $DIR/Vertex-gtk/gtk-3.0/borders.txt
 rm $DIR/Vertex-gtk/gtk-3.0/render-assets.sh
 rm $DIR/Vertex-gtk/gtk-3.0/render-borders.sh
+rm $DIR/Vertex-gtk/gtk-3.0/parse-sass.sh
+rm $DIR/Vertex-gtk/gtk-3.0/Gemfile
+rm $DIR/Vertex-gtk/gtk-3.0/*.scss
 
 mkdir -p $DIR/Gnome-3.14
 mkdir -p $DIR/Gnome-3.12_Ubuntu-14.10
@@ -23,7 +26,7 @@ rm -rf $DIR/Vertex-Light/gtk-2.0-dark
 rm -rf $DIR/Vertex-Light/xfwm4
 mv $DIR/Vertex-Light/xfwm4-light $DIR/Vertex-Light/xfwm4
 mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
-mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
+mv $DIR/Vertex-Light/gtk-3.0/gtk-contained-light.css $DIR/Vertex-Light/gtk-3.0/gtk-contained.css
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-3-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-3.xml
 rm $DIR/Vertex-Light/metacity-1/metacity-theme-3-dark.xml
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-2-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-2.xml
@@ -41,7 +44,7 @@ rm -rf $DIR/Vertex-Dark/gtk-2.0
 rm -rf $DIR/Vertex-Dark/xfwm4-light
 rm $DIR/Vertex-Dark/index.theme-light
 mv $DIR/Vertex-Dark/gtk-2.0-dark $DIR/Vertex-Dark/gtk-2.0
-mv $DIR/Vertex-Dark/gtk-3.0/gtk-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk.css
+mv $DIR/Vertex-Dark/gtk-3.0/gtk-contained-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk-contained.css
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-3-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-3.xml
 rm $DIR/Vertex-Dark/metacity-1/metacity-theme-3-light.xml
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-2-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-2.xml
@@ -55,6 +58,8 @@ mv $DIR/Vertex-Dark $DIR/Gnome-3.14/
 #make default 3.14 variant
 cp -r $DIR/Vertex-gtk $DIR/Vertex
 rm -rf $DIR/Vertex/gtk-2.0-dark
+rm $DIR/Vertex-Dark/gtk-3.0/gtk-contained-dark.css
+rm $DIR/Vertex-Dark/gtk-3.0/gtk-contained-light.css
 rm -rf $DIR/Vertex/xfwm4-light
 rm $DIR/Vertex/metacity-1/metacity-theme-3-light.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-3-dark.xml
