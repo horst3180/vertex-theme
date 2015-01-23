@@ -946,7 +946,7 @@ GtkComboBox {
     icon-shadow: none; }
   GtkComboBox .menuitem {
     text-shadow: none; }
-  GtkComboBox .separator, GtkComboBox .sidebar.separator, GtkComboBox .sidebar .view.separator, .sidebar GtkComboBox .view.separator {
+  GtkComboBox .separator.vertical, GtkComboBox .sidebar .vertical.view.separator, .sidebar GtkComboBox .vertical.view.separator {
     -GtkWidget-wide-separators: true;
     border: none; }
 
@@ -2535,7 +2535,7 @@ GtkScrolledWindow GtkViewport.frame {
 
 .separator, .sidebar.separator, .sidebar .view.separator {
   color: rgba(0, 0, 0, 0.1); }
-  GtkFileChooserButton .separator, GtkFileChooserButton .sidebar.separator, GtkFileChooserButton .sidebar .view.separator, .sidebar GtkFileChooserButton .view.separator, GtkFontButton .separator, GtkFontButton .sidebar.separator, GtkFontButton .sidebar .view.separator, .sidebar GtkFontButton .view.separator {
+  GtkFileChooserButton .separator.vertical, GtkFileChooserButton .sidebar .vertical.view.separator, .sidebar GtkFileChooserButton .vertical.view.separator, GtkFontButton .separator.vertical, GtkFontButton .sidebar .vertical.view.separator, .sidebar GtkFontButton .vertical.view.separator {
     -GtkWidget-wide-separators: true; }
 
 .list, .list-row {

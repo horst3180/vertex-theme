@@ -820,7 +820,7 @@ GtkComboBox {
     icon-shadow: none;
   }
   .menuitem { text-shadow: none; }
-  .separator {
+  .separator.vertical {
     // always disable separators
     -GtkWidget-wide-separators: true;
     border: none;
@@ -2435,8 +2435,8 @@ GtkScrolledWindow GtkViewport.frame { border-style: none; }
   color: if($variant=='light', transparentize(black, 0.9), transparentize(black, 0.8));
 
   // Font and File button separators
-  GtkFileChooserButton &,
-  GtkFontButton & {
+  GtkFileChooserButton &.vertical,
+  GtkFontButton &.vertical {
     -GtkWidget-wide-separators: true;
   }
 }
