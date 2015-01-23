@@ -835,6 +835,16 @@ GtkComboBox.combobox-entry .button:only-child,
   @extend %linked:only-child;
 }
 
+// vertically linked comboboxes
+.linked.vertical > GtkComboBoxText > .button,
+.linked.vertical > GtkComboBox > .button { @extend %linked_middle_vertical; }
+.linked.vertical > GtkComboBoxText:first-child > .button,
+.linked.vertical > GtkComboBox:first-child > .button { @extend %linked_vertical:first-child; }
+.linked.vertical > GtkComboBoxText:last-child > .button,
+.linked.vertical > GtkComboBox:last-child > .button { @extend %linked_vertical:last-child; }
+.linked.vertical > GtkComboBoxText:only-child > .button,
+.linked.vertical > GtkComboBox:only-child > .button { @extend %linked_vertical:only-child; }
+
 //
 // Floating Bar
 //

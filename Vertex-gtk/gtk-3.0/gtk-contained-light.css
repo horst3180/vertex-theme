@@ -762,7 +762,8 @@ GtkFlowBox .grid-child {
     border-style: solid;
     border-color: transparent; }
 
-.linked.vertical .button, .linked.vertical .button:hover {
+.linked.vertical .button, .linked.vertical .button:hover, .linked.vertical > GtkComboBoxText > .button,
+.linked.vertical > GtkComboBox > .button {
   border-image: -gtk-scaled(url("borders/middle-vertical-button-normal-border.png"), url("borders/middle-vertical-button-normal-border@2.png")) 1 1 1 1/1px 1px 1px 1px stretch;
   border-radius: 0;
   border-width: 0 1px 0 1px;
@@ -775,37 +776,46 @@ GtkFlowBox .grid-child {
     border-style: solid;
     border-color: transparent; }
 
-.linked.vertical .button:first-child, .spinbutton.vertical .button:first-child, .spinbutton.vertical:dir(rtl) .button:first-child, .spinbutton.vertical:dir(ltr) .button:first-child {
+.linked.vertical .button:first-child, .spinbutton.vertical .button:first-child, .spinbutton.vertical:dir(rtl) .button:first-child, .spinbutton.vertical:dir(ltr) .button:first-child, .linked.vertical > GtkComboBoxText:first-child > .button,
+.linked.vertical > GtkComboBox:first-child > .button {
   border-image: -gtk-scaled(url("borders/top-vertical-button-normal-border.png"), url("borders/top-vertical-button-normal-border@2.png")) 2 2 1 2/2px 2px 1px 2px stretch;
   border-radius: 2px 2px 0 0;
   border-width: 1px 1px 0 1px;
   border-style: solid;
   border-color: transparent; }
-  .linked.vertical .button:first-child:active, .spinbutton.vertical .button:active:first-child, .linked.vertical .button:first-child:checked, .spinbutton.vertical .button:checked:first-child {
+  .linked.vertical .button:first-child:active, .spinbutton.vertical .button:active:first-child, .linked.vertical > GtkComboBoxText:first-child > .button:active,
+  .linked.vertical > GtkComboBox:first-child > .button:active, .linked.vertical .button:first-child:checked, .spinbutton.vertical .button:checked:first-child, .linked.vertical > GtkComboBoxText:first-child > .button:checked,
+  .linked.vertical > GtkComboBox:first-child > .button:checked {
     border-image: -gtk-scaled(url("borders/top-vertical-button-active-border.png"), url("borders/top-vertical-button-active-border@2.png")) 2 2 1 2/2px 2px 1px 2px stretch;
     border-radius: 2px 2px 0 0;
     border-width: 1px 1px 0 1px;
     border-style: solid;
     border-color: transparent; }
-.linked.vertical .button:last-child, .spinbutton.vertical .button:last-child, .spinbutton.vertical:dir(rtl) .button:last-child, .spinbutton.vertical:dir(ltr) .button:last-child {
+.linked.vertical .button:last-child, .spinbutton.vertical .button:last-child, .spinbutton.vertical:dir(rtl) .button:last-child, .spinbutton.vertical:dir(ltr) .button:last-child, .linked.vertical > GtkComboBoxText:last-child > .button,
+.linked.vertical > GtkComboBox:last-child > .button {
   border-image: -gtk-scaled(url("borders/bottom-vertical-button-normal-border.png"), url("borders/bottom-vertical-button-normal-border@2.png")) 1 2 3 2/1px 2px 3px 2px stretch;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .linked.vertical .button:last-child:active, .spinbutton.vertical .button:active:last-child, .linked.vertical .button:last-child:checked, .spinbutton.vertical .button:checked:last-child {
+  .linked.vertical .button:last-child:active, .spinbutton.vertical .button:active:last-child, .linked.vertical > GtkComboBoxText:last-child > .button:active,
+  .linked.vertical > GtkComboBox:last-child > .button:active, .linked.vertical .button:last-child:checked, .spinbutton.vertical .button:checked:last-child, .linked.vertical > GtkComboBoxText:last-child > .button:checked,
+  .linked.vertical > GtkComboBox:last-child > .button:checked {
     border-image: -gtk-scaled(url("borders/bottom-vertical-button-active-border.png"), url("borders/bottom-vertical-button-active-border@2.png")) 1 2 3 2/1px 2px 3px 2px stretch;
     border-radius: 0 0 2px 2px;
     border-width: 0 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-.linked.vertical .button:only-child {
+.linked.vertical .button:only-child, .linked.vertical > GtkComboBoxText:only-child > .button,
+.linked.vertical > GtkComboBox:only-child > .button {
   border-image: -gtk-scaled(url("borders/button-normal-border.png"), url("borders/button-normal-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .linked.vertical .button:only-child:active, .linked.vertical .button:only-child:checked {
+  .linked.vertical .button:only-child:active, .linked.vertical > GtkComboBoxText:only-child > .button:active,
+  .linked.vertical > GtkComboBox:only-child > .button:active, .linked.vertical .button:only-child:checked, .linked.vertical > GtkComboBoxText:only-child > .button:checked,
+  .linked.vertical > GtkComboBox:only-child > .button:checked {
     border-image: -gtk-scaled(url("borders/button-active-border.png"), url("borders/button-active-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
