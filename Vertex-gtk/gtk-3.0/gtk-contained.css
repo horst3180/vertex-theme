@@ -1305,6 +1305,9 @@ GtkComboBox {
         -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
         color: rgba(255, 255, 255, 0.5);
         icon-shadow: none; }
+  .titlebar .search-bar,
+  .header-bar .search-bar {
+    background-color: #454649; }
   .titlebar > .separator, .sidebar .titlebar > .view.separator, .titlebar .titlebar > .separator, .titlebar .sidebar .titlebar > .view.separator,
   .header-bar > .separator,
   .sidebar .header-bar > .view.separator,
@@ -3433,19 +3436,19 @@ GeditWindow .pane-separator:hover {
     border-color: rgba(0, 0, 0, 0.2);
     border-image: none;
     border-width: 1px; }
-.gedit-document-panel .prelight-row .button {
+.gedit-document-panel .prelight-row .button.flat {
   color: rgba(60, 60, 62, 0.7);
   border-color: transparent; }
-.gedit-document-panel .list-row:selected .button,
-.gedit-document-panel .prelight-row:selected .button {
+.gedit-document-panel .list-row:selected .button.flat,
+.gedit-document-panel .prelight-row:selected .button.flat {
   color: rgba(255, 255, 255, 0.7);
   border-color: rgba(255, 255, 255, 0); }
-  .gedit-document-panel .list-row:selected .button:hover,
-  .gedit-document-panel .prelight-row:selected .button:hover {
+  .gedit-document-panel .list-row:selected .button.flat:hover,
+  .gedit-document-panel .prelight-row:selected .button.flat:hover {
     color: #ffffff;
     border-color: rgba(255, 255, 255, 0.5); }
-  .gedit-document-panel .list-row:selected .button:active,
-  .gedit-document-panel .prelight-row:selected .button:active {
+  .gedit-document-panel .list-row:selected .button.flat:active,
+  .gedit-document-panel .prelight-row:selected .button.flat:active {
     border-image: none;
     border-color: rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.1); }
