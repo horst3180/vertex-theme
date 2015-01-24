@@ -136,22 +136,23 @@ GeditWindow {
 // sidepane close button styling
 .gedit-document-panel {
 
-  .list-row .button {
-    @include button(undecorated);
-
+  .list-row .button.flat {
     color: transparent;
-    border: 1px solid transparent;
-    padding: 1px;
-    icon-shadow: none;
+    border-width: 1px;
 
     &:hover {
       color: $fg_color;
+      background-image: none;
       border-color: transparentize($fg_color, 0.8);
       border-width: 1px;
+      border-image: none;
     }
     &:active {
-      border-color: transparentize(black, 0.8);
       background-color: transparentize(black, 0.9);
+      background-image: none;
+      border-color: transparentize(black, 0.8);
+      border-image: none;
+      border-width: 1px;
     }
   }
   .prelight-row .button  {
