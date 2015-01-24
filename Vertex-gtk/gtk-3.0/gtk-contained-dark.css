@@ -142,7 +142,8 @@ GtkFlowBox .grid-child {
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
-  border-color: transparent; }
+  border-color: transparent;
+  background-color: #2B2B2C; }
   .entry.image.left {
     padding-left: 0; }
   .entry.image.right {

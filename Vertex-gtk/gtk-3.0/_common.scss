@@ -209,6 +209,7 @@ GtkFlowBox .grid-child {
   padding: 4px 8px 5px;
   transition: all 200ms ease-out;
   @include entry(normal);
+  background-color: $base_color; // fixes bug in abiword
 
   // icons inside the entry
   &.image {
