@@ -1012,6 +1012,13 @@ GtkComboBox.combobox-entry .button:only-child,
 
     &:backdrop { opacity: 0.3; }
   }
+  // Fix pushed buttons which inherit their color from .title
+  .title.button:active, .title.button:checked,
+  .button:active GtkLabel.title, .button:checked GtkLabel.title {
+    color: $button_active_fg;
+    text-shadow: 0 -1px $button_active_text_shadow;
+    icon-shadow: 0 -1px $button_active_text_shadow;
+  }
   .header-bar-separator,
   & > GtkBox > .separator.vertical,
   .left:dir(rtl) .header-bar-separator,

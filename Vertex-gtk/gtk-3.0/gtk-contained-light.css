@@ -1069,6 +1069,15 @@ GtkComboBox {
     .titlebar .subtitle:backdrop,
     .header-bar .subtitle:backdrop {
       opacity: 0.3; }
+  .titlebar .title.button:active, .titlebar .title.button:checked,
+  .titlebar .button:active GtkLabel.title, .titlebar .button:checked GtkLabel.title,
+  .header-bar .title.button:active,
+  .header-bar .title.button:checked,
+  .header-bar .button:active GtkLabel.title,
+  .header-bar .button:checked GtkLabel.title {
+    color: #ffffff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
   .titlebar .header-bar-separator, .titlebar > GtkBox > .separator.vertical,
   .titlebar .left:dir(rtl) .header-bar-separator, .titlebar > GtkBox.left:dir(rtl) > .separator.vertical,
   .header-bar .header-bar-separator,
