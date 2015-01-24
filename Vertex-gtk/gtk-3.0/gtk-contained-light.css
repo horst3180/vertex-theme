@@ -639,8 +639,6 @@ GtkFlowBox .grid-child {
     .stack-switcher > .button.needs-attention:active > GtkLabel, .stack-switcher > .button.needs-attention:active > GtkImage, .stack-switcher > .button.needs-attention:checked > GtkLabel, .stack-switcher > .button.needs-attention:checked > GtkImage {
       animation: none;
       background-image: none; }
-  .primary-toolbar .button {
-    icon-shadow: none; }
 
 .inline-toolbar GtkToolButton > .button {
   color: #3c3c3e;
@@ -1301,6 +1299,10 @@ GtkComboBox {
   .header-bar, .maximized
   .header-bar {
     border-radius: 0; }
+
+.primary-toolbar .button,
+.primary-toolbar .button.flat {
+  icon-shadow: none; }
 
 .path-bar .button,
 .path-bar .button:first-child,
@@ -2170,9 +2172,40 @@ GtkScrolledWindow GtkViewport.frame {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-  .list-row:selected .button.flat {
-    color: #ffffff; }
-  .list-row:selected .button:active, .list-row:selected .button:checked {
+  .list-row:selected .button.flat, .list-row:selected .button.flat:focus {
+    border-color: transparent;
+    border-image: none;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    icon-shadow: none;
+    color: #ffffff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+    icon-shadow: none; }
+    .list-row:selected .button.flat:hover, .list-row:selected .button.flat:focus:hover {
+      color: #3c3c3e;
+      outline-color: rgba(60, 60, 62, 0.3);
+      background-image: linear-gradient(to bottom, #ffffff, #e5e5e5);
+      text-shadow: 0 1px white;
+      icon-shadow: 0 1px white;
+      border-image: -gtk-scaled(url("borders/button-normal-border.png"), url("borders/button-normal-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+      border-radius: 2px;
+      border-width: 1px 1px 2px 1px;
+      border-style: solid;
+      border-color: transparent; }
+    .list-row:selected .button.flat:active, .list-row:selected .button.flat:checked, .list-row:selected .button.flat:focus:active, .list-row:selected .button.flat:focus:checked {
+      color: #ffffff;
+      outline-color: rgba(255, 255, 255, 0.3);
+      background-image: linear-gradient(to bottom, #6a6a6c, #949596);
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+      icon-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2); }
+    .list-row:selected .button.flat:insensitive, .list-row:selected .button.flat:focus:insensitive {
+      color: rgba(255, 255, 255, 0.5);
+      text-shadow: none; }
+  .list-row:selected .button:active, .list-row:selected .button:checked, .list-row:selected .button:insensitive:active, .list-row:selected .button:insensitive:checked, .list-row:selected .button.flat:active, .list-row:selected .button.flat:checked, .list-row:selected .button.flat:focus:active, .list-row:selected .button.flat:focus:checked {
     border-image: -gtk-scaled(url("borders/button-active-border-selected.png"), url("borders/button-active-border-selected@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;

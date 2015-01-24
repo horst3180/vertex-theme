@@ -548,8 +548,6 @@ $_dot_color: if($variant=='light', $selected_bg_color,
   //inline-toolbar buttons
   .inline-toolbar & { @extend %linked; }
 
-  .primary-toolbar & { icon-shadow: none; } // tango icons don't need shadows
-
   .linked &,
   .linked &:hover { @extend %linked; }
 
@@ -1424,6 +1422,9 @@ GtkComboBox.combobox-entry .button:only-child,
     &:active, &:checked { @include linked(button, active, single, $dark:'true'); }
   }
 }
+
+.primary-toolbar .button,                             // tango icons don't need shadows
+.primary-toolbar .button.flat { icon-shadow: none; }  // defined here so it doesn't get overriden
 
 //
 // Pathbars
@@ -2435,16 +2436,30 @@ GtkScrolledWindow GtkViewport.frame { border-style: none; }
   .button {
 
     &:focus { @include _border(button-normal-border#{$asset_suffix}); }
-    &.flat {
+    &.flat, &.flat:focus {
+      @include button(undecorated);
+
       color: $selected_fg_color;
+      outline-color: transparentize($selected_fg_color, 0.7);
+      text-shadow: 0 -1px $dark_text_icon_shadow;
+      icon-shadow: none;
+      &:hover {
+        @include button(hover);      
+      }
+      &:active, &:checked {
+        @include button(active, $border:'false');      
+      }
+      &:insensitive {
+        color: transparentize($selected_fg_color, 0.5);
+        text-shadow: none;
+      }
     }
-    &:hover {}
-    &:active, &:checked {
+    &:active, &:checked,
+    &:insensitive:active, &:insensitive:checked,
+    &.flat:active, &.flat:checked,
+    &.flat:focus:active, &.flat:focus:checked {
       @if $variant == 'light' { @include _border(button-active-border-selected); }
       @if $variant == 'dark' { @include _border(button-active-border-dark); }
-    }
-    &:insensitive {
-      &:active, &:checked {}
     }
   }
 }
