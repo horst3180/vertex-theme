@@ -2719,7 +2719,7 @@ GraniteWidgetsWelcome .h3 {
 GraniteWidgetsPopOver {
   -GraniteWidgetsPopOver-arrow-width: 21;
   -GraniteWidgetsPopOver-arrow-height: 10;
-  -GraniteWidgetsPopOver-border-radius: 3px;
+  -GraniteWidgetsPopOver-border-radius: 2px;
   -GraniteWidgetsPopOver-border-width: 1;
   -GraniteWidgetsPopOver-shadow-size: 12;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -2732,9 +2732,6 @@ GraniteWidgetsPopOver {
 GraniteWidgetsPopOver .sidebar.view,
 GraniteWidgetsPopOver * {
   background-color: transparent; }
-
-GraniteWidgetsAppMenu .button:active {
-  background-image: linear-gradient(to bottom, #242525, #37383A); }
 
 .h1 {
   font: open sans 24px; }
@@ -3157,22 +3154,6 @@ MarlinViewChromeLocationBar .image {
   icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   border-radius: 0; }
 
-/*
-.search-entry-large,
-.search-entry-large:focus {
-  border: none;
-  font: open sans light 18;
-  padding: 8px;
-  background-image: none;
-  background-color: transparent;
-  box-shadow: none;
-  border-radius: 0;
-}
- 
-.search-category-header {
-  color: #808080;
-}
-*/
 NoiseLibraryWindow GtkPaned.vertical,
 NoiseLibraryWindow GtkPaned.horizontal,
 NoiseLibraryWindow GtkPaned.vertical:hover,

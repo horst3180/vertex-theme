@@ -181,7 +181,7 @@ GraniteWidgetsWelcome .h3 {
 GraniteWidgetsPopOver {
   -GraniteWidgetsPopOver-arrow-width: 21;
   -GraniteWidgetsPopOver-arrow-height: 10;
-  -GraniteWidgetsPopOver-border-radius: 3px;
+  -GraniteWidgetsPopOver-border-radius: 2px;
   -GraniteWidgetsPopOver-border-width: 1;
   -GraniteWidgetsPopOver-shadow-size: 12;
 
@@ -197,13 +197,6 @@ GraniteWidgetsPopOver {
 GraniteWidgetsPopOver .sidebar.view,
 GraniteWidgetsPopOver * {
   background-color: transparent;
-}
-
-// Granite App Menu
-GraniteWidgetsAppMenu .button:active {
-  background-image: linear-gradient(to bottom,
-                                    $button_active_gradient_color_a,
-                                    $button_active_gradient_color_b);
 }
 
 //
