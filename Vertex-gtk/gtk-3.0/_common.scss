@@ -983,19 +983,17 @@ GtkComboBox.combobox-entry .button:only-child,
 //
 // Header bars
 //
-.titlebar,
 .header-bar {
   padding: 6px 6px 5px 6px;
   color: $wm_title;
   border-width: 0 0 1px;
   border-style: solid;
-  border-radius: 3px 3px 0 0;
+  border-radius: 0;
   border-color: if($darker=='false', $borders_color, nth($_borders_color, 3));
   background-color: transparent;
   background-image: linear-gradient(to bottom,
-                                    $wm_bg_a,
-                                    $wm_bg_b);
-  box-shadow: inset 0 1px $wm_highlight;
+                                    $primary_toolbar_bg_a,
+                                    $primary_toolbar_bg_b);
 
   .title {
     color: $wm_title;
@@ -1130,6 +1128,19 @@ GtkComboBox.combobox-entry .button:only-child,
   .tiled &, .maximized & {
     border-radius: 0; // squared corners when the window is max'd or tiled
   }
+}
+// titlebar needs to be styled differently
+.titlebar {
+  color: $wm_title;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-radius: 3px 3px 0 0;
+  border-color: if($darker=='false', $borders_color, nth($_borders_color, 3));
+  background-color: transparent;
+  background-image: linear-gradient(to bottom,
+                                    $wm_bg_a,
+                                    $wm_bg_b);
+  box-shadow: inset 0 1px $wm_highlight;
 }
 
 // Extends for widgets in dark Headerbars and toolbars

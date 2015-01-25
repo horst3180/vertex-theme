@@ -1,3 +1,9 @@
+// General guidelines:
+// - very unlikely you want to edit something else than _common.scss
+// - keep the number of defined colors to a minimum, use the color blending functions if
+//   you need a subtle shade
+// - if you need to inverse a color function use the @if directive to match for dark $variant
+
 $variant: 'dark';
 $darker: 'false';
 
@@ -5,7 +11,7 @@ $darker: 'false';
 @import 'drawing';
 @import 'common';
 @import 'granite';
-@import 'unity';
 @import 'applications';
 @import 'tabs';
+@import 'unity';
 @import 'colors-public';
