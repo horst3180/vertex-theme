@@ -190,7 +190,7 @@ $darker_shadow_pos: if($darker=='true', -1, 1);
       @include _border(button-normal-border#{$_asset_suffix});
     }
 
-    > GtkLabel { color: inherit; }
+    > GtkLabel, GtkLabel { color: inherit; }
   }
 
   @else if $t==insensitive-active {
@@ -206,11 +206,13 @@ $darker_shadow_pos: if($darker=='true', -1, 1);
     text-shadow: none;
     icon-shadow: none;
 
+    box-shadow: inset 0 1px 2px transparentize(black, 0.8);
+
     @if $border==true {
       @include _border(button-active-border#{$_asset_suffix});
     }
 
-    > GtkLabel { color: inherit; }
+    > GtkLabel, GtkLabel { color: inherit; }
   }
 
   @if $t==selection-mode {
@@ -284,7 +286,7 @@ $darker_shadow_pos: if($darker=='true', -1, 1);
       @include _border(button-border-suggested#{$_asset_suffix});
     }
 
-    > GtkLabel { color: inherit; }
+    > GtkLabel, GtkLabel { color: inherit; }
   }
 
   @if $t==selection-mode-insensitive-active {
@@ -304,7 +306,7 @@ $darker_shadow_pos: if($darker=='true', -1, 1);
       @include _border(button-active-border-suggested#{$_asset_suffix});
     }
 
-    > GtkLabel { color: inherit; }
+    > GtkLabel, GtkLabel { color: inherit; }
   }
 
   @else if $t==osd {
@@ -361,9 +363,9 @@ $darker_shadow_pos: if($darker=='true', -1, 1);
   //
     color: darken($selected_bg_color, 3%);
     outline-color: transparentize($osd_fg_color, 0.7);
-    background-image: linear-gradient(to top,
-                                      darken($osd_button_bg_a, 14%),
-                                      darken($osd_button_bg_b, 12%));
+    background-image: linear-gradient(to bottom,
+                                      darken($osd_button_bg_b, 12%),
+                                      darken($osd_button_bg_a, 14%));
 
     text-shadow: 0 -1px $osd_text_shadow;
     icon-shadow: 0 -1px $osd_text_shadow;

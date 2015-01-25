@@ -126,7 +126,7 @@ $_osd_toolbar_bg_a: opacify(lighten($_osd_bg_color, 7%), 0.05);
 $osd_toolbar_bg_a: $_osd_toolbar_bg_a;
 
 $_osd_toolbar_bg_b: opacify($_osd_bg_color, 0.05);
-$osd_toolbar_bg_b: $_osd_toolbar_bg_a;
+$osd_toolbar_bg_b: $_osd_toolbar_bg_b;
 
 
 $_osd_button_bg_a: $_osd_toolbar_bg_a;

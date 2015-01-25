@@ -181,6 +181,8 @@ GtkFlowBox .grid-child {
   icon-shadow: 0 -1px $osd_text_shadow;
 }
 
+.stack-switcher.osd { background-color: transparent; } // no background-color needed here
+                                                       // see gnome-weather
 //
 // Spinner Animation
 //
@@ -361,7 +363,6 @@ $_dot_color: if($variant=='light', $selected_bg_color,
     @include button(active);
     transition-duration: 50ms;
   }
-
   &.flat:insensitive {
     @include button(undecorated);
   }
@@ -453,12 +454,12 @@ $_dot_color: if($variant=='light', $selected_bg_color,
         text-shadow: none;
         icon-shadow: none;
 
-        > GtkLabel { color: inherit; }
+        > GtkLabel, GtkLabel { color: inherit; }
 
         &:active, &:checked {
           background-image: linear-gradient(to bottom, transparentize(nth($b_color, 1), 0.1));
 
-          > GtkLabel { color: inherit; }
+          > GtkLabel, GtkLabel { color: inherit; }
         }
       }
     }
@@ -1205,12 +1206,12 @@ GtkComboBox.combobox-entry .button:only-child,
           text-shadow: none;
           icon-shadow: none;
 
-          > GtkLabel { color: inherit; }
+          > GtkLabel, GtkLabel { color: inherit; }
 
           &:active, &:checked {
             background-image: linear-gradient(to bottom, transparentize(nth($b_color, 1), 0.1));
 
-            > GtkLabel { color: inherit; }
+            > GtkLabel, GtkLabel { color: inherit; }
           }
         }
       }
