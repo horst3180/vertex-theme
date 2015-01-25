@@ -9,6 +9,12 @@
 @define-color theme_base_color #{"" + $base_color};
 @define-color theme_selected_bg_color #{"" + $selected_bg_color};
 @define-color theme_selected_fg_color #{"" + $selected_fg_color};
+@define-color fg_color #{"" + $fg_color};
+@define-color text_color #{"" + $text_color};
+@define-color bg_color #{"" + $bg_color};
+@define-color base_color #{"" + $base_color};
+@define-color selected_bg_color #{"" + $selected_bg_color};
+@define-color selected_fg_color #{"" + $selected_fg_color};
 @define-color insensitive_bg_color #{"" + $insensitive_bg_color};
 @define-color insensitive_fg_color #{"" + $insensitive_fg_color};
 @define-color insensitive_base_color #{"" + $base_color};
