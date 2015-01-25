@@ -980,6 +980,11 @@ GtkComboBox.combobox-entry .button:only-child,
 .inline-toolbar.toolbar {
   border-color: $borders_color;
   border-style: solid;
+
+  @extend %action-bar-background;
+}
+
+%action-bar-background {
   background-color: transparent;
   box-shadow: inset 0 1px $highlight_shadow;
 

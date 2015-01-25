@@ -191,19 +191,8 @@ GeditWindow {
 
 GeditStatusbar {
   border-top: 1px solid $borders_color;
-  background-color: transparent;
-  box-shadow: inset 0 1px $highlight_shadow;
 
-  @if $variant==light {
-    background-image: linear-gradient(to bottom,
-                                      $bg_color,
-                                      darken($bg_color, 4%));
-  }
-  @else {
-    background-image: linear-gradient(to bottom,
-                                      lighten($bg_color, 1%),
-                                      darken($bg_color, 2%));
-  }
+  @extend %action-bar-background;
 }
 
 GeditStatusMenuButton.button.flat,
@@ -447,15 +436,16 @@ BirdieWidgetsTweetList * {
 //
 MarlinViewWindow { @extend %thin_separator }
 
-MarlinViewChromeLocationBar .image {
-  color: red;
-}
-
 //
 // Gala
 //
 .gala-notification {
-  @extend .toolbar.osd;
+    border: 1px solid transparentize(black, 0.25);
+    border-radius: 3px;
+	  box-shadow: inset 0 1px transparentize(white, 0.9),
+		            inset 0 -1px transparentize(black, 0.9);
+    background-image: linear-gradient(to bottom, opacify($osd_toolbar_bg_a, 0.15), opacify($osd_toolbar_bg_b, 0.15));
+    background-color: transparent;
 
   .title, .label {
     color: $osd_fg_color;

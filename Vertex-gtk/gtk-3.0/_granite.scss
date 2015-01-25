@@ -50,11 +50,6 @@ GraniteWidgetsStaticNotebook .frame {
 }
 
 //
-// Notebook and Tabs
-//
-
-
-//
 // Bottom Toolbars
 //
 .bottom-toolbar.toolbar {
@@ -63,18 +58,7 @@ GraniteWidgetsStaticNotebook .frame {
   border-style: solid;
   border-color: $borders_color;
 
-  box-shadow: inset 0 1px $highlight_shadow;
-
-  @if $variant==light {
-    background-image: linear-gradient(to bottom,
-                                      $bg_color,
-                                      darken($bg_color, 4%));
-  }
-  @else {
-    background-image: linear-gradient(to bottom,
-                                      lighten($bg_color, 1%),
-                                      darken($bg_color, 2%));
-  }
+  @extend %action-bar-background;
 
   .button { padding: 2px 3px 2px 3px; }
 }
