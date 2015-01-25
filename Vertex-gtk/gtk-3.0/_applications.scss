@@ -470,8 +470,8 @@ MarlinViewChromeLocationBar .image {
   background-color: transparent;
   color: white;
   font-weight: bold;
-  text-shadow: 0 1px 2px transparentize(black, 0.6);
-  icon-shadow: 0 1px 2px transparentize(black, 0.6);
+  text-shadow: 0 1px 2px transparentize(black, 0.4);
+  icon-shadow: 0 1px 2px transparentize(black, 0.4);
 }
 
 .panel-shadow {
@@ -500,14 +500,16 @@ MarlinViewChromeLocationBar .image {
 
 .panel .menu .window-frame.menu.csd,
 .panel .menu .window-frame.popup.csd {
-    box-shadow: 0 0 0 1px transparentize(black, 0.8),
-                0 10px 20px transparentize(black, 0.81),
-                0 6px 6px transparentize(black, 0.77);
+  box-shadow: 0 0 0 1px transparentize(black, 0.8),
+              0 10px 20px transparentize(black, 0.81),
+              0 6px 6px transparentize(black, 0.77);
 }
 
 .composited-indicator {
   background-color: transparent;
   color: white;
+  text-shadow: 0 1px 2px transparentize(black, 0.4);
+  icon-shadow: 0 1px 2px transparentize(black, 0.4);
 }
 
 .composited-indicator > GtkWidget > GtkWidget:first-child {
@@ -525,6 +527,11 @@ MarlinViewChromeLocationBar .image {
   box-shadow: none;
 }
 
+.composited-indicator > .popup > .menu {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 //
 // Slingshot
 //
@@ -534,13 +541,23 @@ MarlinViewChromeLocationBar .image {
   box-shadow: none;
   border-image: none;
   background-image: none;
+  icon-shadow: none;
 }
 
 .app:hover {
   background-color: transparentize(black, 0.92);
+  icon-shadow: none;
 }
+
 .app:focus {
   background-color: transparentize(black, 0.8);
+  icon-shadow: none;
+}
+
+.app:active {
+  color: $fg_color;
+  text-shadow: 0 1px $light_text_icon_shadow;
+  icon-shadow: none;
 }
  
 .search-item {
@@ -570,3 +587,13 @@ NoiseLibraryWindow GtkPane.pane-separator {
 }
 
 NoiseGridView .cell:selected { text-shadow: none; }
+
+//
+// Switchboard
+//
+SwitchboardCategoryView .view:selected,
+SwitchboardCategoryView .view:selected:focus {
+  color: $fg_color;
+  text-shadow: none;
+  icon-shadow: none;
+}

@@ -1153,11 +1153,13 @@ GtkComboBox.combobox-entry .button:only-child,
   }
   &.default-decoration {
     padding: 4px;
-    .button { padding: 5px; } // FIXME is this okay?
+    .button { padding: 4px; } // FIXME is this okay?
   }
 }
 // titlebar needs to be styled differently
 .titlebar {
+  padding-left: 6px;
+  padding-right: 6px;
   color: $wm_title;
   border-width: 0 0 1px;
   border-style: solid;

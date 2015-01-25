@@ -1276,9 +1276,11 @@ GtkComboBox {
   .header-bar.default-decoration {
     padding: 4px; }
     .header-bar.default-decoration .button {
-      padding: 5px; }
+      padding: 4px; }
 
 .titlebar {
+  padding-left: 6px;
+  padding-right: 6px;
   color: #F3F3F5;
   border-width: 0 0 1px;
   border-style: solid;
@@ -2701,6 +2703,9 @@ GraniteWidgetsWelcome .h1,
 GraniteWidgetsWelcome .h3 {
   color: rgba(243, 243, 245, 0.8); }
 
+.help_button {
+  border-radius: 0; }
+
 GraniteWidgetsPopOver {
   -GraniteWidgetsPopOver-arrow-width: 21;
   -GraniteWidgetsPopOver-arrow-height: 10;
@@ -3039,8 +3044,8 @@ MarlinViewChromeLocationBar .image {
   background-color: transparent;
   color: white;
   font-weight: bold;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  icon-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  icon-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
 
 .panel-shadow {
   background-image: none;
@@ -3067,7 +3072,9 @@ MarlinViewChromeLocationBar .image {
 
 .composited-indicator {
   background-color: transparent;
-  color: white; }
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  icon-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
 
 .composited-indicator > GtkWidget > GtkWidget:first-child {
   padding: 0 2px; }
@@ -3081,18 +3088,30 @@ MarlinViewChromeLocationBar .image {
   background-image: none;
   box-shadow: none; }
 
+.composited-indicator > .popup > .menu {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
 .button.app {
   border-width: 0;
   border-radius: 2px;
   box-shadow: none;
   border-image: none;
-  background-image: none; }
+  background-image: none;
+  icon-shadow: none; }
 
 .app:hover {
-  background-color: rgba(0, 0, 0, 0.08); }
+  background-color: rgba(0, 0, 0, 0.08);
+  icon-shadow: none; }
 
 .app:focus {
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.2);
+  icon-shadow: none; }
+
+.app:active {
+  color: #F3F3F5;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.7);
+  icon-shadow: none; }
 
 .search-item {
   border-width: 0;
@@ -3112,6 +3131,12 @@ NoiseLibraryWindow GtkPane.pane-separator {
 
 NoiseGridView .cell:selected {
   text-shadow: none; }
+
+SwitchboardCategoryView .view:selected,
+SwitchboardCategoryView .view:selected:focus {
+  color: #F3F3F5;
+  text-shadow: none;
+  icon-shadow: none; }
 
 NautilusNotebook.notebook,
 NemoNotebook.notebook,
