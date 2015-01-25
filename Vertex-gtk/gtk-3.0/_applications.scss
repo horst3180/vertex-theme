@@ -243,6 +243,16 @@ GeditFileBrowserWidget .toolbar {
 }
 
 //
+// Epiphany
+//
+EphyWindow .floating-bar { // Epiphany overrides the floating-bar style, so reset it
+  background-image: none;
+  color: $fg_color;
+  box-shadow: none;
+  text-shadow: 0 1px $light_text_icon_shadow;
+}
+
+//
 // Gnome Documents
 //
 .documents-load-more.button {

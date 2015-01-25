@@ -3290,6 +3290,12 @@ GeditFileBrowserWidget .toolbar {
   margin: 2px;
   padding: 2px; }
 
+EphyWindow .floating-bar {
+  background-image: none;
+  color: #3c3c3e;
+  box-shadow: none;
+  text-shadow: 0 1px white; }
+
 .documents-load-more.button {
   border-image: none;
   border-color: #b9b9b9;
