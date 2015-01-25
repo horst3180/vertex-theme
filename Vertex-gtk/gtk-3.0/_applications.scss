@@ -561,15 +561,12 @@ MarlinViewChromeLocationBar .image {
 //
 // Noise
 //
-NoiseLibraryWindow GtkPaned.vertical,
-NoiseLibraryWindow GtkPaned.horizontal,
-NoiseLibraryWindow GtkPaned.vertical:hover,
-NoiseLibraryWindow GtkPaned.horizontal:hover {	
-  -GtkPaned-handle-size: 1;
-  background-color: $borders_color;
-  background-image: none;
+NoiseLibraryWindow {	
+  @extend %thin_separator;
 }
 
-NoiseInfoPanel.content-view {
-  background-color: $base_color;
+NoiseLibraryWindow GtkPane.pane-separator {	
+  background-image: linear-gradient(to bottom, $borders_color);
 }
+
+NoiseGridView .cell:selected { text-shadow: none; }

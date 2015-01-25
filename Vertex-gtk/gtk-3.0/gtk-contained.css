@@ -2715,15 +2715,16 @@ GtkPaned {
     .pane-separator.vertical:hover {
       background-image: url("assets/pane-separator-grip-vertical-prelight.svg"); }
 
-GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow *, MarlinViewWindow * {
+GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow *, MarlinViewWindow *, NoiseLibraryWindow * {
   -GtkPaned-handle-size: 1px; }
-GtkFileChooserDialog .pane-separator, NautilusWindow .pane-separator, NemoWindow .pane-separator, GeditWindow .pane-separator, FrWindow .pane-separator, MarlinViewWindow .pane-separator,
+GtkFileChooserDialog .pane-separator, NautilusWindow .pane-separator, NemoWindow .pane-separator, GeditWindow .pane-separator, FrWindow .pane-separator, MarlinViewWindow .pane-separator, NoiseLibraryWindow .pane-separator,
 GtkFileChooserDialog .pane-separator:hover,
 NautilusWindow .pane-separator:hover,
 NemoWindow .pane-separator:hover,
 GeditWindow .pane-separator:hover,
 FrWindow .pane-separator:hover,
-MarlinViewWindow .pane-separator:hover {
+MarlinViewWindow .pane-separator:hover,
+NoiseLibraryWindow .pane-separator:hover {
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: #b9b9b9; }
@@ -3534,16 +3535,11 @@ MarlinViewChromeLocationBar .image {
   icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   border-radius: 0; }
 
-NoiseLibraryWindow GtkPaned.vertical,
-NoiseLibraryWindow GtkPaned.horizontal,
-NoiseLibraryWindow GtkPaned.vertical:hover,
-NoiseLibraryWindow GtkPaned.horizontal:hover {
-  -GtkPaned-handle-size: 1;
-  background-color: #b9b9b9;
-  background-image: none; }
+NoiseLibraryWindow GtkPane.pane-separator {
+  background-image: linear-gradient(to bottom, #b9b9b9); }
 
-NoiseInfoPanel.content-view {
-  background-color: #ffffff; }
+NoiseGridView .cell:selected {
+  text-shadow: none; }
 
 NautilusNotebook.notebook,
 NemoNotebook.notebook,
@@ -3735,6 +3731,12 @@ UnityPanelWidget,
 @define-color theme_base_color #ffffff;
 @define-color theme_selected_bg_color #4080fb;
 @define-color theme_selected_fg_color #ffffff;
+@define-color fg_color #3c3c3e;
+@define-color text_color #3c3c3e;
+@define-color bg_color #F5F5F7;
+@define-color base_color #ffffff;
+@define-color selected_bg_color #4080fb;
+@define-color selected_fg_color #ffffff;
 @define-color insensitive_bg_color #f4f4f4;
 @define-color insensitive_fg_color #ababad;
 @define-color insensitive_base_color #ffffff;
