@@ -2487,7 +2487,7 @@ GtkVolumeButton.button {
   text-shadow: none;
   icon-shadow: none;
   text-shadow: 0 1px white;
-  icon-shadow: 0 1px white; }
+  icon-shadow: none; }
   .header-bar .left GtkMenuButton.button.titlebutton:first-child:hover,
   .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
   .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:hover,
@@ -2505,7 +2505,8 @@ GtkVolumeButton.button {
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
-    border-color: transparent; }
+    border-color: transparent;
+    icon-shadow: none; }
   .header-bar .left GtkMenuButton.button.titlebutton:first-child:active, .header-bar .left GtkMenuButton.button.titlebutton:first-child:checked,
   .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active,
   .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:checked,
@@ -2531,7 +2532,8 @@ GtkVolumeButton.button {
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
-    border-color: transparent; }
+    border-color: transparent;
+    icon-shadow: none; }
   .header-bar .left GtkMenuButton.button.titlebutton:first-child:backdrop,
   .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop,
   .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:backdrop,

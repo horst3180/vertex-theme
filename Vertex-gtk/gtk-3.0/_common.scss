@@ -2884,10 +2884,16 @@ GtkVolumeButton.button { padding: 8px; }
   @include button(undecorated);
 
   text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
-  icon-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+  icon-shadow: none;
 
-  &:hover { @include button(hover, $darker); }
-  &:active, &:checked { @include button(active, $darker); }
+  &:hover {
+    @include button(hover, $darker);
+    icon-shadow: none;
+  }
+  &:active, &:checked {
+    @include button(active, $darker);
+    icon-shadow: none;
+  }
   &:backdrop { color: $wm_unfocused_title; }
 }
 
