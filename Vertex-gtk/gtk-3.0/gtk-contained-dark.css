@@ -1255,8 +1255,6 @@ GtkComboBox {
         -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
         color: rgba(255, 255, 255, 0.5);
         icon-shadow: none; }
-  .header-bar .search-bar {
-    background-color: #454649; }
   .tiled .header-bar, .maximized .header-bar {
     border-radius: 0; }
 

@@ -1115,8 +1115,6 @@ GtkComboBox.combobox-entry .button:only-child,
     }
   }
 
-  .search-bar { background-color: $primary_toolbar_bg_a; } // Fixes gnome-documents search-bar
-
   @if $darker=='true' {
 
     > .separator, .titlebar > .separator { color: rgba(0, 0, 0, 0.3); } // Separator in Gnome Tweak Tool
