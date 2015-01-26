@@ -21,8 +21,12 @@
 
 /* default text style */
 stage {
+    /*
     font-family: "Cantarell";
     font-size: 9pt;
+    */
+    font-family: "San Francisco Display";
+    font-size: 12pt;
     color: white;
 }
 
@@ -956,18 +960,18 @@ StScrollBar StButton#vhandle:active {
 }
 
 .bottom #dash {
-    border-image: url('bottom_dash.svg') 12 12 12 5;
+    border-image: url('bottom_dash.svg') 5 12 12 12;
     padding: 5px 6px 0 6px;
 }
 
 .right #dash {
     border-image: url('right_dash.svg') 5 12 12 12;
-    padding: 6px 0 5px 5px;
+    padding: 6px 0 6px 5px;
 }
 
 .top #dash {
-    border-image: url('top_dash.svg') 12 12 12 5;
-    padding: 6px 0 5px 5px;
+    border-image: url('top_dash.svg') 12 12 5 12;
+    padding: 0 6px 5px 6px;
 }
 
 .placeholder {
@@ -1044,8 +1048,9 @@ StScrollBar StButton#vhandle:active {
 .list-search-results {
     spacing: 3px;
 }
-
-.dash-label {
+.dash-label,
+.left .dash-label,
+.right .dash-label {
     padding: 4px 12px;
     background: rgba(0,0,0,0.7);
     border-radius: 3px;
@@ -1053,7 +1058,8 @@ StScrollBar StButton#vhandle:active {
     -x-offset: 8px;
 }
 
-.bottom .dash-label {
+.bottom .dash-label,
+.top .dash-label {
     padding: 4px 12px;
     background: rgba(0,0,0,0.7);
     border-radius: 3px;
@@ -1130,15 +1136,19 @@ StScrollBar StButton#vhandle:active {
     spacing-columns: 5px;
 }
 
-.dash-item-container > StButton {
+.dash-item-container > StButton,
+.left .dash-item-container > StButton,
+.right .dash-item-container > StButton {
     padding: 2px 0px;
 }
 
-.bottom .dash-item-container > StButton {
+.bottom .dash-item-container > StButton,
+.top .dash-item-container > StButton {
     padding: 0px 2px;
 }
 
-.dash-item-container > .app-well-app.running > .overview-icon {
+.dash-item-container > .app-well-app.running > .overview-icon,
+.left .dash-item-container > .app-well-app.running > .overview-icon {
     background-image: none;
 	box-shadow: none;
     border-image: url("button-running.svg") 6;
@@ -1146,13 +1156,22 @@ StScrollBar StButton#vhandle:active {
 }
 
 .bottom .dash-item-container > .app-well-app.running > .overview-icon {
-    background-image: none;
-    box-shadow: none;
     border-image: url("bottom_button-running.svg") 6;
     padding: 11px 10px 13px 10px;
 }
 
-.dash-item-container > .app-well-app.running:active:hover > .overview-icon {
+.right .dash-item-container > .app-well-app.running > .overview-icon {
+    border-image: url("right_button-running.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app.running > .overview-icon {
+    border-image: url("top_button-running.svg") 6;
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app.running:active:hover > .overview-icon,
+.left .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
     border-image: url("button-running-active.svg") 6;
     background-image: none;
 	background-color: transparent;
@@ -1165,16 +1184,23 @@ StScrollBar StButton#vhandle:active {
 
 .bottom .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
     border-image: url("bottom_button-running-active.svg") 6;
-    background-image: none;
-    background-color: transparent;
-    box-shadow: none;
-    background-gradient-start: rgba(255, 255, 255, .0);
-    background-gradient-end: rgba(255, 255, 255, .0);
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     padding: 11px 10px 13px 10px;
 }
 
-.dash-item-container > .app-well-app.running:hover > .overview-icon {
+.right .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
+    border-image: url("right_button-running-active.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
+    border-image: url("top_button-running-active.svg") 6;
+    background-gradient-direction: horizontal;
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app.running:hover > .overview-icon,
+.left .dash-item-container > .app-well-app.running:hover > .overview-icon {
     border-image: url("button-running-hover.svg") 6;
     padding: 10px 11px 10px 13px;
 }
@@ -1184,7 +1210,18 @@ StScrollBar StButton#vhandle:active {
     padding: 11px 10px 13px 10px;
 }
 
-.dash-item-container > .app-well-app > .overview-icon {
+.right .dash-item-container > .app-well-app.running:hover > .overview-icon {
+    border-image: url("right_button-running-hover.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app.running:hover > .overview-icon {
+    border-image: url("top_button-running-hover.svg") 6;
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app > .overview-icon,
+.left .dash-item-container > .app-well-app > .overview-icon {
     padding: 10px 11px 10px 13px;
 }
 
@@ -1192,7 +1229,16 @@ StScrollBar StButton#vhandle:active {
     padding: 11px 10px 13px 10px;
 }
 
-.dash-item-container > .app-well-app:hover > .overview-icon {
+.right .dash-item-container > .app-well-app > .overview-icon {
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app > .overview-icon {
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app:hover > .overview-icon,
+.left .dash-item-container > .app-well-app:hover > .overview-icon {
     background-image: none;
 	box-shadow: none;
     border-image: url("button-hover.svg") 6;
@@ -1200,13 +1246,22 @@ StScrollBar StButton#vhandle:active {
 }
 
 .bottom .dash-item-container > .app-well-app:hover > .overview-icon {
-    background-image: none;
-    box-shadow: none;
     border-image: url("bottom_button-hover.svg") 6;
     padding: 11px 10px 13px 10px;
 }
 
-.dash-item-container > .app-well-app:active > .overview-icon {
+.right .dash-item-container > .app-well-app:hover > .overview-icon {
+    border-image: url("right_button-hover.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app:hover > .overview-icon {
+    border-image: url("top_button-hover.svg") 6;
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app:active > .overview-icon.
+.left .dash-item-container > .app-well-app:active > .overview-icon {
     background-image: none;
 	background-color: transparent;
     box-shadow: none;
@@ -1218,14 +1273,20 @@ StScrollBar StButton#vhandle:active {
 }
 
 .bottom .dash-item-container > .app-well-app:active > .overview-icon {
-    background-image: none;
-    background-color: transparent;
-    box-shadow: none;
-    background-gradient-start: rgba(255, 255, 255, .0);
-    background-gradient-end: rgba(255, 255, 255, .0);
-    background-gradient-direction: vertical;
+    background-gradient-direction: horizontal;
     border-image: url("bottom_button-active.svg") 6;
     padding: 11px 10px 13px 10px;
+}
+
+.right .dash-item-container > .app-well-app:active > .overview-icon {
+    border-image: url("right_button-active.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app:active > .overview-icon {
+    background-gradient-direction: horizontal;
+    border-image: url("top_button-active.svg") 6;
+    padding: 13px 10px 11px 10px;
 }
 
 .list-search-result-content {
