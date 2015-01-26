@@ -355,6 +355,11 @@ FrWindow.background GtkBox.vertical GtkTreeView.view {
 }
 
 //
+// Gnome Disks
+//
+GduWindow { @extend %thin_separator }
+
+//
 // Fallback Mode/Budgie Panel
 //
 PanelToplevel,
@@ -432,9 +437,53 @@ BirdieWidgetsTweetList * {
 }
 
 //
-// Marlin
+// Marlin / Pantheon Files
 //
 MarlinViewWindow { @extend %thin_separator }
+
+MarlinViewWindow GtkIconView.view:selected,
+MarlinViewWindow GtkIconView.view:selected:focus,
+MarlinViewWindow GtkIconView.view:selected:hover,
+MarlinViewWindow GtkIconView.view:selected:focus:hover {
+  background-color: transparent;
+}
+
+MarlinViewWindow FMListView,
+MarlinViewWindow FMColumnView {
+  outline-color: transparent;
+}
+
+MarlinViewWindow FMListView .cell:selected,
+MarlinViewWindow FMListView .cell:selected:focus,
+MarlinViewWindow FMListView .cell:selected:hover,
+MarlinViewWindow FMListView .cell:selected:focus:hover,
+MarlinViewWindow FMColumnView .cell:selected,
+MarlinViewWindow FMColumnView .cell:selected:focus,
+MarlinViewWindow FMColumnView .cell:selected:hover,
+MarlinViewWindow FMColumnView .cell:selected:focus:hover {
+  background-image: none;
+  border: none;
+}
+
+MarlinViewWindow *:selected,
+MarlinViewWindow *:selected:focus {
+	color: $selected_fg_color;
+	background-color: $selected_bg_color;
+  outline-color: transparent;
+}
+
+.marlin-pathbar.pathbar {
+  @include entry(normal, $darker);
+
+  &.image { color: red; }
+
+  &:focus { @include entry(focus, $darker) }
+  &:insensitive { @include entry(insensitive, $darker) }
+  &:active, &:checked {
+    background-image: none;
+    background-color: transparentize(black, 0.85);
+  }
+}
 
 //
 // Gala

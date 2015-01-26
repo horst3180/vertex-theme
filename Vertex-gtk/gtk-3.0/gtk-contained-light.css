@@ -1350,6 +1350,7 @@ GtkTreeView.view {
     icon-shadow: none; }
   GtkTreeView.view.trough {
     padding: 0 0 1px 0;
+    color: #ffffff;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to bottom, #5d5d5f, #78797a);
     border-image: -gtk-scaled(url("borders/trough-border.png"), url("borders/trough-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -2311,14 +2312,15 @@ GtkPaned {
     .pane-separator.vertical:hover {
       background-image: url("assets/pane-separator-grip-vertical-prelight.svg"); }
 
-GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow *, MarlinViewWindow *, NoiseLibraryWindow * {
+GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow *, GduWindow *, MarlinViewWindow *, NoiseLibraryWindow * {
   -GtkPaned-handle-size: 1px; }
-GtkFileChooserDialog .pane-separator, NautilusWindow .pane-separator, NemoWindow .pane-separator, GeditWindow .pane-separator, FrWindow .pane-separator, MarlinViewWindow .pane-separator, NoiseLibraryWindow .pane-separator,
+GtkFileChooserDialog .pane-separator, NautilusWindow .pane-separator, NemoWindow .pane-separator, GeditWindow .pane-separator, FrWindow .pane-separator, GduWindow .pane-separator, MarlinViewWindow .pane-separator, NoiseLibraryWindow .pane-separator,
 GtkFileChooserDialog .pane-separator:hover,
 NautilusWindow .pane-separator:hover,
 NemoWindow .pane-separator:hover,
 GeditWindow .pane-separator:hover,
 FrWindow .pane-separator:hover,
+GduWindow .pane-separator:hover,
 MarlinViewWindow .pane-separator:hover,
 NoiseLibraryWindow .pane-separator:hover {
   border-width: 0 1px 1px 1px;
@@ -2584,7 +2586,8 @@ GtkVolumeButton.button {
   .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop {
     color: rgba(60, 60, 62, 0.7); }
 
-.view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkFlowBox .grid-child:selected, .entry:selected, .entry:selected:focus, .list-row:selected {
+.view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkFlowBox .grid-child:selected, .entry:selected, .entry:selected:focus, GtkIconView.cell:selected,
+GtkIconView.cell:selected:focus, .list-row:selected {
   background-color: #4080fb;
   color: #ffffff;
   outline-color: rgba(255, 255, 255, 0.3); }
@@ -3043,6 +3046,68 @@ PanelApplet .button, PanelApplet .button:focus, PanelApplet .button:hover, Panel
 BirdieWidgetsTweetList * {
   background-image: none;
   background-color: transparent; }
+
+MarlinViewWindow GtkIconView.view:selected,
+MarlinViewWindow GtkIconView.view:selected:focus,
+MarlinViewWindow GtkIconView.view:selected:hover,
+MarlinViewWindow GtkIconView.view:selected:focus:hover {
+  background-color: transparent; }
+
+MarlinViewWindow FMListView,
+MarlinViewWindow FMColumnView {
+  outline-color: transparent; }
+
+MarlinViewWindow FMListView .cell:selected,
+MarlinViewWindow FMListView .cell:selected:focus,
+MarlinViewWindow FMListView .cell:selected:hover,
+MarlinViewWindow FMListView .cell:selected:focus:hover,
+MarlinViewWindow FMColumnView .cell:selected,
+MarlinViewWindow FMColumnView .cell:selected:focus,
+MarlinViewWindow FMColumnView .cell:selected:hover,
+MarlinViewWindow FMColumnView .cell:selected:focus:hover {
+  background-image: none;
+  border: none; }
+
+MarlinViewWindow *:selected,
+MarlinViewWindow *:selected:focus {
+  color: #ffffff;
+  background-color: #4080fb;
+  outline-color: transparent; }
+
+.marlin-pathbar.pathbar {
+  background-color: transparent;
+  color: #3c3c3e;
+  background-image: linear-gradient(to bottom, #ffffff);
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
+  border-image: -gtk-scaled(url("borders/entry-normal-border.png"), url("borders/entry-normal-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .marlin-pathbar.pathbar.image {
+    color: red; }
+  .marlin-pathbar.pathbar:focus {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #ffffff);
+    box-shadow: none;
+    border-image: -gtk-scaled(url("borders/entry-focused-border.png"), url("borders/entry-focused-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .marlin-pathbar.pathbar:insensitive {
+    background-color: transparent;
+    color: #ababad;
+    background-image: linear-gradient(to bottom, #f4f4f4);
+    box-shadow: none;
+    border-image: -gtk-scaled(url("borders/entry-normal-border.png"), url("borders/entry-normal-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .marlin-pathbar.pathbar:active, .marlin-pathbar.pathbar:checked {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.15); }
 
 .gala-notification {
   border: 1px solid rgba(0, 0, 0, 0.75);
