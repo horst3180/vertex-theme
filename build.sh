@@ -14,6 +14,8 @@ rm $DIR/Vertex-gtk/gtk-3.0/render-assets.sh
 rm $DIR/Vertex-gtk/gtk-3.0/render-borders.sh
 rm $DIR/Vertex-gtk/gtk-3.0/parse-sass.sh
 rm $DIR/Vertex-gtk/gtk-3.0/Gemfile
+rm $DIR/Vertex-gtk/gtk-3.0/Gemfile.lock
+rm $DIR/Vertex-gtk/gtk-3.0/README
 rm $DIR/Vertex-gtk/gtk-3.0/*.scss
 
 mkdir -p $DIR/Gnome-3.14
