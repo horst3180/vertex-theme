@@ -960,17 +960,17 @@ StScrollBar StButton#vhandle:active {
 }
 
 .bottom #dash {
-    border-image: url('bottom_dash.svg') 5 12 12 12;
+    border-image: url('bottom_dash.svg') 12 12 12 5;
     padding: 5px 6px 0 6px;
 }
 
 .right #dash {
-    border-image: url('right_dash.svg') 5 12 12 12;
+    border-image: url('right_dash.svg') 12 12 5 12;
     padding: 6px 0 6px 5px;
 }
 
 .top #dash {
-    border-image: url('top_dash.svg') 12 12 5 12;
+    border-image: url('top_dash.svg') 12 5 12 12;
     padding: 0 6px 5px 6px;
 }
 
