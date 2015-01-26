@@ -1351,16 +1351,16 @@ GtkComboBox.combobox-entry .button:only-child,
                                       nth($_trough_bg_color_b, 2));
     @include _border(scale-trough-border-dark, $width: 1px 5px 2px 5px, $image-width: 2 6 3 6 / 2px 6px 3px 6px);
 
-    &.highlight {
+    &.highlight { // make the highlight a little lighter here for better contrast
       background-image: linear-gradient(to bottom,
-                                        nth($_scale_highlight_bg_a, 2),
-                                        nth($_scale_highlight_bg_b, 2));
+                                        lighten(nth($_scale_highlight_bg_a, 2), 5%),
+                                        lighten(nth($_scale_highlight_bg_b, 2), 5%));
       @include _border(scale-highlight-border-dark, $width: 1px 5px 2px 5px, $image-width: 2 6 3 6 / 2px 6px 3px 6px);
 
       &:insensitive {
         background-image: linear-gradient(to bottom,
-                                          darken(nth($_scale_highlight_bg_b, 2), 14%),
-                                          darken(nth($_scale_highlight_bg_b, 2), 8%));
+                                          darken(nth($_scale_highlight_bg_b, 2), 9%),
+                                          darken(nth($_scale_highlight_bg_b, 2), 4%));
       }
     }
     &:insensitive {
@@ -2164,8 +2164,8 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
         }
         @else {
           background-image: linear-gradient(to bottom,
-                                            darken($scale_highlight_bg_b, 14%),
-                                            darken($scale_highlight_bg_b, 8%));
+                                            darken($scale_highlight_bg_b, 9%),
+                                            darken($scale_highlight_bg_b, 4%));
         }
       }
     }
@@ -2204,8 +2204,8 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
           }
           @else {
             background-image: linear-gradient(to right,
-                                              darken($scale_highlight_bg_b, 14%),
-                                              darken($scale_highlight_bg_b, 8%));
+                                              darken($scale_highlight_bg_b, 9%),
+                                              darken($scale_highlight_bg_b, 4%));
           }
         }
       }

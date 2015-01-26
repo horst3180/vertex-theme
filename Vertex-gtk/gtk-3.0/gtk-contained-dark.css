@@ -1934,7 +1934,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
       border-style: solid;
       border-color: transparent; }
       .scale.trough.highlight:insensitive {
-        background-image: linear-gradient(to bottom, #2e2e30, #3c3e40); }
+        background-image: linear-gradient(to bottom, #3a3b3d, #46484a); }
     .scale.trough:insensitive {
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
       background-image: linear-gradient(to bottom, #353638, #3c3e40); }
@@ -1954,7 +1954,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
         border-style: solid;
         border-color: transparent; }
         .scale.trough.vertical.highlight:insensitive {
-          background-image: linear-gradient(to right, #2e2e30, #3c3e40); }
+          background-image: linear-gradient(to right, #3a3b3d, #46484a); }
       .scale.trough.vertical:insensitive {
         box-shadow: inset 1px 0 2px rgba(0, 0, 0, 0.1);
         background-image: linear-gradient(to right, #353638, #3c3e40); }
