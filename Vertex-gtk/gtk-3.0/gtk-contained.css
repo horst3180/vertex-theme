@@ -3384,6 +3384,13 @@ EphyWindow .floating-bar {
 .cell.baobab-level-cell:selected:hover {
   background-image: none; }
 
+BaobabRingschart.subfolder-tip {
+  border-radius: 2px;
+  border-style: none;
+  padding: 3px 3px 3px 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff; }
+
 LibraryWindow GtkPaned.horizontal {
   -GtkPaned-handle-size: 1;
   background-color: #F5F5F7;

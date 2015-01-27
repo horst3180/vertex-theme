@@ -367,7 +367,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
       &:active { transition: $_button_transition; }
     }
   }
-  &:focus { @include button(focus) }
+  &:focus { @include button(focus); }
   &:hover {
     @include button(hover);
     -gtk-image-effect: highlight;
@@ -596,7 +596,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 // Extends for linked buttons
 %linked_middle {
   @include linked(button, normal, middle);
-  &:active, &:checked { @include linked(button, active, middle) }  
+  &:active, &:checked { @include linked(button, active, middle); }  
 }
 
 %linked {
@@ -604,11 +604,11 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 
   &:first-child {
     @include linked(button, normal, left);
-    &:active, &:checked { @include linked(button, active, left) }
+    &:active, &:checked { @include linked(button, active, left); }
   }
   &:last-child {
     @include linked(button, normal, right);
-    &:active, &:checked { @include linked(button, active, right) }
+    &:active, &:checked { @include linked(button, active, right); }
   }
   &:only-child {
     @include linked(button, normal, single);
@@ -1212,12 +1212,12 @@ GtkComboBox.combobox-entry .button:only-child,
       text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
       icon-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
     }
-    &:focus { @include button(focus, $dark:'true') };
-    &:hover { @include button(hover, $dark:'true') };
+    &:focus { @include button(focus, $dark:'true'); }
+    &:hover { @include button(hover, $dark:'true'); }
     &:active, &:checked { @include button(active, $dark:'true'); }
-    &:insensitive { @include button(insensitive, $dark:'true') };
+    &:insensitive { @include button(insensitive, $dark:'true'); }
     &.flat:insensitive { @include button(undecorated); }
-    &:insensitive:active, &:insensitive:checked { @include button(insensitive-active, $dark:'true') };
+    &:insensitive:active, &:insensitive:checked { @include button(insensitive-active, $dark:'true'); }
 
   // Suggested and Destructive Action buttons
     $_destructive: $destructive_color_a, $_destructive_color_b;

@@ -297,6 +297,14 @@ EphyWindow .floating-bar { // Epiphany overrides the floating-bar style, so rese
 	background-image: none;
 }
 
+BaobabRingschart.subfolder-tip {
+  border-radius: 2px;
+  border-style: none;
+  padding: 3px 3px 3px 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: $selected_fg_color;
+}
+
 //
 // Shotwell
 //
