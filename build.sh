@@ -143,4 +143,4 @@ mv $DIR/Vertex/gtk-3.0/gtk-main-dark-3-10.css $DIR/Vertex/gtk-3.0/gtk-main-dark.
 mv $DIR/Vertex $DIR/Gnome-3.10_Ubuntu-14.04/
 
 cd $DIR
-zip -r Vertex-theme Chrome Firefox Gnome-3.10_Ubuntu-14.04 Gnome-3.12_Ubuntu-14.10 Gnome-3.14 Vertex_alt_metacity Vertex-Gnome-Shell Vertex-Cinnamon LICENSE README
+zip -r Vertex-theme Chrome Firefox Ubuntu-Software-Center Gnome-3.10_Ubuntu-14.04 Gnome-3.12_Ubuntu-14.10 Gnome-3.14 Vertex_alt_metacity Vertex-Gnome-Shell Vertex-Cinnamon LICENSE README
