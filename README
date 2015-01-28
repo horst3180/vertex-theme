@@ -70,12 +70,19 @@ If you get black spaces under Unity, disable overlay scrollbars with
 
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
+#######################################################################
 
 If the metacity theme doesn't show up in gnome-tweak-tool copy the theme folder with only the metacity theme inside to ~/.local/share/themes. Otherwise gnome-tweak-tool won't find the metacity theme. (This shouldn't happen if you copy the theme to /usr/share/themes)
 
+#######################################################################
 
 You may face the issue that sublime text 2 won't load the theme correctly. This is due to either a bug in sublime or libpng. To fix this, download and extract the sublime-text-fix.tar.gz file and follow the instructions in the included README
 
+#######################################################################
 
 If you experience Gnome-Shell crashes, replace the "gnome-shell.css" file in the "Vertex-Gnome-Shell/gnome-shell/" folder with the "gnome-shell-no-crash.css" file
 
+#######################################################################
+
+Ubuntu-Software-Center doesn't play nice with dark themes. If you are using Vertex-Dark under Ubuntu the software center will have unreadable text.
+To fix this, install the Ubuntu-Software-Center fix. Instructions and relevant files are included in the 'Ubuntu-Software-Center' folder.
