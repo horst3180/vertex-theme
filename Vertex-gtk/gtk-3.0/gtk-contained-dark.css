@@ -3154,8 +3154,6 @@ MarlinViewWindow *:selected:focus {
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .marlin-pathbar.pathbar.image {
-    color: red; }
   .marlin-pathbar.pathbar:focus {
     background-color: transparent;
     background-image: linear-gradient(to bottom, #2B2B2C);
