@@ -56,18 +56,9 @@ GraniteWidgetsStaticNotebook .frame {
   padding: 5px;
   border-width: 1px 0 0 0;
   border-style: solid;
+  border-color: $borders_color;
 
-  @if $darker=='true' {
-    border-color: nth($_borders_color, 2);
-    box-shadow: inset 0 1px nth($_highlight_shadow, 2);
-    background-image: linear-gradient(to bottom,
-                                      lighten(nth($_bg_color, 2), 1%),
-                                      darken(nth($_bg_color, 2), 2%));
-  }
-  @else {
-    border-color: $borders_color;
-    @extend %action-bar-background
-  }
+  @extend %action-bar-background;
 
   .button { padding: 2px 3px 2px 3px; }
 }
