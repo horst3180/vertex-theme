@@ -3292,9 +3292,10 @@ NautilusQueryEditor .search-bar.toolbar {
 
 NemoWindow .sidebar .frame {
   border-width: 0; }
-
 NemoWindow GtkSeparator.separator.horizontal, NemoWindow .sidebar GtkSeparator.horizontal.view.separator, .sidebar NemoWindow GtkSeparator.horizontal.view.separator {
-  color: #b9b9b9; }
+  color: #2b2c2e; }
+NemoWindow GtkEventBox {
+  background-color: #454649; }
 
 GeditWindow .gedit-headerbar-paned {
   background-color: #29292b; }

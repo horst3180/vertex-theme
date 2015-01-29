@@ -90,14 +90,15 @@ NautilusQueryEditor .search-bar.toolbar {
 //
 NemoWindow {
   @extend %thin_separator;
-}
 
-NemoWindow .sidebar .frame {
-	border-width: 0;
-}
+  .sidebar .frame { border-width: 0; }
 
-NemoWindow GtkSeparator.separator.horizontal {
-	color: $borders_color;
+  GtkSeparator.separator.horizontal {
+    color: if($darker=='false', $borders_color, nth($_borders_color, 3));
+  }
+  GtkEventBox {
+	  background-color: $primary_toolbar_bg_a;
+  }
 }
 
 .nemo-desktop.nemo-canvas-item {

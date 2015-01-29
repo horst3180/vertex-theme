@@ -2864,9 +2864,10 @@ NautilusQueryEditor .search-bar.toolbar {
 
 NemoWindow .sidebar .frame {
   border-width: 0; }
-
 NemoWindow GtkSeparator.separator.horizontal, NemoWindow .sidebar GtkSeparator.horizontal.view.separator, .sidebar NemoWindow GtkSeparator.horizontal.view.separator {
   color: #b9b9b9; }
+NemoWindow GtkEventBox {
+  background-color: #F5F5F7; }
 
 .open-document-selector-listbox-row {
   padding: 6px 6px 6px 12px; }
