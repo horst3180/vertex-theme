@@ -190,8 +190,8 @@ GraniteWidgetsPopOver {
 }
 
 .popover_bg {
-  background-color: if($variant=='light', darken($base_color, 2%), mix($bg_color,$base_color, 80%));
-  border: 1px solid transparentize(black, 0.7);
+  background-image: linear-gradient(to bottom, if($variant=='light', darken($base_color, 2%), mix($bg_color,$base_color, 80%)));
+  border: 1px solid if($variant=='light', transparentize(black, 0.7), transparentize(black, 0.3));
 }
 
 GraniteWidgetsPopOver .sidebar.view,

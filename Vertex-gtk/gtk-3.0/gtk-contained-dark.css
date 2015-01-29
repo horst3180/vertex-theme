@@ -2758,8 +2758,8 @@ GraniteWidgetsPopOver {
   margin: 0; }
 
 .popover_bg {
-  background-color: #333335;
-  border: 1px solid rgba(0, 0, 0, 0.3); }
+  background-image: linear-gradient(to bottom, #333335);
+  border: 1px solid rgba(0, 0, 0, 0.7); }
 
 GraniteWidgetsPopOver .sidebar.view,
 GraniteWidgetsPopOver * {

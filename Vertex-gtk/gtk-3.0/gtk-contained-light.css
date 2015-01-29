@@ -2770,7 +2770,7 @@ GraniteWidgetsPopOver {
   margin: 0; }
 
 .popover_bg {
-  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #fafafa);
   border: 1px solid rgba(0, 0, 0, 0.3); }
 
 GraniteWidgetsPopOver .sidebar.view,
