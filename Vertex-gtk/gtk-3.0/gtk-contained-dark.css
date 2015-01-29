@@ -3038,6 +3038,11 @@ RBButtonBar.toolbar, RBButtonBar.search-bar.toolbar,
 RBButtonBar.location-bar.toolbar {
   background-color: #353638; }
 
+#recordGrid .toolbar {
+  background-color: #353638;
+  background-image: none;
+  color: #F3F3F5; }
+
 GtkHandleBox {
   color: #F3F3F5;
   background-color: #454649; }

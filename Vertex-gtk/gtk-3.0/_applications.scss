@@ -393,6 +393,15 @@ RBButtonBar.toolbar {
 }
 
 //
+// Gnome-Sound-Recorder
+//
+#recordGrid .toolbar {
+	background-color: $bg_color; 
+	background-image: none; 
+	color: $fg_color;
+}
+
+//
 // Synaptic
 //
 GtkHandleBox {
