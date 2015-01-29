@@ -1015,7 +1015,6 @@ GtkComboBox {
   padding: 4px;
   color: #3c3c3e;
   background-image: linear-gradient(to bottom, #F5F5F7, #eaeaee);
-  border: 1px solid #b9b9b9;
   border-width: 0 0 1px 0;
   border-image: linear-gradient(to bottom, #F5F5F7, #b9b9b9) 1 0 1 0; }
   .primary-toolbar:insensitive {

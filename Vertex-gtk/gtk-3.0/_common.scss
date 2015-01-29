@@ -945,7 +945,6 @@ GtkComboBox.combobox-entry .button:only-child,
   background-image: linear-gradient(to bottom,
                                     $primary_toolbar_bg_a,
                                     $primary_toolbar_bg_b);
-  border: 1px solid $borders_color;
   border-width: 0 0 1px 0;
   border-image: linear-gradient(to bottom, $primary_toolbar_bg_a,
                                            if($darker=='false', $borders_color, nth($_borders_color, 3))) 1 0 1 0; //temporary hack for rhythmbox 3.1
