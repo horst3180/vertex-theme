@@ -546,24 +546,21 @@ $_dot_color: if($variant=='light', $selected_bg_color,
     }
   }
 
-%needs_attention {
-  animation: needs_attention 150ms ease-in;
-  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($selected_bg_color), to(transparent)),
-                    -gtk-gradient(radial, center center, 0, center center, 0.5, to(rgba(255, 255, 255, 0.2)), to(transparent));
-  background-size: 6px 6px, 6px 6px;
-  background-repeat: no-repeat;
-  background-position: right 3px, right 4px;
-  //@if $variant == 'light' { background-position: right 3px, right 4px; } //FIXME is this neccessary?
-  //@else { background-position: right 3px, right 2px; }
-  &:dir(rtl) {
-    background-position: left 3px, left 4px;
-    //@if $variant == 'light' { background-position: left 3px, left 4px; }
-    //@else { background-position: left 3px, left 2px; }
+  %needs_attention {
+    animation: needs_attention 150ms ease-in;
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($selected_bg_color), to(transparent)),
+                      -gtk-gradient(radial, center center, 0, center center, 0.5, to(rgba(255, 255, 255, 0.2)), to(transparent));
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    background-position: right 3px, right 4px;
+    //@if $variant == 'light' { background-position: right 3px, right 4px; } //FIXME is this neccessary?
+    //@else { background-position: right 3px, right 2px; }
+    &:dir(rtl) {
+      background-position: left 3px, left 4px;
+      //@if $variant == 'light' { background-position: left 3px, left 4px; }
+      //@else { background-position: left 3px, left 2px; }
+    }
   }
-}
-
-  //inline-toolbar buttons
-  .inline-toolbar & { @extend %linked; }
 
   .linked &,
   .linked &:hover { @extend %linked; }
@@ -574,23 +571,30 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 
 // all the following is for the +|- buttons on inline toolbars, that way
 // should really be deprecated...
-.inline-toolbar GtkToolButton > .button { // redefining the button look is
-                                          // needed since those are flat...
+.inline-toolbar.toolbar GtkToolButton > .button,  // redefining the button look is needed since those are flat
+.inline-toolbar.toolbar GtkToolItem .button {     // do it for normal buttons too, so it doesn't get overridden
   @include button(normal);
   &:hover { @include button(hover); }
   &:active,
-  &:checked{ @include button(active); }
+  &:checked { @include button(active); }
   &:insensitive { @include button(insensitive); }
   &:insensitive:active,
   &:insensitive:checked { @include button(insensitive-active); }
 }
 
 // More inline toolbar buttons
-.inline-toolbar.toolbar GtkToolButton {
-  & > .button.flat { @extend %linked_middle; }
-  &:first-child > .button.flat { @extend %linked:first-child; }
-  &:last-child > .button.flat { @extend %linked:last-child; }
-  &:only-child > .button.flat { @extend %linked:only-child; }
+.inline-toolbar.toolbar {
+  GtkToolButton > .button.flat,
+  GtkToolItem .button,
+  GtkToolItem .button:hover,
+  GtkToolItem .button:insensitive { @extend %linked_middle; }
+
+  GtkToolButton:first-child > .button.flat,
+  GtkToolItem .button:first-child { @extend %linked:first-child; }
+  GtkToolButton:last-child > .button.flat,
+  GtkToolItem .button:last-child { @extend %linked:last-child; }
+  GtkToolButton:only-child > .button.flat,
+  GtkToolItem .button:only-child { @extend %linked:only-child; }
 }
 
 // Extends for linked buttons
@@ -910,7 +914,8 @@ GtkComboBox.combobox-entry .button:only-child,
 .toolbar {
   -GtkWidget-window-dragging: true;
   padding: 4px;
-  background-color: $bg_color;
+  color: $wm_title;
+  background-color: $primary_toolbar_bg_a;
 
   &.menubar {
     border-bottom: 1px solid $borders_color;
@@ -929,12 +934,14 @@ GtkComboBox.combobox-entry .button:only-child,
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 9px;
 
-    @include _border(header-separator#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
+    @include _border(header-separator#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
   }
   GtkComboBox .separator {
     -GtkWidget-wide-separators: true;
     border: none;
   }
+  // make widgets on dark toolbars dark
+  @if $darker=='true' { @extend %dark_widgets; }
 }
 
 // primary toolbars
@@ -983,6 +990,24 @@ GtkComboBox.combobox-entry .button:only-child,
   @extend %action-bar-background;
 }
 
+.location-bar,
+.search-bar {
+  padding: 3px; 
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: $borders_color;
+  background-color: if($variant=='light', lighten($bg_color, 1%), darken($bg_color, 2.3%));
+  box-shadow: inset 0 3px 3px -1px if($variant=='light', rgba(0, 0, 0, 0.1), rgba(0,0,0,0.17));
+}
+
+// Special case for searchbars and locationsbars which are also toolbars
+.search-bar.toolbar,
+.location-bar.toolbar {
+  border-color: if($darker=='false', $borders_color, nth($_borders_color, 3));
+
+  @extend .toolbar;
+}
+
 %action-bar-background {
   background-color: transparent;
   box-shadow: inset 0 1px $highlight_shadow;
@@ -997,16 +1022,6 @@ GtkComboBox.combobox-entry .button:only-child,
                                       lighten($bg_color, 1%),
                                       darken($bg_color, 2%));
   }
-}
-
-.search-bar,
-.location-bar {
-  padding: 3px; 
-  border-width: 0 0 1px;
-  border-style: solid;
-  border-color: $borders_color;
-  background-color: if($variant=='light', lighten($bg_color, 1%), darken($bg_color, 2.3%));
-  box-shadow: inset 0 3px 3px -1px if($variant=='light', rgba(0, 0, 0, 0.1), rgba(0,0,0,0.17));
 }
 
 //
@@ -1478,8 +1493,12 @@ GtkComboBox.combobox-entry .button:only-child,
   }
 }
 
-.primary-toolbar .button,                             // tango icons don't need shadows
-.primary-toolbar .button.flat { icon-shadow: none; }  // defined here so it doesn't get overriden
+// tango icons don't need shadows
+// defined here so it doesn't get overriden
+.primary-toolbar .button,
+.primary-toolbar .button.flat,
+.toolbar .button,
+.toolbar .button.flat { icon-shadow: none; } 
 
 //
 // Pathbars
@@ -1693,17 +1712,19 @@ column-header.button.dnd { // for treeview-like derive widgets
     &.arrow:dir(rtl) {-gtk-icon-source:-gtk-icontheme('pan-end-symbolic-rtl'); }
   }
   // overflow buttons
-  &.button {
-    @extend %undecorated_button;
-    border-style: none;
+  &.button, &.button:hover {
+    color: $fg_color;
+    background: none;
+    background-color: if($variant=='light', $base_color, darken($base_color, 2%));
+    border: none;
     border-radius: 0;
     &.top { border-bottom: 1px solid mix($fg_color, $base_color, 10%); }
     &.bottom { border-top: 1px solid mix($fg_color, $base_color, 10%); }
     &:hover { background-color: mix($fg_color, $base_color, 10%); }
     &:insensitive {
       color: transparent;
-      background-color: transparent;
-      border-color: transparent ;
+      background: none;
+      border: none;
     }
   }
 }

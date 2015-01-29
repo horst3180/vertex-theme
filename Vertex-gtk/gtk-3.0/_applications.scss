@@ -82,7 +82,6 @@ NautilusQueryEditor .search-bar.toolbar {
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
-
   box-shadow: none;
 }
 
@@ -222,7 +221,7 @@ GeditViewFrame .gedit-search-slider {
 }
 
 GeditFileBrowserWidget .toolbar {
-  border-bottom: 1px solid $borders_color;
+  border-bottom: 1px solid if($darker=='false', $borders_color, nth($_borders_color, 3));
 }
 
 .gedit-search-entry-occurrences-tag {
@@ -366,6 +365,31 @@ FrWindow.background GtkBox.vertical GtkTreeView.view {
 // Gnome Disks
 //
 GduWindow { @extend %thin_separator }
+
+//
+// Rhythmbox
+//
+RBButtonBar.toolbar {
+  background-color: $bg_color;
+
+  @if $darker=='true' {
+    .button.flat {
+      color: $fg_color;
+      text-shadow: 0 #{$shadow_pos}px $light_text_icon_shadow;
+      icon-shadow: 0 #{$shadow_pos}px $light_text_icon_shadow;
+
+      &:focus { @include button(focus); }
+      &:hover { @include button(hover); }
+      &:active, &:checked { @include button(active); }
+      &:active:insensitive, &:checked:insensitive { @include button(insensitive-active); }
+      &:insensitive {
+        color: $insensitive_fg_color;
+        text-shadow: none;
+        icon-shadow: none;
+      }
+    }
+  }
+}
 
 //
 // Fallback Mode/Budgie Panel
