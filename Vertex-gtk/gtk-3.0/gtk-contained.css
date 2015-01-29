@@ -3533,6 +3533,39 @@ RBButtonBar.location-bar.toolbar {
       text-shadow: none;
       icon-shadow: none; }
 
+GtkHandleBox {
+  color: #F3F3F5;
+  background-color: #454649; }
+  GtkHandleBox .entry {
+    background-color: transparent;
+    color: #F3F3F5;
+    background-image: linear-gradient(to bottom, #313132);
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
+    border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+    GtkHandleBox .entry:focus {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #313132);
+      box-shadow: none;
+      border-image: -gtk-scaled(url("borders/entry-focused-border-dark.png"), url("borders/entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+      border-radius: 2px;
+      border-width: 1px 1px 2px 1px;
+      border-style: solid;
+      border-color: transparent; }
+    GtkHandleBox .entry:insensitive {
+      background-color: transparent;
+      color: #949496;
+      background-image: linear-gradient(to bottom, #434446);
+      box-shadow: none;
+      border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+      border-radius: 2px;
+      border-width: 1px 1px 2px 1px;
+      border-style: solid;
+      border-color: transparent; }
+
 PanelToplevel,
 .gnome-panel-menu-bar {
   color: #F3F3F5;

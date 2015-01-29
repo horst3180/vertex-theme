@@ -392,6 +392,20 @@ RBButtonBar.toolbar {
 }
 
 //
+// Synaptic
+//
+GtkHandleBox {
+  color: $wm_title;
+  background-color: $primary_toolbar_bg_a;
+
+  .entry {
+    @include entry(normal, $darker);
+    &:focus { @include entry(focus, $darker); }
+    &:insensitive { @include entry(insensitive, $darker); }
+  }
+}
+
+//
 // Fallback Mode/Budgie Panel
 //
 PanelToplevel,
