@@ -144,7 +144,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3908"
-       id="linearGradient3598"
+       id="linearGradient3033"
        gradientUnits="userSpaceOnUse"
        x1="16"
        y1="31"
@@ -153,7 +153,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3908-1"
-       id="linearGradient3600"
+       id="linearGradient3035"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0.0310525,-32.014518)"
        x1="16"
@@ -163,7 +163,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3907"
-       id="linearGradient3602"
+       id="linearGradient3037"
        gradientUnits="userSpaceOnUse"
        x1="3"
        y1="18"
@@ -172,7 +172,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3923"
-       id="linearGradient3604"
+       id="linearGradient3039"
        gradientUnits="userSpaceOnUse"
        x1="-7"
        y1="33"
@@ -181,7 +181,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3923-0"
-       id="linearGradient3606"
+       id="linearGradient3041"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0,-33)"
        x1="-7"
@@ -191,7 +191,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3952"
-       id="linearGradient3608"
+       id="linearGradient3043"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.468842,0,0,1,-16.878312,-4)"
        x1="36"
@@ -216,7 +216,7 @@
      inkscape:window-width="1186"
      inkscape:window-height="726"
      inkscape:window-x="178"
-     inkscape:window-y="30"
+     inkscape:window-y="20"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -254,7 +254,7 @@
      inkscape:groupmode="layer"
      transform="translate(0,4)">
     <g
-       id="g3585"
+       id="g3020"
        transform="matrix(0,-1,1,0,4.0155262,32.015526)">
       <rect
          transform="translate(0,-4)"
@@ -287,7 +287,7 @@
          height="5"
          width="36"
          id="rect3906"
-         style="fill:url(#linearGradient3598);fill-opacity:1" />
+         style="fill:url(#linearGradient3033);fill-opacity:1" />
       <rect
          transform="scale(1,-1)"
          y="-6.0145183"
@@ -295,7 +295,7 @@
          height="5"
          width="36"
          id="rect3906-6"
-         style="fill:url(#linearGradient3600);fill-opacity:1" />
+         style="fill:url(#linearGradient3035);fill-opacity:1" />
       <rect
          ry="0"
          y="1"
@@ -311,7 +311,7 @@
          height="26"
          width="5"
          id="rect3905"
-         style="fill:url(#linearGradient3602);fill-opacity:1" />
+         style="fill:url(#linearGradient3037);fill-opacity:1" />
       <rect
          transform="translate(0,-4)"
          y="5"
@@ -327,21 +327,21 @@
          height="1"
          width="36"
          id="rect3921"
-         style="opacity:0.07000002;fill:url(#linearGradient3604);fill-opacity:1" />
+         style="opacity:0.07000002;fill:url(#linearGradient3039);fill-opacity:1" />
       <rect
          y="-1"
          x="0"
          height="1"
          width="36"
          id="rect3921-6"
-         style="opacity:0.07000002;fill:url(#linearGradient3606);fill-opacity:1" />
+         style="opacity:0.07000002;fill:url(#linearGradient3041);fill-opacity:1" />
       <rect
          y="1"
          x="30.124632"
          height="26"
          width="5.8753681"
          id="rect3950"
-         style="fill:url(#linearGradient3608);fill-opacity:1" />
+         style="fill:url(#linearGradient3043);fill-opacity:1" />
     </g>
   </g>
 </svg>

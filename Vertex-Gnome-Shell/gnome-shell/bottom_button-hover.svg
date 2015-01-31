@@ -62,7 +62,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3923"
-       id="linearGradient3260"
+       id="linearGradient3005"
        gradientUnits="userSpaceOnUse"
        x1="-7"
        y1="33"
@@ -71,7 +71,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3923-0"
-       id="linearGradient3262"
+       id="linearGradient3007"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0,-33)"
        x1="-7"
@@ -87,16 +87,16 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="15.836083"
-     inkscape:cx="22.441856"
+     inkscape:cx="22.56815"
      inkscape:cy="20.349883"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1517"
-     inkscape:window-height="965"
+     inkscape:window-width="1569"
+     inkscape:window-height="945"
      inkscape:window-x="177"
-     inkscape:window-y="30"
+     inkscape:window-y="20"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -134,7 +134,7 @@
      inkscape:groupmode="layer"
      transform="translate(0,4)">
     <g
-       id="g3253"
+       id="g2998"
        transform="matrix(0,-1,1,0,4,32)">
       <rect
          transform="translate(0,-4)"
@@ -167,14 +167,14 @@
          height="1"
          width="36"
          id="rect3921"
-         style="opacity:0.07000002;fill:url(#linearGradient3260);fill-opacity:1" />
+         style="opacity:0.07000002;fill:url(#linearGradient3005);fill-opacity:1" />
       <rect
          y="-1"
          x="0"
          height="1"
          width="36"
          id="rect3921-6"
-         style="opacity:0.07000002;fill:url(#linearGradient3262);fill-opacity:1" />
+         style="opacity:0.07000002;fill:url(#linearGradient3007);fill-opacity:1" />
     </g>
   </g>
 </svg>

@@ -82,7 +82,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3907"
-       id="linearGradient3733"
+       id="linearGradient3015"
        gradientUnits="userSpaceOnUse"
        x1="3"
        y1="18"
@@ -91,7 +91,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3923"
-       id="linearGradient3735"
+       id="linearGradient3017"
        gradientUnits="userSpaceOnUse"
        x1="-7"
        y1="33"
@@ -100,7 +100,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3923-0"
-       id="linearGradient3737"
+       id="linearGradient3019"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0,-33)"
        x1="-7"
@@ -116,16 +116,16 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="15.836083"
-     inkscape:cx="17.51661"
+     inkscape:cx="17.642904"
      inkscape:cy="18.009867"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1186"
-     inkscape:window-height="726"
+     inkscape:window-width="1595"
+     inkscape:window-height="958"
      inkscape:window-x="178"
-     inkscape:window-y="30"
+     inkscape:window-y="20"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -163,7 +163,7 @@
      inkscape:groupmode="layer"
      transform="translate(0,4)">
     <g
-       id="g3723"
+       id="g3005"
        transform="matrix(0,-1,1,0,4,32)">
       <rect
          transform="translate(0,-4)"
@@ -204,7 +204,7 @@
          height="26"
          width="5"
          id="rect3905"
-         style="fill:url(#linearGradient3733);fill-opacity:1" />
+         style="fill:url(#linearGradient3015);fill-opacity:1" />
       <rect
          transform="translate(0,-4)"
          y="5"
@@ -220,14 +220,14 @@
          height="1"
          width="36"
          id="rect3921"
-         style="opacity:0.07000002;fill:url(#linearGradient3735);fill-opacity:1" />
+         style="opacity:0.07000002;fill:url(#linearGradient3017);fill-opacity:1" />
       <rect
          y="-1"
          x="0"
          height="1"
          width="36"
          id="rect3921-6"
-         style="opacity:0.07000002;fill:url(#linearGradient3737);fill-opacity:1" />
+         style="opacity:0.07000002;fill:url(#linearGradient3019);fill-opacity:1" />
     </g>
   </g>
 </svg>
