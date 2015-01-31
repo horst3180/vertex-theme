@@ -942,15 +942,32 @@ StScrollBar StButton#vhandle:active {
 
 /* Dash */
 
-#dash {
+#dash,
+.left #dash {
     border-image: url('dash.png') 5 12 12 12;
     padding: 6px 5px 6px 0;
 }
 
-#dash:rtl {
+#dash:rtl,
+.left #dash:rtl {
     border-left: 0px;
     border-right: 0px;
     border-radius: 6px 0px 0px 6px;
+}
+
+.bottom #dash {
+    border-image: url('bottom_dash.png') 12 12 12 5;
+    padding: 5px 6px 0 6px;
+}
+
+.right #dash {
+    border-image: url('right_dash.png') 12 5 12 12;
+    padding: 6px 0 6px 5px;
+}
+
+.top #dash {
+    border-image: url('top_dash.png') 12 12 5 12;
+    padding: 0 6px 5px 6px;
 }
 
 .placeholder {
@@ -1036,6 +1053,12 @@ StScrollBar StButton#vhandle:active {
     -x-offset: 8px;
 }
 
+.bottom .dash-label,
+.top .dash-label {
+    -y-offset: 8px;
+    -x-offset: 0;
+}
+
 /* Application Launchers, Grid and List results */
 
 .icon-grid {
@@ -1105,21 +1128,45 @@ StScrollBar StButton#vhandle:active {
     spacing-columns: 5px;
 }
 
-.dash-item-container > StButton {
+.dash-item-container > StButton,
+.left .dash-item-container > StButton,
+.right .dash-item-container > StButton {
     padding: 2px 0px;
 }
 
-.dash-item-container > .app-well-app.running > .overview-icon {
+.bottom .dash-item-container > StButton,
+.top .dash-item-container > StButton {
+    padding: 0px 2px;
+}
+
+.dash-item-container > .app-well-app.running > .overview-icon,
+.left .dash-item-container > .app-well-app.running > .overview-icon {
     background-image: none;
-	  box-shadow: none;
+	box-shadow: none;
     border-image: url("button-running.svg") 6;
     padding: 10px 11px 10px 13px;
 }
 
-.dash-item-container > .app-well-app.running:active:hover > .overview-icon {
+.bottom .dash-item-container > .app-well-app.running > .overview-icon {
+    border-image: url("bottom_button-running.svg") 6;
+    padding: 11px 10px 13px 10px;
+}
+
+.right .dash-item-container > .app-well-app.running > .overview-icon {
+    border-image: url("right_button-running.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app.running > .overview-icon {
+    border-image: url("top_button-running.svg") 6;
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app.running:active:hover > .overview-icon,
+.left .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
     border-image: url("button-running-active.svg") 6;
     background-image: none;
-	  background-color: transparent;
+	background-color: transparent;
     box-shadow: none;
     background-gradient-start: rgba(255, 255, 255, .0);
     background-gradient-end: rgba(255, 255, 255, .0);
@@ -1127,32 +1174,111 @@ StScrollBar StButton#vhandle:active {
     padding: 10px 11px 10px 13px;
 }
 
-.dash-item-container > .app-well-app.running:hover > .overview-icon {
+.bottom .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
+    border-image: url("bottom_button-running-active.svg") 6;
+    background-gradient-direction: horizontal;
+    padding: 11px 10px 13px 10px;
+}
+
+.right .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
+    border-image: url("right_button-running-active.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
+    border-image: url("top_button-running-active.svg") 6;
+    background-gradient-direction: horizontal;
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app.running:hover > .overview-icon,
+.left .dash-item-container > .app-well-app.running:hover > .overview-icon {
     border-image: url("button-running-hover.svg") 6;
     padding: 10px 11px 10px 13px;
 }
 
-.dash-item-container > .app-well-app > .overview-icon {
+.bottom .dash-item-container > .app-well-app.running:hover > .overview-icon {
+    border-image: url("bottom_button-running-hover.svg") 6;
+    padding: 11px 10px 13px 10px;
+}
+
+.right .dash-item-container > .app-well-app.running:hover > .overview-icon {
+    border-image: url("right_button-running-hover.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app.running:hover > .overview-icon {
+    border-image: url("top_button-running-hover.svg") 6;
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app > .overview-icon,
+.left .dash-item-container > .app-well-app > .overview-icon {
     padding: 10px 11px 10px 13px;
 }
 
-.dash-item-container > .app-well-app:hover > .overview-icon {
+.bottom .dash-item-container > .app-well-app > .overview-icon {
+    padding: 11px 10px 13px 10px;
+}
+
+.right .dash-item-container > .app-well-app > .overview-icon {
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app > .overview-icon {
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app:hover > .overview-icon,
+.left .dash-item-container > .app-well-app:hover > .overview-icon {
     background-image: none;
-	  box-shadow: none;
+	box-shadow: none;
     border-image: url("button-hover.svg") 6;
     padding: 10px 11px 10px 13px;
-
 }
 
-.dash-item-container > .app-well-app:active > .overview-icon {
+.bottom .dash-item-container > .app-well-app:hover > .overview-icon {
+    border-image: url("bottom_button-hover.svg") 6;
+    padding: 11px 10px 13px 10px;
+}
+
+.right .dash-item-container > .app-well-app:hover > .overview-icon {
+    border-image: url("right_button-hover.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app:hover > .overview-icon {
+    border-image: url("top_button-hover.svg") 6;
+    padding: 13px 10px 11px 10px;
+}
+
+.dash-item-container > .app-well-app:active > .overview-icon.
+.left .dash-item-container > .app-well-app:active > .overview-icon {
     background-image: none;
-	  background-color: transparent;
+	background-color: transparent;
     box-shadow: none;
     background-gradient-start: rgba(255, 255, 255, .0);
     background-gradient-end: rgba(255, 255, 255, .0);
     background-gradient-direction: vertical;
     border-image: url("button-active.svg") 6;
     padding: 10px 11px 10px 13px;
+}
+
+.bottom .dash-item-container > .app-well-app:active > .overview-icon {
+    background-gradient-direction: horizontal;
+    border-image: url("bottom_button-active.svg") 6;
+    padding: 11px 10px 13px 10px;
+}
+
+.right .dash-item-container > .app-well-app:active > .overview-icon {
+    border-image: url("right_button-active.svg") 6;
+    padding: 10px 13px 10px 11px;
+}
+
+.top .dash-item-container > .app-well-app:active > .overview-icon {
+    background-gradient-direction: horizontal;
+    border-image: url("top_button-active.svg") 6;
+    padding: 13px 10px 11px 10px;
 }
 
 .list-search-result-content {
