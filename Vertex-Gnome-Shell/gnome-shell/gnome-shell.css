@@ -21,12 +21,8 @@
 
 /* default text style */
 stage {
-    /*
     font-family: "Cantarell";
     font-size: 9pt;
-    */
-    font-family: "San Francisco Display";
-    font-size: 12pt;
     color: white;
 }
 
@@ -960,17 +956,17 @@ StScrollBar StButton#vhandle:active {
 }
 
 .bottom #dash {
-    border-image: url('bottom_dash.svg') 12 12 12 5;
+    border-image: url('bottom_dash.png') 12 12 12 5;
     padding: 5px 6px 0 6px;
 }
 
 .right #dash {
-    border-image: url('right_dash.svg') 12 12 5 12;
+    border-image: url('right_dash.png') 12 5 12 12;
     padding: 6px 0 6px 5px;
 }
 
 .top #dash {
-    border-image: url('top_dash.svg') 12 5 12 12;
+    border-image: url('top_dash.png') 12 12 5 12;
     padding: 0 6px 5px 6px;
 }
 
@@ -1048,9 +1044,8 @@ StScrollBar StButton#vhandle:active {
 .list-search-results {
     spacing: 3px;
 }
-.dash-label,
-.left .dash-label,
-.right .dash-label {
+
+.dash-label {
     padding: 4px 12px;
     background: rgba(0,0,0,0.7);
     border-radius: 3px;
@@ -1060,11 +1055,8 @@ StScrollBar StButton#vhandle:active {
 
 .bottom .dash-label,
 .top .dash-label {
-    padding: 4px 12px;
-    background: rgba(0,0,0,0.7);
-    border-radius: 3px;
-    text-align: center;
     -y-offset: 8px;
+    -x-offset: 0;
 }
 
 /* Application Launchers, Grid and List results */

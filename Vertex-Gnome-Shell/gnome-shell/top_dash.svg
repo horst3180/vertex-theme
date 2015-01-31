@@ -13,8 +13,8 @@
    height="44"
    id="svg3783"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="bottom_dash.svg"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="top_dash.svg"
    inkscape:export-filename="/home/steffen/.local/share/themes/Vertex_Shell/gnome-shell/dash.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -42,17 +42,17 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="8.0000004"
-     inkscape:cx="-1.4992098"
+     inkscape:cx="-28.374995"
      inkscape:cy="21.333157"
      inkscape:document-units="px"
      inkscape:current-layer="g3027"
      showgrid="true"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1364"
-     inkscape:window-height="723"
-     inkscape:window-x="103"
-     inkscape:window-y="30"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1075"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:snap-global="true"
      inkscape:snap-bbox="true"
      showguides="true"
@@ -65,16 +65,16 @@
        enabled="true"
        snapvisiblegridlinesonly="true" />
     <sodipodi:guide
-       orientation="0,1"
-       position="20,31"
+       orientation="1,0"
+       position="31,24"
        id="guide3831" />
     <sodipodi:guide
-       orientation="1,0"
-       position="39,18"
+       orientation="0,1"
+       position="18,5"
        id="guide3833" />
     <sodipodi:guide
-       orientation="0,1"
-       position="20,5"
+       orientation="1,0"
+       position="5,24"
        id="guide3835" />
   </sodipodi:namedview>
   <metadata
@@ -85,7 +85,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
