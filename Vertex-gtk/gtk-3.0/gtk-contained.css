@@ -3640,6 +3640,19 @@ SwitchboardCategoryView .view:selected:focus {
   text-shadow: none;
   icon-shadow: none; }
 
+MayaViewGridDay.cell,
+MayaViewGridDay.cell:selected {
+  background-image: none;
+  border: none;
+  text-shadow: none;
+  color: #333333; }
+  MayaViewGridDay.cell GtkLabel:insensitive,
+  MayaViewGridDay.cell:selected GtkLabel:insensitive {
+    color: rgba(51, 51, 51, 0.4); }
+
+MayaViewHeader {
+  color: #333333; }
+
 NautilusNotebook.notebook,
 NemoNotebook.notebook,
 EmpathyChatWindow .notebook,

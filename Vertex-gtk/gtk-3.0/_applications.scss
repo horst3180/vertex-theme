@@ -649,3 +649,22 @@ SwitchboardCategoryView .view:selected:focus {
   text-shadow: none;
   icon-shadow: none;
 }
+
+//
+// Maya Calendar
+//
+$_maya_fg_color: #333333;
+
+MayaViewGridDay.cell,
+MayaViewGridDay.cell:selected {
+  background-image: none;
+  border: none;
+  text-shadow: none;
+  color: $_maya_fg_color;
+
+  GtkLabel:insensitive { color: transparentize($_maya_fg_color, 0.6); }
+}
+
+MayaViewHeader {
+  color: $_maya_fg_color;
+}
