@@ -2716,7 +2716,7 @@ GtkPaned {
   .pane-separator.vertical {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1px 12px;
+    background-size: 12px 1px;
     background-image: linear-gradient(to right, rgba(60, 60, 62, 0.4) 20%, transparent 20%, transparent 40%, rgba(60, 60, 62, 0.4) 40%, rgba(60, 60, 62, 0.4) 60%, transparent 60%, transparent 80%, rgba(60, 60, 62, 0.4) 80%); }
 
 GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow *, GduWindow *, MarlinViewWindow *, NoiseLibraryWindow * {
