@@ -1510,12 +1510,10 @@ GtkComboBox {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
 .primary-toolbar .pane-separator, .header-bar .pane-separator {
-  background-color: transparent;
-  background-image: url("assets/pane-separator-grip-dark.svg");
   background-repeat: no-repeat;
-  background-position: center; }
-  .primary-toolbar .pane-separator:hover, .header-bar .pane-separator:hover {
-    background-image: url("assets/pane-separator-grip-prelight-dark.svg"); }
+  background-position: center;
+  background-size: 1px 12px;
+  background-image: linear-gradient(to bottom, rgba(243, 243, 245, 0.4) 20%, transparent 20%, transparent 40%, rgba(243, 243, 245, 0.4) 40%, rgba(243, 243, 245, 0.4) 60%, transparent 60%, transparent 80%, rgba(243, 243, 245, 0.4) 80%); }
 .primary-toolbar .scale.trough, .header-bar .scale.trough {
   margin: 6px 0 5px 0;
   background-image: linear-gradient(to bottom, #242525, #37383A);
@@ -2707,19 +2705,19 @@ GtkPaned {
 
 .pane-separator {
   background-color: #F5F5F7;
-  background-image: url("assets/pane-separator-grip.svg");
   background-repeat: no-repeat;
-  background-position: center; }
-  .notebook .pane-separator, .notebook .pane-separator:hover {
+  background-position: center;
+  background-size: 1px 12px;
+  background-image: linear-gradient(to bottom, rgba(60, 60, 62, 0.4) 20%, transparent 20%, transparent 40%, rgba(60, 60, 62, 0.4) 40%, rgba(60, 60, 62, 0.4) 60%, transparent 60%, transparent 80%, rgba(60, 60, 62, 0.4) 80%); }
+  .notebook .pane-separator {
     background-color: #fafafa; }
   .toolbar .pane-separator {
     background-color: transparent; }
-  .pane-separator:hover {
-    background-image: url("assets/pane-separator-grip-prelight.svg"); }
   .pane-separator.vertical {
-    background-image: url("assets/pane-separator-grip-vertical.svg"); }
-    .pane-separator.vertical:hover {
-      background-image: url("assets/pane-separator-grip-vertical-prelight.svg"); }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1px 12px;
+    background-image: linear-gradient(to right, rgba(60, 60, 62, 0.4) 20%, transparent 20%, transparent 40%, rgba(60, 60, 62, 0.4) 40%, rgba(60, 60, 62, 0.4) 60%, transparent 60%, transparent 80%, rgba(60, 60, 62, 0.4) 80%); }
 
 GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow *, GduWindow *, MarlinViewWindow *, NoiseLibraryWindow * {
   -GtkPaned-handle-size: 1px; }

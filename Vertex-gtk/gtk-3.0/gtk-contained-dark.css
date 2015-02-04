@@ -2286,19 +2286,19 @@ GtkPaned {
 
 .pane-separator {
   background-color: #353638;
-  background-image: url("assets/pane-separator-grip.svg");
   background-repeat: no-repeat;
-  background-position: center; }
-  .notebook .pane-separator, .notebook .pane-separator:hover {
+  background-position: center;
+  background-size: 1px 12px;
+  background-image: linear-gradient(to bottom, rgba(243, 243, 245, 0.4) 20%, transparent 20%, transparent 40%, rgba(243, 243, 245, 0.4) 40%, rgba(243, 243, 245, 0.4) 60%, transparent 60%, transparent 80%, rgba(243, 243, 245, 0.4) 80%); }
+  .notebook .pane-separator {
     background-color: #262627; }
   .toolbar .pane-separator {
     background-color: transparent; }
-  .pane-separator:hover {
-    background-image: url("assets/pane-separator-grip-prelight.svg"); }
   .pane-separator.vertical {
-    background-image: url("assets/pane-separator-grip-vertical.svg"); }
-    .pane-separator.vertical:hover {
-      background-image: url("assets/pane-separator-grip-vertical-prelight.svg"); }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1px 12px;
+    background-image: linear-gradient(to right, rgba(243, 243, 245, 0.4) 20%, transparent 20%, transparent 40%, rgba(243, 243, 245, 0.4) 40%, rgba(243, 243, 245, 0.4) 60%, transparent 60%, transparent 80%, rgba(243, 243, 245, 0.4) 80%); }
 
 GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow *, GduWindow *, MarlinViewWindow *, NoiseLibraryWindow * {
   -GtkPaned-handle-size: 1px; }

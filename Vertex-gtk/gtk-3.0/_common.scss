@@ -1333,14 +1333,7 @@ GtkComboBox.combobox-entry .button:only-child,
   }
 
 // Pane Separator
-  .pane-separator {
-    background-color: transparent;
-    background-image: url("assets/pane-separator-grip-dark.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    &:hover { background-image: url("assets/pane-separator-grip-prelight-dark.svg"); }
-    }
+  .pane-separator { @include handle($dark:'true'); }
 
 // Scale
   .scale.trough {
@@ -2666,19 +2659,12 @@ GtkPaned {
 
 .pane-separator {
   background-color: $bg_color;
-  background-image: url("assets/pane-separator-grip.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  @include handle();
 
-  .notebook &, .notebook &:hover { background-color: darken($base_color, 2%); }
+  .notebook & { background-color: darken($base_color, 2%); }
   .toolbar & { background-color: transparent; }
-
-  &:hover { background-image: url("assets/pane-separator-grip-prelight.svg"); }
   
-  &.vertical { background-image: url("assets/pane-separator-grip-vertical.svg");
-
-    &:hover { background-image: url("assets/pane-separator-grip-vertical-prelight.svg"); }
-  }
+  &.vertical { @include handle(vertical); }
 }
 
 // Makes Pane Separators 1px wide

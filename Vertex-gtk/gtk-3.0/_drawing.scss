@@ -413,6 +413,9 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 }
 
+//
+// Linked Buttons and Entries
+//
 @mixin linked($t, $state:'normal', $position:left, $dark:false) {
 
   $_asset_suffix: if($dark=='true' or $variant=='dark', -dark, '');
@@ -498,4 +501,26 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   @else {
     @include _border(#{$position}-#{$t}-#{$state}-border#{$_asset_suffix}, nth($args, 1), nth($args, 2), nth($args, 3))
   }
+}
+
+//
+// Pane Separator handle
+//
+@mixin handle($pos:horizontal, $dark:false) {
+
+  $_dir: if($pos=='vertical', right, bottom);
+  $_color: if($dark=='true', transparentize(nth($_fg_color, 2), 0.6), transparentize($fg_color, 0.6));
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1px 12px;
+  background-image: linear-gradient(to $_dir,
+                                    $_color 20%,
+                                    transparent 20%,
+                                    transparent 40%,
+                                    $_color 40%,
+                                    $_color 60%,
+                                    transparent 60%,
+                                    transparent 80%,
+                                    $_color 80%);
 }
