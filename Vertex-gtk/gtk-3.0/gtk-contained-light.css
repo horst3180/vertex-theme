@@ -1490,7 +1490,6 @@ column-header .button, column-header .button:hover, column-header .button:active
     box-shadow: none; }
   .popover .button.flat,
   .popover .button.flat:hover {
-    text-shadow: none;
     transition: none; }
 
 .entry.cursor-handle,
