@@ -3625,6 +3625,9 @@ MarlinViewWindow *:selected:focus {
   icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   border-radius: 0; }
 
+PantheonTerminalPantheonTerminalWindow.background {
+  background-color: transparent; }
+
 NoiseLibraryWindow GtkPane.pane-separator {
   background-image: linear-gradient(to bottom, #b9b9b9); }
 
