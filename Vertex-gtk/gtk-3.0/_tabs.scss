@@ -63,7 +63,7 @@ PantheonTerminalPantheonTerminalWindow .notebook {
   tab.reorderable-page.top:hover {
 
     background-color: if($variant=='light', darken($notebook_bg_color, 2%),
-                                            lighten($notebook_bg_color, 2%));
+                                            lighten($notebook_bg_color, 0%));
   }
 
   tab.reorderable-page.top,
