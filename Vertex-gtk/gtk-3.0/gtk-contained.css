@@ -3430,9 +3430,16 @@ PanelToplevel,
   background-image: linear-gradient(to bottom, #4f5154, #3d3e40);
   box-shadow: inset 0 2px rgba(255, 255, 255, 0.15), inset 0 1px black, inset 0 -1px black; }
 
-.gnome-panel-menu-bar .menuitem:hover,
-PanelApplet > GtkMenuBar.menubar .menuitem:hover {
-  border-radius: 0; }
+.gnome-panel-menu-bar.menubar > .menuitem:hover,
+PanelApplet > GtkMenuBar.menubar > .menuitem:hover {
+  border-radius: 0;
+  color: #ffffff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  background-image: linear-gradient(to bottom, #242525, #37383A);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+  icon-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 1px 0 rgba(0, 0, 0, 0.6), inset -1px 0 rgba(0, 0, 0, 0.6), inset 0 1px rgba(0, 0, 0, 0.9), inset 0 -1px rgba(0, 0, 0, 0.55); }
 
 PanelApplet .button, PanelApplet .button:focus {
   color: #F3F3F5;
@@ -3465,6 +3472,15 @@ PanelApplet .button, PanelApplet .button:focus, PanelApplet .button:hover, Panel
   border-radius: 5px;
   icon-shadow: none;
   box-shadow: inset -2px 0 rgba(255, 255, 255, 0.05), inset 2px 0 rgba(255, 255, 255, 0.05), inset 0 2px rgba(255, 255, 255, 0.12), inset 0 1px rgba(0, 0, 0, 0.6), inset 0 -1px rgba(0, 0, 0, 0.8), inset 1px 0 rgba(0, 0, 0, 0.6), inset -1px 0 rgba(0, 0, 0, 0.6); }
+
+WnckPager {
+  color: #79797a; }
+  WnckPager:selected {
+    color: #4080fb; }
+  WnckPager:focus:selected {
+    background-color: red;
+    color: green;
+    background-image: none; }
 
 BirdieWidgetsTweetList * {
   background-image: none;
