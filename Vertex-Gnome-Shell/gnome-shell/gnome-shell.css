@@ -1166,7 +1166,7 @@ StScrollBar StButton#vhandle:active {
 .left .dash-item-container > .app-well-app.running:active:hover > .overview-icon {
     border-image: url("button-running-active.svg") 6;
     background-image: none;
-	background-color: transparent;
+	  background-color: transparent;
     box-shadow: none;
     background-gradient-start: rgba(255, 255, 255, .0);
     background-gradient-end: rgba(255, 255, 255, .0);
@@ -1252,10 +1252,10 @@ StScrollBar StButton#vhandle:active {
     padding: 13px 13px 11px 13px;
 }
 
-.dash-item-container > .app-well-app:active > .overview-icon.
+.dash-item-container > .app-well-app:active > .overview-icon,
 .left .dash-item-container > .app-well-app:active > .overview-icon {
     background-image: none;
-	background-color: transparent;
+	  background-color: transparent;
     box-shadow: none;
     background-gradient-start: rgba(255, 255, 255, .0);
     background-gradient-end: rgba(255, 255, 255, .0);

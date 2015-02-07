@@ -1252,7 +1252,7 @@ StScrollBar StButton#vhandle:active {
     padding: 13px 13px 11px 13px;
 }
 
-.dash-item-container > .app-well-app:active > .overview-icon.
+.dash-item-container > .app-well-app:active > .overview-icon,
 .left .dash-item-container > .app-well-app:active > .overview-icon {
     background-image: none;
     background-color: transparent;
