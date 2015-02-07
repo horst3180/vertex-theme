@@ -364,7 +364,10 @@ $_dot_color: if($variant=='light', $selected_bg_color,
     &:hover {
       transition: $_button_transition;
       transition-duration: 350ms;
-      &:active { transition: $_button_transition; }
+      &:active {
+        transition: $_button_transition;
+        transition-duration: 50ms;
+      }
     }
   }
   &:focus { @include button(focus); }
@@ -1940,7 +1943,6 @@ column-header.button.dnd { // for treeview-like derive widgets
       border: 1px solid transparent;
       @extend %undecorated_button;
       icon-shadow: none;
-      transition: none;
       color: mix($fg_color, $bg_color, 35%);
       icon-shadow: 0 #{$shadow_pos}px $light_text_icon_shadow;
       &:hover {
@@ -1960,6 +1962,7 @@ column-header.button.dnd { // for treeview-like derive widgets
         padding: 2px;
       }
     }
+    .button, .button.flat { transition-duration: 100ms; }
   }
   & .prelight-page .button, & tab.prelight-page .button, 
   & .active-page .button, & tab.active-page .button {
