@@ -12,7 +12,7 @@ Please search in the repositories of your distribution because the package names
 ###########################
 #      Installation       #
 ###########################
-The extracted zip file contains three different subfolders ("Gnome-3.10_Ubuntu-14.04" "Gnome-3.12_Ubuntu-14.10" and "Gnome-3.14") with the GTK themes for the different versions of Gnome/GTK (For Elementary OS Freya use the Gnome-3.12 version). Pick the one that matches your version and copy the content to "/usr/share/themes".
+The extracted zip file contains three different subfolders ("Gnome-3.10_Ubuntu-14.04" "Gnome-3.12_Ubuntu-14.10" and "Gnome-3.14") with the GTK themes for the different versions of Gnome/GTK (For Elementary OS Freya use the Gnome-3.14 version). Pick the one that matches your version and copy the content to "/usr/share/themes".
 
 To set the right permissions, execute
 
