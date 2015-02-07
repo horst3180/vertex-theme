@@ -668,3 +668,8 @@ MayaViewGridDay.cell:selected {
 MayaViewHeader {
   color: $_maya_fg_color;
 }
+
+//
+// Scratch
+//
+ScratchMainWindow { @extend %thin_separator; }

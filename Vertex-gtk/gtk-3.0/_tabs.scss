@@ -6,9 +6,13 @@ $tab_asset_suffix: if($darker=='false', $asset_suffix, -darker);
 
 NautilusNotebook.notebook,
 NemoNotebook.notebook,
+MarlinViewWindow .notebook,
 EmpathyChatWindow .notebook,
 GeditNotebook.notebook,
-EphyNotebook.notebook {
+ScratchMainWindow .notebook,
+EphyNotebook.notebook,
+MidoriNotebook .notebook,
+PantheonTerminalPantheonTerminalWindow .notebook {
   -GtkNotebook-tab-overlap: 6;
 
   tab .active-page GtkLabel,

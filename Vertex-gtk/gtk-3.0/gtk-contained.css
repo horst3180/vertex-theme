@@ -1017,6 +1017,7 @@ GtkComboBox {
   color: #F3F3F5;
   background-image: linear-gradient(to bottom, #454649, #3b3c3f);
   border-width: 0 0 1px 0;
+  border-style: solid;
   border-image: linear-gradient(to bottom, #454649, #2b2c2e) 1 0 1 0; }
   .primary-toolbar:insensitive {
     background-image: none;
@@ -2720,9 +2721,9 @@ GtkPaned {
     background-size: 12px 1px;
     background-image: linear-gradient(to right, rgba(60, 60, 62, 0.4) 20%, transparent 20%, transparent 40%, rgba(60, 60, 62, 0.4) 40%, rgba(60, 60, 62, 0.4) 60%, transparent 60%, transparent 80%, rgba(60, 60, 62, 0.4) 80%); }
 
-GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow *, GduWindow *, MarlinViewWindow *, NoiseLibraryWindow * {
+GtkFileChooserDialog *, NautilusWindow *, NemoWindow *, GeditWindow *, FrWindow *, GduWindow *, MarlinViewWindow *, NoiseLibraryWindow *, ScratchMainWindow * {
   -GtkPaned-handle-size: 1px; }
-GtkFileChooserDialog .pane-separator, NautilusWindow .pane-separator, NemoWindow .pane-separator, GeditWindow .pane-separator, FrWindow .pane-separator, GduWindow .pane-separator, MarlinViewWindow .pane-separator, NoiseLibraryWindow .pane-separator,
+GtkFileChooserDialog .pane-separator, NautilusWindow .pane-separator, NemoWindow .pane-separator, GeditWindow .pane-separator, FrWindow .pane-separator, GduWindow .pane-separator, MarlinViewWindow .pane-separator, NoiseLibraryWindow .pane-separator, ScratchMainWindow .pane-separator,
 GtkFileChooserDialog .pane-separator:hover,
 NautilusWindow .pane-separator:hover,
 NemoWindow .pane-separator:hover,
@@ -2730,7 +2731,8 @@ GeditWindow .pane-separator:hover,
 FrWindow .pane-separator:hover,
 GduWindow .pane-separator:hover,
 MarlinViewWindow .pane-separator:hover,
-NoiseLibraryWindow .pane-separator:hover {
+NoiseLibraryWindow .pane-separator:hover,
+ScratchMainWindow .pane-separator:hover {
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: #b9b9b9; }
@@ -3654,9 +3656,13 @@ MayaViewHeader {
 
 NautilusNotebook.notebook,
 NemoNotebook.notebook,
+MarlinViewWindow .notebook,
 EmpathyChatWindow .notebook,
 GeditNotebook.notebook,
-EphyNotebook.notebook {
+ScratchMainWindow .notebook,
+EphyNotebook.notebook,
+MidoriNotebook .notebook,
+PantheonTerminalPantheonTerminalWindow .notebook {
   -GtkNotebook-tab-overlap: 6; }
   NautilusNotebook.notebook tab .active-page GtkLabel,
   NautilusNotebook.notebook tab GtkLabel.active-page,
@@ -3664,72 +3670,120 @@ EphyNotebook.notebook {
   NemoNotebook.notebook tab .active-page GtkLabel,
   NemoNotebook.notebook tab GtkLabel.active-page,
   NemoNotebook.notebook .active-page .button,
+  MarlinViewWindow .notebook tab .active-page GtkLabel,
+  MarlinViewWindow .notebook tab GtkLabel.active-page,
+  MarlinViewWindow .notebook .active-page .button,
   EmpathyChatWindow .notebook tab .active-page GtkLabel,
   EmpathyChatWindow .notebook tab GtkLabel.active-page,
   EmpathyChatWindow .notebook .active-page .button,
   GeditNotebook.notebook tab .active-page GtkLabel,
   GeditNotebook.notebook tab GtkLabel.active-page,
   GeditNotebook.notebook .active-page .button,
+  ScratchMainWindow .notebook tab .active-page GtkLabel,
+  ScratchMainWindow .notebook tab GtkLabel.active-page,
+  ScratchMainWindow .notebook .active-page .button,
   EphyNotebook.notebook tab .active-page GtkLabel,
   EphyNotebook.notebook tab GtkLabel.active-page,
-  EphyNotebook.notebook .active-page .button {
+  EphyNotebook.notebook .active-page .button,
+  MidoriNotebook .notebook tab .active-page GtkLabel,
+  MidoriNotebook .notebook tab GtkLabel.active-page,
+  MidoriNotebook .notebook .active-page .button,
+  PantheonTerminalPantheonTerminalWindow .notebook tab .active-page GtkLabel,
+  PantheonTerminalPantheonTerminalWindow .notebook tab GtkLabel.active-page,
+  PantheonTerminalPantheonTerminalWindow .notebook .active-page .button {
     color: #F3F3F5;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.8); }
   NautilusNotebook.notebook .active-page .button:hover,
   NemoNotebook.notebook .active-page .button:hover,
+  MarlinViewWindow .notebook .active-page .button:hover,
   EmpathyChatWindow .notebook .active-page .button:hover,
   GeditNotebook.notebook .active-page .button:hover,
-  EphyNotebook.notebook .active-page .button:hover {
+  ScratchMainWindow .notebook .active-page .button:hover,
+  EphyNotebook.notebook .active-page .button:hover,
+  MidoriNotebook .notebook .active-page .button:hover,
+  PantheonTerminalPantheonTerminalWindow .notebook .active-page .button:hover {
     color: #ff3333;
     border: 1px solid rgba(255, 255, 255, 0.1); }
   NautilusNotebook.notebook .active-page .button:active,
   NemoNotebook.notebook .active-page .button:active,
+  MarlinViewWindow .notebook .active-page .button:active,
   EmpathyChatWindow .notebook .active-page .button:active,
   GeditNotebook.notebook .active-page .button:active,
-  EphyNotebook.notebook .active-page .button:active {
+  ScratchMainWindow .notebook .active-page .button:active,
+  EphyNotebook.notebook .active-page .button:active,
+  MidoriNotebook .notebook .active-page .button:active,
+  PantheonTerminalPantheonTerminalWindow .notebook .active-page .button:active {
     color: #F3F3F5;
     border: 1px solid #171819;
     background-image: linear-gradient(to bottom, #1c1d1e, #29292b); }
   NautilusNotebook.notebook tab.reorderable-page.top, NautilusNotebook.notebook.header.top,
   NemoNotebook.notebook tab.reorderable-page.top,
   NemoNotebook.notebook.header.top,
+  MarlinViewWindow .notebook tab.reorderable-page.top,
+  MarlinViewWindow .notebook.header.top,
   EmpathyChatWindow .notebook tab.reorderable-page.top,
   EmpathyChatWindow .notebook.header.top,
   GeditNotebook.notebook tab.reorderable-page.top,
   GeditNotebook.notebook.header.top,
+  ScratchMainWindow .notebook tab.reorderable-page.top,
+  ScratchMainWindow .notebook.header.top,
   EphyNotebook.notebook tab.reorderable-page.top,
-  EphyNotebook.notebook.header.top {
+  EphyNotebook.notebook.header.top,
+  MidoriNotebook .notebook tab.reorderable-page.top,
+  MidoriNotebook .notebook.header.top,
+  PantheonTerminalPantheonTerminalWindow .notebook tab.reorderable-page.top,
+  PantheonTerminalPantheonTerminalWindow .notebook.header.top {
     background-color: #fafafa;
     border-bottom-width: 0px;
     box-shadow: inset 0 5px rgba(0, 0, 0, 0.005), inset 0 4px rgba(0, 0, 0, 0.02), inset 0 3px rgba(0, 0, 0, 0.05), inset 0 2px rgba(0, 0, 0, 0.075), inset 0 1px rgba(0, 0, 0, 0.09), inset 0 -1px rgba(185, 185, 185, 0.5); }
   NautilusNotebook.notebook tab.reorderable-page.top:hover,
   NemoNotebook.notebook tab.reorderable-page.top:hover,
+  MarlinViewWindow .notebook tab.reorderable-page.top:hover,
   EmpathyChatWindow .notebook tab.reorderable-page.top:hover,
   GeditNotebook.notebook tab.reorderable-page.top:hover,
-  EphyNotebook.notebook tab.reorderable-page.top:hover {
+  ScratchMainWindow .notebook tab.reorderable-page.top:hover,
+  EphyNotebook.notebook tab.reorderable-page.top:hover,
+  MidoriNotebook .notebook tab.reorderable-page.top:hover,
+  PantheonTerminalPantheonTerminalWindow .notebook tab.reorderable-page.top:hover {
     background-color: whitesmoke; }
   NautilusNotebook.notebook tab.reorderable-page.top,
   NautilusNotebook.notebook tab.reorderable-page.top:hover,
   NemoNotebook.notebook tab.reorderable-page.top,
   NemoNotebook.notebook tab.reorderable-page.top:hover,
+  MarlinViewWindow .notebook tab.reorderable-page.top,
+  MarlinViewWindow .notebook tab.reorderable-page.top:hover,
   EmpathyChatWindow .notebook tab.reorderable-page.top,
   EmpathyChatWindow .notebook tab.reorderable-page.top:hover,
   GeditNotebook.notebook tab.reorderable-page.top,
   GeditNotebook.notebook tab.reorderable-page.top:hover,
+  ScratchMainWindow .notebook tab.reorderable-page.top,
+  ScratchMainWindow .notebook tab.reorderable-page.top:hover,
   EphyNotebook.notebook tab.reorderable-page.top,
-  EphyNotebook.notebook tab.reorderable-page.top:hover {
+  EphyNotebook.notebook tab.reorderable-page.top:hover,
+  MidoriNotebook .notebook tab.reorderable-page.top,
+  MidoriNotebook .notebook tab.reorderable-page.top:hover,
+  PantheonTerminalPantheonTerminalWindow .notebook tab.reorderable-page.top,
+  PantheonTerminalPantheonTerminalWindow .notebook tab.reorderable-page.top:hover {
     border-image: linear-gradient(to bottom, #b9b9b9 0px, silver 1px, rgba(185, 185, 185, 0.2)) 0 1 0 1; }
   NautilusNotebook.notebook tab.reorderable-page.top:active,
   NautilusNotebook.notebook tab.reorderable-page.top.active-page,
   NemoNotebook.notebook tab.reorderable-page.top:active,
   NemoNotebook.notebook tab.reorderable-page.top.active-page,
+  MarlinViewWindow .notebook tab.reorderable-page.top:active,
+  MarlinViewWindow .notebook tab.reorderable-page.top.active-page,
   EmpathyChatWindow .notebook tab.reorderable-page.top:active,
   EmpathyChatWindow .notebook tab.reorderable-page.top.active-page,
   GeditNotebook.notebook tab.reorderable-page.top:active,
   GeditNotebook.notebook tab.reorderable-page.top.active-page,
+  ScratchMainWindow .notebook tab.reorderable-page.top:active,
+  ScratchMainWindow .notebook tab.reorderable-page.top.active-page,
   EphyNotebook.notebook tab.reorderable-page.top:active,
-  EphyNotebook.notebook tab.reorderable-page.top.active-page {
+  EphyNotebook.notebook tab.reorderable-page.top.active-page,
+  MidoriNotebook .notebook tab.reorderable-page.top:active,
+  MidoriNotebook .notebook tab.reorderable-page.top.active-page,
+  PantheonTerminalPantheonTerminalWindow .notebook tab.reorderable-page.top:active,
+  PantheonTerminalPantheonTerminalWindow .notebook tab.reorderable-page.top.active-page {
     background-color: transparent;
     box-shadow: none;
     background-image: linear-gradient(to bottom, #3d3e40, #38393b);
