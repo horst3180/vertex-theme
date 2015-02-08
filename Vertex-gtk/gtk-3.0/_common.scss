@@ -1674,7 +1674,7 @@ column-header.button.dnd { // for treeview-like derive widgets
 
 .menu {
   margin: 4px;
-  padding: 0px;
+  padding: 3px 0;
   background-color: if($variant=='light', $base_color, darken($base_color, 2%));
   border: 1px solid $borders_color;
   .csd & { border: none; }
@@ -2099,7 +2099,7 @@ $_list: ('','');
     .menuitem.#{$w}#{$s}:hover,
     .list-row:selected .#{$w}#{$s} {
       -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-selected#{$asset_suffix}.png"),
-                                    url("assets/selected-#{$a}#{$as}#-selected{$asset_suffix}@2.png"));
+                                    url("assets/selected-#{$a}#{$as}-selected#{$asset_suffix}@2.png"));
     }
   }
 }
