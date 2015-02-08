@@ -2099,7 +2099,7 @@ $_list: ('','');
     .menuitem.#{$w}#{$s}:hover,
     .list-row:selected .#{$w}#{$s} {
       -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-selected#{$asset_suffix}.png"),
-                                    url("assets/selected-#{$a}#{$as}-selected#{$asset_suffix}@2.png"));
+                                    url("assets/#{$a}#{$as}-selected#{$asset_suffix}@2.png"));
     }
   }
 }
