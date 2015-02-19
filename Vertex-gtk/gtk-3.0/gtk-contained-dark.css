@@ -1001,10 +1001,10 @@ GtkComboBox {
     background-color: transparent; }
   .toolbar .separator, .toolbar .sidebar .view.separator, .sidebar .toolbar .view.separator {
     -GtkWidget-wide-separators: 1;
-    -GtkWidget-separator-width: 9px;
-    border-image: -gtk-scaled(url("assets/header-separator-dark.png"), url("assets/header-separator-dark@2.png")) 0 4 0 1/0 4px 0 1px stretch;
+    -GtkWidget-separator-width: 2px;
+    border-image: -gtk-scaled(url("assets/header-separator-dark.png"), url("assets/header-separator-dark@2.png")) 0 1 0 1/0 1px 0 1px stretch;
     border-radius: 0;
-    border-width: 0 4px 0 1px;
+    border-width: 0 1px 0 1px;
     border-style: solid;
     border-color: transparent; }
   .toolbar GtkComboBox .separator, .toolbar GtkComboBox .sidebar .view.separator, .sidebar .toolbar GtkComboBox .view.separator {
@@ -1027,10 +1027,10 @@ GtkComboBox {
     color: #949496; }
   .primary-toolbar .separator, .primary-toolbar .sidebar .view.separator, .sidebar .primary-toolbar .view.separator {
     -GtkWidget-wide-separators: 1;
-    -GtkWidget-separator-width: 9px;
-    border-image: -gtk-scaled(url("assets/header-separator-dark.png"), url("assets/header-separator-dark@2.png")) 0 4 0 1/0 4px 0 1px stretch;
+    -GtkWidget-separator-width: 2px;
+    border-image: -gtk-scaled(url("assets/header-separator-dark.png"), url("assets/header-separator-dark@2.png")) 0 1 0 1/0 1px 0 1px stretch;
     border-radius: 0;
-    border-width: 0 4px 0 1px;
+    border-width: 0 1px 0 1px;
     border-style: solid;
     border-color: transparent; }
 
@@ -1089,11 +1089,19 @@ GtkComboBox {
     color: #ffffff;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
-  .header-bar .header-bar-separator, .header-bar > GtkBox > .separator.vertical,
+  .header-bar GtkBox > .separator.vertical, .header-bar .sidebar GtkBox > .vertical.view.separator {
+    -GtkWidget-wide-separators: 1;
+    -GtkWidget-separator-width: 2px;
+    border-image: -gtk-scaled(url("assets/header-separator-dark.png"), url("assets/header-separator-dark@2.png")) 0 1 0 1/0 1px 0 1px stretch;
+    border-radius: 0;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .header-bar .right .header-bar-separator, .header-bar > GtkBox.right > .separator.vertical,
   .header-bar .left:dir(rtl) .header-bar-separator, .header-bar > GtkBox.left:dir(rtl) > .separator.vertical {
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 9px;
-    border-image: -gtk-scaled(url("assets/header-separator-dark.png"), url("assets/header-separator-dark@2.png")) 0 4 0 1/0 4px 0 1px stretch;
+    border-image: -gtk-scaled(url("assets/header-separator-right-dark.png"), url("assets/header-separator-right-dark@2.png")) 0 4 0 1/0 4px 0 1px stretch;
     border-radius: 0;
     border-width: 0 4px 0 1px;
     border-style: solid;
@@ -1119,11 +1127,19 @@ GtkComboBox {
       text-shadow: 0 -1px rgba(0, 0, 0, 0.5); }
     .header-bar.selection-mode .subtitle {
       color: #ffffff; }
-    .header-bar.selection-mode .header-bar-separator, .header-bar.selection-mode > GtkBox > .separator.vertical,
+    .header-bar.selection-mode GtkBox > .separator.vertical, .header-bar.selection-mode .sidebar GtkBox > .vertical.view.separator {
+      -GtkWidget-wide-separators: 1;
+      -GtkWidget-separator-width: 2px;
+      border-image: -gtk-scaled(url("assets/header-separator-selectionmode-dark.png"), url("assets/header-separator-selectionmode-dark@2.png")) 0 1 0 1/0 1px 0 1px stretch;
+      border-radius: 0;
+      border-width: 0 1px 0 1px;
+      border-style: solid;
+      border-color: transparent; }
+    .header-bar.selection-mode .right .header-bar-separator, .header-bar.selection-mode > GtkBox.right > .separator.vertical,
     .header-bar.selection-mode .left:dir(rtl) .header-bar-separator, .header-bar.selection-mode > GtkBox.left:dir(rtl) > .separator.vertical {
       -GtkWidget-wide-separators: 1;
       -GtkWidget-separator-width: 9px;
-      border-image: -gtk-scaled(url("assets/header-separator-selectionmode-dark.png"), url("assets/header-separator-selectionmode-dark@2.png")) 0 4 0 1/0 4px 0 1px stretch;
+      border-image: -gtk-scaled(url("assets/header-separator-selectionmode-right-dark.png"), url("assets/header-separator-selectionmode-right-dark@2.png")) 0 4 0 1/0 4px 0 1px stretch;
       border-radius: 0;
       border-width: 0 4px 0 1px;
       border-style: solid;

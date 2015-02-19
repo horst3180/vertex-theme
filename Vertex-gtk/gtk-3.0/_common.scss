@@ -930,9 +930,9 @@ GtkComboBox.combobox-entry .button:only-child,
   }
   .separator {
     -GtkWidget-wide-separators: 1;
-    -GtkWidget-separator-width: 9px;
+    -GtkWidget-separator-width: 2px;
 
-    @include _border(header-separator#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
+    @include _border(header-separator#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
   }
   GtkComboBox .separator {
     -GtkWidget-wide-separators: true;
@@ -962,9 +962,9 @@ GtkComboBox.combobox-entry .button:only-child,
   }
   .separator {
     -GtkWidget-wide-separators: 1;
-    -GtkWidget-separator-width: 9px;
+    -GtkWidget-separator-width: 2px;
 
-    @include _border(header-separator#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
+    @include _border(header-separator#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
   }
   // make widgets on dark primary toolbars dark
   @if $darker=='true' { @extend %dark_widgets; }
@@ -1051,14 +1051,21 @@ GtkComboBox.combobox-entry .button:only-child,
     text-shadow: 0 -1px $button_active_text_shadow;
     icon-shadow: 0 -1px $button_active_text_shadow;
   }
-  .header-bar-separator,
-  & > GtkBox > .separator.vertical,
+  // Separators
+  & GtkBox > .separator.vertical {
+    -GtkWidget-wide-separators: 1;
+    -GtkWidget-separator-width: 2px;
+
+    @include _border(header-separator#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
+  }
+  .right .header-bar-separator,
+  & > GtkBox.right > .separator.vertical,
   .left:dir(rtl) .header-bar-separator,
   & > GtkBox.left:dir(rtl) > .separator.vertical {
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 9px;
 
-    @include _border(header-separator#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
+    @include _border(header-separator-right#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
   }
   .left .header-bar-separator,
   & > GtkBox.left > .separator.vertical,
@@ -1069,7 +1076,6 @@ GtkComboBox.combobox-entry .button:only-child,
 
     @include _border(header-separator-left#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 4px, $image-width: 0 1 0 4 / 0 1px 0 4px);
   }
-
   // Selectionmode
   &.selection-mode {
     color: $selected_fg_color;
@@ -1088,14 +1094,21 @@ GtkComboBox.combobox-entry .button:only-child,
       color: $selected_fg_color;
       @extend .dim-label;
     }
-    .header-bar-separator,
-    & > GtkBox > .separator.vertical,
+    // Separators
+    & GtkBox > .separator.vertical {
+      -GtkWidget-wide-separators: 1;
+      -GtkWidget-separator-width: 2px;
+
+      @include _border(header-separator-selectionmode#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
+    }
+    .right .header-bar-separator,
+    & > GtkBox.right > .separator.vertical,
     .left:dir(rtl) .header-bar-separator,
     & > GtkBox.left:dir(rtl) > .separator.vertical {
       -GtkWidget-wide-separators: 1;
       -GtkWidget-separator-width: 9px;
 
-      @include _border(header-separator-selectionmode#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
+      @include _border(header-separator-selectionmode-right#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
     }
     .left .header-bar-separator,
     & > GtkBox.left > .separator.vertical,

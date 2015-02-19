@@ -25,8 +25,10 @@ radio-mixed-insensitive-selected
 grid-selection-unchecked
 grid-selection-checked
 header-separator
+header-separator-right
 header-separator-left
 header-separator-selectionmode
+header-separator-selectionmode-right
 header-separator-selectionmode-left
 scrollbar-slider
 scrollbar-slider-hover
@@ -83,8 +85,10 @@ radio-mixed-insensitive-selected-dark
 grid-selection-unchecked-dark
 grid-selection-checked-dark
 header-separator-dark
+header-separator-right-dark
 header-separator-left-dark
 header-separator-selectionmode-dark
+header-separator-selectionmode-right-dark
 header-separator-selectionmode-left-dark
 scrollbar-slider-dark
 scrollbar-slider-hover-dark
