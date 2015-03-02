@@ -136,7 +136,7 @@ StScrollBar StButton#vhandle:active {
     border: 0 solid transparent;
     border-right-width: 1px;
     border-left-width: 5px;
-    border-image: url("slider.svg") 8;
+    border-image: url("misc/slider.svg") 8;
     color: transparent;
 }
 
@@ -658,7 +658,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 #appMenu {
-    spinner-image: url("process-working.svg");
+    spinner-image: url("misc/process-working.svg");
     spacing: 4px;
 }
 
@@ -818,12 +818,12 @@ StScrollBar StButton#vhandle:active {
     spacing: 11px;
     padding: 18px 9px 18px 18px;
     background-color: transparent;
-	  border-image: url("workspace-thumb-bg.svg") 11 2 10 10;
+	  border-image: url("misc/workspace-thumb-bg.svg") 11 2 10 10;
 }
 
 .workspace-thumbnails:rtl {
     padding: 18px 18px 18px 9px;
-	  border-image: url("workspace-thumb-bg-rtl.svg") 2 11 10 10;
+	  border-image: url("misc/workspace-thumb-bg-rtl.svg") 2 11 10 10;
 }
 
 .workspace-thumbnail-indicator {
@@ -846,7 +846,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .window-close, .notification-close {
-    background-image: url("close-window.svg");
+    background-image: url("misc/close-window.svg");
     background-size: 32px;
     height: 32px;
     width: 32px;
@@ -854,14 +854,14 @@ StScrollBar StButton#vhandle:active {
 
 .window-close:active, .notification-close:active,
 .window-close:active:hover, .notification-close:active:hover {
-    background-image: url("close-window-active.svg");
+    background-image: url("misc/close-window-active.svg");
     background-size: 32px;
     height: 32px;
     width: 32px;
 }
 
 .window-close:hover, .notification-close:hover {
-    background-image: url("close-window-hover.svg");
+    background-image: url("misc/close-window-hover.svg");
     background-size: 32px;
     height: 32px;
     width: 32px;
@@ -959,7 +959,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .placeholder {
-    background-image: url("dash-placeholder.svg");
+    background-image: url("misc/dash-placeholder.svg");
     background-size: contain;
     height: 24px;
 }
@@ -1015,7 +1015,7 @@ StScrollBar StButton#vhandle:active {
     height: 0px;
     background-gradient-direction: none;
     border: 1px solid transparent;
-	  border-image: url("search-separator.svg") 1 1 1 1;
+	  border-image: url("misc/search-separator.svg") 1 1 1 1;
 }
 
 .search-section-content {
@@ -1287,7 +1287,7 @@ StScrollBar StButton#vhandle:active {
 .search-provider-icon-more {
     width: 16px;
     height: 16px;
-    background-image: url("more-results.svg");
+    background-image: url("misc/more-results.svg");
 }
 
 .app-well-app > .overview-icon.overview-icon-with-label,
@@ -1482,9 +1482,9 @@ StScrollBar StButton#vhandle:active {
 }
 
 #LookingGlassDialog .notebook-tab:selected {
-    border-image: url("panel-button-border.svg") 10 10 0 2;
-    background-image: url("panel-button-highlight-wide.svg");
-    color: white;
+    border-image: none;
+    background-image: none;
+    color: #4080FB;
     text-shadow: black 0px 2px 2px;
 }
 
@@ -1598,12 +1598,12 @@ StScrollBar StButton#vhandle:active {
 .calendar-change-month-back {
     width: 16px;
     height: 16px;
-    background-image: url("calendar-arrow-left.svg");
+    background-image: url("misc/calendar-arrow-left.svg");
     border-radius: 2px;
 }
 
 .calendar-change-month-back:rtl {
-    background-image: url("calendar-arrow-right.svg");
+    background-image: url("misc/calendar-arrow-right.svg");
 }
 
 .calendar-change-month-back:hover,
@@ -1617,12 +1617,12 @@ StScrollBar StButton#vhandle:active {
 .calendar-change-month-forward {
     width: 16px;
     height: 16px;
-    background-image: url("calendar-arrow-right.svg");
+    background-image: url("misc/calendar-arrow-right.svg");
     border-radius: 2px;
 }
 
 .calendar-change-month-forward:rtl {
-    background-image: url("calendar-arrow-left.svg");
+    background-image: url("misc/calendar-arrow-left.svg");
 }
 
 .calendar-change-month-forward:hover,
@@ -1806,7 +1806,7 @@ StScrollBar StButton#vhandle:active {
 
 /* Message Tray */
 #message-tray {
-    background: #454649 url(message-tray-background.png);
+    background: #454649 url("misc/message-tray-background.png");
     background-repeat: repeat;
     height: 72px;
 }
@@ -1842,7 +1842,7 @@ StScrollBar StButton#vhandle:active {
     spacing-rows: 4px;
     spacing-columns: 10px;
 
-    border-image: url("notification.svg") 10 10 11 1;
+    border-image: url("misc/notification.svg") 10 10 11 1;
 	  border-bottom-width: 3px;
 }
 
@@ -2117,7 +2117,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .summary-source-counter {
-    background-image: url("summary-counter.svg");
+    background-image: url("misc/summary-counter.svg");
     background-size: 2.4em;
     font-size: 1.1em;
     font-weight: bold;
@@ -2138,7 +2138,7 @@ StScrollBar StButton#vhandle:active {
   padding: 7px 5px;
   height: 4px;
   background-color: transparent;
-  border-image: url("slider-osd.svg") 8;
+  border-image: url("misc/slider-osd.svg") 8;
   border-radius: 0;
   color: #4080fb;
 }
@@ -2152,7 +2152,7 @@ StScrollBar StButton#vhandle:active {
 .osd-window {
     background: none;
     border: none;
-	  border-image: url("osd.svg") 10 10 9 11;
+	  border-image: url("misc/osd.svg") 10 10 9 11;
     border-radius: 2px;
     padding: 20px;
 }
@@ -2217,12 +2217,12 @@ StScrollBar StButton#vhandle:active {
 .ripple-box {
     width: 52px;
     height: 52px;
-    background-image: url("corner-ripple-ltr.svg");
+    background-image: url("misc/corner-ripple-ltr.svg");
     background-size: contain;
 }
 
 .ripple-box:rtl {
-    background-image: url("corner-ripple-rtl.svg");
+    background-image: url("misc/corner-ripple-rtl.svg");
 }
 
 .switcher-arrow {
@@ -2259,7 +2259,7 @@ StScrollBar StButton#vhandle:active {
     height: 30px;
     background: rgba(0,0,0,0.33);
     border: 1px solid #4080fb;
-    background-image: url("ws-switch-arrow-up.png");
+    background-image: url("misc/ws-switch-arrow-up.png");
     border-radius: 2px;
 }
 
@@ -2267,7 +2267,7 @@ StScrollBar StButton#vhandle:active {
     height: 30px;
     border: 1px solid #4080fb;
     background: rgba(0,0,0,0.33);
-    background-image: url("ws-switch-arrow-down.png");
+    background-image: url("misc/ws-switch-arrow-down.png");
     border-radius: 2px;
 }
 
@@ -2312,7 +2312,7 @@ StScrollBar StButton#vhandle:active {
 .modal-dialog {
     border-radius: 3px;
     background-color: rgba(0.0, 0.0, 0.0, 0.0);
-    border-image: url("modal.svg") 10 10 35 14;
+    border-image: url("misc/modal.svg") 10 10 35 14;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 6px;
@@ -2852,7 +2852,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
-    background-image: url("logged-in-indicator.svg");
+    background-image: url("misc/logged-in-indicator.svg");
     background-size: contain;
 }
 
