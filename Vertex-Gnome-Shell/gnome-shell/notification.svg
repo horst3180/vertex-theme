@@ -11,46 +11,26 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="66"
-   height="76"
-   viewBox="0 0 66.000001 75.999996"
+   height="64"
+   viewBox="0 0 66.000001 63.999996"
    id="svg5653"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="modal.svg">
+   sodipodi:docname="notification.svg">
   <defs
      id="defs5655">
     <linearGradient
-       id="linearGradient4179"
-       inkscape:collect="always">
-      <stop
-         id="stop4181"
-         offset="0"
-         style="stop-color:#4a4c50;stop-opacity:1" />
-      <stop
-         style="stop-color:#404142;stop-opacity:1"
-         offset="0.43200007"
-         id="stop4183" />
-      <stop
-         id="stop4185"
-         offset="0.93548393"
-         style="stop-color:#404142;stop-opacity:1" />
-      <stop
-         id="stop4187"
-         offset="1"
-         style="stop-color:#393a3b;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4179"
+       xlink:href="#linearGradient4187"
        id="linearGradient4829"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.18531467,0,0,1.0499998,151.4301,307.9622)"
+       gradientTransform="matrix(0.18531467,0,0,1.0499998,151.4301,319.9597)"
        x1="682.58899"
        y1="38.476185"
        x2="682.58899"
        y2="97.523819" />
     <linearGradient
-       gradientTransform="matrix(0.18021203,0,0,1.0000004,154.91518,309.36215)"
+       gradientTransform="matrix(0.18021203,0,0,1.0000004,154.91518,321.35965)"
        inkscape:collect="always"
        xlink:href="#linearGradient4331"
        id="linearGradient4337-5-5-4"
@@ -84,6 +64,40 @@
          stdDeviation="2.6969997"
          id="feGaussianBlur4336" />
     </filter>
+    <linearGradient
+       id="linearGradient4187"
+       inkscape:collect="always">
+      <stop
+         id="stop4189"
+         offset="0"
+         style="stop-color:#505256;stop-opacity:1" />
+      <stop
+         id="stop4191"
+         offset="1"
+         style="stop-color:#393a3b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4363">
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="0"
+         id="stop4365" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1"
+         id="stop4367" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="41"
+       x2="683"
+       y1="40"
+       x1="683"
+       id="linearGradient4337-8-9"
+       xlink:href="#linearGradient4363"
+       inkscape:collect="always"
+       gradientTransform="matrix(0.18021201,0,0,0.99997586,154.9152,-461.35876)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -92,18 +106,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="35.035497"
-     inkscape:cy="15.095992"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="12.211829"
+     inkscape:cy="39.912856"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1030"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1"
@@ -127,7 +141,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -135,7 +149,7 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-245,-342.3622)">
+     transform="translate(-245,-354.3622)">
     <rect
        style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.99910933;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4334)"
        id="rect4179-2-0-9-4"
@@ -145,24 +159,34 @@
        y="348.86221"
        ry="1.9983633"
        rx="1.9980742"
-       transform="matrix(1.0009638,0,0,1.0008192,-0.26960038,-0.31299778)" />
+       transform="matrix(1.0009638,0,0,1.0008192,-0.26960038,11.684499)" />
     <rect
-       style="opacity:1;fill:url(#linearGradient4829);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.8;fill:url(#linearGradient4829);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4179-2-0-9"
        width="53"
        height="62.999989"
        x="251.5"
-       y="347.86221"
+       y="359.85999"
        ry="2.0000002"
        rx="2" />
     <rect
        rx="1.0000001"
        ry="1"
-       y="348.86218"
+       y="360.85995"
        x="252.5"
        height="57.000023"
        width="51"
        id="rect4179-3-8-3-7"
        style="opacity:0.2;fill:none;fill-opacity:1;stroke:url(#linearGradient4337-5-5-4);stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:0.1;fill:none;fill-opacity:1;stroke:url(#linearGradient4337-8-9);stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4179-3-3-5"
+       width="51"
+       height="56.998623"
+       x="252.5"
+       y="-421.85995"
+       ry="0.99999994"
+       rx="0.99999994"
+       transform="scale(1,-1)" />
   </g>
 </svg>
