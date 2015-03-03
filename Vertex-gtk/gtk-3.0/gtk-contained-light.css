@@ -1411,6 +1411,56 @@ GtkComboBox {
   background-image: linear-gradient(to bottom, #f7f7f7, #eaeaed);
   box-shadow: inset 0 1px white; }
 
+.header-bar.selection-mode .linked .button.suggested-action, .header-bar.selection-mode .linked .button.suggested-action:hover {
+  border-image: -gtk-scaled(url("borders/middle-button-normal-border.png"), url("borders/middle-button-normal-border@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+  border-radius: 0;
+  border-width: 1px 0 2px 0;
+  border-style: solid;
+  border-color: transparent; }
+  .header-bar.selection-mode .linked .button.suggested-action:active, .header-bar.selection-mode .linked .button.suggested-action:checked {
+    border-image: -gtk-scaled(url("borders/middle-button-active-border.png"), url("borders/middle-button-active-border@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+    border-radius: 0;
+    border-width: 1px 0 2px 0;
+    border-style: solid;
+    border-color: transparent; }
+
+.header-bar.selection-mode .linked .button.suggested-action:first-child {
+  border-image: -gtk-scaled(url("borders/left-button-normal-border.png"), url("borders/left-button-normal-border@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+  border-radius: 2px 0 0 2px;
+  border-width: 1px 0 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .header-bar.selection-mode .linked .button.suggested-action:first-child:active, .header-bar.selection-mode .linked .button.suggested-action:first-child:checked {
+    border-image: -gtk-scaled(url("borders/left-button-active-border.png"), url("borders/left-button-active-border@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+    border-radius: 2px 0 0 2px;
+    border-width: 1px 0 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+.header-bar.selection-mode .linked .button.suggested-action:last-child {
+  border-image: -gtk-scaled(url("borders/right-button-normal-border.png"), url("borders/right-button-normal-border@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+  border-radius: 0 2px 2px 0;
+  border-width: 1px 1px 2px 0;
+  border-style: solid;
+  border-color: transparent; }
+  .header-bar.selection-mode .linked .button.suggested-action:last-child:active, .header-bar.selection-mode .linked .button.suggested-action:last-child:checked {
+    border-image: -gtk-scaled(url("borders/right-button-active-border.png"), url("borders/right-button-active-border@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+    border-radius: 0 2px 2px 0;
+    border-width: 1px 1px 2px 0;
+    border-style: solid;
+    border-color: transparent; }
+.header-bar.selection-mode .linked .button.suggested-action:only-child {
+  border-image: -gtk-scaled(url("borders/button-normal-border.png"), url("borders/button-normal-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .header-bar.selection-mode .linked .button.suggested-action:only-child:active, .header-bar.selection-mode .linked .button.suggested-action:only-child:checked {
+    border-image: -gtk-scaled(url("borders/button-active-border.png"), url("borders/button-active-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+
 .header-bar.selection-mode .linked .button, .header-bar.selection-mode .linked .button:hover {
   border-image: -gtk-scaled(url("borders/middle-button-normal-border-suggested.png"), url("borders/middle-button-normal-border-suggested@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
