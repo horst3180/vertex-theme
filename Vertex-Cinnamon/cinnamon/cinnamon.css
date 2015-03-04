@@ -129,12 +129,12 @@ StScrollBar StButton#vhandle:active {
 .popup-menu {
   color: white;
   min-width: 200px;
-  border-image: url("menu.png") 12 12 12 12;
+  border-image: url("menu/menu.svg") 10 10 35 14;
 }
 
 .popup-submenu-menu-item:open {
   background-color: rgba(0,0,0,0.0);
-  border-image: url("submenu-open.svg") 6 6 2 2;
+  border-image: url("menu/submenu-open.svg") 8 8 2 2;
 }
 
 .popup-sub-menu {
@@ -142,7 +142,7 @@ StScrollBar StButton#vhandle:active {
   background-gradient-end: rgba(0,0,0,0.0);
   background-gradient-direction: vertical;
   box-shadow: none;
-  border-image: url("submenu.svg") 6 6 2 2;
+  border-image: url("menu/submenu.svg") 8 8 2 2;
 }
 
 .popup-sub-menu .popup-menu-item:ltr {
@@ -185,7 +185,7 @@ StScrollBar StButton#vhandle:active {
 
 .popup-menu-item:active {
   background-color: rgba(0,0,0,0.0);
-  border-image: url("menu-active.svg") 6 6 2 2;
+  border-image: url("menu/menu-hover.svg") 7 7 1 1;
 }
 
 .popup-menu-item:insensitive {

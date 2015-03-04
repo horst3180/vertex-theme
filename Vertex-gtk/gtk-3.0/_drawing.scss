@@ -231,7 +231,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     icon-shadow: 0 -1px $selection_text_shadow;
 
     @if $border==true {
-      @include _border(button-border-suggested#{$_asset_suffix});
+      @include _border(button-normal-border-suggested#{$_asset_suffix});
     }
   }
 
@@ -249,7 +249,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     icon-shadow: 0 -1px $selection_text_shadow;
 
     @if $border==true {
-      @include _border(button-border-suggested#{$_asset_suffix});
+      @include _border(button-normal-border-suggested#{$_asset_suffix});
     }
   }
 
@@ -285,7 +285,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     icon-shadow: none;
 
     @if $border==true {
-      @include _border(button-border-suggested#{$_asset_suffix});
+      @include _border(button-normal-border-suggested#{$_asset_suffix});
     }
 
     > GtkLabel, GtkLabel { color: inherit; }
@@ -416,10 +416,14 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 //
 // Linked Buttons and Entries
 //
-@mixin linked($t, $state:'normal', $position:left, $dark:false) {
+@mixin linked($t, $state:'normal', $position:left, $dark:false, $action_type:none) {
 
   $_asset_suffix: if($dark=='true' or $variant=='dark', -dark, '');
   $args:'';
+
+  $_action_suffix: '';
+  @if $action_type==suggested { $_action_suffix: '-suggested'; }
+  @if $action_type==destructive { $_action_suffix: '-destructive'; }
 
   @if $position==left {
     @if $t==entry {
@@ -496,10 +500,10 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   @if $position==single {
-    @include _border(#{$t}-#{$state}-border#{$_asset_suffix})
+    @include _border(#{$t}-#{$state}-border#{$_action_suffix}#{$_asset_suffix})
   }
   @else {
-    @include _border(#{$position}-#{$t}-#{$state}-border#{$_asset_suffix}, nth($args, 1), nth($args, 2), nth($args, 3))
+    @include _border(#{$position}-#{$t}-#{$state}-border#{$_action_suffix}#{$_asset_suffix}, nth($args, 1), nth($args, 2), nth($args, 3))
   }
 }
 

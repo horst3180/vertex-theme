@@ -402,7 +402,6 @@ $_dot_color: if($variant=='light', $selected_bg_color,
   .osd &, .osd .linked & {
 
     @include button(osd, $border:false);
-    // FIXME @extend %dark_linked doesn't work because flat buttons get overridden
 
     @include _border(middle-button-normal-border-dark, $radius: 0, $width: 1px 0 2px 0, $image_width: 2 1 3 1 / 2px 1px 3px 1px);
     &:active, &:checked { @include _border(middle-button-active-border-dark, $radius: 0, $width: 1px 0 2px 0, $image_width: 2 1 3 1 / 2px 1px 3px 1px); }
@@ -452,7 +451,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
       text-shadow: 0 -1px $action_button_shadow;
       icon-shadow: 0 -1px $action_button_shadow;
 
-      @include _border(button-border-#{$b_type}#{$asset_suffix});
+      @include _border(button-normal-border-#{$b_type}#{$asset_suffix});
 
       &:hover {
         background-image: linear-gradient(to bottom, lighten(nth($b_color, 1), 4%), lighten(nth($b_color, 2), 2%));
@@ -479,6 +478,8 @@ $_dot_color: if($variant=='light', $selected_bg_color,
         }
       }
     }
+    .linked &.#{$b_type}-action,
+    .linked &.#{$b_type}-action:hover { @extend %#{$b_type}_linked; }
   }
 
   &.image-button { padding: 8px; }
@@ -638,6 +639,31 @@ $_dot_color: if($variant=='light', $selected_bg_color,
   &:only-child {
     @include linked(button, normal, single);
     &:active, &:checked { @include linked(button, active, single); }
+  }
+}
+
+// Linked destructive and suggested action buttons
+@each $b_type in (suggested, destructive) {
+  %#{$b_type}_linked_middle {
+    @include linked(button, normal, middle, $action_type:$b_type);
+    &:active, &:checked { @include linked(button, active, middle, $action_type:$b_type); }  
+  }
+
+  %#{$b_type}_linked {
+    @extend %#{$b_type}_linked_middle;
+
+    &:first-child {
+      @include linked(button, normal, left, $action_type:$b_type);
+      &:active, &:checked { @include linked(button, active, left, $action_type:$b_type); }
+    }
+    &:last-child {
+      @include linked(button, normal, right, $action_type:$b_type);
+      &:active, &:checked { @include linked(button, active, right, $action_type:$b_type); }
+    }
+    &:only-child {
+      @include linked(button, normal, single, $action_type:$b_type);
+      &:active, &:checked { @include linked(button, active, single, $action_type:$b_type); }
+    }
   }
 }
 
@@ -1160,6 +1186,11 @@ GtkComboBox.combobox-entry .button:only-child,
       }
     }
   }
+  &.selection-mode .linked .button,
+  &.selection-mode .linked .button:hover { @extend %header_suggested_linked }
+
+  &.selection-mode .linked .button.suggested-action,
+  &.selection-mode .linked .button.suggested-action:hover { @extend %header_linked }
 
   @if $darker=='true' {
 
@@ -1217,7 +1248,7 @@ GtkComboBox.combobox-entry .button:only-child,
       border-image: none;
     }
   }
-  .linked .entry { @extend %dark_entry_linked; }
+  .linked .entry { @extend %header_entry_linked; }
 
 // Buttons
   .button {
@@ -1249,7 +1280,7 @@ GtkComboBox.combobox-entry .button:only-child,
         text-shadow: 0 -1px $action_button_shadow;
         icon-shadow: 0 -1px $action_button_shadow;
 
-        @include _border(button-border-#{$b_type}-dark);
+        @include _border(button-normal-border-#{$b_type}-dark);
 
         &:hover {
           background-image: linear-gradient(to bottom, lighten(nth($b_color, 1), 4%), lighten(nth($b_color, 2), 2%));
@@ -1279,7 +1310,13 @@ GtkComboBox.combobox-entry .button:only-child,
     }
   }
   .linked .button,
-  .linked .button:hover { @extend %dark_linked; }
+  .linked .button:hover { @extend %header_linked; }
+
+  .linked .button.suggested-action,
+  .linked .button.suggested-action:hover { @extend %header_suggested_linked; }
+
+  .linked .button.destructive-action,
+  .linked .button.destructive-action:hover { @extend %header_destructive_linked; }
 
 // Comboboxes
   GtkComboBox {
@@ -1297,27 +1334,27 @@ GtkComboBox.combobox-entry .button:only-child,
     .separator {
       border: none;
     }
-    &.combobox-entry .entry { @extend %dark_entry_linked; }
+    &.combobox-entry .entry { @extend %header_entry_linked; }
   }
 
   .linked > GtkComboBox > .button:dir(ltr),
   .linked > GtkComboBox > .button:dir(rtl) {
-    @extend %dark_linked_middle;
+    @extend %header_linked_middle;
   }
 
   GtkComboBox.combobox-entry .button:first-child,
   .linked > GtkComboBox:first-child > .button {
-    @extend %dark_linked:first-child;
+    @extend %header_linked:first-child;
   }
 
   GtkComboBox.combobox-entry .button:last-child,
   .linked > GtkComboBox:last-child > .button {
-    @extend %dark_linked:last-child;
+    @extend %header_linked:last-child;
   }
 
   GtkComboBox.combobox-entry .button:only-child,
   .linked > GtkComboBox:only-child > .button {
-    @extend %dark_linked:only-child;
+    @extend %header_linked:only-child;
   }
 
 // Spinbuttons
@@ -1443,48 +1480,73 @@ GtkComboBox.combobox-entry .button:only-child,
 }
 
 // Extends for dark linked entries
-%dark_entry_linked_middle {
-  @include linked(entry, normal, middle, $dark:'true');
-  &:focus { @include linked(entry, focused, middle, $dark:'true') }  
+%header_entry_linked_middle {
+  @include linked(entry, normal, middle, $dark:$darker);
+  &:focus { @include linked(entry, focused, middle, $dark:$darker) }  
 }
 
-%dark_entry_linked {
-  @extend %dark_entry_linked_middle;
+%header_entry_linked {
+  @extend %header_entry_linked_middle;
 
   &:first-child {
-    @include linked(entry, normal, left, $dark:'true');
-    &:focus { @include linked(entry, focused, left, $dark:'true') }
+    @include linked(entry, normal, left, $dark:$darker);
+    &:focus { @include linked(entry, focused, left, $dark:$darker) }
   }
   &:last-child {
-    @include linked(entry, normal, right, $dark:'true');
-    &:focus { @include linked(entry, focused, right, $dark:'true') }
+    @include linked(entry, normal, right, $dark:$darker);
+    &:focus { @include linked(entry, focused, right, $dark:$darker) }
   }
   &:only-child {
-    @include linked(entry, normal, single, $dark:'true');
-    &:focus { @include linked(entry, focused, single, $dark:'true'); }
+    @include linked(entry, normal, single, $dark:$darker);
+    &:focus { @include linked(entry, focused, single, $dark:$darker); }
   }
 }
 
 // Extends for dark linked buttons
-%dark_linked_middle {
-  @include linked(button, normal, middle, $dark:'true');
-  &:active, &:checked { @include linked(button, active, middle, $dark:'true') }  
+%header_linked_middle {
+  @include linked(button, normal, middle, $dark:$darker);
+  &:active, &:checked { @include linked(button, active, middle, $dark:$darker) }  
 }
 
-%dark_linked {
-  @extend %dark_linked_middle;
+%header_linked {
+  @extend %header_linked_middle;
 
   &:first-child {
-    @include linked(button, normal, left, $dark:'true');
-    &:active, &:checked { @include linked(button, active, left, $dark:'true') }
+    @include linked(button, normal, left, $dark:$darker);
+    &:active, &:checked { @include linked(button, active, left, $dark:$darker) }
   }
   &:last-child {
-    @include linked(button, normal, right, $dark:'true');
-    &:active, &:checked { @include linked(button, active, right, $dark:'true') }
+    @include linked(button, normal, right, $dark:$darker);
+    &:active, &:checked { @include linked(button, active, right, $dark:$darker) }
   }
   &:only-child {
-    @include linked(button, normal, single, $dark:'true');
-    &:active, &:checked { @include linked(button, active, single, $dark:'true'); }
+    @include linked(button, normal, single, $dark:$darker);
+    &:active, &:checked { @include linked(button, active, single, $dark:$darker); }
+  }
+}
+
+// Headerbar linked destructive and suggested action buttons
+@each $b_type in (suggested, destructive) {
+  %header_#{$b_type}_linked_middle {
+    @include linked(button, normal, middle, $action_type:$b_type, $dark:$darker);
+    &:active, &:checked { @include linked(button, active, middle, $action_type:$b_type, $dark:$darker); }  
+  }
+
+  %header_#{$b_type}_linked {
+    @extend %header_#{$b_type}_linked_middle;
+
+    &:first-child {
+      @include linked(button, normal, left, $action_type:$b_type, $dark:$darker);
+      &:active, &:checked { @include linked(button, active, left, $action_type:$b_type, $dark:$darker); }
+    }
+    &:last-child {
+      @include linked(button, normal, right, $action_type:$b_type, $dark:$darker);
+      &:active, &:checked { @include linked(button, active, right, $action_type:$b_type, $dark:$darker); }
+    }
+    &:only-child {
+      @include linked(button, normal, single, $action_type:$b_type, $dark:$darker);
+      &:active, &:checked { @include linked(button, active, single, $action_type:$b_type, $dark:$darker); }
+    }
   }
 }
 
