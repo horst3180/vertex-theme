@@ -1350,13 +1350,13 @@ StScrollBar StButton#vhandle:active {
 }
 
 .window-list-item-label {
-  font-weight: normal;
+  font-weight: bold;
   width: 15em;
   min-width: 5px;
 }
 
 .window-list-item-box {
-  font-weight: normal;
+  font-weight: bold;
   border-image: url("panel/window-list-button.svg") 3;
   background-image: none;
   color: rgba(255,255,255, 0.7);
@@ -1621,6 +1621,24 @@ StScrollBar StButton#vhandle:active {
 }
 
 /* ===================================================================
+ * User Applet
+ * ===================================================================*/
+.user-icon {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.user-label {
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+/* ===================================================================
  * Desklets (desklet.js) 
  * ===================================================================*/
 .desklet {        
@@ -1758,12 +1776,10 @@ StScrollBar StButton#vhandle:active {
 /* ===================================================================
  * Snap/Tile OSD Popup
  * ===================================================================*/
-/*FIXME*/
 .snap-osd {
-  font-size: 18pt;
+  font-size: 16pt;
   border-radius: 24px;
-  background-color: rgba(85, 85, 85, 0.9);
-  border: 2px solid #868686;
+  border-image: url("misc/notification.svg") 10 10 11 12;
   color: white;
   padding-right: 20px;
   padding-left: 20px;
