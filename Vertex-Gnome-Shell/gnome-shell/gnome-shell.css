@@ -1568,7 +1568,7 @@ StScrollBar StButton#vhandle:active {
 
 .calendar-vertical-separator {
     -stipple-width: 1px;
-    -stipple-color: #787878;
+    -stipple-color: rgba(0,0,0,0.5);
     width: 0.3em;
 }
 /*
@@ -1584,11 +1584,9 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-month-label {
-    color: white;
-    font-size: 1em;
-    font-weight: bold;
-    padding-bottom: 8px;
-    padding-top: 8px;
+  color: #e5e5e9;
+  font-weight: bold;
+  padding: 8px 0;
 }
 
 .calendar-month-label:focus {
@@ -1647,98 +1645,75 @@ StScrollBar StButton#vhandle:active {
     background-color: transparent;
 }
 
-.calendar-day-base {
-    font-size: 1em;
-    text-align: center;
-    width: 2.4em;
-    height: 2.4em;
+
+.calendar-week-number {
+    color: rgba(243, 243, 245, 0.45);
 }
 
-.calendar-day-base:hover,
-.calendar-day-base:focus {
-    background-gradient-start: #64666B;
-    background-gradient-end: #555759;
-    background-gradient-direction: vertical;
-	  box-shadow: inset 0px 1px rgba(255, 255, 255, .1);
+.calendar-day-base {
+    font-size: 80%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    padding: 0.1em;
+    margin: 2px;
+    border-radius: 12.5px;
+}
+
+.calendar-day-base:hover, .calendar-day-base:focus {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .calendar-day-base:active {
-    font-size: 1em;
-    background-gradient-start: #424345;
-    background-gradient-end: #515357;
-    background-gradient-direction: vertical;
-	  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, .1);
+    color: #ffffff;
+    background-color: transparent;
+    background-image: url("misc/calendar-not-today.svg");
+    border-width: transparent;
 }
 
 .calendar-day-heading {
-    color: #ABABAB;
-    padding-top: .2em;
-    height: 1.7em;
+    color: rgba(243, 243, 245, 0.75);
+    margin-top: 1em;
+    font-size: 70%;
 }
 
-.calendar-week-number {
-    color: #ABABAB;
-}
-
-/* Hack used in lieu of border-collapse - see calendar.js */
 .calendar-day {
-    border: 1px solid rgba(0, 0, 0, .35);
-    color: white;
-    border-top-width: 0;
-    border-left-width: 0;
+    border-width: 0;
+    color: rgba(243, 243, 245, 0.9);
 }
 
 .calendar-day-top {
-    border-top-width: 1px;
+    border-top-width: 0;
 }
 
 .calendar-day-left {
-    border-left-width: 1px;
-}
-
-.calendar-work-day {
-    background-color: rgba(0, 0, 0, .0);
-    background-gradient-start: #515357;
-    background-gradient-end: #424345;
-    background-gradient-direction: vertical;
-	  box-shadow: inset 0px 1px rgba(255, 255, 255, .1);
+    border-left-width: 0;
 }
 
 .calendar-nonwork-day {
-    background-color: rgba(0, 0, 0, .0);
-    background-gradient-start: #36383B;
-    background-gradient-end: #2F3033;
-    background-gradient-direction: vertical;
-	  box-shadow: inset 0px 1px rgba(255, 255, 255, .08);
+    color: #ffffff;
+    background-color: transparent;
+    font-weight: bold;
 }
 
-.calendar-today,
-.calendar-today.calendar-day-with-events,
-.calendar-today:active,
-.calendar-today.calendar-day-with-events:active {
-    background-gradient-start: #4080FB;
-    background-gradient-end: #356AD1;
-    background-gradient-direction: vertical;
-	  box-shadow: inset 0px 1px rgba(255, 255, 255, .1);
-    text-shadow: none;
+.calendar-today, .calendar-today:active {
     font-weight: bold;
-    color: white;
+    border: 0px solid rgba(64, 128, 251, 0.5);
+    background-image: url("misc/calendar-today.svg");
 }
 
-.calendar-day-with-events,
-.calendar-day-with-events:active,
-.calendar-other-month-day.calendar-day-with-events,
-.calendar-other-month-day.calendar-day-with-events:active {
+.calendar-day-with-events {
+    color: #4080fb;
     font-weight: bold;
-    color: #4080FB;
+}
+
+.calendar-today.calendar-day-with-events {
+    color: #ffffff;
 }
 
 .calendar-other-month-day {
-    color: #757575;
-    background-gradient-start: #45464A;
-    background-gradient-end: #3B3B3D;
-    background-gradient-direction: vertical;
-	  box-shadow: inset 0px 1px rgba(255, 255, 255, .07);
+    color: #949496;
+    opacity: 0.5;
 }
 
 .events-table {

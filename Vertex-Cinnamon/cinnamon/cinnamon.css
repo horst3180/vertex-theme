@@ -603,11 +603,9 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-month-label {
-  color: white;
-  font-size: 1em;
+  color: #e5e5e9;
   font-weight: bold;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding: 8px 0;
 }
 
 .calendar-change-month-back {
@@ -657,85 +655,49 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-day-base {
-  font-size: 1em;
-  text-align: center;
-  width: 2.4em;
-  height: 2.4em;
-}
-
-.calendar-day-base:hover {
-  background-color: rgba(255, 255, 255, .08);
-}
-
-.calendar-day-base:active {
-  font-size: 1em;
-  background-color: rgba(255, 255, 255, .04);
-  color: white;
+    font-size: 80%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    padding: 0.1em;
+    margin: 2px;
+    border-radius: 12.5px;
 }
 
 .calendar-day-heading {
-  color: #ABABAB;
-  padding-top: 1em;
+    color: rgba(243, 243, 245, 0.75);
+    margin-top: 1em;
+    font-size: 70%;
 }
 
-.calendar-week-number {
-  color: #ABABAB;
+.calendar-day {
+    border-width: 0;
+    color: rgba(243, 243, 245, 0.9);
 }
 
-/* Hack used in lieu of border-collapse - see calendar.js */
-.calendar-day:ltr {
-  border: 1px solid rgba(0, 0, 0, .6);
-  color: white;
-  border-top-width: 0;
-  border-left-width: 0;
+.calendar-day-top {
+    border-top-width: 0;
 }
 
-.calendar-day-top:ltr {
-  border-top-width: 1px;
-}
-
-.calendar-day-left:ltr {
-  border-left-width: 1px;
-}
-
-.calendar-day:rtl {
-  border: 1px solid rgba(0, 0, 0, .6);
-  color: white;
-  border-top-width: 0;
-  border-right-width: 0;
-}
-
-.calendar-day-top:rtl {
-  border-top-width: 1px;
-}
-
-.calendar-day-left:rtl {
-  border-right-width: 1px;
-}
-
-.calendar-work-day {
-  background-color: rgba(0, 0, 0, .35);
+.calendar-day-left {
+    border-left-width: 0;
 }
 
 .calendar-nonwork-day {
-  background-color: rgba(0, 0, 0, .2);
+    color: #ffffff;
+    background-color: transparent;
+    font-weight: bold;
 }
 
 .calendar-today {
-  background-image: url("calendar-today.svg");
-  text-shadow: black 0px 2px 2px;
-  color: #ffffff;
-  font-weight: bold;
+    font-weight: bold;
+    border: 0px solid rgba(64, 128, 251, 0.5);
+    background-image: url("misc/calendar-today.svg");
 }
 
 .calendar-other-month-day {
-  color: #888888;
-  background-color: rgba(64, 64, 64, .5);
-}
-
-.calendar-day-with-events {
-  font-weight: bold;
-  color: #cccccc;
+    color: #949496;
+    opacity: 0.5;
 }
 
 /* ===================================================================
