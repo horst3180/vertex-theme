@@ -26,6 +26,7 @@ stage {
  * ===================================================================*/
 StScrollBar {
   padding: 0px;
+  padding-right: 13px;
 }
 
 StScrollView.vfade {
@@ -103,7 +104,7 @@ StScrollBar StButton#vhandle:active {
 .notification-icon-button:focus,
 .modal-dialog-button:focus {
   background: none;
-  border: 2px solid;
+  border: 1px solid;
   border-image: url('buttons/button-border-focused.svg') 4;
 }
 
@@ -222,6 +223,7 @@ StScrollBar StButton#vhandle:active {
   -slider-border-width: 0;
   -slider-handle-radius: 4px;
   height: 18px;
+	min-width: 15em;
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 1px;
@@ -322,14 +324,14 @@ StScrollBar StButton#vhandle:active {
 }
 
 .panel-top {
-  border-image: url("panel/panel-top.svg") 1;
+  border-image: url("panel/panel-top.svg") 2;
   color: white;
   font-size: 1em;
   padding: 0px;
 }
 
 .panel-bottom {
-  border-image: url("panel/panel-bottom.svg") 1;
+  border-image: url("panel/panel-bottom.svg") 2;
   color: white;
   font-size: 1em;
   padding: 0px;
@@ -542,95 +544,55 @@ StScrollBar StButton#vhandle:active {
 }
 
 /* ===================================================================
- * Looking Glass 
+ * About Dialog (applet.js and desklet.js)
  * ===================================================================*/
-#LookingGlassDialog {
-	background-color: rgba(85,85,85,0.85);
-	spacing: 4px;
-	padding: 4px;
-	border: 2px solid grey;
-	border-radius: 4px;
-	color: #CCCCCC;
+.about-content {
+  width: 550px;
+  height: 250px;
+  spacing: 8px;
+  padding-bottom: 10px;
 }
-#LookingGlassDialog > #Toolbar {
-	border: 1px solid grey;
-	border-radius: 4px;
+
+.about-title {
+  font-size: 2em;
+  font-weight: bold;
 }
-#LookingGlassDialog .labels {
-	spacing: 4px;
+
+.about-uuid {
+  font-size: 10px;
+  color: #888;
 }
-#LookingGlassDialog .notebook-tab {
-	padding: 2px;
+
+.about-icon {
+  padding-right: 20px;
+  padding-bottom: 14px;
 }
-#LookingGlassDialog .notebook-tab:hover {
-	color: #FFFFFF;
+
+.about-scrollBox {
+  border: 1px solid #171819;
+  border-radius: 2px;
+  background-color: #2B2B2C;
+  padding: 4px;
+  padding-right: 0;
+  border-radius: 0;
 }
-#LookingGlassDialog .notebook-tab:selected {
-	border: 1px solid #CCCCCC;
-	border-radius: 4px;
-	padding: 5px;
+
+.about-scrollBox-innerBox {
+  padding: 1.2em;
+  spacing: 1.2em;
 }
-#LookingGlassDialog .lg-inspector-title {
-	font-weight: bold;
-	padding-bottom: 8px;
+
+.about-description {
+  padding-top: 4px;
+  padding-bottom: 16px;
 }
-.lg-dialog StLabel {
-	color: #cccccc;
+
+.about-version {
+  padding-left: 7px;
+  font-size: 10px;
+  color: #888;
 }
-.lg-dialog StEntry {
-	color: #cccccc;
-	selection-background-color: #cccccc;
-	selected-color: black;
-}
-.lg-obj-inspector-title {
-	spacing: 4px;
-}
-.lg-obj-inspector-button {
-	border: 1px solid #cccccc;
-	padding: 4px;
-	border-radius: 4px;
-}
-.lg-obj-inspector-button:hover {
-	border: 1px solid #ffffff;
-}
-.lg-dialog .cinnamon-link {
-	color: #cccccc;
-}
-.lg-dialog .cinnamon-link:hover {
-	color: #ffffff;
-}
-#LookingGlassDialog StBoxLayout#EvalBox {
-	padding: 4px;
-	spacing: 4px;
-}
-#LookingGlassDialog StBoxLayout#ResultsArea {
-	spacing: 4px;
-}
-#lookingGlassExtensions {
-	padding: 4px;
-}
-.lg-extension-list {
-	padding: 4px;
-	spacing: 6px;
-}
-.lg-extension {
-	border: 1px solid #6f6f6f;
-	border-radius: 4px;
-	padding: 4px;
-}
-.lg-extension-name {
-	font-weight: bold;
-}
-.lg-extension-meta {
-	spacing: 6px;
-}
-#LookingGlassPropertyInspector {
-	background: rgba(0, 0, 0, 0.9);
-	border: 2px solid grey;
-	border-radius: 4px;
-	padding: 6px;
-	color: #cccccc;
-}
+
 /* ===================================================================
  * Date applet 
  * ===================================================================*/
@@ -971,15 +933,28 @@ StScrollBar StButton#vhandle:active {
   border-radius: 3px;
   background-color: rgba(0.0, 0.0, 0.0, 0.0);
   border-image: url("misc/modal.svg") 10 10 35 14;
-  color: white;
-  padding-right: 42px;
-  padding-left: 42px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-bottom: 8px;
+  padding-top: 0px;
 }
 
-.modal-dialog-button-box {
-  spacing: 21px;
+.modal-dialog > * {
+  padding: 14px;
+  border-radius: 0px;
+}
+
+.modal-dialog > .modal-dialog-button-box {
+  spacing: 0px;
+  margin: 0px;
+  padding: 12px 24px;
+  background-gradient-start: #37393b;
+  background-gradient-end: #29292b;
+  background-gradient-direction: vertical;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.13);
+  border: solid 0px rgba(0,0,0,0.5);
+  border-top: 1px;
+  border-radius: 0px 0px 3px 3px;
 }
 
 .modal-dialog-button {
@@ -990,10 +965,6 @@ StScrollBar StButton#vhandle:active {
 
 .modal-dialog-button:disabled {
   color: #9f9f9f;
-}
-
-.modal-dialog-button:focus {
-  padding: 3px 31px 4px;
 }
 
 /* ===================================================================
@@ -1040,6 +1011,17 @@ StScrollBar StButton#vhandle:active {
   padding-left: 25px;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+.run-dialog .modal-dialog-button-box {
+  border: none;
+  box-shadow: none;
+  background: none;
+  background-gradient-direction: none;
+}
+
+.run-dialog > * {
+  padding: 0px;
 }
 
 .lightbox {
@@ -1406,15 +1388,16 @@ StScrollBar StButton#vhandle:active {
 }
 
 .window-list-item-label {
-  font-weight: bold;
+  font-weight: normal;
   width: 15em;
   min-width: 5px;
 }
 
 .window-list-item-box {
-  border-image: url("panel/window-list-button.svg") 3 3 3 3;
+  font-weight: normal;
+  border-image: url("panel/window-list-button.svg") 3;
   background-image: none;
-  color: white;
+  color: rgba(255,255,255, 0.7);
   padding-left: 5px;
   padding-right: 5px;
   transition-duration: 100;
@@ -1425,12 +1408,13 @@ StScrollBar StButton#vhandle:active {
 .window-list-item-box:checked,
 .window-list-item-box:checked:hover,
 .window-list-item-box:focus,
-.window-list-item-box:focus:hover	{ 
-  border-image: url("panel/panel-button-border.svg") 2 2 2 2;
+.window-list-item-box:focus:hover	{
+  color: rgba(255,255,255, 1.0);
+  border-image: url("panel/panel-button-border.svg") 3;
 }
 
 .window-list-item-box:hover	{ 
-  border-image: url("panel/panel-button-border-hover.svg") 2 2 2 2;
+  border-image: url("panel/panel-button-border-hover.svg") 3;
 }
 
 .window-list-item-demands-attention {
@@ -1497,7 +1481,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .sound-seek-box StLabel {
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 .sound-seek-box StIcon {
@@ -1543,11 +1527,11 @@ StScrollBar StButton#vhandle:active {
 }
 
 .workspace-button:outlined {
-  border-image: url("window-list-button-active.svg") 4;
+  border-image: url("panel/window-list-button-active.svg") 4;
 }
 
 .workspace-button:hover {
-  border-image: url("window-list-button-hover.svg") 4;
+  border-image: url("panel/window-list-button-hover.svg") 4;
 }
 
 /* ===================================================================
@@ -1620,11 +1604,11 @@ StScrollBar StButton#vhandle:active {
  * Overview corner
  * ===================================================================*/
 #overview-corner {
-  background-image: url("overview.png");
+  background-image: url("misc/overview.png");
 }
 
 #overview-corner:hover {
-  background-image:	url("overview-hover.png");
+  background-image:	url("misc/overview-hover.png");
 }
 
 /* ===================================================================
@@ -1649,7 +1633,7 @@ StScrollBar StButton#vhandle:active {
 
 .applet-box:hover {
   color: #fff;
-  border-image: url("panel-button-border-hover.svg") 6 10 0 2;
+  border-image: url("panel/panel-button-border-hover.svg") 6 10 0 2;
 }
 
 .applet-label {	
