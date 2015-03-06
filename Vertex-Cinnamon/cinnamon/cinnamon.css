@@ -1657,17 +1657,17 @@ StScrollBar StButton#vhandle:active {
 }
 
 .desklet-with-borders-and-header {
-  border-image: url("desklet.png") 12 12 12 12;
+  border-image: url("misc/desklet.svg") 10 10 0 14;
   color: #fff;
 	border-radius: 0;
 	border-radius-topleft: 0;
 	border-radius-topright: 0;
   padding: 12px;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 }
 
 .desklet-header { 
-  border-image: url("desklet-header.png") 32 32 12 12;
+  border-image: url("misc/desklet-header.svg") 10 10 22 2;
   color: #fff;
   font-size: 1em;
 	padding: 12px;
@@ -1747,20 +1747,20 @@ StScrollBar StButton#vhandle:active {
 .radiobutton StBin {
   width: 22px;
   height: 22px;
-  background-image: url("radiobutton-off.svg");
+  background-image: url("misc/radiobutton-off.svg");
   border-radius: 15px;
 }
 
 .radiobutton:focus StBin {
-  background-image: url("radiobutton-off.svg");
+  background-image: url("misc/radiobutton-off.svg");
 }
 
 .radiobutton:checked StBin {
-  background-image: url("radiobutton.svg");
+  background-image: url("misc/radiobutton.svg");
 }
 
 .radiobutton:focus:checked StBin {
-  background-image: url("radiobutton.svg");
+  background-image: url("misc/radiobutton.svg");
 }
 
 .radiobutton StLabel {
