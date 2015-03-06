@@ -1344,7 +1344,7 @@ StScrollBar StButton#vhandle:active {
  * Window list (windowList.js)
  * ===================================================================*/
 .window-list-box {
-  spacing: 3px;
+  spacing: 6px;
   padding-left: 10px;
   padding-top: 1px;
 }
@@ -1357,11 +1357,11 @@ StScrollBar StButton#vhandle:active {
 
 .window-list-item-box {
   font-weight: bold;
-  border-image: url("panel/window-list-button.svg") 3;
+  border-image: url("panel/panel-button-border.svg") 3;
   background-image: none;
-  color: rgba(255,255,255, 0.7);
-  padding-left: 5px;
-  padding-right: 5px;
+  color: rgba(255,255,255, 0.5);
+  padding-left: 8px;
+  padding-right: 8px;
   transition-duration: 100;
 }
 
@@ -1372,7 +1372,7 @@ StScrollBar StButton#vhandle:active {
 .window-list-item-box:focus,
 .window-list-item-box:focus:hover	{
   color: rgba(255,255,255, 1.0);
-  border-image: url("panel/panel-button-border.svg") 3;
+  border-image: url("panel/panel-button-border-active.svg") 3;
 }
 
 .window-list-item-box:hover	{ 
@@ -1489,11 +1489,11 @@ StScrollBar StButton#vhandle:active {
 }
 
 .workspace-button:outlined {
-  border-image: url("panel/window-list-button-active.svg") 4;
+  border-image: url("panel/panel-button-border-active.svg") 3;
 }
 
 .workspace-button:hover {
-  border-image: url("panel/window-list-button-hover.svg") 4;
+  border-image: url("panel/panel-button-border-hover.svg") 3;
 }
 
 /* ===================================================================
