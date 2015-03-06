@@ -720,7 +720,7 @@ StScrollBar StButton#vhandle:active {
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
-    border-image: url("panel/panel-button-border.svg") 2 2 2 2;
+    border-image: url("panel/panel-button-border-active.svg") 2 2 2 2;
     background-image: none;
     color: white;
     text-shadow: none;
