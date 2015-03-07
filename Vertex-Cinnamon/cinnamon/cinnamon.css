@@ -1577,12 +1577,12 @@ StScrollBar StButton#vhandle:active {
  * Applets (applet.js) 
  * ===================================================================*/
 .applet-separator {
-  padding: 5px 4px;
+  padding: 1px 4px;
 }
 
 .applet-separator-line {
   width: 1px;
-  background: rgba(255,255,255,.2);
+  background: rgba(255,255,255, 0.08);
 }
 
 .applet-box {
