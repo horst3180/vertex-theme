@@ -29,6 +29,8 @@ rm -rf $DIR/Vertex-Light/xfwm4
 mv $DIR/Vertex-Light/xfwm4-light $DIR/Vertex-Light/xfwm4
 mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
 mv $DIR/Vertex-Light/gtk-3.0/gtk-contained-light.css $DIR/Vertex-Light/gtk-3.0/gtk-contained.css
+rm $DIR/Vertex-Light/gtk-3.0/thumbnail-dark.png
+mv $DIR/Vertex-Light/metacity-1/thumbnail-light.png $DIR/Vertex-Light/metacity-1/thumbnail.png
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-3-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-3.xml
 rm $DIR/Vertex-Light/metacity-1/metacity-theme-3-dark.xml
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-2-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-2.xml
@@ -49,6 +51,8 @@ mv $DIR/Vertex-Dark/gtk-2.0-dark $DIR/Vertex-Dark/gtk-2.0
 mv $DIR/Vertex-Dark/gtk-3.0/gtk-contained-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk-contained.css
 rm $DIR/Vertex-Dark/gtk-3.0/gtk-contained-light.css
 rm $DIR/Vertex-Dark/gtk-3.0/gtk-dark.css
+mv $DIR/Vertex-Dark/gtk-3.0/thumbnail-dark.png $DIR/Vertex-Dark/gtk-3.0/thumbnail.png
+rm $DIR/Vertex-Dark/metacity-1/thumbnail-light.png
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-3-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-3.xml
 rm $DIR/Vertex-Dark/metacity-1/metacity-theme-3-light.xml
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-2-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-2.xml
@@ -63,7 +67,9 @@ mv $DIR/Vertex-Dark $DIR/Gnome-3.14/
 cp -r $DIR/Vertex-gtk $DIR/Vertex
 rm -rf $DIR/Vertex/gtk-2.0-dark
 rm $DIR/Vertex/gtk-3.0/gtk-contained-light.css
+rm $DIR/Vertex/gtk-3.0/thumbnail-dark.png
 rm -rf $DIR/Vertex/xfwm4-light
+rm $DIR/Vertex/metacity-1/thumbnail-light.png
 rm $DIR/Vertex/metacity-1/metacity-theme-3-light.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-3-dark.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-2-light.xml
@@ -80,8 +86,10 @@ cp -r $DIR/Vertex-gtk-3.10-3.12 $DIR/Vertex-Light
 rm -rf $DIR/Vertex-Light/gtk-2.0-dark
 mv $DIR/Vertex-Light/gtk-2.0/gtkrc-light $DIR/Vertex-Light/gtk-2.0/gtkrc
 mv $DIR/Vertex-Light/gtk-3.0/gtk-light.css $DIR/Vertex-Light/gtk-3.0/gtk.css
+rm $DIR/Vertex-Light/gtk-3.0/thumbnail-dark.png
 rm -rf $DIR/Vertex-Light/xfwm4
 mv $DIR/Vertex-Light/xfwm4-light $DIR/Vertex-Light/xfwm4
+mv $DIR/Vertex-Light/metacity-1/thumbnail-light.png $DIR/Vertex-Light/metacity-1/thumbnail.png
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-3-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-3.xml
 rm $DIR/Vertex-Light/metacity-1/metacity-theme-3-dark.xml
 mv $DIR/Vertex-Light/metacity-1/metacity-theme-2-light.xml $DIR/Vertex-Light/metacity-1/metacity-theme-2.xml
@@ -100,6 +108,8 @@ rm -rf $DIR/Vertex-Dark/xfwm4-light
 rm $DIR/Vertex-Dark/index.theme-light
 mv $DIR/Vertex-Dark/gtk-2.0-dark $DIR/Vertex-Dark/gtk-2.0
 mv $DIR/Vertex-Dark/gtk-3.0/gtk-dark.css $DIR/Vertex-Dark/gtk-3.0/gtk.css
+mv $DIR/Vertex-Dark/gtk-3.0/thumbnail-dark.png $DIR/Vertex-Dark/gtk-3.0/thumbnail.png
+rm $DIR/Vertex-Dark/metacity-1/thumbnail-light.png
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-3-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-3.xml
 rm $DIR/Vertex-Dark/metacity-1/metacity-theme-3-light.xml
 mv $DIR/Vertex-Dark/metacity-1/metacity-theme-2-dark.xml $DIR/Vertex-Dark/metacity-1/metacity-theme-2.xml
@@ -112,8 +122,10 @@ cp -r $DIR/Vertex-Dark $DIR/Gnome-3.12_Ubuntu-14.10/
 
 #make default 3.12 variant
 cp -r $DIR/Vertex-gtk-3.10-3.12 $DIR/Vertex
+rm $DIR/Vertex/gtk-3.0/thumbnail-dark.png
 rm -rf $DIR/Vertex/gtk-2.0-dark
 rm -rf $DIR/Vertex/xfwm4-light
+rm $DIR/Vertex/metacity-1/thumbnail-light.png
 rm $DIR/Vertex/metacity-1/metacity-theme-3-light.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-3-dark.xml
 rm $DIR/Vertex/metacity-1/metacity-theme-2-light.xml
