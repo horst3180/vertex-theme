@@ -1806,7 +1806,7 @@ StScrollBar StButton#vhandle:active {
 /*FIXME*/
 .forecast {
   padding-bottom: 4px;
-  border-image: url("menu-active.svg") 6 6 2 2;
+  border-image: url("menu/menu-hover.svg") 7 7 1 1;
 }
 
 .weather-current-location-link:selected,
