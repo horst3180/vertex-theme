@@ -371,6 +371,8 @@ GduWindow { @extend %thin_separator }
 // Fallback Mode/Budgie Panel
 //
 PanelToplevel,
+PanelWidget,
+PanelApplet,
 .gnome-panel-menu-bar {
   color: nth($_fg_color, 2);
   text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
@@ -395,7 +397,8 @@ PanelApplet > GtkMenuBar.menubar > .menuitem:hover {
 }
 
 // Panel buttons
-PanelApplet .button, PanelApplet .button:focus {
+PanelApplet .button,
+PanelApplet .button:focus {
   @include button(normal, $dark:'true', $border:'false');
 
   @extend %panelbutton;
@@ -444,6 +447,25 @@ WnckPager {
   color: mix(nth($_fg_color, 2), black, 50%);
   &:selected { color: $selected_bg_color }
   &:focus:selected { background-color: red; color: green; background-image: none;}
+}
+
+ClockBox {
+  color: nth($_fg_color, 2);
+  text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+}
+
+// Xfce Panel
+.xfce4-panel {
+  .button.flat {
+    background-color: #3C3E40;
+    border-radius: 0;
+
+    text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+    icon-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+
+    &:hover { @include button(hover, $dark:'true'); border-radius: 0;}
+    &:active, &:checked { @include button(active, $dark:'true'); border-radius: 0; }
+  }
 }
 
 // Elementary Apps

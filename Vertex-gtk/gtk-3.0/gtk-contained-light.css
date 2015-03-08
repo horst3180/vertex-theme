@@ -3226,6 +3226,8 @@ FrWindow.background GtkBox.vertical GtkTreeView.view {
   background-color: #fafafb; }
 
 PanelToplevel,
+PanelWidget,
+PanelApplet,
 .gnome-panel-menu-bar {
   color: #F3F3F5;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
@@ -3243,19 +3245,25 @@ PanelApplet > GtkMenuBar.menubar > .menuitem:hover {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 1px 0 rgba(0, 0, 0, 0.6), inset -1px 0 rgba(0, 0, 0, 0.6), inset 0 1px rgba(0, 0, 0, 0.9), inset 0 -1px rgba(0, 0, 0, 0.55); }
 
-PanelApplet .button, PanelApplet .button:focus {
+PanelApplet .button,
+PanelApplet .button:focus {
   color: #F3F3F5;
   outline-color: rgba(243, 243, 245, 0.3);
   background-image: linear-gradient(to bottom, #4f5053, #343436);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
-  PanelApplet .button:hover, PanelApplet .button:focus:hover {
+  PanelApplet .button:hover,
+  PanelApplet .button:focus:hover {
     color: #F3F3F5;
     outline-color: rgba(243, 243, 245, 0.3);
     background-image: linear-gradient(to bottom, #5e6064, #393A3B);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
-  PanelApplet .button:active, PanelApplet .button:active:hover, PanelApplet .button:checked, PanelApplet .button:checked:hover, PanelApplet .button:focus:active, PanelApplet .button:focus:active:hover, PanelApplet .button:focus:checked, PanelApplet .button:focus:checked:hover {
+  PanelApplet .button:active, PanelApplet .button:active:hover, PanelApplet .button:checked, PanelApplet .button:checked:hover,
+  PanelApplet .button:focus:active,
+  PanelApplet .button:focus:active:hover,
+  PanelApplet .button:focus:checked,
+  PanelApplet .button:focus:checked:hover {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
     background-image: linear-gradient(to bottom, #242525, #37383A);
@@ -3268,7 +3276,9 @@ PanelApplet .button, PanelApplet .button:focus {
     icon-shadow: none;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 1px 0 rgba(0, 0, 0, 0.6), inset -1px 0 rgba(0, 0, 0, 0.6), inset 0 1px rgba(0, 0, 0, 0.9), inset 0 -1px rgba(0, 0, 0, 0.55); }
 
-PanelApplet .button, PanelApplet .button:focus, PanelApplet .button:hover, PanelApplet .button:focus:hover {
+PanelApplet .button,
+PanelApplet .button:focus, PanelApplet .button:hover,
+PanelApplet .button:focus:hover {
   border-image: none;
   border-width: 3px;
   border-radius: 5px;
@@ -3283,6 +3293,41 @@ WnckPager {
     background-color: red;
     color: green;
     background-image: none; }
+
+ClockBox {
+  color: #F3F3F5;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
+
+.xfce4-panel .button.flat {
+  background-color: #3C3E40;
+  border-radius: 0;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+  icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
+  .xfce4-panel .button.flat:hover {
+    color: #F3F3F5;
+    outline-color: rgba(243, 243, 245, 0.3);
+    background-image: linear-gradient(to bottom, #5e6064, #393A3B);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0; }
+  .xfce4-panel .button.flat:active, .xfce4-panel .button.flat:checked {
+    color: #ffffff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(to bottom, #242525, #37383A);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"), url("borders/button-active-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0; }
 
 BirdieWidgetsTweetList * {
   background-image: none;
