@@ -9,4 +9,4 @@ For installation instructions please read the included README in the zip archive
 
 Bug reports are appreciated.
 
-![alt tag](http://fc00.deviantart.net/fs71/f/2015/038/c/e/vertex___theme_by_horst3180-d7s7ycx.jpg)
+![alt tag](http://orig09.deviantart.net/c221/f/2015/066/0/4/vertex___theme_by_horst3180-d7s7ycx.jpg)
