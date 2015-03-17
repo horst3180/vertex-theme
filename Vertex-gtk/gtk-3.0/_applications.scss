@@ -455,9 +455,11 @@ ClockBox {
 }
 
 // Xfce Panel
-.xfce4-panel {
+.xfce4-panel.panel {
+  background-color: #3C3E40;
+
   .button.flat {
-    background-color: #3C3E40;
+    background-color: transparentize(#3C3E40, 1);
     border-radius: 0;
 
     text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
