@@ -20,6 +20,7 @@
   -GtkDialog-button-spacing: 4;
   -GtkDialog-action-area-border: 0;
   -GtkStatusbar-shadow-type: none;
+  background-clip: padding-box;
   outline-color: rgba(243, 243, 245, 0.3);
   outline-style: dashed;
   outline-offset: -3px;
@@ -1682,6 +1683,7 @@ column-header .button, column-header .button:hover, column-header .button:active
   color: alpha(currentColor,0.7); }
 
 .popover {
+  background-clip: initial;
   margin: 10px;
   padding: 2px;
   border: 1px solid #171819;
