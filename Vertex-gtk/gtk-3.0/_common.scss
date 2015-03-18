@@ -2754,9 +2754,7 @@ GtkPaned {
 
   .pane-separator,
   .pane-separator:hover {
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-    border-color: $borders_color;
+    background-color: $borders_color;
   }
 }
 

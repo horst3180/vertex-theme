@@ -110,13 +110,10 @@ NemoWindow GtkSeparator.separator.horizontal {
 //
 GeditWindow {
   @extend %thin_separator;
+}
 
-  @if $darker=='true' {
-    .gedit-headerbar-paned { background-color: darken(nth($_bg_color, 2), 5%); }
-
-    .pane-separator,
-    .pane-separator:hover { border-color: transparentize(nth($_bg_color, 2), 0.7); }
-  }
+@if $darker=='true' {
+  .gedit-headerbar-paned { background-color: darken(nth($_bg_color, 2), 5%); }
 }
 
 .open-document-selector-listbox-row {

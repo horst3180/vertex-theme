@@ -2955,9 +2955,7 @@ GduWindow .pane-separator:hover,
 MarlinViewWindow .pane-separator:hover,
 NoiseLibraryWindow .pane-separator:hover,
 ScratchMainWindow .pane-separator:hover {
-  border-width: 0 1px 1px 1px;
-  border-style: solid;
-  border-color: #b9b9b9; }
+  background-color: #b9b9b9; }
 
 GtkInfoBar {
   border: none; }
@@ -3463,11 +3461,8 @@ NemoWindow .sidebar .frame {
 NemoWindow GtkSeparator.separator.horizontal, NemoWindow .sidebar GtkSeparator.horizontal.view.separator, .sidebar NemoWindow GtkSeparator.horizontal.view.separator {
   color: #b9b9b9; }
 
-GeditWindow .gedit-headerbar-paned {
+.gedit-headerbar-paned {
   background-color: #29292b; }
-GeditWindow .pane-separator,
-GeditWindow .pane-separator:hover {
-  border-color: rgba(53, 54, 56, 0.3); }
 
 .open-document-selector-listbox-row {
   padding: 6px 6px 6px 12px; }

@@ -2532,9 +2532,7 @@ GduWindow .pane-separator:hover,
 MarlinViewWindow .pane-separator:hover,
 NoiseLibraryWindow .pane-separator:hover,
 ScratchMainWindow .pane-separator:hover {
-  border-width: 0 1px 1px 1px;
-  border-style: solid;
-  border-color: #171819; }
+  background-color: #171819; }
 
 GtkInfoBar {
   border: none; }
