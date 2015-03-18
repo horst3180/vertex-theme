@@ -613,7 +613,8 @@ MarlinViewWindow *:selected:focus {
   padding-bottom: 8px;
 }
 
-.panel .menu .spinner { opacity: 1 } // Fixes sound indicator buttons
+.panel .menu .spinner,
+.menu .spinner { opacity: 1 } // Fixes sound indicator buttons
 
 //
 // Slingshot

@@ -3445,7 +3445,8 @@ MarlinViewWindow *:selected:focus {
   padding-top: 8px;
   padding-bottom: 8px; }
 
-.panel .menu .spinner {
+.panel .menu .spinner,
+.menu .spinner {
   opacity: 1; }
 
 .button.app {
