@@ -1909,6 +1909,12 @@ column-header .button, column-header .button:hover, column-header .button:active
     border-width: 8px 7px 8px 8px;
     border-style: solid;
     border-color: transparent; }
+    .scrollbar.trough:dir(rtl) {
+      border-image: -gtk-scaled(url("assets/scrollbar-trough-rtl-dark.png"), url("assets/scrollbar-trough-rtl-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+      border-radius: 0;
+      border-width: 8px 7px 8px 8px;
+      border-style: solid;
+      border-color: transparent; }
     .scrollbar.trough.horizontal {
       border-image: -gtk-scaled(url("assets/scrollbar-trough-horizontal-dark.png"), url("assets/scrollbar-trough-horizontal-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
       border-radius: 0;
@@ -1921,18 +1927,36 @@ column-header .button, column-header .button:hover, column-header .button:active
     border-width: 8px 7px 8px 8px;
     border-style: solid;
     border-color: transparent; }
+    .scrollbar.slider:dir(rtl) {
+      border-image: -gtk-scaled(url("assets/scrollbar-slider-rtl-dark.png"), url("assets/scrollbar-slider-rtl-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+      border-radius: 0;
+      border-width: 8px 7px 8px 8px;
+      border-style: solid;
+      border-color: transparent; }
     .scrollbar.slider:hover, .scrollbar.slider:insensitive {
       border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"), url("assets/scrollbar-slider-hover-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
       border-radius: 0;
       border-width: 8px 7px 8px 8px;
       border-style: solid;
       border-color: transparent; }
+      .scrollbar.slider:hover:dir(rtl), .scrollbar.slider:insensitive:dir(rtl) {
+        border-image: -gtk-scaled(url("assets/scrollbar-slider-rtl-hover-dark.png"), url("assets/scrollbar-slider-rtl-hover-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+        border-radius: 0;
+        border-width: 8px 7px 8px 8px;
+        border-style: solid;
+        border-color: transparent; }
     .scrollbar.slider:active {
       border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"), url("assets/scrollbar-slider-active-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
       border-radius: 0;
       border-width: 8px 7px 8px 8px;
       border-style: solid;
       border-color: transparent; }
+      .scrollbar.slider:active:dir(rtl) {
+        border-image: -gtk-scaled(url("assets/scrollbar-slider-rtl-active-dark.png"), url("assets/scrollbar-slider-rtl-active-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+        border-radius: 0;
+        border-width: 8px 7px 8px 8px;
+        border-style: solid;
+        border-color: transparent; }
     .scrollbar.slider.horizontal {
       border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-dark.png"), url("assets/scrollbar-slider-horizontal-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
       border-radius: 0;

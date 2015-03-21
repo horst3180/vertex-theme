@@ -8675,6 +8675,85 @@
        y1="13"
        x2="8"
        y2="14" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3782"
+       id="linearGradient8537"
+       gradientUnits="userSpaceOnUse"
+       x1="9"
+       y1="17"
+       x2="7"
+       y2="17"
+       gradientTransform="translate(-16,1020.3622)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3782"
+       id="linearGradient8540"
+       gradientUnits="userSpaceOnUse"
+       x1="9"
+       y1="17"
+       x2="7"
+       y2="17"
+       gradientTransform="translate(-16,1020.3622)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3786-5"
+       id="linearGradient8542"
+       gradientUnits="userSpaceOnUse"
+       x1="2"
+       y1="16"
+       x2="15"
+       y2="16" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3782"
+       id="linearGradient8544"
+       gradientUnits="userSpaceOnUse"
+       x1="9"
+       y1="17"
+       x2="7"
+       y2="17"
+       gradientTransform="translate(-16,1020.3622)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3782-7"
+       id="linearGradient8656"
+       gradientUnits="userSpaceOnUse"
+       x1="9"
+       y1="17"
+       x2="7"
+       y2="17"
+       gradientTransform="translate(-16,1020.3622)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7630"
+       id="linearGradient8658"
+       gradientUnits="userSpaceOnUse"
+       x1="9"
+       y1="17"
+       x2="7"
+       y2="17"
+       gradientTransform="translate(-16,1020.3622)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6999"
+       id="linearGradient8660"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0769231,0,0,1,-1.1538462,1020.3622)"
+       x1="2"
+       y1="16"
+       x2="15"
+       y2="16" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3782-0-0"
+       id="linearGradient8662"
+       gradientUnits="userSpaceOnUse"
+       x1="9"
+       y1="17"
+       x2="7"
+       y2="17"
+       gradientTransform="translate(-16,1020.3622)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -8683,18 +8762,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0000001"
-     inkscape:cx="198.73564"
-     inkscape:cy="443.17794"
+     inkscape:zoom="1.0000001"
+     inkscape:cx="-67.713688"
+     inkscape:cy="138.59234"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1035"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
      inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -15065,10 +15144,10 @@
     </g>
     <g
        id="switch-slider-dark"
-       transform="translate(9.9999994,1001.3621)"
+       transform="translate(10.000005,1019.3622)"
        inkscape:label="#g25817">
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-541"
          y="-10.614127"
@@ -15077,7 +15156,7 @@
            y="-10.614127"
            x="1095.7842" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-01"
          y="-55.645096"
@@ -15086,7 +15165,7 @@
            y="-55.645096"
            x="1122.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-2-0"
          y="-88.889847"
@@ -15095,7 +15174,7 @@
            y="-88.889847"
            x="-503.11023" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-87"
          y="735.15509"
@@ -15104,7 +15183,7 @@
            y="735.15509"
            x="-2518.7927" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-0"
          y="-514.77716"
@@ -15113,7 +15192,7 @@
            y="-514.77716"
            x="-376.56558" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-9"
          y="-971.77716"
@@ -15122,7 +15201,7 @@
            y="-971.77716"
            x="516.06042" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-3-5"
          y="-1016.8081"
@@ -15131,7 +15210,7 @@
            y="-1016.8081"
            x="542.54395" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-9"
          y="-1024.7771"
@@ -15140,7 +15219,7 @@
            y="-1024.7771"
            x="-1105.9396" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-9"
          y="-1326.7772"
@@ -15149,7 +15228,7 @@
            y="-1326.7772"
            x="508.36826" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-4"
          y="-634.10809"
@@ -15158,7 +15237,7 @@
            y="-634.10809"
            x="2150.95" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-9"
          y="-679.1391"
@@ -15167,7 +15246,7 @@
            y="-679.1391"
            x="2177.4333" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-94"
          y="-687.10809"
@@ -15176,7 +15255,7 @@
            y="-687.10809"
            x="528.94983" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-7"
          y="-989.10797"
@@ -15185,7 +15264,7 @@
            y="-989.10797"
            x="2143.2578" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-1"
          y="-740.26239"
@@ -15194,7 +15273,7 @@
            y="-740.26239"
            x="-507.59921" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-7-030"
          y="83.782547"
@@ -15203,7 +15282,7 @@
            y="83.782547"
            x="-2523.2815" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-8-0"
          y="186.43221"
@@ -15212,7 +15291,7 @@
            y="186.43221"
            x="-627.99756" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-5-0"
          y="-11.614127"
@@ -15221,7 +15300,7 @@
            y="-11.614127"
            x="597.78418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-0-9"
          y="-56.645096"
@@ -15230,7 +15309,7 @@
            y="-56.645096"
            x="624.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-26-59"
          y="-64.614128"
@@ -15239,7 +15318,7 @@
            y="-64.614128"
            x="-1024.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-3-0"
          y="-366.61411"
@@ -15248,7 +15327,7 @@
            y="-366.61411"
            x="590.09204" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-55-15"
          y="-67.614128"
@@ -15257,7 +15336,7 @@
            y="-67.614128"
            x="-545.84186" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-9-4"
          y="756.43085"
@@ -15266,7 +15345,7 @@
            y="756.43085"
            x="-2561.5244" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-8-7"
          y="-1019.846"
@@ -15275,7 +15354,7 @@
            y="-1019.846"
            x="-378.84183" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-8-2"
          y="-1476.8462"
@@ -15284,7 +15363,7 @@
            y="-1476.8462"
            x="513.78418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-52-8"
          y="-1521.8772"
@@ -15293,7 +15372,7 @@
            y="-1521.8772"
            x="540.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-4-0"
          y="-1529.8462"
@@ -15302,7 +15381,7 @@
            y="-1529.8462"
            x="-1108.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-7-1"
          y="-1831.8462"
@@ -15311,7 +15390,7 @@
            y="-1831.8462"
            x="506.09201" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-2-1"
          y="-1139.1771"
@@ -15320,7 +15399,7 @@
            y="-1139.1771"
            x="2148.6736" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-6-6"
          y="-1184.2081"
@@ -15329,7 +15408,7 @@
            y="-1184.2081"
            x="2175.157" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-4-3"
          y="-1192.1771"
@@ -15338,7 +15417,7 @@
            y="-1192.1771"
            x="526.67358" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-1-5"
          y="-1494.1771"
@@ -15347,7 +15426,7 @@
            y="-1494.1771"
            x="2140.9814" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-0-9"
          y="-1245.3314"
@@ -15356,7 +15435,7 @@
            y="-1245.3314"
            x="-509.87546" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-5-4"
          y="-421.28644"
@@ -15365,7 +15444,7 @@
            y="-421.28644"
            x="-2525.5579" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-264-0"
          y="-318.63675"
@@ -15374,7 +15453,7 @@
            y="-318.63675"
            x="-630.2738" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-42-7"
          y="-52.359291"
@@ -15383,7 +15462,7 @@
            y="-52.359291"
            x="298.17694" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-05-1"
          y="-97.390274"
@@ -15392,7 +15471,7 @@
            y="-97.390274"
            x="324.66046" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-4-2"
          y="-311.8461"
@@ -15401,7 +15480,7 @@
            y="-311.8461"
            x="-1078.8418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-56-8"
          y="-768.84613"
@@ -15410,7 +15489,7 @@
            y="-768.84613"
            x="-186.21585" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-8-71"
          y="-813.87708"
@@ -15419,7 +15498,7 @@
            y="-813.87708"
            x="-159.73233" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-42-4"
          y="-821.84607"
@@ -15428,7 +15507,7 @@
            y="-821.84607"
            x="-1808.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-4-9"
          y="-1123.8461"
@@ -15437,7 +15516,7 @@
            y="-1123.8461"
            x="-193.90799" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-0-0"
          y="-431.17706"
@@ -15446,7 +15525,7 @@
            y="-431.17706"
            x="1448.6736" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-5-0"
          y="-476.20807"
@@ -15455,7 +15534,7 @@
            y="-476.20807"
            x="1475.157" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-9-3"
          y="-484.17706"
@@ -15464,7 +15543,7 @@
            y="-484.17706"
            x="-173.32645" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-18-0"
          y="-786.17706"
@@ -15473,7 +15552,7 @@
            y="-786.17706"
            x="1440.9814" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-3-8"
          y="-537.33136"
@@ -15482,7 +15561,7 @@
            y="-537.33136"
            x="-1209.8755" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-8-32"
          y="286.71362"
@@ -15494,7 +15573,7 @@
          id="layer4-0-29"
          transform="translate(-666.00003,-770.05217)">
         <text
-           style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
            xml:space="preserve"
            id="text4087-2-6-5-20-9"
            y="1159.4154"
@@ -15504,7 +15583,7 @@
              x="-664.2738" /></text>
       </g>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-9-3"
          y="-2.6141274"
@@ -15513,7 +15592,7 @@
            y="-2.6141274"
            x="1095.7842" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-51-8"
          y="-47.645096"
@@ -15522,7 +15601,7 @@
            y="-47.645096"
            x="1122.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-2-3-4"
          y="-80.889847"
@@ -15531,7 +15610,7 @@
            y="-80.889847"
            x="-503.11023" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-4-2"
          y="743.15509"
@@ -15540,7 +15619,7 @@
            y="743.15509"
            x="-2518.7927" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-9-5"
          y="-506.77716"
@@ -15549,7 +15628,7 @@
            y="-506.77716"
            x="-376.56558" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-2-3"
          y="-963.7771"
@@ -15558,7 +15637,7 @@
            y="-963.7771"
            x="516.06042" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-3-4-8"
          y="-1008.8081"
@@ -15567,7 +15646,7 @@
            y="-1008.8081"
            x="542.54395" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-2-2"
          y="-1016.7771"
@@ -15576,7 +15655,7 @@
            y="-1016.7771"
            x="-1105.9396" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-89-0"
          y="-1318.7772"
@@ -15585,7 +15664,7 @@
            y="-1318.7772"
            x="508.36826" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-8-0"
          y="-626.10809"
@@ -15594,7 +15673,7 @@
            y="-626.10809"
            x="2150.95" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-8-4"
          y="-671.1391"
@@ -15603,7 +15682,7 @@
            y="-671.1391"
            x="2177.4333" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-8-4"
          y="-679.10809"
@@ -15612,7 +15691,7 @@
            y="-679.10809"
            x="528.94983" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-8-3"
          y="-981.10797"
@@ -15621,7 +15700,7 @@
            y="-981.10797"
            x="2143.2578" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-33-87"
          y="-732.26239"
@@ -15630,7 +15709,7 @@
            y="-732.26239"
            x="-507.59921" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-7-0-9"
          y="91.782547"
@@ -15639,7 +15718,7 @@
            y="91.782547"
            x="-2523.2815" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-8-7-3"
          y="194.43221"
@@ -15648,7 +15727,7 @@
            y="194.43221"
            x="-627.99756" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-5-8-6"
          y="-3.6141276"
@@ -15657,7 +15736,7 @@
            y="-3.6141276"
            x="597.78418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-0-0-3"
          y="-48.645096"
@@ -15666,7 +15745,7 @@
            y="-48.645096"
            x="624.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-26-8-27"
          y="-56.614128"
@@ -15675,7 +15754,7 @@
            y="-56.614128"
            x="-1024.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-3-9-5"
          y="-358.61411"
@@ -15684,7 +15763,7 @@
            y="-358.61411"
            x="590.09204" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-55-3-5"
          y="-59.614128"
@@ -15693,7 +15772,7 @@
            y="-59.614128"
            x="-545.84186" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-9-3-0"
          y="764.43085"
@@ -15702,7 +15781,7 @@
            y="764.43085"
            x="-2561.5244" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-8-3-8"
          y="-1011.846"
@@ -15711,7 +15790,7 @@
            y="-1011.846"
            x="-378.84183" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-8-6-82"
          y="-1468.8462"
@@ -15720,7 +15799,7 @@
            y="-1468.8462"
            x="513.78418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-52-2-6"
          y="-1513.8772"
@@ -15729,7 +15808,7 @@
            y="-1513.8772"
            x="540.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-4-5-1"
          y="-1521.8462"
@@ -15738,7 +15817,7 @@
            y="-1521.8462"
            x="-1108.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-7-7-2"
          y="-1823.8462"
@@ -15747,7 +15826,7 @@
            y="-1823.8462"
            x="506.09201" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-2-6-0"
          y="-1131.1771"
@@ -15756,7 +15835,7 @@
            y="-1131.1771"
            x="2148.6736" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-6-4-5"
          y="-1176.2081"
@@ -15765,7 +15844,7 @@
            y="-1176.2081"
            x="2175.157" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-4-0-1"
          y="-1184.1771"
@@ -15774,7 +15853,7 @@
            y="-1184.1771"
            x="526.67358" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-1-8-1"
          y="-1486.1771"
@@ -15783,7 +15862,7 @@
            y="-1486.1771"
            x="2140.9814" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-0-0-3"
          y="-1237.3314"
@@ -15792,7 +15871,7 @@
            y="-1237.3314"
            x="-509.87546" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-5-6-5"
          y="-413.28644"
@@ -15801,7 +15880,7 @@
            y="-413.28644"
            x="-2525.5579" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-264-4-4"
          y="-310.63675"
@@ -15810,7 +15889,7 @@
            y="-310.63675"
            x="-630.2738" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-42-9-2"
          y="-44.359291"
@@ -15819,7 +15898,7 @@
            y="-44.359291"
            x="298.17694" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-05-9-8"
          y="-89.390274"
@@ -15828,7 +15907,7 @@
            y="-89.390274"
            x="324.66046" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-4-8-4"
          y="-303.8461"
@@ -15837,7 +15916,7 @@
            y="-303.8461"
            x="-1078.8418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-56-0-48"
          y="-760.84613"
@@ -15846,7 +15925,7 @@
            y="-760.84613"
            x="-186.21585" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-8-7-0"
          y="-805.87708"
@@ -15855,7 +15934,7 @@
            y="-805.87708"
            x="-159.73233" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-42-9-6"
          y="-813.84613"
@@ -15864,7 +15943,7 @@
            y="-813.84613"
            x="-1808.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-4-5-6"
          y="-1115.8461"
@@ -15873,7 +15952,7 @@
            y="-1115.8461"
            x="-193.90799" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-0-9-3"
          y="-423.17706"
@@ -15882,7 +15961,7 @@
            y="-423.17706"
            x="1448.6736" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-5-5-2"
          y="-468.20807"
@@ -15891,7 +15970,7 @@
            y="-468.20807"
            x="1475.157" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-9-4-0"
          y="-476.17706"
@@ -15900,7 +15979,7 @@
            y="-476.17706"
            x="-173.32645" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-18-9-6"
          y="-778.17706"
@@ -15909,7 +15988,7 @@
            y="-778.17706"
            x="1440.9814" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-3-5-6"
          y="-529.33136"
@@ -15918,7 +15997,7 @@
            y="-529.33136"
            x="-1209.8755" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-8-3-1"
          y="294.71362"
@@ -15930,7 +16009,7 @@
          id="layer4-0-7-9"
          transform="translate(-666.00003,-762.05217)">
         <text
-           style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
            xml:space="preserve"
            id="text4087-2-6-5-20-0-0"
            y="1159.4154"
@@ -15940,7 +16019,7 @@
              x="-664.2738" /></text>
       </g>
       <text
-         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans';fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text7276-6"
          y="-421.82013"
@@ -15952,7 +16031,7 @@
            y="-404.32016"
            x="608" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-51-7"
          y="-954.61401"
@@ -15961,7 +16040,7 @@
            y="-954.61401"
            x="1122.1582" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-2-3"
          y="-130.56917"
@@ -15970,7 +16049,7 @@
            y="-130.56917"
            x="-893.52429" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-7-42"
          y="-1269.6141"
@@ -15979,7 +16058,7 @@
            y="-1269.6141"
            x="1925.7842" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-6-07"
          y="-1314.6451"
@@ -15988,7 +16067,7 @@
            y="-1314.6451"
            x="1952.2676" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-54-0"
          y="-1322.6141"
@@ -15997,7 +16076,7 @@
            y="-1322.6141"
            x="303.78415" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-1-8"
          y="-1624.6141"
@@ -16010,32 +16089,26 @@
          transform="translate(-117.00003,-22.820144)" />
       <path
          inkscape:connector-curvature="0"
-         style="opacity:0.36000001;color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.36000001;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
          id="path2555-7-1-7-0-50"
-         d="M 11,0.5 C 5.20646,0.5 0.5,5.20646 0.5,11 0.5,16.79354 5.20646,21.5 11,21.5 16.79354,21.5 21.50001,16.79354 21.5,11 21.5,5.20646 16.79354,0.5 11,0.5 z" />
-      <path
-         d="M 21,11 A 10,10 0 0 1 11,21 10,10 0 0 1 1,11 10,10 0 0 1 11,1 10,10 0 0 1 21,11 Z"
-         sodipodi:ry="10"
-         sodipodi:rx="10"
-         sodipodi:cy="11"
-         sodipodi:cx="11"
+         d="M 11,0.5 C 5.20646,0.5 0.5,5.20646 0.5,11 0.5,16.79354 5.20646,21.5 11,21.5 16.79354,21.5 21.50001,16.79354 21.5,11 21.5,5.20646 16.79354,0.5 11,0.5 Z" />
+      <circle
          id="path5569-5"
-         style="fill:url(#linearGradient6345-6);fill-opacity:1.0;stroke:none"
-         sodipodi:type="arc" />
+         style="fill:url(#linearGradient6345-6);fill-opacity:1;stroke:none"
+         cx="11"
+         cy="11"
+         r="10" />
       <g
          id="g4009">
-        <path
-           sodipodi:type="arc"
-           style="opacity:0.7;fill:#ffffff;fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+        <circle
+           style="opacity:0.7;fill:#ffffff;fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path6387-1"
-           sodipodi:cx="11"
-           sodipodi:cy="11"
-           sodipodi:rx="3"
-           sodipodi:ry="3"
-           d="m 14,11 a 3,3 0 0 1 -3,3 3,3 0 0 1 -3,-3 3,3 0 0 1 3,-3 3,3 0 0 1 3,3 z" />
+           cx="11"
+           cy="11"
+           r="3" />
         <path
-           style="fill:url(#linearGradient4015);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="m 11,8 c -1.6568542,0 -3,1.343146 -3,3 0,1.656854 1.3431458,3 3,3 1.656854,0 3,-1.343146 3,-3 0,-1.656854 -1.343146,-3 -3,-3 z m 0,1 c 1.104569,0 2,0.895431 2,2 0,1.104569 -0.895431,2 -2,2 C 9.8954305,13 9,12.104569 9,11 9,9.895431 9.8954305,9 11,9 z"
+           style="fill:url(#linearGradient4015);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 11,8 c -1.6568542,0 -3,1.343146 -3,3 0,1.656854 1.3431458,3 3,3 1.656854,0 3,-1.343146 3,-3 0,-1.656854 -1.343146,-3 -3,-3 z m 0,1 c 1.104569,0 2,0.895431 2,2 0,1.104569 -0.895431,2 -2,2 C 9.8954305,13 9,12.104569 9,11 9,9.895431 9.8954305,9 11,9 Z"
            id="path6387-6-3"
            inkscape:connector-curvature="0" />
       </g>
@@ -16043,29 +16116,29 @@
          inkscape:connector-curvature="0"
          id="path6520-1"
          d="M 11,15 C 8.790861,15 7,13.209139 7,11 7,8.790861 8.790861,7 11,7 c 2.209139,0 4,1.790861 4,4 0,2.209139 -1.790861,4 -4,4 z m 0,-1 c 1.656854,0 3,-1.343146 3,-3 0,-1.656854 -1.343146,-3 -3,-3 -1.6568542,0 -3,1.343146 -3,3 0,1.656854 1.3431458,3 3,3 z"
-         style="fill:url(#linearGradient6529-0);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         style="fill:url(#linearGradient6529-0);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          inkscape:connector-curvature="0"
          id="path5573-2"
-         d="M 0.03125,11.5 C 0.023725,11.666961 0,11.831181 0,12 0,18.075132 4.924868,23 11,23 17.075132,23 22,18.075132 22,12 22,11.831181 21.976275,11.666961 21.96875,11.5 21.705481,17.341328 16.906314,22 11,22 5.093686,22 0.2945193,17.341328 0.03125,11.5 z"
-         style="fill:#000000;fill-opacity:0.11764706;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         d="M 0.03125,11.5 C 0.023725,11.666961 0,11.831181 0,12 0,18.075132 4.924868,23 11,23 17.075132,23 22,18.075132 22,12 22,11.831181 21.976275,11.666961 21.96875,11.5 21.705481,17.341328 16.906314,22 11,22 5.093686,22 0.2945193,17.341328 0.03125,11.5 Z"
+         style="fill:#000000;fill-opacity:0.11764706;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          inkscape:connector-curvature="0"
          id="path5569-8-3"
-         d="M 11,1 C 5.4771525,1 1,5.477153 1,11 1,11.167378 1.0231211,11.334638 1.03125,11.5 1.291343,6.209049 5.6445307,2 11,2 16.355469,2 20.708657,6.209049 20.96875,11.5 20.976879,11.334638 21,11.167378 21,11 21,5.477153 16.522847,1 11,1 z"
+         d="M 11,1 C 5.4771525,1 1,5.477153 1,11 1,11.167378 1.0231211,11.334638 1.03125,11.5 1.291343,6.209049 5.6445307,2 11,2 16.355469,2 20.708657,6.209049 20.96875,11.5 20.976879,11.334638 21,11.167378 21,11 21,5.477153 16.522847,1 11,1 Z"
          style="opacity:0.2;fill:#ffffff;fill-opacity:1;stroke:none" />
       <path
          inkscape:connector-curvature="0"
-         style="opacity:0.36000001;color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.36000001;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
          id="path2555-7-1-7-0-4"
-         d="M 11,0.5 C 5.20646,0.5 0.5,5.20646 0.5,11 0.5,16.79354 5.20646,21.5 11,21.5 16.79354,21.5 21.50001,16.79354 21.5,11 21.5,5.20646 16.79354,0.5 11,0.5 z" />
+         d="M 11,0.5 C 5.20646,0.5 0.5,5.20646 0.5,11 0.5,16.79354 5.20646,21.5 11,21.5 16.79354,21.5 21.50001,16.79354 21.5,11 21.5,5.20646 16.79354,0.5 11,0.5 Z" />
     </g>
     <g
        id="switch-slider-insensitive-dark"
-       transform="translate(37.999999,1001.3621)"
+       transform="translate(40.000005,1019.3622)"
        inkscape:label="#g26289">
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-43"
          y="-10.614127"
@@ -16074,7 +16147,7 @@
            y="-10.614127"
            x="1095.7842" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-4"
          y="-55.645096"
@@ -16083,7 +16156,7 @@
            y="-55.645096"
            x="1122.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-2-1"
          y="-88.889847"
@@ -16092,7 +16165,7 @@
            y="-88.889847"
            x="-503.11023" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-47"
          y="735.15509"
@@ -16101,7 +16174,7 @@
            y="735.15509"
            x="-2518.7927" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-01"
          y="-514.77716"
@@ -16110,7 +16183,7 @@
            y="-514.77716"
            x="-376.56558" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-6"
          y="-971.77716"
@@ -16119,7 +16192,7 @@
            y="-971.77716"
            x="516.06042" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-3-3"
          y="-1016.8081"
@@ -16128,7 +16201,7 @@
            y="-1016.8081"
            x="542.54395" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-41"
          y="-1024.7771"
@@ -16137,7 +16210,7 @@
            y="-1024.7771"
            x="-1105.9396" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-74"
          y="-1326.7772"
@@ -16146,7 +16219,7 @@
            y="-1326.7772"
            x="508.36826" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-21"
          y="-634.10809"
@@ -16155,7 +16228,7 @@
            y="-634.10809"
            x="2150.95" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-7"
          y="-679.1391"
@@ -16164,7 +16237,7 @@
            y="-679.1391"
            x="2177.4333" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-1"
          y="-687.10809"
@@ -16173,7 +16246,7 @@
            y="-687.10809"
            x="528.94983" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-6"
          y="-989.10797"
@@ -16182,7 +16255,7 @@
            y="-989.10797"
            x="2143.2578" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-5"
          y="-740.26239"
@@ -16191,7 +16264,7 @@
            y="-740.26239"
            x="-507.59921" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-7-3"
          y="83.782547"
@@ -16200,7 +16273,7 @@
            y="83.782547"
            x="-2523.2815" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-8-9"
          y="186.43221"
@@ -16209,7 +16282,7 @@
            y="186.43221"
            x="-627.99756" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-5-7"
          y="-11.614127"
@@ -16218,7 +16291,7 @@
            y="-11.614127"
            x="597.78418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-0-03"
          y="-56.645096"
@@ -16227,7 +16300,7 @@
            y="-56.645096"
            x="624.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-26-2"
          y="-64.614128"
@@ -16236,7 +16309,7 @@
            y="-64.614128"
            x="-1024.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-3-2"
          y="-366.61411"
@@ -16245,7 +16318,7 @@
            y="-366.61411"
            x="590.09204" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-55-0"
          y="-67.614128"
@@ -16254,7 +16327,7 @@
            y="-67.614128"
            x="-545.84186" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-9-52"
          y="756.43085"
@@ -16263,7 +16336,7 @@
            y="756.43085"
            x="-2561.5244" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-8-2"
          y="-1019.846"
@@ -16272,7 +16345,7 @@
            y="-1019.846"
            x="-378.84183" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-8-3"
          y="-1476.8462"
@@ -16281,7 +16354,7 @@
            y="-1476.8462"
            x="513.78418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-52-3"
          y="-1521.8772"
@@ -16290,7 +16363,7 @@
            y="-1521.8772"
            x="540.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-4-9"
          y="-1529.8462"
@@ -16299,7 +16372,7 @@
            y="-1529.8462"
            x="-1108.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-7-4"
          y="-1831.8462"
@@ -16308,7 +16381,7 @@
            y="-1831.8462"
            x="506.09201" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-2-9"
          y="-1139.1771"
@@ -16317,7 +16390,7 @@
            y="-1139.1771"
            x="2148.6736" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-6-0"
          y="-1184.2081"
@@ -16326,7 +16399,7 @@
            y="-1184.2081"
            x="2175.157" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-4-49"
          y="-1192.1771"
@@ -16335,7 +16408,7 @@
            y="-1192.1771"
            x="526.67358" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-1-2"
          y="-1494.1771"
@@ -16344,7 +16417,7 @@
            y="-1494.1771"
            x="2140.9814" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-0-6"
          y="-1245.3314"
@@ -16353,7 +16426,7 @@
            y="-1245.3314"
            x="-509.87546" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-5-46"
          y="-421.28644"
@@ -16362,7 +16435,7 @@
            y="-421.28644"
            x="-2525.5579" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-264-3"
          y="-318.63675"
@@ -16371,7 +16444,7 @@
            y="-318.63675"
            x="-630.2738" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-42-85"
          y="-52.359291"
@@ -16380,7 +16453,7 @@
            y="-52.359291"
            x="298.17694" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-05-0"
          y="-97.390274"
@@ -16389,7 +16462,7 @@
            y="-97.390274"
            x="324.66046" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-4-1"
          y="-311.8461"
@@ -16398,7 +16471,7 @@
            y="-311.8461"
            x="-1078.8418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-56-26"
          y="-768.84613"
@@ -16407,7 +16480,7 @@
            y="-768.84613"
            x="-186.21585" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-8-63"
          y="-813.87708"
@@ -16416,7 +16489,7 @@
            y="-813.87708"
            x="-159.73233" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-42-7"
          y="-821.84607"
@@ -16425,7 +16498,7 @@
            y="-821.84607"
            x="-1808.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-4-2"
          y="-1123.8461"
@@ -16434,7 +16507,7 @@
            y="-1123.8461"
            x="-193.90799" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-0-5"
          y="-431.17706"
@@ -16443,7 +16516,7 @@
            y="-431.17706"
            x="1448.6736" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-5-7"
          y="-476.20807"
@@ -16452,7 +16525,7 @@
            y="-476.20807"
            x="1475.157" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-9-43"
          y="-484.17706"
@@ -16461,7 +16534,7 @@
            y="-484.17706"
            x="-173.32645" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-18-1"
          y="-786.17706"
@@ -16470,7 +16543,7 @@
            y="-786.17706"
            x="1440.9814" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-3-7"
          y="-537.33136"
@@ -16479,7 +16552,7 @@
            y="-537.33136"
            x="-1209.8755" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-8-7"
          y="286.71362"
@@ -16491,7 +16564,7 @@
          id="layer4-0-8"
          transform="translate(-666.00003,-770.05217)">
         <text
-           style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
            xml:space="preserve"
            id="text4087-2-6-5-20-8"
            y="1159.4154"
@@ -16501,7 +16574,7 @@
              x="-664.2738" /></text>
       </g>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-9-7"
          y="-2.6141274"
@@ -16510,7 +16583,7 @@
            y="-2.6141274"
            x="1095.7842" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-51-9"
          y="-47.645096"
@@ -16519,7 +16592,7 @@
            y="-47.645096"
            x="1122.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-2-3-42"
          y="-80.889847"
@@ -16528,7 +16601,7 @@
            y="-80.889847"
            x="-503.11023" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-4-26"
          y="743.15509"
@@ -16537,7 +16610,7 @@
            y="743.15509"
            x="-2518.7927" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-9-0"
          y="-506.77716"
@@ -16546,7 +16619,7 @@
            y="-506.77716"
            x="-376.56558" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-2-8"
          y="-963.7771"
@@ -16555,7 +16628,7 @@
            y="-963.7771"
            x="516.06042" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-3-4-5"
          y="-1008.8081"
@@ -16564,7 +16637,7 @@
            y="-1008.8081"
            x="542.54395" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-2-1"
          y="-1016.7771"
@@ -16573,7 +16646,7 @@
            y="-1016.7771"
            x="-1105.9396" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-89-3"
          y="-1318.7772"
@@ -16582,7 +16655,7 @@
            y="-1318.7772"
            x="508.36826" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-8-1"
          y="-626.10809"
@@ -16591,7 +16664,7 @@
            y="-626.10809"
            x="2150.95" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-8-5"
          y="-671.1391"
@@ -16600,7 +16673,7 @@
            y="-671.1391"
            x="2177.4333" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-8-1"
          y="-679.10809"
@@ -16609,7 +16682,7 @@
            y="-679.10809"
            x="528.94983" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-8-4"
          y="-981.10797"
@@ -16618,7 +16691,7 @@
            y="-981.10797"
            x="2143.2578" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-33-2"
          y="-732.26239"
@@ -16627,7 +16700,7 @@
            y="-732.26239"
            x="-507.59921" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-7-0-90"
          y="91.782547"
@@ -16636,7 +16709,7 @@
            y="91.782547"
            x="-2523.2815" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-8-7-9"
          y="194.43221"
@@ -16645,7 +16718,7 @@
            y="194.43221"
            x="-627.99756" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-5-8-3"
          y="-3.6141276"
@@ -16654,7 +16727,7 @@
            y="-3.6141276"
            x="597.78418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-0-0-99"
          y="-48.645096"
@@ -16663,7 +16736,7 @@
            y="-48.645096"
            x="624.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-26-8-1"
          y="-56.614128"
@@ -16672,7 +16745,7 @@
            y="-56.614128"
            x="-1024.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-3-9-65"
          y="-358.61411"
@@ -16681,7 +16754,7 @@
            y="-358.61411"
            x="590.09204" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-55-3-7"
          y="-59.614128"
@@ -16690,7 +16763,7 @@
            y="-59.614128"
            x="-545.84186" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-9-3-8"
          y="764.43085"
@@ -16699,7 +16772,7 @@
            y="764.43085"
            x="-2561.5244" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-8-3-6"
          y="-1011.846"
@@ -16708,7 +16781,7 @@
            y="-1011.846"
            x="-378.84183" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-8-6-4"
          y="-1468.8462"
@@ -16717,7 +16790,7 @@
            y="-1468.8462"
            x="513.78418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-52-2-1"
          y="-1513.8772"
@@ -16726,7 +16799,7 @@
            y="-1513.8772"
            x="540.2677" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-4-5-8"
          y="-1521.8462"
@@ -16735,7 +16808,7 @@
            y="-1521.8462"
            x="-1108.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-7-7-3"
          y="-1823.8462"
@@ -16744,7 +16817,7 @@
            y="-1823.8462"
            x="506.09201" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-2-6-3"
          y="-1131.1771"
@@ -16753,7 +16826,7 @@
            y="-1131.1771"
            x="2148.6736" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-6-4-2"
          y="-1176.2081"
@@ -16762,7 +16835,7 @@
            y="-1176.2081"
            x="2175.157" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-4-0-6"
          y="-1184.1771"
@@ -16771,7 +16844,7 @@
            y="-1184.1771"
            x="526.67358" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-1-8-7"
          y="-1486.1771"
@@ -16780,7 +16853,7 @@
            y="-1486.1771"
            x="2140.9814" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-0-0-0"
          y="-1237.3314"
@@ -16789,7 +16862,7 @@
            y="-1237.3314"
            x="-509.87546" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-5-6-9"
          y="-413.28644"
@@ -16798,7 +16871,7 @@
            y="-413.28644"
            x="-2525.5579" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-264-4-9"
          y="-310.63675"
@@ -16807,7 +16880,7 @@
            y="-310.63675"
            x="-630.2738" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-42-9-1"
          y="-44.359291"
@@ -16816,7 +16889,7 @@
            y="-44.359291"
            x="298.17694" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-05-9-1"
          y="-89.390274"
@@ -16825,7 +16898,7 @@
            y="-89.390274"
            x="324.66046" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-1-4-8-8"
          y="-303.8461"
@@ -16834,7 +16907,7 @@
            y="-303.8461"
            x="-1078.8418" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-56-0-8"
          y="-760.84613"
@@ -16843,7 +16916,7 @@
            y="-760.84613"
            x="-186.21585" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-8-7-3"
          y="-805.87708"
@@ -16852,7 +16925,7 @@
            y="-805.87708"
            x="-159.73233" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-3-42-9-2"
          y="-813.84613"
@@ -16861,7 +16934,7 @@
            y="-813.84613"
            x="-1808.2158" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-4-5-7"
          y="-1115.8461"
@@ -16870,7 +16943,7 @@
            y="-1115.8461"
            x="-193.90799" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-1-0-9-8"
          y="-423.17706"
@@ -16879,7 +16952,7 @@
            y="-423.17706"
            x="1448.6736" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-5-5-5-5"
          y="-468.20807"
@@ -16888,7 +16961,7 @@
            y="-468.20807"
            x="1475.157" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-75-9-4-06"
          y="-476.17706"
@@ -16897,7 +16970,7 @@
            y="-476.17706"
            x="-173.32645" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-8-18-9-0"
          y="-778.17706"
@@ -16906,7 +16979,7 @@
            y="-778.17706"
            x="1440.9814" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-45-3-5-9"
          y="-529.33136"
@@ -16915,7 +16988,7 @@
            y="-529.33136"
            x="-1209.8755" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-8-3-2"
          y="294.71362"
@@ -16927,7 +17000,7 @@
          id="layer4-0-7-5"
          transform="translate(-666.00003,-762.05217)">
         <text
-           style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
            xml:space="preserve"
            id="text4087-2-6-5-20-0-8"
            y="1159.4154"
@@ -16937,7 +17010,7 @@
              x="-664.2738" /></text>
       </g>
       <text
-         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans';fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text7276-67"
          y="-421.82013"
@@ -16949,7 +17022,7 @@
            y="-404.32016"
            x="608" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-51-8"
          y="-954.61401"
@@ -16958,7 +17031,7 @@
            y="-954.61401"
            x="1122.1582" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-59-2-9"
          y="-130.56917"
@@ -16967,7 +17040,7 @@
            y="-130.56917"
            x="-893.52429" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-7-7-3"
          y="-1269.6141"
@@ -16976,7 +17049,7 @@
            y="-1269.6141"
            x="1925.7842" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-5-6-03"
          y="-1314.6451"
@@ -16985,7 +17058,7 @@
            y="-1314.6451"
            x="1952.2676" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-54-5"
          y="-1322.6141"
@@ -16994,7 +17067,7 @@
            y="-1322.6141"
            x="303.78415" /></text>
       <text
-         style="font-size:14px;font-style:normal;font-weight:normal;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         style="font-style:normal;font-weight:normal;font-size:14px;font-family:'Bitstream Vera Sans';opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"
          id="text4087-2-6-5-4-1-5"
          y="-1624.6141"
@@ -17007,46 +17080,40 @@
          transform="translate(-117.00003,-22.820144)" />
       <path
          inkscape:connector-curvature="0"
-         style="opacity:0.36000001;color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.36000001;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
          id="path2555-7-1-7-0-47"
-         d="M 11,0.5 C 5.20646,0.5 0.5,5.20646 0.5,11 0.5,16.79354 5.20646,21.5 11,21.5 16.79354,21.5 21.50001,16.79354 21.5,11 21.5,5.20646 16.79354,0.5 11,0.5 z" />
-      <path
-         d="M 21,11 A 10,10 0 0 1 11,21 10,10 0 0 1 1,11 10,10 0 0 1 11,1 10,10 0 0 1 21,11 Z"
-         sodipodi:ry="10"
-         sodipodi:rx="10"
-         sodipodi:cy="11"
-         sodipodi:cx="11"
+         d="M 11,0.5 C 5.20646,0.5 0.5,5.20646 0.5,11 0.5,16.79354 5.20646,21.5 11,21.5 16.79354,21.5 21.50001,16.79354 21.5,11 21.5,5.20646 16.79354,0.5 11,0.5 Z" />
+      <circle
          id="path5569-7"
          style="fill:#434446;fill-opacity:1;stroke:none"
-         sodipodi:type="arc" />
-      <path
-         d="m 14,11 a 3,3 0 0 1 -3,3 3,3 0 0 1 -3,-3 3,3 0 0 1 3,-3 3,3 0 0 1 3,3 z"
-         sodipodi:ry="3"
-         sodipodi:rx="3"
-         sodipodi:cy="11"
-         sodipodi:cx="11"
+         cx="11"
+         cy="11"
+         r="10" />
+      <circle
          id="path6387-7"
-         style="opacity:0.17000002;fill:#eeeeee;fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
+         style="opacity:0.17000002;fill:#eeeeee;fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         cx="11"
+         cy="11"
+         r="3" />
       <path
          inkscape:connector-curvature="0"
          id="path6387-6-9"
-         d="m 11,8 c -1.6568542,0 -3,1.343146 -3,3 0,1.656854 1.3431458,3 3,3 1.656854,0 3,-1.343146 3,-3 0,-1.656854 -1.343146,-3 -3,-3 z m 0,1 c 1.104569,0 2,0.895431 2,2 0,1.104569 -0.895431,2 -2,2 C 9.8954305,13 9,12.104569 9,11 9,9.895431 9.8954305,9 11,9 z"
-         style="opacity:0.35;fill:url(#linearGradient6484-9);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         d="m 11,8 c -1.6568542,0 -3,1.343146 -3,3 0,1.656854 1.3431458,3 3,3 1.656854,0 3,-1.343146 3,-3 0,-1.656854 -1.343146,-3 -3,-3 z m 0,1 c 1.104569,0 2,0.895431 2,2 0,1.104569 -0.895431,2 -2,2 C 9.8954305,13 9,12.104569 9,11 9,9.895431 9.8954305,9 11,9 Z"
+         style="opacity:0.35;fill:url(#linearGradient6484-9);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          inkscape:connector-curvature="0"
          id="path6520-4"
          d="M 11,15 C 8.790861,15 7,13.209139 7,11 7,8.790861 8.790861,7 11,7 c 2.209139,0 4,1.790861 4,4 0,2.209139 -1.790861,4 -4,4 z m 0,-1 c 1.656854,0 3,-1.343146 3,-3 0,-1.656854 -1.343146,-3 -3,-3 -1.6568542,0 -3,1.343146 -3,3 0,1.656854 1.3431458,3 3,3 z"
-         style="fill:url(#linearGradient6529-2);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         style="fill:url(#linearGradient6529-2);fill-opacity:1;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          inkscape:connector-curvature="0"
          id="path5573-20"
-         d="M 0.03125,11.5 C 0.023725,11.666961 0,11.831181 0,12 0,18.075132 4.924868,23 11,23 17.075132,23 22,18.075132 22,12 22,11.831181 21.976275,11.666961 21.96875,11.5 21.705481,17.341328 16.906314,22 11,22 5.093686,22 0.2945193,17.341328 0.03125,11.5 z"
-         style="fill:#000000;fill-opacity:0.11764706;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         d="M 0.03125,11.5 C 0.023725,11.666961 0,11.831181 0,12 0,18.075132 4.924868,23 11,23 17.075132,23 22,18.075132 22,12 22,11.831181 21.976275,11.666961 21.96875,11.5 21.705481,17.341328 16.906314,22 11,22 5.093686,22 0.2945193,17.341328 0.03125,11.5 Z"
+         style="fill:#000000;fill-opacity:0.11764706;stroke:#4f4f4f;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          inkscape:connector-curvature="0"
          id="path5569-8-9"
-         d="M 11,1 C 5.4771525,1 1,5.477153 1,11 1,11.167378 1.0231211,11.334638 1.03125,11.5 1.291343,6.209049 5.6445307,2 11,2 16.355469,2 20.708657,6.209049 20.96875,11.5 20.976879,11.334638 21,11.167378 21,11 21,5.477153 16.522847,1 11,1 z"
+         d="M 11,1 C 5.4771525,1 1,5.477153 1,11 1,11.167378 1.0231211,11.334638 1.03125,11.5 1.291343,6.209049 5.6445307,2 11,2 16.355469,2 20.708657,6.209049 20.96875,11.5 20.976879,11.334638 21,11.167378 21,11 21,5.477153 16.522847,1 11,1 Z"
          style="opacity:0.2;fill:#ffffff;fill-opacity:1;stroke:none" />
       <g
          id="g3853-5-19"
@@ -17056,9 +17123,9 @@
          transform="translate(-35,7)" />
       <path
          inkscape:connector-curvature="0"
-         style="opacity:0.36000001;color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.36000001;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
          id="path2555-7-1-7-0-4-7"
-         d="M 11,0.5 C 5.20646,0.5 0.5,5.20646 0.5,11 0.5,16.79354 5.20646,21.5 11,21.5 16.79354,21.5 21.50001,16.79354 21.5,11 21.5,5.20646 16.79354,0.5 11,0.5 z" />
+         d="M 11,0.5 C 5.20646,0.5 0.5,5.20646 0.5,11 0.5,16.79354 5.20646,21.5 11,21.5 16.79354,21.5 21.50001,16.79354 21.5,11 21.5,5.20646 16.79354,0.5 11,0.5 Z" />
     </g>
     <g
        id="scrollbar-slider-active"
@@ -17106,7 +17173,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0,1,-1,0,693.36223,617.36218)"
+       transform="matrix(0,1,-1,0,693.36223,613.36218)"
        id="scrollbar-slider-horizontal"
        inkscape:label="#g7273">
       <rect
@@ -17122,7 +17189,7 @@
          id="29-7"
          transform="translate(4,-402.99997)">
         <rect
-           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect2991-5"
            width="4"
            height="20.000017"
@@ -17131,7 +17198,7 @@
            rx="2"
            ry="2.0000174" />
         <rect
-           style="fill:url(#linearGradient3788-1);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:url(#linearGradient3788-1);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect3780-89"
            width="2"
            height="18"
@@ -17145,7 +17212,7 @@
     <g
        id="scrollbar-slider-horizontal-hover"
        inkscape:label="#g7281"
-       transform="matrix(0,1,-1,0,696.36218,651.36218)">
+       transform="matrix(0,1,-1,0,696.36218,647.36218)">
       <rect
          y="620.36218"
          x="-22"
@@ -17158,7 +17225,7 @@
          id="30-6"
          transform="translate(-22,-400.00002)">
         <rect
-           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect2991-63-2"
            width="4"
            height="20.000017"
@@ -17167,7 +17234,7 @@
            rx="2"
            ry="2.0000174" />
         <rect
-           style="fill:url(#linearGradient7288-7);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:url(#linearGradient7288-7);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect3780-0-8"
            width="2"
            height="18"
@@ -17177,7 +17244,7 @@
            rx="2"
            ry="1" />
         <rect
-           style="opacity:0.25;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="opacity:0.25;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect2991-1-2-1"
            width="4"
            height="20.000017"
@@ -17190,7 +17257,7 @@
     <g
        id="scrollbar-slider-horizontal-active"
        inkscape:label="#g7292"
-       transform="matrix(0,1,-1,0,701.36218,658.36218)">
+       transform="matrix(0,1,-1,0,701.36218,654.36218)">
       <rect
          y="625.36218"
          x="-21"
@@ -17203,7 +17270,7 @@
          id="31-2"
          transform="translate(-21,-395.00002)">
         <rect
-           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect2991-6-4"
            width="4"
            height="20.000017"
@@ -17212,7 +17279,7 @@
            rx="2"
            ry="2.0000174" />
         <rect
-           style="fill:url(#linearGradient7299-0);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:url(#linearGradient7299-0);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect3780-8-5"
            width="2"
            height="18"
@@ -17222,7 +17289,7 @@
            rx="2"
            ry="1" />
         <rect
-           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect2991-1-41"
            width="4"
            height="20.000017"
@@ -17436,7 +17503,7 @@
     <g
        id="grid-selection-unchecked"
        inkscape:label="#g7076"
-       transform="translate(-79,-14)">
+       transform="translate(-45,143)">
       <rect
          transform="translate(0,542.36218)"
          y="67"
@@ -17475,7 +17542,7 @@
     <g
        id="grid-selection-checked"
        inkscape:label="#g7289"
-       transform="translate(-78,-14)">
+       transform="translate(-89,99)">
       <rect
          transform="translate(0,542.36218)"
          y="111"
@@ -17583,7 +17650,7 @@
     <g
        id="grid-selection-unchecked-dark"
        inkscape:label="#g7431"
-       transform="translate(-60,-2)">
+       transform="translate(-25,142)">
       <rect
          transform="translate(0,542.36218)"
          y="318"
@@ -17620,7 +17687,7 @@
       </g>
     </g>
     <g
-       transform="translate(86,-110.00002)"
+       transform="translate(76,-10.00002)"
        id="grid-selection-checked-dark"
        inkscape:label="Ebene 1">
       <rect
@@ -20890,7 +20957,7 @@
     <g
        id="scrollbar-slider-horizontal-dark"
        inkscape:label="#g7474"
-       transform="matrix(0,1,-1,0,955.36223,859.36218)">
+       transform="matrix(0,1,-1,0,955.36223,855.36218)">
       <rect
          transform="translate(0,542.36218)"
          y="337"
@@ -20904,7 +20971,7 @@
          id="36-30"
          transform="translate(24,-140.99997)">
         <rect
-           style="fill:#7f7f81;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:#7f7f81;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect2991-12-7"
            width="4"
            height="20.000017"
@@ -20913,7 +20980,7 @@
            rx="2"
            ry="2.0000174" />
         <rect
-           style="fill:url(#linearGradient3788-70-6);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:url(#linearGradient3788-70-6);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect3780-5-5"
            width="2"
            height="18"
@@ -20923,7 +20990,7 @@
            rx="2"
            ry="1" />
         <rect
-           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect2991-1-4-6"
            width="4"
            height="20.000017"
@@ -20934,7 +21001,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0,1,-1,0,955.36223,877.36218)"
+       transform="matrix(0,1,-1,0,955.36223,873.36218)"
        id="scrollbar-slider-horizontal-hover-dark"
        inkscape:label="#g7457">
       <rect
@@ -20950,7 +21017,7 @@
          id="35-8"
          transform="translate(14,-140.99997)">
         <rect
-           style="fill:#6d6d6f;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:#6d6d6f;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect2991-125-4"
            width="4"
            height="20.000017"
@@ -20959,7 +21026,7 @@
            rx="2"
            ry="2.0000174" />
         <rect
-           style="fill:url(#linearGradient3788-8-9);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:url(#linearGradient3788-8-9);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect3780-52-1"
            width="2"
            height="18"
@@ -20971,7 +21038,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0,1,-1,0,955.36223,895.36218)"
+       transform="matrix(0,1,-1,0,955.36223,891.36218)"
        id="scrollbar-slider-horizontal-active-dark"
        inkscape:label="#g7439">
       <g
@@ -20996,7 +21063,7 @@
              height="20.000017"
              width="4"
              id="rect2991-37-0-9"
-             style="fill:#4c4c4d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+             style="fill:#4c4c4d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <rect
              ry="1"
              rx="2"
@@ -21006,7 +21073,7 @@
              height="18"
              width="2"
              id="rect3780-4-7-1"
-             style="fill:url(#linearGradient3788-6-28-3);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+             style="fill:url(#linearGradient3788-6-28-3);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         </g>
       </g>
     </g>
@@ -23306,110 +23373,6 @@
          ry="0" />
     </g>
     <g
-       id="scrollbar-slider-overlay"
-       inkscape:label="#g7273"
-       transform="translate(0,-5e-5)">
-      <rect
-         y="619.36224"
-         x="8"
-         height="27.999987"
-         width="8"
-         id="rect7271-9"
-         style="fill:none;stroke:none" />
-      <g
-         inkscape:label="Ebene 1"
-         id="29-6"
-         transform="translate(4,-402.99997)">
-        <rect
-           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;opacity:0.3"
-           id="rect2991-68"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-      </g>
-    </g>
-    <g
-       id="scrollbar-slider-overlay-horizontal"
-       inkscape:label="#g7273"
-       transform="matrix(0,1,-1,0,693.36221,609.36218)">
-      <rect
-         y="619.36218"
-         x="8"
-         height="27.999998"
-         width="8"
-         id="rect7271-9-6"
-         style="fill:none;stroke:none" />
-      <g
-         inkscape:label="Ebene 1"
-         id="29-6-3"
-         transform="translate(4,-402.99997)">
-        <rect
-           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           id="rect2991-68-6"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-      </g>
-    </g>
-    <g
-       id="scrollbar-slider-overlay-dark"
-       inkscape:label="#g7273"
-       transform="translate(0,261.99997)">
-      <rect
-         y="619.36218"
-         x="8"
-         height="27.999998"
-         width="8"
-         id="rect7271-9-9"
-         style="fill:none;stroke:none" />
-      <g
-         inkscape:label="Ebene 1"
-         id="29-6-2"
-         transform="translate(4,-402.99997)">
-        <rect
-           style="opacity:0.29999999999999999;fill:#969696;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           id="rect2991-68-2"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-      </g>
-    </g>
-    <g
-       id="scrollbar-slider-overlay-horizontal-dark"
-       inkscape:label="#g7273"
-       transform="matrix(0,1,-1,0,693.36221,871.36218)">
-      <rect
-         y="619.36218"
-         x="8"
-         height="27.999998"
-         width="8"
-         id="rect7271-9-6-1"
-         style="fill:none;stroke:none" />
-      <g
-         inkscape:label="Ebene 1"
-         id="29-6-3-4"
-         transform="translate(4,-402.99997)">
-        <rect
-           style="opacity:0.29999999999999999;fill:#969696;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           id="rect2991-68-6-5"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-      </g>
-    </g>
-    <g
        transform="translate(31,0)"
        id="header-separator-dark"
        inkscape:label="#g7255">
@@ -25297,6 +25260,342 @@
          width="1"
          id="rect3013-4-5-6"
          style="fill:#3e1313;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="scrollbar-slider-rtl-hover"
+       inkscape:label="#g7281"
+       transform="matrix(-1,0,0,1,82,-3.000007)">
+      <rect
+         y="620.36218"
+         x="-22"
+         height="32"
+         width="15"
+         id="rect7279-1"
+         style="fill:none;stroke:none" />
+      <g
+         inkscape:label="Ebene 1"
+         id="30-9"
+         transform="translate(-22,-400.00002)">
+        <rect
+           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2991-63-7"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+        <rect
+           style="fill:url(#linearGradient8537);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3780-0-3"
+           width="2"
+           height="18"
+           x="-9"
+           y="1027.3622"
+           transform="scale(-1,1)"
+           rx="2"
+           ry="1" />
+        <rect
+           style="opacity:0.25;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2991-1-2-8"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+      </g>
+    </g>
+    <g
+       id="scrollbar-slider-rtl"
+       inkscape:label="#g7273"
+       transform="matrix(-1,0,0,1,118,-6.9766234e-6)">
+      <rect
+         transform="translate(0,542.36218)"
+         y="75"
+         x="4"
+         height="32"
+         width="15"
+         id="rect7271-7"
+         style="fill:none;stroke:none" />
+      <g
+         inkscape:label="Ebene 1"
+         id="29-8"
+         transform="translate(4,-402.99997)">
+        <rect
+           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2991-18"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+        <rect
+           style="fill:url(#linearGradient8540);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3780-1"
+           width="2"
+           height="18"
+           x="-9"
+           y="1027.3622"
+           transform="scale(-1,1)"
+           rx="2"
+           ry="1" />
+      </g>
+    </g>
+    <g
+       transform="matrix(-1,0,0,1,95.000005,-371.00002)"
+       id="scrollbar-trough-rtl"
+       inkscape:label="Ebene 1">
+      <rect
+         rx="0"
+         transform="translate(0,1020.3622)"
+         y="0"
+         x="2"
+         height="32"
+         width="13"
+         id="rect3784-6"
+         style="fill:url(#linearGradient8542);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="2.0000174"
+         rx="2"
+         y="1026.3622"
+         x="6"
+         height="20.000017"
+         width="4"
+         id="rect2991-3-3"
+         style="fill:#d7d7d7;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="1"
+         rx="1"
+         transform="translate(0,1020.3622)"
+         y="0"
+         x="0"
+         height="32"
+         width="1"
+         id="rect3780-00-9"
+         style="fill:#d7d7d7;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="1"
+         rx="1"
+         transform="translate(0,1020.3622)"
+         y="0"
+         x="1"
+         height="32"
+         width="1"
+         id="rect3782-24"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="scrollbar-slider-rtl-active"
+       inkscape:label="#g7292"
+       transform="matrix(-1,0,0,1,73,-8.000007)">
+      <rect
+         y="625.36218"
+         x="-21"
+         height="32"
+         width="15"
+         id="rect7290-7"
+         style="fill:none;stroke:none" />
+      <g
+         inkscape:label="Ebene 1"
+         id="31-6"
+         transform="translate(-21,-395.00002)">
+        <rect
+           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2991-6-0"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+        <rect
+           style="fill:url(#linearGradient8544);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3780-8-6"
+           width="2"
+           height="18"
+           x="-9"
+           y="1027.3622"
+           rx="2"
+           ry="1"
+           transform="scale(-1,1)" />
+        <rect
+           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2991-1-5"
+           width="4"
+           height="20.000017"
+           x="-10"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174"
+           transform="scale(-1,1)" />
+      </g>
+    </g>
+    <g
+       id="scrollbar-slider-rtl-dark"
+       inkscape:label="#g7474"
+       transform="matrix(-1,0,0,1,133,-5e-5)">
+      <rect
+         transform="translate(0,542.36218)"
+         y="337"
+         x="24"
+         height="32"
+         width="15"
+         id="rect7472-8"
+         style="fill:none;stroke:none" />
+      <g
+         inkscape:label="Ebene 1"
+         id="36-7"
+         transform="translate(24,-140.99997)">
+        <rect
+           style="fill:#7f7f81;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2991-12-8"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+        <rect
+           style="fill:url(#linearGradient8656);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3780-5-1"
+           width="2"
+           height="18"
+           x="-9"
+           y="1027.3622"
+           transform="scale(-1,1)"
+           rx="2"
+           ry="1" />
+        <rect
+           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2991-1-4-7"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+      </g>
+    </g>
+    <g
+       id="scrollbar-slider-rtl-hover-dark"
+       inkscape:label="#g7457"
+       transform="matrix(-1,0,0,1,113,0)">
+      <rect
+         transform="translate(0,542.36218)"
+         y="337"
+         x="14"
+         height="32"
+         width="15"
+         id="rect7455-0"
+         style="fill:none;stroke:none" />
+      <g
+         inkscape:label="Ebene 1"
+         id="35-4"
+         transform="translate(14,-140.99997)">
+        <rect
+           style="fill:#6d6d6f;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2991-125-3"
+           width="4"
+           height="20.000017"
+           x="6"
+           y="1026.3622"
+           rx="2"
+           ry="2.0000174" />
+        <rect
+           style="fill:url(#linearGradient8658);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3780-52-9"
+           width="2"
+           height="18"
+           x="-9"
+           y="1027.3622"
+           transform="scale(-1,1)"
+           rx="2"
+           ry="1" />
+      </g>
+    </g>
+    <g
+       transform="matrix(-1,0,0,1,93.000005,-109)"
+       id="scrollbar-trough-rtl-dark"
+       inkscape:label="Ebene 1">
+      <rect
+         rx="0"
+         y="1020.3622"
+         x="1"
+         height="32"
+         width="14"
+         id="rect3784-2-7"
+         style="fill:url(#linearGradient8660);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="2.0000174"
+         rx="2"
+         y="1026.3622"
+         x="6"
+         height="20.000017"
+         width="4"
+         id="rect2991-9-5"
+         style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="1"
+         rx="1"
+         transform="translate(0,1020.3622)"
+         y="0"
+         x="0"
+         height="32"
+         width="1"
+         id="rect3780-7-5"
+         style="fill:#191919;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         transform="translate(0,1020.3622)"
+         ry="1"
+         rx="1"
+         y="0"
+         x="1"
+         height="32"
+         width="1"
+         id="rect3782-7-5"
+         style="opacity:0.07000002;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(-1,0,0,1,92.99999,-5e-5)"
+       id="scrollbar-slider-rtl-active-dark"
+       inkscape:label="#g7439">
+      <g
+         id="scrollbar-slider-dark-7-3"
+         inkscape:label="#g7447">
+        <rect
+           style="fill:none;stroke:none"
+           id="rect7437-4-1"
+           width="15"
+           height="32"
+           x="4"
+           y="879.36218" />
+        <g
+           transform="translate(4,-140.99997)"
+           id="33-3-3"
+           inkscape:label="Ebene 1">
+          <rect
+             ry="2.0000174"
+             rx="2"
+             y="1026.3622"
+             x="6"
+             height="20.000017"
+             width="4"
+             id="rect2991-37-0-0"
+             style="fill:#4c4c4d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <rect
+             ry="1"
+             rx="2"
+             y="1027.3622"
+             x="-9"
+             height="18"
+             width="2"
+             id="rect3780-4-7-11"
+             style="fill:url(#linearGradient8662);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             transform="scale(-1,1)" />
+        </g>
+      </g>
     </g>
   </g>
 </svg>

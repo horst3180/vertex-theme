@@ -2078,13 +2078,24 @@ column-header.button.dnd { // for treeview-like derive widgets
   &.trough {
     @include _border(scrollbar-trough#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
 
+    &:dir(rtl) { @include _border(scrollbar-trough-rtl#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px); }
     &.horizontal { @include _border(scrollbar-trough-horizontal#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px); }
   }
   &.slider {
     @include _border(scrollbar-slider#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
 
-    &:hover, &:insensitive { @include _border(scrollbar-slider-hover#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px); }
-    &:active { @include _border(scrollbar-slider-active#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px); }
+    &:dir(rtl) { @include _border(scrollbar-slider-rtl#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px); }
+
+    &:hover, &:insensitive {
+      @include _border(scrollbar-slider-hover#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
+
+      &:dir(rtl) { @include _border(scrollbar-slider-rtl-hover#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px); }
+    }
+    &:active {
+      @include _border(scrollbar-slider-active#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
+
+      &:dir(rtl) { @include _border(scrollbar-slider-rtl-active#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px); }
+    }
 
     &.horizontal {
       @include _border(scrollbar-slider-horizontal#{$asset_suffix}, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px);

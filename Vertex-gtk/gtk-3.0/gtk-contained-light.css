@@ -1914,6 +1914,12 @@ column-header .button, column-header .button:hover, column-header .button:active
     border-width: 8px 7px 8px 8px;
     border-style: solid;
     border-color: transparent; }
+    .scrollbar.trough:dir(rtl) {
+      border-image: -gtk-scaled(url("assets/scrollbar-trough-rtl.png"), url("assets/scrollbar-trough-rtl@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+      border-radius: 0;
+      border-width: 8px 7px 8px 8px;
+      border-style: solid;
+      border-color: transparent; }
     .scrollbar.trough.horizontal {
       border-image: -gtk-scaled(url("assets/scrollbar-trough-horizontal.png"), url("assets/scrollbar-trough-horizontal@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
       border-radius: 0;
@@ -1926,18 +1932,36 @@ column-header .button, column-header .button:hover, column-header .button:active
     border-width: 8px 7px 8px 8px;
     border-style: solid;
     border-color: transparent; }
+    .scrollbar.slider:dir(rtl) {
+      border-image: -gtk-scaled(url("assets/scrollbar-slider-rtl.png"), url("assets/scrollbar-slider-rtl@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+      border-radius: 0;
+      border-width: 8px 7px 8px 8px;
+      border-style: solid;
+      border-color: transparent; }
     .scrollbar.slider:hover, .scrollbar.slider:insensitive {
       border-image: -gtk-scaled(url("assets/scrollbar-slider-hover.png"), url("assets/scrollbar-slider-hover@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
       border-radius: 0;
       border-width: 8px 7px 8px 8px;
       border-style: solid;
       border-color: transparent; }
+      .scrollbar.slider:hover:dir(rtl), .scrollbar.slider:insensitive:dir(rtl) {
+        border-image: -gtk-scaled(url("assets/scrollbar-slider-rtl-hover.png"), url("assets/scrollbar-slider-rtl-hover@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+        border-radius: 0;
+        border-width: 8px 7px 8px 8px;
+        border-style: solid;
+        border-color: transparent; }
     .scrollbar.slider:active {
       border-image: -gtk-scaled(url("assets/scrollbar-slider-active.png"), url("assets/scrollbar-slider-active@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
       border-radius: 0;
       border-width: 8px 7px 8px 8px;
       border-style: solid;
       border-color: transparent; }
+      .scrollbar.slider:active:dir(rtl) {
+        border-image: -gtk-scaled(url("assets/scrollbar-slider-rtl-active.png"), url("assets/scrollbar-slider-rtl-active@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+        border-radius: 0;
+        border-width: 8px 7px 8px 8px;
+        border-style: solid;
+        border-color: transparent; }
     .scrollbar.slider.horizontal {
       border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal.png"), url("assets/scrollbar-slider-horizontal@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
       border-radius: 0;
