@@ -1,5 +1,5 @@
 #!/bin/sh
-DIR=$( cd "$( dirname "$0" )" && pwd )
+DIR=`dirname -- "$0"`
 
 rm $DIR/Vertex-gtk-3.10-3.12/gtk-3.0/assets.svg
 rm $DIR/Vertex-gtk-3.10-3.12/gtk-3.0/assets.txt
