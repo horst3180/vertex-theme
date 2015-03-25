@@ -1560,26 +1560,22 @@ StScrollBar {
 .app-well-app.app-folder {
 
   > .overview-icon {
-    padding: 7px;
     background-color: transparent;
 	  border-image: url("app-folder/app-folder.svg") 6 6 5 7;
   }
 
   &:hover > .overview-icon {
-    padding: 7px;
     background-color: transparent;
 	  border-image: url("app-folder/app-folder-hover.svg") 6 6 5 7;
   }
 
   &:active > .overview-icon, &:checked > .overview-icon {
-    padding: 7px;
     background-color: transparent;
     box-shadow: none;
 	  border-image: url("app-folder/app-folder-active.svg") 6 6 5 7;
   }
 
   &:focus > .overview-icon {
-    padding: 7px;
     background-color: transparent;
 	  border-image: url("app-folder/app-folder-focus.svg") 6 6 5 7;
   }
