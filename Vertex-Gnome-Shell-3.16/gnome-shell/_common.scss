@@ -96,8 +96,8 @@ StScrollBar {
   padding: 8px;
 
   StScrollView & {
-    min-width: 14px;
-    min-height: 14px;
+    min-width: 5px;
+    min-height: 5px;
   }
 
   StBin#trough {
