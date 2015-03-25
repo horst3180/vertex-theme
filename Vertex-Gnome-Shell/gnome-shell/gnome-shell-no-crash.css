@@ -1119,7 +1119,7 @@ StScrollBar StButton#vhandle:active {
 .dash-item-container > StButton,
 .left .dash-item-container > StButton,
 .right .dash-item-container > StButton {
-    padding: 2px 0px;
+    padding: 0px 0px;
 }
 
 .bottom .dash-item-container > StButton,
