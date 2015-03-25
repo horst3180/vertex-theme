@@ -1,0 +1,530 @@
+// Drawing mixins
+
+// generic drawing of more complex things
+
+$asset_suffix: if($variant=='dark', '-dark', ''); // use dark assets in dark variant
+$darker_asset_suffix: if($darker=='true' or $variant=='dark', '-dark', '');
+
+$shadow_pos: if($variant=='light', 1, -1); // controls the position of the text shadows
+$darker_shadow_pos: if($darker=='true', -1, 1);
+
+@function gtkalpha($c,$a) {
+  @return unquote("alpha(#{$c},#{$a})");
+}
+
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+@mixin _shadows($shadow1, $shadow2:none, $shadow3:none, $shadow4:none) {
+//
+// Helper function to stack up to 4 box-shadows;
+//
+  @if $shadow4!=none { box-shadow: $shadow1, $shadow2, $shadow3, $shadow4; }
+  @else if $shadow3!=none { box-shadow: $shadow1, $shadow2, $shadow3; }
+  @else if $shadow2!=none { box-shadow: $shadow1, $shadow2; }
+  @else { box-shadow: $shadow1; }
+}
+
+@mixin _border($name, $radius: 2px, $width: 1px 1px 2px 1px, $image-width: 2 2 3 2 / 2px 2px 3px 2px, $prefix:borders) {
+  border-image: -gtk-scaled(url("#{$prefix}/#{$name}.png"),url("#{$prefix}/#{$name}@2.png")) $image-width stretch;
+  border-radius: $radius;
+  border-width: $width;
+  border-style: solid;
+  border-color: transparent;
+}
+
+// entries
+
+@mixin entry($t, $dark:false) {
+//
+// Entries drawing function
+//
+
+  $_asset_suffix: if($dark=='true' or $variant=='dark', -dark, '');
+
+  $_fg: if($dark=='true', nth($_text_color, 2), $text_color);
+  $_bg: if($dark=='true', nth($_entry_bg_color, 3), $entry_bg_color);
+
+  $_insensitive_fg: if($dark=='true', nth($_insensitive_fg_color, 2), $insensitive_fg_color);
+  $_insensitive_bg: if($dark=='true', nth($_insensitive_bg_color, 2), $insensitive_bg_color);
+
+
+  background-color: transparent;
+
+  @if $t==normal {
+    color: $_fg;
+    background-image: linear-gradient(to bottom, $_bg);
+
+    box-shadow: inset 0 1px $entry_inset;
+
+    @include _border(entry-normal-border#{$_asset_suffix});
+  }
+
+  @if $t==focus {
+    background-image: linear-gradient(to bottom, $_bg);
+
+    box-shadow: none;
+
+    @include _border(entry-focused-border#{$_asset_suffix});
+  }
+
+  @if $t==insensitive {
+    color: $_insensitive_fg;
+    background-image: linear-gradient(to bottom, $_insensitive_bg);
+
+    box-shadow: none;
+
+    @include _border(entry-normal-border#{$_asset_suffix});
+  }
+}
+
+// buttons
+
+@mixin button($t, $dark:false, $border:true) {
+//
+// Button drawing function
+//
+
+  $_dark_shadow_pos: if($dark=='true', -1, 1);
+  $_asset_suffix: if($dark=='true' or $variant=='dark', -dark, '');
+
+  $_text_icon_shadow: if($dark=='true', nth($_light_text_icon_shadow, 2), $light_text_icon_shadow);
+
+  $_fg: if($dark=='true', nth($_fg_color, 2), $fg_color);
+
+  $_insensitive_fg: if($dark=='true', nth($_insensitive_fg_color, 2), $insensitive_fg_color);
+  $_insensitive_bg: if($dark=='true', nth($_insensitive_bg_color, 2), $insensitive_bg_color);
+
+  $_bg_a: if($dark=='true', nth($_button_gradient_color_a, 2), $button_gradient_color_a);
+  $_bg_b: if($dark=='true', nth($_button_gradient_color_b, 2), $button_gradient_color_b);
+
+  $_hover_bg_a: if($dark=='true', nth($_button_hover_gradient_color_a, 2), $button_hover_gradient_color_a);
+  $_hover_bg_b: if($dark=='true', nth($_button_hover_gradient_color_b, 2), $button_hover_gradient_color_b);
+
+  $_active_bg_a: if($dark=='true', nth($_button_active_gradient_color_a, 2), $button_active_gradient_color_a);
+  $_active_bg_b: if($dark=='true', nth($_button_active_gradient_color_b, 2), $button_active_gradient_color_b);
+
+  $_insensitive_active_bg_a: if($dark=='true', nth($_button_insensitive_active_gradient_color_a, 2), $button_insensitive_active_gradient_color_a);
+  $_insensitive_active_bg_b: if($dark=='true', nth($_button_insensitive_active_gradient_color_b, 2), $button_insensitive_active_gradient_color_b);
+
+  $selection_bg_a: if($dark=='true', nth($_selection_toolbar_button_a, 2), $selection_toolbar_button_a);
+  $selection_bg_b: if($dark=='true', nth($_selection_toolbar_button_b, 2), $selection_toolbar_button_b);
+
+  $selection_text_shadow: if($dark=='true', nth($_selection_button_text_shadow, 2), $selection_button_text_shadow);
+
+
+  @if $t==normal {
+  //
+  // normal button
+  //
+    color: $_fg;
+    outline-color: transparentize($_fg, 0.7);
+    background-image: linear-gradient(to bottom, 
+                                      $_bg_a,
+                                      $_bg_b);
+
+    text-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+    icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+
+    @if $border==true {
+      @include _border(button-normal-border#{$_asset_suffix});
+    }
+  }
+
+  @else if $t==focus {
+  //
+  // focused button
+  //
+    @if $border==true {
+      @include _border(button-focused-border#{$_asset_suffix}, $image-width: 3 3 4 3 / 3px 3px 4px 3px);
+    }
+  }
+
+  @else if $t==hover {
+  //
+  // hovered button
+  //
+    color: $_fg;
+    outline-color: transparentize($_fg, 0.7);
+    background-image: linear-gradient(to bottom, 
+                                      $_hover_bg_a,
+                                      $_hover_bg_b);
+
+    text-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+    icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+
+    @if $border==true {
+      @include _border(button-normal-border#{$_asset_suffix});
+    }
+  }
+
+  @else if $t==active {
+  //
+  // pushed button
+  //
+    color: $button_active_fg;
+    outline-color: transparentize($button_active_fg, 0.7);
+    background-image: linear-gradient(to bottom, 
+                                      $_active_bg_a,
+                                      $_active_bg_b);
+
+    text-shadow: 0 -1px $button_active_text_shadow;
+    icon-shadow: 0 -1px $button_active_text_shadow;
+
+    box-shadow: inset 0 1px 2px transparentize(black, 0.8);
+
+    @if $border==true {
+      @include _border(button-active-border#{$_asset_suffix});
+    }
+  }
+
+  @else if $t==insensitive {
+  //
+  // insensitive button
+  //
+
+    color: $_insensitive_fg;
+    background-image: linear-gradient(to bottom, $_insensitive_bg);
+
+    text-shadow: none;
+    icon-shadow: none;
+
+    @if $border==true {
+      @include _border(button-normal-border#{$_asset_suffix});
+    }
+
+    > GtkLabel, GtkLabel { color: inherit; }
+  }
+
+  @else if $t==insensitive-active {
+  //
+  // insensitive pushed button
+  //
+    color: transparentize($button_active_fg, 0.3);
+
+    background-image: linear-gradient(to bottom,
+                                      $_insensitive_active_bg_a,
+                                      $_insensitive_active_bg_b);
+
+    text-shadow: none;
+    icon-shadow: none;
+
+    box-shadow: inset 0 1px 2px transparentize(black, 0.8);
+
+    @if $border==true {
+      @include _border(button-active-border#{$_asset_suffix});
+    }
+
+    > GtkLabel, GtkLabel { color: inherit; }
+  }
+
+  @if $t==selection-mode {
+  //
+  // selection-mode button
+  //
+    color: $selected_fg_color;
+    outline-color: transparentize($selected_fg_color, 0.7);
+    background-image: linear-gradient(to bottom,
+                                      $selection_bg_a,
+                                      $selection_bg_b);
+
+    text-shadow: 0 -1px $selection_text_shadow;
+    icon-shadow: 0 -1px $selection_text_shadow;
+
+    @if $border==true {
+      @include _border(button-normal-border-suggested#{$_asset_suffix});
+    }
+  }
+
+  @if $t==selection-mode-hover {
+  //
+  // hovered selection-mode button
+  //
+    color: $selected_fg_color;
+    outline-color: transparentize($selected_fg_color, 0.7);
+    background-image: linear-gradient(to bottom,
+                                      lighten($selection_bg_a, 6%),
+                                      lighten($selection_bg_b, 2%));
+
+    text-shadow: 0 -1px $selection_text_shadow;
+    icon-shadow: 0 -1px $selection_text_shadow;
+
+    @if $border==true {
+      @include _border(button-normal-border-suggested#{$_asset_suffix});
+    }
+  }
+
+  @if $t==selection-mode-active {
+  //
+  // pushed selection-mode button
+  //
+    color: $selected_fg_color;
+    outline-color: transparentize($selected_fg_color, 0.7);
+    background-image: linear-gradient(to bottom,
+                                      darken($selection_bg_b, 3%),
+                                      $selection_bg_b);
+
+    text-shadow: 0 -1px $selection_text_shadow;
+    icon-shadow: 0 -1px $selection_text_shadow;
+
+    box-shadow: inset 0 1px 2px transparentize(black, 0.85);
+
+    @if $border==true {
+      @include _border(button-active-border-suggested#{$_asset_suffix});
+    }
+  }
+
+  @if $t==selection-mode-insensitive {
+  //
+  // insensitive selection-mode button
+  //
+    color: transparentize($selected_fg_color, 0.3);
+    background-image: linear-gradient(to bottom,
+                                      mix($selection_bg_a, $selection_bg_b, 50%));
+
+    text-shadow: none;
+    icon-shadow: none;
+
+    @if $border==true {
+      @include _border(button-normal-border-suggested#{$_asset_suffix});
+    }
+
+    > GtkLabel, GtkLabel { color: inherit; }
+  }
+
+  @if $t==selection-mode-insensitive-active {
+  //
+  // insensitive pushed selection-mode button
+  //
+    color: transparentize($selected_fg_color, 0.3);
+    background-image: linear-gradient(to bottom,
+                                      lighten($selection_toolbar_button_b, 3%));
+
+    text-shadow: none;
+    icon-shadow: none;
+
+    box-shadow: inset 0 1px 2px transparentize(black, 0.9);
+
+    @if $border==true {
+      @include _border(button-active-border-suggested#{$_asset_suffix});
+    }
+
+    > GtkLabel, GtkLabel { color: inherit; }
+  }
+
+  @else if $t==osd {
+  //
+  // normal osd button
+  //
+    color: $osd_fg_color;
+    outline-color: transparentize($osd_fg_color, 0.7);
+    background-image: linear-gradient(to bottom,
+                                      $osd_button_bg_a,
+                                      $osd_button_bg_b);
+
+    text-shadow: 0 -1px $osd_text_shadow;
+    icon-shadow: 0 -1px $osd_text_shadow;
+
+    @if $border==true {
+	    box-shadow: inset 0 1px transparentize(white, 0.9),
+                  inset 0 -1px transparentize(black, 0.9);
+
+
+      border: 1px solid transparentize(black, 0.25);
+      border-image: none;
+      border-radius: 2px;
+    }
+  }
+
+  @else if $t==osd-hover {
+  //
+  // hovered osd button
+  //
+
+    color: $selected_bg_color;
+    outline-color: transparentize($osd_fg_color, 0.7);
+    background-image: linear-gradient(to bottom,
+                                      lighten($osd_button_bg_a, 5%),
+                                      lighten($osd_button_bg_b, 5%));
+
+    text-shadow: 0 -1px $osd_text_shadow;
+    icon-shadow: 0 -1px $osd_text_shadow;
+
+    @if $border==true {
+      border: 1px solid transparentize(black, 0.25);
+      border-image: none;
+      border-radius: 2px;
+
+	    box-shadow: inset 0 1px transparentize(white, 0.9),
+                  inset 0 -1px transparentize(black, 0.9);
+    }
+  }
+
+  @else if $t==osd-active {
+  //
+  // active osd button
+  //
+    color: darken($selected_bg_color, 3%);
+    outline-color: transparentize($osd_fg_color, 0.7);
+    background-image: linear-gradient(to bottom,
+                                      darken($osd_button_bg_b, 12%),
+                                      darken($osd_button_bg_a, 14%));
+
+    text-shadow: 0 -1px $osd_text_shadow;
+    icon-shadow: 0 -1px $osd_text_shadow;
+
+    box-shadow: inset 0 1px 2px transparentize(black, 0.9);
+
+    @if $border==true {
+      border: 1px solid transparentize(black, 0.25);
+      border-image: none;
+      border-radius: 2px;
+    }
+  }
+
+  @else if $t==osd-insensitive {
+  //
+  // insensitive osd button
+  //
+    color: $osd_insensitive_fg_color;
+    background-image: linear-gradient(to bottom, $osd_insensitive_bg_color);
+
+    text-shadow: none;
+    icon-shadow: none;
+
+    @if $border==true {
+      border: 1px solid transparentize(black, 0.25);
+      border-image: none;
+      border-radius: 2px;
+    }
+  }
+
+  @else if $t==undecorated {
+  //
+  // reset
+  //
+    border-color: transparent;
+    border-image: none;
+    background-color: transparent;
+    background-image: none;
+
+    box-shadow: none;
+    text-shadow: none;
+    icon-shadow: none;
+  }
+}
+
+//
+// Linked Buttons and Entries
+//
+@mixin linked($t, $state:'normal', $position:left, $dark:false, $action_type:none) {
+
+  $_asset_suffix: if($dark=='true' or $variant=='dark', -dark, '');
+  $args:'';
+
+  $_action_suffix: '';
+  @if $action_type==suggested { $_action_suffix: '-suggested'; }
+  @if $action_type==destructive { $_action_suffix: '-destructive'; }
+
+  @if $position==left {
+    @if $t==entry {
+      $args: 2px 0 0 2px, 1px 0 2px 1px, 2 1 3 2 / 2px 1px 3px 2px;
+      @if $state==focused {
+        $args: 2px 0 0 2px, 1px 0 2px 1px, 2 2 3 2 / 2px 2px 3px 2px;
+      }
+    }
+    @if $t==button {
+      $args: 2px 0 0 2px, 1px 0 2px 1px, 2 1 3 2 / 2px 1px 3px 2px;
+    }
+  }
+
+  @else if $position==middle {
+    @if $t==entry {
+      $args: 0, 1px 0 2px 0, 1 1 2 0 / 1px 1px 2px 0;
+      @if $state==focused {
+        $args: 0, 1px 0 2px 0, 2 2 3 2 / 2px 2px 3px 2px;
+      }
+    }
+    @if $t==button {
+      $args: 0, 1px 0 2px 0, 2 1 3 1 / 2px 1px 3px 1px;
+    }
+  }
+
+  @else if $position==right {
+    @if $t==entry {
+      $args: 0 2px 2px 0, 1px 1px 2px 0, 2 2 3 0 / 2px 2px 3px 0;
+      @if $state==focused {
+        $args: 0 2px 2px 0, 1px 1px 2px 0, 2 2 3 2 / 2px 2px 3px 2px;
+      }
+    }
+    @if $t==button {
+      $args: 0 2px 2px 0, 1px 1px 2px 0, 2 2 3 1 / 2px 2px 3px 1px;
+    }
+  }
+
+  @else if $position==top-vertical {
+    @if $t==entry {
+      $args: 2px 2px 0 0, 1px 1px 0 1px, 2 2 1 2 / 2px 2px 1px 2px;
+      @if $state==focused {
+        $args: 2px 2px 0 0, 1px 1px 0 1px, 2 2 2 2 / 2px 2px 2px 2px;
+      }
+    }
+    @if $t==button {
+      $args: 2px 2px 0 0, 1px 1px 0 1px, 2 2 1 2 / 2px 2px 1px 2px;
+    }
+  }
+
+  @else if $position==middle-vertical {
+    @if $t==entry {
+      box-shadow: none;
+      $args: 0, 0 1px 0 1px, 0 1 1 1 / 0 1px 1px 1px;
+      @if $state==focused {
+        $args: 0, 0 1px 0 1px, 2 2 2 2 / 2px 2px 2px 2px;
+      }
+    }
+    @if $t==button {
+      $args: 0, 0 1px 0 1px, 1 1 1 1 / 1px 1px 1px 1px;
+    }
+  }
+
+  @else if $position==bottom-vertical {
+    @if $t==entry {
+      box-shadow: none;
+      $args: 0 0 2px 2px, 0 1px 2px 1px, 0 2 3 2 / 0 2px 3px 2px;
+      @if $state==focused {
+        $args: 0 0 2px 2px, 0 1px 2px 1px, 2 3 4 3 / 2px 3px 4px 3px;
+      }
+    }
+    @if $t==button {
+      $args: 0 0 2px 2px, 0 1px 2px 1px, 1 2 3 2 / 1px 2px 3px 2px;
+    }
+  }
+
+  @if $position==single {
+    @include _border(#{$t}-#{$state}-border#{$_action_suffix}#{$_asset_suffix})
+  }
+  @else {
+    @include _border(#{$position}-#{$t}-#{$state}-border#{$_action_suffix}#{$_asset_suffix}, nth($args, 1), nth($args, 2), nth($args, 3))
+  }
+}
+
+//
+// Pane Separator handle
+//
+@mixin handle($pos:horizontal, $dark:false) {
+
+  $_dir: if($pos=='vertical', right, bottom);
+  $_color: if($dark=='true', transparentize(nth($_fg_color, 2), 0.6), transparentize($fg_color, 0.6));
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: if($pos=='vertical', 12px 1px, 1px 12px);
+  background-image: linear-gradient(to $_dir,
+                                    $_color 20%,
+                                    transparent 20%,
+                                    transparent 40%,
+                                    $_color 40%,
+                                    $_color 60%,
+                                    transparent 60%,
+                                    transparent 80%,
+                                    $_color 80%);
+}

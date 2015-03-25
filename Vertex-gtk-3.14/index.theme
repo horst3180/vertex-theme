@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Vertex
+Comment=A theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Vertex
+MetacityTheme=Vertex
+IconTheme=gnome
+CursorTheme=DMZ-Black
+ButtonLayout=menu:minimize,maximize,close
