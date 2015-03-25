@@ -2,7 +2,7 @@
 #      Requirements       #
 ###########################
 
-* Gnome/GTK 3.10, 3.12, 3.14 and 3.16
+* Gnome/GTK 3.10, 3.12, 3.14 or 3.16
 * Compatible with Ubuntu and Elementary OS Freya
 * GTK3: gnome-themes-standard package or a package which contains the adwaita engine (only needed until 3.12)
 * GTK2: Murrine engine and pixbuf engine
@@ -12,7 +12,7 @@ Please search in the repositories of your distribution because the package names
 ###########################
 #      Installation       #
 ###########################
-The extracted zip file contains four different subfolders ("Gnome-3.10_Ubuntu-14.04" "Gnome-3.12_Ubuntu-14.10" "Gnome-3.14_Ubuntu-15.04" and "Gnome-3.16") with the GTK themes for the different versions of Gnome/GTK (For Elementary OS Freya use the Gnome-3.14 version). Pick the one that matches your version and copy the content to "/usr/share/themes".
+The extracted zip file contains four different subfolders ("Gnome-3.10_Ubuntu-14.04" "Gnome-3.12_Ubuntu-14.10" "Gnome-3.14_Ubuntu-15.04" and "Gnome-3.16") with the GTK themes for the different versions of Gnome/GTK/Ubuntu (For Elementary OS Freya use the Gnome-3.14 version). Pick the one that matches your version and copy the content to "/usr/share/themes".
 
 To set the right permissions, execute
 
