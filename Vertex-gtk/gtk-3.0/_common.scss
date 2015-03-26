@@ -2142,12 +2142,14 @@ GtkSwitch {
 
   &.trough, &.slider {
     background-repeat: no-repeat;
-    background-position: 0 center;
+    background-position: right center;
     color: transparent;
     border-color: transparent;
     border-image: none;
     border-style: none;
     box-shadow: none;
+
+    &:dir(rtl) { background-position: left center; }
   }
 }
 

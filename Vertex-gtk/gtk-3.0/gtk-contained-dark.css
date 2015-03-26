@@ -2019,12 +2019,14 @@ GtkSwitch {
   outline-color: transparent; }
   GtkSwitch.trough, GtkSwitch.slider {
     background-repeat: no-repeat;
-    background-position: 0 center;
+    background-position: right center;
     color: transparent;
     border-color: transparent;
     border-image: none;
     border-style: none;
     box-shadow: none; }
+    GtkSwitch.trough:dir(rtl), GtkSwitch.slider:dir(rtl) {
+      background-position: left center; }
 
 GtkSwitch.trough {
   background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png")); }
