@@ -2334,6 +2334,53 @@ style "eclipse-tooltips" {
 
 }
 
+style "xfdesktop-icon-view" {
+  XfdesktopIconView::label-alpha = 0
+  XfdesktopIconView::selected-label-alpha = 100
+  XfdesktopIconVIew::ellipsize-icon-labels = 1
+
+  base[NORMAL] = @selected_bg_color
+  base[SELECTED] = @selected_bg_color
+  base[ACTIVE] = @selected_bg_color
+
+  fg[NORMAL] = @selected_fg_color
+  fg[SELECTED] = @selected_fg_color
+  fg[ACTIVE] = @selected_fg_color
+
+  engine "murrine" {
+    textstyle = 5
+    text_shade = 0.05
+  }
+}
+
+style "xfwm-tabwin" {
+  Xfwm4TabwinWidget::border-width = 1
+  Xfwm4TabwinWidget::border-alpha = 1.0
+  Xfwm4TabwinWidget::icon-size = 64
+  Xfwm4TabwinWidget::alpha = 1.0
+  Xfwm4TabwinWidget::border-radius = 2
+
+	bg[NORMAL] = @bg_color
+	bg[SELECTED] = @bg_color
+
+	fg[NORMAL] = @fg_color
+
+  engine "murrine" {
+    contrast = 0.7
+    glazestyle = 0
+    glowstyle = 0
+    highlight_shade = 1.0
+    gradient_shades = {1.0,1.0,1.0,1.0}
+    border_shades = { 0.8, 0.8 }
+  }
+}
+
+style "xfwm-tabwin-button" {
+
+  font_name = "bold"
+  bg[SELECTED] = @selected_bg_color
+}
+
 # Chromium
 style "chrome-gtk-frame" {
 
@@ -2451,3 +2498,8 @@ widget "*openoffice-toplevel*GtkEntry"                              style "libre
 widget "*openoffice-toplevel*GtkSpinButton"                         style "libreoffice_entry"
 widget "*libreoffice-toplevel*GtkEntry"                             style "libreoffice_entry"
 widget "*libreoffice-toplevel*GtkSpinButton"                        style "libreoffice_entry"
+
+# Xfce
+widget_class "*XfdesktopIconView*"                                  style "xfdesktop-icon-view"
+widget "xfwm4-tabwin*"                                              style "xfwm-tabwin"
+widget "xfwm4-tabwin*GtkButton*"                                    style "xfwm-tabwin-button"
