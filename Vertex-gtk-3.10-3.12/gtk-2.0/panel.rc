@@ -141,7 +141,6 @@ class "*Xfce*Panel*"                                  style "theme-panel"
 widget "*WnckPager*"                                  style "workspace-switcher"
 
 # Fix gtk-entries in the panel
-class "GtkEntry"                                      style "panel-entry"
 widget "*bookmark*GtkEntry"                           style "panel-entry" # fixes smartbookmark-plugin
 
 # Make sure panel text color doesn't change
