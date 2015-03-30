@@ -1,0 +1,353 @@
+/*
+ * Nautilus
+ *//*
+NautilusWindow .sidebar .view,
+NautilusWindow .sidebar .view.image {
+	background-color: #56575A;
+	color: alpha(@dark_fg_color, 1.0);
+	text-shadow: 0 -1px alpha(@dark_wm_title_shadow, 0.5);
+  icon-shadow: 0 -1px alpha(@dark_wm_title_shadow, 0.5);
+}
+
+NautilusWindow .sidebar .view.cell:selected,
+NautilusWindow .sidebar .view.cell:selected:hover,
+NautilusWindow .sidebar .view.cell:selected:focus {
+	background-image: linear-gradient(to bottom,
+                                      shade(@theme_selected_bg_color, 0.85),
+                                      shade(@theme_selected_bg_color, 1.05));
+	border-top-color: shade(@theme_selected_bg_color, 1.05);
+	border-bottom-color: shade(@theme_selected_bg_color, 1.05);
+	text-shadow: 0 -1px alpha(@dark_wm_title_shadow, 0.2);
+	color: @theme_selected_fg_color;
+}
+
+NautilusWindow > GtkGrid > .pane-separator,
+NautilusWindow > GtkGrid > .pane-separator:hover {
+    border-width: 0 1px 0 0;
+    border-image: linear-gradient(to bottom, @dark_borders) 0 1 0 0;
+}*/
+/*
+NautilusWindow * {
+	-GtkPaned-handle-size: 0px;
+}
+*/
+NautilusQueryEditor .search-bar.toolbar {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background-color: @dark_wm_bg_b;
+    background-image: none;
+}
+
+NautilusWindow .info .button:active,
+NautilusWindow .info .button:active:hover,
+NautilusWindow .warning .button:active,
+NautilusWindow .warning .button:active:hover,
+NautilusWindow .error .button:active,
+NautilusWindow .error .button:active:hover,
+NautilusWindow .question .button:active,
+NautilusWindow .question .button:active:hover,
+NautilusWindow .info .button:focus,
+NautilusWindow .warning .button:focus,
+NautilusWindow .error .button:focus,
+NautilusWindow .question .button:focus {
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+/*
+ * Nemo
+ */
+NemoPathbarButton {
+    color: @dark_fg_color;
+    border-color: @dark_borders;
+    background-image: linear-gradient(to bottom, 
+                                      @dark_button_gradient_color_a, 
+                                      @dark_button_gradient_color_b);
+    box-shadow: inset 0 1px alpha(white, 0.15); 
+}
+
+NemoPathbarButton:hover {
+    background-image: linear-gradient(to bottom, 
+                                      @dark_button_hover_gradient_color_a, 
+                                      @dark_button_hover_gradient_color_b);
+
+}
+
+NemoPathbarButton:active {
+    border-color: shade(@dark_borders, 0.9);
+    background-image: linear-gradient(to bottom, 
+                                      shade(@dark_button_gradient_color_b, 0.9), 
+                                      shade(@dark_button_gradient_color_b, 1.0));
+    box-shadow: inset 0 1px 2px alpha(black, 0.1); 
+}
+
+NemoStatusBar GtkLabel {
+    text-shadow: none;
+    color: @dark_fg_color;
+}
+
+NemoWindow GtkEventBox {
+    background-color: @dark_bg_color;
+}
+
+NemoWindow GtkSeparator.separator.horizontal {
+    color: @dark_borders
+}
+
+/*
+ * Gedit
+ */
+GeditWindow .pane-separator,
+GeditWindow .pane-separator:hover {
+    border-color: alpha(@dark_bg_color, 0.4);
+}
+
+GeditFileBrowserWidget .toolbar {
+    border-bottom: 1px solid @dark_borders;
+}
+
+GeditWindow GeditMenuStackSwitcher.button:active {
+    color: @dark_fg_color;
+}
+
+/*
+ * Epiphany
+ */
+#ephy-page-menu-button.active-menu {
+    color: @theme_fg_color;
+    icon-shadow: none;
+}
+
+EphyToolbar.incognito-mode .button,
+EphyToolbar.incognito-mode .title,
+EphyToolbar.incognito-mode .title:backdrop,
+EphyToolbar.incognito-mode .subtitle,
+EphyToolbar.incognito-mode .subtitle:backdrop {
+    color: @theme_fg_color;
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+EphyToolbar.incognito-mode .entry,
+EphyToolbar.incognito-mode .entry.image {
+    color: @theme_fg_color;
+    background-color: @theme_base_color
+}
+
+/*
+ * Rhythmbox
+ */
+RBSource .toolbar {
+    background-color: @theme_bg_color;
+    border-style: none;
+    background-image: none;
+}
+
+RBSource .toolbar .button {
+    text-shadow: none;
+    transition: none;
+    color: @theme_fg_color;
+    icon-shadow: 0 1px @button_text_shadow;
+    text-shadow: 0 1px @button_text_shadow;
+}
+
+RBSource .toolbar .button:hover {
+    background-image: linear-gradient(to bottom,
+                                      @button_hover_gradient_color_a,
+                                      @button_hover_gradient_color_b);
+    border-image: -gtk-scaled(url("borders/button-border.png"),url("borders/button-border@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+RBSource .toolbar .button:active:hover,
+RBSource .toolbar .button:active {
+    border-image: -gtk-scaled(url("borders/button-active-border.png"),url("borders/button-active-border@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    color: @button_active_text;
+    box-shadow: inset 0 1px 1px alpha(black, 0.2);
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_color_a,
+                                  @button_active_gradient_color_b);
+    text-shadow: 0 -1px @button_active_text_shadow;
+    icon-shadow: 0 -1px @button_active_text_shadow;
+}
+
+RBSource .toolbar .separator {
+    color: transparent;
+}
+
+/*
+ * Geary
+ */
+MainWindow.background GtkBox.vertical MainToolbar {
+    border-bottom: 1px solid @dark_borders
+}
+
+/*
+ * Empathy
+ */
+EmpathyRosterWindow.background {
+    background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b,
+                                      @dark_bg_color);
+    color: @dark_fg_color;
+}
+
+EmpathyRosterWindow.background .button {
+    color: @dark_fg_color;
+    background-image: linear-gradient(to bottom, 
+                                      @dark_button_gradient_color_a, 
+                                      @dark_button_gradient_color_b);
+    border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+    text-shadow: 0 -1px @dark_wm_title_shadow;
+    icon-shadow: 0 -1px @dark_wm_title_shadow;
+}
+
+EmpathyRosterWindow.background .button:hover {
+    background-image: linear-gradient(to bottom,
+				      				  shade(@dark_button_hover_gradient_color_a, 1.1),
+                                      shade(@dark_button_hover_gradient_color_b, 1.1)
+                                      );
+}
+
+EmpathyRosterWindow.background .button:active {
+    background-image: linear-gradient(to bottom,
+                                  @dark_button_active_gradient_color_a,
+                                  @dark_button_active_gradient_color_b);
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+EmpathyRosterWindow.background .button:insensitive {
+    background-image: none;
+    background-color: @dark_insensitive_bg;
+    color: @dark_insensitive_fg_color;
+}
+
+EmpathyRosterView.list {
+    color: @theme_fg_color;
+}
+
+EmpathyPresenceChooser.combobox-entry .button:last-child,
+EmpathyPresenceChooser.combobox-entry .button:last-child:hover {
+    box-shadow: inset 0 1px alpha(@highlight, 0.2),
+				inset 1px 0 alpha(black, 0.5);
+}
+
+EmpathyPresenceChooser.combobox-entry .button:first-child,
+EmpathyPresenceChooser.combobox-entry .button:first-child:hover {
+    box-shadow: inset 0 1px alpha(@highlight, 0.2),
+				inset -1px 0 alpha(black, 0.5);
+}
+
+EmpathyPresenceChooser.combobox-entry .button,
+EmpathyPresenceChooser.combobox-entry .entry {
+    color: @dark_fg_color;
+    background-color: @dark_entry_bg_color;
+    border-image: -gtk-scaled(url("borders/generic-border-dark.png"),url("borders/generic-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+EmpathyPresenceChooser.combobox-entry .entry:active,
+EmpathyPresenceChooser.combobox-entry .entry:focus {
+    border-image: -gtk-scaled(url("borders/generic-border-focused-dark.png"),url("borders/generic-border-focused-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+EmpathyPresenceChooser.combobox-entry .button:insensitive, 
+EmpathyPresenceChooser.combobox-entry .entry:insensitive {
+    background-image: none;
+    background-color: @dark_insensitive_bg;
+    color: @dark_insensitive_fg_color;
+}
+
+EmpathyPresenceChooser.combobox-entry .button {
+    color: @dark_fg_color;
+    background-image: linear-gradient(to bottom, 
+                                      @dark_button_gradient_color_a, 
+                                      @dark_button_gradient_color_b);
+}
+
+/*
+ * Evince
+ */
+EvWindow.background EggFindBar.toolbar {
+    border-color: @dark_borders;
+}
+
+EvWindow.background EvToolbar {
+    border-bottom: 1px solid @dark_borders;
+}
+/*
+EvWindow.background  GtkOverlay GtkScrolledWindow {
+	border-width: 0 0 0 1px;
+}
+*/
+
+/*
+ * Contacts
+ */
+.toolbar.contacts-selection-toolbar,
+.toolbar.contacts-edit-toolbar {
+    border-color: @dark_borders;
+}
+
+LibraryWindow .bottom-toolbar.toolbar {
+    border-color: @dark_borders;
+}
+
+/*
+ * Gnome-Documents
+ */
+.toolbar .linked .documents-entry-tag.button,
+.toolbar .linked .documents-entry-tag.button:hover,
+.toolbar .linked .documents-entry-tag.button:active,
+.toolbar .linked .documents-entry-tag.button:active:hover {
+    background-color: transparent;
+    background-image: none;
+    border-image: none;
+    border-width: 0;
+    box-shadow: none;
+}
+
+.toolbar .linked .documents-entry-tag.button:hover {
+    color: shade(@entry_tag_bg, 2.10);
+}
+
+.toolbar .linked .documents-entry-tag.button:active,
+.toolbar .linked .documents-entry-tag.button:active:hover {
+    color: shade(@entry_tag_bg, 0.90);
+    box-shadow: inset 0px 1px 2px alpha(black,0.2);
+}
+
+/* Elementary Apps */
+
+/*********
+* Marlin *
+*********/
+
+MarlinViewChromeLocationBar .button.raised:focus {
+    background-image: none;
+}
+
+MarlinViewChromeLocationBar .button:active {
+    background-image: none;
+    background-color: alpha(black, 0.2);
+}
+
+/*********
+ * Panel *
+ ********/
+
+.panel {
+    background-color: transparent;
+}
+
+/****************
+ * Widgets      *
+ ****************/
+
+/*
+ * bottom toolbars
+ */
+.bottom-toolbar.toolbar {
+    border-color: @dark_borders;
+    box-shadow: inset 0 1px alpha(white, 0.15);
+    background-image: linear-gradient(to bottom,
+                                      shade(@dark_bg_color, 1.1),
+                                      shade(@dark_bg_color, 0.9));
+}
