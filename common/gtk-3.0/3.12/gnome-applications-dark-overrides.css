@@ -1,0 +1,83 @@
+@define-color documents_collection_bg #000000;
+
+/* gnome-documents */
+.documents-collection-icon {
+    background-color: @documents_collection_bg;
+    border-radius: 8px;
+}
+
+/* Epiphany */
+/*
+EphyToolbar .location-entry .button {
+    border-image-source: -gtk-scaled(url("borders/generic-border-dark.png"),url("borders/generic-border-dark@2.png"));
+}*/
+
+/* Nautilus */
+NautilusNotebook.notebook tab.top:active,
+NautilusNotebook.notebook tab.reorderable-page:active:hover {
+    /*border-left: 1px solid @borders;
+    border-right: 1px solid @borders;
+    border-bottom: 1px solid @borders;
+    border-top-width: 0px;*/
+    background-color: @wm_bg_b;
+    background-image: linear-gradient(to bottom,
+                                      @notebook_tab_gradient_a,
+                                      shade(@notebook_tab_gradient_b, 0.95));
+    box-shadow: none;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+NautilusNotebook.notebook.header {
+    border-width: 1px 0 1px 0;
+    border-bottom-color: shade(@borders, 1.2);
+    border-top-color: @borders;
+}
+
+/* Gedit */
+GeditStatusbar {
+    background-image: linear-gradient(to bottom,
+                                    shade(@theme_bg_color, 1.1),
+                                    shade(@theme_bg_color, 0.9));
+}
+
+/* Terminal */
+TerminalWindow .notebook tab.reorderable-page:active {
+	    background-image: linear-gradient(to bottom,
+                                        @metacity_bg_b,
+                                        shade(@notebook_tab_gradient_b, 1.1));
+}
+
+/* Baobab */
+.cell.baobab-level-cell,
+.cell.baobab-level-cell:hover,
+.cell.baobab-level-cell:selected,
+.cell.baobab-level-cell:selected:hover {
+    border-color: alpha(@theme_fg_color, 0.3);
+
+}
+
+GtkIconView.content-view.cell.check {
+    background-image: -gtk-scaled(url("assets/grid-selection-unchecked-dark.png"),url("assets/grid-selection-unchecked-dark@2.png"));
+    background-color: transparent;
+}
+
+GtkIconView.content-view.cell.check:active {
+    background-image: -gtk-scaled(url("assets/grid-selection-checked-dark.png"),url("assets/grid-selection-checked-dark@2.png"));
+    background-color: transparent;
+}
+/*
+ * Rhythmbox
+ */
+RBSource .toolbar {
+    background-color: @theme_bg_color;
+    border-style: none;
+    background-image: none;
+}
+
+/*
+ * bottom toolbars
+ */
+.bottom-toolbar.toolbar {
+    box-shadow: inset 0 1px alpha(white, 0.15);
+}

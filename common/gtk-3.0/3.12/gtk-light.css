@@ -1,0 +1,159 @@
+/* Default color scheme */
+@define-color theme_base_color #ffffff;
+@define-color theme_bg_color #F5F5F7; /*@define-color theme_bg_color #F3F3F5;*/
+@define-color theme_selected_bg_color #4080fb;
+@define-color theme_text_color #3c3c3e;
+@define-color theme_fg_color @theme_text_color;
+@define-color theme_selected_fg_color #ffffff;
+@define-color theme_unfocused_base_color @theme_base_color;
+@define-color theme_unfocused_fg_color @theme_fg_color;
+@define-color theme_unfocused_bg_color @theme_bg_color;
+
+@define-color placeholder_text_color shade(@text_color, 3.5);
+
+@define-color menu_bg_color shade(@theme_bg_color, 1.1);
+@define-color menu_fg_color @theme_fg_color;
+@define-color menubar_border @theme_bg_color;
+
+@define-color menu_separator mix(@menu_fg_color, @menu_bg_color, 0.9);
+
+@define-color inactive_frame_color @borders;
+
+@define-color sidebar_bg shade(#F3F3F5, 1.025);
+
+@define-color button_gradient_color_a #F4F4F4;
+@define-color button_gradient_color_b #E2E3E5;
+
+@define-color borders #b8b8b8;
+
+@define-color button_active_gradient_color_a #6a6a6c;
+@define-color button_active_gradient_color_b #949596;
+@define-color button_active_text @theme_selected_fg_color;
+@define-color button_active_text_shadow alpha(black, 0.4);
+@define-color button_text_shadow alpha(white, 1.0);
+
+@define-color button_hover_gradient_color_a @theme_base_color;
+@define-color button_hover_gradient_color_b shade (@button_gradient_color_a, 0.94);
+
+@define-color insensitive_bg_color #f4f4f4;
+@define-color insensitive_fg_color #a7a7a7;
+@define-color insensitive_borders shade(@borders, 1.1);
+
+@define-color highlight white;
+
+@define-color trough_bg_color_a #565759;
+@define-color trough_bg_color_b shade(@trough_bg_color_a, 1.1);
+
+@define-color infobar_bg_color #FCF8BD;
+@define-color infobar_fg_color alpha(@theme_fg_color, 0.8);
+@define-color infobar_text_shadow alpha(white, 0.7);
+
+@define-color scrollbar_trough shade(@theme_bg_color, 0.9);
+@define-color scrollbar_trough_insensitive shade(@theme_bg_color, 0.9);
+@define-color scrollbar_slider #8E8E90;
+@define-color scrollbar_slider_prelight mix(@scrollbar_trough, @theme_fg_color, 0.5);
+@define-color scrollbar_slider_active @theme_selected_bg_color;
+@define-color scrollbar_slider_insensitive alpha(black, 0); /* FIXME should be transparent */
+
+@define-color progressbar_background_a #53A9FE;
+@define-color progressbar_background_b #3D88FF;
+@define-color progressbar_border #404143;
+
+@define-color entry_background_a shade(@theme_base_color, 0.94);
+@define-color entry_background_b @theme_base_color;
+@define-color entry_bg_color @theme_base_color;
+
+@define-color entry_inset alpha(black, 0.1);
+
+@define-color internal_element_color @theme_fg_color;
+@define-color internal_element_prelight shade(@internal_element_color, 1.2);
+@define-color internal_element_insensitive mix(@internal_element_color, @theme_base_color, 0.7);
+
+@define-color scale_highlight_bg_a #525355;
+@define-color scale_highlight_bg_b #616264;
+
+@define-color notebook_tab_gradient_a @wm_bg_b;
+@define-color notebook_tab_gradient_b shade(@wm_bg_b, 0.98);
+
+@define-color toolbar_gradient_a shade(@theme_bg_color, 1.03);
+@define-color toolbar_gradient_b shade(@theme_bg_color, 0.98);
+
+@define-color toolbar_button_prelight alpha(white, 0.8);
+
+@define-color content_view_bg shade(@theme_base_color, 0.98);
+@define-color list_box_bg @content_view_bg;
+@define-color list_box_hover_bg shade(@list_box_bg, 0.93);
+
+@define-color app_notification_a shade(@wm_bg_a, 1.02);
+@define-color app_notification_b shade(@wm_bg_b, 1.05);
+
+@define-color app_notification_border @borders;
+
+@define-color suggested_action_button_a #6496F5;
+@define-color suggested_action_button_b #5A86DB;
+@define-color suggested_action_button_fg @theme_base_color;
+@define-color suggested_action_button_shadow alpha(black, 0.3);
+
+@define-color treeview_focus_border @theme_selected_bg_color;
+
+@define-color view_separators shade(@borders, 1.20);
+@define-color view_symbolic_color alpha(@internal_element_color, 0.80);
+
+@define-color expander_row_selected_color #acccee;
+
+@define-color inset_light_color alpha(white, 0.8);
+@define-color inset_dark_color alpha(black, 0.2);
+
+/**************************
+ * Selection Mode classes *
+ **************************/
+@define-color selection_toolbar_bg_a #6496F5;
+@define-color selection_toolbar_bg_b #5A86DB;
+
+@define-color selection_toolbar_fg @theme_selected_fg_color;
+@define-color selection_toolbar_shadow alpha(black, 0.3);
+@define-color selection_toolbar_border shade(@selection_toolbar_bg_b, 0.75);
+
+@define-color selection_toolbar_button_a shade(@selection_toolbar_bg_a, 1.05);
+@define-color selection_toolbar_button_b shade(@selection_toolbar_bg_b, 0.98);
+@define-color selection_toolbar_button_fg @theme_base_color;
+@define-color selection_toolbar_button_border alpha(black, 0.35);
+@define-color selection_toolbar_button_shadow alpha(black, 0.3);
+
+@define-color selection_toolbar_suggested_button_a @theme_base_color;
+@define-color selection_toolbar_suggested_button_b @theme_bg_color;
+@define-color selection_toolbar_suggested_button_fg @theme_text_color;
+@define-color selection_toolbar_suggested_button_border @selection_toolbar_button_border;
+
+@define-color selection_menu_fg @selection_toolbar_fg;
+
+/**************
+ * GNOME Apps *
+ **************/
+@define-color entry_tag_bg #3465a4;
+@define-color entry_tag_fg @theme_base_color;
+
+/* Terminal */
+@define-color terminal_bg shade(#3D3E40, 0.7);
+@define-color terminal_fg #ffffff;
+
+/******
+ * WM *
+ ******/
+@define-color wm_title @theme_fg_color;
+@define-color wm_unfocused_title alpha(@theme_fg_color, 0.7);
+@define-color wm_highlight #ffffff;
+@define-color wm_title_highlight #ffffff;
+@define-color wm_title_highlight_dark alpha(@theme_fg_color, 0.0);
+@define-color wm_title_shadow @wm_title_highlight;
+
+@define-color wm_bg_a #f7f7f7;
+@define-color wm_bg_b #EAEBED;
+@define-color metacity_bg_a @wm_bg_a;
+@define-color metacity_bg_b @theme_bg_color;
+
+@define-color wm_shadow alpha(black, 0.5);
+@define-color window_frame alpha(black, 0.3);
+@define-color wm_border #6d6d6d;
+
+@import url("gtk-main.css");

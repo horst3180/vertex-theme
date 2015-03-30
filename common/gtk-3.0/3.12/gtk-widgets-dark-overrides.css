@@ -1,0 +1,307 @@
+.button,
+GtkComboBox {
+    text-shadow: 0 -1px @button_text_shadow;
+}
+
+.button:active,
+GtkComboBox:active {
+    text-shadow: 0 -1px @button_active_text_shadow;
+}
+
+.button:active:insensitive,
+GtkComboBox:active:insensitive {
+    text-shadow: none;
+    color: @insensitive_fg_color;
+}
+
+.toolbar .button.raised,
+.toolbar .raised .button,
+.inline-toolbar .button {
+    text-shadow: 0 -1px @button_text_shadow;
+    icon-shadow: 0 -1px @button_text_shadow;
+}
+
+.toolbar .button.raised:active,
+.toolbar .raised .button:active,
+.inline-toolbar .button:active {
+    text-shadow: 0 -1px @button_active_text_shadow;
+    icon-shadow: 0 -1px @button_active_text_shadow;
+}
+
+.toolbar .button.raised:insensitive,
+.toolbar .raised .button:insensitive,
+.inline-toolbar .button:insensitive {
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+column-header.button,
+column-header .button {
+    text-shadow: none;
+}
+
+GtkTreeMenu .menuitem,
+.button .menuitem,
+.toolbar .button .menuitem {
+    text-shadow: none;
+}
+
+.spinbutton .button {
+    icon-shadow: none;
+}
+
+.button .separator,
+.button .separator:prelight {
+    color: alpha (@theme_text_color, 0.1);
+}
+
+.spinbutton.vertical .button {
+    icon-shadow: 0 -1px @button_text_shadow;
+}
+
+.spinbutton.vertical .button:active {
+    icon-shadow: 0 -1px @button_active_text_shadow;
+}
+
+GtkColorSwatch,
+GtkColorSwatch:selected,
+GtkColorSwatch:hover,
+GtkColorSwatch:selected:hover,
+GtkColorEditor GtkColorSwatch.color-dark:hover,
+GtkColorEditor GtkColorSwatch.color-light:hover {
+    border-color: @borders;
+    box-shadow: inset 0 2px alpha(black, 0.15), inset 1px 1px alpha(black, 0.15);
+}
+
+GtkColorSwatch.color-dark:hover {
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0) 40%,
+                                      alpha(white, 0.2)
+                                      );
+
+}
+
+GtkColorSwatch.color-light:hover {
+    background-image: linear-gradient(to top,
+                                      alpha(black, 0) 40%,
+                                      alpha(black, 0.3)
+                                      );
+
+}
+
+GtkColorChooserWidget #add-color-button,
+GtkColorChooserWidget #add-color-button:hover {
+    color: @theme_bg_color;
+}
+
+GtkColorEditor GtkColorSwatch.color-dark:hover,
+GtkColorEditor GtkColorSwatch.color-light:hover {
+    background-image: none;
+    border-color: @borders;
+}
+
+.selection-mode.header-bar .button,
+.selection-mode.header-bar .button:active,
+.selection-mode.toolbar .button,
+.selection-mode.toolbar .button:active,
+.selection-mode.toolbar GtkToolButton .button,
+.selection-mode.toolbar GtkToolButton .button:active {
+    text-shadow: 0 -1px @selection_toolbar_button_shadow;
+    icon-shadow: 0 -1px @selection_toolbar_button_shadow;
+}
+
+.selection-mode.header-bar .suggested-action.button,
+.selection-mode.header-bar .suggested-action.button:active,
+.selection-mode.toolbar .suggested-action.button,
+.selection-mode.toolbar .suggested-action.button:active,
+.selection-mode.toolbar GtkToolButton.suggested-action .button,
+.selection-mode.toolbar GtkToolButton.suggested-action:active {
+    text-shadow: 0 -1px @button_text_shadow;
+    icon-shadow: 0 -1px @button_text_shadow;
+}
+
+GtkPopover {
+    box-shadow: 0 2px 8px 3px alpha(@wm_shadow, 0.4);
+}
+
+.info,
+.question,
+.warning,
+.error {
+    text-shadow: 0 -1px @infobar_text_shadow;
+}
+
+.menubar {
+    text-shadow: 0 -1px @button_text_shadow;
+	background-color: @metacity_bg_b;
+}
+
+.cell:selected,
+.cell:selected:focus,
+.menu .menuitem:active,
+.menu .menuitem:hover,
+.sidebar .view.cell:selected,
+.sidebar .view.cell:selected:hover,
+.sidebar .view.cell:selected:focus {
+  background-image: linear-gradient(to top,
+                                  mix(@theme_selected_bg_color, @theme_base_color, 0.1),
+                                  mix(@theme_selected_bg_color, @theme_base_color, 0.3));
+}
+
+.menuitem.check,
+.menuitem.radio,
+.menuitem.check:hover,
+.menuitem.radio:hover,
+.menuitem.check:insensitive,
+.menuitem.radio:insensitive,
+.menuitem.check:active,
+.menuitem.radio:active {
+    background-color: transparent;
+}
+
+.spinbutton .button {
+    box-shadow: inset 0 1px @highlight,
+				inset 1px 0 @inset_dark_color;
+}
+
+.spinbutton.vertical.entry:insensitive {
+    border-color: shade(@insensitive_borders, 1.4);
+    box-shadow: inset 0 1px shade(@insensitive_borders, 1.4), 
+                inset 0 -1px shade(@insensitive_borders, 1.4);
+}
+
+.notebook tab GtkLabel {
+    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+    text-shadow: 0 -1px @button_text_shadow;
+}
+
+.notebook tab.top,
+.notebook tab.bottom {
+    border-image: linear-gradient(to bottom,
+                                  alpha(@borders, 1.0),
+                                  alpha(@borders, 0.0)
+                                  ) 0 1 0 1;
+}
+
+.notebook tab.top:active {
+    border-left: 1px solid shade(@borders, 1.1);
+    border-right: 1px solid shade(@borders, 1.1);
+	border-image: none;
+}
+
+.notebook tab.top:hover,
+.notebook tab.bottom:hover,
+.notebook tab.left:hover,
+.notebook tab.right:hover {
+    background-color: alpha(white, 0.03);
+}
+
+/* scale */
+
+.scale.trough.highlight:insensitive {
+    background-image: linear-gradient(to bottom,
+                                  shade(@scale_highlight_bg_b, 0.6),
+                                  shade(@scale_highlight_bg_b, 0.7));
+}
+
+.scale.trough.vertical.highlight:insensitive {
+    background-image: linear-gradient(to right,
+                                  shade(@scale_highlight_bg_b, 0.6),
+                                  shade(@scale_highlight_bg_b, 0.7));
+}
+
+.scale.trough:insensitive {
+    box-shadow: inset 0 1px 2px alpha(black, 0.1);
+    background-image: linear-gradient(to bottom,
+                                  shade(@button_active_gradient_color_a, 1.5),
+                                  shade(@button_active_gradient_color_a, 1.6));
+}
+
+.scale.trough.vertical:insensitive {
+    box-shadow: inset 1px 0 2px alpha(black, 0.1);
+    background-image: linear-gradient(to right,
+                                  shade(@button_active_gradient_color_a, 1.5),
+                                  shade(@button_active_gradient_color_a, 1.6));
+}
+
+/***************
+ * Search bars *
+ ***************/
+.search-bar {
+    box-shadow: inset 0 5px alpha(black, 0.02),
+				inset 0 4px alpha(black, 0.03),
+				inset 0 3px alpha(black, 0.04), 
+				inset 0 2px alpha(black, 0.05), 
+				inset 0 1px alpha(black, 0.06);
+    background-color: shade(@theme_bg_color, 0.9);
+}
+
+.search-bar.toolbar {
+  border-color: @borders;
+}
+
+/*******************
+ * Inline toolbars *
+ *******************/
+.action-bar,
+.inline-toolbar.toolbar {
+  background-image: linear-gradient(to bottom,
+                                    shade(@theme_bg_color, 1.05),
+                                    shade(@theme_bg_color, 0.9));
+}
+
+.inline-toolbar.toolbar.vertical {
+  background-image: linear-gradient(to right,
+                                    shade(@theme_bg_color, 1.05),
+                                    shade(@theme_bg_color, 0.9));
+}
+
+
+/********************
+ * Primary Toolbars *
+ ********************/
+.primary-toolbar .toolbar,
+.primary-toolbar.toolbar {
+  background-image: linear-gradient(to bottom,
+                                    @metacity_bg_b,
+                                    @metacity_bg_c);
+}
+
+/************
+ * Toolbars *
+ ************/
+.toolbar {
+    border-color: @dark_borders;
+    background-image: linear-gradient(to bottom,
+                                      @metacity_bg_b,
+                                      @metacity_bg_b);
+    background-color: @theme_bg_color;
+	color: @dark_fg_color;
+
+}
+
+/***************
+ * Header bars *
+ ***************/
+.header-bar {
+  background-image: linear-gradient(to bottom,
+                                    @metacity_bg_b,
+                                    @metacity_bg_c);
+}
+
+.titlebar {
+    text-shadow: 0 -1px @button_text_shadow;
+    background-image: linear-gradient(to bottom,
+                                      @wm_bg_a,
+                                      @wm_bg_b);
+}
+
+/**************************
+ * Selection Mode classes *
+ **************************/
+.selection-mode.header-bar {
+    border-bottom-color: shade(@selection_toolbar_border, 0.8);
+    box-shadow: inset 0 1px alpha(#90b6ff, 0.55);
+}
+
+

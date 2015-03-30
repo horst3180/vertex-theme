@@ -1,0 +1,342 @@
+/***************
+ * Resize grip *
+ ***************/
+
+.grip {
+    background-color: transparent;
+    background-image: url("assets/resize-grip.svg");
+}
+
+/*******************
+ * Pane separators *
+ *******************/
+.pane-separator {
+    background-image: url("assets/pane-separator-grip.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pane-separator:hover {
+    background-image: url("assets/pane-separator-grip-prelight.svg");
+}
+
+.pane-separator.vertical {
+    background-image: url("assets/pane-separator-grip-vertical.svg");
+}
+
+.pane-separator.vertical:hover {
+    background-image: url("assets/pane-separator-grip-vertical-prelight.svg");
+}
+
+/*************************
+ * Header bar separator  *
+ *************************/
+
+.toolbar .separator,
+.header-bar > GtkBox > .separator.vertical,
+.header-bar .separator {
+    -GtkWidget-wide-separators: 1;
+    -GtkWidget-separator-width: 9px;
+    background: transparent;
+    border-width: 0 4px 0 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("assets/header-separator.png"),url("assets/header-separator@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
+}
+
+.header-bar > GtkBox.left > .separator.vertical,
+.header-bar .left .separator,
+.header-bar > GtkBox.right:dir(rtl) > .separator.vertical,
+.header-bar .right:dir(rtl) .separator {
+    -GtkWidget-wide-separators: 1;
+    -GtkWidget-separator-width: 10px;
+    background: transparent;
+    border-width: 0 1px 0 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("assets/header-separator-left.png"),url("assets/header-separator-left@2.png")) 0 1 0 4 / 0 1px 0 4px stretch;
+}
+
+.selection-mode.header-bar > GtkBox > .separator.vertical,
+.selection-mode.toolbar .separator {
+    -GtkWidget-wide-separators: 1;
+    -GtkWidget-separator-width: 9px;
+    background: transparent;
+    border-width: 0 4px 0 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("assets/header-separator-selectionmode.png"),url("assets/header-separator-selectionmode@2.png")) 0 4 0 1 / 0 4px 0 1px stretch;
+}
+
+.selection-mode.header-bar > GtkBox.left > .separator.vertical,
+.selection-mode.header-bar > GtkBox.right:dir(rtl) > .separator.vertical {
+    -GtkWidget-wide-separators: 1;
+    -GtkWidget-separator-width: 10px;
+    background: transparent;
+    border-width: 0 1px 0 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("assets/header-separator-selectionmode-left.png"),url("assets/header-separator-selectionmode-left@2.png")) 0 1 0 4 / 0 1px 0 4px stretch;
+}
+
+/*************************
+ * Check and Radio items *
+ *************************/
+
+/* draw regular check and radio items using our SVG assets */
+GtkModelButton.button.check,
+.menuitem.check,
+.check,
+.cell.check {
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked.png"),url("assets/checkbox-unchecked@2.png"));
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cell.check:selected,
+.menuitem.check:hover,
+GtkModelButton.button.check:hover {
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked-selected.png"),url("assets/checkbox-unchecked-selected@2.png"));
+}
+
+GtkModelButton.button.check:insensitive,
+.menuitem.check:insensitive,
+.check:insensitive {
+    background-image: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"),url("assets/checkbox-unchecked-insensitive@2.png"));
+}
+
+.check row:insensitive {
+    background-color: transparent;
+}
+
+GtkModelButton.button.check:active,
+GtkModelButton.button.check:active:hover,
+.menuitem.check:active,
+.check:active,
+.cell.check:active {
+    background-image: -gtk-scaled(url("assets/checkbox-checked.png"),url("assets/checkbox-checked@2.png"));
+}
+
+.cell.check:active:selected,
+.menuitem.check:active:hover,
+GtkModelButton.button.check:active:hover {
+    background-image: -gtk-scaled(url("assets/checkbox-checked-selected.png"),url("assets/checkbox-checked-selected@2.png"));
+}
+
+GtkModelButton.button.check:active:insensitive,
+.menuitem.check:active:insensitive,
+.check:active:insensitive {
+    background-image: -gtk-scaled(url("assets/checkbox-checked-insensitive.png"),url("assets/checkbox-checked-insensitive@2.png"));
+}
+
+.check:inconsistent {
+    background-image: -gtk-scaled(url("assets/checkbox-mixed.png"),url("assets/checkbox-mixed@2.png"));
+}
+
+.cell.check:inconsistent:active:selected,
+.menuitem.check:inconsistent:active:hover,
+GtkModelButton.button.check:inconsistent:active:hover {
+    background-image: -gtk-scaled(url("assets/checkbox-mixed-selected.png"),url("assets/checkbox-mixed-selected@2.png"));
+}
+
+.check:inconsistent:insensitive {
+    background-image: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"),url("assets/checkbox-mixed-insensitive@2.png"));
+}
+
+GtkModelButton.button.radio,
+.radio,
+.menuitem.radio,
+.cell.radio {
+    background-image: -gtk-scaled(url("assets/radio-unchecked.png"),url("assets/radio-unchecked@2.png"));
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cell.radio:selected,
+.menuitem.radio:hover,
+GtkModelButton.button.radio:hover {
+    background-image: -gtk-scaled(url("assets/radio-unchecked-selected.png"),url("assets/radio-unchecked-selected@2.png"));
+}
+
+GtkModelButton.button.radio:insensitive,
+.menuitem.radio:insensitive,
+.radio:insensitive {
+    background-image: -gtk-scaled(url("assets/radio-unchecked-insensitive.png"),url("assets/radio-unchecked-insensitive@2.png"));
+}
+
+.radio row:insensitive {
+    background-color: transparent;
+}
+
+GtkModelButton.button.radio:active,
+GtkModelButton.button.radio:active:hover,
+.radio:active,
+.menuitem.radio:active,
+.cell.radio:active {
+    background-image: -gtk-scaled(url("assets/radio-checked.png"),url("assets/radio-checked@2.png"));
+}
+
+.cell.radio:active:selected,
+.menuitem.radio:active:hover,
+GtkModelButton.button.radio:active:hover {
+    background-image: -gtk-scaled(url("assets/radio-checked-selected.png"),url("assets/radio-checked-selected@2.png"));
+}
+
+GtkModelButton.button.radio:active:insensitive,
+.menuitem.radio:active:insensitive,
+.radio:active:insensitive {
+    background-image: -gtk-scaled(url("assets/radio-checked-insensitive.png"),url("assets/radio-checked-insensitive@2.png"));
+}
+
+.radio:inconsistent {
+    background-image: -gtk-scaled(url("assets/radio-mixed.png"),url("assets/radio-mixed@2.png"));
+}
+
+.cell.radio:inconsistent:active:selected,
+.menuitem.radio:inconsistent:active:hover,
+GtkModelButton.button.radio:inconsistent:active:hover {
+    background-image: -gtk-scaled(url("assets/radio-mixed-selected.png"),url("assets/radio-mixed-selected@2.png"));
+}
+
+.radio:inconsistent:insensitive {
+    background-image: -gtk-scaled(url("assets/radio-mixed-insensitive.png"),url("assets/radio-mixed-insensitive@2.png"));
+}
+
+/*********************
+ * GtkScale's slider *
+ *********************/
+.scale.slider {
+    background-image: -gtk-scaled(url("assets/slider.png"),url("assets/slider@2.png"));
+}
+
+.scale.slider:hover {
+    background-image: -gtk-scaled(url("assets/slider-hover.png"),url("assets/slider-hover@2.png"));
+}
+
+.scale.slider:active,
+.scale.slider:active:hover {
+    background-image: -gtk-scaled(url("assets/slider-active.png"),url("assets/slider-active@2.png"));
+}
+
+.scale.slider:insensitive,
+.scale.slider:insensitive:hover {
+    background-image: -gtk-scaled(url("assets/slider-insensitive.png"),url("assets/slider-insensitive@2.png"));
+}
+
+/********************************
+ * Touch text selection handles *
+ ********************************/
+.cursor-handle.bottom {
+    background-image: -gtk-scaled(url("assets/scale-slider-up-backdrop.png"),url("assets/scale-slider-up-backdrop@2.png"));
+}
+
+.cursor-handle.top {
+    background-image: -gtk-scaled(url("assets/scale-slider-down-backdrop.png"),url("assets/scale-slider-down-backdrop@2.png"));
+}
+
+/****************
+ * Content view *
+ ****************/
+.content-view.view {
+    background-image: url("assets/noise-texture-light.png");
+}
+
+/*Scrollbar*/
+.scrollbar.trough {
+    border-image: -gtk-scaled(url("assets/scrollbar-trough.png"),url("assets/scrollbar-trough@2.png"))  8 7 8 8 / 8px 7px 8px 8px;
+	border-width: 8px 7px 8px 8px;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.scrollbar.trough.horizontal {
+    border-image: -gtk-scaled(url("assets/scrollbar-trough-horizontal.png"),url("assets/scrollbar-trough-horizontal@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+	border-width: 8px 8px 7px 8px;
+}
+
+.scrollbar.slider {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider.png"),url("assets/scrollbar-slider@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
+	border-width: 8px 7px 8px 8px;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.scrollbar.slider.horizontal {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal.png"),url("assets/scrollbar-slider-horizontal@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+	border-width: 8px 8px 7px 8px;
+}
+
+.scrollbar.slider:insensitive,
+.scrollbar.slider:hover {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-hover.png"),url("assets/scrollbar-slider-hover@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
+}
+
+.scrollbar.slider.horizontal:insensitive,
+.scrollbar.slider.horizontal:hover {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-hover.png"),url("assets/scrollbar-slider-horizontal-hover@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+}
+
+.scrollbar.slider:active {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-active.png"),url("assets/scrollbar-slider-active@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
+}
+
+.scrollbar.slider.horizontal:active {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-active.png"),url("assets/scrollbar-slider-horizontal-active@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+}
+
+/*************
+ * GtkSwitch *
+ *************/
+GtkSwitch.trough {
+    background-image: -gtk-scaled(url("assets/switch.png"),url("assets/switch@2.png"));
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    color: transparent;
+    border-color: transparent;
+    border-image: none;
+    border-style: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+GtkSwitch.trough:active {
+    background-image: -gtk-scaled(url("assets/switch-active.png"),url("assets/switch-active@2.png"));
+}
+
+GtkSwitch.trough:insensitive {
+    background-color: transparent;
+    background-image: -gtk-scaled(url("assets/switch-insensitive.png"),url("assets/switch-insensitive@2.png"));
+}
+
+GtkSwitch.trough:active:insensitive {
+    background-image: -gtk-scaled(url("assets/switch-active-insensitive.png"),url("assets/switch-active-insensitive@2.png"));
+}
+
+GtkSwitch.slider {
+    background-image: -gtk-scaled(url("assets/switch-slider.png"),url("assets/switch-slider@2.png"));
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+GtkSwitch.slider:insensitive {
+    background-color: transparent;
+    background-image: -gtk-scaled(url("assets/switch-slider-insensitive.png"),url("assets/switch-slider-insensitive@2.png"));
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+.list-row GtkSwitch.trough {
+  background-image: -gtk-scaled(url("assets/switch-selected.png"),url("assets/switch-selected@2.png"));
+}
+
+.list-row GtkSwitch.trough:active {
+  background-image: -gtk-scaled(url("assets/switch-active-selected.png"),url("assets/switch-active-selected@2.png"));
+}
+
+.list-row GtkSwitch.trough:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-insensitive-selected.png"),url("assets/switch-insensitive-selected@2.png"));
+}
+
+.list-row GtkSwitch.trough:active:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive-selected.png"),url("assets/switch-active-insensitive-selected@2.png"));
+}
