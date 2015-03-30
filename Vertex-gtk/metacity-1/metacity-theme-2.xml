@@ -240,11 +240,24 @@
 	<image filename="min_pressed.svg" x="0" y="height/2-6" width="17" height="15"/>
 </draw_ops>
 
+<!--menu-->
+<draw_ops name="menu_focused">
+  <image filename="menu.svg" x="0" y="height/2-6" width="17" height="15"/>
+</draw_ops>
+
+<draw_ops name="menu_prelight">
+  <image filename="menu_prelight.svg" x="0" y="height/2-6" width="17" height="15"/>
+</draw_ops>
+
+<draw_ops name="menu_pressed">
+	<include name="menu_focused" />
+</draw_ops>
+
+<draw_ops name="menu_unfocused">
+  <image filename="menu_unfocused.svg" x="0" y="height/2-6" width="17" height="15"/>
+</draw_ops>
 
 <!--Todo-->
-<draw_ops name="menu_focused"></draw_ops>
-<draw_ops name="menu_focused_pressed"></draw_ops>
-<draw_ops name="menu_unfocused"></draw_ops>
 <draw_ops name="menu_unfocused_prelight"></draw_ops>
 <draw_ops name="menu_unfocused_pressed"></draw_ops>
 <draw_ops name="shade_focused"></draw_ops>
@@ -269,7 +282,8 @@
 	<button function="minimize" state="pressed" draw_ops="minimize_focused_pressed" />
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
-	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
 	<button function="unshade" state="normal" draw_ops="shade_focused" />
@@ -298,8 +312,8 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_unfocused_prelight"/>
 	<button function="minimize" state="pressed" draw_ops="minimize_unfocused_pressed"/>
 	<button function="menu" state="normal" draw_ops="menu_unfocused" />
-	<button function="menu" state="prelight" draw_ops="menu_unfocused_prelight" />
-	<button function="menu" state="pressed" draw_ops="menu_unfocused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
@@ -330,7 +344,8 @@
 	<button function="minimize" state="pressed" draw_ops="minimize_focused_pressed" />
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
-	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
 	<button function="unshade" state="normal" draw_ops="shade_focused" />
@@ -359,8 +374,8 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_unfocused_prelight"/>
 	<button function="minimize" state="pressed" draw_ops="minimize_unfocused_pressed"/>
 	<button function="menu" state="normal" draw_ops="menu_unfocused" />
-	<button function="menu" state="prelight" draw_ops="menu_unfocused_prelight" />
-	<button function="menu" state="pressed" draw_ops="menu_unfocused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
@@ -390,7 +405,8 @@
 	<button function="minimize" state="pressed" draw_ops="minimize_focused_pressed" />
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
-	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
 	<button function="unshade" state="normal" draw_ops="shade_focused" />
@@ -418,8 +434,8 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_unfocused_prelight"/>
 	<button function="minimize" state="pressed" draw_ops="minimize_unfocused_pressed"/>
 	<button function="menu" state="normal" draw_ops="menu_unfocused" />
-	<button function="menu" state="prelight" draw_ops="menu_unfocused_prelight" />
-	<button function="menu" state="pressed" draw_ops="menu_unfocused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
@@ -450,7 +466,8 @@
 	<button function="minimize" state="pressed" draw_ops="minimize_focused_pressed" />
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
-	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
 	<button function="unshade" state="normal" draw_ops="shade_focused" />
@@ -479,8 +496,8 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_unfocused_prelight"/>
 	<button function="minimize" state="pressed" draw_ops="minimize_unfocused_pressed"/>
 	<button function="menu" state="normal" draw_ops="menu_unfocused" />
-	<button function="menu" state="prelight" draw_ops="menu_unfocused_prelight" />
-	<button function="menu" state="pressed" draw_ops="menu_unfocused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal"><draw_ops></draw_ops></button>
 	<button function="shade" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unshade" state="normal"><draw_ops></draw_ops></button>
@@ -509,7 +526,8 @@
 	<button function="minimize" state="pressed" draw_ops="minimize_focused_pressed" />
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
-	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
 	<button function="unshade" state="normal" draw_ops="shade_focused" />
@@ -537,8 +555,8 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_unfocused_prelight"/>
 	<button function="minimize" state="pressed" draw_ops="minimize_unfocused_pressed"/>
 	<button function="menu" state="normal" draw_ops="menu_unfocused" />
-	<button function="menu" state="prelight" draw_ops="menu_unfocused_prelight" />
-	<button function="menu" state="pressed" draw_ops="menu_unfocused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
@@ -569,7 +587,8 @@
 	<button function="minimize" state="pressed" draw_ops="minimize_focused_pressed" />
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
-	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
 	<button function="unshade" state="normal" draw_ops="shade_focused" />
@@ -598,8 +617,8 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_unfocused_prelight"/>
 	<button function="minimize" state="pressed" draw_ops="minimize_unfocused_pressed"/>
 	<button function="menu" state="normal" draw_ops="menu_unfocused" />
-	<button function="menu" state="prelight" draw_ops="menu_unfocused_prelight" />
-	<button function="menu" state="pressed" draw_ops="menu_unfocused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
