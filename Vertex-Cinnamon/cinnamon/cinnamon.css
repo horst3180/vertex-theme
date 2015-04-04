@@ -26,6 +26,7 @@ stage {
  * ===================================================================*/
 StScrollBar {
   padding: 0px;
+  padding-right: 13px;
 }
 
 StScrollView.vfade {
@@ -69,11 +70,11 @@ StScrollBar StButton#vhandle:active {
  * Tooltip
  * ===================================================================*/
 #Tooltip {
-  border-radius: 3px;
+  border-radius: l3px;
   padding: 5px 12px;
   background-color: rgba(0,0,0,0.75);
   font-size: 1em;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -103,7 +104,7 @@ StScrollBar StButton#vhandle:active {
 .notification-icon-button:focus,
 .modal-dialog-button:focus {
   background: none;
-  border: 2px solid;
+  border: 1px solid;
   border-image: url('buttons/button-border-focused.svg') 4;
 }
 
@@ -129,12 +130,12 @@ StScrollBar StButton#vhandle:active {
 .popup-menu {
   color: white;
   min-width: 200px;
-  border-image: url("menu.png") 12 12 12 12;
+  border-image: url("menu/menu.svg") 10 10 35 14;
 }
 
 .popup-submenu-menu-item:open {
   background-color: rgba(0,0,0,0.0);
-  border-image: url("submenu-open.svg") 6 6 2 2;
+  border-image: url("menu/submenu-open.svg") 8 8 2 2;
 }
 
 .popup-sub-menu {
@@ -142,7 +143,7 @@ StScrollBar StButton#vhandle:active {
   background-gradient-end: rgba(0,0,0,0.0);
   background-gradient-direction: vertical;
   box-shadow: none;
-  border-image: url("submenu.svg") 6 6 2 2;
+  border-image: url("menu/submenu.svg") 8 8 2 2;
 }
 
 .popup-sub-menu .popup-menu-item:ltr {
@@ -185,7 +186,7 @@ StScrollBar StButton#vhandle:active {
 
 .popup-menu-item:active {
   background-color: rgba(0,0,0,0.0);
-  border-image: url("menu-active.svg") 6 6 2 2;
+  border-image: url("menu/menu-hover.svg") 7 7 1 1;
 }
 
 .popup-menu-item:insensitive {
@@ -205,7 +206,7 @@ StScrollBar StButton#vhandle:active {
   -gradient-end: rgba(0,0,0,0.0);
   -margin-horizontal: 24px;
   height: 2px;
-  border-image: url("menu-separator.png");
+  border-image: url("menu/menu-separator.svg");
   padding: 5px 0px;
 }
 
@@ -214,14 +215,19 @@ StScrollBar StButton#vhandle:active {
 }
 
 .popup-slider-menu-item {
-  height: 20px;
-  -slider-height: 3px;
-  -slider-background-color: rgba(0,0,0,0.2);
-  -slider-border-color: rgba(0,0,0,0.3);
-  -slider-active-background-color: rgba(64,128,251,1.0);
-  -slider-active-border-color: rgba(0,0,0,0.7);
-  -slider-border-width: 1px;
-  -slider-handle-radius: 1px;
+  -slider-height: 4px;
+  -slider-background-color: transparent;
+  -slider-border-color: transparent;
+  -slider-active-background-color: #4080fb;
+  -slider-active-border-color: transparent;
+  -slider-border-width: 0;
+  -slider-handle-radius: 4px;
+  height: 18px;
+	min-width: 15em;
+  border: 0 solid transparent;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-image: url("misc/slider.svg") 8;
   color: transparent;
 }
 
@@ -254,20 +260,14 @@ StScrollBar StButton#vhandle:active {
   height: 25px;
 }
 
-.toggle-switch-us {
-  background-image: url("toggle-off-us.svg");
-}
-
-.toggle-switch-us:checked {
-  background-image: url("toggle-on-us.svg");
-}
-
+.toggle-switch-us,
 .toggle-switch-intl {
-  background-image: url("toggle-off-intl.svg");
+  background-image: url("switch/switch-off.svg");
 }
 
+.toggle-switch-us:checked,
 .toggle-switch-intl:checked {
-  background-image: url("toggle-on-intl.svg");
+  background-image: url("switch/switch-on.svg");
 }
 
 /* ===================================================================
@@ -324,14 +324,14 @@ StScrollBar StButton#vhandle:active {
 }
 
 .panel-top {
-  border-image: url("panel-top.svg") 2;
+  border-image: url("panel/panel-top.svg") 2;
   color: white;
   font-size: 1em;
   padding: 0px;
 }
 
 .panel-bottom {
-  border-image: url("panel-bottom.svg") 2;
+  border-image: url("panel/panel-bottom.svg") 2;
   color: white;
   font-size: 1em;
   padding: 0px;
@@ -485,20 +485,20 @@ StScrollBar StButton#vhandle:active {
 }
 
 .workspace-add-button {
-	background-image: url("add-workspace.svg");
+	background-image: url("misc/add-workspace.svg");
 	height: 200px;
 	width: 35px;
 	transition-duration: 200;
 }
 
 .workspace-add-button:hover {
-	background-image: url("add-workspace-hover.svg");
+	background-image: url("misc/add-workspace-hover.svg");
 	transition-duration: 200;
 }
 
 .workspace-close-button,
 .window-close {
-  background-image: url("close-window.svg");
+  background-image: url("misc/close-window.svg");
   height: 32px;
   width: 32px;
   -cinnamon-close-overlap: 16px;
@@ -506,12 +506,12 @@ StScrollBar StButton#vhandle:active {
 
 .workspace-close-button:hover,
 .window-close:hover {
-    background-image: url("close-window-hover.svg");
+    background-image: url("misc/close-window-hover.svg");
 }
 
 .workspace-close-button:active,
 .window-close:active {
-    background-image: url("close-window-active.svg");
+    background-image: url("misc/close-window-active.svg");
 }
 /*
 .workspace-thumbnail-indicator {
@@ -524,7 +524,7 @@ StScrollBar StButton#vhandle:active {
 }
 */
 .window-close-area {
-	background-image: url("trash-icon.svg");
+	background-image: url("misc/trash-icon.svg");
 	height: 120px;
 	width: 400px;
 }
@@ -544,95 +544,55 @@ StScrollBar StButton#vhandle:active {
 }
 
 /* ===================================================================
- * Looking Glass 
+ * About Dialog (applet.js and desklet.js)
  * ===================================================================*/
-#LookingGlassDialog {
-	background-color: rgba(85,85,85,0.85);
-	spacing: 4px;
-	padding: 4px;
-	border: 2px solid grey;
-	border-radius: 4px;
-	color: #CCCCCC;
+.about-content {
+  width: 550px;
+  height: 250px;
+  spacing: 8px;
+  padding-bottom: 10px;
 }
-#LookingGlassDialog > #Toolbar {
-	border: 1px solid grey;
-	border-radius: 4px;
+
+.about-title {
+  font-size: 2em;
+  font-weight: bold;
 }
-#LookingGlassDialog .labels {
-	spacing: 4px;
+
+.about-uuid {
+  font-size: 10px;
+  color: #888;
 }
-#LookingGlassDialog .notebook-tab {
-	padding: 2px;
+
+.about-icon {
+  padding-right: 20px;
+  padding-bottom: 14px;
 }
-#LookingGlassDialog .notebook-tab:hover {
-	color: #FFFFFF;
+
+.about-scrollBox {
+  border: 1px solid #171819;
+  border-radius: 2px;
+  background-color: #2B2B2C;
+  padding: 4px;
+  padding-right: 0;
+  border-radius: 0;
 }
-#LookingGlassDialog .notebook-tab:selected {
-	border: 1px solid #CCCCCC;
-	border-radius: 4px;
-	padding: 5px;
+
+.about-scrollBox-innerBox {
+  padding: 1.2em;
+  spacing: 1.2em;
 }
-#LookingGlassDialog .lg-inspector-title {
-	font-weight: bold;
-	padding-bottom: 8px;
+
+.about-description {
+  padding-top: 4px;
+  padding-bottom: 16px;
 }
-.lg-dialog StLabel {
-	color: #cccccc;
+
+.about-version {
+  padding-left: 7px;
+  font-size: 10px;
+  color: #888;
 }
-.lg-dialog StEntry {
-	color: #cccccc;
-	selection-background-color: #cccccc;
-	selected-color: black;
-}
-.lg-obj-inspector-title {
-	spacing: 4px;
-}
-.lg-obj-inspector-button {
-	border: 1px solid #cccccc;
-	padding: 4px;
-	border-radius: 4px;
-}
-.lg-obj-inspector-button:hover {
-	border: 1px solid #ffffff;
-}
-.lg-dialog .cinnamon-link {
-	color: #cccccc;
-}
-.lg-dialog .cinnamon-link:hover {
-	color: #ffffff;
-}
-#LookingGlassDialog StBoxLayout#EvalBox {
-	padding: 4px;
-	spacing: 4px;
-}
-#LookingGlassDialog StBoxLayout#ResultsArea {
-	spacing: 4px;
-}
-#lookingGlassExtensions {
-	padding: 4px;
-}
-.lg-extension-list {
-	padding: 4px;
-	spacing: 6px;
-}
-.lg-extension {
-	border: 1px solid #6f6f6f;
-	border-radius: 4px;
-	padding: 4px;
-}
-.lg-extension-name {
-	font-weight: bold;
-}
-.lg-extension-meta {
-	spacing: 6px;
-}
-#LookingGlassPropertyInspector {
-	background: rgba(0, 0, 0, 0.9);
-	border: 2px solid grey;
-	border-radius: 4px;
-	padding: 6px;
-	color: #cccccc;
-}
+
 /* ===================================================================
  * Date applet 
  * ===================================================================*/
@@ -643,22 +603,20 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-month-label {
-  color: white;
-  font-size: 1em;
+  color: #e5e5e9;
   font-weight: bold;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding: 8px 0;
 }
 
 .calendar-change-month-back {
   width: 16px;
   height: 16px;
-  background-image: url("calendar-arrow-left.svg");
+  background-image: url("misc/calendar-arrow-left.svg");
   border-radius: 2px;
 }
 
 .calendar-change-month-back:rtl {
-  background-image: url("calendar-arrow-right.svg");
+  background-image: url("misc/calendar-arrow-right.svg");
 }
 
 .calendar-change-month-back:hover {
@@ -672,12 +630,12 @@ StScrollBar StButton#vhandle:active {
 .calendar-change-month-forward {
   width: 16px;
   height: 16px;
-  background-image: url("calendar-arrow-right.svg");
+  background-image: url("misc/calendar-arrow-right.svg");
   border-radius: 2px;
 }
 
 .calendar-change-month-forward:rtl {
-  background-image: url("calendar-arrow-left.svg");
+  background-image: url("misc/calendar-arrow-left.svg");
 }
 
 .calendar-change-month-forward:hover {
@@ -697,85 +655,49 @@ StScrollBar StButton#vhandle:active {
 }
 
 .calendar-day-base {
-  font-size: 1em;
-  text-align: center;
-  width: 2.4em;
-  height: 2.4em;
-}
-
-.calendar-day-base:hover {
-  background-color: rgba(255, 255, 255, .08);
-}
-
-.calendar-day-base:active {
-  font-size: 1em;
-  background-color: rgba(255, 255, 255, .04);
-  color: white;
+    font-size: 80%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    padding: 0.1em;
+    margin: 2px;
+    border-radius: 12.5px;
 }
 
 .calendar-day-heading {
-  color: #ABABAB;
-  padding-top: 1em;
+    color: rgba(243, 243, 245, 0.75);
+    margin-top: 1em;
+    font-size: 70%;
 }
 
-.calendar-week-number {
-  color: #ABABAB;
+.calendar-day {
+    border-width: 0;
+    color: rgba(243, 243, 245, 0.9);
 }
 
-/* Hack used in lieu of border-collapse - see calendar.js */
-.calendar-day:ltr {
-  border: 1px solid rgba(0, 0, 0, .6);
-  color: white;
-  border-top-width: 0;
-  border-left-width: 0;
+.calendar-day-top {
+    border-top-width: 0;
 }
 
-.calendar-day-top:ltr {
-  border-top-width: 1px;
-}
-
-.calendar-day-left:ltr {
-  border-left-width: 1px;
-}
-
-.calendar-day:rtl {
-  border: 1px solid rgba(0, 0, 0, .6);
-  color: white;
-  border-top-width: 0;
-  border-right-width: 0;
-}
-
-.calendar-day-top:rtl {
-  border-top-width: 1px;
-}
-
-.calendar-day-left:rtl {
-  border-right-width: 1px;
-}
-
-.calendar-work-day {
-  background-color: rgba(0, 0, 0, .35);
+.calendar-day-left {
+    border-left-width: 0;
 }
 
 .calendar-nonwork-day {
-  background-color: rgba(0, 0, 0, .2);
+    color: #ffffff;
+    background-color: transparent;
+    font-weight: bold;
 }
 
 .calendar-today {
-  background-image: url("calendar-today.svg");
-  text-shadow: black 0px 2px 2px;
-  color: #ffffff;
-  font-weight: bold;
+    font-weight: bold;
+    border: 0px solid rgba(64, 128, 251, 0.5);
+    background-image: url("misc/calendar-today.svg");
 }
 
 .calendar-other-month-day {
-  color: #888888;
-  background-color: rgba(64, 64, 64, .5);
-}
-
-.calendar-day-with-events {
-  font-weight: bold;
-  color: #cccccc;
+    color: #949496;
+    opacity: 0.5;
 }
 
 /* ===================================================================
@@ -783,10 +705,8 @@ StScrollBar StButton#vhandle:active {
  * ===================================================================*/
 #notification {
   border-radius: 3px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background-color: rgba(0,0,0,0.8);
-  box-shadow: inset 0px 1px 2px 2px rgba(0,0,0,0.1);
-  padding: 8px 8px 8px 8px;
+  border-image: url("misc/notification.svg") 10 10 11 12;
+  padding: 13px;
   spacing-rows: 10px;
   spacing-columns: 10px;
   margin-from-right-edge-of-screen: 20px;
@@ -794,8 +714,12 @@ StScrollBar StButton#vhandle:active {
   color: white;
 }
 
+.popup-menu #notification {
+  border-image: url("misc/message.svg") 10 10 11 12;
+}
+
 #notification.multi-line-notification {
-  padding-bottom: 8px;
+  padding-bottom: 13px;
   color: white;
 }
 
@@ -866,11 +790,11 @@ StScrollBar StButton#vhandle:active {
   box-shadow: none;
   background: none;
   background-gradient-direction: none;
-  border-image: url("entry-border.svg") 4;
+  border-image: url("entry/entry-border.svg") 4;
 }
 
 #notification StEntry:focus {
-  border-image: url("entry-border-focused.svg") 4;
+  border-image: url("entry/entry-border-focused.svg") 4;
   color: white;
 }
 
@@ -886,9 +810,10 @@ StScrollBar StButton#vhandle:active {
   color: white;
   background: none;
   border: none;
-  border-image: url("menu.png") 12;
+  border-image: url("menu/menu.svg") 10 10 35 14;
   border-radius: 5px;
   padding: 20px;
+  padding-bottom: 25px;
 }
 
 .switcher-list-item-container {
@@ -917,11 +842,11 @@ StScrollBar StButton#vhandle:active {
 
 .switcher-list .item-box:outlined {
   padding: 6px;
-  border-image: url("entry-border.svg") 3;
+  border-image: url("entry/entry-border.svg") 3;
 }
 
 .switcher-list .item-box:selected {
-  border-image: url("entry-border.svg") 3;
+  border-image: url("entry/entry-border.svg") 3;
 }
 
 .switcher-list .thumbnail-box {
@@ -941,12 +866,12 @@ StScrollBar StButton#vhandle:active {
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("corner-ripple-ltr.svg");
+  background-image: url("misc/corner-ripple-ltr.svg");
   background-size: contain;
 }
 
 .ripple-box:rtl {
-  background-image: url("corner-ripple-rtl.svg");
+  background-image: url("misc/corner-ripple-rtl.svg");
 }
 
 .switcher-arrow {
@@ -969,16 +894,29 @@ StScrollBar StButton#vhandle:active {
 .modal-dialog {
   border-radius: 3px;
   background-color: rgba(0.0, 0.0, 0.0, 0.0);
-  border-image: url("modal.png") 12 12 12 12;
-  color: white;
-  padding-right: 42px;
-  padding-left: 42px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  border-image: url("misc/modal.svg") 10 10 35 14;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-bottom: 8px;
+  padding-top: 0px;
 }
 
-.modal-dialog-button-box {
-  spacing: 21px;
+.modal-dialog > * {
+  padding: 14px;
+  border-radius: 0px;
+}
+
+.modal-dialog > .modal-dialog-button-box {
+  spacing: 0px;
+  margin: 0px;
+  padding: 12px 24px;
+  background-gradient-start: #37393b;
+  background-gradient-end: #29292b;
+  background-gradient-direction: vertical;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.13);
+  border: solid 0px rgba(0,0,0,0.5);
+  border-top: 1px;
+  border-radius: 0px 0px 3px 3px;
 }
 
 .modal-dialog-button {
@@ -989,10 +927,6 @@ StScrollBar StButton#vhandle:active {
 
 .modal-dialog-button:disabled {
   color: #9f9f9f;
-}
-
-.modal-dialog-button:focus {
-  padding: 3px 31px 4px;
 }
 
 /* ===================================================================
@@ -1031,7 +965,7 @@ StScrollBar StButton#vhandle:active {
   box-shadow: none;
   background: none;
   background-gradient-direction: none;
-  border-image: url("entry-border-focused.svg") 4;
+  border-image: url("entry/entry-border-focused.svg") 4;
 }
 
 .run-dialog {
@@ -1039,6 +973,17 @@ StScrollBar StButton#vhandle:active {
   padding-left: 25px;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+.run-dialog .modal-dialog-button-box {
+  border: none;
+  box-shadow: none;
+  background: none;
+  background-gradient-direction: none;
+}
+
+.run-dialog > * {
+  padding: 0px;
 }
 
 .lightbox {
@@ -1210,7 +1155,7 @@ StScrollBar StButton#vhandle:active {
 .menu-favorites-box {
   margin: auto;
   padding: 10px;
-  border-image: url("entry-border.svg") 3;
+  border-image: url("entry/entry-border.svg") 3;
   transition-duration: 300;
 }
 
@@ -1368,12 +1313,12 @@ StScrollBar StButton#vhandle:active {
   caret-size: 1px;
   selected-color: white;
   selection-background-color: #4080FB;
-  border-image: url("entry-border.svg") 4;
+  border-image: url("entry/entry-border.svg") 4;
 }
 
 #menu-search-entry:focus,
 #menu-search-entry:hover {
-  border-image: url("entry-border-focused.svg") 4;
+  border-image: url("entry/entry-border-focused.svg") 4;
   color: white;
 }
 
@@ -1399,7 +1344,7 @@ StScrollBar StButton#vhandle:active {
  * Window list (windowList.js)
  * ===================================================================*/
 .window-list-box {
-  spacing: 3px;
+  spacing: 6px;
   padding-left: 10px;
   padding-top: 1px;
 }
@@ -1411,11 +1356,12 @@ StScrollBar StButton#vhandle:active {
 }
 
 .window-list-item-box {
-  border-image: url("window-list-button.svg") 3 3 3 3;
+  font-weight: bold;
+  border-image: url("panel/panel-button-border.svg") 3;
   background-image: none;
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
+  color: rgba(255,255,255, 0.5);
+  padding-left: 8px;
+  padding-right: 8px;
   transition-duration: 100;
 }
 
@@ -1424,12 +1370,13 @@ StScrollBar StButton#vhandle:active {
 .window-list-item-box:checked,
 .window-list-item-box:checked:hover,
 .window-list-item-box:focus,
-.window-list-item-box:focus:hover	{ 
-  border-image: url("window-list-button-active.svg") 3 3 3 3;
+.window-list-item-box:focus:hover	{
+  color: rgba(255,255,255, 1.0);
+  border-image: url("panel/panel-button-border-active.svg") 3;
 }
 
 .window-list-item-box:hover	{ 
-  border-image: url("window-list-button-hover.svg") 3 3 3 3;
+  border-image: url("panel/panel-button-border-hover.svg") 3;
 }
 
 .window-list-item-demands-attention {
@@ -1496,7 +1443,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 .sound-seek-box StLabel {
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 .sound-seek-box StIcon {
@@ -1542,11 +1489,11 @@ StScrollBar StButton#vhandle:active {
 }
 
 .workspace-button:outlined {
-  border-image: url("window-list-button-active.svg") 4;
+  border-image: url("panel/panel-button-border-active.svg") 3;
 }
 
 .workspace-button:hover {
-  border-image: url("window-list-button-hover.svg") 4;
+  border-image: url("panel/panel-button-border-hover.svg") 3;
 }
 
 /* ===================================================================
@@ -1597,12 +1544,12 @@ StScrollBar StButton#vhandle:active {
   box-shadow: none;
   background: none;
   background-gradient-direction: none;
-  border-image: url("entry-border.svg") 4;
+  border-image: url("entry/entry-border.svg") 4;
 }
 
 .panel-launcher-add-dialog-entry:focus,
 .panel-launcher-add-dialog-entry:hover {
-  border-image: url("entry-border-focused.svg") 4;
+  border-image: url("entry/entry-border-focused.svg") 4;
 }
 
 .panel-launcher-add-dialog-entry:hover {
@@ -1619,23 +1566,23 @@ StScrollBar StButton#vhandle:active {
  * Overview corner
  * ===================================================================*/
 #overview-corner {
-  background-image: url("overview.png");
+  background-image: url("misc/overview.png");
 }
 
 #overview-corner:hover {
-  background-image:	url("overview-hover.png");
+  background-image:	url("misc/overview-hover.png");
 }
 
 /* ===================================================================
  * Applets (applet.js) 
  * ===================================================================*/
 .applet-separator {
-  padding: 5px 4px;
+  padding: 1px 4px;
 }
 
 .applet-separator-line {
   width: 1px;
-  background: rgba(255,255,255,.2);
+  background: rgba(255,255,255, 0.08);
 }
 
 .applet-box {
@@ -1648,7 +1595,7 @@ StScrollBar StButton#vhandle:active {
 
 .applet-box:hover {
   color: #fff;
-  border-image: url("panel-button-border-hover.svg") 6 10 0 2;
+  border-image: url("panel/panel-button-border-hover.svg") 6 10 0 2;
 }
 
 .applet-label {	
@@ -1674,35 +1621,53 @@ StScrollBar StButton#vhandle:active {
 }
 
 /* ===================================================================
+ * User Applet
+ * ===================================================================*/
+.user-icon {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.user-label {
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+/* ===================================================================
  * Desklets (desklet.js) 
  * ===================================================================*/
 .desklet {        
   color: #fff;    
-  /*border-image: url("menu.png") 12 12 12 12;
+  /*border-image: url("menu/menu.svg") 10 10 35 14;
   padding: 12px;
   padding-bottom: 16px;*/
 }
 
 .desklet-with-borders,
 .photoframe-box {
-  border-image: url("menu.png") 12 12 12 12;
+  border-image: url("menu/menu.svg") 10 10 35 14;
   color: #fff;
   padding: 12px;
   padding-bottom: 16px;
 }
 
 .desklet-with-borders-and-header {
-  border-image: url("desklet.png") 12 12 12 12;
+  border-image: url("misc/desklet.svg") 10 10 0 14;
   color: #fff;
 	border-radius: 0;
 	border-radius-topleft: 0;
 	border-radius-topright: 0;
   padding: 12px;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 }
 
 .desklet-header { 
-  border-image: url("desklet-header.png") 32 32 12 12;
+  border-image: url("misc/desklet-header.svg") 10 10 22 2;
   color: #fff;
   font-size: 1em;
 	padding: 12px;
@@ -1754,19 +1719,19 @@ StScrollBar StButton#vhandle:active {
 .check-box StBin {
   width: 16px;
   height: 16px;
-  background-image: url("checkbox-unchecked.svg");
+  background-image: url("checkbox/checkbox-unchecked.svg");
 }
 
 .check-box:focus StBin {
-  background-image: url("checkbox-unchecked-focused.svg");
+  background-image: url("checkbox/checkbox-unchecked-focused.svg");
 }
 
 .check-box:checked StBin {
-  background-image: url("checkbox-checked.svg");
+  background-image: url("checkbox/checkbox-checked.svg");
 }
 
 .check-box:focus:checked StBin {
-  background-image: url("checkbox-checked-focused.svg");
+  background-image: url("checkbox/checkbox-checked-focused.svg");
 }
 
 .check-box StLabel {
@@ -1782,20 +1747,20 @@ StScrollBar StButton#vhandle:active {
 .radiobutton StBin {
   width: 22px;
   height: 22px;
-  background-image: url("radiobutton-off.svg");
+  background-image: url("misc/radiobutton-off.svg");
   border-radius: 15px;
 }
 
 .radiobutton:focus StBin {
-  background-image: url("radiobutton-off.svg");
+  background-image: url("misc/radiobutton-off.svg");
 }
 
 .radiobutton:checked StBin {
-  background-image: url("radiobutton.svg");
+  background-image: url("misc/radiobutton.svg");
 }
 
 .radiobutton:focus:checked StBin {
-  background-image: url("radiobutton.svg");
+  background-image: url("misc/radiobutton.svg");
 }
 
 .radiobutton StLabel {
@@ -1811,12 +1776,10 @@ StScrollBar StButton#vhandle:active {
 /* ===================================================================
  * Snap/Tile OSD Popup
  * ===================================================================*/
-/*FIXME*/
 .snap-osd {
-  font-size: 18pt;
+  font-size: 16pt;
   border-radius: 24px;
-  background-color: rgba(85, 85, 85, 0.9);
-  border: 2px solid #868686;
+  border-image: url("misc/notification.svg") 10 10 11 12;
   color: white;
   padding-right: 20px;
   padding-left: 20px;
@@ -1843,7 +1806,7 @@ StScrollBar StButton#vhandle:active {
 /*FIXME*/
 .forecast {
   padding-bottom: 4px;
-  border-image: url("menu-active.svg") 6 6 2 2;
+  border-image: url("menu/menu-hover.svg") 7 7 1 1;
 }
 
 .weather-current-location-link:selected,

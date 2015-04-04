@@ -1,0 +1,26 @@
+*************
+* Important *
+*************
+This file fixes the issues of Ubuntu-Software-Center with the Vertex-Dark theme. Only install this if you are using Vertex-Dark
+
+****************
+* Installation *
+****************
+Backup the original folder and name it "software-center.backup"
+
+'sudo cp -r /usr/share/software-center /usr/share/software-center.backup'
+
+Copy the softwarecenter.css file in this directory to /usr/share/software-center/ui/gtk3/css/ 
+
+'sudo cp softwarecenter.css /usr/share/software-center/ui/gtk3/css/softwarecenter.css'
+
+Start/Restart the Ubuntu-Software-Center
+
+*************
+* Uninstall *
+*************
+Revert the changes with
+
+'sudo rm -r /usr/share/software-center && mv /usr/share/software-center.backup /usr/share/software-center'
+
+

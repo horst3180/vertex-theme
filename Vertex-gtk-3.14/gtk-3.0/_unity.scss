@@ -1,0 +1,64 @@
+// Decorations
+UnityDecoration {
+  -UnityDecoration-extents: 28px 1 1 1;
+  -UnityDecoration-input-extents: 10px;
+
+  -UnityDecoration-shadow-offset-x: 1px;
+  -UnityDecoration-shadow-offset-y: 5px;
+  -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.75);
+  -UnityDecoration-active-shadow-radius: 30px;
+  -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.3);
+  -UnityDecoration-inactive-shadow-radius: 25px;
+
+  -UnityDecoration-glow-size: 10px;
+  -UnityDecoration-glow-color: rgb (64, 128, 251);
+
+  -UnityDecoration-title-indent: 10px;
+  -UnityDecoration-title-fade: 35px;
+  -UnityDecoration-title-alignment: 0.0;
+
+  &.top {
+    border: 1px solid $window_frame;
+    border-bottom-width: 0;
+    border-radius: 4px 4px 0 0;
+    padding: 1px 6px 0 6px;
+
+    //background-color: $bg_color; // Decoration background
+    background-image: linear-gradient(to bottom,
+                                      $metacity_bg_a,
+                                      $metacity_bg_b);
+    color: $wm_title; // The foreground color will be used to paint the text
+
+    text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+    box-shadow: inset 0 1px $wm_highlight;
+
+    &:backdrop {
+      //background-color: transparent;
+      border: 1px solid $window_frame;
+      border-bottom-width: 0;
+      //background-color: $bg_color;
+      color: transparentize($wm_title, 0.5);
+    }
+  }
+  &.left, &.right, &.bottom,
+  &.left:backdrop, &.right:backdrop, &.bottom:backdrop {
+    background-color: $window_frame;
+    background-image: none;
+  }
+}
+
+// Panel Style
+UnityPanelWidget,
+.unity-panel {
+  background-image: linear-gradient(to bottom,
+                                    $metacity_bg_a,
+                                    $metacity_bg_b);
+  color: $wm_title;
+  box-shadow: none;
+  text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+}
+
+.unity-panel.menubar.menuitem:hover,
+.unity-panel.menubar .menuitem *:hover {
+  @extend %selected_gradient;
+}

@@ -1,4 +1,4 @@
-The theme supports Gnome 3.10, 3.12 and 3.14, aswell as Ubuntu 14.04 and Elementary OS Freya. Also the tabs you are seeing in nautilus, gedit, etc. are only included in the Gnome 3.12 and above versions due to the reworked tab system.
+The theme supports Gnome 3.10, 3.12, 3.14 and 3.16, aswell as Ubuntu and Elementary OS Freya.
 
 Chrome/Chromium and Frefox themes are included.
 
@@ -9,4 +9,4 @@ For installation instructions please read the included README in the zip archive
 
 Bug reports are appreciated.
 
-![alt tag](http://fc04.deviantart.net/fs70/f/2014/313/8/b/vertex___theme_by_horst3180-d7s7ycx.jpg)
+![alt tag](http://orig09.deviantart.net/c221/f/2015/066/0/4/vertex___theme_by_horst3180-d7s7ycx.jpg)
