@@ -1806,7 +1806,7 @@ StScrollBar {
   padding: 8px 8px 10px 8px;
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid black;
-  border-image: url("misc/osd.svg") 10 10 9 11;
+  border-image: url("misc/lg.svg") 10 10 9 11;
   border-radius: 2px; }
   #LookingGlassDialog > #Toolbar {
     padding: 3px;
@@ -1878,7 +1878,7 @@ StScrollBar {
   spacing: 6px; }
 
 #LookingGlassPropertyInspector {
-  background: red;
-  border: 2px solid grey;
-  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid grey;
+  border-radius: 2px;
   padding: 6px; }

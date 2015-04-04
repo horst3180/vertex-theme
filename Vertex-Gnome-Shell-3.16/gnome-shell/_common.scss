@@ -2111,7 +2111,7 @@ $legacy_icon_size: 24px;
   padding: 8px 8px 10px 8px;
   background-color: transparentize(black, 0.3);
   border: 1px solid black;
-	border-image: url("misc/osd.svg") 10 10 9 11;
+	border-image: url("misc/lg.svg") 10 10 9 11;
   border-radius: 2px;
   & > #Toolbar {
     padding: 3px;
@@ -2192,8 +2192,8 @@ $legacy_icon_size: 24px;
   }
 
   #LookingGlassPropertyInspector {
-    background: red;
-    border: 2px solid grey;
-    border-radius: 4px;
+    background: transparentize(black, 0.3);
+    border: 1px solid grey;
+    border-radius: 2px;
     padding: 6px;
   }
