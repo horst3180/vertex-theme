@@ -2563,6 +2563,7 @@ GtkInfoBar {
 
 .info,
 .question,
+NautilusTrashBar,
 .warning,
 .error {
   background-color: #3D5074;

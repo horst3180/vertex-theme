@@ -86,6 +86,8 @@ NautilusQueryEditor .search-bar.toolbar {
   box-shadow: none;
 }
 
+NautilusTrashBar { @extend .question }
+
 //
 // Nemo
 //
