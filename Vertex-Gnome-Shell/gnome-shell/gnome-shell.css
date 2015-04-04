@@ -1577,7 +1577,7 @@ StScrollBar StButton#vhandle:active {
 }*/
 
 .calendar {
-    padding: .4em 1.75em 0.75em 1.75em;
+    padding: .4em 1.75em 2.75em 1.75em;
     /*padding: .4em 1.75em 1.8em 1.75em;*/  /*3.14*/
     /*spacing-rows: 2px;
     spacing-columns: 2px;*/
