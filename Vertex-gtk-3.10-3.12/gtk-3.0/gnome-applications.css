@@ -160,14 +160,13 @@ NautilusQueryEditor .toolbar {
     padding-top: 6px;
 }
 
-NautilusQueryEditor .toolbar:first-child {
-    background-image: linear-gradient(to bottom, 
-                                      @wm_bg_b, 
-                                      @theme_base_color);
-}
-
-NautilusQueryEditor .toolbar {
-	background-color: @theme_base_color;
+NautilusTrashBar {
+    background-color: @infobar_bg_color;
+    color: @infobar_fg_color;
+    text-shadow: 0 1px @infobar_text_shadow;
+    border-color: darker(@infobar_bg_color);
+    border-style: solid;
+    border-width: 0 0 1px 0;
 }
 
 /*
