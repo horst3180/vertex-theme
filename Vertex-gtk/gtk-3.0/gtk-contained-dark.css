@@ -3084,9 +3084,8 @@ GtkHTML {
 SushiFontWidget {
   padding: 6px 12px; }
 
-VteTerminal {
-  background-color: #2B2B2C;
-  color: white; }
+TerminalWindow.background {
+  background-color: transparent; }
 
 TerminalWindow .notebook tab.reorderable-page,
 TerminalWindow .notebook tab.reorderable-page:hover {

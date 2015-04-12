@@ -26,9 +26,8 @@ SushiFontWidget {
 //
 // GNOME Terminal
 //
-VteTerminal {
-  background-color: $terminal_bg;
-  color: $terminal_fg;
+TerminalWindow.background {
+  background-color: transparent;
 }
 
 TerminalWindow {
