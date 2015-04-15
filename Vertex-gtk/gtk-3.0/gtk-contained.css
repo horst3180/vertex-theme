@@ -1666,7 +1666,6 @@ GtkComboBox {
 .primary-toolbar GtkProgressBar, .header-bar GtkProgressBar {
   color: rgba(243, 243, 245, 0.7); }
 .primary-toolbar GtkProgressBar.trough, .header-bar GtkProgressBar.trough, .primary-toolbar .level-bar.trough, .header-bar .level-bar.trough {
-  padding: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(to bottom, #1f2020, #2b2b2d);
   border-image: -gtk-scaled(url("borders/trough-border-dark.png"), url("borders/trough-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -2749,6 +2748,7 @@ GtkProgressBar.trough, .level-bar.trough {
   border-style: solid;
   border-color: transparent; }
   GtkProgressBar.trough.vertical, .vertical.level-bar.trough {
+    padding: 1px 2px 1px 1px;
     box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to right, #5d5d5f, #78797a);
     border-image: -gtk-scaled(url("borders/trough-vertical-border.png"), url("borders/trough-vertical-border@2.png")) 2 3 2 2/2px 3px 2px 2px stretch;

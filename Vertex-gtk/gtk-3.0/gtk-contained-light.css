@@ -2349,6 +2349,7 @@ GtkProgressBar.trough, .level-bar.trough {
   border-style: solid;
   border-color: transparent; }
   GtkProgressBar.trough.vertical, .vertical.level-bar.trough {
+    padding: 1px 2px 1px 1px;
     box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to right, #5d5d5f, #78797a);
     border-image: -gtk-scaled(url("borders/trough-vertical-border.png"), url("borders/trough-vertical-border@2.png")) 2 3 2 2/2px 3px 2px 2px stretch;
