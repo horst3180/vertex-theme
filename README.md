@@ -1,12 +1,114 @@
-The theme supports Gnome 3.10, 3.12, 3.14 and 3.16, aswell as Ubuntu and Elementary OS Freya.
+# Vertex Theme
 
-Chrome/Chromium and Frefox themes are included.
+Vertex is a theme for GTK 3, GTK 2, Gnome-Shell and Cinnamon. It supports GTK 3 and GTK 2 based desktop environments like Gnome, Cinnamon, Mate, XFCE, Budgie, Pantheon, etc. Themes for the Browsers Chrome/Chromium and Firefox are included, too.
 
-Requirements: gnome-themes-standard package for the GTK3 theme. Murrine and pixbuf engines for the GTK2 theme.
+The theme comes with three variants to choose from. The default variant with dark header-bars, a light variant, and a dark variant.
 
-If you install from git, run the "build.sh" script first (make it executable with "chmod +x build.sh") to build all variants of the theme. This will also give you a zip file with everything included.
-For installation instructions please read the included README in the zip archive. If you have any issues, please read the Troubleshooting section in the README.
+### Requirements
 
-Bug reports are appreciated.
+* At least Gnome/GTK 3.10. This theme works with all versions up to 3.16.
+* The gnome-themes-standard package
+* The GTK 2 murrine engine
+
+Main distributions that meet these requirements are
+
+* Arch Linux and Arch Linux based distros
+* Ubuntu 14.04, 14.10 and 15.04
+* elementary OS Freya
+* Linux Mint 17.1
+* Debian Testing/Unstable
+* Gentoo
+* Fedora 20, 21 and 22
+* OpenSuse 13.1, 13.2 and Tumbleweed
+
+Derivatives of these distributions should work, aswell.
+
+If your distribution is not listed, please check the requirements yourself.
+
+### Installation
+
+To build the theme you need 
+* `autoconf`
+* `automake`
+* `pkg-config` or `pkgconfig` if you use Fedora
+* `libgtk-3-dev` for Debian based distros or `gtk3-devel` for RPM based distros
+* `git` if you want to clone the source directory
+
+If your distributions doesn't ship separate development packages you just need GTK 3 instead of the `-dev` packages.
+
+Install the theme with the following commands
+
+**1. Clone the theme from github and enter the source directory**
+
+    git clone https://github.com/horst3180/vertex-theme --depth 1 && cd vertex-theme
+
+**2. Optional: Checkout the latest stable release**
+
+    git fetch --tags
+    git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
+
+**3. Build and install the theme**
+
+    ./autogen.sh --prefix=/usr
+    sudo make install
+
+Other options to pass to autogen.sh are
+
+    --disable-cinnamon         disable Cinnamon support
+    --disable-dark             disable Vertex Dark support
+    --disable-gnome-shell      disable GNOME Shell support
+    --disable-gtk2             disable GTK2 support
+    --disable-gtk3             disable GTK3 support
+    --disable-light            disable Vertex Light support
+    --disable-metacity         disable Metacity support
+    --disable-unity            disable Unity support
+    --disable-xfwm             disable XFWM support
+
+    --with-gnome=<version>     build the theme for a specific Gnome version (3.10, 3.12, 3.14, 3.16)
+                               Note: Normally the correct version is detected automatically and this
+                               option should not be needed.
+
+After the installation is complete you can activate the theme with `gnome-tweak-tool` or a similar program.
+
+**Uninstall the theme**
+
+Run
+
+    sudo make uninstall
+
+from the same directory as this README resides in, or
+
+    sudo rm -rf /usr/share/themes/{Vertex,Vertex-Dark,Vertex-Light}
+
+### Extras
+
+The `extra` directory in the same directory as this README resides in contains Chrome/Chromium and Firefox themes, a fix for the Ubuntu-Software-Center when using the dark theme and an alternative metacity theme, which hides the window titles of maximized windows (doesn't work on Gnome 3.16).
+
+To install the Chrome/Chromium theme go to the `extra/Chrome` folder and drag and drop the Vertex.crx or Vertex-light.crx file into the Chrome/Chromium window. The source of the Chrome themes is located in the source "Chrome/source" folder.
+
+To install the Firefox theme copy the `extra/Firefox/Vertex/chrome` folder to `~/.mozilla/firefox/yourprofile.default/` and restart Firefox.
+Make sure that the `tools>options>content>colors use system colors` or `preferences>content>colors use system colors` checkbox is unchecked.
+Themes for the variants Vertex-Light and Vertex-Dark are in the Firefox folder, too. Installation is the same.
+
+To install the alternative metacity theme, copy the `Vertex_alt_metacity` folder to `/usr/share/themes` and select it as window theme.
+
+### Troubleshooting
+
+If you get artifacts like black or invisible backgrounds under Unity, disable overlay scrollbars with
+
+    gsettings set com.canonical.desktop.interface scrollbar-mode normal
+====
+
+If you experience Gnome-Shell crashes, replace the "gnome-shell.css" file in the "/usr/share/themes/Vertex/gnome-shell/" folder with the "gnome-shell-no-crash.css" file
+
+    sudo mv /usr/share/themes/Vertex/gnome-shell/gnome-shell-no-crash.css /usr/share/themes/Vertex/gnome-shell/gnome-shell.css
+====
+
+Ubuntu-Software-Center doesn't play nice with dark themes. If you are using Vertex-Dark under Ubuntu the software center will have unreadable text.
+To fix this, install the Ubuntu-Software-Center fix. Instructions and relevant files are included in the `extra/Ubuntu-Software-Center` folder.
+
+
+### Bug reporting
+If you find a bug, please report it at https://github.com/horst3180/Vertex-theme/issues
 
 ![alt tag](http://orig09.deviantart.net/c221/f/2015/066/0/4/vertex___theme_by_horst3180-d7s7ycx.jpg)
