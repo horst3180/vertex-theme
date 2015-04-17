@@ -38,14 +38,19 @@ If your distributions doesn't ship separate development packages you just need G
 
 Install the theme with the following commands
 
-**1. Clone the theme from github and enter the source directory**
+**1. Get the source**
+
+If you want to install the latest version from git, clone the repository with
 
     git clone https://github.com/horst3180/vertex-theme --depth 1 && cd vertex-theme
 
-**2. Optional: Checkout the latest stable release**
+If you want to install the latest stable release, run
 
+    git clone https://github.com/horst3180/vertex-theme --depth 1 && cd vertex-theme
     git fetch --tags
     git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
+
+or download it from https://github.com/horst3180/Vertex-theme/releases and cd into the extracted archive
 
 **3. Build and install the theme**
 
