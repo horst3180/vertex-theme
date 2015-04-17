@@ -9,7 +9,7 @@ AC_INIT(
 
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIRS([m4])
-AM_INIT_AUTOMAKE()
+AM_INIT_AUTOMAKE([foreign])
 AC_PROG_MKDIR_P
 
 VERTEX_ENABLE([CINNAMON],    [cinnamon],    [Cinnamon],     [disable])
