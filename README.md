@@ -68,7 +68,7 @@ Other options to pass to autogen.sh are
                                Note: Normally the correct version is detected automatically and this
                                option should not be needed.
 
-After the installation is complete you can activate the theme with `gnome-tweak-tool` or a similar program.
+After the installation is complete you can activate the theme with `gnome-tweak-tool` or a similar program by selecting `Vertex`, `Vertex-Light` or `Vertex-Dark`.
 
 **Uninstall the theme**
 
