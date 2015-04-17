@@ -1,0 +1,96 @@
+/* Decorations */
+
+UnityDecoration {
+    -UnityDecoration-extents: 28px 1 1 1;
+    -UnityDecoration-input-extents: 10px;
+
+    -UnityDecoration-shadow-offset-x: 1px;
+    -UnityDecoration-shadow-offset-y: 5px;
+    -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.75);
+    -UnityDecoration-active-shadow-radius: 30px;
+    -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.3);
+    -UnityDecoration-inactive-shadow-radius: 25px;
+
+    -UnityDecoration-glow-size: 10px;
+    -UnityDecoration-glow-color: rgb (64, 128, 251);
+
+    -UnityDecoration-title-indent: 10px;
+    -UnityDecoration-title-fade: 35px;
+    -UnityDecoration-title-alignment: 0.0;
+}
+
+UnityDecoration.top {
+	border: 1px solid @dark_window_frame;
+    border-bottom-width: 0;
+    border-radius: 4px 4px 0 0;
+    padding: 1px 6px 0 6px;
+
+    background-clip: border-box;
+	background-color: @dark_bg_color; /* Decoration background */
+	background-image: linear-gradient(to bottom,
+		                              @metacity_bg_a,
+		                              @metacity_bg_b);
+	color: @dark_fg_color; /* The foreground color will be used to paint the text */
+        text-shadow: 0 -1px @dark_wm_title_shadow;
+    box-shadow: inset 0 1px shade(@dark_wm_bg_a, 1.4);
+}
+
+UnityDecoration.top:backdrop {
+    background-color: transparent;
+    background-clip: border-box;
+	border: 1px solid @dark_window_frame;
+	border-bottom-width: 0;
+	background-color: @dark_bg_color;
+	color: alpha(@dark_fg_color, 0.6);
+}
+
+UnityDecoration.left,
+UnityDecoration.right,
+UnityDecoration.bottom,
+UnityDecoration.left:backdrop,
+UnityDecoration.right:backdrop,
+UnityDecoration.bottom:backdrop {
+	background-color: @dark_window_frame;
+    background-image: none;
+}
+
+
+/* Panel Style */
+
+UnityPanelWidget,
+.unity-panel {
+	background-image: linear-gradient(to bottom,
+		                              @metacity_bg_a,
+		                              @metacity_bg_b);
+	color: @dark_fg_color;
+    box-shadow: none;
+}
+
+UnityPanelWidget:backdrop,
+.unity-panel:backdrop {
+
+}
+
+.unity-panel.menubar,
+.unity-panel .menubar {
+}
+
+.unity-panel.menuitem,
+.unity-panel .menuitem {
+
+
+}
+
+.unity-panel.menubar:backdrop,
+.unity-panel .menubar *:backdrop {
+
+}
+
+.unity-panel.menubar.menuitem:hover,
+.unity-panel.menubar .menuitem *:hover {
+	background-image: linear-gradient(to bottom,
+		shade (@theme_selected_bg_color, 0.96),
+		shade (@theme_selected_bg_color, 1.15));
+	color: @theme_selected_fg_color;
+	text-shadow: 0 -1px alpha(black, 0.3);
+}

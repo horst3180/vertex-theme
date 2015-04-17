@@ -1,0 +1,10 @@
+*.tar.*
+aclocal.m4
+autom4te.cache
+build-aux
+config.log
+config.status
+configure
+INSTALL
+Makefile
+Makefile.in
