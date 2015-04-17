@@ -52,7 +52,7 @@ If you want to install the latest stable release, run
 
 or download it from https://github.com/horst3180/Vertex-theme/releases and cd into the extracted archive
 
-**3. Build and install the theme**
+**2. Build and install the theme**
 
     ./autogen.sh --prefix=/usr
     sudo make install
