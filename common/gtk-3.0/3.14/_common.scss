@@ -2970,7 +2970,9 @@ GtkVolumeButton.button { padding: 8px; }
   .right:dir(rtl) .button.titlebutton:nth-child(3):hover,
   .left .button.titlebutton:nth-child(3):hover,
   .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover {
-  background-image: -gtk-scaled(url('assets/titlebutton-min-prelight.png'),url('assets/titlebutton-min-prelight@2.png'));
+    background-image: -gtk-scaled(url('assets/titlebutton-minimize-hover.png'),url('assets/titlebutton-minimize-hover@2.png'));
+
+    &:active { background-image: -gtk-scaled(url('assets/titlebutton-minimize-active.png'),url('assets/titlebutton-minimize-active@2.png')); }
 }
 
   // Maximize
@@ -2979,7 +2981,9 @@ GtkVolumeButton.button { padding: 8px; }
   .right:dir(rtl) .button.titlebutton:nth-child(2):hover,
   .left .button.titlebutton:nth-child(2):hover,
   .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover {
-    background-image: -gtk-scaled(url('assets/titlebutton-max-prelight.png'),url('assets/titlebutton-max-prelight@2.png'));
+    background-image: -gtk-scaled(url('assets/titlebutton-maximize-hover.png'),url('assets/titlebutton-maximize-hover@2.png'));
+
+    &:active { background-image: -gtk-scaled(url('assets/titlebutton-maximize-active.png'),url('assets/titlebutton-maximize-active@2.png')); }
 }
 
   // Close
@@ -2988,14 +2992,9 @@ GtkVolumeButton.button { padding: 8px; }
   .right:dir(rtl) .button.titlebutton:first-child:hover,
   .left .button.titlebutton:first-child:hover,
   .left:dir(rtl) .button.titlebutton:last-child:hover {
-    background-image: -gtk-scaled(url('assets/titlebutton-close-prelight.png'),url('assets/titlebutton-close-prelight@2.png'));
-  }
+    background-image: -gtk-scaled(url('assets/titlebutton-close-hover.png'),url('assets/titlebutton-close-hover@2.png'));
 
-  // Pushed
-
-  .right .button.titlebutton:active:hover,
-  .left .button.titlebutton:active:hover {
-    background-image: -gtk-scaled(url('assets/titlebutton-pressed.png'),url('assets/titlebutton-pressed@2.png'));
+    &:active { background-image: -gtk-scaled(url('assets/titlebutton-close-active.png'),url('assets/titlebutton-close-active@2.png')); }
   }
 }
 

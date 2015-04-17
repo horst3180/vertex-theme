@@ -92,7 +92,9 @@ grid-selection-unchecked-dark
 grid-selection-checked-dark
 titlebutton
 titlebutton-unfocused
-titlebutton-pressed
-titlebutton-close-prelight
-titlebutton-max-prelight
-titlebutton-min-prelight
+titlebutton-close-hover
+titlebutton-close-active
+titlebutton-maximize-hover
+titlebutton-maximize-active
+titlebutton-minimize-hover
+titlebutton-minimize-active

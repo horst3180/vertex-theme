@@ -1,3 +1,3 @@
-#!/usr/bin/bash
+#! /bin/bash
 
 bundle exec sass --update --style=nested --sourcemap=none .

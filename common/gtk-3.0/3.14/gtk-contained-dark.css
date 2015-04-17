@@ -2704,7 +2704,22 @@ GtkVolumeButton.button {
 .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):hover,
 .titlebar.selection-mode .left .button.titlebutton:nth-child(3):hover,
 .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-min-prelight.png"), url("assets/titlebutton-min-prelight@2.png")); }
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover.png"), url("assets/titlebutton-minimize-hover@2.png")); }
+  .header-bar .right .button.titlebutton:nth-last-child(3):hover:active,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(3):hover:active,
+  .header-bar .left .button.titlebutton:nth-child(3):hover:active,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover:active, .titlebar .right .button.titlebutton:nth-last-child(3):hover:active,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(3):hover:active,
+  .titlebar .left .button.titlebutton:nth-child(3):hover:active,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover:active,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(3):hover:active,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):hover:active,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(3):hover:active,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover:active, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(3):hover:active,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):hover:active,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(3):hover:active,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover:active {
+    background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.png"), url("assets/titlebutton-minimize-active@2.png")); }
 .header-bar .right .button.titlebutton:nth-last-child(2):hover,
 .header-bar .right:dir(rtl) .button.titlebutton:nth-child(2):hover,
 .header-bar .left .button.titlebutton:nth-child(2):hover,
@@ -2719,7 +2734,22 @@ GtkVolumeButton.button {
 .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):hover,
 .titlebar.selection-mode .left .button.titlebutton:nth-child(2):hover,
 .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-max-prelight.png"), url("assets/titlebutton-max-prelight@2.png")); }
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover.png"), url("assets/titlebutton-maximize-hover@2.png")); }
+  .header-bar .right .button.titlebutton:nth-last-child(2):hover:active,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(2):hover:active,
+  .header-bar .left .button.titlebutton:nth-child(2):hover:active,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover:active, .titlebar .right .button.titlebutton:nth-last-child(2):hover:active,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(2):hover:active,
+  .titlebar .left .button.titlebutton:nth-child(2):hover:active,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover:active,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(2):hover:active,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):hover:active,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(2):hover:active,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover:active, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(2):hover:active,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):hover:active,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(2):hover:active,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover:active {
+    background-image: -gtk-scaled(url("assets/titlebutton-maximize-active.png"), url("assets/titlebutton-maximize-active@2.png")); }
 .header-bar .right .button.titlebutton:last-child:hover,
 .header-bar .right:dir(rtl) .button.titlebutton:first-child:hover,
 .header-bar .left .button.titlebutton:first-child:hover,
@@ -2734,14 +2764,22 @@ GtkVolumeButton.button {
 .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:hover,
 .titlebar.selection-mode .left .button.titlebutton:first-child:hover,
 .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-close-prelight.png"), url("assets/titlebutton-close-prelight@2.png")); }
-.header-bar .right .button.titlebutton:active:hover,
-.header-bar .left .button.titlebutton:active:hover, .titlebar .right .button.titlebutton:active:hover,
-.titlebar .left .button.titlebutton:active:hover,
-.header-bar.selection-mode .right .button.titlebutton:active:hover,
-.header-bar.selection-mode .left .button.titlebutton:active:hover, .titlebar.selection-mode .right .button.titlebutton:active:hover,
-.titlebar.selection-mode .left .button.titlebutton:active:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-pressed.png"), url("assets/titlebutton-pressed@2.png")); }
+  background-image: -gtk-scaled(url("assets/titlebutton-close-hover.png"), url("assets/titlebutton-close-hover@2.png")); }
+  .header-bar .right .button.titlebutton:last-child:hover:active,
+  .header-bar .right:dir(rtl) .button.titlebutton:first-child:hover:active,
+  .header-bar .left .button.titlebutton:first-child:hover:active,
+  .header-bar .left:dir(rtl) .button.titlebutton:last-child:hover:active, .titlebar .right .button.titlebutton:last-child:hover:active,
+  .titlebar .right:dir(rtl) .button.titlebutton:first-child:hover:active,
+  .titlebar .left .button.titlebutton:first-child:hover:active,
+  .titlebar .left:dir(rtl) .button.titlebutton:last-child:hover:active,
+  .header-bar.selection-mode .right .button.titlebutton:last-child:hover:active,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:hover:active,
+  .header-bar.selection-mode .left .button.titlebutton:first-child:hover:active,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:hover:active, .titlebar.selection-mode .right .button.titlebutton:last-child:hover:active,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:hover:active,
+  .titlebar.selection-mode .left .button.titlebutton:first-child:hover:active,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:hover:active {
+    background-image: -gtk-scaled(url("assets/titlebutton-close-active.png"), url("assets/titlebutton-close-active@2.png")); }
 
 .header-bar .left GtkMenuButton.button.titlebutton:first-child,
 .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
