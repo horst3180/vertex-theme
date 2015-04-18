@@ -8,44 +8,44 @@ ithemelightdir = $(DESTDIR)$(themelightdir)
 
 install-data-local:
 	$(MKDIR_P) $(ithemedir)
-	cp $(srcdir)/index.theme $(ithemedir)
+	cp --no-preserve=mode,ownership $(srcdir)/index.theme $(ithemedir)
 
 if ENABLE_DARK
 	$(MKDIR_P) $(ithemedarkdir)
-	cp $(srcdir)/index.theme-dark $(ithemedarkdir)/index.theme
+	cp --no-preserve=mode,ownership $(srcdir)/index.theme-dark $(ithemedarkdir)/index.theme
 endif # ENABLE_DARK
 
 
 
 if ENABLE_LIGHT
 	$(MKDIR_P) $(ithemelightdir)
-	cp $(srcdir)/index.theme-light $(ithemelightdir)/index.theme
+	cp --no-preserve=mode,ownership $(srcdir)/index.theme-light $(ithemelightdir)/index.theme
 endif # ENABLE_LIGHT
 
 
 
 if ENABLE_CINNAMON
-	cp -r $(srcdir)/cinnamon $(ithemedir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/cinnamon $(ithemedir)
 endif # ENABLE_CINNAMON
 
 
 
 if ENABLE_GNOME_SHELL
-	cp -rH $(srcdir)/gnome-shell/$(GNOME_VERSION) $(ithemedir)/gnome-shell
+	cp -rH --no-preserve=mode,ownership $(srcdir)/gnome-shell/$(GNOME_VERSION) $(ithemedir)/gnome-shell
 endif # ENABLE_GNOME_SHELL
 
 
 
 if ENABLE_GTK2
-	cp -r $(srcdir)/gtk-2.0 $(ithemedir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/gtk-2.0 $(ithemedir)
 	cd $(ithemedir)/gtk-2.0 && rm -f gtkrc-light
 
 if ENABLE_DARK
-	cp -r $(srcdir)/gtk-2.0-dark $(ithemedarkdir)/gtk-2.0
+	cp -r --no-preserve=mode,ownership $(srcdir)/gtk-2.0-dark $(ithemedarkdir)/gtk-2.0
 endif # ENABLE_DARK
 
 if ENABLE_LIGHT
-	cp -r $(srcdir)/gtk-2.0 $(ithemelightdir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/gtk-2.0 $(ithemelightdir)
 	cd $(ithemelightdir)/gtk-2.0 && mv gtkrc-light gtkrc
 endif # ENABLE_LIGHT
 endif # ENABLE_GTK2
@@ -53,14 +53,14 @@ endif # ENABLE_GTK2
 
 
 if ENABLE_GTK3
-	cp -rH $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemedir)/gtk-3.0
+	cp -rH --no-preserve=mode,ownership $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemedir)/gtk-3.0
 
 	cd $(ithemedir)/gtk-3.0 && rm -f \
 		gtk-contained-light.css \
 		thumbnail-dark.png
 
 if ENABLE_DARK
-	cp -rH $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemedarkdir)/gtk-3.0
+	cp -rH --no-preserve=mode,ownership $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemedarkdir)/gtk-3.0
 
 	cd $(ithemedarkdir)/gtk-3.0 && rm -rf \
 		gtk-dark.css \
@@ -71,7 +71,7 @@ if ENABLE_DARK
 endif # ENABLE_DARK
 
 if ENABLE_LIGHT
-	cp -rH $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemelightdir)/gtk-3.0
+	cp -rH --no-preserve=mode,ownership $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemelightdir)/gtk-3.0
 	cd $(ithemelightdir)/gtk-3.0 && rm -rf thumbnail-dark.png
 
 	cd $(ithemelightdir)/gtk-3.0 && \
@@ -83,7 +83,7 @@ endif # ENABLE_GTK3
 
 
 if ENABLE_METACITY
-	cp -r $(srcdir)/metacity-1 $(ithemedir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/metacity-1 $(ithemedir)
 
 	cd $(ithemedir)/metacity-1 && rm -f \
 		metacity-theme-1-dark.xml \
@@ -94,7 +94,7 @@ if ENABLE_METACITY
 		metacity-theme-3-light.xml
 
 if ENABLE_DARK
-	cp -r $(srcdir)/metacity-1 $(ithemedarkdir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/metacity-1 $(ithemedarkdir)
 
 	cd $(ithemedarkdir)/metacity-1 && rm -f \
 		metacity-theme-1.xml \
@@ -111,7 +111,7 @@ if ENABLE_DARK
 endif # ENABLE_DARK
 
 if ENABLE_LIGHT
-	cp -r $(srcdir)/metacity-1 $(ithemelightdir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/metacity-1 $(ithemelightdir)
 
 	cd $(ithemelightdir)/metacity-1 && rm -f \
 		metacity-theme-1.xml \
@@ -131,28 +131,28 @@ endif # ENABLE_METACITY
 
 
 if ENABLE_UNITY
-	cp -r $(srcdir)/unity $(ithemedir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/unity $(ithemedir)
 
 if ENABLE_DARK
-	cp -r $(srcdir)/unity $(ithemedarkdir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/unity $(ithemedarkdir)
 endif # ENABLE_DARK
 
 if ENABLE_LIGHT
-	cp -r $(srcdir)/unity $(ithemelightdir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/unity $(ithemelightdir)
 endif # ENABLE_LIGHT
 endif # ENABLE_UNITY
 
 
 
 if ENABLE_XFWM
-	cp -r $(srcdir)/xfwm4 $(ithemedir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/xfwm4 $(ithemedir)
 
 if ENABLE_DARK
-	cp -r $(srcdir)/xfwm4 $(ithemedarkdir)
+	cp -r --no-preserve=mode,ownership $(srcdir)/xfwm4 $(ithemedarkdir)
 endif # ENABLE_DARK
 
 if ENABLE_LIGHT
-	cp -r $(srcdir)/xfwm4-light $(ithemelightdir)/xfwm4
+	cp -r --no-preserve=mode,ownership $(srcdir)/xfwm4-light $(ithemelightdir)/xfwm4
 endif # ENABLE_LIGHT
 endif # ENABLE_XFWM
 
