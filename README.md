@@ -27,6 +27,12 @@ If your distribution is not listed, please check the requirements yourself.
 
 ### Installation
 
+**Important:** Remove all older versions of the theme from your system before you proceed any further.
+
+    sudo rm -rf /usr/share/themes/{Vertex,Vertex-Dark,Vertex-Light,Vertex-Gnome-Shell,Vertex-Gnome-Shell-3.16,Vertex-Cinnamon}
+    rm -rf ~/.local/share/themes/{Vertex,Vertex-Dark,Vertex-Light,Vertex-Gnome-Shell,Vertex-Gnome-Shell-3.16,Vertex-Cinnamon}
+    rm -rf ~/.themes/{Vertex,Vertex-Dark,Vertex-Light,Vertex-Gnome-Shell,Vertex-Gnome-Shell-3.16,Vertex-Cinnamon}
+
 **Packages**
 
 Prebuilt packages for Ubuntu, Fedora and openSUSE are available at 
