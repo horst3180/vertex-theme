@@ -27,6 +27,20 @@ If your distribution is not listed, please check the requirements yourself.
 
 ### Installation
 
+**Packages**
+
+Prebuilt packages for Ubuntu, Fedora and openSUSE are available at 
+
+http://software.opensuse.org/download.html?project=home%3AHorst3180&package=vertex-theme
+
+Arch Linux users can install the theme from the AUR
+
+https://aur.archlinux.org/packages/vertex-themes
+
+https://aur.archlinux.org/packages/vertex-themes-git/
+
+**Manual Installation**
+
 To build the theme you need 
 * `autoconf`
 * `automake`
