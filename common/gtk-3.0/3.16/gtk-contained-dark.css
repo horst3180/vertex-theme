@@ -3388,22 +3388,6 @@ LibraryWindow .bottom-toolbar.toolbar {
 TotemGrilo.vertical GdMainView.frame {
   border-width: 0; }
 
-GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal,
-GtkPaned.horizontal.sidebar-pane-separator {
-  -GtkPaned-handle-size: 1;
-  border-width: 0 1px 0 0;
-  border-style: solid;
-  border-color: #171819; }
-
-GtkPaned.horizontal.sidebar-pane-separator GtkBox.vertical.sidebar GtkFrame.frame {
-  border-width: 0 0 1px 0; }
-
-GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal GtkFrame.frame {
-  border-width: 0; }
-
-MainWindow.background GtkBox.vertical MainToolbar {
-  border-bottom: 1px solid #171819; }
-
 FrWindow.background GtkBox.vertical GtkTreeView.view {
   background-color: #353638; }
 
