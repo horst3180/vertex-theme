@@ -698,45 +698,8 @@ MarlinViewWindow *:selected:focus {
 //
 // Slingshot
 //
-.button.app {
-  border-width: 0;
-  border-radius: 2px;
-  box-shadow: none;
-  border-image: none;
-  background-image: none;
-  icon-shadow: none;
-}
-
-.app:hover {
-  background-color: transparentize(black, 0.92);
-  icon-shadow: none;
-}
-
-.app:focus {
-  background-color: transparentize(black, 0.8);
-  icon-shadow: none;
-}
-
-.app:active {
-  color: $fg_color;
-  text-shadow: 0 1px $light_text_icon_shadow;
-  icon-shadow: none;
-}
-
-.search-item {
-  border-width: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.search-item:hover,
-.search-item:focus {
-  background-color: $selected_bg_color;
-  color: $selected_fg_color;
-  text-shadow: 0 1px 1px transparentize(black, 0.75);
-  icon-shadow: 0 1px 1px transparentize(black, 0.75);
-  border-radius: 0;
-}
+SlingshotWidgetsAppEntry.button:hover,
+SlingshotWidgetsSearchItem.button:hover { -gtk-image-effect: none;}
 
 //
 // Pantheon Terminal

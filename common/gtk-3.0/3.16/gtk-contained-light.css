@@ -3639,39 +3639,9 @@ MarlinViewWindow *:selected:focus {
 .menu .spinner {
   opacity: 1; }
 
-.button.app {
-  border-width: 0;
-  border-radius: 2px;
-  box-shadow: none;
-  border-image: none;
-  background-image: none;
-  icon-shadow: none; }
-
-.app:hover {
-  background-color: rgba(0, 0, 0, 0.08);
-  icon-shadow: none; }
-
-.app:focus {
-  background-color: rgba(0, 0, 0, 0.2);
-  icon-shadow: none; }
-
-.app:active {
-  color: #3c3c3e;
-  text-shadow: 0 1px white;
-  icon-shadow: none; }
-
-.search-item {
-  border-width: 0;
-  border-radius: 0;
-  box-shadow: none; }
-
-.search-item:hover,
-.search-item:focus {
-  background-color: #4080fb;
-  color: #ffffff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 0; }
+SlingshotWidgetsAppEntry.button:hover,
+SlingshotWidgetsSearchItem.button:hover {
+  -gtk-image-effect: none; }
 
 PantheonTerminalPantheonTerminalWindow.background {
   background-color: transparent; }
