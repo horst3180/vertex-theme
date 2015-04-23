@@ -3447,14 +3447,14 @@ MarlinViewWindow *:selected:focus {
     background-color: rgba(0, 0, 0, 0.15); }
 
 .gala-notification {
-  border: 1px solid rgba(0, 0, 0, 0.75);
+  border: 1px solid #171819;
   border-radius: 3px;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(70, 70, 72, 0.9), rgba(52, 52, 54, 0.9));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 0 -1px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to bottom, rgba(65, 67, 69, 0.95), rgba(53, 54, 56, 0.95));
   background-color: transparent; }
   .gala-notification .title, .gala-notification .label {
-    color: white;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.75); }
+    color: #F3F3F5;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
 
 .panel {
   background-color: transparent;
@@ -3512,39 +3512,9 @@ MarlinViewWindow *:selected:focus {
 .menu .spinner {
   opacity: 1; }
 
-.button.app {
-  border-width: 0;
-  border-radius: 2px;
-  box-shadow: none;
-  border-image: none;
-  background-image: none;
-  icon-shadow: none; }
-
-.app:hover {
-  background-color: rgba(0, 0, 0, 0.08);
-  icon-shadow: none; }
-
-.app:focus {
-  background-color: rgba(0, 0, 0, 0.2);
-  icon-shadow: none; }
-
-.app:active {
-  color: #F3F3F5;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.7);
-  icon-shadow: none; }
-
-.search-item {
-  border-width: 0;
-  border-radius: 0;
-  box-shadow: none; }
-
-.search-item:hover,
-.search-item:focus {
-  background-color: #4080fb;
-  color: #ffffff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 0; }
+SlingshotWidgetsAppEntry.button:hover,
+SlingshotWidgetsSearchItem.button:hover {
+  -gtk-image-effect: none; }
 
 PantheonTerminalPantheonTerminalWindow.background {
   background-color: transparent; }
