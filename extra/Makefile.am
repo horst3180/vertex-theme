@@ -4,4 +4,5 @@ dist-hook:
 		Firefox \
 		Ubuntu-Software-Center \
 		Vertex_alt_metacity \
+		Vertex-Plank \
 		$(distdir)

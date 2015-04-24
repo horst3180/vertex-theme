@@ -113,7 +113,7 @@ from the same directory as this README resides in, or
 
 ### Extras
 
-The `extra` directory in the same directory as this README resides in contains Chrome/Chromium and Firefox themes, a fix for the Ubuntu-Software-Center when using the dark theme and an alternative metacity theme, which hides the window titles of maximized windows (doesn't work on Gnome 3.16).
+The `extra` directory in the same directory as this README resides in contains Chrome/Chromium and Firefox themes, a fix for the Ubuntu-Software-Center when using the dark theme, a Plank theme and an alternative metacity theme, which hides the window titles of maximized windows (doesn't work on Gnome 3.16).
 
 To install the Chrome/Chromium theme go to the `extra/Chrome` folder and drag and drop the Vertex.crx or Vertex-light.crx file into the Chrome/Chromium window. The source of the Chrome themes is located in the source "Chrome/source" folder.
 
@@ -122,6 +122,9 @@ Make sure that the `tools>options>content>colors use system colors` or `preferen
 Themes for the variants Vertex-Light and Vertex-Dark are in the Firefox folder, too. Installation is the same.
 
 To install the alternative metacity theme, copy the `Vertex_alt_metacity` folder to `/usr/share/themes` and select it as window theme.
+
+To install the Plank theme, copy the `extra/Vertex-Plank` folder to `~/.local/share/plank/themes` or to `/usr/share/plank/themes` for system-wide use.
+Now open the Plank preferences window by executing `plank --preferences` from a terminal and select `Vertex-Plank` as the theme.
 
 ### Troubleshooting
 
