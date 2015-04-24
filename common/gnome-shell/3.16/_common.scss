@@ -37,6 +37,13 @@ stage {
   color: $fg_color;
 }
 
+%reset_style {
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
 //
 // Buttons
 //
@@ -911,7 +918,7 @@ StScrollBar {
 .world-clocks-button,
 .message-list-section-title {
   padding: 7px 10px 7px 10px;
-  @include reset_style();
+  @extend %reset_style;
 
   &:hover, &:focus { @include button(hover); }
 
@@ -1250,8 +1257,7 @@ StScrollBar {
   padding: 7px 9px;
   border-radius: 2px;
   &:focus {
-    padding: 6px 8px;
-    border-width: 2px;
+    padding: 7px 9px;
   }
 
   .search-entry-icon {
@@ -1380,7 +1386,7 @@ StScrollBar {
 
   .overview-icon,
   .right & .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
 
     padding: 12px 12px 14px 12px;
     background-color: transparentize(black, 0.99);
@@ -1389,7 +1395,7 @@ StScrollBar {
 
   .bottom & .overview-icon,
   .top & .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
 
     padding: 12px 14px 12px 12px;
     border-image: url('dash/button-horizontal.svg') 0 3 1 1;
@@ -1397,7 +1403,7 @@ StScrollBar {
 
   &:hover .overview-icon,
   .right &:hover .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
 
     padding: 12px 12px 14px 12px;
     border-image: url('dash/button-hover.svg') 1 1 0 3;
@@ -1405,7 +1411,7 @@ StScrollBar {
 
   .bottom &:hover .overview-icon,
   .top &:hover .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
 
     padding: 12px 14px 12px 12px;
     border-image: url('dash/button-horizontal-hover.svg') 0 3 1 1;
@@ -1413,7 +1419,7 @@ StScrollBar {
 
   &:active .overview-icon,
   .right &:active .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
 
     padding: 12px 12px 14px 12px;
     border-image: url('dash/button-active.svg') 1 1 0 3;
@@ -1421,7 +1427,7 @@ StScrollBar {
 
   .bottom &:active .overview-icon,
   .top &:active .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
 
     padding: 12px 14px 12px 12px;
     border-image: url('dash/button-horizontal-active.svg') 0 3 1 1;
@@ -1457,7 +1463,7 @@ StScrollBar {
   &:active .show-apps-icon,
   &:checked .overview-icon,
   &:checked .show-apps-icon {
-    @include reset_style();
+    @extend %reset_style;
 
     color: darken($selected_bg_color, 10%);
     transition-duration: 100ms;
@@ -1563,25 +1569,25 @@ StScrollBar {
 //
 .app-well-app.app-folder {
 
-  @include reset_style();
+  @extend %reset_style;
 
   > .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
     border-image: url("app-folder/app-folder.svg") 6 6 5 7;
   }
 
   &:hover > .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
     border-image: url("app-folder/app-folder-hover.svg") 6 6 5 7;
   }
 
   &:active > .overview-icon, &:checked > .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
     border-image: url("app-folder/app-folder-active.svg") 6 6 5 7;
   }
 
   &:focus > .overview-icon {
-    @include reset_style();
+    @extend %reset_style;
     border-image: url("app-folder/app-folder-focus.svg") 6 6 5 7;
   }
 }

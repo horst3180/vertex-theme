@@ -23,50 +23,46 @@ stage {
 
 .button, .notification-banner .notification-button,
 .notification-banner:hover .notification-button,
+.notification-banner:focus .notification-button, .button:focus, .button:hover, .button:hover:focus, .notification-banner .notification-button:hover:focus, .button:active, .button:active:focus, .notification-banner .notification-button:active:focus, .button:insensitive, StEntry, StEntry:focus, StEntry:hover, StEntry:insensitive, .datemenu-today-button,
+.world-clocks-button,
+.message-list-section-title, .datemenu-today-button:hover, .datemenu-today-button:focus,
+.world-clocks-button:hover,
+.world-clocks-button:focus,
+.message-list-section-title:hover,
+.message-list-section-title:focus, .datemenu-today-button:active,
+.world-clocks-button:active,
+.message-list-section-title:active, #dash .app-well-app .overview-icon, .right #dash .app-well-app .overview-icon, .bottom #dash .app-well-app .overview-icon, .top #dash .app-well-app .overview-icon, #dash .app-well-app:hover .overview-icon, .right #dash .app-well-app:hover .overview-icon, .bottom #dash .app-well-app:hover .overview-icon, .top #dash .app-well-app:hover .overview-icon, #dash .app-well-app:active .overview-icon, .right #dash .app-well-app:active .overview-icon, .bottom #dash .app-well-app:active .overview-icon, .top #dash .app-well-app:active .overview-icon, .show-apps:active .overview-icon, .show-apps:active .show-apps-icon, .show-apps:checked .overview-icon, .show-apps:checked .show-apps-icon, .app-view-control:checked, .app-well-app.app-folder, .app-well-app.app-folder > .overview-icon, .app-well-app.app-folder:hover > .overview-icon, .app-well-app.app-folder:active > .overview-icon, .app-well-app.app-folder:checked > .overview-icon, .app-well-app.app-folder:focus > .overview-icon, .keyboard-key, .keyboard-key:focus, .keyboard-key:hover, .keyboard-key:checked, .keyboard-key:active, .login-dialog .modal-dialog-button:default, .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus, .login-dialog .modal-dialog-button:default:active, .login-dialog .modal-dialog-button:default:insensitive {
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none !important;
+  border-radius: 0 !important; }
+
+.button, .notification-banner .notification-button,
+.notification-banner:hover .notification-button,
 .notification-banner:focus .notification-button {
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 100ms;
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   color: #F3F3F5;
   border-image: url("button/button-border.svg") 4; }
   .button:focus, .notification-banner .notification-button:focus {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
     border-image: url("button/button-border-focused.svg") 4; }
   .button:hover, .notification-banner .notification-button:hover {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
     border-image: url("button/button-border-hover.svg") 4; }
   .button:hover:focus, .notification-banner .notification-button:hover:focus {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
     border-image: url("button/button-border-focused-hover.svg") 4; }
   .button:active, .notification-banner .notification-button:active, .button:active:focus, .notification-banner .notification-button:active:focus {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #ffffff;
@@ -74,10 +70,6 @@ stage {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
   .button:insensitive, .notification-banner .notification-button:insensitive {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #949496;
@@ -89,24 +81,12 @@ StEntry {
   selection-background-color: #4080fb;
   selected-color: #ffffff;
   transition-duration: 300ms;
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   color: #F3F3F5;
   border-image: url("entry/entry-border.svg") 4; }
   StEntry:focus, StEntry:hover {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     color: #F3F3F5;
     border-image: url("entry/entry-border-focused.svg") 4; }
   StEntry:insensitive {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     color: #949496;
     border-image: url("entry/entry-border-insensitive.svg") 4; }
   StEntry StIcon.capslock-warning {
@@ -702,20 +682,12 @@ StScrollBar {
 .datemenu-today-button,
 .world-clocks-button,
 .message-list-section-title {
-  padding: 7px 10px 7px 10px;
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important; }
+  padding: 7px 10px 7px 10px; }
   .datemenu-today-button:hover, .datemenu-today-button:focus,
   .world-clocks-button:hover,
   .world-clocks-button:focus,
   .message-list-section-title:hover,
   .message-list-section-title:focus {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
@@ -724,10 +696,6 @@ StScrollBar {
   .world-clocks-button:active,
   .message-list-section-title:active {
     color: white;
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #ffffff;
@@ -992,8 +960,7 @@ StScrollBar {
   padding: 7px 9px;
   border-radius: 2px; }
   .search-entry:focus {
-    padding: 6px 8px;
-    border-width: 2px; }
+    padding: 7px 9px; }
   .search-entry .search-entry-icon {
     icon-size: 16px;
     padding: 0 4px;
@@ -1092,46 +1059,22 @@ StScrollBar {
     -x-offset: 0; }
 
 #dash .app-well-app .overview-icon, .right #dash .app-well-app .overview-icon {
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   padding: 12px 12px 14px 12px;
   background-color: rgba(0, 0, 0, 0.01);
   border-image: url("dash/button.svg") 1 1 0 3; }
 .bottom #dash .app-well-app .overview-icon, .top #dash .app-well-app .overview-icon {
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   padding: 12px 14px 12px 12px;
   border-image: url("dash/button-horizontal.svg") 0 3 1 1; }
 #dash .app-well-app:hover .overview-icon, .right #dash .app-well-app:hover .overview-icon {
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   padding: 12px 12px 14px 12px;
   border-image: url("dash/button-hover.svg") 1 1 0 3; }
 .bottom #dash .app-well-app:hover .overview-icon, .top #dash .app-well-app:hover .overview-icon {
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   padding: 12px 14px 12px 12px;
   border-image: url("dash/button-horizontal-hover.svg") 0 3 1 1; }
 #dash .app-well-app:active .overview-icon, .right #dash .app-well-app:active .overview-icon {
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   padding: 12px 12px 14px 12px;
   border-image: url("dash/button-active.svg") 1 1 0 3; }
 .bottom #dash .app-well-app:active .overview-icon, .top #dash .app-well-app:active .overview-icon {
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   padding: 12px 14px 12px 12px;
   border-image: url("dash/button-horizontal-active.svg") 0 3 1 1; }
 #dash .app-well-app-running-dot {
@@ -1154,7 +1097,6 @@ StScrollBar {
   color: #4080fb; }
 .show-apps:active .overview-icon, .show-apps:active .show-apps-icon, .show-apps:checked .overview-icon, .show-apps:checked .show-apps-icon {
   color: #0e5ffa;
-  box-shadow: none;
   transition-duration: 100ms; }
 
 .icon-grid {
@@ -1170,10 +1112,6 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #ffffff;
@@ -1245,35 +1183,14 @@ StScrollBar {
   transition-duration: 100ms;
   text-align: center; }
 
-.app-well-app.app-folder {
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important; }
-  .app-well-app.app-folder > .overview-icon {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
-    border-image: url("app-folder/app-folder.svg") 6 6 5 7; }
-  .app-well-app.app-folder:hover > .overview-icon {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
-    border-image: url("app-folder/app-folder-hover.svg") 6 6 5 7; }
-  .app-well-app.app-folder:active > .overview-icon, .app-well-app.app-folder:checked > .overview-icon {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
-    border-image: url("app-folder/app-folder-active.svg") 6 6 5 7; }
-  .app-well-app.app-folder:focus > .overview-icon {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
-    border-image: url("app-folder/app-folder-focus.svg") 6 6 5 7; }
+.app-well-app.app-folder > .overview-icon {
+  border-image: url("app-folder/app-folder.svg") 6 6 5 7; }
+.app-well-app.app-folder:hover > .overview-icon {
+  border-image: url("app-folder/app-folder-hover.svg") 6 6 5 7; }
+.app-well-app.app-folder:active > .overview-icon, .app-well-app.app-folder:checked > .overview-icon {
+  border-image: url("app-folder/app-folder-active.svg") 6 6 5 7; }
+.app-well-app.app-folder:focus > .overview-icon {
+  border-image: url("app-folder/app-folder-focus.svg") 6 6 5 7; }
 
 .app-folder-popup {
   -arrow-border-radius: 2px;
@@ -1524,10 +1441,6 @@ StScrollBar {
   spacing: 15px; }
 
 .keyboard-key {
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   color: #F3F3F5;
@@ -1540,28 +1453,16 @@ StScrollBar {
   border: 1px solid #171819;
   color: white; }
   .keyboard-key:focus {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
     border-image: url("button/button-border-focused.svg") 4; }
   .keyboard-key:hover, .keyboard-key:checked {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
     border-image: url("button/button-border-hover.svg") 4; }
   .keyboard-key:active {
-    background-color: transparent !important;
-    background-gradient-direction: none !important;
-    border: none !important;
-    border-radius: 0 !important;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #ffffff;
@@ -1640,28 +1541,16 @@ StScrollBar {
   .login-dialog .modal-dialog-button {
     padding: 3px 18px; }
     .login-dialog .modal-dialog-button:default {
-      background-color: transparent !important;
-      background-gradient-direction: none !important;
-      border: none !important;
-      border-radius: 0 !important;
       text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
       icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
       color: #F3F3F5;
       border-image: url("button/button-border.svg") 4; }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
-        background-color: transparent !important;
-        background-gradient-direction: none !important;
-        border: none !important;
-        border-radius: 0 !important;
         text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         color: #F3F3F5;
         border-image: url("button/button-border-hover.svg") 4; }
       .login-dialog .modal-dialog-button:default:active {
-        background-color: transparent !important;
-        background-gradient-direction: none !important;
-        border: none !important;
-        border-radius: 0 !important;
         text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         color: #ffffff;
@@ -1669,10 +1558,6 @@ StScrollBar {
         text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
         icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
       .login-dialog .modal-dialog-button:default:insensitive {
-        background-color: transparent !important;
-        background-gradient-direction: none !important;
-        border: none !important;
-        border-radius: 0 !important;
         text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         color: #949496;
