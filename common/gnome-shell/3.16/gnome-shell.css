@@ -1092,31 +1092,46 @@ StScrollBar {
     -x-offset: 0; }
 
 #dash .app-well-app .overview-icon, .right #dash .app-well-app .overview-icon {
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none !important;
+  border-radius: 0 !important;
   padding: 12px 12px 14px 12px;
   background-color: rgba(0, 0, 0, 0.01);
-  border-radius: 0;
-  border-image: url("dash/button.svg") 1 1 0 3;
-  border: 0px solid; }
+  border-image: url("dash/button.svg") 1 1 0 3; }
 .bottom #dash .app-well-app .overview-icon, .top #dash .app-well-app .overview-icon {
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none !important;
+  border-radius: 0 !important;
   padding: 12px 14px 12px 12px;
   border-image: url("dash/button-horizontal.svg") 0 3 1 1; }
 #dash .app-well-app:hover .overview-icon, .right #dash .app-well-app:hover .overview-icon {
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none !important;
+  border-radius: 0 !important;
   padding: 12px 12px 14px 12px;
-  background-color: rgba(0, 0, 0, 0.01);
-  border-radius: 0;
-  border-image: url("dash/button-hover.svg") 1 1 0 3;
-  border: 0px solid; }
+  border-image: url("dash/button-hover.svg") 1 1 0 3; }
 .bottom #dash .app-well-app:hover .overview-icon, .top #dash .app-well-app:hover .overview-icon {
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none !important;
+  border-radius: 0 !important;
   padding: 12px 14px 12px 12px;
   border-image: url("dash/button-horizontal-hover.svg") 0 3 1 1; }
 #dash .app-well-app:active .overview-icon, .right #dash .app-well-app:active .overview-icon {
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none !important;
+  border-radius: 0 !important;
   padding: 12px 12px 14px 12px;
-  background-color: rgba(0, 0, 0, 0.01);
-  border-radius: 0;
-  box-shadow: none;
-  border-image: url("dash/button-active.svg") 1 1 0 3;
-  border: 0px solid; }
+  border-image: url("dash/button-active.svg") 1 1 0 3; }
 .bottom #dash .app-well-app:active .overview-icon, .top #dash .app-well-app:active .overview-icon {
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none !important;
+  border-radius: 0 !important;
   padding: 12px 14px 12px 12px;
   border-image: url("dash/button-horizontal-active.svg") 0 3 1 1; }
 #dash .app-well-app-running-dot {

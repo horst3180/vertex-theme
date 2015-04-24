@@ -1380,46 +1380,49 @@ StScrollBar {
 
   .overview-icon,
   .right & .overview-icon {
+    @include reset_style();
+
     padding: 12px 12px 14px 12px;
     background-color: transparentize(black, 0.99);
-    border-radius: 0;
     border-image: url('dash/button.svg') 1 1 0 3;
-    border: 0px solid;
   }
 
   .bottom & .overview-icon,
   .top & .overview-icon {
+    @include reset_style();
+
     padding: 12px 14px 12px 12px;
     border-image: url('dash/button-horizontal.svg') 0 3 1 1;
   }
 
   &:hover .overview-icon,
   .right &:hover .overview-icon {
+    @include reset_style();
+
     padding: 12px 12px 14px 12px;
-    background-color: transparentize(black, 0.99);
-    border-radius: 0;
     border-image: url('dash/button-hover.svg') 1 1 0 3;
-    border: 0px solid;
   }
 
   .bottom &:hover .overview-icon,
   .top &:hover .overview-icon {
+    @include reset_style();
+
     padding: 12px 14px 12px 12px;
     border-image: url('dash/button-horizontal-hover.svg') 0 3 1 1;
   }
 
   &:active .overview-icon,
   .right &:active .overview-icon {
+    @include reset_style();
+
     padding: 12px 12px 14px 12px;
-    background-color: transparentize(black, 0.99);
-    border-radius: 0;
-    box-shadow: none;
     border-image: url('dash/button-active.svg') 1 1 0 3;
-    border: 0px solid;
   }
 
   .bottom &:active .overview-icon,
   .top &:active .overview-icon {
+    @include reset_style();
+
     padding: 12px 14px 12px 12px;
     border-image: url('dash/button-horizontal-active.svg') 0 3 1 1;
   }
@@ -1454,8 +1457,9 @@ StScrollBar {
   &:active .show-apps-icon,
   &:checked .overview-icon,
   &:checked .show-apps-icon {
+    @include reset_style();
+
     color: darken($selected_bg_color, 10%);
-    box-shadow: none;
     transition-duration: 100ms;
   }
 }
