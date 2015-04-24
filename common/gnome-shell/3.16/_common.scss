@@ -911,7 +911,7 @@ StScrollBar {
 .world-clocks-button,
 .message-list-section-title {
   padding: 7px 10px 7px 10px;
-  border: 1px solid transparent;
+  @include reset_style();
 
   &:hover, &:focus { @include button(hover); }
 
@@ -1480,7 +1480,7 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px;
 
-  //&:checked { @include button(active); }
+  &:checked { @include button(active); }
   &:first-child:ltr, &:last-child:rtl {
     border: 1px solid transparent;
     border-radius: 2px 0 0 2px;
@@ -1559,25 +1559,26 @@ StScrollBar {
 //
 .app-well-app.app-folder {
 
+  @include reset_style();
+
   > .overview-icon {
-    background-color: transparent;
-	  border-image: url("app-folder/app-folder.svg") 6 6 5 7;
+    @include reset_style();
+    border-image: url("app-folder/app-folder.svg") 6 6 5 7;
   }
 
   &:hover > .overview-icon {
-    background-color: transparent;
-	  border-image: url("app-folder/app-folder-hover.svg") 6 6 5 7;
+    @include reset_style();
+    border-image: url("app-folder/app-folder-hover.svg") 6 6 5 7;
   }
 
   &:active > .overview-icon, &:checked > .overview-icon {
-    background-color: transparent;
-    box-shadow: none;
-	  border-image: url("app-folder/app-folder-active.svg") 6 6 5 7;
+    @include reset_style();
+    border-image: url("app-folder/app-folder-active.svg") 6 6 5 7;
   }
 
   &:focus > .overview-icon {
-    background-color: transparent;
-	  border-image: url("app-folder/app-folder-focus.svg") 6 6 5 7;
+    @include reset_style();
+    border-image: url("app-folder/app-folder-focus.svg") 6 6 5 7;
   }
 }
 

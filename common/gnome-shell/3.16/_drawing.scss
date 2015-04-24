@@ -8,6 +8,13 @@
   //font-size: ($size / $base) * 1rem;
 }
 
+@mixin reset_style() {
+  background-color: transparent !important;
+  background-gradient-direction: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
 
 // entries
 
@@ -15,10 +22,7 @@
 //
 // Entries drawing function
 //
-  background: none;
-  background-gradient-direction: none;
-  box-shadow: none;
-  border: 1px solid;
+  @include reset_style();
 
   @if $t==normal {
     color: $text_color;
@@ -42,10 +46,7 @@
 //
 // Button drawing function
 //
-  background: none;
-  background-gradient-direction: none;
-  box-shadow: none;
-  border: 1px solid;
+  @include reset_style();
 
   text-shadow: 0 -1px $light_text_icon_shadow;
   icon-shadow: 0 -1px $light_text_icon_shadow;
@@ -56,7 +57,7 @@
   // normal button
   //
     color: $fg_color;
-    border-image: url('button/button-border.svg') 4;
+    border-image: url("button/button-border.svg") 4;
   }
 
   @else if $t==focus {
@@ -64,8 +65,7 @@
   // focused button
   //
     color: $fg_color;
-    border: 1px solid;
-    border-image: url('button/button-border-focused.svg') 4;
+    border-image: url("button/button-border-focused.svg") 4;
   }
 
   @else if $t==focus-hover {
@@ -73,8 +73,7 @@
   // focused button
   //
     color: $fg_color;
-    border: 1px solid;
-    border-image: url('button/button-border-focused-hover.svg') 4;
+    border-image: url("button/button-border-focused-hover.svg") 4;
   }
 
   @else if $t==hover {
@@ -82,7 +81,7 @@
   // hovered button
   //
     color: $fg_color;
-    border-image: url('button/button-border-hover.svg') 4;
+    border-image: url("button/button-border-hover.svg") 4;
   }
 
   @else if $t==active {
@@ -90,7 +89,7 @@
   // pushed button
   //
     color: $button_active_fg;
-    border-image: url('button/button-border-active.svg') 4;
+    border-image: url("button/button-border-active.svg") 4;
 
     text-shadow: 0 -1px $button_active_text_shadow;
     icon-shadow: 0 -1px $button_active_text_shadow;
@@ -101,23 +100,9 @@
   // insensitive button
   //
     color: $insensitive_fg_color;
-    border-image: url('button/button-border-insensitive.svg') 4;
+    border-image: url("button/button-border-insensitive.svg") 4;
 
-    text-shadow: none;
-    icon-shadow: none;
-  }
-
-  @else if $t==undecorated {
-  //
-  // reset
-  //
-    border-color: transparent;
-    border-image: none;
-    background-color: transparent;
-    background-image: none;
-
-    box-shadow: none;
-    text-shadow: none;
-    icon-shadow: none;
+    //text-shadow: none;
+    //icon-shadow: none;
   }
 }
