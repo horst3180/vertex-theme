@@ -22,7 +22,7 @@ Main distributions that meet these requirements are
 * Ubuntu 14.04, 14.10 and 15.04
 * elementary OS Freya
 * Linux Mint 17.1
-* Debian Testing/Unstable
+* Debian Jessie, Testing or Unstable
 * Gentoo
 * Fedora 20, 21 and 22
 * OpenSuse 13.1, 13.2 and Tumbleweed
@@ -41,7 +41,7 @@ If your distribution is not listed, please check the requirements yourself.
 
 **Packages**
 
-Prebuilt packages for Ubuntu, Fedora and openSUSE are available at 
+Prebuilt packages for Ubuntu, Debian, Fedora and openSUSE are available at 
 
 http://software.opensuse.org/download.html?project=home%3AHorst3180&package=vertex-theme
 
