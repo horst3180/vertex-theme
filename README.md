@@ -133,11 +133,6 @@ If you get artifacts like black or invisible backgrounds under Unity, disable ov
     gsettings set com.canonical.desktop.interface scrollbar-mode normal
 ====
 
-If you experience Gnome-Shell crashes, replace the "gnome-shell.css" file in the "/usr/share/themes/Vertex/gnome-shell/" folder with the "gnome-shell-no-crash.css" file
-
-    sudo mv /usr/share/themes/Vertex/gnome-shell/gnome-shell-no-crash.css /usr/share/themes/Vertex/gnome-shell/gnome-shell.css
-====
-
 Ubuntu-Software-Center doesn't play nice with dark themes. If you are using Vertex-Dark under Ubuntu the software center will have unreadable text.
 To fix this, install the Ubuntu-Software-Center fix. Instructions and relevant files are included in the `extra/Ubuntu-Software-Center` folder.
 
