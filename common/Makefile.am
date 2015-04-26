@@ -57,22 +57,44 @@ if ENABLE_GTK3
 
 	cd $(ithemedir)/gtk-3.0 && rm -f \
 		gtk-contained-light.css \
-		thumbnail-dark.png
+		thumbnail-dark.png \
+		assets.svg \
+		README \
+		*.scss \
+		*.sh \
+		*.txt \
+		Gemfile*
 
 if ENABLE_DARK
 	cp -rH --no-preserve=mode,ownership $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemedarkdir)/gtk-3.0
 
 	cd $(ithemedarkdir)/gtk-3.0 && rm -rf \
 		gtk-dark.css \
-		gtk-contained-light.css
+		gtk-contained-light.css \
+		assets.svg \
+		README \
+		*.scss \
+		*.sh \
+		*.txt \
+		Gemfile*
 
 	cd $(ithemedarkdir)/gtk-3.0 && \
-		mv gtk-contained-dark.css gtk-contained.css
+		mv gtk-contained-dark.css gtk-contained.css && \
+		mv thumbnail-dark.png thumbnail.png
+
 endif # ENABLE_DARK
 
 if ENABLE_LIGHT
 	cp -rH --no-preserve=mode,ownership $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemelightdir)/gtk-3.0
-	cd $(ithemelightdir)/gtk-3.0 && rm -rf thumbnail-dark.png
+
+	cd $(ithemelightdir)/gtk-3.0 && rm -rf \
+		thumbnail-dark.png \
+		assets.svg \
+		README \
+		*.scss \
+		*.sh \
+		*.txt \
+		Gemfile*
 
 	cd $(ithemelightdir)/gtk-3.0 && \
 		mv gtk-contained-light.css gtk-contained.css
@@ -91,7 +113,8 @@ if ENABLE_METACITY
 		metacity-theme-2-dark.xml \
 		metacity-theme-2-light.xml \
 		metacity-theme-3-dark.xml \
-		metacity-theme-3-light.xml
+		metacity-theme-3-light.xml \
+		thumbnail-light.png
 
 if ENABLE_DARK
 	cp -r --no-preserve=mode,ownership $(srcdir)/metacity-1 $(ithemedarkdir)
@@ -102,7 +125,8 @@ if ENABLE_DARK
 		metacity-theme-2.xml \
 		metacity-theme-2-light.xml \
 		metacity-theme-3.xml \
-		metacity-theme-3-light.xml
+		metacity-theme-3-light.xml \
+		thumbnail-light.png
 
 	cd $(ithemedarkdir)/metacity-1 && \
 		mv metacity-theme-1-dark.xml metacity-theme-1.xml && \
@@ -124,7 +148,8 @@ if ENABLE_LIGHT
 	cd $(ithemelightdir)/metacity-1 && \
 		mv metacity-theme-1-light.xml metacity-theme-1.xml && \
 		mv metacity-theme-2-light.xml metacity-theme-2.xml && \
-		mv metacity-theme-3-light.xml metacity-theme-3.xml
+		mv metacity-theme-3-light.xml metacity-theme-3.xml && \
+		mv thumbnail-light.png thumbnail.png
 endif # ENABLE_LIGHT
 endif # ENABLE_METACITY
 
