@@ -7,8 +7,7 @@ The theme comes with three variants to choose from. The default variant with dar
 ### Requirements
 
 * At least Gnome/GTK 3.10. This theme works with all versions up to 3.16.
-* The `gnome-themes-standard` package for distros with Gnome/GTK 3.10 or 3.12.
-* The `gtk2-engines-pixbuf` package only for Debian/Ubuntu based distros.
+* The `gnome-themes-standard` package
 * The murrine engine. This has different names depending on your distro.
   * `gtk-engine-murrine` (Arch Linux)
   * `gtk2-engines-murrine` (Debian, Ubuntu, elementary OS)

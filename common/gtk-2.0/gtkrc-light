@@ -537,6 +537,13 @@ style "default" {
   }
 }
 
+
+style "toplevel_hack" {
+
+  engine "adwaita" {
+  }
+}
+
 style "ooo_stepper_hack" {
 
   GtkScrollbar::stepper-size = 0
@@ -720,6 +727,12 @@ style "menu" {
       border = { 0, 0, 0, 0 }
       stretch = TRUE
     }
+  }
+}
+
+style "menu_framed_box" {
+
+  engine "adwaita" {
   }
 }
 
@@ -1045,7 +1058,7 @@ style "entry" {
       detail = "entry"
       state = NORMAL
       shadow = IN
-      file = "Entry/entry-border-bg-solid.png"
+      file = "Entry/entry-border-bg.png"
       border = { 4, 4, 4, 4 }
       stretch = TRUE
     }
@@ -1064,7 +1077,7 @@ style "entry" {
       function = SHADOW
       detail = "entry"
       state = ACTIVE
-      file = "Entry/entry-border-active-bg-solid.png"
+      file = "Entry/entry-border-active-bg.png"
       border = { 4, 4, 4, 4 }
       stretch = TRUE
     }
@@ -1073,7 +1086,7 @@ style "entry" {
       function = FLAT_BOX
       detail = "entry_bg"
       state = NORMAL
-      overlay_file = "Entry/entry-border-fill-solid.png"
+      overlay_file = "Entry/entry-border-fill.png"
       overlay_border = { 0, 0, 0, 0 }
       overlay_stretch = TRUE
     }
@@ -1082,7 +1095,7 @@ style "entry" {
       function = FLAT_BOX
       detail = "entry_bg"
       state = ACTIVE
-      overlay_file = "Entry/entry-border-fill-solid.png"
+      overlay_file = "Entry/entry-border-fill.png"
       overlay_border = { 0, 0, 0, 0 }
       overlay_stretch = TRUE
     }
@@ -1661,6 +1674,49 @@ style "gimp_spin_scale" {
       detail = "spinbutton_down"
       overlay_file = "Arrows/arrow-down-small-insens.png"
       overlay_stretch = FALSE
+    }
+  }
+}
+
+style "libreoffice_entry" {
+
+  engine "pixmap" {
+
+    image {
+      function = FLAT_BOX
+      detail = "entry_bg"
+      state = NORMAL
+      overlay_file = "Entry/entry-border-fill-solid.png"
+      overlay_border = { 0, 0, 0, 0 }
+      overlay_stretch = TRUE
+    }
+
+    image {
+      function = FLAT_BOX
+      detail = "entry_bg"
+      state = ACTIVE
+      overlay_file = "Entry/entry-border-fill-solid.png"
+      overlay_border = { 0, 0, 0, 0 }
+      overlay_stretch = TRUE
+    }
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = NORMAL
+      shadow = IN
+      file = "Entry/entry-border-bg-solid.png"
+      border = { 4, 4, 4, 4 }
+      stretch = TRUE
+    }
+
+    image {
+      function = SHADOW
+      detail = "entry"
+      state = ACTIVE
+      file = "Entry/entry-border-active-bg-solid.png"
+      border = { 4, 4, 4, 4 }
+      stretch = TRUE
     }
   }
 }
@@ -2382,6 +2438,7 @@ class "GtkTreeView"                                                 style "treev
 
 widget_class "*<GtkMenuBar>*"                                       style "menubar"
 widget_class "*<GtkMenu>*"                                          style "menu"
+widget_class "*<GtkMenu>*"                                          style "menu_framed_box"
 widget_class "*<GtkMenuItem>*"                                      style "menu_item"
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*"                         style "menubar_item"
 widget_class "*<GtkCheckButton>*"                                   style "checkbutton"
@@ -2435,7 +2492,12 @@ widget "gtk-tooltips*"                                              style "eclip
 widget "*swt-toolbar-flat"                                          style "null"
 
 # Openoffice, Libreoffice
+class "GtkWindow"                                                   style "toplevel_hack"
 widget "*openoffice-toplevel*"                                      style "ooo_stepper_hack"
+widget "*openoffice-toplevel*GtkEntry"                              style "libreoffice_entry"
+widget "*openoffice-toplevel*GtkSpinButton"                         style "libreoffice_entry"
+widget "*libreoffice-toplevel*GtkEntry"                             style "libreoffice_entry"
+widget "*libreoffice-toplevel*GtkSpinButton"                        style "libreoffice_entry"
 
 # Xfce
 widget_class "*XfdesktopIconView*"                                  style "xfdesktop-icon-view"
