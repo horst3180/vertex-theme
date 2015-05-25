@@ -26,11 +26,12 @@
 	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="5"/>
-	<distance name="right_titlebar_edge" value="2"/>
-	<distance name="title_vertical_pad" value="2"/>
+	<distance name="right_titlebar_edge" value="5"/>
+	<distance name="title_vertical_pad" value="5"/>
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
-	<border name="button_border" left="3" right="3" top="1" bottom="1"/>
-	<aspect_ratio name="button" value="1.0"/>
+	<border name="button_border" left="6" right="6" top="0" bottom="0"/>
+  <distance name="button_width" value="17"/>
+  <distance name="button_height" value="15"/>
 </frame_geometry>
 
 <frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="3" rounded_top_right="3" parent="normal">
@@ -40,23 +41,21 @@
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
 	<distance name="bottom_height" value="0" />
-	<distance name="left_titlebar_edge" value="1"/>
-	<distance name="right_titlebar_edge" value="1"/>
+	<distance name="left_titlebar_edge" value="2"/>
+	<distance name="right_titlebar_edge" value="2"/>
 	<distance name="title_vertical_pad" value="4"/> <!-- 
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
 							or you'll have bigger buttons		-->
 </frame_geometry>
 
-<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="3" rounded_top_right="3">
+<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="0" rounded_top_right="0">
 	<distance name="title_vertical_pad" value="7"/>
 	<border name="title_border" left="10" right="10" top="0" bottom="1"/>
-	<border name="button_border" left="3" right="3" top="0" bottom="2"/>
+	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="small_unfocused" parent="small">
-	<distance name="left_titlebar_edge" value="1"/>
-	<distance name="right_titlebar_edge" value="1"/>
 </frame_geometry>
 
 <frame_geometry name="borderless" has_title="false" rounded_top_left="false" rounded_top_right="false" parent="normal" >
@@ -405,7 +404,8 @@
 	<button function="minimize" state="pressed" draw_ops="minimize_focused_pressed" />
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
-	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_prelight" />
+	<button function="menu" state="pressed" draw_ops="menu_pressed" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
 	<button function="unshade" state="normal" draw_ops="shade_focused" />
