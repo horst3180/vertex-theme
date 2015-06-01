@@ -238,3 +238,8 @@ margin: 8px;
 
 }
 
+/*Make about:config list readable*/
+#configTreeBody::-moz-tree-cell-text() {
+  color: white !important;
+}
+
