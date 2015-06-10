@@ -232,7 +232,7 @@ margin: 8px;
 
 @-moz-document url("about:blank") {
 
-  * {
+  body {
     background-color: #2b2b2c;
   }
 
