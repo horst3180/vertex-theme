@@ -2,14 +2,24 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /**************************** Tab Container ***************************/
-#tabbrowser-tabs,
-#TabsToolbar .toolbarbutton-1,
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button {
+#TabsToolbar {
+  -moz-appearance: none !important;
   box-shadow: inset 0 -5px rgba(0,0,0,0.02),
               inset 0 -4px rgba(0,0,0,0.025),
               inset 0 -3px rgba(0,0,0,0.03), 
               inset 0 -2px rgba(0,0,0,0.035), 
               inset 0 -1px rgba(0,0,0,0.05) !important;
+  background: -moz-linear-gradient(#454749, #37393B) !important;
+}
+
+#main-window[htitlemode] #TabsToolbar {
+  -moz-appearance: none !important;
+  box-shadow: inset 0 -5px rgba(0,0,0,0.02),
+              inset 0 -4px rgba(0,0,0,0.025),
+              inset 0 -3px rgba(0,0,0,0.03), 
+              inset 0 -2px rgba(0,0,0,0.035), 
+              inset 0 -1px rgba(0,0,0,0.05),
+              inset 0 1px rgba(255,255,255,0.15) !important;
   background: -moz-linear-gradient(#454749, #37393B) !important;
 }
 
@@ -452,3 +462,19 @@ dropmarker[disabled="true"] {
 .searchbar-engine-one-off-item:not(.last-row) {
   border-bottom: 1px solid #202021 !important;
 }
+
+/*************************** Window Controls *******************************/
+#close-button, #restore-button, #minimize-button {
+  -moz-appearance: none !important;
+  list-style-image: url("images/window_button.svg") !important;
+  padding: 7px 6px 5px 6px !important;
+}
+
+#close-button:hover { list-style-image: url("images/close_prelight.svg") !important; }
+#close-button:active { list-style-image: url("images/close_pressed.svg") !important; }
+
+#restore-button:hover { list-style-image: url("images/max_prelight.svg") !important; }
+#restore-button:active { list-style-image: url("images/max_pressed.svg") !important; }
+
+#minimize-button:hover { list-style-image: url("images/min_prelight.svg") !important; }
+#minimize-button:active { list-style-image: url("images/min_pressed.svg") !important; }

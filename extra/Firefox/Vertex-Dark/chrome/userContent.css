@@ -238,13 +238,11 @@ margin: 8px;
 
 }
 
-@-moz-document url("about:preferences") {
-
-  xul|treechildren::-moz-tree-cell-text {
-    color: #F3F3F5 !important;
-  }
-
+/*Fix unreadable treeview text*/
+xul|treechildren::-moz-tree-cell-text {
+  color: #F3F3F5 !important;
 }
+
 
 /*Make about:config list readable*/
 #configTreeBody::-moz-tree-cell-text() {

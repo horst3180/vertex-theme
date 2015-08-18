@@ -2,14 +2,22 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 /**************************** Tab Container ***************************/
-#tabbrowser-tabs,
-#TabsToolbar .toolbarbutton-1,
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button {
+#TabsToolbar {
   box-shadow: inset 0 -5px rgba(0,0,0,0.01),
               inset 0 -4px rgba(0,0,0,0.012),
               inset 0 -3px rgba(0,0,0,0.015), 
               inset 0 -2px rgba(0,0,0,0.018), 
               inset 0 -1px rgba(0,0,0,0.025) !important;
+  background: -moz-linear-gradient(#F5F5F7, #e5e6e9) !important;
+}
+
+#main-window[htitlemode] #TabsToolbar {
+  box-shadow: inset 0 -5px rgba(0,0,0,0.01),
+              inset 0 -4px rgba(0,0,0,0.012),
+              inset 0 -3px rgba(0,0,0,0.015), 
+              inset 0 -2px rgba(0,0,0,0.018), 
+              inset 0 -1px rgba(0,0,0,0.025),
+              inset 0  1px rgba(255,255,255,1) !important;
   background: -moz-linear-gradient(#F5F5F7, #e5e6e9) !important;
 }
 
@@ -423,3 +431,19 @@ dropmarker[disabled="true"] {
   margin: 4px !important;
   margin-left: 7px !important;
 }
+
+/*************************** Window Controls *******************************/
+#close-button, #restore-button, #minimize-button {
+  -moz-appearance: none !important;
+  list-style-image: url("images/window_button.svg") !important;
+  padding: 7px 6px 5px 6px !important;
+}
+
+#close-button:hover { list-style-image: url("images/close_prelight.svg") !important; }
+#close-button:active { list-style-image: url("images/close_pressed.svg") !important; }
+
+#restore-button:hover { list-style-image: url("images/max_prelight.svg") !important; }
+#restore-button:active { list-style-image: url("images/max_pressed.svg") !important; }
+
+#minimize-button:hover { list-style-image: url("images/min_prelight.svg") !important; }
+#minimize-button:active { list-style-image: url("images/min_pressed.svg") !important; }
