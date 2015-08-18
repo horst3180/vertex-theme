@@ -3251,6 +3251,9 @@ NautilusQueryEditor .search-bar.toolbar {
   border-radius: 20px;
   outline-radius: 20px; }
 
+NautilusListView .view {
+  border-bottom: 1px solid rgba(185, 185, 185, 0.3); }
+
 NemoWindow .sidebar .frame {
   border-width: 0; }
 
@@ -3345,12 +3348,12 @@ GeditStatusMenuButton:checked.button.flat, GeditStatusMenuButton.sidebar-button.
 GeditFileBrowserWidget {
   background-color: #ffffff; }
 
-.gedit-search-entry-occurrences-tag, .gb-search-entry-occurrences-tag {
+.gedit-search-entry-occurrences-tag {
   color: rgba(60, 60, 62, 0.6);
   margin: 2px;
   padding: 2px; }
 
-GeditViewFrame .gedit-search-slider, GbEditorFrame .gb-search-slider {
+GeditViewFrame .gedit-search-slider {
   padding: 6px;
   background-color: #fbfbfc;
   border-color: #c6c6c6;
@@ -3358,40 +3361,56 @@ GeditViewFrame .gedit-search-slider, GbEditorFrame .gb-search-slider {
   border-width: 0 1px 1px 1px;
   border-style: solid; }
 
-GbEditorFrame .gb-search-slider {
-  padding: 2px; }
+GbWorkbench .floating-bar {
+  color: #3c3c3e;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none; }
 
-GdTaggedEntry {
-  color: #3c3c3e; }
-
-.preferences.sidebar GtkViewport {
-  border: none; }
-.preferences.sidebar GtkListBox {
-  background-color: #F5F5F7; }
-.preferences.sidebar GtkListBoxRow {
-  padding: 10px; }
-
-GbPreferencesPageLanguage GtkSearchEntry {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; }
 GbPreferencesPageLanguage GtkScrolledWindow {
   border-top-width: 0; }
 
-GtkBox.gb-command-bar-box {
-  border: none;
-  border-top: 1px solid #171819;
-  background-image: linear-gradient(to bottom, #2B2B2C);
-  box-shadow: inset 0px 2px 3px -1px rgba(0, 0, 0, 0.3); }
-  GtkBox.gb-command-bar-box GtkLabel {
-    color: #F3F3F5; }
+GbEditorTweakWidget GtkScrolledWindow {
+  border-top: none; }
+
+GbViewStack GtkBox.header.notebook {
+  border-bottom: 1px solid #b9b9b9; }
+
+GbViewStack.focused GtkBox.header.notebook,
+#project_sidebar_header.focused {
+  background-image: linear-gradient(to bottom, #ebebec, #e2e2e4);
+  box-shadow: inset 0 1px white; }
+
+GbEditorWorkspace > GtkPaned > GtkBox > GtkBox.header.notebook {
+  border-bottom: 1px solid #b9b9b9; }
+
+GbWorkspacePane GtkBox.header.notebook {
+  border-bottom: 1px solid #b9b9b9; }
+
+DhSidebar GtkSearchEntry.entry,
+SymbolTree GtkSearchEntry.entry,
+DhSidebar GtkSearchEntry.entry:focus,
+SymbolTree GtkSearchEntry.entry:focus {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-image: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #b9b9b9;
+  box-shadow: none; }
 
 GtkEntry.gb-command-bar-entry.entry.flat,
 GtkEntry.gb-command-bar-entry.entry.flat:focus {
   font-family: Monospace;
+  color: white;
   background-image: none;
-  background-color: transparent;
+  background-color: #343436;
   padding: 6px 6px 6px 6px;
-  color: #F3F3F5; }
+  border: none; }
+
+GbTerminalView {
+  background-color: #ffffff;
+  color: #3c3c3e; }
 
 GbSourceStyleSchemeWidget GtkSourceView {
   font-family: Monospace; }
@@ -3407,8 +3426,7 @@ GbEditorWorkspace > GtkPaned > GtkBox > GtkBox.header.notebook {
   border-bottom: 1px solid #b9b9b9; }
 
 GbViewStack.focused GtkBox.header.notebook {
-  background-image: linear-gradient(to bottom, #ebebec, #e2e2e4);
-  box-shadow: inset 0 1px white; }
+  background-color: #ffffff; }
   GbViewStack.focused GtkBox.header.notebook .button.dim-label, GbViewStack.focused GtkBox.header.notebook GtkLabel.button.separator, GbViewStack.focused GtkBox.header.notebook .header-bar .button.subtitle, .header-bar GbViewStack.focused GtkBox.header.notebook .button.subtitle {
     opacity: 1; }
 
