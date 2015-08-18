@@ -2016,7 +2016,8 @@ column-header .button, column-header .button:hover, column-header .button:active
 
 GtkSwitch {
   font: 1;
-  -GtkSwitch-slider-width: 39;
+  -GtkSwitch-slider-width: 38;
+  -GtkSwitch-slider-height: 25;
   outline-color: transparent; }
   GtkSwitch.trough, GtkSwitch.slider {
     background-repeat: no-repeat;
