@@ -1243,7 +1243,10 @@ GtkComboBox.combobox-entry .button:only-child,
 %dark_widgets {
 
 // Entries
-  .entry {
+  > .entry,
+  > * > .entry,
+  > * > * > .entry,
+  > * > * > * > .entry {
     @include entry(normal, $dark:'true');
   
     &.image { color: inherit; }
@@ -1263,10 +1266,16 @@ GtkComboBox.combobox-entry .button:only-child,
       border-image: none;
     }
   }
-  .linked > .entry { @extend %header_entry_linked; }
+  > .linked > .entry,
+  > * > .linked > .entry,
+  > * > * > .linked > .entry,
+  > * > * > * > .linked > .entry { @extend %header_entry_linked; }
 
 // Buttons
-  .button {
+  > .button,
+  > * > .button,
+  > * > * > .button,
+  > * > * > * > .button {
     @include button(normal, $dark:'true');
 
     &.flat { 
@@ -1324,17 +1333,38 @@ GtkComboBox.combobox-entry .button:only-child,
       }
     }
   }
-  .linked > .button,
-  .linked > .button:hover { @extend %header_linked; }
+  > .linked > .button,
+  > * > .linked > .button,
+  > * > * > .linked > .button,
+  > * > * > * > .linked > .button,
+  > .linked > .button:hover,
+  > * > .linked > .button:hover,
+  > * > * > .linked > .button:hover,
+  > * > * > * > .linked > .button:hover { @extend %header_linked; }
 
-  .linked > .button.suggested-action,
-  .linked > .button.suggested-action:hover { @extend %header_suggested_linked; }
+  > .linked > .button.suggested-action,
+  > * > .linked > .button.suggested-action,
+  > * > * > .linked > .button.suggested-action,
+  > * > * > * > .linked > .button.suggested-action,
+  > .linked > .button.suggested-action:hover,
+  > * > .linked > .button.suggested-action:hover,
+  > * > * > .linked > .button.suggested-action:hover,
+  > * > * > * > .linked > .button.suggested-action:hover { @extend %header_suggested_linked; }
 
-  .linked > .button.destructive-action,
-  .linked > .button.destructive-action:hover { @extend %header_destructive_linked; }
+  > .linked > .button.destructive-action,
+  > * > .linked > .button.destructive-action,
+  > * > * > .linked > .button.destructive-action,
+  > * > * > * > .linked > .button.destructive-action,
+  > .linked > .button.destructive-action:hover,
+  > * > .linked > .button.destructive-action:hover,
+  > * > * > .linked > .button.destructive-action:hover,
+  > * > * > * > .linked > .button.destructive-action:hover { @extend %header_destructive_linked; }
 
 // Comboboxes
-  GtkComboBox {
+  > GtkComboBox,
+  > * > GtkComboBox,
+  > * > * > GtkComboBox,
+  > * > * > * > GtkComboBox {
     color: nth($_fg_color, 2);
 
     text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
@@ -1352,28 +1382,55 @@ GtkComboBox.combobox-entry .button:only-child,
     &.combobox-entry .entry { @extend %header_entry_linked; }
   }
 
-  .linked > GtkComboBox > .button:dir(ltr),
-  .linked > GtkComboBox > .button:dir(rtl) {
+  > .linked > GtkComboBox > .button:dir(ltr),
+  > .linked > GtkComboBox > .button:dir(rtl),
+  > * > .linked > GtkComboBox > .button:dir(ltr),
+  > * > .linked > GtkComboBox > .button:dir(rtl),
+  > * > * > .linked > GtkComboBox > .button:dir(ltr),
+  > * > * > .linked > GtkComboBox > .button:dir(rtl),
+  > * > * > * > .linked > GtkComboBox > .button:dir(ltr),
+  > * > * > * > .linked > GtkComboBox > .button:dir(rtl) {
     @extend %header_linked_middle;
   }
 
-  GtkComboBox.combobox-entry .button:first-child,
-  .linked > GtkComboBox:first-child > .button {
+  > GtkComboBox.combobox-entry .button:first-child,
+  > .linked > GtkComboBox:first-child > .button,
+  > * > GtkComboBox.combobox-entry .button:first-child,
+  > * > .linked > GtkComboBox:first-child > .button,
+  > * > * > GtkComboBox.combobox-entry .button:first-child,
+  > * > * > .linked > GtkComboBox:first-child > .button,
+  > * > * > * > GtkComboBox.combobox-entry .button:first-child,
+  > * > * > * > .linked > GtkComboBox:first-child > .button {
     @extend %header_linked:first-child;
   }
 
-  GtkComboBox.combobox-entry .button:last-child,
-  .linked > GtkComboBox:last-child > .button {
+  > GtkComboBox.combobox-entry .button:last-child,
+  > .linked > GtkComboBox:last-child > .button,
+  > * > GtkComboBox.combobox-entry .button:last-child,
+  > * > .linked > GtkComboBox:last-child > .button,
+  > * > * > GtkComboBox.combobox-entry .button:last-child,
+  > * > * > .linked > GtkComboBox:last-child > .button,
+  > * > * > * > GtkComboBox.combobox-entry .button:last-child,
+  > * > * > * > .linked > GtkComboBox:last-child > .button {
     @extend %header_linked:last-child;
   }
 
-  GtkComboBox.combobox-entry .button:only-child,
-  .linked > GtkComboBox:only-child > .button {
+  > GtkComboBox.combobox-entry .button:only-child,
+  > .linked > GtkComboBox:only-child > .button,
+  > * > GtkComboBox.combobox-entry .button:only-child,
+  > * > .linked > GtkComboBox:only-child > .button,
+  > * > * > GtkComboBox.combobox-entry .button:only-child,
+  > * > * > .linked > GtkComboBox:only-child > .button,
+  > * > * > * > GtkComboBox.combobox-entry .button:only-child,
+  > * > * > * > .linked > GtkComboBox:only-child > .button {
     @extend %header_linked:only-child;
   }
 
 // Spinbuttons
-  .spinbutton {
+  > .spinbutton,
+  > * > .spinbutton,
+  > * > * > .spinbutton,
+  > * > * > * > .spinbutton {
     .button {
       border-image: none;
       border-width: 0;
@@ -1402,80 +1459,101 @@ GtkComboBox.combobox-entry .button:only-child,
   }
 
 // Scale
-  .scale.trough {
-    margin: 6px 0 5px 0;
-    background-image: linear-gradient(to bottom,
-                                      nth($_trough_bg_color_a, 2),
-                                      nth($_trough_bg_color_b, 2));
-    @include _border(scale-trough-border-dark, $width: 1px 5px 2px 5px, $image-width: 2 6 3 6 / 2px 6px 3px 6px);
+  > .scale,
+  > * > .scale,
+  > * > * > .scale,
+  > * > * > * > .scale {
 
-    &.highlight { // make the highlight a little lighter here for better contrast
+  &.trough {
+      margin: 6px 0 5px 0;
       background-image: linear-gradient(to bottom,
-                                        lighten(nth($_scale_highlight_bg_a, 2), 5%),
-                                        lighten(nth($_scale_highlight_bg_b, 2), 5%));
-      @include _border(scale-highlight-border-dark, $width: 1px 5px 2px 5px, $image-width: 2 6 3 6 / 2px 6px 3px 6px);
+                                        nth($_trough_bg_color_a, 2),
+                                        nth($_trough_bg_color_b, 2));
+      @include _border(scale-trough-border-dark, $width: 1px 5px 2px 5px, $image-width: 2 6 3 6 / 2px 6px 3px 6px);
 
-      &:insensitive {
+      &.highlight { // make the highlight a little lighter here for better contrast
         background-image: linear-gradient(to bottom,
-                                          darken(nth($_scale_highlight_bg_b, 2), 9%),
-                                          darken(nth($_scale_highlight_bg_b, 2), 4%));
+                                          lighten(nth($_scale_highlight_bg_a, 2), 5%),
+                                          lighten(nth($_scale_highlight_bg_b, 2), 5%));
+        @include _border(scale-highlight-border-dark, $width: 1px 5px 2px 5px, $image-width: 2 6 3 6 / 2px 6px 3px 6px);
+
+        &:insensitive {
+          background-image: linear-gradient(to bottom,
+                                            darken(nth($_scale_highlight_bg_b, 2), 9%),
+                                            darken(nth($_scale_highlight_bg_b, 2), 4%));
+        }
+      }
+      &:insensitive {
+        box-shadow: inset 0 1px 2px transparentize(black, 0.9);
+
+        background-image: linear-gradient(to bottom,
+                                          darken(nth($_scale_highlight_bg_b, 2), 11%),
+                                          darken(nth($_scale_highlight_bg_b, 2), 8%));
       }
     }
-    &:insensitive {
-      box-shadow: inset 0 1px 2px transparentize(black, 0.9);
 
-      background-image: linear-gradient(to bottom,
-                                        darken(nth($_scale_highlight_bg_b, 2), 11%),
-                                        darken(nth($_scale_highlight_bg_b, 2), 8%));
-    }
-  }
+  // Scale sliders
+    @each $k,$l in ('',''),
+                   (':hover','-hover'),
+                   (':active','-active'),
+                   (':insensitive','-insensitive') {
 
-// Scale sliders
-  @each $k,$l in ('',''),
-                 (':hover','-hover'),
-                 (':active','-active'),
-                 (':insensitive','-insensitive') {
+      // load scale sliders from .png files in assets directory
 
-    // load scale sliders from .png files in assets directory
-
-    .scale.slider#{$k} {
-      background-image: -gtk-scaled(url("assets/slider#{$l}-dark.png"),url("assets/slider#{$l}-dark@2.png"));
+      &.slider#{$k} {
+        background-image: -gtk-scaled(url("assets/slider#{$l}-dark.png"),url("assets/slider#{$l}-dark@2.png"));
+      }
     }
   }
 
 // Progressbars
-  GtkProgressBar { color: transparentize(nth($_fg_color, 2), 0.3); }
+  > GtkProgressBar,
+  > * > GtkProgressBar,
+  > * > * > GtkProgressBar,
+  > * > * > * > GtkProgressBar {
+    color: transparentize(nth($_fg_color, 2), 0.3);
 
-  GtkProgressBar.trough {
-    box-shadow: inset 0 1px 1px transparentize(black, 0.9);
-    background-image: linear-gradient(to bottom,
-                                      darken(nth($_trough_bg_color_a, 2), 2%),
-                                      darken(nth($_trough_bg_color_b, 2), 5%));
-    @include _border(trough-border-dark, $radius: 2px, $width: 1px 1px 2px 1px, $image-width: 2 2 3 2 / 2px 2px 3px 2px);
+    &.trough {
+      box-shadow: inset 0 1px 1px transparentize(black, 0.9);
+      background-image: linear-gradient(to bottom,
+                                        darken(nth($_trough_bg_color_a, 2), 2%),
+                                        darken(nth($_trough_bg_color_b, 2), 5%));
+      @include _border(trough-border-dark, $radius: 2px, $width: 1px 1px 2px 1px, $image-width: 2 2 3 2 / 2px 2px 3px 2px);
+    }
   }
 
 // Switch
-  @each $k,$l in ('',''),
-                 (':active','-active'),
-                 (':insensitive','-insensitive'),
-                 (':active:insensitive','-active-insensitive') {
+  > GtkSwitch,
+  > * > GtkSwitch,
+  > * > * > GtkSwitch,
+  > * > * > * > GtkSwitch {
 
-    // load switch troughs from .png files in assets directory
+    @each $k,$l in ('',''),
+                   (':active','-active'),
+                   (':insensitive','-insensitive'),
+                   (':active:insensitive','-active-insensitive') {
 
-    GtkSwitch.trough#{$k} {
-      background-image: -gtk-scaled(url("assets/switch#{$l}-dark.png"),url("assets/switch#{$l}-dark@2.png"));
-    }
+      // load switch troughs from .png files in assets directory
 
-    // load switch sliders from .png files in assets directory
-    // only normal and insensitive states
-    @if $k =='' or $k ==':insensitive' {
-      GtkSwitch.slider#{$k} {
-        background-image: -gtk-scaled(url("assets/switch-slider#{$l}-dark.png"),url("assets/switch-slider#{$l}-dark@2.png"));
+      &.trough#{$k} {
+        background-image: -gtk-scaled(url("assets/switch#{$l}-dark.png"),url("assets/switch#{$l}-dark@2.png"));
+      }
+
+      // load switch sliders from .png files in assets directory
+      // only normal and insensitive states
+      @if $k =='' or $k ==':insensitive' {
+        &.slider#{$k} {
+          background-image: -gtk-scaled(url("assets/switch-slider#{$l}-dark.png"),url("assets/switch-slider#{$l}-dark@2.png"));
+        }
       }
     }
   }
+
 // Colorbutton
-  GtkColorButton.button GtkColorSwatch.overlay { border-color: nth($_borders_color, 2); }
+  > GtkColorButton.button GtkColorSwatch.overlay,
+  > * > GtkColorButton.button GtkColorSwatch.overlay,
+  > * > * > GtkColorButton.button GtkColorSwatch.overlay,
+  > * > * > * > GtkColorButton.button GtkColorSwatch.overlay { border-color: nth($_borders_color, 2); }
 }
 
 // Extends for dark linked entries
