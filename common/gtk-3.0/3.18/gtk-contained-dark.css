@@ -3240,6 +3240,9 @@ NautilusQueryEditor .search-bar.toolbar {
   border-radius: 20px;
   outline-radius: 20px; }
 
+.nautilus-circular-button.button.image-button {
+  padding: 8px; }
+
 NautilusListView .view {
   border-bottom: 1px solid rgba(23, 24, 25, 0.3); }
 

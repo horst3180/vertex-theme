@@ -115,7 +115,12 @@ $disk_space_free: darken($bg_color, 3%);
   outline-radius: 20px;
 }
 
-.nautilus-circular-button { @extend %circular-button; }
+.nautilus-circular-button {
+
+  &.button.image-button { padding: 8px; }
+
+  @extend %circular-button;
+}
 
 // View
 NautilusListView .view { border-bottom: 1px solid transparentize($borders_color, 0.7); }
