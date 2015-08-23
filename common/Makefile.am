@@ -194,22 +194,17 @@ if ENABLE_LIGHT
 	rm -rf $(ithemelightdir)
 endif # ENABLE_LIGHT
 
-	-rmdir -p $(DESTDIR)$(datadir)/themes 2>/dev/null
 
 
-
-dist-hook:
-	cp -r \
-		cinnamon \
-		gnome-shell \
-		gtk-2.0 \
-		gtk-2.0-dark \
-		gtk-3.0 \
-		metacity-1 \
-		unity \
-		xfwm4 \
-		xfwm4-light \
-		index.theme \
-		index.theme-dark \
-		index.theme-light \
-		$(distdir)
+EXTRA_DIST = $(srcdir)/cinnamon \
+	     $(srcdir)/gnome-shell \
+	     $(srcdir)/gtk-2.0 \
+	     $(srcdir)/gtk-2.0-dark \
+	     $(srcdir)/gtk-3.0 \
+	     $(srcdir)/metacity-1 \
+	     $(srcdir)/unity \
+	     $(srcdir)/xfwm4 \
+	     $(srcdir)/xfwm4-light \
+	     $(srcdir)/index.theme \
+	     $(srcdir)/index.theme-light \
+	     $(srcdir)/index.theme-dark
