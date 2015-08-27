@@ -932,7 +932,7 @@ GtkFlowBox .grid-child {
     border-style: solid;
     border-color: transparent; }
 
-.menuitem.button.flat, .menuitem.sidebar-button.button, .button:link, .button:visited, .button:link:hover, .button:link:active, .button:link:checked, .button:visited:hover, .button:visited:active, .button:visited:checked, .menu.button, .notebook tab .button, .list-row.button, GtkCalendar.button, GtkCalendar.button:hover, .scale-popup .button:hover {
+.menuitem.button.flat, .menuitem.sidebar-button.button, .button:link, .button:visited, .button:link:hover, .button:link:active, .button:link:checked, .button:visited:hover, .button:visited:active, .button:visited:checked, .menu.button, .notebook tab .button, .list-row.activatable, GtkCalendar.button, GtkCalendar.button:hover, .scale-popup .button:hover {
   border-color: transparent;
   border-image: none;
   background-color: transparent;
@@ -2413,20 +2413,20 @@ GtkScrolledWindow GtkViewport.frame {
 .grid-child {
   padding: 2px; }
 
-.list-row.button {
+.list-row.activatable {
   background-color: rgba(43, 43, 44, 0);
   border-style: none;
   border-radius: 0;
   box-shadow: none; }
-  .list-row.button:hover {
+  .list-row.activatable:hover {
     background-color: rgba(255, 255, 255, 0.05); }
-  .list-row.button:active {
+  .list-row.activatable:active {
     color: #F3F3F5;
     box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
-  .list-row.button:selected:active {
+  .list-row.activatable:selected:active {
     color: #ffffff;
     box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
-  .list-row.button:selected:hover {
+  .list-row.activatable:selected:hover {
     background-color: #538cfb; }
 
 .list-row:selected {
@@ -2559,11 +2559,11 @@ GtkPlacesSidebar.sidebar .sidebar-placeholder-row {
   border: solid 1px #4080fb; }
 GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row {
   background-color: #1c1d1e; }
-GtkPlacesSidebar.sidebar .list-row.button {
+GtkPlacesSidebar.sidebar .list-row.activatable {
   color: rgba(243, 243, 245, 0.8);
   border-width: 1px 0;
   border-style: solid; }
-  GtkPlacesSidebar.sidebar .list-row.button:hover {
+  GtkPlacesSidebar.sidebar .list-row.activatable:hover {
     border-color: rgba(255, 255, 255, 0.05); }
 .sidebar-button.button.image-button {
   padding: 3px; }
@@ -2871,7 +2871,7 @@ GtkIconView.cell:selected:focus, .list-row:selected, GtkEntry.gb-command-bar-ent
   background-color: #4080fb;
   color: #ffffff; }
 
-.menu .menuitem:hover, .sidebar:selected, .sidebar .view:selected, GtkPlacesSidebar.sidebar .list-row.button:selected, .cell:selected {
+.menu .menuitem:hover, .sidebar:selected, .sidebar .view:selected, GtkPlacesSidebar.sidebar .list-row.activatable:selected, .cell:selected {
   color: #ffffff;
   border-width: 1px 0;
   border-style: solid;
