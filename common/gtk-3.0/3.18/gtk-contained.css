@@ -982,6 +982,8 @@ GtkFlowBox .grid-child {
   text-shadow: none; }
   .button:link:hover, .button:link:active, .button:link:checked, .button:visited:hover, .button:visited:active, .button:visited:checked {
     text-shadow: none; }
+  .button:link > .label, .button:visited > .label {
+    text-decoration-line: underline; }
 
 .spinbutton .button {
   border-image: none;
