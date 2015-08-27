@@ -835,7 +835,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 // ComboBoxes
 //
 GtkComboBox {
-  > .button { padding-top: 3px; padding-bottom: 4px; } // Otherwise combos
+  > .the-button-in-the-combobox { padding-top: 3px; padding-bottom: 4px; } // Otherwise combos
                                                        // are bigger then
                                                        // buttons
   -GtkComboBox-arrow-scaling: 0.5;
@@ -858,35 +858,35 @@ GtkComboBox {
   &.combobox-entry .entry { @extend %entry_linked; }
 }
 
-.linked > GtkComboBox > .button:dir(ltr),
-.linked > GtkComboBox > .button:dir(rtl) {
+.linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
+.linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl) {
   @extend %linked_middle;
 }
 
-GtkComboBox.combobox-entry .button:first-child,
-.linked > GtkComboBox:first-child > .button {
+GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
+.linked > GtkComboBox:first-child > .the-button-in-the-combobox {
   @extend %linked:first-child;
 }
 
-GtkComboBox.combobox-entry .button:last-child,
-.linked > GtkComboBox:last-child > .button {
+GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
+.linked > GtkComboBox:last-child > .the-button-in-the-combobox {
   @extend %linked:last-child;
 }
 
-GtkComboBox.combobox-entry .button:only-child,
+GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
 .linked > GtkComboBox:only-child > .button {
   @extend %linked:only-child;
 }
 
 // vertically linked comboboxes
-.linked.vertical > GtkComboBoxText > .button,
-.linked.vertical > GtkComboBox > .button { @extend %linked_middle_vertical; }
-.linked.vertical > GtkComboBoxText:first-child > .button,
-.linked.vertical > GtkComboBox:first-child > .button { @extend %linked_vertical:first-child; }
-.linked.vertical > GtkComboBoxText:last-child > .button,
-.linked.vertical > GtkComboBox:last-child > .button { @extend %linked_vertical:last-child; }
-.linked.vertical > GtkComboBoxText:only-child > .button,
-.linked.vertical > GtkComboBox:only-child > .button { @extend %linked_vertical:only-child; }
+.linked.vertical > GtkComboBoxText > .the-button-in-the-combobox,
+.linked.vertical > GtkComboBox > .the-button-in-the-combobox { @extend %linked_middle_vertical; }
+.linked.vertical > GtkComboBoxText:first-child > .the-button-in-the-combobox,
+.linked.vertical > GtkComboBox:first-child > .the-button-in-the-combobox { @extend %linked_vertical:first-child; }
+.linked.vertical > GtkComboBoxText:last-child > .the-button-in-the-combobox,
+.linked.vertical > GtkComboBox:last-child > .the-button-in-the-combobox { @extend %linked_vertical:last-child; }
+.linked.vertical > GtkComboBoxText:only-child > .the-button-in-the-combobox,
+.linked.vertical > GtkComboBox:only-child > .the-button-in-the-combobox { @extend %linked_vertical:only-child; }
 
 //
 // Floating Bar
@@ -1383,47 +1383,47 @@ GtkComboBox.combobox-entry .button:only-child,
     &.combobox-entry .entry { @extend %header_entry_linked; }
   }
 
-  > .linked > GtkComboBox > .button:dir(ltr),
-  > .linked > GtkComboBox > .button:dir(rtl),
-  > * > .linked > GtkComboBox > .button:dir(ltr),
-  > * > .linked > GtkComboBox > .button:dir(rtl),
-  > * > * > .linked > GtkComboBox > .button:dir(ltr),
-  > * > * > .linked > GtkComboBox > .button:dir(rtl),
-  > * > * > * > .linked > GtkComboBox > .button:dir(ltr),
-  > * > * > * > .linked > GtkComboBox > .button:dir(rtl) {
+  > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
+  > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl),
+  > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
+  > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl),
+  > * > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
+  > * > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl),
+  > * > * > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
+  > * > * > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl) {
     @extend %header_linked_middle;
   }
 
-  > GtkComboBox.combobox-entry .button:first-child,
-  > .linked > GtkComboBox:first-child > .button,
-  > * > GtkComboBox.combobox-entry .button:first-child,
-  > * > .linked > GtkComboBox:first-child > .button,
-  > * > * > GtkComboBox.combobox-entry .button:first-child,
-  > * > * > .linked > GtkComboBox:first-child > .button,
-  > * > * > * > GtkComboBox.combobox-entry .button:first-child,
-  > * > * > * > .linked > GtkComboBox:first-child > .button {
+  > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
+  > .linked > GtkComboBox:first-child > .the-button-in-the-combobox,
+  > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
+  > * > .linked > GtkComboBox:first-child > .the-button-in-the-combobox,
+  > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
+  > * > * > .linked > GtkComboBox:first-child > .the-button-in-the-combobox,
+  > * > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
+  > * > * > * > .linked > GtkComboBox:first-child > .the-button-in-the-combobox {
     @extend %header_linked:first-child;
   }
 
-  > GtkComboBox.combobox-entry .button:last-child,
-  > .linked > GtkComboBox:last-child > .button,
-  > * > GtkComboBox.combobox-entry .button:last-child,
-  > * > .linked > GtkComboBox:last-child > .button,
-  > * > * > GtkComboBox.combobox-entry .button:last-child,
-  > * > * > .linked > GtkComboBox:last-child > .button,
-  > * > * > * > GtkComboBox.combobox-entry .button:last-child,
-  > * > * > * > .linked > GtkComboBox:last-child > .button {
+  > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
+  > .linked > GtkComboBox:last-child > .the-button-in-the-combobox,
+  > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
+  > * > .linked > GtkComboBox:last-child > .the-button-in-the-combobox,
+  > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
+  > * > * > .linked > GtkComboBox:last-child > .the-button-in-the-combobox,
+  > * > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
+  > * > * > * > .linked > GtkComboBox:last-child > .the-button-in-the-combobox {
     @extend %header_linked:last-child;
   }
 
-  > GtkComboBox.combobox-entry .button:only-child,
-  > .linked > GtkComboBox:only-child > .button,
-  > * > GtkComboBox.combobox-entry .button:only-child,
-  > * > .linked > GtkComboBox:only-child > .button,
-  > * > * > GtkComboBox.combobox-entry .button:only-child,
-  > * > * > .linked > GtkComboBox:only-child > .button,
-  > * > * > * > GtkComboBox.combobox-entry .button:only-child,
-  > * > * > * > .linked > GtkComboBox:only-child > .button {
+  > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
+  > .linked > GtkComboBox:only-child > .the-button-in-the-combobox,
+  > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
+  > * > .linked > GtkComboBox:only-child > .the-button-in-the-combobox,
+  > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
+  > * > * > .linked > GtkComboBox:only-child > .the-button-in-the-combobox,
+  > * > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
+  > * > * > * > .linked > GtkComboBox:only-child > .the-button-in-the-combobox {
     @extend %header_linked:only-child;
   }
 
