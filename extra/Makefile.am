@@ -1,8 +1,5 @@
-dist-hook:
-	cp -r \
-		Chrome \
-		Firefox \
-		Ubuntu-Software-Center \
-		Vertex_alt_metacity \
-		Vertex-Plank \
-		$(distdir)
+EXTRA_DIST = $(srcdir)/Chrome \
+	     $(srcdir)/Firefox \
+	     $(srcdir)/Ubuntu-Software-Center \
+	     $(srcdir)/Vertex_alt_metacity \
+	     $(srcdir)/Vertex-Plank
