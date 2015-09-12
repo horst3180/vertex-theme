@@ -61,9 +61,9 @@
       color: rgba(255, 255, 255, 0.65);
       text-shadow: none; }
 
-.rubberband {
-  border: 1px solid #4080fb;
-  background-color: rgba(64, 128, 251, 0.2); }
+.rubberband, GtkTreeView.view.rubberband, .content-view.rubberband {
+  border: 1px solid #0e5ffa;
+  background-color: rgba(14, 95, 250, 0.2); }
 
 .overshoot {
   background-color: rgba(64, 128, 251, 0.2); }
@@ -2176,13 +2176,11 @@ GtkTreeView.view.radio:checked:insensitive:selected,
 .list-row:selected .radio:checked:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-selected-dark.png"), url("assets/radio-checked-insensitive-selected-dark@2.png")); }
 
-GtkIconView.view.check,
-GtkFlowBox.view.check {
+.view.content-view.check:not(.list) {
   -gtk-icon-source: -gtk-scaled(url("assets/grid-selection-unchecked-dark.png"), url("assets/grid-selection-unchecked-dark@2.png"));
   background-color: transparent; }
 
-GtkIconView.view.check:checked,
-GtkFlowBox.view.check:checked {
+.view.content-view.check:checked:not(.list) {
   -gtk-icon-source: -gtk-scaled(url("assets/grid-selection-checked-dark.png"), url("assets/grid-selection-checked-dark@2.png"));
   background-color: transparent; }
 
@@ -2710,6 +2708,11 @@ GtkColorButton.button {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1); }
     GtkColorButton.button GtkColorSwatch:insensitive {
       box-shadow: none; }
+
+.content-view {
+  background-color: #2B2B2C; }
+  .content-view:hover {
+    -gtk-image-effect: highlight; }
 
 .scale-popup .button {
   padding: 6px; }

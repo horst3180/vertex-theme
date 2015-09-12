@@ -108,8 +108,8 @@
 }
 
 .rubberband {
-  border: 1px solid $selected_bg_color;
-  background-color: transparentize($selected_bg_color,0.8);
+  border: 1px solid darken($selected_bg_color, 10%); 
+  background-color: transparentize(darken($selected_bg_color, 10%), 0.8); 
 }
 
 // This is used by GtkScrolledWindow, when rendering the edge
@@ -1660,6 +1660,8 @@ GtkTreeView.view {
   border-left-color: transparentize($fg_color, 0.85); // this is actually the tree lines color,
   border-top-color: transparentize(black, 0.9);    // while this is the grid lines color, better then nothing
 
+  &.rubberband { @extend .rubberband; } // to avoid borders being overridden by the previously set props
+
   &:selected,
   &:selected:focus,
   &:selected:hover { border-radius: 0; } // rest border radius in lists
@@ -2295,8 +2297,7 @@ $_list: ('','');
 // big selectionmode checkboxes
 @each $s,$as in ('','-unchecked'),
                 (':checked', '-checked') {
-  GtkIconView.view.check#{$s},
-  GtkFlowBox.view.check#{$s} {
+  .view.content-view.check#{$s}:not(.list) {
     -gtk-icon-source: -gtk-scaled(url("assets/grid-selection#{$as}#{$asset_suffix}.png"),
                                   url("assets/grid-selection#{$as}#{$asset_suffix}@2.png"));
     background-color: transparent;
@@ -3053,6 +3054,14 @@ GtkColorButton.button {
 //
 // Misc
 //
+
+//content view (grid/list)
+.content-view {
+  background-color: $base_color;
+  &:hover { -gtk-image-effect: highlight; }
+  &.rubberband { @extend .rubberband; }
+}
+
 .scale-popup .button { // +/- buttons on GtkVolumeButton popup
   padding: 6px;
 
