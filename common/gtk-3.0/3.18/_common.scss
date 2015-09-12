@@ -1244,10 +1244,7 @@ GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
 %dark_widgets {
 
 // Entries
-  > .entry,
-  > * > .entry,
-  > * > * > .entry,
-  > * > * > * > .entry {
+  .entry {
     @include entry(normal, $dark:'true');
   
     &.image { color: inherit; }
@@ -1267,16 +1264,10 @@ GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
       border-image: none;
     }
   }
-  > .linked > .entry,
-  > * > .linked > .entry,
-  > * > * > .linked > .entry,
-  > * > * > * > .linked > .entry { @extend %header_entry_linked; }
+  .linked > .entry { @extend %header_entry_linked; }
 
 // Buttons
-  > .button,
-  > * > .button,
-  > * > * > .button,
-  > * > * > * > .button {
+  .button {
     @include button(normal, $dark:'true');
 
     &.flat { 
@@ -1334,38 +1325,17 @@ GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
       }
     }
   }
-  > .linked > .button,
-  > * > .linked > .button,
-  > * > * > .linked > .button,
-  > * > * > * > .linked > .button,
-  > .linked > .button:hover,
-  > * > .linked > .button:hover,
-  > * > * > .linked > .button:hover,
-  > * > * > * > .linked > .button:hover { @extend %header_linked; }
+  .linked > .button,
+  .linked > .button:hover { @extend %header_linked; }
 
-  > .linked > .button.suggested-action,
-  > * > .linked > .button.suggested-action,
-  > * > * > .linked > .button.suggested-action,
-  > * > * > * > .linked > .button.suggested-action,
-  > .linked > .button.suggested-action:hover,
-  > * > .linked > .button.suggested-action:hover,
-  > * > * > .linked > .button.suggested-action:hover,
-  > * > * > * > .linked > .button.suggested-action:hover { @extend %header_suggested_linked; }
+  .linked > .button.suggested-action,
+  .linked > .button.suggested-action:hover { @extend %header_suggested_linked; }
 
-  > .linked > .button.destructive-action,
-  > * > .linked > .button.destructive-action,
-  > * > * > .linked > .button.destructive-action,
-  > * > * > * > .linked > .button.destructive-action,
-  > .linked > .button.destructive-action:hover,
-  > * > .linked > .button.destructive-action:hover,
-  > * > * > .linked > .button.destructive-action:hover,
-  > * > * > * > .linked > .button.destructive-action:hover { @extend %header_destructive_linked; }
+  .linked > .button.destructive-action,
+  .linked > .button.destructive-action:hover { @extend %header_destructive_linked; }
 
 // Comboboxes
-  > GtkComboBox,
-  > * > GtkComboBox,
-  > * > * > GtkComboBox,
-  > * > * > * > GtkComboBox {
+  GtkComboBox {
     color: nth($_fg_color, 2);
 
     text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
@@ -1383,55 +1353,28 @@ GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
     &.combobox-entry .entry { @extend %header_entry_linked; }
   }
 
-  > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
-  > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl),
-  > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
-  > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl),
-  > * > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
-  > * > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl),
-  > * > * > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
-  > * > * > * > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl) {
+  .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
+  .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl) {
     @extend %header_linked_middle;
   }
 
-  > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
-  > .linked > GtkComboBox:first-child > .the-button-in-the-combobox,
-  > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
-  > * > .linked > GtkComboBox:first-child > .the-button-in-the-combobox,
-  > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
-  > * > * > .linked > GtkComboBox:first-child > .the-button-in-the-combobox,
-  > * > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
-  > * > * > * > .linked > GtkComboBox:first-child > .the-button-in-the-combobox {
+  GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
+  .linked > GtkComboBox:first-child > .the-button-in-the-combobox {
     @extend %header_linked:first-child;
   }
 
-  > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
-  > .linked > GtkComboBox:last-child > .the-button-in-the-combobox,
-  > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
-  > * > .linked > GtkComboBox:last-child > .the-button-in-the-combobox,
-  > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
-  > * > * > .linked > GtkComboBox:last-child > .the-button-in-the-combobox,
-  > * > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
-  > * > * > * > .linked > GtkComboBox:last-child > .the-button-in-the-combobox {
+  GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
+  .linked > GtkComboBox:last-child > .the-button-in-the-combobox {
     @extend %header_linked:last-child;
   }
 
-  > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
-  > .linked > GtkComboBox:only-child > .the-button-in-the-combobox,
-  > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
-  > * > .linked > GtkComboBox:only-child > .the-button-in-the-combobox,
-  > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
-  > * > * > .linked > GtkComboBox:only-child > .the-button-in-the-combobox,
-  > * > * > * > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
-  > * > * > * > .linked > GtkComboBox:only-child > .the-button-in-the-combobox {
+  GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
+  .linked > GtkComboBox:only-child > .the-button-in-the-combobox {
     @extend %header_linked:only-child;
   }
 
 // Spinbuttons
-  > .spinbutton,
-  > * > .spinbutton,
-  > * > * > .spinbutton,
-  > * > * > * > .spinbutton {
+  .spinbutton {
     .button {
       border-image: none;
       border-width: 0;
@@ -1460,10 +1403,7 @@ GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
   }
 
 // Scale
-  > .scale,
-  > * > .scale,
-  > * > * > .scale,
-  > * > * > * > .scale {
+  .scale {
 
   &.trough {
       margin: 6px 0 5px 0;
@@ -1508,10 +1448,7 @@ GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
   }
 
 // Progressbars
-  > GtkProgressBar,
-  > * > GtkProgressBar,
-  > * > * > GtkProgressBar,
-  > * > * > * > GtkProgressBar {
+  GtkProgressBar {
     color: transparentize(nth($_fg_color, 2), 0.3);
 
     &.trough {
@@ -1524,10 +1461,7 @@ GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
   }
 
 // Switch
-  > GtkSwitch,
-  > * > GtkSwitch,
-  > * > * > GtkSwitch,
-  > * > * > * > GtkSwitch {
+  GtkSwitch {
 
     @each $k,$l in ('',''),
                    (':active','-active'),
@@ -1551,10 +1485,7 @@ GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
   }
 
 // Colorbutton
-  > GtkColorButton.button GtkColorSwatch.overlay,
-  > * > GtkColorButton.button GtkColorSwatch.overlay,
-  > * > * > GtkColorButton.button GtkColorSwatch.overlay,
-  > * > * > * > GtkColorButton.button GtkColorSwatch.overlay { border-color: nth($_borders_color, 2); }
+  GtkColorButton.button GtkColorSwatch.overlay { border-color: nth($_borders_color, 2); }
 }
 
 // Extends for dark linked entries

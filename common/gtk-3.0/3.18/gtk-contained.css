@@ -1422,13 +1422,7 @@ GtkComboBox {
   .solid-csd .titlebar {
     box-shadow: none; }
 
-.primary-toolbar > .entry, .header-bar > .entry,
-.primary-toolbar > * > .entry,
-.header-bar > * > .entry,
-.primary-toolbar > * > * > .entry,
-.header-bar > * > * > .entry,
-.primary-toolbar > * > * > * > .entry,
-.header-bar > * > * > * > .entry {
+.primary-toolbar .entry, .header-bar .entry {
   background-color: transparent;
   color: #F3F3F5;
   background-image: linear-gradient(to bottom, #313132);
@@ -1438,21 +1432,9 @@ GtkComboBox {
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .entry.image, .header-bar > .entry.image,
-  .primary-toolbar > * > .entry.image,
-  .header-bar > * > .entry.image,
-  .primary-toolbar > * > * > .entry.image,
-  .header-bar > * > * > .entry.image,
-  .primary-toolbar > * > * > * > .entry.image,
-  .header-bar > * > * > * > .entry.image {
+  .primary-toolbar .entry.image, .header-bar .entry.image {
     color: inherit; }
-  .primary-toolbar > .entry:focus, .header-bar > .entry:focus,
-  .primary-toolbar > * > .entry:focus,
-  .header-bar > * > .entry:focus,
-  .primary-toolbar > * > * > .entry:focus,
-  .header-bar > * > * > .entry:focus,
-  .primary-toolbar > * > * > * > .entry:focus,
-  .header-bar > * > * > * > .entry:focus {
+  .primary-toolbar .entry:focus, .header-bar .entry:focus {
     background-color: transparent;
     background-image: linear-gradient(to bottom, #313132);
     box-shadow: none;
@@ -1461,13 +1443,7 @@ GtkComboBox {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-  .primary-toolbar > .entry:insensitive, .header-bar > .entry:insensitive,
-  .primary-toolbar > * > .entry:insensitive,
-  .header-bar > * > .entry:insensitive,
-  .primary-toolbar > * > * > .entry:insensitive,
-  .header-bar > * > * > .entry:insensitive,
-  .primary-toolbar > * > * > * > .entry:insensitive,
-  .header-bar > * > * > * > .entry:insensitive {
+  .primary-toolbar .entry:insensitive, .header-bar .entry:insensitive {
     background-color: transparent;
     color: #949496;
     background-image: linear-gradient(to bottom, #434446);
@@ -1477,13 +1453,7 @@ GtkComboBox {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-  .primary-toolbar > .entry.progressbar, .header-bar > .entry.progressbar,
-  .primary-toolbar > * > .entry.progressbar,
-  .header-bar > * > .entry.progressbar,
-  .primary-toolbar > * > * > .entry.progressbar,
-  .header-bar > * > * > .entry.progressbar,
-  .primary-toolbar > * > * > * > .entry.progressbar,
-  .header-bar > * > * > * > .entry.progressbar {
+  .primary-toolbar .entry.progressbar, .header-bar .entry.progressbar {
     margin: 0 2px 3px 2px;
     border-radius: 0;
     border-width: 0 0 2px;
@@ -1493,13 +1463,7 @@ GtkComboBox {
     background-color: transparent;
     box-shadow: none;
     border-image: none; }
-.primary-toolbar > .button, .header-bar > .button,
-.primary-toolbar > * > .button,
-.header-bar > * > .button,
-.primary-toolbar > * > * > .button,
-.header-bar > * > * > .button,
-.primary-toolbar > * > * > * > .button,
-.header-bar > * > * > * > .button {
+.primary-toolbar .button, .header-bar .button {
   color: #F3F3F5;
   outline-color: rgba(243, 243, 245, 0.3);
   background-image: linear-gradient(to bottom, #4f5053, #343436);
@@ -1510,19 +1474,7 @@ GtkComboBox {
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .button.flat, .header-bar > .button.flat, .primary-toolbar > .sidebar-button.button, .header-bar > .sidebar-button.button,
-  .primary-toolbar > * > .button.flat,
-  .header-bar > * > .button.flat,
-  .primary-toolbar > * > .sidebar-button.button,
-  .header-bar > * > .sidebar-button.button,
-  .primary-toolbar > * > * > .button.flat,
-  .header-bar > * > * > .button.flat,
-  .primary-toolbar > * > * > .sidebar-button.button,
-  .header-bar > * > * > .sidebar-button.button,
-  .primary-toolbar > * > * > * > .button.flat,
-  .header-bar > * > * > * > .button.flat,
-  .primary-toolbar > * > * > * > .sidebar-button.button,
-  .header-bar > * > * > * > .sidebar-button.button {
+  .primary-toolbar .button.flat, .header-bar .button.flat, .primary-toolbar .sidebar-button.button, .header-bar .sidebar-button.button {
     border-color: transparent;
     border-image: none;
     background-color: transparent;
@@ -1532,25 +1484,13 @@ GtkComboBox {
     icon-shadow: none;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
-  .primary-toolbar > .button:focus, .header-bar > .button:focus,
-  .primary-toolbar > * > .button:focus,
-  .header-bar > * > .button:focus,
-  .primary-toolbar > * > * > .button:focus,
-  .header-bar > * > * > .button:focus,
-  .primary-toolbar > * > * > * > .button:focus,
-  .header-bar > * > * > * > .button:focus {
+  .primary-toolbar .button:focus, .header-bar .button:focus {
     border-image: -gtk-scaled(url("borders/button-focused-border-dark.png"), url("borders/button-focused-border-dark@2.png")) 3 3 4 3/3px 3px 4px 3px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-  .primary-toolbar > .button:hover, .header-bar > .button:hover,
-  .primary-toolbar > * > .button:hover,
-  .header-bar > * > .button:hover,
-  .primary-toolbar > * > * > .button:hover,
-  .header-bar > * > * > .button:hover,
-  .primary-toolbar > * > * > * > .button:hover,
-  .header-bar > * > * > * > .button:hover {
+  .primary-toolbar .button:hover, .header-bar .button:hover {
     color: #F3F3F5;
     outline-color: rgba(243, 243, 245, 0.3);
     background-image: linear-gradient(to bottom, #5e6064, #393A3B);
@@ -1561,19 +1501,7 @@ GtkComboBox {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-  .primary-toolbar > .button:active, .header-bar > .button:active, .primary-toolbar > .button:checked, .header-bar > .button:checked,
-  .primary-toolbar > * > .button:active,
-  .header-bar > * > .button:active,
-  .primary-toolbar > * > .button:checked,
-  .header-bar > * > .button:checked,
-  .primary-toolbar > * > * > .button:active,
-  .header-bar > * > * > .button:active,
-  .primary-toolbar > * > * > .button:checked,
-  .header-bar > * > * > .button:checked,
-  .primary-toolbar > * > * > * > .button:active,
-  .header-bar > * > * > * > .button:active,
-  .primary-toolbar > * > * > * > .button:checked,
-  .header-bar > * > * > * > .button:checked {
+  .primary-toolbar .button:active, .header-bar .button:active, .primary-toolbar .button:checked, .header-bar .button:checked {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
     background-image: linear-gradient(to bottom, #242525, #37383A);
@@ -1585,13 +1513,7 @@ GtkComboBox {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-  .primary-toolbar > .button:insensitive, .header-bar > .button:insensitive,
-  .primary-toolbar > * > .button:insensitive,
-  .header-bar > * > .button:insensitive,
-  .primary-toolbar > * > * > .button:insensitive,
-  .header-bar > * > * > .button:insensitive,
-  .primary-toolbar > * > * > * > .button:insensitive,
-  .header-bar > * > * > * > .button:insensitive {
+  .primary-toolbar .button:insensitive, .header-bar .button:insensitive {
     color: #949496;
     background-image: linear-gradient(to bottom, #434446);
     text-shadow: none;
@@ -1601,33 +1523,9 @@ GtkComboBox {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-    .primary-toolbar > .button:insensitive > GtkLabel, .header-bar > .button:insensitive > GtkLabel, .primary-toolbar > .button:insensitive GtkLabel, .header-bar > .button:insensitive GtkLabel,
-    .primary-toolbar > * > .button:insensitive > GtkLabel,
-    .header-bar > * > .button:insensitive > GtkLabel,
-    .primary-toolbar > * > .button:insensitive GtkLabel,
-    .header-bar > * > .button:insensitive GtkLabel,
-    .primary-toolbar > * > * > .button:insensitive > GtkLabel,
-    .header-bar > * > * > .button:insensitive > GtkLabel,
-    .primary-toolbar > * > * > .button:insensitive GtkLabel,
-    .header-bar > * > * > .button:insensitive GtkLabel,
-    .primary-toolbar > * > * > * > .button:insensitive > GtkLabel,
-    .header-bar > * > * > * > .button:insensitive > GtkLabel,
-    .primary-toolbar > * > * > * > .button:insensitive GtkLabel,
-    .header-bar > * > * > * > .button:insensitive GtkLabel {
+    .primary-toolbar .button:insensitive > GtkLabel, .header-bar .button:insensitive > GtkLabel, .primary-toolbar .button:insensitive GtkLabel, .header-bar .button:insensitive GtkLabel {
       color: inherit; }
-  .primary-toolbar > .button.flat:insensitive, .header-bar > .button.flat:insensitive, .primary-toolbar > .sidebar-button.button:insensitive, .header-bar > .sidebar-button.button:insensitive,
-  .primary-toolbar > * > .button.flat:insensitive,
-  .header-bar > * > .button.flat:insensitive,
-  .primary-toolbar > * > .sidebar-button.button:insensitive,
-  .header-bar > * > .sidebar-button.button:insensitive,
-  .primary-toolbar > * > * > .button.flat:insensitive,
-  .header-bar > * > * > .button.flat:insensitive,
-  .primary-toolbar > * > * > .sidebar-button.button:insensitive,
-  .header-bar > * > * > .sidebar-button.button:insensitive,
-  .primary-toolbar > * > * > * > .button.flat:insensitive,
-  .header-bar > * > * > * > .button.flat:insensitive,
-  .primary-toolbar > * > * > * > .sidebar-button.button:insensitive,
-  .header-bar > * > * > * > .sidebar-button.button:insensitive {
+  .primary-toolbar .button.flat:insensitive, .header-bar .button.flat:insensitive, .primary-toolbar .sidebar-button.button:insensitive, .header-bar .sidebar-button.button:insensitive {
     border-color: transparent;
     border-image: none;
     background-color: transparent;
@@ -1635,19 +1533,7 @@ GtkComboBox {
     box-shadow: none;
     text-shadow: none;
     icon-shadow: none; }
-  .primary-toolbar > .button:insensitive:active, .header-bar > .button:insensitive:active, .primary-toolbar > .button:insensitive:checked, .header-bar > .button:insensitive:checked,
-  .primary-toolbar > * > .button:insensitive:active,
-  .header-bar > * > .button:insensitive:active,
-  .primary-toolbar > * > .button:insensitive:checked,
-  .header-bar > * > .button:insensitive:checked,
-  .primary-toolbar > * > * > .button:insensitive:active,
-  .header-bar > * > * > .button:insensitive:active,
-  .primary-toolbar > * > * > .button:insensitive:checked,
-  .header-bar > * > * > .button:insensitive:checked,
-  .primary-toolbar > * > * > * > .button:insensitive:active,
-  .header-bar > * > * > * > .button:insensitive:active,
-  .primary-toolbar > * > * > * > .button:insensitive:checked,
-  .header-bar > * > * > * > .button:insensitive:checked {
+  .primary-toolbar .button:insensitive:active, .header-bar .button:insensitive:active, .primary-toolbar .button:insensitive:checked, .header-bar .button:insensitive:checked {
     color: rgba(255, 255, 255, 0.7);
     background-image: linear-gradient(to bottom, #3a3b3b, #3f4141);
     text-shadow: none;
@@ -1658,39 +1544,9 @@ GtkComboBox {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-    .primary-toolbar > .button:insensitive:active > GtkLabel, .header-bar > .button:insensitive:active > GtkLabel, .primary-toolbar > .button:insensitive:active GtkLabel, .header-bar > .button:insensitive:active GtkLabel, .primary-toolbar > .button:insensitive:checked > GtkLabel, .header-bar > .button:insensitive:checked > GtkLabel, .primary-toolbar > .button:insensitive:checked GtkLabel, .header-bar > .button:insensitive:checked GtkLabel,
-    .primary-toolbar > * > .button:insensitive:active > GtkLabel,
-    .header-bar > * > .button:insensitive:active > GtkLabel,
-    .primary-toolbar > * > .button:insensitive:active GtkLabel,
-    .header-bar > * > .button:insensitive:active GtkLabel,
-    .primary-toolbar > * > .button:insensitive:checked > GtkLabel,
-    .header-bar > * > .button:insensitive:checked > GtkLabel,
-    .primary-toolbar > * > .button:insensitive:checked GtkLabel,
-    .header-bar > * > .button:insensitive:checked GtkLabel,
-    .primary-toolbar > * > * > .button:insensitive:active > GtkLabel,
-    .header-bar > * > * > .button:insensitive:active > GtkLabel,
-    .primary-toolbar > * > * > .button:insensitive:active GtkLabel,
-    .header-bar > * > * > .button:insensitive:active GtkLabel,
-    .primary-toolbar > * > * > .button:insensitive:checked > GtkLabel,
-    .header-bar > * > * > .button:insensitive:checked > GtkLabel,
-    .primary-toolbar > * > * > .button:insensitive:checked GtkLabel,
-    .header-bar > * > * > .button:insensitive:checked GtkLabel,
-    .primary-toolbar > * > * > * > .button:insensitive:active > GtkLabel,
-    .header-bar > * > * > * > .button:insensitive:active > GtkLabel,
-    .primary-toolbar > * > * > * > .button:insensitive:active GtkLabel,
-    .header-bar > * > * > * > .button:insensitive:active GtkLabel,
-    .primary-toolbar > * > * > * > .button:insensitive:checked > GtkLabel,
-    .header-bar > * > * > * > .button:insensitive:checked > GtkLabel,
-    .primary-toolbar > * > * > * > .button:insensitive:checked GtkLabel,
-    .header-bar > * > * > * > .button:insensitive:checked GtkLabel {
+    .primary-toolbar .button:insensitive:active > GtkLabel, .header-bar .button:insensitive:active > GtkLabel, .primary-toolbar .button:insensitive:active GtkLabel, .header-bar .button:insensitive:active GtkLabel, .primary-toolbar .button:insensitive:checked > GtkLabel, .header-bar .button:insensitive:checked > GtkLabel, .primary-toolbar .button:insensitive:checked GtkLabel, .header-bar .button:insensitive:checked GtkLabel {
       color: inherit; }
-  .primary-toolbar > .button.suggested-action, .header-bar > .button.suggested-action,
-  .primary-toolbar > * > .button.suggested-action,
-  .header-bar > * > .button.suggested-action,
-  .primary-toolbar > * > * > .button.suggested-action,
-  .header-bar > * > * > .button.suggested-action,
-  .primary-toolbar > * > * > * > .button.suggested-action,
-  .header-bar > * > * > * > .button.suggested-action {
+  .primary-toolbar .button.suggested-action, .header-bar .button.suggested-action {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
     background-image: linear-gradient(to bottom, #407cbc, #2a5285);
@@ -1701,27 +1557,9 @@ GtkComboBox {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-    .primary-toolbar > .button.suggested-action:hover, .header-bar > .button.suggested-action:hover,
-    .primary-toolbar > * > .button.suggested-action:hover,
-    .header-bar > * > .button.suggested-action:hover,
-    .primary-toolbar > * > * > .button.suggested-action:hover,
-    .header-bar > * > * > .button.suggested-action:hover,
-    .primary-toolbar > * > * > * > .button.suggested-action:hover,
-    .header-bar > * > * > * > .button.suggested-action:hover {
+    .primary-toolbar .button.suggested-action:hover, .header-bar .button.suggested-action:hover {
       background-image: linear-gradient(to bottom, #4e86c3, #2c578d); }
-    .primary-toolbar > .button.suggested-action:active, .header-bar > .button.suggested-action:active, .primary-toolbar > .button.suggested-action:checked, .header-bar > .button.suggested-action:checked,
-    .primary-toolbar > * > .button.suggested-action:active,
-    .header-bar > * > .button.suggested-action:active,
-    .primary-toolbar > * > .button.suggested-action:checked,
-    .header-bar > * > .button.suggested-action:checked,
-    .primary-toolbar > * > * > .button.suggested-action:active,
-    .header-bar > * > * > .button.suggested-action:active,
-    .primary-toolbar > * > * > .button.suggested-action:checked,
-    .header-bar > * > * > .button.suggested-action:checked,
-    .primary-toolbar > * > * > * > .button.suggested-action:active,
-    .header-bar > * > * > * > .button.suggested-action:active,
-    .primary-toolbar > * > * > * > .button.suggested-action:checked,
-    .header-bar > * > * > * > .button.suggested-action:checked {
+    .primary-toolbar .button.suggested-action:active, .header-bar .button.suggested-action:active, .primary-toolbar .button.suggested-action:checked, .header-bar .button.suggested-action:checked {
       color: #ffffff;
       background-image: linear-gradient(to bottom, #244672, #3a6fa9);
       border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"), url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -1729,78 +1567,18 @@ GtkComboBox {
       border-width: 1px 1px 2px 1px;
       border-style: solid;
       border-color: transparent; }
-    .primary-toolbar > .button.suggested-action:insensitive, .header-bar > .button.suggested-action:insensitive,
-    .primary-toolbar > * > .button.suggested-action:insensitive,
-    .header-bar > * > .button.suggested-action:insensitive,
-    .primary-toolbar > * > * > .button.suggested-action:insensitive,
-    .header-bar > * > * > .button.suggested-action:insensitive,
-    .primary-toolbar > * > * > * > .button.suggested-action:insensitive,
-    .header-bar > * > * > * > .button.suggested-action:insensitive {
+    .primary-toolbar .button.suggested-action:insensitive, .header-bar .button.suggested-action:insensitive {
       color: rgba(255, 255, 255, 0.6);
       background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.8));
       text-shadow: none;
       icon-shadow: none; }
-      .primary-toolbar > .button.suggested-action:insensitive > GtkLabel, .header-bar > .button.suggested-action:insensitive > GtkLabel, .primary-toolbar > .button.suggested-action:insensitive GtkLabel, .header-bar > .button.suggested-action:insensitive GtkLabel,
-      .primary-toolbar > * > .button.suggested-action:insensitive > GtkLabel,
-      .header-bar > * > .button.suggested-action:insensitive > GtkLabel,
-      .primary-toolbar > * > .button.suggested-action:insensitive GtkLabel,
-      .header-bar > * > .button.suggested-action:insensitive GtkLabel,
-      .primary-toolbar > * > * > .button.suggested-action:insensitive > GtkLabel,
-      .header-bar > * > * > .button.suggested-action:insensitive > GtkLabel,
-      .primary-toolbar > * > * > .button.suggested-action:insensitive GtkLabel,
-      .header-bar > * > * > .button.suggested-action:insensitive GtkLabel,
-      .primary-toolbar > * > * > * > .button.suggested-action:insensitive > GtkLabel,
-      .header-bar > * > * > * > .button.suggested-action:insensitive > GtkLabel,
-      .primary-toolbar > * > * > * > .button.suggested-action:insensitive GtkLabel,
-      .header-bar > * > * > * > .button.suggested-action:insensitive GtkLabel {
+      .primary-toolbar .button.suggested-action:insensitive > GtkLabel, .header-bar .button.suggested-action:insensitive > GtkLabel, .primary-toolbar .button.suggested-action:insensitive GtkLabel, .header-bar .button.suggested-action:insensitive GtkLabel {
         color: inherit; }
-      .primary-toolbar > .button.suggested-action:insensitive:active, .header-bar > .button.suggested-action:insensitive:active, .primary-toolbar > .button.suggested-action:insensitive:checked, .header-bar > .button.suggested-action:insensitive:checked,
-      .primary-toolbar > * > .button.suggested-action:insensitive:active,
-      .header-bar > * > .button.suggested-action:insensitive:active,
-      .primary-toolbar > * > .button.suggested-action:insensitive:checked,
-      .header-bar > * > .button.suggested-action:insensitive:checked,
-      .primary-toolbar > * > * > .button.suggested-action:insensitive:active,
-      .header-bar > * > * > .button.suggested-action:insensitive:active,
-      .primary-toolbar > * > * > .button.suggested-action:insensitive:checked,
-      .header-bar > * > * > .button.suggested-action:insensitive:checked,
-      .primary-toolbar > * > * > * > .button.suggested-action:insensitive:active,
-      .header-bar > * > * > * > .button.suggested-action:insensitive:active,
-      .primary-toolbar > * > * > * > .button.suggested-action:insensitive:checked,
-      .header-bar > * > * > * > .button.suggested-action:insensitive:checked {
+      .primary-toolbar .button.suggested-action:insensitive:active, .header-bar .button.suggested-action:insensitive:active, .primary-toolbar .button.suggested-action:insensitive:checked, .header-bar .button.suggested-action:insensitive:checked {
         background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.9)); }
-        .primary-toolbar > .button.suggested-action:insensitive:active > GtkLabel, .header-bar > .button.suggested-action:insensitive:active > GtkLabel, .primary-toolbar > .button.suggested-action:insensitive:active GtkLabel, .header-bar > .button.suggested-action:insensitive:active GtkLabel, .primary-toolbar > .button.suggested-action:insensitive:checked > GtkLabel, .header-bar > .button.suggested-action:insensitive:checked > GtkLabel, .primary-toolbar > .button.suggested-action:insensitive:checked GtkLabel, .header-bar > .button.suggested-action:insensitive:checked GtkLabel,
-        .primary-toolbar > * > .button.suggested-action:insensitive:active > GtkLabel,
-        .header-bar > * > .button.suggested-action:insensitive:active > GtkLabel,
-        .primary-toolbar > * > .button.suggested-action:insensitive:active GtkLabel,
-        .header-bar > * > .button.suggested-action:insensitive:active GtkLabel,
-        .primary-toolbar > * > .button.suggested-action:insensitive:checked > GtkLabel,
-        .header-bar > * > .button.suggested-action:insensitive:checked > GtkLabel,
-        .primary-toolbar > * > .button.suggested-action:insensitive:checked GtkLabel,
-        .header-bar > * > .button.suggested-action:insensitive:checked GtkLabel,
-        .primary-toolbar > * > * > .button.suggested-action:insensitive:active > GtkLabel,
-        .header-bar > * > * > .button.suggested-action:insensitive:active > GtkLabel,
-        .primary-toolbar > * > * > .button.suggested-action:insensitive:active GtkLabel,
-        .header-bar > * > * > .button.suggested-action:insensitive:active GtkLabel,
-        .primary-toolbar > * > * > .button.suggested-action:insensitive:checked > GtkLabel,
-        .header-bar > * > * > .button.suggested-action:insensitive:checked > GtkLabel,
-        .primary-toolbar > * > * > .button.suggested-action:insensitive:checked GtkLabel,
-        .header-bar > * > * > .button.suggested-action:insensitive:checked GtkLabel,
-        .primary-toolbar > * > * > * > .button.suggested-action:insensitive:active > GtkLabel,
-        .header-bar > * > * > * > .button.suggested-action:insensitive:active > GtkLabel,
-        .primary-toolbar > * > * > * > .button.suggested-action:insensitive:active GtkLabel,
-        .header-bar > * > * > * > .button.suggested-action:insensitive:active GtkLabel,
-        .primary-toolbar > * > * > * > .button.suggested-action:insensitive:checked > GtkLabel,
-        .header-bar > * > * > * > .button.suggested-action:insensitive:checked > GtkLabel,
-        .primary-toolbar > * > * > * > .button.suggested-action:insensitive:checked GtkLabel,
-        .header-bar > * > * > * > .button.suggested-action:insensitive:checked GtkLabel {
+        .primary-toolbar .button.suggested-action:insensitive:active > GtkLabel, .header-bar .button.suggested-action:insensitive:active > GtkLabel, .primary-toolbar .button.suggested-action:insensitive:active GtkLabel, .header-bar .button.suggested-action:insensitive:active GtkLabel, .primary-toolbar .button.suggested-action:insensitive:checked > GtkLabel, .header-bar .button.suggested-action:insensitive:checked > GtkLabel, .primary-toolbar .button.suggested-action:insensitive:checked GtkLabel, .header-bar .button.suggested-action:insensitive:checked GtkLabel {
           color: inherit; }
-  .primary-toolbar > .button.destructive-action, .header-bar > .button.destructive-action,
-  .primary-toolbar > * > .button.destructive-action,
-  .header-bar > * > .button.destructive-action,
-  .primary-toolbar > * > * > .button.destructive-action,
-  .header-bar > * > * > .button.destructive-action,
-  .primary-toolbar > * > * > * > .button.destructive-action,
-  .header-bar > * > * > * > .button.destructive-action {
+  .primary-toolbar .button.destructive-action, .header-bar .button.destructive-action {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
     background-image: linear-gradient(to bottom, #e86060, #ce3535);
@@ -1811,27 +1589,9 @@ GtkComboBox {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-    .primary-toolbar > .button.destructive-action:hover, .header-bar > .button.destructive-action:hover,
-    .primary-toolbar > * > .button.destructive-action:hover,
-    .header-bar > * > .button.destructive-action:hover,
-    .primary-toolbar > * > * > .button.destructive-action:hover,
-    .header-bar > * > * > .button.destructive-action:hover,
-    .primary-toolbar > * > * > * > .button.destructive-action:hover,
-    .header-bar > * > * > * > .button.destructive-action:hover {
+    .primary-toolbar .button.destructive-action:hover, .header-bar .button.destructive-action:hover {
       background-image: linear-gradient(to bottom, #eb7272, #d03d3d); }
-    .primary-toolbar > .button.destructive-action:active, .header-bar > .button.destructive-action:active, .primary-toolbar > .button.destructive-action:checked, .header-bar > .button.destructive-action:checked,
-    .primary-toolbar > * > .button.destructive-action:active,
-    .header-bar > * > .button.destructive-action:active,
-    .primary-toolbar > * > .button.destructive-action:checked,
-    .header-bar > * > .button.destructive-action:checked,
-    .primary-toolbar > * > * > .button.destructive-action:active,
-    .header-bar > * > * > .button.destructive-action:active,
-    .primary-toolbar > * > * > .button.destructive-action:checked,
-    .header-bar > * > * > .button.destructive-action:checked,
-    .primary-toolbar > * > * > * > .button.destructive-action:active,
-    .header-bar > * > * > * > .button.destructive-action:active,
-    .primary-toolbar > * > * > * > .button.destructive-action:checked,
-    .header-bar > * > * > * > .button.destructive-action:checked {
+    .primary-toolbar .button.destructive-action:active, .header-bar .button.destructive-action:active, .primary-toolbar .button.destructive-action:checked, .header-bar .button.destructive-action:checked {
       color: #ffffff;
       background-image: linear-gradient(to bottom, #bc2e2e, #e54a4a);
       border-image: -gtk-scaled(url("borders/button-active-border-destructive-dark.png"), url("borders/button-active-border-destructive-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -1839,164 +1599,44 @@ GtkComboBox {
       border-width: 1px 1px 2px 1px;
       border-style: solid;
       border-color: transparent; }
-    .primary-toolbar > .button.destructive-action:insensitive, .header-bar > .button.destructive-action:insensitive,
-    .primary-toolbar > * > .button.destructive-action:insensitive,
-    .header-bar > * > .button.destructive-action:insensitive,
-    .primary-toolbar > * > * > .button.destructive-action:insensitive,
-    .header-bar > * > * > .button.destructive-action:insensitive,
-    .primary-toolbar > * > * > * > .button.destructive-action:insensitive,
-    .header-bar > * > * > * > .button.destructive-action:insensitive {
+    .primary-toolbar .button.destructive-action:insensitive, .header-bar .button.destructive-action:insensitive {
       color: rgba(255, 255, 255, 0.6);
       background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.8));
       text-shadow: none;
       icon-shadow: none; }
-      .primary-toolbar > .button.destructive-action:insensitive > GtkLabel, .header-bar > .button.destructive-action:insensitive > GtkLabel, .primary-toolbar > .button.destructive-action:insensitive GtkLabel, .header-bar > .button.destructive-action:insensitive GtkLabel,
-      .primary-toolbar > * > .button.destructive-action:insensitive > GtkLabel,
-      .header-bar > * > .button.destructive-action:insensitive > GtkLabel,
-      .primary-toolbar > * > .button.destructive-action:insensitive GtkLabel,
-      .header-bar > * > .button.destructive-action:insensitive GtkLabel,
-      .primary-toolbar > * > * > .button.destructive-action:insensitive > GtkLabel,
-      .header-bar > * > * > .button.destructive-action:insensitive > GtkLabel,
-      .primary-toolbar > * > * > .button.destructive-action:insensitive GtkLabel,
-      .header-bar > * > * > .button.destructive-action:insensitive GtkLabel,
-      .primary-toolbar > * > * > * > .button.destructive-action:insensitive > GtkLabel,
-      .header-bar > * > * > * > .button.destructive-action:insensitive > GtkLabel,
-      .primary-toolbar > * > * > * > .button.destructive-action:insensitive GtkLabel,
-      .header-bar > * > * > * > .button.destructive-action:insensitive GtkLabel {
+      .primary-toolbar .button.destructive-action:insensitive > GtkLabel, .header-bar .button.destructive-action:insensitive > GtkLabel, .primary-toolbar .button.destructive-action:insensitive GtkLabel, .header-bar .button.destructive-action:insensitive GtkLabel {
         color: inherit; }
-      .primary-toolbar > .button.destructive-action:insensitive:active, .header-bar > .button.destructive-action:insensitive:active, .primary-toolbar > .button.destructive-action:insensitive:checked, .header-bar > .button.destructive-action:insensitive:checked,
-      .primary-toolbar > * > .button.destructive-action:insensitive:active,
-      .header-bar > * > .button.destructive-action:insensitive:active,
-      .primary-toolbar > * > .button.destructive-action:insensitive:checked,
-      .header-bar > * > .button.destructive-action:insensitive:checked,
-      .primary-toolbar > * > * > .button.destructive-action:insensitive:active,
-      .header-bar > * > * > .button.destructive-action:insensitive:active,
-      .primary-toolbar > * > * > .button.destructive-action:insensitive:checked,
-      .header-bar > * > * > .button.destructive-action:insensitive:checked,
-      .primary-toolbar > * > * > * > .button.destructive-action:insensitive:active,
-      .header-bar > * > * > * > .button.destructive-action:insensitive:active,
-      .primary-toolbar > * > * > * > .button.destructive-action:insensitive:checked,
-      .header-bar > * > * > * > .button.destructive-action:insensitive:checked {
+      .primary-toolbar .button.destructive-action:insensitive:active, .header-bar .button.destructive-action:insensitive:active, .primary-toolbar .button.destructive-action:insensitive:checked, .header-bar .button.destructive-action:insensitive:checked {
         background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.9)); }
-        .primary-toolbar > .button.destructive-action:insensitive:active > GtkLabel, .header-bar > .button.destructive-action:insensitive:active > GtkLabel, .primary-toolbar > .button.destructive-action:insensitive:active GtkLabel, .header-bar > .button.destructive-action:insensitive:active GtkLabel, .primary-toolbar > .button.destructive-action:insensitive:checked > GtkLabel, .header-bar > .button.destructive-action:insensitive:checked > GtkLabel, .primary-toolbar > .button.destructive-action:insensitive:checked GtkLabel, .header-bar > .button.destructive-action:insensitive:checked GtkLabel,
-        .primary-toolbar > * > .button.destructive-action:insensitive:active > GtkLabel,
-        .header-bar > * > .button.destructive-action:insensitive:active > GtkLabel,
-        .primary-toolbar > * > .button.destructive-action:insensitive:active GtkLabel,
-        .header-bar > * > .button.destructive-action:insensitive:active GtkLabel,
-        .primary-toolbar > * > .button.destructive-action:insensitive:checked > GtkLabel,
-        .header-bar > * > .button.destructive-action:insensitive:checked > GtkLabel,
-        .primary-toolbar > * > .button.destructive-action:insensitive:checked GtkLabel,
-        .header-bar > * > .button.destructive-action:insensitive:checked GtkLabel,
-        .primary-toolbar > * > * > .button.destructive-action:insensitive:active > GtkLabel,
-        .header-bar > * > * > .button.destructive-action:insensitive:active > GtkLabel,
-        .primary-toolbar > * > * > .button.destructive-action:insensitive:active GtkLabel,
-        .header-bar > * > * > .button.destructive-action:insensitive:active GtkLabel,
-        .primary-toolbar > * > * > .button.destructive-action:insensitive:checked > GtkLabel,
-        .header-bar > * > * > .button.destructive-action:insensitive:checked > GtkLabel,
-        .primary-toolbar > * > * > .button.destructive-action:insensitive:checked GtkLabel,
-        .header-bar > * > * > .button.destructive-action:insensitive:checked GtkLabel,
-        .primary-toolbar > * > * > * > .button.destructive-action:insensitive:active > GtkLabel,
-        .header-bar > * > * > * > .button.destructive-action:insensitive:active > GtkLabel,
-        .primary-toolbar > * > * > * > .button.destructive-action:insensitive:active GtkLabel,
-        .header-bar > * > * > * > .button.destructive-action:insensitive:active GtkLabel,
-        .primary-toolbar > * > * > * > .button.destructive-action:insensitive:checked > GtkLabel,
-        .header-bar > * > * > * > .button.destructive-action:insensitive:checked > GtkLabel,
-        .primary-toolbar > * > * > * > .button.destructive-action:insensitive:checked GtkLabel,
-        .header-bar > * > * > * > .button.destructive-action:insensitive:checked GtkLabel {
+        .primary-toolbar .button.destructive-action:insensitive:active > GtkLabel, .header-bar .button.destructive-action:insensitive:active > GtkLabel, .primary-toolbar .button.destructive-action:insensitive:active GtkLabel, .header-bar .button.destructive-action:insensitive:active GtkLabel, .primary-toolbar .button.destructive-action:insensitive:checked > GtkLabel, .header-bar .button.destructive-action:insensitive:checked > GtkLabel, .primary-toolbar .button.destructive-action:insensitive:checked GtkLabel, .header-bar .button.destructive-action:insensitive:checked GtkLabel {
           color: inherit; }
-.primary-toolbar > GtkComboBox, .header-bar > GtkComboBox,
-.primary-toolbar > * > GtkComboBox,
-.header-bar > * > GtkComboBox,
-.primary-toolbar > * > * > GtkComboBox,
-.header-bar > * > * > GtkComboBox,
-.primary-toolbar > * > * > * > GtkComboBox,
-.header-bar > * > * > * > GtkComboBox {
+.primary-toolbar GtkComboBox, .header-bar GtkComboBox {
   color: #F3F3F5;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
-  .primary-toolbar > GtkComboBox:insensitive, .header-bar > GtkComboBox:insensitive,
-  .primary-toolbar > * > GtkComboBox:insensitive,
-  .header-bar > * > GtkComboBox:insensitive,
-  .primary-toolbar > * > * > GtkComboBox:insensitive,
-  .header-bar > * > * > GtkComboBox:insensitive,
-  .primary-toolbar > * > * > * > GtkComboBox:insensitive,
-  .header-bar > * > * > * > GtkComboBox:insensitive {
+  .primary-toolbar GtkComboBox:insensitive, .header-bar GtkComboBox:insensitive {
     color: #949496;
     text-shadow: none;
     icon-shadow: none; }
-  .primary-toolbar > GtkComboBox .separator, .header-bar > GtkComboBox .separator, .primary-toolbar > GtkComboBox .sidebar .view.separator, .sidebar .primary-toolbar > GtkComboBox .view.separator, .header-bar > GtkComboBox .sidebar .view.separator, .sidebar .header-bar > GtkComboBox .view.separator,
-  .primary-toolbar > * > GtkComboBox .separator,
-  .header-bar > * > GtkComboBox .separator,
-  .primary-toolbar > * > GtkComboBox .sidebar .view.separator,
-  .sidebar .primary-toolbar > * > GtkComboBox .view.separator,
-  .header-bar > * > GtkComboBox .sidebar .view.separator,
-  .sidebar .header-bar > * > GtkComboBox .view.separator,
-  .primary-toolbar > * > * > GtkComboBox .separator,
-  .header-bar > * > * > GtkComboBox .separator,
-  .primary-toolbar > * > * > GtkComboBox .sidebar .view.separator,
-  .sidebar .primary-toolbar > * > * > GtkComboBox .view.separator,
-  .header-bar > * > * > GtkComboBox .sidebar .view.separator,
-  .sidebar .header-bar > * > * > GtkComboBox .view.separator,
-  .primary-toolbar > * > * > * > GtkComboBox .separator,
-  .header-bar > * > * > * > GtkComboBox .separator,
-  .primary-toolbar > * > * > * > GtkComboBox .sidebar .view.separator,
-  .sidebar .primary-toolbar > * > * > * > GtkComboBox .view.separator,
-  .header-bar > * > * > * > GtkComboBox .sidebar .view.separator,
-  .sidebar .header-bar > * > * > * > GtkComboBox .view.separator {
+  .primary-toolbar GtkComboBox .separator, .header-bar GtkComboBox .separator, .primary-toolbar GtkComboBox .sidebar .view.separator, .sidebar .primary-toolbar GtkComboBox .view.separator, .header-bar GtkComboBox .sidebar .view.separator, .sidebar .header-bar GtkComboBox .view.separator {
     border: none; }
-.primary-toolbar > .spinbutton .button, .header-bar > .spinbutton .button,
-.primary-toolbar > * > .spinbutton .button,
-.header-bar > * > .spinbutton .button,
-.primary-toolbar > * > * > .spinbutton .button,
-.header-bar > * > * > .spinbutton .button,
-.primary-toolbar > * > * > * > .spinbutton .button,
-.header-bar > * > * > * > .spinbutton .button {
+.primary-toolbar .spinbutton .button, .header-bar .spinbutton .button {
   border-image: none;
   border-width: 0;
   border-radius: 0;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 2px 0 rgba(255, 255, 255, 0.1), inset 1px 0 #171819;
   icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
-  .primary-toolbar > .spinbutton .button:dir(rtl), .header-bar > .spinbutton .button:dir(rtl),
-  .primary-toolbar > * > .spinbutton .button:dir(rtl),
-  .header-bar > * > .spinbutton .button:dir(rtl),
-  .primary-toolbar > * > * > .spinbutton .button:dir(rtl),
-  .header-bar > * > * > .spinbutton .button:dir(rtl),
-  .primary-toolbar > * > * > * > .spinbutton .button:dir(rtl),
-  .header-bar > * > * > * > .spinbutton .button:dir(rtl) {
+  .primary-toolbar .spinbutton .button:dir(rtl), .header-bar .spinbutton .button:dir(rtl) {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset -2px 0 rgba(255, 255, 255, 0.1), inset -1px 0 #171819; }
-  .primary-toolbar > .spinbutton .button:insensitive, .header-bar > .spinbutton .button:insensitive,
-  .primary-toolbar > * > .spinbutton .button:insensitive,
-  .header-bar > * > .spinbutton .button:insensitive,
-  .primary-toolbar > * > * > .spinbutton .button:insensitive,
-  .header-bar > * > * > .spinbutton .button:insensitive,
-  .primary-toolbar > * > * > * > .spinbutton .button:insensitive,
-  .header-bar > * > * > * > .spinbutton .button:insensitive {
+  .primary-toolbar .spinbutton .button:insensitive, .header-bar .spinbutton .button:insensitive {
     box-shadow: inset 1px 0 #171819;
     icon-shadow: none; }
-    .primary-toolbar > .spinbutton .button:insensitive:dir(rtl), .header-bar > .spinbutton .button:insensitive:dir(rtl),
-    .primary-toolbar > * > .spinbutton .button:insensitive:dir(rtl),
-    .header-bar > * > .spinbutton .button:insensitive:dir(rtl),
-    .primary-toolbar > * > * > .spinbutton .button:insensitive:dir(rtl),
-    .header-bar > * > * > .spinbutton .button:insensitive:dir(rtl),
-    .primary-toolbar > * > * > * > .spinbutton .button:insensitive:dir(rtl),
-    .header-bar > * > * > * > .spinbutton .button:insensitive:dir(rtl) {
+    .primary-toolbar .spinbutton .button:insensitive:dir(rtl), .header-bar .spinbutton .button:insensitive:dir(rtl) {
       box-shadow: inset -1px 0 #171819; }
-  .primary-toolbar > .spinbutton .button:active, .header-bar > .spinbutton .button:active,
-  .primary-toolbar > * > .spinbutton .button:active,
-  .header-bar > * > .spinbutton .button:active,
-  .primary-toolbar > * > * > .spinbutton .button:active,
-  .header-bar > * > * > .spinbutton .button:active,
-  .primary-toolbar > * > * > * > .spinbutton .button:active,
-  .header-bar > * > * > * > .spinbutton .button:active {
+  .primary-toolbar .spinbutton .button:active, .header-bar .spinbutton .button:active {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
-.primary-toolbar > .scale.trough, .header-bar > .scale.trough,
-.primary-toolbar > * > .scale.trough,
-.header-bar > * > .scale.trough,
-.primary-toolbar > * > * > .scale.trough,
-.header-bar > * > * > .scale.trough,
-.primary-toolbar > * > * > * > .scale.trough,
-.header-bar > * > * > * > .scale.trough {
+.primary-toolbar .scale.trough, .header-bar .scale.trough {
   margin: 6px 0 5px 0;
   background-image: linear-gradient(to bottom, #242525, #37383A);
   border-image: -gtk-scaled(url("borders/scale-trough-border-dark.png"), url("borders/scale-trough-border-dark@2.png")) 2 6 3 6/2px 6px 3px 6px stretch;
@@ -2004,89 +1644,29 @@ GtkComboBox {
   border-width: 1px 5px 2px 5px;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .scale.trough.highlight, .header-bar > .scale.trough.highlight,
-  .primary-toolbar > * > .scale.trough.highlight,
-  .header-bar > * > .scale.trough.highlight,
-  .primary-toolbar > * > * > .scale.trough.highlight,
-  .header-bar > * > * > .scale.trough.highlight,
-  .primary-toolbar > * > * > * > .scale.trough.highlight,
-  .header-bar > * > * > * > .scale.trough.highlight {
+  .primary-toolbar .scale.trough.highlight, .header-bar .scale.trough.highlight {
     background-image: linear-gradient(to bottom, #4b4d50, #5d5e62);
     border-image: -gtk-scaled(url("borders/scale-highlight-border-dark.png"), url("borders/scale-highlight-border-dark@2.png")) 2 6 3 6/2px 6px 3px 6px stretch;
     border-radius: 2px;
     border-width: 1px 5px 2px 5px;
     border-style: solid;
     border-color: transparent; }
-    .primary-toolbar > .scale.trough.highlight:insensitive, .header-bar > .scale.trough.highlight:insensitive,
-    .primary-toolbar > * > .scale.trough.highlight:insensitive,
-    .header-bar > * > .scale.trough.highlight:insensitive,
-    .primary-toolbar > * > * > .scale.trough.highlight:insensitive,
-    .header-bar > * > * > .scale.trough.highlight:insensitive,
-    .primary-toolbar > * > * > * > .scale.trough.highlight:insensitive,
-    .header-bar > * > * > * > .scale.trough.highlight:insensitive {
+    .primary-toolbar .scale.trough.highlight:insensitive, .header-bar .scale.trough.highlight:insensitive {
       background-image: linear-gradient(to bottom, #3a3b3d, #46484a); }
-  .primary-toolbar > .scale.trough:insensitive, .header-bar > .scale.trough:insensitive,
-  .primary-toolbar > * > .scale.trough:insensitive,
-  .header-bar > * > .scale.trough:insensitive,
-  .primary-toolbar > * > * > .scale.trough:insensitive,
-  .header-bar > * > * > .scale.trough:insensitive,
-  .primary-toolbar > * > * > * > .scale.trough:insensitive,
-  .header-bar > * > * > * > .scale.trough:insensitive {
+  .primary-toolbar .scale.trough:insensitive, .header-bar .scale.trough:insensitive {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to bottom, #353638, #3c3e40); }
-.primary-toolbar > .scale.slider, .header-bar > .scale.slider,
-.primary-toolbar > * > .scale.slider,
-.header-bar > * > .scale.slider,
-.primary-toolbar > * > * > .scale.slider,
-.header-bar > * > * > .scale.slider,
-.primary-toolbar > * > * > * > .scale.slider,
-.header-bar > * > * > * > .scale.slider {
+.primary-toolbar .scale.slider, .header-bar .scale.slider {
   background-image: -gtk-scaled(url("assets/slider-dark.png"), url("assets/slider-dark@2.png")); }
-.primary-toolbar > .scale.slider:hover, .header-bar > .scale.slider:hover,
-.primary-toolbar > * > .scale.slider:hover,
-.header-bar > * > .scale.slider:hover,
-.primary-toolbar > * > * > .scale.slider:hover,
-.header-bar > * > * > .scale.slider:hover,
-.primary-toolbar > * > * > * > .scale.slider:hover,
-.header-bar > * > * > * > .scale.slider:hover {
+.primary-toolbar .scale.slider:hover, .header-bar .scale.slider:hover {
   background-image: -gtk-scaled(url("assets/slider-hover-dark.png"), url("assets/slider-hover-dark@2.png")); }
-.primary-toolbar > .scale.slider:active, .header-bar > .scale.slider:active,
-.primary-toolbar > * > .scale.slider:active,
-.header-bar > * > .scale.slider:active,
-.primary-toolbar > * > * > .scale.slider:active,
-.header-bar > * > * > .scale.slider:active,
-.primary-toolbar > * > * > * > .scale.slider:active,
-.header-bar > * > * > * > .scale.slider:active {
+.primary-toolbar .scale.slider:active, .header-bar .scale.slider:active {
   background-image: -gtk-scaled(url("assets/slider-active-dark.png"), url("assets/slider-active-dark@2.png")); }
-.primary-toolbar > .scale.slider:insensitive, .header-bar > .scale.slider:insensitive,
-.primary-toolbar > * > .scale.slider:insensitive,
-.header-bar > * > .scale.slider:insensitive,
-.primary-toolbar > * > * > .scale.slider:insensitive,
-.header-bar > * > * > .scale.slider:insensitive,
-.primary-toolbar > * > * > * > .scale.slider:insensitive,
-.header-bar > * > * > * > .scale.slider:insensitive {
+.primary-toolbar .scale.slider:insensitive, .header-bar .scale.slider:insensitive {
   background-image: -gtk-scaled(url("assets/slider-insensitive-dark.png"), url("assets/slider-insensitive-dark@2.png")); }
-.primary-toolbar > GtkProgressBar, .header-bar > GtkProgressBar,
-.primary-toolbar > * > GtkProgressBar,
-.header-bar > * > GtkProgressBar,
-.primary-toolbar > * > * > GtkProgressBar,
-.header-bar > * > * > GtkProgressBar,
-.primary-toolbar > * > * > * > GtkProgressBar,
-.header-bar > * > * > * > GtkProgressBar {
+.primary-toolbar GtkProgressBar, .header-bar GtkProgressBar {
   color: rgba(243, 243, 245, 0.7); }
-  .primary-toolbar > GtkProgressBar.trough, .header-bar > GtkProgressBar.trough, .primary-toolbar > .level-bar.trough, .header-bar > .level-bar.trough,
-  .primary-toolbar > * > GtkProgressBar.trough,
-  .header-bar > * > GtkProgressBar.trough,
-  .primary-toolbar > * > .level-bar.trough,
-  .header-bar > * > .level-bar.trough,
-  .primary-toolbar > * > * > GtkProgressBar.trough,
-  .header-bar > * > * > GtkProgressBar.trough,
-  .primary-toolbar > * > * > .level-bar.trough,
-  .header-bar > * > * > .level-bar.trough,
-  .primary-toolbar > * > * > * > GtkProgressBar.trough,
-  .header-bar > * > * > * > GtkProgressBar.trough,
-  .primary-toolbar > * > * > * > .level-bar.trough,
-  .header-bar > * > * > * > .level-bar.trough {
+  .primary-toolbar GtkProgressBar.trough, .header-bar GtkProgressBar.trough, .primary-toolbar .level-bar.trough, .header-bar .level-bar.trough {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to bottom, #1f2020, #2b2b2d);
     border-image: -gtk-scaled(url("borders/trough-border-dark.png"), url("borders/trough-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -2094,569 +1674,245 @@ GtkComboBox {
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-.primary-toolbar > GtkSwitch.trough, .header-bar > GtkSwitch.trough,
-.primary-toolbar > * > GtkSwitch.trough,
-.header-bar > * > GtkSwitch.trough,
-.primary-toolbar > * > * > GtkSwitch.trough,
-.header-bar > * > * > GtkSwitch.trough,
-.primary-toolbar > * > * > * > GtkSwitch.trough,
-.header-bar > * > * > * > GtkSwitch.trough {
+.primary-toolbar GtkSwitch.trough, .header-bar GtkSwitch.trough {
   background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png")); }
-.primary-toolbar > GtkSwitch.slider, .header-bar > GtkSwitch.slider,
-.primary-toolbar > * > GtkSwitch.slider,
-.header-bar > * > GtkSwitch.slider,
-.primary-toolbar > * > * > GtkSwitch.slider,
-.header-bar > * > * > GtkSwitch.slider,
-.primary-toolbar > * > * > * > GtkSwitch.slider,
-.header-bar > * > * > * > GtkSwitch.slider {
+.primary-toolbar GtkSwitch.slider, .header-bar GtkSwitch.slider {
   background-image: -gtk-scaled(url("assets/switch-slider-dark.png"), url("assets/switch-slider-dark@2.png")); }
-.primary-toolbar > GtkSwitch.trough:active, .header-bar > GtkSwitch.trough:active,
-.primary-toolbar > * > GtkSwitch.trough:active,
-.header-bar > * > GtkSwitch.trough:active,
-.primary-toolbar > * > * > GtkSwitch.trough:active,
-.header-bar > * > * > GtkSwitch.trough:active,
-.primary-toolbar > * > * > * > GtkSwitch.trough:active,
-.header-bar > * > * > * > GtkSwitch.trough:active {
+.primary-toolbar GtkSwitch.trough:active, .header-bar GtkSwitch.trough:active {
   background-image: -gtk-scaled(url("assets/switch-active-dark.png"), url("assets/switch-active-dark@2.png")); }
-.primary-toolbar > GtkSwitch.trough:insensitive, .header-bar > GtkSwitch.trough:insensitive,
-.primary-toolbar > * > GtkSwitch.trough:insensitive,
-.header-bar > * > GtkSwitch.trough:insensitive,
-.primary-toolbar > * > * > GtkSwitch.trough:insensitive,
-.header-bar > * > * > GtkSwitch.trough:insensitive,
-.primary-toolbar > * > * > * > GtkSwitch.trough:insensitive,
-.header-bar > * > * > * > GtkSwitch.trough:insensitive {
+.primary-toolbar GtkSwitch.trough:insensitive, .header-bar GtkSwitch.trough:insensitive {
   background-image: -gtk-scaled(url("assets/switch-insensitive-dark.png"), url("assets/switch-insensitive-dark@2.png")); }
-.primary-toolbar > GtkSwitch.slider:insensitive, .header-bar > GtkSwitch.slider:insensitive,
-.primary-toolbar > * > GtkSwitch.slider:insensitive,
-.header-bar > * > GtkSwitch.slider:insensitive,
-.primary-toolbar > * > * > GtkSwitch.slider:insensitive,
-.header-bar > * > * > GtkSwitch.slider:insensitive,
-.primary-toolbar > * > * > * > GtkSwitch.slider:insensitive,
-.header-bar > * > * > * > GtkSwitch.slider:insensitive {
+.primary-toolbar GtkSwitch.slider:insensitive, .header-bar GtkSwitch.slider:insensitive {
   background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"), url("assets/switch-slider-insensitive-dark@2.png")); }
-.primary-toolbar > GtkSwitch.trough:active:insensitive, .header-bar > GtkSwitch.trough:active:insensitive,
-.primary-toolbar > * > GtkSwitch.trough:active:insensitive,
-.header-bar > * > GtkSwitch.trough:active:insensitive,
-.primary-toolbar > * > * > GtkSwitch.trough:active:insensitive,
-.header-bar > * > * > GtkSwitch.trough:active:insensitive,
-.primary-toolbar > * > * > * > GtkSwitch.trough:active:insensitive,
-.header-bar > * > * > * > GtkSwitch.trough:active:insensitive {
+.primary-toolbar GtkSwitch.trough:active:insensitive, .header-bar GtkSwitch.trough:active:insensitive {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-dark.png"), url("assets/switch-active-insensitive-dark@2.png")); }
-.primary-toolbar > GtkColorButton.button GtkColorSwatch.overlay, .header-bar > GtkColorButton.button GtkColorSwatch.overlay,
-.primary-toolbar > * > GtkColorButton.button GtkColorSwatch.overlay,
-.header-bar > * > GtkColorButton.button GtkColorSwatch.overlay,
-.primary-toolbar > * > * > GtkColorButton.button GtkColorSwatch.overlay,
-.header-bar > * > * > GtkColorButton.button GtkColorSwatch.overlay,
-.primary-toolbar > * > * > * > GtkColorButton.button GtkColorSwatch.overlay,
-.header-bar > * > * > * > GtkColorButton.button GtkColorSwatch.overlay {
+.primary-toolbar GtkColorButton.button GtkColorSwatch.overlay, .header-bar GtkColorButton.button GtkColorSwatch.overlay {
   border-color: #171819; }
 
-.primary-toolbar > .linked > .entry, .header-bar > .linked > .entry,
-.primary-toolbar > * > .linked > .entry,
-.header-bar > * > .linked > .entry,
-.primary-toolbar > * > * > .linked > .entry,
-.header-bar > * > * > .linked > .entry,
-.primary-toolbar > * > * > * > .linked > .entry,
-.header-bar > * > * > * > .linked > .entry, .primary-toolbar > GtkComboBox.combobox-entry .entry, .header-bar > GtkComboBox.combobox-entry .entry {
+.primary-toolbar .linked > .entry, .header-bar .linked > .entry, .primary-toolbar GtkComboBox.combobox-entry .entry, .header-bar GtkComboBox.combobox-entry .entry {
   border-image: -gtk-scaled(url("borders/middle-entry-normal-border-dark.png"), url("borders/middle-entry-normal-border-dark@2.png")) 1 1 2 0/1px 1px 2px 0 stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .linked > .entry:focus, .header-bar > .linked > .entry:focus,
-  .primary-toolbar > * > .linked > .entry:focus,
-  .header-bar > * > .linked > .entry:focus,
-  .primary-toolbar > * > * > .linked > .entry:focus,
-  .header-bar > * > * > .linked > .entry:focus,
-  .primary-toolbar > * > * > * > .linked > .entry:focus,
-  .header-bar > * > * > * > .linked > .entry:focus, .primary-toolbar > GtkComboBox.combobox-entry .entry:focus, .header-bar > GtkComboBox.combobox-entry .entry:focus {
+  .primary-toolbar .linked > .entry:focus, .header-bar .linked > .entry:focus, .primary-toolbar GtkComboBox.combobox-entry .entry:focus, .header-bar GtkComboBox.combobox-entry .entry:focus {
     border-image: -gtk-scaled(url("borders/middle-entry-focused-border-dark.png"), url("borders/middle-entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
-.primary-toolbar > .linked > .entry:first-child, .header-bar > .linked > .entry:first-child,
-.primary-toolbar > * > .linked > .entry:first-child,
-.header-bar > * > .linked > .entry:first-child,
-.primary-toolbar > * > * > .linked > .entry:first-child,
-.header-bar > * > * > .linked > .entry:first-child,
-.primary-toolbar > * > * > * > .linked > .entry:first-child,
-.header-bar > * > * > * > .linked > .entry:first-child, .primary-toolbar > GtkComboBox.combobox-entry .entry:first-child, .header-bar > GtkComboBox.combobox-entry .entry:first-child {
+.primary-toolbar .linked > .entry:first-child, .header-bar .linked > .entry:first-child, .primary-toolbar GtkComboBox.combobox-entry .entry:first-child, .header-bar GtkComboBox.combobox-entry .entry:first-child {
   border-image: -gtk-scaled(url("borders/left-entry-normal-border-dark.png"), url("borders/left-entry-normal-border-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .linked > .entry:first-child:focus, .header-bar > .linked > .entry:first-child:focus,
-  .primary-toolbar > * > .linked > .entry:first-child:focus,
-  .header-bar > * > .linked > .entry:first-child:focus,
-  .primary-toolbar > * > * > .linked > .entry:first-child:focus,
-  .header-bar > * > * > .linked > .entry:first-child:focus,
-  .primary-toolbar > * > * > * > .linked > .entry:first-child:focus,
-  .header-bar > * > * > * > .linked > .entry:first-child:focus, .primary-toolbar > GtkComboBox.combobox-entry .entry:first-child:focus, .header-bar > GtkComboBox.combobox-entry .entry:first-child:focus {
+  .primary-toolbar .linked > .entry:first-child:focus, .header-bar .linked > .entry:first-child:focus, .primary-toolbar GtkComboBox.combobox-entry .entry:first-child:focus, .header-bar GtkComboBox.combobox-entry .entry:first-child:focus {
     border-image: -gtk-scaled(url("borders/left-entry-focused-border-dark.png"), url("borders/left-entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
-.primary-toolbar > .linked > .entry:last-child, .header-bar > .linked > .entry:last-child,
-.primary-toolbar > * > .linked > .entry:last-child,
-.header-bar > * > .linked > .entry:last-child,
-.primary-toolbar > * > * > .linked > .entry:last-child,
-.header-bar > * > * > .linked > .entry:last-child,
-.primary-toolbar > * > * > * > .linked > .entry:last-child,
-.header-bar > * > * > * > .linked > .entry:last-child, .primary-toolbar > GtkComboBox.combobox-entry .entry:last-child, .header-bar > GtkComboBox.combobox-entry .entry:last-child {
+.primary-toolbar .linked > .entry:last-child, .header-bar .linked > .entry:last-child, .primary-toolbar GtkComboBox.combobox-entry .entry:last-child, .header-bar GtkComboBox.combobox-entry .entry:last-child {
   border-image: -gtk-scaled(url("borders/right-entry-normal-border-dark.png"), url("borders/right-entry-normal-border-dark@2.png")) 2 2 3 0/2px 2px 3px 0 stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .linked > .entry:last-child:focus, .header-bar > .linked > .entry:last-child:focus,
-  .primary-toolbar > * > .linked > .entry:last-child:focus,
-  .header-bar > * > .linked > .entry:last-child:focus,
-  .primary-toolbar > * > * > .linked > .entry:last-child:focus,
-  .header-bar > * > * > .linked > .entry:last-child:focus,
-  .primary-toolbar > * > * > * > .linked > .entry:last-child:focus,
-  .header-bar > * > * > * > .linked > .entry:last-child:focus, .primary-toolbar > GtkComboBox.combobox-entry .entry:last-child:focus, .header-bar > GtkComboBox.combobox-entry .entry:last-child:focus {
+  .primary-toolbar .linked > .entry:last-child:focus, .header-bar .linked > .entry:last-child:focus, .primary-toolbar GtkComboBox.combobox-entry .entry:last-child:focus, .header-bar GtkComboBox.combobox-entry .entry:last-child:focus {
     border-image: -gtk-scaled(url("borders/right-entry-focused-border-dark.png"), url("borders/right-entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
-.primary-toolbar > .linked > .entry:only-child, .header-bar > .linked > .entry:only-child,
-.primary-toolbar > * > .linked > .entry:only-child,
-.header-bar > * > .linked > .entry:only-child,
-.primary-toolbar > * > * > .linked > .entry:only-child,
-.header-bar > * > * > .linked > .entry:only-child,
-.primary-toolbar > * > * > * > .linked > .entry:only-child,
-.header-bar > * > * > * > .linked > .entry:only-child, .primary-toolbar > GtkComboBox.combobox-entry .entry:only-child, .header-bar > GtkComboBox.combobox-entry .entry:only-child {
+.primary-toolbar .linked > .entry:only-child, .header-bar .linked > .entry:only-child, .primary-toolbar GtkComboBox.combobox-entry .entry:only-child, .header-bar GtkComboBox.combobox-entry .entry:only-child {
   border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .linked > .entry:only-child:focus, .header-bar > .linked > .entry:only-child:focus,
-  .primary-toolbar > * > .linked > .entry:only-child:focus,
-  .header-bar > * > .linked > .entry:only-child:focus,
-  .primary-toolbar > * > * > .linked > .entry:only-child:focus,
-  .header-bar > * > * > .linked > .entry:only-child:focus,
-  .primary-toolbar > * > * > * > .linked > .entry:only-child:focus,
-  .header-bar > * > * > * > .linked > .entry:only-child:focus, .primary-toolbar > GtkComboBox.combobox-entry .entry:only-child:focus, .header-bar > GtkComboBox.combobox-entry .entry:only-child:focus {
+  .primary-toolbar .linked > .entry:only-child:focus, .header-bar .linked > .entry:only-child:focus, .primary-toolbar GtkComboBox.combobox-entry .entry:only-child:focus, .header-bar GtkComboBox.combobox-entry .entry:only-child:focus {
     border-image: -gtk-scaled(url("borders/entry-focused-border-dark.png"), url("borders/entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
-.primary-toolbar > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .header-bar > .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
-.primary-toolbar > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl),
-.header-bar > .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl), .header-bar.selection-mode .linked > .button.suggested-action, .header-bar.selection-mode .linked > .button.suggested-action:hover, .primary-toolbar > .linked > .button, .header-bar > .linked > .button,
-.primary-toolbar > * > .linked > .button,
-.header-bar > * > .linked > .button,
-.primary-toolbar > * > * > .linked > .button,
-.header-bar > * > * > .linked > .button,
-.primary-toolbar > * > * > * > .linked > .button,
-.header-bar > * > * > * > .linked > .button,
-.primary-toolbar > .linked > .button:hover,
-.header-bar > .linked > .button:hover,
-.primary-toolbar > * > .linked > .button:hover,
-.header-bar > * > .linked > .button:hover,
-.primary-toolbar > * > * > .linked > .button:hover,
-.header-bar > * > * > .linked > .button:hover,
-.primary-toolbar > * > * > * > .linked > .button:hover,
-.header-bar > * > * > * > .linked > .button:hover {
+.primary-toolbar .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .header-bar .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
+.primary-toolbar .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl),
+.header-bar .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl), .header-bar.selection-mode .linked > .button.suggested-action, .header-bar.selection-mode .linked > .button.suggested-action:hover, .primary-toolbar .linked > .button, .header-bar .linked > .button,
+.primary-toolbar .linked > .button:hover,
+.header-bar .linked > .button:hover {
   border-image: -gtk-scaled(url("borders/middle-button-normal-border-dark.png"), url("borders/middle-button-normal-border-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .header-bar > .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr),
-  .primary-toolbar > .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(rtl),
-  .header-bar > .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(rtl), .header-bar.selection-mode .linked > .button.suggested-action:active, .primary-toolbar > .linked > .button:active, .header-bar > .linked > .button:active,
-  .primary-toolbar > * > .linked > .button:active,
-  .header-bar > * > .linked > .button:active,
-  .primary-toolbar > * > * > .linked > .button:active,
-  .header-bar > * > * > .linked > .button:active,
-  .primary-toolbar > * > * > * > .linked > .button:active,
-  .header-bar > * > * > * > .linked > .button:active, .primary-toolbar > .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .header-bar > .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr),
-  .primary-toolbar > .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(rtl),
-  .header-bar > .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(rtl), .header-bar.selection-mode .linked > .button.suggested-action:checked, .primary-toolbar > .linked > .button:checked, .header-bar > .linked > .button:checked,
-  .primary-toolbar > * > .linked > .button:checked,
-  .header-bar > * > .linked > .button:checked,
-  .primary-toolbar > * > * > .linked > .button:checked,
-  .header-bar > * > * > .linked > .button:checked,
-  .primary-toolbar > * > * > * > .linked > .button:checked,
-  .header-bar > * > * > * > .linked > .button:checked {
+  .primary-toolbar .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .header-bar .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr),
+  .primary-toolbar .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(rtl),
+  .header-bar .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(rtl), .header-bar.selection-mode .linked > .button.suggested-action:active, .primary-toolbar .linked > .button:active, .header-bar .linked > .button:active, .primary-toolbar .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .header-bar .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr),
+  .primary-toolbar .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(rtl),
+  .header-bar .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(rtl), .header-bar.selection-mode .linked > .button.suggested-action:checked, .primary-toolbar .linked > .button:checked, .header-bar .linked > .button:checked {
     border-image: -gtk-scaled(url("borders/middle-button-active-border-dark.png"), url("borders/middle-button-active-border-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
-.header-bar.selection-mode .linked > .button.suggested-action:first-child, .primary-toolbar > .linked > .button:first-child, .header-bar > .linked > .button:first-child,
-.primary-toolbar > * > .linked > .button:first-child,
-.header-bar > * > .linked > .button:first-child,
-.primary-toolbar > * > * > .linked > .button:first-child,
-.header-bar > * > * > .linked > .button:first-child,
-.primary-toolbar > * > * > * > .linked > .button:first-child,
-.header-bar > * > * > * > .linked > .button:first-child, .primary-toolbar > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .header-bar > GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
-.primary-toolbar > .linked > GtkComboBox:first-child > .the-button-in-the-combobox,
-.header-bar > .linked > GtkComboBox:first-child > .the-button-in-the-combobox {
+.header-bar.selection-mode .linked > .button.suggested-action:first-child, .primary-toolbar .linked > .button:first-child, .header-bar .linked > .button:first-child, .primary-toolbar GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .header-bar GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child,
+.primary-toolbar .linked > GtkComboBox:first-child > .the-button-in-the-combobox,
+.header-bar .linked > GtkComboBox:first-child > .the-button-in-the-combobox {
   border-image: -gtk-scaled(url("borders/left-button-normal-border-dark.png"), url("borders/left-button-normal-border-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button.suggested-action:first-child:active, .primary-toolbar > .linked > .button:first-child:active, .header-bar > .linked > .button:first-child:active,
-  .primary-toolbar > * > .linked > .button:first-child:active,
-  .header-bar > * > .linked > .button:first-child:active,
-  .primary-toolbar > * > * > .linked > .button:first-child:active,
-  .header-bar > * > * > .linked > .button:first-child:active,
-  .primary-toolbar > * > * > * > .linked > .button:first-child:active,
-  .header-bar > * > * > * > .linked > .button:first-child:active, .primary-toolbar > GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .header-bar > GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child,
-  .primary-toolbar > .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active,
-  .header-bar > .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .header-bar.selection-mode .linked > .button.suggested-action:first-child:checked, .primary-toolbar > .linked > .button:first-child:checked, .header-bar > .linked > .button:first-child:checked,
-  .primary-toolbar > * > .linked > .button:first-child:checked,
-  .header-bar > * > .linked > .button:first-child:checked,
-  .primary-toolbar > * > * > .linked > .button:first-child:checked,
-  .header-bar > * > * > .linked > .button:first-child:checked,
-  .primary-toolbar > * > * > * > .linked > .button:first-child:checked,
-  .header-bar > * > * > * > .linked > .button:first-child:checked, .primary-toolbar > GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .header-bar > GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child,
-  .primary-toolbar > .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked,
-  .header-bar > .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked {
+  .primary-toolbar .linked > .button:first-child:active, .header-bar .linked > .button:first-child:active, .primary-toolbar GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .header-bar GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child,
+  .primary-toolbar .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active,
+  .header-bar .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .primary-toolbar .linked > .button:first-child:checked, .header-bar .linked > .button:first-child:checked, .primary-toolbar GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .header-bar GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child,
+  .primary-toolbar .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked,
+  .header-bar .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked {
     border-image: -gtk-scaled(url("borders/left-button-active-border-dark.png"), url("borders/left-button-active-border-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
-.header-bar.selection-mode .linked > .button.suggested-action:last-child, .primary-toolbar > .linked > .button:last-child, .header-bar > .linked > .button:last-child,
-.primary-toolbar > * > .linked > .button:last-child,
-.header-bar > * > .linked > .button:last-child,
-.primary-toolbar > * > * > .linked > .button:last-child,
-.header-bar > * > * > .linked > .button:last-child,
-.primary-toolbar > * > * > * > .linked > .button:last-child,
-.header-bar > * > * > * > .linked > .button:last-child, .primary-toolbar > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .header-bar > GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
-.primary-toolbar > .linked > GtkComboBox:last-child > .the-button-in-the-combobox,
-.header-bar > .linked > GtkComboBox:last-child > .the-button-in-the-combobox {
+.header-bar.selection-mode .linked > .button.suggested-action:last-child, .primary-toolbar .linked > .button:last-child, .header-bar .linked > .button:last-child, .primary-toolbar GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .header-bar GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child,
+.primary-toolbar .linked > GtkComboBox:last-child > .the-button-in-the-combobox,
+.header-bar .linked > GtkComboBox:last-child > .the-button-in-the-combobox {
   border-image: -gtk-scaled(url("borders/right-button-normal-border-dark.png"), url("borders/right-button-normal-border-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button.suggested-action:last-child:active, .primary-toolbar > .linked > .button:last-child:active, .header-bar > .linked > .button:last-child:active,
-  .primary-toolbar > * > .linked > .button:last-child:active,
-  .header-bar > * > .linked > .button:last-child:active,
-  .primary-toolbar > * > * > .linked > .button:last-child:active,
-  .header-bar > * > * > .linked > .button:last-child:active,
-  .primary-toolbar > * > * > * > .linked > .button:last-child:active,
-  .header-bar > * > * > * > .linked > .button:last-child:active, .primary-toolbar > GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .header-bar > GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child,
-  .primary-toolbar > .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active,
-  .header-bar > .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .header-bar.selection-mode .linked > .button.suggested-action:last-child:checked, .primary-toolbar > .linked > .button:last-child:checked, .header-bar > .linked > .button:last-child:checked,
-  .primary-toolbar > * > .linked > .button:last-child:checked,
-  .header-bar > * > .linked > .button:last-child:checked,
-  .primary-toolbar > * > * > .linked > .button:last-child:checked,
-  .header-bar > * > * > .linked > .button:last-child:checked,
-  .primary-toolbar > * > * > * > .linked > .button:last-child:checked,
-  .header-bar > * > * > * > .linked > .button:last-child:checked, .primary-toolbar > GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .header-bar > GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child,
-  .primary-toolbar > .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked,
-  .header-bar > .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked {
+  .primary-toolbar .linked > .button:last-child:active, .header-bar .linked > .button:last-child:active, .primary-toolbar GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .header-bar GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child,
+  .primary-toolbar .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active,
+  .header-bar .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .primary-toolbar .linked > .button:last-child:checked, .header-bar .linked > .button:last-child:checked, .primary-toolbar GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .header-bar GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child,
+  .primary-toolbar .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked,
+  .header-bar .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked {
     border-image: -gtk-scaled(url("borders/right-button-active-border-dark.png"), url("borders/right-button-active-border-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
-.header-bar.selection-mode .linked > .button.suggested-action:only-child, .primary-toolbar > .linked > .button:only-child, .header-bar > .linked > .button:only-child,
-.primary-toolbar > * > .linked > .button:only-child,
-.header-bar > * > .linked > .button:only-child,
-.primary-toolbar > * > * > .linked > .button:only-child,
-.header-bar > * > * > .linked > .button:only-child,
-.primary-toolbar > * > * > * > .linked > .button:only-child,
-.header-bar > * > * > * > .linked > .button:only-child, .primary-toolbar > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .header-bar > GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
-.primary-toolbar > .linked > GtkComboBox:only-child > .the-button-in-the-combobox,
-.header-bar > .linked > GtkComboBox:only-child > .the-button-in-the-combobox {
+.header-bar.selection-mode .linked > .button.suggested-action:only-child, .primary-toolbar .linked > .button:only-child, .header-bar .linked > .button:only-child, .primary-toolbar GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .header-bar GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
+.primary-toolbar .linked > GtkComboBox:only-child > .the-button-in-the-combobox,
+.header-bar .linked > GtkComboBox:only-child > .the-button-in-the-combobox {
   border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button.suggested-action:only-child:active, .primary-toolbar > .linked > .button:only-child:active, .header-bar > .linked > .button:only-child:active,
-  .primary-toolbar > * > .linked > .button:only-child:active,
-  .header-bar > * > .linked > .button:only-child:active,
-  .primary-toolbar > * > * > .linked > .button:only-child:active,
-  .header-bar > * > * > .linked > .button:only-child:active,
-  .primary-toolbar > * > * > * > .linked > .button:only-child:active,
-  .header-bar > * > * > * > .linked > .button:only-child:active, .primary-toolbar > GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .header-bar > GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child,
-  .primary-toolbar > .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active,
-  .header-bar > .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .header-bar.selection-mode .linked > .button.suggested-action:only-child:checked, .primary-toolbar > .linked > .button:only-child:checked, .header-bar > .linked > .button:only-child:checked,
-  .primary-toolbar > * > .linked > .button:only-child:checked,
-  .header-bar > * > .linked > .button:only-child:checked,
-  .primary-toolbar > * > * > .linked > .button:only-child:checked,
-  .header-bar > * > * > .linked > .button:only-child:checked,
-  .primary-toolbar > * > * > * > .linked > .button:only-child:checked,
-  .header-bar > * > * > * > .linked > .button:only-child:checked, .primary-toolbar > GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .header-bar > GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child,
-  .primary-toolbar > .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked,
-  .header-bar > .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked {
+  .primary-toolbar .linked > .button:only-child:active, .header-bar .linked > .button:only-child:active, .primary-toolbar GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .header-bar GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child,
+  .primary-toolbar .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active,
+  .header-bar .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .primary-toolbar .linked > .button:only-child:checked, .header-bar .linked > .button:only-child:checked, .primary-toolbar GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .header-bar GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child,
+  .primary-toolbar .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked,
+  .header-bar .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked {
     border-image: -gtk-scaled(url("borders/button-active-border-dark.png"), url("borders/button-active-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
-.header-bar.selection-mode .linked > .button, .header-bar.selection-mode .linked > .button:hover, .primary-toolbar > .linked > .button.suggested-action, .header-bar > .linked > .button.suggested-action,
-.primary-toolbar > * > .linked > .button.suggested-action,
-.header-bar > * > .linked > .button.suggested-action,
-.primary-toolbar > * > * > .linked > .button.suggested-action,
-.header-bar > * > * > .linked > .button.suggested-action,
-.primary-toolbar > * > * > * > .linked > .button.suggested-action,
-.header-bar > * > * > * > .linked > .button.suggested-action,
-.primary-toolbar > .linked > .button.suggested-action:hover,
-.header-bar > .linked > .button.suggested-action:hover,
-.primary-toolbar > * > .linked > .button.suggested-action:hover,
-.header-bar > * > .linked > .button.suggested-action:hover,
-.primary-toolbar > * > * > .linked > .button.suggested-action:hover,
-.header-bar > * > * > .linked > .button.suggested-action:hover,
-.primary-toolbar > * > * > * > .linked > .button.suggested-action:hover,
-.header-bar > * > * > * > .linked > .button.suggested-action:hover {
+.header-bar.selection-mode .linked > .button, .header-bar.selection-mode .linked > .button:hover, .primary-toolbar .linked > .button.suggested-action, .header-bar .linked > .button.suggested-action,
+.primary-toolbar .linked > .button.suggested-action:hover,
+.header-bar .linked > .button.suggested-action:hover {
   border-image: -gtk-scaled(url("borders/middle-button-normal-border-suggested-dark.png"), url("borders/middle-button-normal-border-suggested-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button:active, .primary-toolbar > .linked > .button.suggested-action:active, .header-bar > .linked > .button.suggested-action:active,
-  .primary-toolbar > * > .linked > .button.suggested-action:active,
-  .header-bar > * > .linked > .button.suggested-action:active,
-  .primary-toolbar > * > * > .linked > .button.suggested-action:active,
-  .header-bar > * > * > .linked > .button.suggested-action:active,
-  .primary-toolbar > * > * > * > .linked > .button.suggested-action:active,
-  .header-bar > * > * > * > .linked > .button.suggested-action:active, .header-bar.selection-mode .linked > .button:checked, .primary-toolbar > .linked > .button.suggested-action:checked, .header-bar > .linked > .button.suggested-action:checked,
-  .primary-toolbar > * > .linked > .button.suggested-action:checked,
-  .header-bar > * > .linked > .button.suggested-action:checked,
-  .primary-toolbar > * > * > .linked > .button.suggested-action:checked,
-  .header-bar > * > * > .linked > .button.suggested-action:checked,
-  .primary-toolbar > * > * > * > .linked > .button.suggested-action:checked,
-  .header-bar > * > * > * > .linked > .button.suggested-action:checked {
+  .header-bar.selection-mode .linked > .button:active, .primary-toolbar .linked > .button.suggested-action:active, .header-bar .linked > .button.suggested-action:active, .header-bar.selection-mode .linked > .button:checked, .primary-toolbar .linked > .button.suggested-action:checked, .header-bar .linked > .button.suggested-action:checked {
     border-image: -gtk-scaled(url("borders/middle-button-active-border-suggested-dark.png"), url("borders/middle-button-active-border-suggested-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
-.header-bar.selection-mode .linked > .button:first-child, .primary-toolbar > .linked > .button.suggested-action:first-child, .header-bar > .linked > .button.suggested-action:first-child,
-.primary-toolbar > * > .linked > .button.suggested-action:first-child,
-.header-bar > * > .linked > .button.suggested-action:first-child,
-.primary-toolbar > * > * > .linked > .button.suggested-action:first-child,
-.header-bar > * > * > .linked > .button.suggested-action:first-child,
-.primary-toolbar > * > * > * > .linked > .button.suggested-action:first-child,
-.header-bar > * > * > * > .linked > .button.suggested-action:first-child {
+.header-bar.selection-mode .linked > .button:first-child, .primary-toolbar .linked > .button.suggested-action:first-child, .header-bar .linked > .button.suggested-action:first-child {
   border-image: -gtk-scaled(url("borders/left-button-normal-border-suggested-dark.png"), url("borders/left-button-normal-border-suggested-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button:first-child:active, .primary-toolbar > .linked > .button.suggested-action:first-child:active, .header-bar > .linked > .button.suggested-action:first-child:active,
-  .primary-toolbar > * > .linked > .button.suggested-action:first-child:active,
-  .header-bar > * > .linked > .button.suggested-action:first-child:active,
-  .primary-toolbar > * > * > .linked > .button.suggested-action:first-child:active,
-  .header-bar > * > * > .linked > .button.suggested-action:first-child:active,
-  .primary-toolbar > * > * > * > .linked > .button.suggested-action:first-child:active,
-  .header-bar > * > * > * > .linked > .button.suggested-action:first-child:active, .header-bar.selection-mode .linked > .button:first-child:checked, .primary-toolbar > .linked > .button.suggested-action:first-child:checked, .header-bar > .linked > .button.suggested-action:first-child:checked,
-  .primary-toolbar > * > .linked > .button.suggested-action:first-child:checked,
-  .header-bar > * > .linked > .button.suggested-action:first-child:checked,
-  .primary-toolbar > * > * > .linked > .button.suggested-action:first-child:checked,
-  .header-bar > * > * > .linked > .button.suggested-action:first-child:checked,
-  .primary-toolbar > * > * > * > .linked > .button.suggested-action:first-child:checked,
-  .header-bar > * > * > * > .linked > .button.suggested-action:first-child:checked {
+  .header-bar.selection-mode .linked > .button:first-child:active, .primary-toolbar .linked > .button.suggested-action:first-child:active, .header-bar .linked > .button.suggested-action:first-child:active, .header-bar.selection-mode .linked > .button:first-child:checked, .primary-toolbar .linked > .button.suggested-action:first-child:checked, .header-bar .linked > .button.suggested-action:first-child:checked {
     border-image: -gtk-scaled(url("borders/left-button-active-border-suggested-dark.png"), url("borders/left-button-active-border-suggested-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
-.header-bar.selection-mode .linked > .button:last-child, .primary-toolbar > .linked > .button.suggested-action:last-child, .header-bar > .linked > .button.suggested-action:last-child,
-.primary-toolbar > * > .linked > .button.suggested-action:last-child,
-.header-bar > * > .linked > .button.suggested-action:last-child,
-.primary-toolbar > * > * > .linked > .button.suggested-action:last-child,
-.header-bar > * > * > .linked > .button.suggested-action:last-child,
-.primary-toolbar > * > * > * > .linked > .button.suggested-action:last-child,
-.header-bar > * > * > * > .linked > .button.suggested-action:last-child {
+.header-bar.selection-mode .linked > .button:last-child, .primary-toolbar .linked > .button.suggested-action:last-child, .header-bar .linked > .button.suggested-action:last-child {
   border-image: -gtk-scaled(url("borders/right-button-normal-border-suggested-dark.png"), url("borders/right-button-normal-border-suggested-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button:last-child:active, .primary-toolbar > .linked > .button.suggested-action:last-child:active, .header-bar > .linked > .button.suggested-action:last-child:active,
-  .primary-toolbar > * > .linked > .button.suggested-action:last-child:active,
-  .header-bar > * > .linked > .button.suggested-action:last-child:active,
-  .primary-toolbar > * > * > .linked > .button.suggested-action:last-child:active,
-  .header-bar > * > * > .linked > .button.suggested-action:last-child:active,
-  .primary-toolbar > * > * > * > .linked > .button.suggested-action:last-child:active,
-  .header-bar > * > * > * > .linked > .button.suggested-action:last-child:active, .header-bar.selection-mode .linked > .button:last-child:checked, .primary-toolbar > .linked > .button.suggested-action:last-child:checked, .header-bar > .linked > .button.suggested-action:last-child:checked,
-  .primary-toolbar > * > .linked > .button.suggested-action:last-child:checked,
-  .header-bar > * > .linked > .button.suggested-action:last-child:checked,
-  .primary-toolbar > * > * > .linked > .button.suggested-action:last-child:checked,
-  .header-bar > * > * > .linked > .button.suggested-action:last-child:checked,
-  .primary-toolbar > * > * > * > .linked > .button.suggested-action:last-child:checked,
-  .header-bar > * > * > * > .linked > .button.suggested-action:last-child:checked {
+  .header-bar.selection-mode .linked > .button:last-child:active, .primary-toolbar .linked > .button.suggested-action:last-child:active, .header-bar .linked > .button.suggested-action:last-child:active, .header-bar.selection-mode .linked > .button:last-child:checked, .primary-toolbar .linked > .button.suggested-action:last-child:checked, .header-bar .linked > .button.suggested-action:last-child:checked {
     border-image: -gtk-scaled(url("borders/right-button-active-border-suggested-dark.png"), url("borders/right-button-active-border-suggested-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
-.header-bar.selection-mode .linked > .button:only-child, .primary-toolbar > .linked > .button.suggested-action:only-child, .header-bar > .linked > .button.suggested-action:only-child,
-.primary-toolbar > * > .linked > .button.suggested-action:only-child,
-.header-bar > * > .linked > .button.suggested-action:only-child,
-.primary-toolbar > * > * > .linked > .button.suggested-action:only-child,
-.header-bar > * > * > .linked > .button.suggested-action:only-child,
-.primary-toolbar > * > * > * > .linked > .button.suggested-action:only-child,
-.header-bar > * > * > * > .linked > .button.suggested-action:only-child {
+.header-bar.selection-mode .linked > .button:only-child, .primary-toolbar .linked > .button.suggested-action:only-child, .header-bar .linked > .button.suggested-action:only-child {
   border-image: -gtk-scaled(url("borders/button-normal-border-suggested-dark.png"), url("borders/button-normal-border-suggested-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button:only-child:active, .primary-toolbar > .linked > .button.suggested-action:only-child:active, .header-bar > .linked > .button.suggested-action:only-child:active,
-  .primary-toolbar > * > .linked > .button.suggested-action:only-child:active,
-  .header-bar > * > .linked > .button.suggested-action:only-child:active,
-  .primary-toolbar > * > * > .linked > .button.suggested-action:only-child:active,
-  .header-bar > * > * > .linked > .button.suggested-action:only-child:active,
-  .primary-toolbar > * > * > * > .linked > .button.suggested-action:only-child:active,
-  .header-bar > * > * > * > .linked > .button.suggested-action:only-child:active, .header-bar.selection-mode .linked > .button:only-child:checked, .primary-toolbar > .linked > .button.suggested-action:only-child:checked, .header-bar > .linked > .button.suggested-action:only-child:checked,
-  .primary-toolbar > * > .linked > .button.suggested-action:only-child:checked,
-  .header-bar > * > .linked > .button.suggested-action:only-child:checked,
-  .primary-toolbar > * > * > .linked > .button.suggested-action:only-child:checked,
-  .header-bar > * > * > .linked > .button.suggested-action:only-child:checked,
-  .primary-toolbar > * > * > * > .linked > .button.suggested-action:only-child:checked,
-  .header-bar > * > * > * > .linked > .button.suggested-action:only-child:checked {
+  .header-bar.selection-mode .linked > .button:only-child:active, .primary-toolbar .linked > .button.suggested-action:only-child:active, .header-bar .linked > .button.suggested-action:only-child:active, .header-bar.selection-mode .linked > .button:only-child:checked, .primary-toolbar .linked > .button.suggested-action:only-child:checked, .header-bar .linked > .button.suggested-action:only-child:checked {
     border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"), url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
-.primary-toolbar > .linked > .button.destructive-action, .header-bar > .linked > .button.destructive-action,
-.primary-toolbar > * > .linked > .button.destructive-action,
-.header-bar > * > .linked > .button.destructive-action,
-.primary-toolbar > * > * > .linked > .button.destructive-action,
-.header-bar > * > * > .linked > .button.destructive-action,
-.primary-toolbar > * > * > * > .linked > .button.destructive-action,
-.header-bar > * > * > * > .linked > .button.destructive-action,
-.primary-toolbar > .linked > .button.destructive-action:hover,
-.header-bar > .linked > .button.destructive-action:hover,
-.primary-toolbar > * > .linked > .button.destructive-action:hover,
-.header-bar > * > .linked > .button.destructive-action:hover,
-.primary-toolbar > * > * > .linked > .button.destructive-action:hover,
-.header-bar > * > * > .linked > .button.destructive-action:hover,
-.primary-toolbar > * > * > * > .linked > .button.destructive-action:hover,
-.header-bar > * > * > * > .linked > .button.destructive-action:hover {
+.primary-toolbar .linked > .button.destructive-action, .header-bar .linked > .button.destructive-action,
+.primary-toolbar .linked > .button.destructive-action:hover,
+.header-bar .linked > .button.destructive-action:hover {
   border-image: -gtk-scaled(url("borders/middle-button-normal-border-destructive-dark.png"), url("borders/middle-button-normal-border-destructive-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .linked > .button.destructive-action:active, .header-bar > .linked > .button.destructive-action:active,
-  .primary-toolbar > * > .linked > .button.destructive-action:active,
-  .header-bar > * > .linked > .button.destructive-action:active,
-  .primary-toolbar > * > * > .linked > .button.destructive-action:active,
-  .header-bar > * > * > .linked > .button.destructive-action:active,
-  .primary-toolbar > * > * > * > .linked > .button.destructive-action:active,
-  .header-bar > * > * > * > .linked > .button.destructive-action:active, .primary-toolbar > .linked > .button.destructive-action:checked, .header-bar > .linked > .button.destructive-action:checked,
-  .primary-toolbar > * > .linked > .button.destructive-action:checked,
-  .header-bar > * > .linked > .button.destructive-action:checked,
-  .primary-toolbar > * > * > .linked > .button.destructive-action:checked,
-  .header-bar > * > * > .linked > .button.destructive-action:checked,
-  .primary-toolbar > * > * > * > .linked > .button.destructive-action:checked,
-  .header-bar > * > * > * > .linked > .button.destructive-action:checked {
+  .primary-toolbar .linked > .button.destructive-action:active, .header-bar .linked > .button.destructive-action:active, .primary-toolbar .linked > .button.destructive-action:checked, .header-bar .linked > .button.destructive-action:checked {
     border-image: -gtk-scaled(url("borders/middle-button-active-border-destructive-dark.png"), url("borders/middle-button-active-border-destructive-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
-.primary-toolbar > .linked > .button.destructive-action:first-child, .header-bar > .linked > .button.destructive-action:first-child,
-.primary-toolbar > * > .linked > .button.destructive-action:first-child,
-.header-bar > * > .linked > .button.destructive-action:first-child,
-.primary-toolbar > * > * > .linked > .button.destructive-action:first-child,
-.header-bar > * > * > .linked > .button.destructive-action:first-child,
-.primary-toolbar > * > * > * > .linked > .button.destructive-action:first-child,
-.header-bar > * > * > * > .linked > .button.destructive-action:first-child {
+.primary-toolbar .linked > .button.destructive-action:first-child, .header-bar .linked > .button.destructive-action:first-child {
   border-image: -gtk-scaled(url("borders/left-button-normal-border-destructive-dark.png"), url("borders/left-button-normal-border-destructive-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .linked > .button.destructive-action:first-child:active, .header-bar > .linked > .button.destructive-action:first-child:active,
-  .primary-toolbar > * > .linked > .button.destructive-action:first-child:active,
-  .header-bar > * > .linked > .button.destructive-action:first-child:active,
-  .primary-toolbar > * > * > .linked > .button.destructive-action:first-child:active,
-  .header-bar > * > * > .linked > .button.destructive-action:first-child:active,
-  .primary-toolbar > * > * > * > .linked > .button.destructive-action:first-child:active,
-  .header-bar > * > * > * > .linked > .button.destructive-action:first-child:active, .primary-toolbar > .linked > .button.destructive-action:first-child:checked, .header-bar > .linked > .button.destructive-action:first-child:checked,
-  .primary-toolbar > * > .linked > .button.destructive-action:first-child:checked,
-  .header-bar > * > .linked > .button.destructive-action:first-child:checked,
-  .primary-toolbar > * > * > .linked > .button.destructive-action:first-child:checked,
-  .header-bar > * > * > .linked > .button.destructive-action:first-child:checked,
-  .primary-toolbar > * > * > * > .linked > .button.destructive-action:first-child:checked,
-  .header-bar > * > * > * > .linked > .button.destructive-action:first-child:checked {
+  .primary-toolbar .linked > .button.destructive-action:first-child:active, .header-bar .linked > .button.destructive-action:first-child:active, .primary-toolbar .linked > .button.destructive-action:first-child:checked, .header-bar .linked > .button.destructive-action:first-child:checked {
     border-image: -gtk-scaled(url("borders/left-button-active-border-destructive-dark.png"), url("borders/left-button-active-border-destructive-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
-.primary-toolbar > .linked > .button.destructive-action:last-child, .header-bar > .linked > .button.destructive-action:last-child,
-.primary-toolbar > * > .linked > .button.destructive-action:last-child,
-.header-bar > * > .linked > .button.destructive-action:last-child,
-.primary-toolbar > * > * > .linked > .button.destructive-action:last-child,
-.header-bar > * > * > .linked > .button.destructive-action:last-child,
-.primary-toolbar > * > * > * > .linked > .button.destructive-action:last-child,
-.header-bar > * > * > * > .linked > .button.destructive-action:last-child {
+.primary-toolbar .linked > .button.destructive-action:last-child, .header-bar .linked > .button.destructive-action:last-child {
   border-image: -gtk-scaled(url("borders/right-button-normal-border-destructive-dark.png"), url("borders/right-button-normal-border-destructive-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .linked > .button.destructive-action:last-child:active, .header-bar > .linked > .button.destructive-action:last-child:active,
-  .primary-toolbar > * > .linked > .button.destructive-action:last-child:active,
-  .header-bar > * > .linked > .button.destructive-action:last-child:active,
-  .primary-toolbar > * > * > .linked > .button.destructive-action:last-child:active,
-  .header-bar > * > * > .linked > .button.destructive-action:last-child:active,
-  .primary-toolbar > * > * > * > .linked > .button.destructive-action:last-child:active,
-  .header-bar > * > * > * > .linked > .button.destructive-action:last-child:active, .primary-toolbar > .linked > .button.destructive-action:last-child:checked, .header-bar > .linked > .button.destructive-action:last-child:checked,
-  .primary-toolbar > * > .linked > .button.destructive-action:last-child:checked,
-  .header-bar > * > .linked > .button.destructive-action:last-child:checked,
-  .primary-toolbar > * > * > .linked > .button.destructive-action:last-child:checked,
-  .header-bar > * > * > .linked > .button.destructive-action:last-child:checked,
-  .primary-toolbar > * > * > * > .linked > .button.destructive-action:last-child:checked,
-  .header-bar > * > * > * > .linked > .button.destructive-action:last-child:checked {
+  .primary-toolbar .linked > .button.destructive-action:last-child:active, .header-bar .linked > .button.destructive-action:last-child:active, .primary-toolbar .linked > .button.destructive-action:last-child:checked, .header-bar .linked > .button.destructive-action:last-child:checked {
     border-image: -gtk-scaled(url("borders/right-button-active-border-destructive-dark.png"), url("borders/right-button-active-border-destructive-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
-.primary-toolbar > .linked > .button.destructive-action:only-child, .header-bar > .linked > .button.destructive-action:only-child,
-.primary-toolbar > * > .linked > .button.destructive-action:only-child,
-.header-bar > * > .linked > .button.destructive-action:only-child,
-.primary-toolbar > * > * > .linked > .button.destructive-action:only-child,
-.header-bar > * > * > .linked > .button.destructive-action:only-child,
-.primary-toolbar > * > * > * > .linked > .button.destructive-action:only-child,
-.header-bar > * > * > * > .linked > .button.destructive-action:only-child {
+.primary-toolbar .linked > .button.destructive-action:only-child, .header-bar .linked > .button.destructive-action:only-child {
   border-image: -gtk-scaled(url("borders/button-normal-border-destructive-dark.png"), url("borders/button-normal-border-destructive-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .primary-toolbar > .linked > .button.destructive-action:only-child:active, .header-bar > .linked > .button.destructive-action:only-child:active,
-  .primary-toolbar > * > .linked > .button.destructive-action:only-child:active,
-  .header-bar > * > .linked > .button.destructive-action:only-child:active,
-  .primary-toolbar > * > * > .linked > .button.destructive-action:only-child:active,
-  .header-bar > * > * > .linked > .button.destructive-action:only-child:active,
-  .primary-toolbar > * > * > * > .linked > .button.destructive-action:only-child:active,
-  .header-bar > * > * > * > .linked > .button.destructive-action:only-child:active, .primary-toolbar > .linked > .button.destructive-action:only-child:checked, .header-bar > .linked > .button.destructive-action:only-child:checked,
-  .primary-toolbar > * > .linked > .button.destructive-action:only-child:checked,
-  .header-bar > * > .linked > .button.destructive-action:only-child:checked,
-  .primary-toolbar > * > * > .linked > .button.destructive-action:only-child:checked,
-  .header-bar > * > * > .linked > .button.destructive-action:only-child:checked,
-  .primary-toolbar > * > * > * > .linked > .button.destructive-action:only-child:checked,
-  .header-bar > * > * > * > .linked > .button.destructive-action:only-child:checked {
+  .primary-toolbar .linked > .button.destructive-action:only-child:active, .header-bar .linked > .button.destructive-action:only-child:active, .primary-toolbar .linked > .button.destructive-action:only-child:checked, .header-bar .linked > .button.destructive-action:only-child:checked {
     border-image: -gtk-scaled(url("borders/button-active-border-destructive-dark.png"), url("borders/button-active-border-destructive-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
