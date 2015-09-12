@@ -2324,7 +2324,7 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
   -GtkRange-trough-border: 1;
   outline-offset: -1px;
   outline-radius: 2px;
-  //margin: 10px;
+  color: gtkalpha(currentColor, 0.7);
 
   &.trough {
     margin: 6px 0 5px 0;

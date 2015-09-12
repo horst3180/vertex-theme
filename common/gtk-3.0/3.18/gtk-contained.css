@@ -3339,7 +3339,8 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
   -GtkScale-slider-length: 19px;
   -GtkRange-trough-border: 1;
   outline-offset: -1px;
-  outline-radius: 2px; }
+  outline-radius: 2px;
+  color: alpha(currentColor,0.7); }
   .scale.trough {
     margin: 6px 0 5px 0;
     background-image: linear-gradient(to bottom, #6a6a6c, #949596);
