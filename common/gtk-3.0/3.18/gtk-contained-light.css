@@ -2417,9 +2417,11 @@ GtkScrolledWindow GtkViewport.frame {
   GtkFileChooserButton .separator.vertical, GtkFileChooserButton .sidebar .vertical.view.separator, .sidebar GtkFileChooserButton .vertical.view.separator, GtkFontButton .separator.vertical, GtkFontButton .sidebar .vertical.view.separator, .sidebar GtkFontButton .vertical.view.separator {
     -GtkWidget-wide-separators: true; }
 
-.list, .list-row {
+.list {
   border-color: #b9b9b9;
   background-color: #fafafb; }
+  GtkPlacesView .list {
+    background-color: #ffffff; }
 
 .list-row,
 .grid-child {

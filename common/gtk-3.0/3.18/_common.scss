@@ -2636,9 +2636,11 @@ GtkScrolledWindow GtkViewport.frame { border-style: none; }
 //
 // Lists
 //
-.list, .list-row {
+.list {
   border-color: $borders_color;
   background-color: if($variant=='light', $sidebar_bg, $base_color);
+
+  GtkPlacesView & { background-color: $base_color; }
 }
 
 .list-row,
