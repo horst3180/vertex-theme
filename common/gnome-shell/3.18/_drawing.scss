@@ -1,0 +1,100 @@
+// Drawing mixins
+
+// generic drawing of more complex things
+
+// provide font size in rem, with px fallback
+@mixin fontsize($size: 24, $base: 16) {
+  font-size: round($size) + pt;
+  //font-size: ($size / $base) * 1rem;
+}
+
+// entries
+
+@mixin entry($t, $dark:false) {
+//
+// Entries drawing function
+//
+  @extend %reset_style;
+
+  @if $t==normal {
+    color: $text_color;
+    border-image: url("entry/entry-border.svg") 4;
+  }
+
+  @if $t==focus {
+    color: $text_color;
+    border-image: url("entry/entry-border-focused.svg") 4;
+  }
+
+  @if $t==insensitive {
+    color: $insensitive_fg_color;
+    border-image: url("entry/entry-border-insensitive.svg") 4;
+  }
+}
+
+// buttons
+
+@mixin button($t) {
+//
+// Button drawing function
+//
+  @extend %reset_style;
+
+  text-shadow: 0 -1px $light_text_icon_shadow;
+  icon-shadow: 0 -1px $light_text_icon_shadow;
+
+
+  @if $t==normal {
+  //
+  // normal button
+  //
+    color: $fg_color;
+    border-image: url("button/button-border.svg") 4;
+  }
+
+  @else if $t==focus {
+  //
+  // focused button
+  //
+    color: $fg_color;
+    border-image: url("button/button-border-focused.svg") 4;
+  }
+
+  @else if $t==focus-hover {
+  //
+  // focused button
+  //
+    color: $fg_color;
+    border-image: url("button/button-border-focused-hover.svg") 4;
+  }
+
+  @else if $t==hover {
+  //
+  // hovered button
+  //
+    color: $fg_color;
+    border-image: url("button/button-border-hover.svg") 4;
+  }
+
+  @else if $t==active {
+  //
+  // pushed button
+  //
+    color: $button_active_fg;
+    border-image: url("button/button-border-active.svg") 4;
+
+    text-shadow: 0 -1px $button_active_text_shadow;
+    icon-shadow: 0 -1px $button_active_text_shadow;
+  }
+
+  @else if $t==insensitive {
+  //
+  // insensitive button
+  //
+    color: $insensitive_fg_color;
+    border-image: url("button/button-border-insensitive.svg") 4;
+
+    //text-shadow: none;
+    //icon-shadow: none;
+  }
+}
