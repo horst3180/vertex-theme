@@ -3923,10 +3923,13 @@ TerminalWindow .notebook {
     color: #adadae;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.8); }
-  TerminalWindow .notebook .prelight-page .button:hover {
-    color: #ff3333;
+  TerminalWindow .notebook .button:hover {
+    color: #F3F3F5;
     border: 1px solid rgba(255, 255, 255, 0.1); }
-  TerminalWindow .notebook .prelight-page .button:active {
+  TerminalWindow .notebook .prelight-page .button:hover {
+    color: #ff3333; }
+  TerminalWindow .notebook .prelight-page .button:active,
+  TerminalWindow .notebook .button:active {
     color: #F3F3F5;
     border: 1px solid #171819;
     background-image: linear-gradient(to bottom, #1c1d1e, #29292b); }

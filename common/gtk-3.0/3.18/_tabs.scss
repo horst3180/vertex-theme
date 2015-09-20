@@ -103,12 +103,15 @@ TerminalWindow .notebook {
     icon-shadow: 0 -1px nth($_wm_title_shadow, 2);
   }
 
-  .prelight-page .button:hover {
-    color: lighten(red, 10%);
+  .button:hover {
+    color: nth($_wm_title, 2);
     border: 1px solid transparentize(white, 0.9);
   }
 
-  .prelight-page .button:active {
+  .prelight-page .button:hover { color: lighten(red, 10%); }
+
+  .prelight-page .button:active,
+  .button:active {
     color: nth($_wm_title, 2);
     border: 1px solid nth($_borders_color, 2);
     background-image: linear-gradient(to bottom, darken(nth($_bg_color, 2), 10%),
