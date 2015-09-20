@@ -3350,6 +3350,8 @@ GeditFileBrowserWidget {
 
 .gedit-search-entry-occurrences-tag {
   color: rgba(243, 243, 245, 0.6);
+  border: none;
+  box-shadow: none;
   margin: 2px;
   padding: 2px; }
 
