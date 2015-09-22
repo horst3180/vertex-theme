@@ -15,8 +15,8 @@
   -GtkWidget-visited-link-color: #5991fc;
   -GtkWidget-focus-padding: 2;
   -GtkWidget-focus-line-width: 1;
-  -GtkWidget-text-handle-width: 16;
-  -GtkWidget-text-handle-height: 24;
+  -GtkWidget-text-handle-width: 20;
+  -GtkWidget-text-handle-height: 20;
   -GtkDialog-button-spacing: 4;
   -GtkDialog-action-area-border: 0;
   -GtkStatusbar-shadow-type: none;
@@ -2897,48 +2897,12 @@ GtkIconView.cell:selected:focus, .list-row:selected, GtkEntry.gb-command-bar-ent
   background-image: none;
   box-shadow: none;
   border-style: none; }
-  .entry.cursor-handle.top:dir(ltr), .entry.cursor-handle.bottom:dir(rtl),
-  .cursor-handle.top:dir(ltr),
-  .cursor-handle.bottom:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/text-select-start-dark.png"), url("assets/text-select-start-dark@2.png"));
-    padding-left: 10px; }
-  .entry.cursor-handle.bottom:dir(ltr), .entry.cursor-handle.top:dir(rtl),
-  .cursor-handle.bottom:dir(ltr),
-  .cursor-handle.top:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/text-select-end-dark.png"), url("assets/text-select-end-dark@2.png"));
-    padding-right: 10px; }
-  .entry.cursor-handle.insertion-cursor:dir(ltr), .entry.cursor-handle.insertion-cursor:dir(rtl),
-  .cursor-handle.insertion-cursor:dir(ltr),
-  .cursor-handle.insertion-cursor:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/insertion-cursor-dark.png"), url("assets/insertion-cursor-dark@2.png")); }
-  .entry.cursor-handle.top:hover:dir(ltr), .entry.cursor-handle.bottom:hover:dir(rtl),
-  .cursor-handle.top:hover:dir(ltr),
-  .cursor-handle.bottom:hover:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/text-select-start-hover-dark.png"), url("assets/text-select-start-hover-dark@2.png"));
-    padding-left: 10px; }
-  .entry.cursor-handle.bottom:hover:dir(ltr), .entry.cursor-handle.top:hover:dir(rtl),
-  .cursor-handle.bottom:hover:dir(ltr),
-  .cursor-handle.top:hover:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/text-select-end-hover-dark.png"), url("assets/text-select-end-hover-dark@2.png"));
-    padding-right: 10px; }
-  .entry.cursor-handle.insertion-cursor:hover:dir(ltr), .entry.cursor-handle.insertion-cursor:hover:dir(rtl),
-  .cursor-handle.insertion-cursor:hover:dir(ltr),
-  .cursor-handle.insertion-cursor:hover:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/insertion-cursor-hover-dark.png"), url("assets/insertion-cursor-hover-dark@2.png")); }
-  .entry.cursor-handle.top:active:dir(ltr), .entry.cursor-handle.bottom:active:dir(rtl),
-  .cursor-handle.top:active:dir(ltr),
-  .cursor-handle.bottom:active:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/text-select-start-active-dark.png"), url("assets/text-select-start-active-dark@2.png"));
-    padding-left: 10px; }
-  .entry.cursor-handle.bottom:active:dir(ltr), .entry.cursor-handle.top:active:dir(rtl),
-  .cursor-handle.bottom:active:dir(ltr),
-  .cursor-handle.top:active:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/text-select-end-active-dark.png"), url("assets/text-select-end-active-dark@2.png"));
-    padding-right: 10px; }
-  .entry.cursor-handle.insertion-cursor:active:dir(ltr), .entry.cursor-handle.insertion-cursor:active:dir(rtl),
-  .cursor-handle.insertion-cursor:active:dir(ltr),
-  .cursor-handle.insertion-cursor:active:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/insertion-cursor-active-dark.png"), url("assets/insertion-cursor-active-dark@2.png")); }
+  .entry.cursor-handle.top,
+  .cursor-handle.top {
+    -gtk-icon-source: -gtk-icontheme("selection-start-symbolic"); }
+  .entry.cursor-handle.bottom,
+  .cursor-handle.bottom {
+    -gtk-icon-source: -gtk-icontheme("selection-end-symbolic"); }
 
 .monospace {
   font: Monospace; }
