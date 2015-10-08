@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="17"
-   height="15"
+   width="16"
+   height="16"
    id="svg4306"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="max_pressed.svg"
-   enable-background="new">
+   style="enable-background:new">
   <defs
      id="defs4308">
     <linearGradient
@@ -71,8 +71,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313709"
-     inkscape:cx="7.6210367"
-     inkscape:cy="5.9662204"
+     inkscape:cx="-7.6259526"
+     inkscape:cy="5.7894437"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -110,7 +110,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -118,7 +118,7 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1037.3622)">
+     transform="translate(0,-1036.3622)">
     <g
        transform="translate(-437,471.00002)"
        id="titlebutton-maximize-active-dark"

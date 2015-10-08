@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="17"
-   height="15"
+   width="16"
+   height="16"
    id="svg4306"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="menu-hover.svg"
-   enable-background="new">
+   sodipodi:docname="menu_prelight.svg"
+   style="enable-background:new">
   <defs
      id="defs4308">
     <linearGradient
@@ -81,7 +81,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="22.627417"
-     inkscape:cx="7.0423788"
+     inkscape:cx="-0.75789288"
      inkscape:cy="10.492783"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -131,7 +131,7 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1037.3622)">
+     transform="translate(0,-1036.3622)">
     <circle
        style="fill:#000000;fill-opacity:0.58823529;stroke:none"
        id="path3847"
@@ -139,7 +139,7 @@
        cy="1044.3622"
        r="4" />
     <path
-       style="opacity:0.352;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.35200004;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 8,1040.3622 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 0,1 a 3,3 0 0 1 3,3 3,3 0 0 1 -3,3 3,3 0 0 1 -3,-3 3,3 0 0 1 3,-3 z"
        id="path4152"
        inkscape:connector-curvature="0" />
