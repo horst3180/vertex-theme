@@ -2283,7 +2283,8 @@ GtkProgressBar {
   color: rgba(243, 243, 245, 0.7); }
   GtkProgressBar.osd {
     -GtkProgressBar-xspacing: 0;
-    -GtkProgressBar-yspacing: 0; }
+    -GtkProgressBar-yspacing: 0;
+    -GtkProgressBar-min-horizontal-bar-height: 4; }
 
 .progressbar {
   border: none;
@@ -2309,7 +2310,7 @@ GtkProgressBar {
     .progressbar.vertical.top {
       border-top-left-radius: 1px;
       border-top-right-radius: 1px; }
-  .osd .progressbar.scale, .osd .progressbar {
+  .osd .progressbar.scale {
     background-clip: padding-box;
     background-image: none;
     background-color: rgba(64, 128, 251, 0.2);
@@ -2317,6 +2318,8 @@ GtkProgressBar {
     border-width: 1px 4px 2px 4px;
     border-radius: 2px;
     box-shadow: none; }
+  .progressbar.osd {
+    background-color: #4080fb; }
 
 GtkProgressBar.trough, .level-bar.trough {
   padding: 1px 1px 2px 1px;
@@ -2338,8 +2341,9 @@ GtkProgressBar.trough, .level-bar.trough {
     border-color: transparent; }
   GtkProgressBar.trough.osd, .osd.level-bar.trough {
     background: none;
-    border: none;
-    box-shadow: none; }
+    border-image: none;
+    box-shadow: none;
+    padding: 0; }
 
 GtkLevelBar {
   -GtkLevelBar-min-block-width: 34;

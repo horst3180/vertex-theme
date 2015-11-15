@@ -2396,6 +2396,7 @@ GtkProgressBar {
   &.osd {
     -GtkProgressBar-xspacing: 0;
     -GtkProgressBar-yspacing: 0;
+    -GtkProgressBar-min-horizontal-bar-height: 4;
   }
 }
 
@@ -2436,15 +2437,16 @@ GtkProgressBar {
       border-top-right-radius: 1px;
     }
   }
-  .osd &.scale, .osd & {
+  .osd &.scale {
     background-clip: padding-box;
     background-image: none;
-	  background-color: transparentize($selected_bg_color, 0.8);
+    background-color: transparentize($selected_bg_color, 0.8);
     border: solid transparent;
-	  border-width: 1px 4px 2px 4px;
+    border-width: 1px 4px 2px 4px;
     border-radius: 2px;
     box-shadow: none;
   }
+  &.osd { background-color: $selected_bg_color; }
 }
 
 // progressbar trough
@@ -2466,8 +2468,9 @@ GtkProgressBar.trough {
   }
   &.osd {
     background: none;
-    border: none;
+    border-image: none;
     box-shadow: none;
+    padding: 0;
   }
 }
 
