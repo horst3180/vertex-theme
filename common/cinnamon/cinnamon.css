@@ -133,9 +133,8 @@ StScrollBar StButton#vhandle:active {
   border-image: url("menu/menu.svg") 10 10 35 14;
 }
 
-.popup-submenu-menu-item:open {
-  background-color: rgba(0,0,0,0.0);
-  border-image: url("menu/submenu-open.svg") 8 8 2 2;
+.popup-menu-arrow {
+  icon-size: 16px;
 }
 
 .popup-sub-menu {
@@ -444,6 +443,7 @@ StScrollBar StButton#vhandle:active {
 
 .expo-workspaces-name-entry,
 .expo-workspaces-name-entry#selected {
+  height: 15px;
   border: 1px solid rgba(255,255,255,0.2);
 }
 
@@ -816,6 +816,10 @@ StScrollBar StButton#vhandle:active {
   padding-bottom: 25px;
 }
 
+.switcher-list > StBoxLayout {
+  padding: 4px;
+}
+
 .switcher-list-item-container {
   spacing: 8px;
 }
@@ -971,7 +975,7 @@ StScrollBar StButton#vhandle:active {
 .run-dialog {
   padding-right: 25px;
   padding-left: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   padding-top: 20px;
 }
 
@@ -1340,6 +1344,45 @@ StScrollBar StButton#vhandle:active {
 .menu-context-menu {
 }
 
+
+/* OSD */
+.info-osd {
+  text-align: center;
+  font-weight: bold;
+  spacing: 1em;
+  padding: 16px;
+  color: white;
+  border-image: url("misc/osd.svg") 10 10 9 11;
+}
+
+.osd-window {
+  text-align: center;
+  font-weight: bold;
+  spacing: 1em;
+  padding: 20px;
+  margin: 32px;
+  min-width: 64px;
+  min-height: 64px;
+
+  color: white;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  border-image: url("misc/osd.svg") 10 10 9 11;
+}
+
+.osd-window .osd-monitor-label {
+  font-size: 3em;
+}
+
+.osd-window .level {
+  padding: 0px;
+  height: 4px;
+  background-color: transparent;
+  border-radius: 2px;
+  color: #4080fb;
+}
+
 /* ===================================================================
  * Window list (windowList.js)
  * ===================================================================*/
@@ -1472,6 +1515,79 @@ StScrollBar StButton#vhandle:active {
   padding-right: 10px;
 }
 
+/* 2.8 */
+.sound-player {
+  padding: 0 6px;
+}
+
+.sound-player > StBoxLayout:first-child {
+  padding: 5px 10px 12px 10px;
+  spacing: 0.5em;
+}
+
+.sound-player > StBoxLayout:first-child StButton:small {
+  width: 16px;
+  height: 8px;
+  padding: 1px;
+}
+
+.sound-player > StBoxLayout:first-child StButton:small StIcon {
+  icon-size: 12px;
+}
+
+.sound-player-generic-coverart {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sound-player-overlay {
+  width: 290px;
+  height: 70px;
+  padding: 15px;
+  spacing: 0.5em;
+  background: rgba(0,0,0,0.75);
+  border: 0px solid rgba(0,0,0,0.75);
+  border-bottom: 1px;
+  color: #fff;
+}
+
+.sound-player-overlay StButton {
+  width: 22px;
+  height: 13px;
+  padding: 5px;
+  color: rgba(255,255,255,0.6);
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0 0);
+}
+
+.sound-player-overlay StButton StIcon {
+  icon-size: 16px;
+}
+
+.sound-player-overlay StButton:hover {
+  color: #fff;
+}
+
+.sound-player-overlay StButton:active {
+  color: #4080FB;
+}
+.sound-player-overlay StBoxLayout {
+  padding-top: 2px;
+}
+
+.sound-player .slider {
+  height: 0.5em;
+  padding: 0;
+  border: 0px solid rgba(0,0,0,0.75);
+  border-bottom-width: 1px;
+  -slider-height: 0.5em;
+  -slider-background-color: rgb(35,35,35);
+  -slider-border-color: transparent;
+  -slider-active-background-color: #4080FB;
+  -slider-active-border-color: transparent;
+  -slider-border-width: 0px;
+  -slider-handle-radius: 0px;
+}
+
 /* ===================================================================
  * Workspace Switcher applet (workspaceSwitcher.js)
  * ===================================================================*/
@@ -1496,6 +1612,56 @@ StScrollBar StButton#vhandle:active {
 .workspace-button:hover {
   border-image: url("panel/panel-button-border-hover.svg") 3;
 }
+
+/* 2.8 */
+
+/* Controls the styling when using the "Simple buttons" option */
+.workspace-switcher {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/* Controls the style when using the "Visual representation" option */
+.workspace-graph {
+  padding: 3px;
+  spacing: 3px;
+}
+
+/* Controls the style when using the "Visual representation" option */
+.workspace-graph {
+  padding: 3px;
+  spacing: 3px;
+}
+
+.workspace-graph .workspace {
+  border: 1px solid rgba(255,255,255,0.2);
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(0,0,0,0.6);
+  background-gradient-end: rgba(0,0,0,0.1);
+}
+
+.workspace-graph .workspace:active {
+  border: 1px solid rgba(255,255,255,0.4);
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(0,0,0,0.6);
+  background-gradient-end: rgba(0,0,0,0.1);
+
+}
+
+.workspace-graph .workspace .windows {
+  -active-window-background: rgba(50, 50, 50, 1.0);
+  -active-window-border: rgba(0, 0, 0, 0.7);
+  -inactive-window-background: rgba(50, 50, 50, 1.0);
+  -inactive-window-border: rgba(0, 0, 0, 0.7);
+}
+
+.workspace-graph .workspace:active .windows {
+  -active-window-background: rgba(140, 140, 140, 1.0);
+  -active-window-border: rgba(0, 0, 0, 0.9);
+  -inactive-window-background: rgba(80, 80, 80, 1.0);
+  -inactive-window-border: rgba(0, 0, 0, 0.7);
+}
+
 
 /* ===================================================================
  * Panel Launchers Applet (panelLaunchers.js)
