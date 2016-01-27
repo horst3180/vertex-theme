@@ -1,0 +1,298 @@
+// When color definition differs for dark and light variant,
+// it gets @if ed depending on $variant
+
+
+$_base_color: (#ffffff, #2B2B2C);
+$base_color: if($variant =='light', nth($_base_color, 1), nth($_base_color, 2));
+
+$_text_color: (#3c3c3e, #F3F3F5);
+$text_color: if($variant == 'light', nth($_text_color, 1), nth($_text_color, 2));
+
+$_bg_color: (#F5F5F7, #353638);
+$bg_color: if($variant =='light', nth($_bg_color, 1), nth($_bg_color, 2));
+
+$_fg_color: (#3c3c3e, #F3F3F5);
+$fg_color: if($variant =='light', nth($_fg_color, 1), nth($_fg_color, 2));
+
+
+$_selected_fg_color: #ffffff;
+$selected_fg_color: $_selected_fg_color;
+
+$_selected_bg_color: #4080fb;
+$selected_bg_color: $_selected_bg_color;
+
+
+$_borders_color: (grayscale(darken(nth($_bg_color, 1), 24%)), darken(nth($_bg_color, 2),12%), darken(nth($_bg_color, 2), 4%));
+$borders_color: if($variant =='light', nth($_borders_color, 1), nth($_borders_color, 2));
+
+
+$_link_color: (darken($_selected_bg_color,10%), lighten($_selected_bg_color,10%));
+$link_color: if($variant == 'light', nth($_link_color, 1), nth($_link_color, 2));
+
+$_link_visited_color: (darken($_selected_bg_color,15%), lighten($_selected_bg_color,5%));
+$link_visited_color: if($variant == 'light', nth($_link_visited_color, 1), nth($_link_visited_color, 2));
+
+//insensitive state colors
+$_insensitive_fg_color: (mix(nth($_fg_color, 1), nth($_bg_color, 1), 40%), mix(nth($_fg_color, 2), nth($_bg_color, 2), 50%));
+$insensitive_fg_color: if($variant=='light', nth($_insensitive_fg_color, 1), nth($_insensitive_fg_color, 2));
+
+$_insensitive_bg_color: (grayscale(darken(nth($_bg_color, 1), 0.7%)), lighten(nth($_bg_color, 2), 5.5%));
+$insensitive_bg_color: if($variant == 'light', nth($_insensitive_bg_color, 1), nth($_insensitive_bg_color, 2));
+
+
+$_warning_color: #f57900;
+$warning_color: $_warning_color;
+
+$_error_color: #cc0000;
+$error_color: $_error_color;
+
+$_success_color: (#73d216, darken(#73d216, 13%));
+$success_color: if($variant =='light', nth($_success_color, 1), nth($_success_color, 2));
+
+
+$_destructive_color_a: #e86060;
+$destructive_color_a: $_destructive_color_a;
+
+$_destructive_color_b: #ce3535;
+$destructive_color_b: $_destructive_color_b;
+
+
+$_suggested_color_a: (#6496F5, #407cbc);
+$suggested_color_a: if($variant == 'light', nth($_suggested_color_a, 1), nth($_suggested_color_a, 2));
+
+$_suggested_color_b: (#5A86DB, #2a5285);
+$suggested_color_b: if($variant == 'light', nth($_suggested_color_b, 1), nth($_suggested_color_b, 2));
+
+$_action_button_shadow: transparentize(black, 0.7);
+$action_button_shadow: $_action_button_shadow;
+
+
+// Buttons
+$_button_gradient_color_a: (grayscale(darken(nth($_bg_color, 1), 0.7%)), lighten(nth($_bg_color, 2), 10.3%));
+$button_gradient_color_a: if($variant == 'light', nth($_button_gradient_color_a, 1), nth($_button_gradient_color_a, 2));
+
+$_button_gradient_color_b: (desaturate(darken(nth($_bg_color, 1), 7.5%), 7%), darken(nth($_bg_color, 2), 0.6%));
+$button_gradient_color_b: if($variant == 'light', nth($_button_gradient_color_b, 1), nth($_button_gradient_color_b, 2));
+
+
+$_button_hover_gradient_color_a: (nth($_base_color, 1), lighten(nth($_bg_color, 2), 16.7%));
+$button_hover_gradient_color_a: if($variant == 'light', nth($_button_hover_gradient_color_a, 1), nth($_button_hover_gradient_color_a, 2));
+
+$_button_hover_gradient_color_b: (darken(nth($_button_gradient_color_a, 1), 6%), #393A3B);
+$button_hover_gradient_color_b: if($variant == 'light', nth($_button_hover_gradient_color_b, 1), nth($_button_hover_gradient_color_b, 2));
+
+
+$_button_active_gradient_color_a: (#6a6a6c, #242525);
+$button_active_gradient_color_a: if($variant == 'light', nth($_button_active_gradient_color_a, 1), nth($_button_active_gradient_color_a, 2));
+
+$_button_active_gradient_color_b: (#949596, #37383A);
+$button_active_gradient_color_b: if($variant == 'light', nth($_button_active_gradient_color_b, 1), nth($_button_active_gradient_color_b, 2));
+
+
+$_button_insensitive_active_gradient_color_a: (scale-color(nth($_button_active_gradient_color_a, 1), $lightness:40%), scale-color(nth($_button_active_gradient_color_a, 2), $lightness:10%));
+$button_insensitive_active_gradient_color_a: if($variant == 'light', nth($_button_insensitive_active_gradient_color_a, 1), nth($_button_insensitive_active_gradient_color_a, 2));
+
+$_button_insensitive_active_gradient_color_b: (scale-color(nth($_button_active_gradient_color_a, 1), $lightness:50%),  scale-color(nth($_button_active_gradient_color_a, 2), $lightness:12.5%));
+$button_insensitive_active_gradient_color_b: if($variant == 'light', nth($_button_insensitive_active_gradient_color_b, 1), nth($_button_insensitive_active_gradient_color_b, 2));
+
+
+$_button_active_fg: $_selected_fg_color;
+$button_active_fg: $_button_active_fg;
+
+$_button_active_text_shadow: transparentize(black, 0.6);
+$button_active_text_shadow: $_button_active_text_shadow;
+
+
+//OSD
+$_osd_fg_color: white;
+$osd_fg_color: $_osd_fg_color;
+
+$_osd_text_color: $_osd_fg_color;
+$osd_text_color: $_osd_text_color;
+
+$_osd_bg_color: transparentize(#343436, 0.3);
+$osd_bg_color: $_osd_bg_color;
+
+
+$_osd_borders_color: transparentize(black, 0.3);
+$osd_borders_color: $_osd_borders_color;
+
+
+$_osd_text_shadow: transparentize(black, 0.25);
+$osd_text_shadow: $_osd_text_shadow;
+
+
+$_osd_toolbar_bg_a: opacify(lighten($_osd_bg_color, 7%), 0.05);
+$osd_toolbar_bg_a: $_osd_toolbar_bg_a;
+
+$_osd_toolbar_bg_b: opacify($_osd_bg_color, 0.05);
+$osd_toolbar_bg_b: $_osd_toolbar_bg_b;
+
+
+$_osd_button_bg_a: $_osd_toolbar_bg_a;
+$osd_button_bg_a: $_osd_button_bg_a;
+
+$_osd_button_bg_b: $_osd_toolbar_bg_b;
+$osd_button_bg_b: $_osd_button_bg_b;
+
+
+$_osd_trough_bg_a: transparentize(darken($_osd_bg_color, 9%), 0.2);
+$osd_trough_bg_a: $_osd_trough_bg_a;
+
+$_osd_trough_bg_b: transparentize(darken($_osd_bg_color, 5%), 0.2);
+$osd_trough_bg_b: $_osd_trough_bg_b;
+
+
+$_osd_insensitive_bg_color: lighten($_osd_bg_color, 5%);
+$osd_insensitive_bg_color: $_osd_insensitive_bg_color;
+
+$_osd_insensitive_fg_color: transparentize($_osd_fg_color, 0.6);
+$osd_insensitive_fg_color: $_osd_insensitive_fg_color;
+
+
+//new
+$_sidebar_bg: (lighten(nth($_bg_color, 1), 1.6%), nth($_bg_color, 2));
+$sidebar_bg: if($variant=='light', nth($_sidebar_bg, 1), nth($_sidebar_bg, 2));
+
+
+$_dark_text_icon_shadow: transparentize(black, 0.8);
+$dark_text_icon_shadow: $_dark_text_icon_shadow;
+
+$_light_text_icon_shadow: (white, transparentize(black, 0.3));
+$light_text_icon_shadow: if($variant=='light', nth($_light_text_icon_shadow, 1), nth($_light_text_icon_shadow, 2));
+
+$_highlight_shadow: (white, transparentize(white, 0.85));
+$highlight_shadow: if($variant=='light', nth($_highlight_shadow, 1), nth($_highlight_shadow, 2));
+
+
+$_entry_bg_color: (nth($_base_color, 1), nth($_base_color, 2), lighten(nth($_base_color, 2), 2.5%));
+$entry_bg_color: if($variant=='light', nth($_entry_bg_color, 1), nth($_entry_bg_color, 2));
+
+$_entry_inset: transparentize(black, 0.9);
+$entry_inset: $_entry_inset;
+
+
+$_trough_bg_color_a: (nth($_button_active_gradient_color_a, 1), nth($_button_active_gradient_color_a, 2));
+$trough_bg_color_a: if($variant=='light', nth($_trough_bg_color_a, 1), nth($_trough_bg_color_a, 2));
+
+$_trough_bg_color_b: (nth($_button_active_gradient_color_b, 1), nth($_button_active_gradient_color_b, 2));
+$trough_bg_color_b: if($variant=='light', nth($_trough_bg_color_b, 1), nth($_trough_bg_color_b, 2));
+
+
+$_progressbar_background_a: (lighten($_selected_bg_color, 10%), $_selected_bg_color);
+$progressbar_background_a: if($variant=='light', nth($_progressbar_background_a, 1), nth($_progressbar_background_a, 2));
+
+$_progressbar_background_b: ($_selected_bg_color, darken($_selected_bg_color, 10%));
+$progressbar_background_b: if($variant=='light', nth($_progressbar_background_b, 1), nth($_progressbar_background_b, 2));
+
+
+$_progressbar_border: (darken(nth($_trough_bg_color_a, 1), 16.5%), darken(nth($_trough_bg_color_a, 2), 16.5%));
+$progressbar_border: if($variant=='light', nth($_progressbar_border, 1), nth($_progressbar_border, 2));
+
+$_progressbar_highlight: (mix(white, nth($_progressbar_background_a, 1), 30%), mix(white, nth($_progressbar_background_a, 2), 30%));
+$progressbar_highlight: if($variant=='light', nth($_progressbar_highlight, 1), nth($_progressbar_highlight, 2));
+
+
+$_scale_highlight_bg_a: (darken(nth($_button_active_gradient_color_a, 1), 9.5%), lighten(nth($_bg_color, 2), 4%));
+$scale_highlight_bg_a: if($variant=='light', nth($_scale_highlight_bg_a, 1), nth($_scale_highlight_bg_a, 2));
+
+$_scale_highlight_bg_b: (darken(nth($_button_active_gradient_color_b, 1), 20%), lighten(nth($_bg_color, 2), 11%));
+$scale_highlight_bg_b: if($variant=='light', nth($_scale_highlight_bg_b, 1), nth($_scale_highlight_bg_b, 2));
+
+
+$_infobar_bg_color: (#FCF8BD, #3D5074);
+$infobar_bg_color: if($variant=='light', nth($_infobar_bg_color, 1), nth($_infobar_bg_color, 2));
+
+$_infobar_fg_color: (transparentize(nth($_fg_color, 1), 0.2), nth($_fg_color, 2));
+$infobar_fg_color: if($variant=='light', nth($_infobar_fg_color, 1), nth($_infobar_fg_color, 2));
+
+$_infobar_text_shadow: (transparentize(white, 0.3), transparentize(black, 0.3));
+$infobar_text_shadow: if($variant=='light', nth($_infobar_text_shadow, 1), nth($_infobar_text_shadow, 2));
+
+
+// Selectionmode
+$_selection_toolbar_bg_a: (nth($_suggested_color_a, 1), nth($_suggested_color_a, 2));
+$selection_toolbar_bg_a: if($variant=='light' and $darker=='false', nth($_selection_toolbar_bg_a, 1), nth($_selection_toolbar_bg_a, 2));   //
+
+$_selection_toolbar_bg_b: (nth($_suggested_color_b, 1), nth($_suggested_color_b, 2));
+$selection_toolbar_bg_b: if($variant=='light' and $darker=='false', nth($_selection_toolbar_bg_b, 1), nth($_selection_toolbar_bg_b, 2));   //
+
+
+$_selection_toolbar_button_a: (lighten(nth($_selection_toolbar_bg_a, 1), 3%), lighten(nth($_selection_toolbar_bg_a, 2), 3%));
+$selection_toolbar_button_a: if($variant=='light' and $darker=='false', nth($_selection_toolbar_button_a, 1), nth($_selection_toolbar_button_a, 2));    //
+
+$_selection_toolbar_button_b: (darken(nth($_selection_toolbar_bg_b, 1), 2%), darken(nth($_selection_toolbar_bg_b, 2), 2%));
+$selection_toolbar_button_b: if($variant=='light' and $darker=='false', nth($_selection_toolbar_button_b, 1), nth($_selection_toolbar_button_b, 2));   //
+
+
+$_selection_toolbar_border: (darken(nth($_selection_toolbar_bg_b, 1), 15%), darken(nth($_selection_toolbar_bg_b, 2), 20%));
+$selection_toolbar_border: if($variant=='light' and $darker=='false', nth($_selection_toolbar_border, 1), nth($_selection_toolbar_border, 2));    //
+
+$_selection_button_text_shadow: (transparentize(black, 0.7), transparentize(black, 0.5));
+$selection_button_text_shadow: if($variant=='light' and $darker=='false', nth($_selection_button_text_shadow, 1), nth($_selection_button_text_shadow, 2));   //
+
+
+// WM
+$_wm_title: (nth($_fg_color, 1), nth($_fg_color, 2));
+$wm_title: if($variant=='light' and $darker=='false', nth($_wm_title, 1), nth($_wm_title, 2));     //
+
+$_wm_unfocused_title: (transparentize(nth($_fg_color, 1), 0.3), transparentize(nth($_fg_color, 2), 0.4));
+$wm_unfocused_title: if($variant=='light' and $darker=='false', nth($_wm_unfocused_title, 1), nth($_wm_unfocused_title, 2));   //
+
+$_wm_highlight: (white, transparentize(white, 0.85));
+$wm_highlight: if($variant=='light' and $darker=='false', nth($_wm_highlight, 1), nth($_wm_highlight, 2));   //
+
+$_wm_title_highlight: (white, transparentize(white, 1));
+$wm_title_highlight: if($variant=='light' and $darker=='false', nth($_wm_title_highlight, 1), nth($_wm_title_highlight, 2));  //
+
+$_wm_title_highlight_dark: (transparentize(black, 1), transparentize(black, 0.2));
+$wm_title_highlight_dark: if($variant=='light' and $darker=='false', nth($_wm_title_highlight_dark, 1), nth($_wm_title_highlight_dark, 2));  //
+
+$_wm_title_shadow: (nth($_wm_title_highlight, 1), transparentize(black, 0.2));
+$wm_title_shadow: if($variant=='light' and $darker=='false', nth($_wm_title_shadow, 1), nth($_wm_title_shadow, 2));   //
+
+
+$_wm_bg_a: (grayscale(lighten(nth($_bg_color, 1), 0.5%)), lighten(nth($_bg_color, 2), 10.5%));
+$wm_bg_a: if($variant=='light' and $darker=='false', nth($_wm_bg_a, 1), nth($_wm_bg_a, 2));    //
+
+$_wm_bg_b: (desaturate(darken(nth($_bg_color, 1), 4.2%), 3%), lighten(nth($_bg_color, 2), 3.2%));
+$wm_bg_b: if($variant=='light' and $darker=='false', nth($_wm_bg_b, 1), nth($_wm_bg_b, 2));    //
+
+
+$_metacity_bg_a: (nth($_wm_bg_a, 1), nth($_wm_bg_a, 2));
+$metacity_bg_a: if($variant=='light' and $darker=='false', nth($_metacity_bg_a, 1), nth($_metacity_bg_a, 2));   //
+
+$_metacity_bg_b: (nth($_bg_color, 1), lighten(nth($_bg_color, 2), 6.5%));
+$metacity_bg_b: if($variant=='light' and $darker=='false', nth($_metacity_bg_b, 1), nth($_metacity_bg_b, 2));  //
+
+
+$_wm_shadow: (transparentize(black, 0.65), transparentize(black, 0.3));
+$wm_shadow: if($variant=='light', nth($_wm_shadow, 1), nth($_wm_shadow, 2));   //
+@if $darker=='true' { $wm_shadow: transparentize(black, 0.5); }
+
+$_window_frame: (transparentize(black, 0.7), transparentize(black, 0.15));
+$window_frame: if($variant=='light' and $darker=='false', nth($_window_frame, 1), nth($_window_frame, 2));    //
+
+$_wm_border: (#6d6d6d, black);    //
+$wm_border: if($variant=='light' and $darker=='false', nth($_wm_border, 1), nth($_wm_border, 2));    //
+
+
+// Toolbars
+
+$_primary_toolbar_bg_a: (nth($_metacity_bg_b, 1), nth($_metacity_bg_b, 2));
+$primary_toolbar_bg_a: if($variant=='light' and $darker=='false', nth($_primary_toolbar_bg_a, 1), nth($_primary_toolbar_bg_a, 2));   //
+
+$_primary_toolbar_bg_b: (darken(nth($_primary_toolbar_bg_a, 1), 4%), darken(nth($_primary_toolbar_bg_a, 2), 4%));
+$primary_toolbar_bg_b: if($variant=='light' and $darker=='false', nth($_primary_toolbar_bg_b, 1), nth($_primary_toolbar_bg_b, 2));   //
+
+
+// Notebook
+$_notebook_bg_color: (darken(nth($_base_color, 1), 2%), lighten(nth($_base_color, 2), 2%));
+$notebook_bg_color: if($variant=='light', nth($_notebook_bg_color, 1), nth($_notebook_bg_color, 2));
+
+
+$_notebook_tab_gradient_a: (nth($_wm_bg_b, 1), nth($_wm_bg_b, 2));
+$notebook_tab_gradient_a: if($variant=='light', nth($_notebook_tab_gradient_a, 1), nth($_notebook_tab_gradient_a, 2));
+
+$_notebook_tab_gradient_b: (darken(nth($_wm_bg_b, 1), 2%), darken(nth($_wm_bg_b, 2), 2%));
+$notebook_tab_gradient_b: if($variant=='light', nth($_notebook_tab_gradient_b, 1), nth($_notebook_tab_gradient_b, 2));
