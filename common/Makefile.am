@@ -16,12 +16,10 @@ if ENABLE_DARK
 endif # ENABLE_DARK
 
 
-
 if ENABLE_LIGHT
 	$(MKDIR_P) $(ithemelightdir)
 	cp --no-preserve=mode,ownership $(srcdir)/index.theme-light $(ithemelightdir)/index.theme
 endif # ENABLE_LIGHT
-
 
 
 if ENABLE_CINNAMON
@@ -29,11 +27,14 @@ if ENABLE_CINNAMON
 endif # ENABLE_CINNAMON
 
 
-
 if ENABLE_GNOME_SHELL
-	cp -rH --no-preserve=mode,ownership $(srcdir)/gnome-shell/$(GNOME_VERSION) $(ithemedir)/gnome-shell
-endif # ENABLE_GNOME_SHELL
+	$(MKDIR_P) $(ithemedir)/gnome-shell
 
+	cd $(srcdir)/gnome-shell/$(GNOME_VERSION) && cp -r --no-preserve=mode,ownership \
+		assets \
+		gnome-shell.css \
+		$(ithemedir)/gnome-shell
+endif # ENABLE_GNOME_SHELL
 
 
 if ENABLE_GTK2
@@ -51,35 +52,38 @@ endif # ENABLE_LIGHT
 endif # ENABLE_GTK2
 
 
-
 if ENABLE_GTK3
 	cp -rH --no-preserve=mode,ownership $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemedir)/gtk-3.0
 
-	cd $(ithemedir)/gtk-3.0 && rm -f \
-		gtk-contained-light.css \
+	cd $(ithemedir)/gtk-3.0 && rm -rf \
+		gtk-light.css \
 		thumbnail-dark.png \
 		assets.svg \
-		README \
-		*.scss \
+		README.md \
+		sass \
 		*.sh \
 		*.txt \
-		Gemfile*
+		gulpfile.js \
+		.nvmrc \
+		package.json
 
 if ENABLE_DARK
 	cp -rH --no-preserve=mode,ownership $(srcdir)/gtk-3.0/$(GNOME_VERSION) $(ithemedarkdir)/gtk-3.0
 
 	cd $(ithemedarkdir)/gtk-3.0 && rm -rf \
-		gtk-dark.css \
-		gtk-contained-light.css \
+		gtk.css \
+		gtk-light.css \
 		assets.svg \
-		README \
-		*.scss \
+		README.md \
+		sass \
 		*.sh \
 		*.txt \
-		Gemfile*
+		gulpfile.js \
+		.nvmrc \
+		package.json
 
 	cd $(ithemedarkdir)/gtk-3.0 && \
-		mv gtk-contained-dark.css gtk-contained.css && \
+		mv gtk-dark.css gtk.css && \
 		mv thumbnail-dark.png thumbnail.png
 
 endif # ENABLE_DARK
@@ -90,14 +94,16 @@ if ENABLE_LIGHT
 	cd $(ithemelightdir)/gtk-3.0 && rm -rf \
 		thumbnail-dark.png \
 		assets.svg \
-		README \
-		*.scss \
+		README.md \
+		sass \
 		*.sh \
 		*.txt \
-		Gemfile*
+		gulpfile.js \
+		.nvmrc \
+		package.json
 
 	cd $(ithemelightdir)/gtk-3.0 && \
-		mv gtk-contained-light.css gtk-contained.css
+		mv gtk-light.css gtk.css
 
 endif # ENABLE_LIGHT
 endif # ENABLE_GTK3

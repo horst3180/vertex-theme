@@ -31,7 +31,16 @@ stage {
 .message-list-section-title:hover,
 .message-list-section-title:focus, .datemenu-today-button:active,
 .world-clocks-button:active,
-.message-list-section-title:active, #dash .app-well-app .overview-icon, .right #dash .app-well-app .overview-icon, .bottom #dash .app-well-app .overview-icon, .top #dash .app-well-app .overview-icon, #dash .app-well-app:hover .overview-icon, .right #dash .app-well-app:hover .overview-icon, .bottom #dash .app-well-app:hover .overview-icon, .top #dash .app-well-app:hover .overview-icon, #dash .app-well-app:active .overview-icon, .right #dash .app-well-app:active .overview-icon, .bottom #dash .app-well-app:active .overview-icon, .top #dash .app-well-app:active .overview-icon, .show-apps:active .overview-icon, .show-apps:active .show-apps-icon, .show-apps:checked .overview-icon, .show-apps:checked .show-apps-icon, .app-view-control:checked, .app-well-app.app-folder, .app-well-app.app-folder > .overview-icon, .app-well-app.app-folder:hover > .overview-icon, .app-well-app.app-folder:active > .overview-icon, .app-well-app.app-folder:checked > .overview-icon, .app-well-app.app-folder:focus > .overview-icon, .keyboard-key, .keyboard-key:focus, .keyboard-key:hover, .keyboard-key:checked, .keyboard-key:active, .login-dialog .modal-dialog-button:default, .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus, .login-dialog .modal-dialog-button:default:active, .login-dialog .modal-dialog-button:default:insensitive {
+.message-list-section-title:active, #dash .app-well-app .overview-icon,
+.right #dash .app-well-app .overview-icon, .bottom #dash .app-well-app .overview-icon,
+.top #dash .app-well-app .overview-icon, #dash .app-well-app:hover .overview-icon,
+.right #dash .app-well-app:hover .overview-icon, .bottom #dash .app-well-app:hover .overview-icon,
+.top #dash .app-well-app:hover .overview-icon, #dash .app-well-app:active .overview-icon,
+.right #dash .app-well-app:active .overview-icon, .bottom #dash .app-well-app:active .overview-icon,
+.top #dash .app-well-app:active .overview-icon, .show-apps:active .overview-icon,
+.show-apps:active .show-apps-icon,
+.show-apps:checked .overview-icon,
+.show-apps:checked .show-apps-icon, .app-view-control:checked, .app-well-app.app-folder, .app-well-app.app-folder > .overview-icon, .app-well-app.app-folder:hover > .overview-icon, .app-well-app.app-folder:active > .overview-icon, .app-well-app.app-folder:checked > .overview-icon, .app-well-app.app-folder:focus > .overview-icon, .keyboard-key, .keyboard-key:focus, .keyboard-key:hover, .keyboard-key:checked, .keyboard-key:active, .login-dialog .modal-dialog-button:default, .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus, .login-dialog .modal-dialog-button:default:active, .login-dialog .modal-dialog-button:default:insensitive {
   background-color: transparent !important;
   background-gradient-direction: none !important;
   border: none !important;
@@ -46,34 +55,34 @@ stage {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   color: #F3F3F5;
-  border-image: url("button/button-border.svg") 4; }
+  border-image: url("assets/button/button-border.svg") 4; }
   .button:focus, .notification-banner .notification-button:focus {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
-    border-image: url("button/button-border-focused.svg") 4; }
+    border-image: url("assets/button/button-border-focused.svg") 4; }
   .button:hover, .notification-banner .notification-button:hover {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
-    border-image: url("button/button-border-hover.svg") 4; }
+    border-image: url("assets/button/button-border-hover.svg") 4; }
   .button:hover:focus, .notification-banner .notification-button:hover:focus {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
-    border-image: url("button/button-border-focused-hover.svg") 4; }
+    border-image: url("assets/button/button-border-focused-hover.svg") 4; }
   .button:active, .notification-banner .notification-button:active, .button:active:focus, .notification-banner .notification-button:active:focus {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #ffffff;
-    border-image: url("button/button-border-active.svg") 4;
+    border-image: url("assets/button/button-border-active.svg") 4;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
   .button:insensitive, .notification-banner .notification-button:insensitive {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-    color: #949496;
-    border-image: url("button/button-border-insensitive.svg") 4; }
+    color: #949597;
+    border-image: url("assets/button/button-border-insensitive.svg") 4; }
 
 StEntry {
   padding: 7px;
@@ -82,13 +91,13 @@ StEntry {
   selected-color: #ffffff;
   transition-duration: 300ms;
   color: #F3F3F5;
-  border-image: url("entry/entry-border.svg") 4; }
+  border-image: url("assets/entry/entry-border.svg") 4; }
   StEntry:focus, StEntry:hover {
     color: #F3F3F5;
-    border-image: url("entry/entry-border-focused.svg") 4; }
+    border-image: url("assets/entry/entry-border-focused.svg") 4; }
   StEntry:insensitive {
-    color: #949496;
-    border-image: url("entry/entry-border-insensitive.svg") 4; }
+    color: #949597;
+    border-image: url("assets/entry/entry-border-insensitive.svg") 4; }
   StEntry StIcon.capslock-warning {
     icon-size: 16px;
     warning-color: #f57900;
@@ -96,6 +105,7 @@ StEntry {
 
 StScrollView.vfade {
   -st-vfade-offset: 68px; }
+
 StScrollView.hfade {
   -st-hfade-offset: 68px; }
 
@@ -129,30 +139,34 @@ StScrollBar {
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 5px;
-  border-image: url("misc/slider.svg") 8;
+  border-image: url("assets/misc/slider.svg") 8;
   color: transparent; }
 
 .check-box StBoxLayout {
   spacing: .8em; }
+
 .check-box StBin {
   width: 16px;
   height: 16px;
-  background-image: url("checkbox/checkbox-unchecked.svg"); }
+  background-image: url("assets/checkbox/checkbox-unchecked.svg"); }
+
 .check-box:focus StBin {
-  background-image: url("checkbox/checkbox-unchecked-focused.svg"); }
+  background-image: url("assets/checkbox/checkbox-unchecked-focused.svg"); }
+
 .check-box:checked StBin {
-  background-image: url("checkbox/checkbox-checked.svg"); }
+  background-image: url("assets/checkbox/checkbox-checked.svg"); }
+
 .check-box:focus:checked StBin {
-  background-image: url("checkbox/checkbox-checked-focused.svg"); }
+  background-image: url("assets/checkbox/checkbox-checked-focused.svg"); }
 
 .toggle-switch {
   width: 60px;
   height: 25px;
   background-size: contain; }
   .toggle-switch-us, .toggle-switch-intl {
-    background-image: url("switch/switch-off.svg"); }
+    background-image: url("assets/switch/switch-off.svg"); }
     .toggle-switch-us:checked, .toggle-switch-intl:checked {
-      background-image: url("switch/switch-on.svg"); }
+      background-image: url("assets/switch/switch-on.svg"); }
 
 .shell-link {
   color: #72a1fc; }
@@ -173,50 +187,50 @@ StScrollBar {
   color: #F3F3F5;
   background-color: rgba(53, 54, 56, 0);
   border: none;
-  border-image: url("misc/modal.svg") 10 10 35 14;
+  border-image: url("assets/misc/modal.svg") 10 10 35 14;
   padding: 0 7px 8px 7px; }
   .modal-dialog .modal-dialog-content-box {
     padding: 10px; }
   .modal-dialog .modal-dialog-linked-button {
     border-width: 0px;
     padding: 10px;
-    border-image: url("button/modal-dialog-button-middle.svg") 4; }
+    border-image: url("assets/button/modal-dialog-button-middle.svg") 4; }
     .modal-dialog .modal-dialog-linked-button:hover, .modal-dialog .modal-dialog-linked-button:focus {
-      border-image: url("button/modal-dialog-button-middle-hover.svg") 4; }
+      border-image: url("assets/button/modal-dialog-button-middle-hover.svg") 4; }
     .modal-dialog .modal-dialog-linked-button:active {
-      border-image: url("button/modal-dialog-button-middle-active.svg") 4; }
+      border-image: url("assets/button/modal-dialog-button-middle-active.svg") 4; }
     .modal-dialog .modal-dialog-linked-button:insensitive, .modal-dialog .modal-dialog-linked-button:insensitive:focus {
-      color: #949496;
-      border-image: url("button/modal-dialog-button-middle-insensitive.svg") 4; }
+      color: #949597;
+      border-image: url("assets/button/modal-dialog-button-middle-insensitive.svg") 4; }
     .modal-dialog .modal-dialog-linked-button:first-child {
       border-radius: 0px 0px 0px 2px;
-      border-image: url("button/modal-dialog-button-left.svg") 4; }
+      border-image: url("assets/button/modal-dialog-button-left.svg") 4; }
       .modal-dialog .modal-dialog-linked-button:first-child:hover, .modal-dialog .modal-dialog-linked-button:first-child:focus {
-        border-image: url("button/modal-dialog-button-left-hover.svg") 4; }
+        border-image: url("assets/button/modal-dialog-button-left-hover.svg") 4; }
       .modal-dialog .modal-dialog-linked-button:first-child:active {
-        border-image: url("button/modal-dialog-button-left-active.svg") 4; }
+        border-image: url("assets/button/modal-dialog-button-left-active.svg") 4; }
       .modal-dialog .modal-dialog-linked-button:first-child:insensitive, .modal-dialog .modal-dialog-linked-button:first-child:insensitive:focus {
-        border-image: url("button/modal-dialog-button-left-insensitive.svg") 4; }
+        border-image: url("assets/button/modal-dialog-button-left-insensitive.svg") 4; }
     .modal-dialog .modal-dialog-linked-button:last-child {
       border-right-width: 0px;
       border-radius: 0px 0px 2px 0px;
-      border-image: url("button/modal-dialog-button-right.svg") 4; }
+      border-image: url("assets/button/modal-dialog-button-right.svg") 4; }
       .modal-dialog .modal-dialog-linked-button:last-child:hover, .modal-dialog .modal-dialog-linked-button:last-child:focus {
-        border-image: url("button/modal-dialog-button-right-hover.svg") 4; }
+        border-image: url("assets/button/modal-dialog-button-right-hover.svg") 4; }
       .modal-dialog .modal-dialog-linked-button:last-child:active {
-        border-image: url("button/modal-dialog-button-right-active.svg") 4; }
+        border-image: url("assets/button/modal-dialog-button-right-active.svg") 4; }
       .modal-dialog .modal-dialog-linked-button:last-child:insensitive, .modal-dialog .modal-dialog-linked-button:last-child:insensitive:focus {
-        border-image: url("button/modal-dialog-button-right-insensitive.svg") 4; }
+        border-image: url("assets/button/modal-dialog-button-right-insensitive.svg") 4; }
     .modal-dialog .modal-dialog-linked-button:first-child:last-child {
       border-right-width: 0px;
       border-radius: 0px 0px 2px 2px;
-      border-image: url("button/modal-dialog-button.svg") 4; }
+      border-image: url("assets/button/modal-dialog-button.svg") 4; }
       .modal-dialog .modal-dialog-linked-button:first-child:last-child:hover, .modal-dialog .modal-dialog-linked-button:first-child:last-child:focus {
-        border-image: url("button/modal-dialog-button-hover.svg") 4; }
+        border-image: url("assets/button/modal-dialog-button-hover.svg") 4; }
       .modal-dialog .modal-dialog-linked-button:first-child:last-child:active {
-        border-image: url("button/modal-dialog-button-active.svg") 4; }
+        border-image: url("assets/button/modal-dialog-button-active.svg") 4; }
       .modal-dialog .modal-dialog-linked-button:first-child:last-child:insensitive, .modal-dialog .modal-dialog-linked-button:first-child:last-child:insensitive:focus {
-        border-image: url("button/modal-dialog-button-insensitive.svg") 4; }
+        border-image: url("assets/button/modal-dialog-button-insensitive.svg") 4; }
   .modal-dialog .run-dialog-entry {
     width: 20em; }
   .modal-dialog .run-dialog-error-box {
@@ -283,13 +297,13 @@ StScrollBar {
     color: #e5e5e9;
     font-size: 8pt; }
   .end-session-dialog .modal-dialog-linked-button:last-child {
-    border-image: url("button/shutdown-button-border.svg") 4; }
+    border-image: url("assets/button/shutdown-button-border.svg") 4; }
     .end-session-dialog .modal-dialog-linked-button:last-child:focus {
-      border-image: url("button/shutdown-button-border.svg") 4; }
+      border-image: url("assets/button/shutdown-button-border.svg") 4; }
     .end-session-dialog .modal-dialog-linked-button:last-child:hover {
-      border-image: url("button/shutdown-button-border-hover.svg") 4; }
+      border-image: url("assets/button/shutdown-button-border-hover.svg") 4; }
     .end-session-dialog .modal-dialog-linked-button:last-child:active {
-      border-image: url("button/shutdown-button-border-active.svg") 4; }
+      border-image: url("assets/button/shutdown-button-border-active.svg") 4; }
 
 .shell-mount-operation-icon {
   icon-size: 48px; }
@@ -340,6 +354,7 @@ StScrollBar {
 
 .show-processes-dialog-app-list-item-icon:ltr {
   padding-right: 17px; }
+
 .show-processes-dialog-app-list-item-icon:rtl {
   padding-left: 17px; }
 
@@ -382,8 +397,10 @@ StScrollBar {
   .polkit-dialog-user-layout:rtl {
     padding-left: 0px;
     padding-right: 10px; }
+
 .polkit-dialog-user-root-label {
   color: #f57900; }
+
 .polkit-dialog-user-user-icon {
   border-radius: 2px;
   background-size: contain;
@@ -400,11 +417,11 @@ StScrollBar {
 
 .popup-menu {
   min-width: 200px;
-  border-image: url("menu/menu.svg") 10 10 35 14; }
+  border-image: url("assets/menu/menu.svg") 10 10 35 14; }
   .popup-menu .popup-sub-menu {
     background: none;
     box-shadow: none;
-    border-image: url("menu/submenu.svg") 8 8 2 2; }
+    border-image: url("assets/menu/submenu.svg") 8 8 2 2; }
   .popup-menu .popup-menu-content {
     padding: 1em 0em 1.5em 0em; }
   .popup-menu .popup-menu-item {
@@ -417,18 +434,18 @@ StScrollBar {
       background: none;
       box-shadow: none;
       font-weight: normal;
-      border-image: url("menu/submenu-open.svg") 8 8 2 2; }
+      border-image: url("assets/menu/submenu-open.svg") 8 8 2 2; }
     .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
       color: #ffffff;
       background-color: transparent;
-      border-image: url("menu/menu-hover.svg") 7 7 1 1; }
+      border-image: url("assets/menu/menu-hover.svg") 7 7 1 1; }
     .popup-menu .popup-menu-item:insensitive {
-      color: #949496;
+      color: #949597;
       background: none; }
   .popup-menu .popup-inactive-menu-item {
     color: #F3F3F5; }
     .popup-menu .popup-inactive-menu-item:insensitive {
-      color: #949496; }
+      color: #949597; }
   .popup-menu.panel-menu {
     -boxpointer-gap: 0px;
     margin-bottom: 1.75em; }
@@ -459,7 +476,7 @@ StScrollBar {
   margin: 10px 0px;
   background-color: transparent;
   border: none;
-  border-image: url("menu/menu-separator.svg") 1 1 1 1; }
+  border-image: url("assets/menu/menu-separator.svg") 1 1 1 1; }
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -477,14 +494,14 @@ StScrollBar {
   background: none;
   border: none;
   border-radius: 5px;
-  border-image: url("misc/osd.svg") 10 10 9 11; }
+  border-image: url("assets/misc/osd.svg") 10 10 9 11; }
   .osd-window .osd-monitor-label {
     font-size: 3em; }
   .osd-window .level {
     padding: 7px 5px;
     height: 4px;
     background-color: transparent;
-    border-image: url("misc/slider-osd.svg") 8;
+    border-image: url("assets/misc/slider-osd.svg") 8;
     border-radius: 0;
     color: #4080fb; }
 
@@ -493,7 +510,7 @@ StScrollBar {
   background: none;
   border: none;
   border-radius: 5px;
-  border-image: url("misc/osd.svg") 10 10 9 11;
+  border-image: url("assets/misc/osd.svg") 10 10 9 11;
   padding: 12px; }
 
 .switcher-popup {
@@ -503,7 +520,7 @@ StScrollBar {
 .switcher-list {
   background: none;
   border: none;
-  border-image: url("menu/menu.svg") 10 10 35 14;
+  border-image: url("assets/menu/menu.svg") 10 10 35 14;
   border-radius: 5px;
   padding: 20px; }
   .switcher-list-item-container {
@@ -514,11 +531,11 @@ StScrollBar {
     .switcher-list .item-box:outlined {
       padding: 6px;
       border: none;
-      border-image: url("misc/message.svg") 3; }
+      border-image: url("assets/misc/message.svg") 3; }
     .switcher-list .item-box:selected {
       color: #ffffff;
       background: none;
-      border-image: url("misc/message-hover.svg") 3; }
+      border-image: url("assets/misc/message-hover.svg") 3; }
   .switcher-list .thumbnail-box {
     padding: 2px;
     spacing: 4px; }
@@ -548,7 +565,7 @@ StScrollBar {
   .workspace-switcher-group {
     padding: 12px; }
   .workspace-switcher-container {
-    border-image: url("menu/menu.svg") 10 10 35 14;
+    border-image: url("assets/menu/menu.svg") 10 10 35 14;
     border-radius: 3px;
     padding: 20px;
     padding-bottom: 24px; }
@@ -561,15 +578,15 @@ StScrollBar {
   border: 1px solid #4080fb; }
 
 .ws-switcher-active-up {
-  background-image: url("misc/ws-switch-arrow-up.png"); }
+  background-image: url("assets/misc/ws-switch-arrow-up.png"); }
 
 .ws-switcher-active-down {
-  background-image: url("misc/ws-switch-arrow-down.png"); }
+  background-image: url("assets/misc/ws-switch-arrow-down.png"); }
 
 .ws-switcher-box {
   height: 96px;
   background: transparent;
-  border-image: url("entry/entry-border.svg") 3;
+  border-image: url("assets/entry/entry-border.svg") 3;
   border-radius: 2px; }
 
 .tile-preview {
@@ -587,7 +604,7 @@ StScrollBar {
   font-weight: bold;
   height: 2.1em;
   min-height: 23px;
-  border-image: url("panel/panel.svg") 1 1 1 1; }
+  border-image: url("assets/panel/panel.svg") 1 1 1 1; }
   #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
     background-color: transparent;
     border-image: none; }
@@ -617,20 +634,28 @@ StScrollBar {
       margin-right: 4px; }
     #panel .panel-button:hover {
       color: white;
-      border-image: url("panel/panel-button-border-hover.svg") 2 2 2 2; }
+      border-image: url("assets/panel/panel-button-border-hover.svg") 2 2 2 2; }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
       background-color: transparent;
       box-shadow: none;
       color: white;
-      border-image: url("panel/panel-button-border-active.svg") 2 2 2 2; }
+      border-image: url("assets/panel/panel-button-border-active.svg") 2 2 2 2; }
       #panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon {
         icon-shadow: none; }
     #panel .panel-button .system-status-icon {
       icon-size: 16px;
       padding: 0 8px; }
-    .unlock-screen #panel .panel-button, .login-screen #panel .panel-button, .lock-screen #panel .panel-button {
+    .unlock-screen #panel .panel-button,
+    .login-screen #panel .panel-button,
+    .lock-screen #panel .panel-button {
       color: white; }
-      .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
+      .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active,
+      .login-screen #panel .panel-button:focus,
+      .login-screen #panel .panel-button:hover,
+      .login-screen #panel .panel-button:active,
+      .lock-screen #panel .panel-button:focus,
+      .lock-screen #panel .panel-button:hover,
+      .lock-screen #panel .panel-button:active {
         color: white; }
   #panel .panel-status-indicators-box,
   #panel .panel-status-menu-box {
@@ -647,7 +672,7 @@ StScrollBar {
   padding: 0 4px; }
 
 #appMenu {
-  spinner-image: url("misc/process-working.svg");
+  spinner-image: url("assets/misc/process-working.svg");
   spacing: 4px; }
   #appMenu .label-shadow {
     color: transparent; }
@@ -726,7 +751,7 @@ StScrollBar {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
-    border-image: url("button/button-border-hover.svg") 4; }
+    border-image: url("assets/button/button-border-hover.svg") 4; }
   .datemenu-today-button:active,
   .world-clocks-button:active,
   .message-list-section-title:active {
@@ -734,7 +759,7 @@ StScrollBar {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #ffffff;
-    border-image: url("button/button-border-active.svg") 4;
+    border-image: url("assets/button/button-border-active.svg") 4;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
 
@@ -767,14 +792,14 @@ StScrollBar {
     background-color: #29292b; }
 
 .calendar-change-month-back {
-  background-image: url("misc/calendar-arrow-left.svg"); }
+  background-image: url("assets/misc/calendar-arrow-left.svg"); }
   .calendar-change-month-back:rtl {
-    background-image: url("misc/calendar-arrow-right.svg"); }
+    background-image: url("assets/misc/calendar-arrow-right.svg"); }
 
 .calendar-change-month-forward {
-  background-image: url("misc/calendar-arrow-right.svg"); }
+  background-image: url("assets/misc/calendar-arrow-right.svg"); }
   .calendar-change-month-forward:rtl {
-    background-image: url("misc/calendar-arrow-left.svg"); }
+    background-image: url("assets/misc/calendar-arrow-left.svg"); }
 
 .calendar-day-base {
   font-size: 80%;
@@ -789,7 +814,7 @@ StScrollBar {
   .calendar-day-base:active {
     color: #ffffff;
     background-color: transparent;
-    background-image: url("misc/calendar-not-today.svg");
+    background-image: url("assets/misc/calendar-not-today.svg");
     border-width: 0; }
   .calendar-day-base.calendar-day-heading {
     color: rgba(243, 243, 245, 0.85);
@@ -813,7 +838,7 @@ StScrollBar {
 .calendar-today, .calendar-today:active {
   font-weight: bold;
   border: 0px solid rgba(64, 128, 251, 0.5);
-  background-image: url("misc/calendar-today.svg"); }
+  background-image: url("assets/misc/calendar-today.svg"); }
 
 .calendar-day-with-events {
   color: #4080fb;
@@ -823,7 +848,7 @@ StScrollBar {
   color: #ffffff; }
 
 .calendar-other-month-day {
-  color: #949496;
+  color: #949597;
   opacity: 0.5; }
 
 .message-list {
@@ -844,25 +869,25 @@ StScrollBar {
   border-radius: 0px;
   color: transparent;
   background-color: transparent;
-  background-image: url("misc/message-list-close.svg"); }
+  background-image: url("assets/misc/message-list-close.svg"); }
 
 .message-list-section-close:hover > StIcon,
 .message-list-section-close:focus > StIcon {
   color: transparent;
   background-color: transparent;
-  background-image: url("misc/message-list-close-hover.svg"); }
+  background-image: url("assets/misc/message-list-close-hover.svg"); }
 
 .message-list-section-close:active > StIcon {
   color: transparent;
   background-color: transparent;
-  background-image: url("misc/message-list-close-active.svg"); }
+  background-image: url("assets/misc/message-list-close-active.svg"); }
 
 .message {
   background-color: transparent;
-  border-image: url("misc/message.svg") 4 4 4 4;
+  border-image: url("assets/misc/message.svg") 4 4 4 4;
   padding: 4px; }
   .message:hover, .message:focus {
-    border-image: url("misc/message-hover.svg") 4 4 4 4; }
+    border-image: url("assets/misc/message-hover.svg") 4 4 4 4; }
 
 .message-icon-bin {
   padding: 8px 0px 8px 8px; }
@@ -893,10 +918,10 @@ StScrollBar {
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("misc/corner-ripple-ltr.svg");
+  background-image: url("assets/misc/corner-ripple-ltr.svg");
   background-size: contain; }
   .ripple-box:rtl {
-    background-image: url("misc/corner-ripple-rtl.svg"); }
+    background-image: url("assets/misc/corner-ripple-rtl.svg"); }
 
 .popup-menu-arrow {
   width: 16px;
@@ -906,17 +931,17 @@ StScrollBar {
   icon-size: 16px; }
 
 .window-close {
-  background-image: url("misc/close-window.svg");
+  background-image: url("assets/misc/close-window.svg");
   background-size: 32px;
   height: 32px;
   width: 32px; }
   .window-close:hover {
-    background-image: url("misc/close-window-hover.svg");
+    background-image: url("assets/misc/close-window-hover.svg");
     background-size: 32px;
     height: 32px;
     width: 32px; }
   .window-close:active {
-    background-image: url("misc/close-window-active.svg");
+    background-image: url("assets/misc/close-window-active.svg");
     background-size: 32px;
     height: 32px;
     width: 32px; }
@@ -964,7 +989,7 @@ StScrollBar {
     icon-size: 16px; }
 
 .no-networks-label {
-  color: #949496; }
+  color: #949597; }
 
 .no-networks-box {
   spacing: 12px; }
@@ -1030,7 +1055,7 @@ StScrollBar {
 .search-section-separator {
   background: none;
   -margin-horizontal: 1.5em;
-  border-image: url("menu/menu-separator.svg") 1 1 1 1;
+  border-image: url("assets/menu/menu-separator.svg") 1 1 1 1;
   height: 2px; }
 
 .list-search-result-content {
@@ -1050,7 +1075,7 @@ StScrollBar {
 .search-provider-icon-more {
   width: 16px;
   height: 16px;
-  background-image: url("misc/more-results.svg"); }
+  background-image: url("assets/misc/more-results.svg"); }
 
 #dash {
   font-size: 1em;
@@ -1059,21 +1084,21 @@ StScrollBar {
   padding: 7px 0px 13px 0px;
   border: none;
   border-radius: 0px 2px 2px 0px;
-  border-image: url("dash/dash.svg") 6 11 10 10; }
+  border-image: url("assets/dash/dash.svg") 6 11 10 10; }
   .right #dash, #dash:rtl {
     padding: 7px 0px 13px 0px;
     border-radius: 2px 0 0 2px;
-    border-image: url("dash/dash-right.svg") 11 6 10 10; }
+    border-image: url("assets/dash/dash-right.svg") 11 6 10 10; }
   .bottom #dash {
     padding: 0px 13px 0px 7px;
     border-radius: 2px 2px 0 0;
-    border-image: url("dash/dash-bottom.svg") 10 10 11 6; }
+    border-image: url("assets/dash/dash-bottom.svg") 10 10 11 6; }
   .top #dash {
     padding: 0px 13px 0px 7px;
     border-radius: 0 0 2px 2px;
-    border-image: url("dash/dash-top.svg") 10 10 6 11; }
+    border-image: url("assets/dash/dash-top.svg") 10 10 6 11; }
   #dash .placeholder {
-    background-image: url("dash/dash-placeholder.svg");
+    background-image: url("assets/dash/dash-placeholder.svg");
     background-size: contain;
     height: 24px; }
   #dash .empty-dash-drop-target {
@@ -1100,31 +1125,43 @@ StScrollBar {
     -y-offset: 0;
     -x-offset: 0; }
 
-#dash .app-well-app .overview-icon, .right #dash .app-well-app .overview-icon {
+#dash .app-well-app .overview-icon,
+.right #dash .app-well-app .overview-icon {
   padding: 12px 12px 14px 12px;
   background-color: rgba(0, 0, 0, 0.01);
-  border-image: url("dash/button.svg") 1 1 0 3; }
-.bottom #dash .app-well-app .overview-icon, .top #dash .app-well-app .overview-icon {
+  border-image: url("assets/dash/button.svg") 1 1 0 3; }
+
+.bottom #dash .app-well-app .overview-icon,
+.top #dash .app-well-app .overview-icon {
   padding: 12px 14px 12px 12px;
-  border-image: url("dash/button-horizontal.svg") 0 3 1 1; }
-#dash .app-well-app:hover .overview-icon, .right #dash .app-well-app:hover .overview-icon {
+  border-image: url("assets/dash/button-horizontal.svg") 0 3 1 1; }
+
+#dash .app-well-app:hover .overview-icon,
+.right #dash .app-well-app:hover .overview-icon {
   padding: 12px 12px 14px 12px;
-  border-image: url("dash/button-hover.svg") 1 1 0 3; }
-.bottom #dash .app-well-app:hover .overview-icon, .top #dash .app-well-app:hover .overview-icon {
+  border-image: url("assets/dash/button-hover.svg") 1 1 0 3; }
+
+.bottom #dash .app-well-app:hover .overview-icon,
+.top #dash .app-well-app:hover .overview-icon {
   padding: 12px 14px 12px 12px;
-  border-image: url("dash/button-horizontal-hover.svg") 0 3 1 1; }
-#dash .app-well-app:active .overview-icon, .right #dash .app-well-app:active .overview-icon {
+  border-image: url("assets/dash/button-horizontal-hover.svg") 0 3 1 1; }
+
+#dash .app-well-app:active .overview-icon,
+.right #dash .app-well-app:active .overview-icon {
   padding: 12px 12px 14px 12px;
-  border-image: url("dash/button-active.svg") 1 1 0 3; }
-.bottom #dash .app-well-app:active .overview-icon, .top #dash .app-well-app:active .overview-icon {
+  border-image: url("assets/dash/button-active.svg") 1 1 0 3; }
+
+.bottom #dash .app-well-app:active .overview-icon,
+.top #dash .app-well-app:active .overview-icon {
   padding: 12px 14px 12px 12px;
-  border-image: url("dash/button-horizontal-active.svg") 0 3 1 1; }
+  border-image: url("assets/dash/button-horizontal-active.svg") 0 3 1 1; }
+
 #dash .app-well-app-running-dot {
   width: 34px;
   height: 6px;
   margin-bottom: 2px;
   background-color: transparent;
-  background-image: url("dash/running-dot.svg"); }
+  background-image: url("assets/dash/running-dot.svg"); }
   .bottom #dash .app-well-app-running-dot, .top #dash .app-well-app-running-dot {
     margin-bottom: 0px; }
 
@@ -1133,11 +1170,18 @@ StScrollBar {
   background-color: rgba(0, 0, 0, 0.01);
   border-radius: 0;
   border: 0px solid; }
-.top .show-apps .overview-icon, .bottom .show-apps .overview-icon {
+
+.top .show-apps .overview-icon,
+.bottom .show-apps .overview-icon {
   padding: 12px 13px 12px 18px; }
+
 .show-apps:hover .overview-icon {
   color: #4080fb; }
-.show-apps:active .overview-icon, .show-apps:active .show-apps-icon, .show-apps:checked .overview-icon, .show-apps:checked .show-apps-icon {
+
+.show-apps:active .overview-icon,
+.show-apps:active .show-apps-icon,
+.show-apps:checked .overview-icon,
+.show-apps:checked .show-apps-icon {
   color: #0e5ffa;
   transition-duration: 100ms; }
 
@@ -1157,30 +1201,31 @@ StScrollBar {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #ffffff;
-    border-image: url("button/button-border-active.svg") 4;
+    border-image: url("assets/button/button-border-active.svg") 4;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
   .app-view-control:first-child:ltr, .app-view-control:last-child:rtl {
     border: 1px solid transparent;
     border-radius: 2px 0 0 2px;
-    border-image: url("button/app-control-left.svg") 4; }
+    border-image: url("assets/button/app-control-left.svg") 4; }
     .app-view-control:first-child:ltr:hover, .app-view-control:last-child:rtl:hover {
-      border-image: url("button/app-control-left-hover.svg") 4; }
+      border-image: url("assets/button/app-control-left-hover.svg") 4; }
     .app-view-control:first-child:ltr:checked, .app-view-control:last-child:rtl:checked {
-      border-image: url("button/app-control-left-active.svg") 4; }
+      border-image: url("assets/button/app-control-left-active.svg") 4; }
   .app-view-control:last-child:ltr, .app-view-control:first-child:rtl {
     border: 1px solid transparent;
     border-radius: 0 2px 2px 0;
-    border-image: url("button/app-control-right.svg") 4; }
+    border-image: url("assets/button/app-control-right.svg") 4; }
     .app-view-control:last-child:ltr:hover, .app-view-control:first-child:rtl:hover {
-      border-image: url("button/app-control-right-hover.svg") 4; }
+      border-image: url("assets/button/app-control-right-hover.svg") 4; }
     .app-view-control:last-child:ltr:checked, .app-view-control:first-child:rtl:checked {
-      border-image: url("button/app-control-right-active.svg") 4; }
+      border-image: url("assets/button/app-control-right-active.svg") 4; }
 
 .search-provider-icon:active, .search-provider-icon:checked,
 .list-search-result:active,
 .list-search-result:checked {
   background-color: rgba(27, 27, 28, 0.6); }
+
 .search-provider-icon:focus, .search-provider-icon:selected, .search-provider-icon:hover,
 .list-search-result:focus,
 .list-search-result:selected,
@@ -1188,14 +1233,18 @@ StScrollBar {
   background-color: rgba(255, 255, 255, 0.1);
   transition-duration: 200ms; }
 
-.app-well-app:active .overview-icon, .app-well-app:checked .overview-icon,
+.app-well-app:active .overview-icon,
+.app-well-app:checked .overview-icon,
 .app-well-app.app-folder:active .overview-icon,
 .app-well-app.app-folder:checked .overview-icon,
 .grid-search-result:active .overview-icon,
 .grid-search-result:checked .overview-icon {
   background-color: rgba(27, 27, 28, 0.6);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7); }
-.app-well-app:hover .overview-icon, .app-well-app:focus .overview-icon, .app-well-app:selected .overview-icon,
+
+.app-well-app:hover .overview-icon,
+.app-well-app:focus .overview-icon,
+.app-well-app:selected .overview-icon,
 .app-well-app.app-folder:hover .overview-icon,
 .app-well-app.app-folder:focus .overview-icon,
 .app-well-app.app-folder:selected .overview-icon,
@@ -1211,7 +1260,7 @@ StScrollBar {
   width: 10px;
   height: 3px;
   background-color: transparent;
-  background-image: url("misc/running-dot.svg");
+  background-image: url("assets/misc/running-dot.svg");
   margin-bottom: 2px; }
 
 .search-provider-icon,
@@ -1226,13 +1275,16 @@ StScrollBar {
   text-align: center; }
 
 .app-well-app.app-folder > .overview-icon {
-  border-image: url("app-folder/app-folder.svg") 6 6 5 7; }
+  border-image: url("assets/app-folder/app-folder.svg") 6 6 5 7; }
+
 .app-well-app.app-folder:hover > .overview-icon {
-  border-image: url("app-folder/app-folder-hover.svg") 6 6 5 7; }
+  border-image: url("assets/app-folder/app-folder-hover.svg") 6 6 5 7; }
+
 .app-well-app.app-folder:active > .overview-icon, .app-well-app.app-folder:checked > .overview-icon {
-  border-image: url("app-folder/app-folder-active.svg") 6 6 5 7; }
+  border-image: url("assets/app-folder/app-folder-active.svg") 6 6 5 7; }
+
 .app-well-app.app-folder:focus > .overview-icon {
-  border-image: url("app-folder/app-folder-focus.svg") 6 6 5 7; }
+  border-image: url("assets/app-folder/app-folder-focus.svg") 6 6 5 7; }
 
 .app-folder-popup {
   -arrow-border-radius: 2px;
@@ -1241,7 +1293,7 @@ StScrollBar {
   -arrow-border-width: 0px;
   -arrow-base: 0px;
   -arrow-rise: 0px;
-  border-image: url("menu/menu.svg") 10 10 35 14; }
+  border-image: url("assets/menu/menu.svg") 10 10 35 14; }
 
 .app-folder-popup-bin {
   padding: 5px; }
@@ -1256,13 +1308,13 @@ StScrollBar {
   .page-indicator .page-indicator-icon {
     width: 18px;
     height: 18px;
-    background-image: url(misc/page-indicator-inactive.svg); }
+    background-image: url(assets/misc/page-indicator-inactive.svg); }
   .page-indicator:hover .page-indicator-icon {
-    background-image: url(misc/page-indicator-hover.svg); }
+    background-image: url(assets/misc/page-indicator-hover.svg); }
   .page-indicator:active .page-indicator-icon {
-    background-image: url(misc/page-indicator-active.svg); }
+    background-image: url(assets/misc/page-indicator-active.svg); }
   .page-indicator:checked .page-indicator-icon, .page-indicator:checked:active {
-    background-image: url(misc/page-indicator-checked.svg); }
+    background-image: url(assets/misc/page-indicator-checked.svg); }
 
 .app-well-app > .overview-icon.overview-icon-with-label,
 .grid-search-result .overview-icon.overview-icon-with-label {
@@ -1274,10 +1326,10 @@ StScrollBar {
   spacing: 11px;
   padding: 18px 9px 18px 18px;
   background-color: transparent;
-  border-image: url("misc/workspace-thumb-bg.svg") 11 2 10 10; }
+  border-image: url("assets/misc/workspace-thumb-bg.svg") 11 2 10 10; }
   .workspace-thumbnails:rtl {
     padding: 18px 18px 18px 9px;
-    border-image: url("misc/workspace-thumb-bg-rtl.svg") 2 11 10 10; }
+    border-image: url("assets/misc/workspace-thumb-bg-rtl.svg") 2 11 10 10; }
 
 .workspace-thumbnail-indicator {
   border: 4px solid rgba(64, 128, 251, 0.8);
@@ -1308,7 +1360,7 @@ StScrollBar {
   color: white;
   background-color: transparent;
   border: 1px solid transparent;
-  border-image: url("misc/notification.svg") 10 10 9 11; }
+  border-image: url("assets/misc/notification.svg") 10 10 9 11; }
   .notification-banner .notification-icon,
   .notification-banner:hover .notification-icon,
   .notification-banner:focus .notification-icon {
@@ -1351,7 +1403,7 @@ StScrollBar {
   border: none;
   box-shadow: none;
   border-radius: 0px;
-  background-image: url("misc/summary-counter.svg"); }
+  background-image: url("assets/misc/summary-counter.svg"); }
 
 .secondary-icon {
   icon-size: 1.09em; }
@@ -1486,7 +1538,7 @@ StScrollBar {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   color: #F3F3F5;
-  border-image: url("button/button-border.svg") 4;
+  border-image: url("assets/button/button-border.svg") 4;
   min-height: 2em;
   min-width: 2em;
   font-size: 14pt;
@@ -1498,17 +1550,17 @@ StScrollBar {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
-    border-image: url("button/button-border-focused.svg") 4; }
+    border-image: url("assets/button/button-border-focused.svg") 4; }
   .keyboard-key:hover, .keyboard-key:checked {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #F3F3F5;
-    border-image: url("button/button-border-hover.svg") 4; }
+    border-image: url("assets/button/button-border-hover.svg") 4; }
   .keyboard-key:active {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     color: #ffffff;
-    border-image: url("button/button-border-active.svg") 4;
+    border-image: url("assets/button/button-border-active.svg") 4;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
     icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
   .keyboard-key:grayed {
@@ -1586,24 +1638,24 @@ StScrollBar {
       text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
       icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
       color: #F3F3F5;
-      border-image: url("button/button-border.svg") 4; }
+      border-image: url("assets/button/button-border.svg") 4; }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
         text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         color: #F3F3F5;
-        border-image: url("button/button-border-hover.svg") 4; }
+        border-image: url("assets/button/button-border-hover.svg") 4; }
       .login-dialog .modal-dialog-button:default:active {
         text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         color: #ffffff;
-        border-image: url("button/button-border-active.svg") 4;
+        border-image: url("assets/button/button-border-active.svg") 4;
         text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
         icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
       .login-dialog .modal-dialog-button:default:insensitive {
         text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
         icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-        color: #949496;
-        border-image: url("button/button-border-insensitive.svg") 4; }
+        color: #949597;
+        border-image: url("assets/button/button-border-insensitive.svg") 4; }
 
 .login-dialog-logo-bin {
   padding: 24px 0px; }
@@ -1625,7 +1677,8 @@ StScrollBar {
   padding: 100px 0px; }
   .login-dialog-user-selection-box .login-dialog-not-listed-label {
     padding-left: 2px; }
-    .login-dialog-not-listed-button:focus .login-dialog-user-selection-box .login-dialog-not-listed-label, .login-dialog-not-listed-button:hover .login-dialog-user-selection-box .login-dialog-not-listed-label {
+    .login-dialog-not-listed-button:focus .login-dialog-user-selection-box .login-dialog-not-listed-label,
+    .login-dialog-not-listed-button:hover .login-dialog-user-selection-box .login-dialog-not-listed-label {
       color: white; }
 
 .login-dialog-not-listed-label {
@@ -1675,6 +1728,7 @@ StScrollBar {
 
 .user-widget-label:ltr {
   padding-left: 18px; }
+
 .user-widget-label:rtl {
   padding-right: 18px; }
 
@@ -1756,7 +1810,7 @@ StScrollBar {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); }
 
 #lockDialogGroup {
-  background: #2e3436 url(misc/noise-texture.png);
+  background: #2e3436 url(assets/misc/noise-texture.png);
   background-repeat: repeat; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
@@ -1771,7 +1825,7 @@ StScrollBar {
   padding: 8px 8px 10px 8px;
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid black;
-  border-image: url("misc/lg.svg") 10 10 9 11;
+  border-image: url("assets/misc/lg.svg") 10 10 9 11;
   border-radius: 2px; }
   #LookingGlassDialog > #Toolbar {
     padding: 3px;
@@ -1804,6 +1858,7 @@ StScrollBar {
 .lg-dialog StEntry {
   selection-background-color: #4080fb;
   selected-color: #ffffff; }
+
 .lg-dialog .shell-link {
   color: #72a1fc; }
   .lg-dialog .shell-link:hover {
