@@ -66,7 +66,7 @@ TerminalWindow {
 
   &:active { color: $text_color; }
   &:selected { color: $selected_fg_color; }
-  &:active, &:prelight, &:selected { text-shadow: none; }
+  &:active, &:hover, &:selected { text-shadow: none; }
 }
 
 .nautilus-canvas-item.dim-label,
@@ -112,7 +112,7 @@ $disk_space_free: darken($bg_color, 3%);
 
 .nautilus-circular-button, .nautilus-circular-button:focus {
   border-radius: 20px;
-  outline-radius: 20px;
+  -gtk-outline-radius: 20px;
 }
 
 .nautilus-circular-button {
@@ -151,7 +151,7 @@ NemoWindow GtkSeparator.separator.horizontal {
     padding: 3px 6px 3px 6px;
     border-color: $base_color;  // disable borders, making them transparent doesn't work for some reason
 
-    &:prelight { background-color: if($variant=='light', transparentize(black, 0.95), transparentize(white, 0.95)); }
+    &:hover { background-color: if($variant=='light', transparentize(black, 0.95), transparentize(white, 0.95)); }
 }
 
 /* Only normal state is handle */
@@ -205,7 +205,7 @@ NemoWindow GtkSeparator.separator.horizontal {
     &:hover {
       color: $selected_fg_color;
       border-color: transparentize($selected_fg_color, 0.5);
-      icon-shadow: none;
+      -gtk-icon-shadow: none;
     }
     &:active {
       border-image: none;
@@ -234,7 +234,7 @@ GeditStatusbar {
 }
 
 GeditStatusMenuButton.button.flat,
-GeditStatusMenuButton:prelight.button.flat,
+GeditStatusMenuButton:hover.button.flat,
 GeditStatusMenuButton:checked.button.flat {
   border-image: none;
   border-width: 1px 1px 0 1px;
@@ -242,7 +242,7 @@ GeditStatusMenuButton:checked.button.flat {
   border-radius: 0;
 }
 
-GeditStatusMenuButton:prelight.button.flat {
+GeditStatusMenuButton:hover.button.flat {
   border-color: $borders_color;
 }
 
@@ -420,7 +420,7 @@ EphyWindow .floating-bar { // Epiphany overrides the floating-bar style, so rese
     background: none;
     border: none;
     box-shadow: none;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 
     &:hover { color: transparentize($selected_fg_color, 0.3) }
   }
@@ -529,7 +529,7 @@ PanelApplet .button:focus {
     border-image: none;
     border-width: 3px;
     border-radius: 5.5px;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 
     box-shadow: inset 0 1px 2px transparentize(black, 0.8),
                 inset 1px 0 transparentize(black, 0.4),
@@ -543,7 +543,7 @@ PanelApplet .button:focus {
   border-image: none;
   border-width: 3px;
   border-radius: 5px;
-  icon-shadow: none;
+  -gtk-icon-shadow: none;
 
   box-shadow: inset -2px 0 transparentize(white, 0.95),
               inset 2px 0 transparentize(white, 0.95),
@@ -575,7 +575,7 @@ ClockBox {
     border-radius: 0;
 
     text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
-    icon-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+    -gtk-icon-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
 
     &:hover { @include button(hover, $dark:'true'); border-radius: 0;}
     &:active, &:checked { @include button(active, $dark:'true'); border-radius: 0; }
@@ -630,7 +630,7 @@ MarlinViewWindow *:selected:focus {
   @include entry(normal, $darker);
 
   &:focus { @include entry(focus, $darker) }
-  &:insensitive { @include entry(insensitive, $darker) }
+  &:disabled { @include entry(insensitive, $darker) }
   &:active, &:checked {
     background-image: none;
     background-color: transparentize(black, 0.85);
@@ -663,7 +663,7 @@ MarlinViewWindow *:selected:focus {
   color: white;
   font-weight: bold;
   text-shadow: 0 1px 2px transparentize(black, 0.4);
-  icon-shadow: 0 1px 2px transparentize(black, 0.4);
+  -gtk-icon-shadow: 0 1px 2px transparentize(black, 0.4);
 }
 
 .panel-shadow {
@@ -678,7 +678,7 @@ MarlinViewWindow *:selected:focus {
 .panel .menu .menuitem {
   font-weight: normal;
   text-shadow: none;
-  icon-shadow: none;
+  -gtk-icon-shadow: none;
 }
 
 .panel .menubar .menuitem:hover {
@@ -701,7 +701,7 @@ MarlinViewWindow *:selected:focus {
   background-color: transparent;
   color: white;
   text-shadow: 0 1px 2px transparentize(black, 0.4);
-  icon-shadow: 0 1px 2px transparentize(black, 0.4);
+  -gtk-icon-shadow: 0 1px 2px transparentize(black, 0.4);
 }
 
 .composited-indicator > GtkWidget > GtkWidget:first-child {
@@ -713,7 +713,7 @@ MarlinViewWindow *:selected:focus {
 }
 
 .composited-indicator.menuitem:active,
-.composited-indicator.menuitem:prelight {
+.composited-indicator.menuitem:hover {
   border-style: none;
   background-image: none;
   box-shadow: none;
@@ -731,7 +731,7 @@ MarlinViewWindow *:selected:focus {
 // Slingshot
 //
 SlingshotWidgetsAppEntry.button:hover,
-SlingshotWidgetsSearchItem.button:hover { -gtk-image-effect: none;}
+SlingshotWidgetsSearchItem.button:hover { -gtk-icon-effect: none;}
 
 //
 // Pantheon Terminal
@@ -752,7 +752,7 @@ SwitchboardCategoryView .view:selected,
 SwitchboardCategoryView .view:selected:focus {
   color: $fg_color;
   text-shadow: none;
-  icon-shadow: none;
+  -gtk-icon-shadow: none;
 }
 
 //
@@ -767,7 +767,7 @@ MayaViewGridDay.cell:selected {
   text-shadow: none;
   color: $_maya_fg_color;
 
-  GtkLabel:insensitive { color: transparentize($_maya_fg_color, 0.6); }
+  label:disabled { color: transparentize($_maya_fg_color, 0.6); }
 }
 
 MayaViewHeader {

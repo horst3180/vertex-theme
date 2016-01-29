@@ -13,14 +13,14 @@ ScratchMainWindow .notebook,
 EphyNotebook.notebook,
 MidoriNotebook .notebook,
 PantheonTerminalPantheonTerminalWindow .notebook {
-  -GtkNotebook-tab-overlap: 6;
+  //-GtkNotebook-tab-overlap: 6;
 
   tab .active-page GtkLabel,
   tab GtkLabel.active-page,
   .active-page .button {
       color: $wm_title;
       text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
-      icon-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+      -gtk-icon-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
   }
   .active-page .button:hover {
     color: lighten(red, 10%);
@@ -94,13 +94,13 @@ PantheonTerminalPantheonTerminalWindow .notebook {
 
 // Gnome Terminal
 TerminalWindow .notebook {
-  -GtkNotebook-tab-overlap: 6;
+  //-GtkNotebook-tab-overlap: 6;
 
   tab GtkLabel,
   .button {
     color: mix(nth($_wm_title, 2), $terminal_bg, 65%);
     text-shadow: 0 -1px nth($_wm_title_shadow, 2);
-    icon-shadow: 0 -1px nth($_wm_title_shadow, 2);
+    -gtk-icon-shadow: 0 -1px nth($_wm_title_shadow, 2);
   }
 
   .button:hover {
@@ -128,7 +128,7 @@ TerminalWindow .notebook {
   .active-page .button {
       color: $wm_title;
       text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
-      icon-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+      -gtk-icon-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
   }
   .active-page .button:hover {
     color: lighten(red, 10%);

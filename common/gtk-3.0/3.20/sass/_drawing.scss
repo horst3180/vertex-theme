@@ -123,7 +123,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       $_bg_b);
 
     text-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
-    icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+    -gtk-icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
 
     @if $border==true {
       @include _border(button-normal-border#{$_asset_suffix});
@@ -150,7 +150,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       $_hover_bg_b);
 
     text-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
-    icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+    -gtk-icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
 
     @if $border==true {
       @include _border(button-normal-border#{$_asset_suffix});
@@ -168,7 +168,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       $_active_bg_b);
 
     text-shadow: 0 -1px $button_active_text_shadow;
-    icon-shadow: 0 -1px $button_active_text_shadow;
+    -gtk-icon-shadow: 0 -1px $button_active_text_shadow;
 
     box-shadow: inset 0 1px 2px transparentize(black, 0.8);
 
@@ -186,13 +186,13 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     background-image: linear-gradient(to bottom, $_insensitive_bg);
 
     text-shadow: none;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 
     @if $border==true {
       @include _border(button-normal-border#{$_asset_suffix});
     }
 
-    > GtkLabel, GtkLabel { color: inherit; }
+    > label, label { color: inherit; }
   }
 
   @else if $t==insensitive-active {
@@ -206,7 +206,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       $_insensitive_active_bg_b);
 
     text-shadow: none;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 
     box-shadow: inset 0 1px 2px transparentize(black, 0.8);
 
@@ -214,7 +214,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
       @include _border(button-active-border#{$_asset_suffix});
     }
 
-    > GtkLabel, GtkLabel { color: inherit; }
+    > label, label { color: inherit; }
   }
 
   @if $t==selection-mode {
@@ -228,7 +228,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       $selection_bg_b);
 
     text-shadow: 0 -1px $selection_text_shadow;
-    icon-shadow: 0 -1px $selection_text_shadow;
+    -gtk-icon-shadow: 0 -1px $selection_text_shadow;
 
     @if $border==true {
       @include _border(button-normal-border-suggested#{$_asset_suffix});
@@ -246,7 +246,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       lighten($selection_bg_b, 2%));
 
     text-shadow: 0 -1px $selection_text_shadow;
-    icon-shadow: 0 -1px $selection_text_shadow;
+    -gtk-icon-shadow: 0 -1px $selection_text_shadow;
 
     @if $border==true {
       @include _border(button-normal-border-suggested#{$_asset_suffix});
@@ -264,7 +264,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       $selection_bg_b);
 
     text-shadow: 0 -1px $selection_text_shadow;
-    icon-shadow: 0 -1px $selection_text_shadow;
+    -gtk-icon-shadow: 0 -1px $selection_text_shadow;
 
     box-shadow: inset 0 1px 2px transparentize(black, 0.85);
 
@@ -282,13 +282,13 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       mix($selection_bg_a, $selection_bg_b, 50%));
 
     text-shadow: none;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 
     @if $border==true {
       @include _border(button-normal-border-suggested#{$_asset_suffix});
     }
 
-    > GtkLabel, GtkLabel { color: inherit; }
+    > label, label { color: inherit; }
   }
 
   @if $t==selection-mode-insensitive-active {
@@ -300,7 +300,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       lighten($selection_toolbar_button_b, 3%));
 
     text-shadow: none;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 
     box-shadow: inset 0 1px 2px transparentize(black, 0.9);
 
@@ -308,7 +308,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
       @include _border(button-active-border-suggested#{$_asset_suffix});
     }
 
-    > GtkLabel, GtkLabel { color: inherit; }
+    > label, label { color: inherit; }
   }
 
   @else if $t==osd {
@@ -322,10 +322,10 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       $osd_button_bg_b);
 
     text-shadow: 0 -1px $osd_text_shadow;
-    icon-shadow: 0 -1px $osd_text_shadow;
+    -gtk-icon-shadow: 0 -1px $osd_text_shadow;
 
     @if $border==true {
-	    box-shadow: inset 0 1px transparentize(white, 0.9),
+      box-shadow: inset 0 1px transparentize(white, 0.9),
                   inset 0 -1px transparentize(black, 0.9);
 
 
@@ -347,14 +347,14 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       lighten($osd_button_bg_b, 5%));
 
     text-shadow: 0 -1px $osd_text_shadow;
-    icon-shadow: 0 -1px $osd_text_shadow;
+    -gtk-icon-shadow: 0 -1px $osd_text_shadow;
 
     @if $border==true {
       border: 1px solid transparentize(black, 0.25);
       border-image: none;
       border-radius: 2px;
 
-	    box-shadow: inset 0 1px transparentize(white, 0.9),
+      box-shadow: inset 0 1px transparentize(white, 0.9),
                   inset 0 -1px transparentize(black, 0.9);
     }
   }
@@ -370,7 +370,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       darken($osd_button_bg_a, 14%));
 
     text-shadow: 0 -1px $osd_text_shadow;
-    icon-shadow: 0 -1px $osd_text_shadow;
+    -gtk-icon-shadow: 0 -1px $osd_text_shadow;
 
     box-shadow: inset 0 1px 2px transparentize(black, 0.9);
 
@@ -389,7 +389,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     background-image: linear-gradient(to bottom, $osd_insensitive_bg_color);
 
     text-shadow: none;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 
     @if $border==true {
       border: 1px solid transparentize(black, 0.25);
@@ -409,7 +409,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     box-shadow: none;
     text-shadow: none;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
   }
 }
 

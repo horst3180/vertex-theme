@@ -82,12 +82,12 @@ GraniteWidgetsStaticNotebook .frame {
   color: transparent;
 }
 
-.source-list.view:prelight {
+.source-list.view:hover {
   background-color: lighten($sidebar_bg, 5%);
 }
 
 .source-list.view:selected,
-.source-list.view:prelight:selected,
+.source-list.view:hover:selected,
 .source-list.view:selected:focus,
 .source-list.category-expander:hover {
   color: $selected_fg_color;
@@ -102,10 +102,10 @@ GraniteWidgetsStaticNotebook .frame {
 }
 
 .source-list.badge,
-.source-list.badge:prelight,
+.source-list.badge:hover,
 .source-list.badge:selected,
 .source-list.badge:selected:focus,
-.source-list.badge:prelight:selected {
+.source-list.badge:hover:selected {
   background-image: none;
   background-color: $selected_bg_color;
   color: $selected_fg_color;
@@ -117,7 +117,7 @@ GraniteWidgetsStaticNotebook .frame {
 
 .source-list.badge:selected,
 .source-list.badge:selected:focus,
-.source-list.badge:prelight:selected {
+.source-list.badge:hover:selected {
   background-color: $selected_fg_color;
   color: $selected_bg_color;
 }
