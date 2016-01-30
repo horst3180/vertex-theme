@@ -962,7 +962,9 @@ GtkFlowBox .grid-child {
     border-style: solid;
     border-color: transparent; }
 
-.menuitem.button.flat, .menuitem.sidebar-button.button, .button:link, .button:visited, .button:link:hover, .button:link:active, .button:link:checked, .button:visited:hover, .button:visited:active, .button:visited:checked, .menu.button, .notebook tab .button, .list-row.activatable, GtkCalendar.button, GtkCalendar.button:hover, .scale-popup .button:hover {
+.menuitem.button.flat, .menuitem.sidebar-button.button, .button:link, .button:visited, .button:link:hover, .button:link:active, .button:link:checked, .button:visited:hover, .button:visited:active, .button:visited:checked, .menu.button, .notebook tab .button, .list-row.activatable, GtkCalendar.button, GtkCalendar.button:hover, .scale-popup .button:hover, PanelApplet .button.flat:not(:hover), PanelApplet .sidebar-button.button:not(:hover),
+PanelApplet .button.flat:focus:not(:hover),
+PanelApplet .sidebar-button.button:focus:not(:hover), .budgie-panel .flat.button:not(:hover), .budgie-panel .sidebar-button.button:not(:hover) {
   border-color: transparent;
   border-image: none;
   background-color: transparent;
@@ -1468,53 +1470,388 @@ GtkComboBox {
   .solid-csd .titlebar {
     box-shadow: none; }
 
-.header-bar.selection-mode .linked > .button.suggested-action,
-.header-bar.selection-mode .linked > .button.suggested-action:hover {
+.raven .entry, .drop-shadow .entry, .budgie-session-dialog.background .entry, .background.budgie-polkit-dialog .entry {
+  background-color: transparent;
+  color: #F3F3F5;
+  background-image: linear-gradient(to bottom, #313132);
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
+  border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .entry.image, .drop-shadow .entry.image, .budgie-session-dialog.background .entry.image, .background.budgie-polkit-dialog .entry.image {
+    color: inherit; }
+  .raven .entry:focus, .drop-shadow .entry:focus, .budgie-session-dialog.background .entry:focus, .background.budgie-polkit-dialog .entry:focus {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #313132);
+    box-shadow: none;
+    border-image: -gtk-scaled(url("borders/entry-focused-border-dark.png"), url("borders/entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .raven .entry:insensitive, .drop-shadow .entry:insensitive, .budgie-session-dialog.background .entry:insensitive, .background.budgie-polkit-dialog .entry:insensitive {
+    background-color: transparent;
+    color: #949597;
+    background-image: linear-gradient(to bottom, #434446);
+    box-shadow: none;
+    border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .raven .entry.progressbar, .drop-shadow .entry.progressbar, .budgie-session-dialog.background .entry.progressbar, .background.budgie-polkit-dialog .entry.progressbar {
+    margin: 0 2px 3px 2px;
+    border-radius: 0;
+    border-width: 0 0 2px;
+    border-color: #4080fb;
+    border-style: solid;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-image: none; }
+
+.raven .button, .drop-shadow .button, .budgie-session-dialog.background .button, .background.budgie-polkit-dialog .button {
+  color: #F3F3F5;
+  outline-color: rgba(243, 243, 245, 0.3);
+  background-image: linear-gradient(to bottom, #4f5053, #343436);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+  icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+  border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .button.flat, .drop-shadow .button.flat, .budgie-session-dialog.background .button.flat, .background.budgie-polkit-dialog .button.flat, .raven .sidebar-button.button, .drop-shadow .sidebar-button.button, .budgie-session-dialog.background .sidebar-button.button, .background.budgie-polkit-dialog .sidebar-button.button {
+    border-color: transparent;
+    border-image: none;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    icon-shadow: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
+  .raven .button:focus, .drop-shadow .button:focus, .budgie-session-dialog.background .button:focus, .background.budgie-polkit-dialog .button:focus {
+    border-image: -gtk-scaled(url("borders/button-focused-border-dark.png"), url("borders/button-focused-border-dark@2.png")) 3 3 4 3/3px 3px 4px 3px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .raven .button:hover, .drop-shadow .button:hover, .budgie-session-dialog.background .button:hover, .background.budgie-polkit-dialog .button:hover {
+    color: #F3F3F5;
+    outline-color: rgba(243, 243, 245, 0.3);
+    background-image: linear-gradient(to bottom, #5e6064, #393A3B);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .raven .button:active, .drop-shadow .button:active, .budgie-session-dialog.background .button:active, .background.budgie-polkit-dialog .button:active, .raven .button:checked, .drop-shadow .button:checked, .budgie-session-dialog.background .button:checked, .background.budgie-polkit-dialog .button:checked {
+    color: #ffffff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(to bottom, #242525, #37383A);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"), url("borders/button-active-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .raven .button:insensitive, .drop-shadow .button:insensitive, .budgie-session-dialog.background .button:insensitive, .background.budgie-polkit-dialog .button:insensitive {
+    color: #949597;
+    background-image: linear-gradient(to bottom, #434446);
+    text-shadow: none;
+    icon-shadow: none;
+    border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+    .raven .button:insensitive > GtkLabel, .drop-shadow .button:insensitive > GtkLabel, .budgie-session-dialog.background .button:insensitive > GtkLabel, .background.budgie-polkit-dialog .button:insensitive > GtkLabel, .raven .button:insensitive GtkLabel, .drop-shadow .button:insensitive GtkLabel, .budgie-session-dialog.background .button:insensitive GtkLabel, .background.budgie-polkit-dialog .button:insensitive GtkLabel {
+      color: inherit; }
+  .raven .button.flat:insensitive, .drop-shadow .button.flat:insensitive, .budgie-session-dialog.background .button.flat:insensitive, .background.budgie-polkit-dialog .button.flat:insensitive, .raven .sidebar-button.button:insensitive, .drop-shadow .sidebar-button.button:insensitive, .budgie-session-dialog.background .sidebar-button.button:insensitive, .background.budgie-polkit-dialog .sidebar-button.button:insensitive {
+    border-color: transparent;
+    border-image: none;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    icon-shadow: none; }
+  .raven .button:insensitive:active, .drop-shadow .button:insensitive:active, .budgie-session-dialog.background .button:insensitive:active, .background.budgie-polkit-dialog .button:insensitive:active, .raven .button:insensitive:checked, .drop-shadow .button:insensitive:checked, .budgie-session-dialog.background .button:insensitive:checked, .background.budgie-polkit-dialog .button:insensitive:checked {
+    color: rgba(255, 255, 255, 0.7);
+    background-image: linear-gradient(to bottom, #3a3b3b, #3f4141);
+    text-shadow: none;
+    icon-shadow: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"), url("borders/button-active-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+    .raven .button:insensitive:active > GtkLabel, .drop-shadow .button:insensitive:active > GtkLabel, .budgie-session-dialog.background .button:insensitive:active > GtkLabel, .background.budgie-polkit-dialog .button:insensitive:active > GtkLabel, .raven .button:insensitive:active GtkLabel, .drop-shadow .button:insensitive:active GtkLabel, .budgie-session-dialog.background .button:insensitive:active GtkLabel, .background.budgie-polkit-dialog .button:insensitive:active GtkLabel, .raven .button:insensitive:checked > GtkLabel, .drop-shadow .button:insensitive:checked > GtkLabel, .budgie-session-dialog.background .button:insensitive:checked > GtkLabel, .background.budgie-polkit-dialog .button:insensitive:checked > GtkLabel, .raven .button:insensitive:checked GtkLabel, .drop-shadow .button:insensitive:checked GtkLabel, .budgie-session-dialog.background .button:insensitive:checked GtkLabel, .background.budgie-polkit-dialog .button:insensitive:checked GtkLabel {
+      color: inherit; }
+  .raven .button.suggested-action, .drop-shadow .button.suggested-action, .budgie-session-dialog.background .button.suggested-action, .background.budgie-polkit-dialog .button.suggested-action {
+    color: #ffffff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(to bottom, #407cbc, #2a5285);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+    border-image: -gtk-scaled(url("borders/button-normal-border-suggested-dark.png"), url("borders/button-normal-border-suggested-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+    .raven .button.suggested-action:hover, .drop-shadow .button.suggested-action:hover, .budgie-session-dialog.background .button.suggested-action:hover, .background.budgie-polkit-dialog .button.suggested-action:hover {
+      background-image: linear-gradient(to bottom, #4e86c3, #2c578d); }
+    .raven .button.suggested-action:active, .drop-shadow .button.suggested-action:active, .budgie-session-dialog.background .button.suggested-action:active, .background.budgie-polkit-dialog .button.suggested-action:active, .raven .button.suggested-action:checked, .drop-shadow .button.suggested-action:checked, .budgie-session-dialog.background .button.suggested-action:checked, .background.budgie-polkit-dialog .button.suggested-action:checked {
+      color: #ffffff;
+      background-image: linear-gradient(to bottom, #244672, #3a6fa9);
+      border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"), url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+      border-radius: 2px;
+      border-width: 1px 1px 2px 1px;
+      border-style: solid;
+      border-color: transparent; }
+    .raven .button.suggested-action:insensitive, .drop-shadow .button.suggested-action:insensitive, .budgie-session-dialog.background .button.suggested-action:insensitive, .background.budgie-polkit-dialog .button.suggested-action:insensitive {
+      color: rgba(255, 255, 255, 0.6);
+      background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.8));
+      text-shadow: none;
+      icon-shadow: none; }
+      .raven .button.suggested-action:insensitive > GtkLabel, .drop-shadow .button.suggested-action:insensitive > GtkLabel, .budgie-session-dialog.background .button.suggested-action:insensitive > GtkLabel, .background.budgie-polkit-dialog .button.suggested-action:insensitive > GtkLabel, .raven .button.suggested-action:insensitive GtkLabel, .drop-shadow .button.suggested-action:insensitive GtkLabel, .budgie-session-dialog.background .button.suggested-action:insensitive GtkLabel, .background.budgie-polkit-dialog .button.suggested-action:insensitive GtkLabel {
+        color: inherit; }
+      .raven .button.suggested-action:insensitive:active, .drop-shadow .button.suggested-action:insensitive:active, .budgie-session-dialog.background .button.suggested-action:insensitive:active, .background.budgie-polkit-dialog .button.suggested-action:insensitive:active, .raven .button.suggested-action:insensitive:checked, .drop-shadow .button.suggested-action:insensitive:checked, .budgie-session-dialog.background .button.suggested-action:insensitive:checked, .background.budgie-polkit-dialog .button.suggested-action:insensitive:checked {
+        background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.9)); }
+        .raven .button.suggested-action:insensitive:active > GtkLabel, .drop-shadow .button.suggested-action:insensitive:active > GtkLabel, .budgie-session-dialog.background .button.suggested-action:insensitive:active > GtkLabel, .background.budgie-polkit-dialog .button.suggested-action:insensitive:active > GtkLabel, .raven .button.suggested-action:insensitive:active GtkLabel, .drop-shadow .button.suggested-action:insensitive:active GtkLabel, .budgie-session-dialog.background .button.suggested-action:insensitive:active GtkLabel, .background.budgie-polkit-dialog .button.suggested-action:insensitive:active GtkLabel, .raven .button.suggested-action:insensitive:checked > GtkLabel, .drop-shadow .button.suggested-action:insensitive:checked > GtkLabel, .budgie-session-dialog.background .button.suggested-action:insensitive:checked > GtkLabel, .background.budgie-polkit-dialog .button.suggested-action:insensitive:checked > GtkLabel, .raven .button.suggested-action:insensitive:checked GtkLabel, .drop-shadow .button.suggested-action:insensitive:checked GtkLabel, .budgie-session-dialog.background .button.suggested-action:insensitive:checked GtkLabel, .background.budgie-polkit-dialog .button.suggested-action:insensitive:checked GtkLabel {
+          color: inherit; }
+  .raven .button.destructive-action, .drop-shadow .button.destructive-action, .budgie-session-dialog.background .button.destructive-action, .background.budgie-polkit-dialog .button.destructive-action {
+    color: #ffffff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(to bottom, #e86060, #ce3535);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+    border-image: -gtk-scaled(url("borders/button-normal-border-destructive-dark.png"), url("borders/button-normal-border-destructive-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+    .raven .button.destructive-action:hover, .drop-shadow .button.destructive-action:hover, .budgie-session-dialog.background .button.destructive-action:hover, .background.budgie-polkit-dialog .button.destructive-action:hover {
+      background-image: linear-gradient(to bottom, #eb7272, #d03d3d); }
+    .raven .button.destructive-action:active, .drop-shadow .button.destructive-action:active, .budgie-session-dialog.background .button.destructive-action:active, .background.budgie-polkit-dialog .button.destructive-action:active, .raven .button.destructive-action:checked, .drop-shadow .button.destructive-action:checked, .budgie-session-dialog.background .button.destructive-action:checked, .background.budgie-polkit-dialog .button.destructive-action:checked {
+      color: #ffffff;
+      background-image: linear-gradient(to bottom, #bc2e2e, #e54a4a);
+      border-image: -gtk-scaled(url("borders/button-active-border-destructive-dark.png"), url("borders/button-active-border-destructive-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+      border-radius: 2px;
+      border-width: 1px 1px 2px 1px;
+      border-style: solid;
+      border-color: transparent; }
+    .raven .button.destructive-action:insensitive, .drop-shadow .button.destructive-action:insensitive, .budgie-session-dialog.background .button.destructive-action:insensitive, .background.budgie-polkit-dialog .button.destructive-action:insensitive {
+      color: rgba(255, 255, 255, 0.6);
+      background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.8));
+      text-shadow: none;
+      icon-shadow: none; }
+      .raven .button.destructive-action:insensitive > GtkLabel, .drop-shadow .button.destructive-action:insensitive > GtkLabel, .budgie-session-dialog.background .button.destructive-action:insensitive > GtkLabel, .background.budgie-polkit-dialog .button.destructive-action:insensitive > GtkLabel, .raven .button.destructive-action:insensitive GtkLabel, .drop-shadow .button.destructive-action:insensitive GtkLabel, .budgie-session-dialog.background .button.destructive-action:insensitive GtkLabel, .background.budgie-polkit-dialog .button.destructive-action:insensitive GtkLabel {
+        color: inherit; }
+      .raven .button.destructive-action:insensitive:active, .drop-shadow .button.destructive-action:insensitive:active, .budgie-session-dialog.background .button.destructive-action:insensitive:active, .background.budgie-polkit-dialog .button.destructive-action:insensitive:active, .raven .button.destructive-action:insensitive:checked, .drop-shadow .button.destructive-action:insensitive:checked, .budgie-session-dialog.background .button.destructive-action:insensitive:checked, .background.budgie-polkit-dialog .button.destructive-action:insensitive:checked {
+        background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.9)); }
+        .raven .button.destructive-action:insensitive:active > GtkLabel, .drop-shadow .button.destructive-action:insensitive:active > GtkLabel, .budgie-session-dialog.background .button.destructive-action:insensitive:active > GtkLabel, .background.budgie-polkit-dialog .button.destructive-action:insensitive:active > GtkLabel, .raven .button.destructive-action:insensitive:active GtkLabel, .drop-shadow .button.destructive-action:insensitive:active GtkLabel, .budgie-session-dialog.background .button.destructive-action:insensitive:active GtkLabel, .background.budgie-polkit-dialog .button.destructive-action:insensitive:active GtkLabel, .raven .button.destructive-action:insensitive:checked > GtkLabel, .drop-shadow .button.destructive-action:insensitive:checked > GtkLabel, .budgie-session-dialog.background .button.destructive-action:insensitive:checked > GtkLabel, .background.budgie-polkit-dialog .button.destructive-action:insensitive:checked > GtkLabel, .raven .button.destructive-action:insensitive:checked GtkLabel, .drop-shadow .button.destructive-action:insensitive:checked GtkLabel, .budgie-session-dialog.background .button.destructive-action:insensitive:checked GtkLabel, .background.budgie-polkit-dialog .button.destructive-action:insensitive:checked GtkLabel {
+          color: inherit; }
+
+.raven GtkComboBox, .drop-shadow GtkComboBox, .budgie-session-dialog.background GtkComboBox, .background.budgie-polkit-dialog GtkComboBox {
+  color: #F3F3F5;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+  icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
+  .raven GtkComboBox:insensitive, .drop-shadow GtkComboBox:insensitive, .budgie-session-dialog.background GtkComboBox:insensitive, .background.budgie-polkit-dialog GtkComboBox:insensitive {
+    color: #949597;
+    text-shadow: none;
+    icon-shadow: none; }
+  .raven GtkComboBox .separator, .drop-shadow GtkComboBox .separator, .budgie-session-dialog.background GtkComboBox .separator, .background.budgie-polkit-dialog GtkComboBox .separator, .raven GtkComboBox .sidebar .view.separator, .sidebar .raven GtkComboBox .view.separator, .drop-shadow GtkComboBox .sidebar .view.separator, .sidebar .drop-shadow GtkComboBox .view.separator {
+    border: none; }
+
+.raven .spinbutton .button, .drop-shadow .spinbutton .button, .budgie-session-dialog.background .spinbutton .button, .background.budgie-polkit-dialog .spinbutton .button {
+  border-image: none;
+  border-width: 0;
+  border-radius: 0;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 2px 0 rgba(255, 255, 255, 0.1), inset 1px 0 #171819;
+  icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
+  .raven .spinbutton .button:dir(rtl), .drop-shadow .spinbutton .button:dir(rtl), .budgie-session-dialog.background .spinbutton .button:dir(rtl), .background.budgie-polkit-dialog .spinbutton .button:dir(rtl) {
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset -2px 0 rgba(255, 255, 255, 0.1), inset -1px 0 #171819; }
+  .raven .spinbutton .button:insensitive, .drop-shadow .spinbutton .button:insensitive, .budgie-session-dialog.background .spinbutton .button:insensitive, .background.budgie-polkit-dialog .spinbutton .button:insensitive {
+    box-shadow: inset 1px 0 #171819;
+    icon-shadow: none; }
+    .raven .spinbutton .button:insensitive:dir(rtl), .drop-shadow .spinbutton .button:insensitive:dir(rtl), .budgie-session-dialog.background .spinbutton .button:insensitive:dir(rtl), .background.budgie-polkit-dialog .spinbutton .button:insensitive:dir(rtl) {
+      box-shadow: inset -1px 0 #171819; }
+  .raven .spinbutton .button:active, .drop-shadow .spinbutton .button:active, .budgie-session-dialog.background .spinbutton .button:active, .background.budgie-polkit-dialog .spinbutton .button:active {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.4); }
+
+.raven .scale.trough, .drop-shadow .scale.trough, .budgie-session-dialog.background .scale.trough, .background.budgie-polkit-dialog .scale.trough {
+  margin: 6px 0 5px 0;
+  background-image: linear-gradient(to bottom, #242525, #37383A);
+  border-image: -gtk-scaled(url("borders/scale-trough-border-dark.png"), url("borders/scale-trough-border-dark@2.png")) 2 6 3 6/2px 6px 3px 6px stretch;
+  border-radius: 2px;
+  border-width: 1px 5px 2px 5px;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .scale.trough.highlight, .drop-shadow .scale.trough.highlight, .budgie-session-dialog.background .scale.trough.highlight, .background.budgie-polkit-dialog .scale.trough.highlight {
+    background-image: linear-gradient(to bottom, #4b4d50, #5d5e62);
+    border-image: -gtk-scaled(url("borders/scale-highlight-border-dark.png"), url("borders/scale-highlight-border-dark@2.png")) 2 6 3 6/2px 6px 3px 6px stretch;
+    border-radius: 2px;
+    border-width: 1px 5px 2px 5px;
+    border-style: solid;
+    border-color: transparent; }
+    .raven .scale.trough.highlight:insensitive, .drop-shadow .scale.trough.highlight:insensitive, .budgie-session-dialog.background .scale.trough.highlight:insensitive, .background.budgie-polkit-dialog .scale.trough.highlight:insensitive {
+      background-image: linear-gradient(to bottom, #3a3b3d, #46484a); }
+  .raven .scale.trough:insensitive, .drop-shadow .scale.trough:insensitive, .budgie-session-dialog.background .scale.trough:insensitive, .background.budgie-polkit-dialog .scale.trough:insensitive {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, #353638, #3c3e40); }
+
+.raven .scale.slider, .drop-shadow .scale.slider, .budgie-session-dialog.background .scale.slider, .background.budgie-polkit-dialog .scale.slider {
+  background-image: -gtk-scaled(url("assets/slider-dark.png"), url("assets/slider-dark@2.png")); }
+
+.raven .scale.slider:hover, .drop-shadow .scale.slider:hover, .budgie-session-dialog.background .scale.slider:hover, .background.budgie-polkit-dialog .scale.slider:hover {
+  background-image: -gtk-scaled(url("assets/slider-hover-dark.png"), url("assets/slider-hover-dark@2.png")); }
+
+.raven .scale.slider:active, .drop-shadow .scale.slider:active, .budgie-session-dialog.background .scale.slider:active, .background.budgie-polkit-dialog .scale.slider:active {
+  background-image: -gtk-scaled(url("assets/slider-active-dark.png"), url("assets/slider-active-dark@2.png")); }
+
+.raven .scale.slider:insensitive, .drop-shadow .scale.slider:insensitive, .budgie-session-dialog.background .scale.slider:insensitive, .background.budgie-polkit-dialog .scale.slider:insensitive {
+  background-image: -gtk-scaled(url("assets/slider-insensitive-dark.png"), url("assets/slider-insensitive-dark@2.png")); }
+
+.raven GtkProgressBar, .drop-shadow GtkProgressBar, .budgie-session-dialog.background GtkProgressBar, .background.budgie-polkit-dialog GtkProgressBar {
+  color: rgba(243, 243, 245, 0.7); }
+  .raven GtkProgressBar.trough, .drop-shadow GtkProgressBar.trough, .budgie-session-dialog.background GtkProgressBar.trough, .background.budgie-polkit-dialog GtkProgressBar.trough, .raven .level-bar.trough, .drop-shadow .level-bar.trough, .budgie-session-dialog.background .level-bar.trough, .background.budgie-polkit-dialog .level-bar.trough {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, #1f2020, #2b2b2d);
+    border-image: -gtk-scaled(url("borders/trough-border-dark.png"), url("borders/trough-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+
+.raven GtkSwitch.trough, .drop-shadow GtkSwitch.trough, .budgie-session-dialog.background GtkSwitch.trough, .background.budgie-polkit-dialog GtkSwitch.trough {
+  background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png")); }
+
+.raven GtkSwitch.slider, .drop-shadow GtkSwitch.slider, .budgie-session-dialog.background GtkSwitch.slider, .background.budgie-polkit-dialog GtkSwitch.slider {
+  background-image: -gtk-scaled(url("assets/switch-slider-dark.png"), url("assets/switch-slider-dark@2.png")); }
+
+.raven GtkSwitch.trough:active, .drop-shadow GtkSwitch.trough:active, .budgie-session-dialog.background GtkSwitch.trough:active, .background.budgie-polkit-dialog GtkSwitch.trough:active {
+  background-image: -gtk-scaled(url("assets/switch-active-dark.png"), url("assets/switch-active-dark@2.png")); }
+
+.raven GtkSwitch.trough:insensitive, .drop-shadow GtkSwitch.trough:insensitive, .budgie-session-dialog.background GtkSwitch.trough:insensitive, .background.budgie-polkit-dialog GtkSwitch.trough:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-insensitive-dark.png"), url("assets/switch-insensitive-dark@2.png")); }
+
+.raven GtkSwitch.slider:insensitive, .drop-shadow GtkSwitch.slider:insensitive, .budgie-session-dialog.background GtkSwitch.slider:insensitive, .background.budgie-polkit-dialog GtkSwitch.slider:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-slider-insensitive-dark.png"), url("assets/switch-slider-insensitive-dark@2.png")); }
+
+.raven GtkSwitch.trough:active:insensitive, .drop-shadow GtkSwitch.trough:active:insensitive, .budgie-session-dialog.background GtkSwitch.trough:active:insensitive, .background.budgie-polkit-dialog GtkSwitch.trough:active:insensitive {
+  background-image: -gtk-scaled(url("assets/switch-active-insensitive-dark.png"), url("assets/switch-active-insensitive-dark@2.png")); }
+
+.raven GtkColorButton.button GtkColorSwatch.overlay, .drop-shadow GtkColorButton.button GtkColorSwatch.overlay, .budgie-session-dialog.background GtkColorButton.button GtkColorSwatch.overlay, .background.budgie-polkit-dialog GtkColorButton.button GtkColorSwatch.overlay {
+  border-color: #171819; }
+
+.raven .linked > .entry, .drop-shadow .linked > .entry, .budgie-session-dialog.background .linked > .entry, .background.budgie-polkit-dialog .linked > .entry, .raven GtkComboBox.combobox-entry .entry, .drop-shadow GtkComboBox.combobox-entry .entry, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry {
+  border-image: -gtk-scaled(url("borders/middle-entry-normal-border.png"), url("borders/middle-entry-normal-border@2.png")) 1 1 2 0/1px 1px 2px 0 stretch;
+  border-radius: 0;
+  border-width: 1px 0 2px 0;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .linked > .entry:focus, .drop-shadow .linked > .entry:focus, .budgie-session-dialog.background .linked > .entry:focus, .background.budgie-polkit-dialog .linked > .entry:focus, .raven GtkComboBox.combobox-entry .entry:focus, .drop-shadow GtkComboBox.combobox-entry .entry:focus, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:focus, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:focus {
+    border-image: -gtk-scaled(url("borders/middle-entry-focused-border.png"), url("borders/middle-entry-focused-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 0;
+    border-width: 1px 0 2px 0;
+    border-style: solid;
+    border-color: transparent; }
+
+.raven .linked > .entry:first-child, .drop-shadow .linked > .entry:first-child, .budgie-session-dialog.background .linked > .entry:first-child, .background.budgie-polkit-dialog .linked > .entry:first-child, .raven GtkComboBox.combobox-entry .entry:first-child, .drop-shadow GtkComboBox.combobox-entry .entry:first-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:first-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:first-child {
+  border-image: -gtk-scaled(url("borders/left-entry-normal-border.png"), url("borders/left-entry-normal-border@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+  border-radius: 2px 0 0 2px;
+  border-width: 1px 0 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .linked > .entry:first-child:focus, .drop-shadow .linked > .entry:first-child:focus, .budgie-session-dialog.background .linked > .entry:first-child:focus, .background.budgie-polkit-dialog .linked > .entry:first-child:focus, .raven GtkComboBox.combobox-entry .entry:first-child:focus, .drop-shadow GtkComboBox.combobox-entry .entry:first-child:focus, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:first-child:focus, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:first-child:focus {
+    border-image: -gtk-scaled(url("borders/left-entry-focused-border.png"), url("borders/left-entry-focused-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px 0 0 2px;
+    border-width: 1px 0 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+
+.raven .linked > .entry:last-child, .drop-shadow .linked > .entry:last-child, .budgie-session-dialog.background .linked > .entry:last-child, .background.budgie-polkit-dialog .linked > .entry:last-child, .raven GtkComboBox.combobox-entry .entry:last-child, .drop-shadow GtkComboBox.combobox-entry .entry:last-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:last-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:last-child {
+  border-image: -gtk-scaled(url("borders/right-entry-normal-border.png"), url("borders/right-entry-normal-border@2.png")) 2 2 3 0/2px 2px 3px 0 stretch;
+  border-radius: 0 2px 2px 0;
+  border-width: 1px 1px 2px 0;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .linked > .entry:last-child:focus, .drop-shadow .linked > .entry:last-child:focus, .budgie-session-dialog.background .linked > .entry:last-child:focus, .background.budgie-polkit-dialog .linked > .entry:last-child:focus, .raven GtkComboBox.combobox-entry .entry:last-child:focus, .drop-shadow GtkComboBox.combobox-entry .entry:last-child:focus, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:last-child:focus, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:last-child:focus {
+    border-image: -gtk-scaled(url("borders/right-entry-focused-border.png"), url("borders/right-entry-focused-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 0 2px 2px 0;
+    border-width: 1px 1px 2px 0;
+    border-style: solid;
+    border-color: transparent; }
+
+.raven .linked > .entry:only-child, .drop-shadow .linked > .entry:only-child, .budgie-session-dialog.background .linked > .entry:only-child, .background.budgie-polkit-dialog .linked > .entry:only-child, .raven GtkComboBox.combobox-entry .entry:only-child, .drop-shadow GtkComboBox.combobox-entry .entry:only-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:only-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:only-child {
+  border-image: -gtk-scaled(url("borders/entry-normal-border.png"), url("borders/entry-normal-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .linked > .entry:only-child:focus, .drop-shadow .linked > .entry:only-child:focus, .budgie-session-dialog.background .linked > .entry:only-child:focus, .background.budgie-polkit-dialog .linked > .entry:only-child:focus, .raven GtkComboBox.combobox-entry .entry:only-child:focus, .drop-shadow GtkComboBox.combobox-entry .entry:only-child:focus, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:only-child:focus, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:only-child:focus {
+    border-image: -gtk-scaled(url("borders/entry-focused-border.png"), url("borders/entry-focused-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+
+.raven .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .drop-shadow .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .budgie-session-dialog.background .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .background.budgie-polkit-dialog .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .header-bar.selection-mode .linked > .button.suggested-action,
+.header-bar.selection-mode .linked > .button.suggested-action:hover, .raven .linked > .button, .drop-shadow .linked > .button, .budgie-session-dialog.background .linked > .button, .background.budgie-polkit-dialog .linked > .button, .raven .linked > .button:hover, .drop-shadow .linked > .button:hover {
   border-image: -gtk-scaled(url("borders/middle-button-normal-border.png"), url("borders/middle-button-normal-border@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button.suggested-action:active, .header-bar.selection-mode .linked > .button.suggested-action:checked {
+  .raven .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .drop-shadow .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .budgie-session-dialog.background .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .background.budgie-polkit-dialog .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .header-bar.selection-mode .linked > .button.suggested-action:active, .raven .linked > .button:active, .drop-shadow .linked > .button:active, .budgie-session-dialog.background .linked > .button:active, .background.budgie-polkit-dialog .linked > .button:active, .raven .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .drop-shadow .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .budgie-session-dialog.background .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .background.budgie-polkit-dialog .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .header-bar.selection-mode .linked > .button.suggested-action:checked, .raven .linked > .button:checked, .drop-shadow .linked > .button:checked, .budgie-session-dialog.background .linked > .button:checked, .background.budgie-polkit-dialog .linked > .button:checked {
     border-image: -gtk-scaled(url("borders/middle-button-active-border.png"), url("borders/middle-button-active-border@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
-.header-bar.selection-mode .linked > .button.suggested-action:first-child {
+.header-bar.selection-mode .linked > .button.suggested-action:first-child, .raven .linked > .button:first-child, .drop-shadow .linked > .button:first-child, .budgie-session-dialog.background .linked > .button:first-child, .background.budgie-polkit-dialog .linked > .button:first-child, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .raven .linked > GtkComboBox:first-child > .the-button-in-the-combobox, .drop-shadow .linked > GtkComboBox:first-child > .the-button-in-the-combobox, .budgie-session-dialog.background .linked > GtkComboBox:first-child > .the-button-in-the-combobox, .background.budgie-polkit-dialog .linked > GtkComboBox:first-child > .the-button-in-the-combobox {
   border-image: -gtk-scaled(url("borders/left-button-normal-border.png"), url("borders/left-button-normal-border@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button.suggested-action:first-child:active, .header-bar.selection-mode .linked > .button.suggested-action:first-child:checked {
+  .header-bar.selection-mode .linked > .button.suggested-action:first-child:active, .raven .linked > .button:first-child:active, .drop-shadow .linked > .button:first-child:active, .budgie-session-dialog.background .linked > .button:first-child:active, .background.budgie-polkit-dialog .linked > .button:first-child:active, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .raven .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .drop-shadow .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .budgie-session-dialog.background .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .background.budgie-polkit-dialog .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .header-bar.selection-mode .linked > .button.suggested-action:first-child:checked, .raven .linked > .button:first-child:checked, .drop-shadow .linked > .button:first-child:checked, .budgie-session-dialog.background .linked > .button:first-child:checked, .background.budgie-polkit-dialog .linked > .button:first-child:checked, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .raven .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked, .drop-shadow .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked, .budgie-session-dialog.background .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked, .background.budgie-polkit-dialog .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked {
     border-image: -gtk-scaled(url("borders/left-button-active-border.png"), url("borders/left-button-active-border@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
-.header-bar.selection-mode .linked > .button.suggested-action:last-child {
+.header-bar.selection-mode .linked > .button.suggested-action:last-child, .raven .linked > .button:last-child, .drop-shadow .linked > .button:last-child, .budgie-session-dialog.background .linked > .button:last-child, .background.budgie-polkit-dialog .linked > .button:last-child, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .raven .linked > GtkComboBox:last-child > .the-button-in-the-combobox, .drop-shadow .linked > GtkComboBox:last-child > .the-button-in-the-combobox, .budgie-session-dialog.background .linked > GtkComboBox:last-child > .the-button-in-the-combobox, .background.budgie-polkit-dialog .linked > GtkComboBox:last-child > .the-button-in-the-combobox {
   border-image: -gtk-scaled(url("borders/right-button-normal-border.png"), url("borders/right-button-normal-border@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button.suggested-action:last-child:active, .header-bar.selection-mode .linked > .button.suggested-action:last-child:checked {
+  .header-bar.selection-mode .linked > .button.suggested-action:last-child:active, .raven .linked > .button:last-child:active, .drop-shadow .linked > .button:last-child:active, .budgie-session-dialog.background .linked > .button:last-child:active, .background.budgie-polkit-dialog .linked > .button:last-child:active, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .raven .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .drop-shadow .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .budgie-session-dialog.background .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .background.budgie-polkit-dialog .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .header-bar.selection-mode .linked > .button.suggested-action:last-child:checked, .raven .linked > .button:last-child:checked, .drop-shadow .linked > .button:last-child:checked, .budgie-session-dialog.background .linked > .button:last-child:checked, .background.budgie-polkit-dialog .linked > .button:last-child:checked, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .raven .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked, .drop-shadow .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked, .budgie-session-dialog.background .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked, .background.budgie-polkit-dialog .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked {
     border-image: -gtk-scaled(url("borders/right-button-active-border.png"), url("borders/right-button-active-border@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
 
-.header-bar.selection-mode .linked > .button.suggested-action:only-child {
+.header-bar.selection-mode .linked > .button.suggested-action:only-child, .raven .linked > .button:only-child, .drop-shadow .linked > .button:only-child, .budgie-session-dialog.background .linked > .button:only-child, .background.budgie-polkit-dialog .linked > .button:only-child, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .raven .linked > GtkComboBox:only-child > .the-button-in-the-combobox, .drop-shadow .linked > GtkComboBox:only-child > .the-button-in-the-combobox, .budgie-session-dialog.background .linked > GtkComboBox:only-child > .the-button-in-the-combobox, .background.budgie-polkit-dialog .linked > GtkComboBox:only-child > .the-button-in-the-combobox {
   border-image: -gtk-scaled(url("borders/button-normal-border.png"), url("borders/button-normal-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button.suggested-action:only-child:active, .header-bar.selection-mode .linked > .button.suggested-action:only-child:checked {
+  .header-bar.selection-mode .linked > .button.suggested-action:only-child:active, .raven .linked > .button:only-child:active, .drop-shadow .linked > .button:only-child:active, .budgie-session-dialog.background .linked > .button:only-child:active, .background.budgie-polkit-dialog .linked > .button:only-child:active, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .raven .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .drop-shadow .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .budgie-session-dialog.background .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .background.budgie-polkit-dialog .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .header-bar.selection-mode .linked > .button.suggested-action:only-child:checked, .raven .linked > .button:only-child:checked, .drop-shadow .linked > .button:only-child:checked, .budgie-session-dialog.background .linked > .button:only-child:checked, .background.budgie-polkit-dialog .linked > .button:only-child:checked, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .raven .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked, .drop-shadow .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked, .budgie-session-dialog.background .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked, .background.budgie-polkit-dialog .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked {
     border-image: -gtk-scaled(url("borders/button-active-border.png"), url("borders/button-active-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -1522,53 +1859,105 @@ GtkComboBox {
     border-color: transparent; }
 
 .header-bar.selection-mode .linked > .button,
-.header-bar.selection-mode .linked > .button:hover {
+.header-bar.selection-mode .linked > .button:hover, .raven .linked > .button.suggested-action, .drop-shadow .linked > .button.suggested-action, .budgie-session-dialog.background .linked > .button.suggested-action, .background.budgie-polkit-dialog .linked > .button.suggested-action, .raven .linked > .button.suggested-action:hover, .drop-shadow .linked > .button.suggested-action:hover {
   border-image: -gtk-scaled(url("borders/middle-button-normal-border-suggested.png"), url("borders/middle-button-normal-border-suggested@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button:active, .header-bar.selection-mode .linked > .button:checked {
+  .header-bar.selection-mode .linked > .button:active, .raven .linked > .button.suggested-action:active, .drop-shadow .linked > .button.suggested-action:active, .budgie-session-dialog.background .linked > .button.suggested-action:active, .background.budgie-polkit-dialog .linked > .button.suggested-action:active, .header-bar.selection-mode .linked > .button:checked, .raven .linked > .button.suggested-action:checked, .drop-shadow .linked > .button.suggested-action:checked, .budgie-session-dialog.background .linked > .button.suggested-action:checked, .background.budgie-polkit-dialog .linked > .button.suggested-action:checked {
     border-image: -gtk-scaled(url("borders/middle-button-active-border-suggested.png"), url("borders/middle-button-active-border-suggested@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
-.header-bar.selection-mode .linked > .button:first-child {
+.header-bar.selection-mode .linked > .button:first-child, .raven .linked > .button.suggested-action:first-child, .drop-shadow .linked > .button.suggested-action:first-child, .budgie-session-dialog.background .linked > .button.suggested-action:first-child, .background.budgie-polkit-dialog .linked > .button.suggested-action:first-child {
   border-image: -gtk-scaled(url("borders/left-button-normal-border-suggested.png"), url("borders/left-button-normal-border-suggested@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button:first-child:active, .header-bar.selection-mode .linked > .button:first-child:checked {
+  .header-bar.selection-mode .linked > .button:first-child:active, .raven .linked > .button.suggested-action:first-child:active, .drop-shadow .linked > .button.suggested-action:first-child:active, .budgie-session-dialog.background .linked > .button.suggested-action:first-child:active, .background.budgie-polkit-dialog .linked > .button.suggested-action:first-child:active, .header-bar.selection-mode .linked > .button:first-child:checked, .raven .linked > .button.suggested-action:first-child:checked, .drop-shadow .linked > .button.suggested-action:first-child:checked, .budgie-session-dialog.background .linked > .button.suggested-action:first-child:checked, .background.budgie-polkit-dialog .linked > .button.suggested-action:first-child:checked {
     border-image: -gtk-scaled(url("borders/left-button-active-border-suggested.png"), url("borders/left-button-active-border-suggested@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
-.header-bar.selection-mode .linked > .button:last-child {
+.header-bar.selection-mode .linked > .button:last-child, .raven .linked > .button.suggested-action:last-child, .drop-shadow .linked > .button.suggested-action:last-child, .budgie-session-dialog.background .linked > .button.suggested-action:last-child, .background.budgie-polkit-dialog .linked > .button.suggested-action:last-child {
   border-image: -gtk-scaled(url("borders/right-button-normal-border-suggested.png"), url("borders/right-button-normal-border-suggested@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button:last-child:active, .header-bar.selection-mode .linked > .button:last-child:checked {
+  .header-bar.selection-mode .linked > .button:last-child:active, .raven .linked > .button.suggested-action:last-child:active, .drop-shadow .linked > .button.suggested-action:last-child:active, .budgie-session-dialog.background .linked > .button.suggested-action:last-child:active, .background.budgie-polkit-dialog .linked > .button.suggested-action:last-child:active, .header-bar.selection-mode .linked > .button:last-child:checked, .raven .linked > .button.suggested-action:last-child:checked, .drop-shadow .linked > .button.suggested-action:last-child:checked, .budgie-session-dialog.background .linked > .button.suggested-action:last-child:checked, .background.budgie-polkit-dialog .linked > .button.suggested-action:last-child:checked {
     border-image: -gtk-scaled(url("borders/right-button-active-border-suggested.png"), url("borders/right-button-active-border-suggested@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
 
-.header-bar.selection-mode .linked > .button:only-child {
+.header-bar.selection-mode .linked > .button:only-child, .raven .linked > .button.suggested-action:only-child, .drop-shadow .linked > .button.suggested-action:only-child, .budgie-session-dialog.background .linked > .button.suggested-action:only-child, .background.budgie-polkit-dialog .linked > .button.suggested-action:only-child {
   border-image: -gtk-scaled(url("borders/button-normal-border-suggested.png"), url("borders/button-normal-border-suggested@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
-  .header-bar.selection-mode .linked > .button:only-child:active, .header-bar.selection-mode .linked > .button:only-child:checked {
+  .header-bar.selection-mode .linked > .button:only-child:active, .raven .linked > .button.suggested-action:only-child:active, .drop-shadow .linked > .button.suggested-action:only-child:active, .budgie-session-dialog.background .linked > .button.suggested-action:only-child:active, .background.budgie-polkit-dialog .linked > .button.suggested-action:only-child:active, .header-bar.selection-mode .linked > .button:only-child:checked, .raven .linked > .button.suggested-action:only-child:checked, .drop-shadow .linked > .button.suggested-action:only-child:checked, .budgie-session-dialog.background .linked > .button.suggested-action:only-child:checked, .background.budgie-polkit-dialog .linked > .button.suggested-action:only-child:checked {
     border-image: -gtk-scaled(url("borders/button-active-border-suggested.png"), url("borders/button-active-border-suggested@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+
+.raven .linked > .button.destructive-action, .drop-shadow .linked > .button.destructive-action, .budgie-session-dialog.background .linked > .button.destructive-action, .background.budgie-polkit-dialog .linked > .button.destructive-action, .raven .linked > .button.destructive-action:hover, .drop-shadow .linked > .button.destructive-action:hover {
+  border-image: -gtk-scaled(url("borders/middle-button-normal-border-destructive.png"), url("borders/middle-button-normal-border-destructive@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+  border-radius: 0;
+  border-width: 1px 0 2px 0;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .linked > .button.destructive-action:active, .drop-shadow .linked > .button.destructive-action:active, .budgie-session-dialog.background .linked > .button.destructive-action:active, .background.budgie-polkit-dialog .linked > .button.destructive-action:active, .raven .linked > .button.destructive-action:checked, .drop-shadow .linked > .button.destructive-action:checked, .budgie-session-dialog.background .linked > .button.destructive-action:checked, .background.budgie-polkit-dialog .linked > .button.destructive-action:checked {
+    border-image: -gtk-scaled(url("borders/middle-button-active-border-destructive.png"), url("borders/middle-button-active-border-destructive@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+    border-radius: 0;
+    border-width: 1px 0 2px 0;
+    border-style: solid;
+    border-color: transparent; }
+
+.raven .linked > .button.destructive-action:first-child, .drop-shadow .linked > .button.destructive-action:first-child, .budgie-session-dialog.background .linked > .button.destructive-action:first-child, .background.budgie-polkit-dialog .linked > .button.destructive-action:first-child {
+  border-image: -gtk-scaled(url("borders/left-button-normal-border-destructive.png"), url("borders/left-button-normal-border-destructive@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+  border-radius: 2px 0 0 2px;
+  border-width: 1px 0 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .linked > .button.destructive-action:first-child:active, .drop-shadow .linked > .button.destructive-action:first-child:active, .budgie-session-dialog.background .linked > .button.destructive-action:first-child:active, .background.budgie-polkit-dialog .linked > .button.destructive-action:first-child:active, .raven .linked > .button.destructive-action:first-child:checked, .drop-shadow .linked > .button.destructive-action:first-child:checked, .budgie-session-dialog.background .linked > .button.destructive-action:first-child:checked, .background.budgie-polkit-dialog .linked > .button.destructive-action:first-child:checked {
+    border-image: -gtk-scaled(url("borders/left-button-active-border-destructive.png"), url("borders/left-button-active-border-destructive@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+    border-radius: 2px 0 0 2px;
+    border-width: 1px 0 2px 1px;
+    border-style: solid;
+    border-color: transparent; }
+
+.raven .linked > .button.destructive-action:last-child, .drop-shadow .linked > .button.destructive-action:last-child, .budgie-session-dialog.background .linked > .button.destructive-action:last-child, .background.budgie-polkit-dialog .linked > .button.destructive-action:last-child {
+  border-image: -gtk-scaled(url("borders/right-button-normal-border-destructive.png"), url("borders/right-button-normal-border-destructive@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+  border-radius: 0 2px 2px 0;
+  border-width: 1px 1px 2px 0;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .linked > .button.destructive-action:last-child:active, .drop-shadow .linked > .button.destructive-action:last-child:active, .budgie-session-dialog.background .linked > .button.destructive-action:last-child:active, .background.budgie-polkit-dialog .linked > .button.destructive-action:last-child:active, .raven .linked > .button.destructive-action:last-child:checked, .drop-shadow .linked > .button.destructive-action:last-child:checked, .budgie-session-dialog.background .linked > .button.destructive-action:last-child:checked, .background.budgie-polkit-dialog .linked > .button.destructive-action:last-child:checked {
+    border-image: -gtk-scaled(url("borders/right-button-active-border-destructive.png"), url("borders/right-button-active-border-destructive@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+    border-radius: 0 2px 2px 0;
+    border-width: 1px 1px 2px 0;
+    border-style: solid;
+    border-color: transparent; }
+
+.raven .linked > .button.destructive-action:only-child, .drop-shadow .linked > .button.destructive-action:only-child, .budgie-session-dialog.background .linked > .button.destructive-action:only-child, .background.budgie-polkit-dialog .linked > .button.destructive-action:only-child {
+  border-image: -gtk-scaled(url("borders/button-normal-border-destructive.png"), url("borders/button-normal-border-destructive@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-radius: 2px;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: transparent; }
+  .raven .linked > .button.destructive-action:only-child:active, .drop-shadow .linked > .button.destructive-action:only-child:active, .budgie-session-dialog.background .linked > .button.destructive-action:only-child:active, .background.budgie-polkit-dialog .linked > .button.destructive-action:only-child:active, .raven .linked > .button.destructive-action:only-child:checked, .drop-shadow .linked > .button.destructive-action:only-child:checked, .budgie-session-dialog.background .linked > .button.destructive-action:only-child:checked, .background.budgie-polkit-dialog .linked > .button.destructive-action:only-child:checked {
+    border-image: -gtk-scaled(url("borders/button-active-border-destructive.png"), url("borders/button-active-border-destructive@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
@@ -3584,14 +3973,17 @@ PanelApplet > GtkMenuBar.menubar > .menuitem:hover {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 1px 0 rgba(0, 0, 0, 0.6), inset -1px 0 rgba(0, 0, 0, 0.6), inset 0 1px rgba(0, 0, 0, 0.9), inset 0 -1px rgba(0, 0, 0, 0.55); }
 
 PanelApplet .button,
-PanelApplet .button:focus {
+PanelApplet .button:focus,
+.budgie-panel .button {
+  border-radius: 5.5px;
   color: #F3F3F5;
   outline-color: rgba(243, 243, 245, 0.3);
   background-image: linear-gradient(to bottom, #4f5053, #343436);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
   PanelApplet .button:hover,
-  PanelApplet .button:focus:hover {
+  PanelApplet .button:focus:hover,
+  .budgie-panel .button:hover {
     color: #F3F3F5;
     outline-color: rgba(243, 243, 245, 0.3);
     background-image: linear-gradient(to bottom, #5e6064, #393A3B);
@@ -3601,7 +3993,11 @@ PanelApplet .button:focus {
   PanelApplet .button:focus:active,
   PanelApplet .button:focus:active:hover,
   PanelApplet .button:focus:checked,
-  PanelApplet .button:focus:checked:hover {
+  PanelApplet .button:focus:checked:hover,
+  .budgie-panel .button:active,
+  .budgie-panel .button:active:hover,
+  .budgie-panel .button:checked,
+  .budgie-panel .button:checked:hover {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
     background-image: linear-gradient(to bottom, #242525, #37383A);
@@ -3615,13 +4011,13 @@ PanelApplet .button:focus {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), inset 1px 0 rgba(0, 0, 0, 0.6), inset -1px 0 rgba(0, 0, 0, 0.6), inset 0 1px rgba(0, 0, 0, 0.9), inset 0 -1px rgba(0, 0, 0, 0.55); }
 
 PanelApplet .button,
-PanelApplet .button:focus, PanelApplet .button:hover,
+PanelApplet .button:focus, .budgie-panel .button, PanelApplet .button:hover,
 PanelApplet .button:focus:hover {
   border-image: none;
   border-width: 3px;
   border-radius: 5px;
   icon-shadow: none;
-  box-shadow: inset -2px 0 rgba(255, 255, 255, 0.05), inset 2px 0 rgba(255, 255, 255, 0.05), inset 0 2px rgba(255, 255, 255, 0.12), inset 0 1px rgba(0, 0, 0, 0.6), inset 0 -1px rgba(0, 0, 0, 0.8), inset 1px 0 rgba(0, 0, 0, 0.6), inset -1px 0 rgba(0, 0, 0, 0.6); }
+  box-shadow: inset 0 2px rgba(255, 255, 255, 0.2), inset 0 1px rgba(0, 0, 0, 0.8), inset 0 -1px rgba(0, 0, 0, 0.8), inset 1px 0 rgba(0, 0, 0, 0.6), inset -1px 0 rgba(0, 0, 0, 0.6); }
 
 WnckPager {
   color: #7a7a7b; }
@@ -3827,6 +4223,359 @@ MayaViewGridDay.cell:selected {
 
 MayaViewHeader {
   color: #333333; }
+
+.budgie-container {
+  background-color: transparent; }
+
+.budgie-menu.popover GtkScrolledWindow,
+.budgie-menu.popover .list, .budgie-menu.popover .list-row.activatable,
+.budgie-menu.popover .scrollbar .trough {
+  background: none;
+  border: none; }
+
+.budgie-menu.popover .list-row:selected .button {
+  color: #3c3c3e;
+  text-shadow: none; }
+
+.raven, .drop-shadow, .budgie-session-dialog.background, .background.budgie-polkit-dialog {
+  color: #F3F3F5;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+  icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
+  .raven .alert, .drop-shadow .alert, .budgie-session-dialog.background .alert, .background.budgie-polkit-dialog .alert {
+    color: #f42525; }
+  .raven .entry, .drop-shadow .entry, .budgie-session-dialog.background .entry, .background.budgie-polkit-dialog .entry, .raven .button, .drop-shadow .button, .budgie-session-dialog.background .button, .background.budgie-polkit-dialog .button {
+    padding: 4px 8px; }
+  .raven .button.flat:focus:not(:hover):not(:active):not(:checked), .drop-shadow .button.flat:focus:not(:hover):not(:active):not(:checked), .budgie-session-dialog.background .button.flat:focus:not(:hover):not(:active):not(:checked), .background.budgie-polkit-dialog .button.flat:focus:not(:hover):not(:active):not(:checked), .raven .sidebar-button.button:focus:not(:hover):not(:active):not(:checked), .drop-shadow .sidebar-button.button:focus:not(:hover):not(:active):not(:checked), .budgie-session-dialog.background .sidebar-button.button:focus:not(:hover):not(:active):not(:checked), .background.budgie-polkit-dialog .sidebar-button.button:focus:not(:hover):not(:active):not(:checked) {
+    border-image: none; }
+  .raven .frame, .drop-shadow .frame, .budgie-session-dialog.background .frame, .background.budgie-polkit-dialog .frame {
+    border: none; }
+  .raven .separator, .drop-shadow .separator, .budgie-session-dialog.background .separator, .background.budgie-polkit-dialog .separator, .raven .sidebar .view.separator, .sidebar .raven .view.separator, .drop-shadow .sidebar .view.separator, .sidebar .drop-shadow .view.separator {
+    color: rgba(0, 0, 0, 0.4); }
+  .raven .list, .drop-shadow .list, .budgie-session-dialog.background .list, .background.budgie-polkit-dialog .list {
+    background-color: transparent; }
+  .raven .list-row.activatable, .drop-shadow .list-row.activatable, .budgie-session-dialog.background .list-row.activatable, .background.budgie-polkit-dialog .list-row.activatable {
+    padding: 3px;
+    color: #F3F3F5; }
+    .raven .list-row.activatable:hover, .drop-shadow .list-row.activatable:hover, .budgie-session-dialog.background .list-row.activatable:hover, .background.budgie-polkit-dialog .list-row.activatable:hover, .raven GtkPlacesSidebar.sidebar .has-open-popup, GtkPlacesSidebar.sidebar .raven .has-open-popup, .drop-shadow GtkPlacesSidebar.sidebar .has-open-popup, GtkPlacesSidebar.sidebar .drop-shadow .has-open-popup, .budgie-session-dialog.background GtkPlacesSidebar.sidebar .has-open-popup, GtkPlacesSidebar.sidebar .budgie-session-dialog.background .has-open-popup, .background.budgie-polkit-dialog GtkPlacesSidebar.sidebar .has-open-popup, GtkPlacesSidebar.sidebar .background.budgie-polkit-dialog .has-open-popup {
+      background-color: rgba(255, 255, 255, 0.05); }
+    .raven .list-row.activatable:active, .drop-shadow .list-row.activatable:active, .budgie-session-dialog.background .list-row.activatable:active, .background.budgie-polkit-dialog .list-row.activatable:active {
+      color: #F3F3F5;
+      background-color: rgba(255, 255, 255, 0.1); }
+    .raven .list-row.activatable:selected, .drop-shadow .list-row.activatable:selected, .budgie-session-dialog.background .list-row.activatable:selected, .background.budgie-polkit-dialog .list-row.activatable:selected {
+      color: #ffffff;
+      background-color: #4080fb; }
+      .raven .list-row.activatable:selected:active, .drop-shadow .list-row.activatable:selected:active, .budgie-session-dialog.background .list-row.activatable:selected:active, .background.budgie-polkit-dialog .list-row.activatable:selected:active {
+        color: #ffffff; }
+      .raven .list-row.activatable:selected:hover, .drop-shadow .list-row.activatable:selected:hover, .budgie-session-dialog.background .list-row.activatable:selected:hover, .background.budgie-polkit-dialog .list-row.activatable:selected:hover, .raven GtkPlacesSidebar.sidebar .has-open-popup:selected, GtkPlacesSidebar.sidebar .raven .has-open-popup:selected, .drop-shadow GtkPlacesSidebar.sidebar .has-open-popup:selected, GtkPlacesSidebar.sidebar .drop-shadow .has-open-popup:selected, .budgie-session-dialog.background GtkPlacesSidebar.sidebar .has-open-popup:selected, GtkPlacesSidebar.sidebar .budgie-session-dialog.background .has-open-popup:selected, .background.budgie-polkit-dialog GtkPlacesSidebar.sidebar .has-open-popup:selected, GtkPlacesSidebar.sidebar .background.budgie-polkit-dialog .has-open-popup:selected {
+        background-color: #3a73e2; }
+      .raven .list-row.activatable:selected:insensitive, .drop-shadow .list-row.activatable:selected:insensitive, .budgie-session-dialog.background .list-row.activatable:selected:insensitive, .background.budgie-polkit-dialog .list-row.activatable:selected:insensitive {
+        color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(64, 128, 251, 0.7); }
+        .raven .list-row.activatable:selected:insensitive .label, .drop-shadow .list-row.activatable:selected:insensitive .label, .budgie-session-dialog.background .list-row.activatable:selected:insensitive .label, .background.budgie-polkit-dialog .list-row.activatable:selected:insensitive .label {
+          color: inherit; }
+  .raven .check, .drop-shadow .check, .budgie-session-dialog.background .check, .background.budgie-polkit-dialog .check {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png"));
+    icon-shadow: none; }
+  .raven .check:insensitive, .drop-shadow .check:insensitive, .budgie-session-dialog.background .check:insensitive, .background.budgie-polkit-dialog .check:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png"));
+    icon-shadow: none; }
+  .raven .check:inconsistent, .drop-shadow .check:inconsistent, .budgie-session-dialog.background .check:inconsistent, .background.budgie-polkit-dialog .check:inconsistent {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), url("assets/checkbox-mixed-dark@2.png"));
+    icon-shadow: none; }
+  .raven .check:inconsistent:insensitive, .drop-shadow .check:inconsistent:insensitive, .budgie-session-dialog.background .check:inconsistent:insensitive, .background.budgie-polkit-dialog .check:inconsistent:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png"));
+    icon-shadow: none; }
+  .raven .check:checked, .drop-shadow .check:checked, .budgie-session-dialog.background .check:checked, .background.budgie-polkit-dialog .check:checked {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png"));
+    icon-shadow: none; }
+  .raven .check:checked:insensitive, .drop-shadow .check:checked:insensitive, .budgie-session-dialog.background .check:checked:insensitive, .background.budgie-polkit-dialog .check:checked:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png"));
+    icon-shadow: none; }
+  .raven .radio, .drop-shadow .radio, .budgie-session-dialog.background .radio, .background.budgie-polkit-dialog .radio {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png"));
+    icon-shadow: none; }
+  .raven .radio:insensitive, .drop-shadow .radio:insensitive, .budgie-session-dialog.background .radio:insensitive, .background.budgie-polkit-dialog .radio:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png"));
+    icon-shadow: none; }
+  .raven .radio:inconsistent, .drop-shadow .radio:inconsistent, .budgie-session-dialog.background .radio:inconsistent, .background.budgie-polkit-dialog .radio:inconsistent {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png"));
+    icon-shadow: none; }
+  .raven .radio:inconsistent:insensitive, .drop-shadow .radio:inconsistent:insensitive, .budgie-session-dialog.background .radio:inconsistent:insensitive, .background.budgie-polkit-dialog .radio:inconsistent:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png"));
+    icon-shadow: none; }
+  .raven .radio:checked, .drop-shadow .radio:checked, .budgie-session-dialog.background .radio:checked, .background.budgie-polkit-dialog .radio:checked {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png"));
+    icon-shadow: none; }
+  .raven .radio:checked:insensitive, .drop-shadow .radio:checked:insensitive, .budgie-session-dialog.background .radio:checked:insensitive, .background.budgie-polkit-dialog .radio:checked:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png"));
+    icon-shadow: none; }
+  .raven GtkCalendar.raven-calendar, .drop-shadow GtkCalendar.raven-calendar, .budgie-session-dialog.background GtkCalendar.raven-calendar, .background.budgie-polkit-dialog GtkCalendar.raven-calendar {
+    background: none;
+    border: none;
+    padding: 3px;
+    color: #F3F3F5; }
+    .raven GtkCalendar.raven-calendar:inconsistent, .drop-shadow GtkCalendar.raven-calendar:inconsistent, .budgie-session-dialog.background GtkCalendar.raven-calendar:inconsistent, .background.budgie-polkit-dialog GtkCalendar.raven-calendar:inconsistent {
+      color: alpha(currentColor,0.3); }
+    .raven GtkCalendar.raven-calendar:selected, .drop-shadow GtkCalendar.raven-calendar:selected, .budgie-session-dialog.background GtkCalendar.raven-calendar:selected, .background.budgie-polkit-dialog GtkCalendar.raven-calendar:selected {
+      color: #4080fb; }
+    .raven GtkCalendar.raven-calendar.header, .drop-shadow GtkCalendar.raven-calendar.header, .budgie-session-dialog.background GtkCalendar.raven-calendar.header, .background.budgie-polkit-dialog GtkCalendar.raven-calendar.header {
+      color: #F3F3F5;
+      border: none;
+      border-radius: 0; }
+    .raven GtkCalendar.raven-calendar.button, .drop-shadow GtkCalendar.raven-calendar.button, .budgie-session-dialog.background GtkCalendar.raven-calendar.button, .background.budgie-polkit-dialog GtkCalendar.raven-calendar.button, .raven GtkCalendar.raven-calendar.button:focus, .drop-shadow GtkCalendar.raven-calendar.button:focus, .budgie-session-dialog.background GtkCalendar.raven-calendar.button:focus, .background.budgie-polkit-dialog GtkCalendar.raven-calendar.button:focus {
+      color: alpha(currentColor,0.5);
+      background-color: transparent; }
+      .raven GtkCalendar.raven-calendar.button:hover, .drop-shadow GtkCalendar.raven-calendar.button:hover, .budgie-session-dialog.background GtkCalendar.raven-calendar.button:hover, .background.budgie-polkit-dialog GtkCalendar.raven-calendar.button:hover, .raven GtkCalendar.raven-calendar.button:focus:hover, .drop-shadow GtkCalendar.raven-calendar.button:focus:hover, .budgie-session-dialog.background GtkCalendar.raven-calendar.button:focus:hover, .background.budgie-polkit-dialog GtkCalendar.raven-calendar.button:focus:hover {
+        color: #F3F3F5;
+        background-color: transparent; }
+
+.budgie-panel {
+  color: #F3F3F5;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(to bottom, rgba(25, 26, 29, 0.9), rgba(14, 14, 14, 0.9)); }
+  .budgie-panel .end-region .separator {
+    -GtkWidget-wide-separators: 1;
+    -GtkWidget-separator-width: 2px;
+    border-image: -gtk-scaled(url("assets/header-separator-dark.png"), url("assets/header-separator-dark@2.png")) 0 1 0 1/0 1px 0 1px stretch;
+    border-radius: 0;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: transparent; }
+  .budgie-panel .alert {
+    color: #f42525; }
+
+.budgie-panel .launcher {
+  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding-left: 2px;
+  padding-right: 2px;
+  border-color: rgba(25, 26, 29, 0); }
+  .budgie-panel .launcher:hover {
+    -gtk-image-effect: highlight; }
+
+.budgie-panel .unpinned .launcher:hover,
+.budgie-panel .pinned .launcher.running:hover {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.budgie-panel .unpinned .launcher:active,
+.budgie-panel .pinned .launcher.running:active, .budgie-panel .unpinned .launcher:checked,
+.budgie-panel .pinned .launcher.running:checked {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.top .budgie-panel .unpinned .launcher, .budgie-panel .unpinned .top .launcher, .top
+.budgie-panel .pinned .launcher.running,
+.budgie-panel .pinned .top .launcher.running {
+  border-bottom: 2px solid rgba(25, 26, 29, 0);
+  border-top: 2px solid rgba(25, 26, 29, 0); }
+  .top .budgie-panel .unpinned .launcher,
+  .top .budgie-panel .pinned .launcher.running {
+    border-top: 2px solid rgba(64, 128, 251, 0.5); }
+  .top .budgie-panel .unpinned .launcher:hover, .budgie-panel .unpinned .top .launcher:hover, .top
+  .budgie-panel .pinned .launcher.running:hover,
+  .budgie-panel .pinned .top .launcher.running:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    border-top: 2px solid rgba(64, 128, 251, 0.5); }
+  .top .budgie-panel .unpinned .launcher:active, .budgie-panel .unpinned .top .launcher:active, .top
+  .budgie-panel .pinned .launcher.running:active,
+  .budgie-panel .pinned .top .launcher.running:active, .top .budgie-panel .unpinned .launcher:checked, .budgie-panel .unpinned .top .launcher:checked, .top
+  .budgie-panel .pinned .launcher.running:checked,
+  .budgie-panel .pinned .top .launcher.running:checked {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    border-top: 2px solid #4080fb; }
+
+.bottom .budgie-panel .unpinned .launcher, .budgie-panel .unpinned .bottom .launcher, .bottom
+.budgie-panel .pinned .launcher.running,
+.budgie-panel .pinned .bottom .launcher.running {
+  border-top: 2px solid rgba(25, 26, 29, 0);
+  border-bottom: 2px solid rgba(25, 26, 29, 0); }
+  .bottom .budgie-panel .unpinned .launcher,
+  .bottom .budgie-panel .pinned .launcher.running {
+    border-bottom: 2px solid rgba(64, 128, 251, 0.5); }
+  .bottom .budgie-panel .unpinned .launcher:hover, .budgie-panel .unpinned .bottom .launcher:hover, .bottom
+  .budgie-panel .pinned .launcher.running:hover,
+  .budgie-panel .pinned .bottom .launcher.running:hover {
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(64, 128, 251, 0.5); }
+  .bottom .budgie-panel .unpinned .launcher:active, .budgie-panel .unpinned .bottom .launcher:active, .bottom
+  .budgie-panel .pinned .launcher.running:active,
+  .budgie-panel .pinned .bottom .launcher.running:active, .bottom .budgie-panel .unpinned .launcher:checked, .budgie-panel .unpinned .bottom .launcher:checked, .bottom
+  .budgie-panel .pinned .launcher.running:checked,
+  .budgie-panel .pinned .bottom .launcher.running:checked {
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #4080fb; }
+
+.left .budgie-panel .unpinned .launcher, .budgie-panel .unpinned .left .launcher, .left
+.budgie-panel .pinned .launcher.running,
+.budgie-panel .pinned .left .launcher.running {
+  border-right: 2px solid rgba(25, 26, 29, 0);
+  border-left: 2px solid rgba(25, 26, 29, 0); }
+  .left .budgie-panel .unpinned .launcher,
+  .left .budgie-panel .pinned .launcher.running {
+    border-left: 2px solid rgba(64, 128, 251, 0.5); }
+  .left .budgie-panel .unpinned .launcher:hover, .budgie-panel .unpinned .left .launcher:hover, .left
+  .budgie-panel .pinned .launcher.running:hover,
+  .budgie-panel .pinned .left .launcher.running:hover {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(64, 128, 251, 0.5); }
+  .left .budgie-panel .unpinned .launcher:active, .budgie-panel .unpinned .left .launcher:active, .left
+  .budgie-panel .pinned .launcher.running:active,
+  .budgie-panel .pinned .left .launcher.running:active, .left .budgie-panel .unpinned .launcher:checked, .budgie-panel .unpinned .left .launcher:checked, .left
+  .budgie-panel .pinned .launcher.running:checked,
+  .budgie-panel .pinned .left .launcher.running:checked {
+    border-right: 2px solid rgba(0, 0, 0, 0.4);
+    border-left: 2px solid #4080fb; }
+
+.right .budgie-panel .unpinned .launcher, .budgie-panel .unpinned .right .launcher, .right
+.budgie-panel .pinned .launcher.running,
+.budgie-panel .pinned .right .launcher.running {
+  border-left: 2px solid rgba(25, 26, 29, 0);
+  border-right: 2px solid rgba(25, 26, 29, 0); }
+  .right .budgie-panel .unpinned .launcher,
+  .right .budgie-panel .pinned .launcher.running {
+    border-right: 2px solid rgba(64, 128, 251, 0.5); }
+  .right .budgie-panel .unpinned .launcher:hover, .budgie-panel .unpinned .right .launcher:hover, .right
+  .budgie-panel .pinned .launcher.running:hover,
+  .budgie-panel .pinned .right .launcher.running:hover {
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(64, 128, 251, 0.5); }
+  .right .budgie-panel .unpinned .launcher:active, .budgie-panel .unpinned .right .launcher:active, .right
+  .budgie-panel .pinned .launcher.running:active,
+  .budgie-panel .pinned .right .launcher.running:active, .right .budgie-panel .unpinned .launcher:checked, .budgie-panel .unpinned .right .launcher:checked, .right
+  .budgie-panel .pinned .launcher.running:checked,
+  .budgie-panel .pinned .right .launcher.running:checked {
+    border-left: 2px solid rgba(0, 0, 0, 0.4);
+    border-right: 2px solid #4080fb; }
+
+.top .budgie-panel {
+  border-bottom: 1px solid black; }
+
+.top .raven-frame {
+  padding: 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9); }
+
+.top .shadow-block {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent); }
+
+.bottom .budgie-panel {
+  border-top: 1px solid black; }
+
+.bottom .raven-frame {
+  padding: 0;
+  background: none;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.9); }
+
+.bottom .shadow-block {
+  background-color: transparent;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent); }
+
+.left .budgie-panel {
+  border-right: 1px solid black; }
+
+.left .raven-frame {
+  padding: 0;
+  background: none;
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.9); }
+
+.left .shadow-block {
+  background-color: transparent;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent); }
+
+.right .budgie-panel {
+  border-left: 1px solid black; }
+
+.right .raven-frame {
+  padding: 0;
+  background: none;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.9); }
+
+.right .shadow-block {
+  background-color: transparent;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent); }
+
+.raven {
+  color: #F3F3F5;
+  background-color: rgba(49, 49, 51, 0.9);
+  transition: 170ms ease-out; }
+  .raven .raven-header {
+    color: #F3F3F5;
+    border: solid rgba(0, 0, 0, 0.7);
+    border-width: 1px 0;
+    background-image: linear-gradient(to bottom, rgba(51, 52, 54, 0.9), rgba(41, 42, 43, 0.9));
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1); }
+    .raven .raven-header.top {
+      border-top-style: none; }
+    .raven .raven-header.bottom {
+      border-bottom-style: none; }
+  .raven .expander-button {
+    color: alpha(currentColor,0.5); }
+  .raven .raven-background {
+    color: #F3F3F5;
+    background-color: rgba(36, 36, 38, 0.78);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); }
+    .raven .raven-background.middle {
+      border-bottom-style: none; }
+  .raven .powerstrip .button {
+    padding: 10px; }
+  .raven .option-subtitle {
+    font-size: smaller; }
+
+.raven-mpris {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid black;
+  border-width: 1px 0; }
+  .raven-mpris .button.image-button {
+    padding: 8px; }
+
+.budgie-notification-window {
+  background-color: transparent;
+  background-image: none;
+  border-radius: 1px; }
+
+.budgie-notification.background {
+  color: #F3F3F5;
+  background-color: transparent;
+  border-radius: 1px; }
+
+.budgie-notification .notification-title {
+  font-size: 110%;
+  color: #F3F3F5; }
+
+.budgie-notification .notification-body {
+  color: rgba(243, 243, 245, 0.7); }
+
+.drop-shadow, .budgie-session-dialog.background, .background.budgie-polkit-dialog {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(25, 26, 29, 0.9), rgba(14, 14, 14, 0.9));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px black;
+  border-radius: 1px; }
+
+.budgie-session-dialog .linked.horizontal > .button, .budgie-polkit-dialog .linked.horizontal > .button, .budgie-session-dialog .linked.horizontal > .button:active, .budgie-polkit-dialog .linked.horizontal > .button:active {
+  border-bottom-width: 0;
+  border-image-width: 2px 1px 0 1px; }
+
+.budgie-session-dialog .linked.horizontal > .button:first-child, .budgie-polkit-dialog .linked.horizontal > .button:first-child, .budgie-session-dialog .linked.horizontal > .button:first-child:active, .budgie-polkit-dialog .linked.horizontal > .button:first-child:active {
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-image-width: 2px 1px 0 0; }
+
+.budgie-session-dialog .linked.horizontal > .button:last-child, .budgie-polkit-dialog .linked.horizontal > .button:last-child, .budgie-session-dialog .linked.horizontal > .button:last-child:active, .budgie-polkit-dialog .linked.horizontal > .button:last-child:active, .budgie-session-dialog .linked.horizontal > .button.destructive-action:last-child, .budgie-polkit-dialog .linked.horizontal > .button.destructive-action:last-child, .budgie-session-dialog .linked.horizontal > .button.destructive-action:last-child:active, .budgie-polkit-dialog .linked.horizontal > .button.destructive-action:last-child:active, .budgie-session-dialog .linked.horizontal > .button.suggested-action:last-child, .budgie-polkit-dialog .linked.horizontal > .button.suggested-action:last-child, .budgie-session-dialog .linked.horizontal > .button.suggested-action:last-child:active, .budgie-polkit-dialog .linked.horizontal > .button.suggested-action:last-child:active {
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-image-width: 2px 0 0 1px; }
+
+.budgie-polkit-dialog .message {
+  color: rgba(243, 243, 245, 0.7); }
+
+.budgie-polkit-dialog .failure {
+  color: #cc0000; }
 
 NautilusNotebook.notebook,
 NemoNotebook.notebook,

@@ -510,10 +510,14 @@ PanelApplet > GtkMenuBar.menubar > .menuitem:hover {
 
 // Panel buttons
 PanelApplet .button,
-PanelApplet .button:focus {
+PanelApplet .button:focus,
+%budgie_panel_button {
+  border-radius: 5.5px;
   @include button(normal, $dark:'true', $border:'false');
 
   @extend %panelbutton;
+
+  &.flat:not(:hover) { @extend %undecorated_button; }
 
   &:hover {
     @include button(hover, $dark:'true', $border:'false');
@@ -545,10 +549,8 @@ PanelApplet .button:focus {
   border-radius: 5px;
   icon-shadow: none;
 
-  box-shadow: inset -2px 0 transparentize(white, 0.95),
-              inset 2px 0 transparentize(white, 0.95),
-              inset 0 2px transparentize(white, 0.88),
-              inset 0 1px transparentize(black, 0.4),
+  box-shadow: inset 0 2px transparentize(white, 0.8),
+              inset 0 1px transparentize(black, 0.2),
               inset 0 -1px transparentize(black, 0.2),
               inset 1px 0 transparentize(black, 0.4),
               inset -1px 0 transparentize(black, 0.4);

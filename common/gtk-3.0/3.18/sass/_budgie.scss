@@ -1,0 +1,318 @@
+$pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
+
+$budgie_fg_color: nth($_fg_color, 2);
+
+$budgie_panel_bg_a: transparentize(#191a1d, 0.1);
+$budgie_panel_bg_b: transparentize(#0e0e0e, 0.1);
+
+$raven_bg: transparentize(darken(nth($_wm_bg_b, 2), 5%), 0.1);
+
+$raven_header_bg_a: lighten($raven_bg, 1%);
+$raven_header_bg_b: darken($raven_bg, 3%);
+$raven_header_border: transparentize(black, 0.3);
+
+$raven_background_bg: mix(transparentize(black, 0.4), $raven_bg, 40%);
+$raven_background_border: transparentize(black, 0.3);
+
+$alert_color: desaturate(lighten($error_color, 15%), 10%);
+
+.budgie-container { background-color: transparent; }
+
+.budgie-menu.popover {
+  GtkScrolledWindow,
+  .list, .list-row.activatable,
+  .scrollbar .trough {
+    background: none;
+    border: none;
+  }
+
+  .list-row:selected .button {
+    color: $fg_color;
+    text-shadow: none;
+  }
+}
+
+%budgie_widgets {
+  @extend %dark_widgets;
+
+  color: $budgie_fg_color;
+  text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+  icon-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+
+  // used to indicate unread notifications
+  .alert { color: $alert_color; }
+  .entry, .button { padding: 4px 8px; }
+  .button.flat:focus:not(:hover):not(:active):not(:checked) { border-image: none; }
+  .frame { border: none; }
+  .separator { color: rgba(0,0,0,0.4); }
+
+  // Lists
+  .list { background-color: transparent; }
+  .list-row.activatable {
+    padding: 3px;
+    color: $budgie_fg_color;
+
+    &:hover { background-color: transparentize(white, 0.95); }
+    &:active {
+      color: $budgie_fg_color;
+      background-color: transparentize(white, 0.9);
+    }
+    &:selected {
+      color: $selected_fg_color;
+      background-color: $selected_bg_color;
+
+      &:active { color: $selected_fg_color; }
+      &:hover { background-color: mix(black, $selected_bg_color, 10%); }
+      &:insensitive {
+        color: transparentize($selected_fg_color, 0.3);
+        background-color: transparentize($selected_bg_color, 0.3);
+        .label { color: inherit; }
+      }
+    }
+  }
+
+  // Check and Radio
+  @each $w,$a in ('check', 'checkbox'),
+                 ('radio','radio') {
+
+    //standard checks and radios
+    @each $s,$as in ('','-unchecked'),
+                    (':insensitive','-unchecked-insensitive'),
+                    (':inconsistent', '-mixed'),
+                    (':inconsistent:insensitive', '-mixed-insensitive'),
+                    (':checked', '-checked'),
+                    (':checked:insensitive','-checked-insensitive') {
+      .#{$w}#{$s} {
+        -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-dark.png"),
+                                      url("assets/#{$a}#{$as}-dark@2.png"));
+        icon-shadow: none;
+      }
+    }
+  }
+
+  // Calendar
+  GtkCalendar.raven-calendar {
+    background: none;
+    border: none;
+    padding: 3px;
+    color: $budgie_fg_color;
+
+    &:inconsistent { color: gtkalpha(currentColor,0.3); }
+    &:selected { color: $selected_bg_color; }
+
+    &.header {
+      color: $budgie_fg_color;
+      border: none;
+      border-radius: 0;
+    }
+    &.button, &.button:focus {
+      color: gtkalpha(currentColor,0.5);
+      background-color: transparent;
+
+      &:hover {
+        color: $budgie_fg_color;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+// Panel
+.budgie-panel {
+  color: $budgie_fg_color;
+  text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+  box-shadow: inset 0 1px transparentize(nth($_wm_highlight, 2), 0.05);
+
+  background-image: linear-gradient(to bottom,
+                                    $budgie_panel_bg_a,
+                                    $budgie_panel_bg_b);
+
+  .end-region {
+    .separator {
+      -GtkWidget-wide-separators: 1;
+      -GtkWidget-separator-width: 2px;
+      @include _border(header-separator-dark, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
+    }
+  }
+
+  .button { @extend %budgie_panel_button; }
+
+  // used to indicate unread notifications
+  .alert { color: $alert_color; }
+}
+
+// Icon Tasklist
+.budgie-panel {
+
+  .launcher {
+    transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    padding-left: 2px;
+    padding-right: 2px;
+    border-color: transparentize($budgie_panel_bg_a,1); // fixes the transition
+
+    &:hover { -gtk-image-effect: highlight; }
+  }
+  .unpinned .launcher,
+  .pinned .launcher.running { @extend %underscores; }
+}
+
+%underscores {
+  &:hover { background-color: transparentize(black, 0.8); }
+  &:active, &:checked { background-color: transparentize(black, 0.6); }
+
+  @each $pos, $b_pos in $pos_list {
+    .#{$pos} & {
+      border-#{$b_pos}: 2px solid transparentize($budgie_panel_bg_a,1);
+      border-#{$pos}: 2px solid transparentize($budgie_panel_bg_a,1);
+
+      @at-root {
+        .#{$pos} .budgie-panel .unpinned .launcher,
+        .#{$pos} .budgie-panel .pinned .launcher.running { border-#{$pos}: 2px solid transparentize($selected_bg_color, 0.5); }
+      }
+      &:hover {
+        border-#{$b_pos}: 2px solid transparentize(black, 0.8);
+        border-#{$pos}: 2px solid transparentize($selected_bg_color, 0.5);
+      }
+      &:active, &:checked {
+        border-#{$b_pos}: 2px solid transparentize(black, 0.6);
+        border-#{$pos}: 2px solid $selected_bg_color;
+      }
+    }
+  }
+}
+
+@each $pos, $b_pos in $pos_list {
+
+  // Panel borders
+  .#{$pos} .budgie-panel { border-#{$b_pos}: 1px solid black; }
+
+  // Raven borders
+  .#{$pos} .raven-frame {
+    padding: 0;
+    background: none;
+    border: none;
+    border-#{$b_pos}: 1px solid transparentize(black, 0.1);
+  }
+
+  // Shadows
+  .#{$pos} .shadow-block {
+    background-color: transparent;
+    background-image: linear-gradient(to $b_pos,
+                                      rgba(0,0,0,0.3),
+                                      transparent);
+  }
+}
+
+// Raven
+.raven {
+  @extend %budgie_widgets;
+
+  color: $budgie_fg_color;
+  background-color: $raven_bg;
+  transition: 170ms ease-out;
+
+  .raven-header {
+    color: $budgie_fg_color;
+    border: solid $raven_header_border;
+    border-width: 1px 0;
+    background-image: linear-gradient(to bottom,
+                                      $raven_header_bg_a,
+                                      $raven_header_bg_b);
+    box-shadow: inset 0 1px transparentize(nth($_wm_highlight, 2), 0.05);
+
+    &.top { border-top-style: none; }
+    &.bottom { border-bottom-style: none; }
+  }
+  .expander-button { color: gtkalpha(currentColor, 0.5); }
+
+  .raven-background {
+    color: $budgie_fg_color;
+    background-color: $raven_background_bg;
+    border-bottom: 1px solid $raven_background_border;
+    box-shadow: inset 0 1px 3px transparentize(black, 0.8);
+
+    &.middle { border-bottom-style: none; }  // applet background between two headers
+  }
+  .powerstrip .button {
+    padding: 10px;
+  }
+  .option-subtitle {
+    font-size: smaller;
+  }
+}
+
+// MPRIS Applet
+.raven-mpris {
+  color: white;
+  background-color: transparentize(black, 0.2);
+  border: solid black;
+  border-width: 1px 0;
+
+  .button.image-button { padding: 8px; }
+}
+
+// Notifications
+.budgie-notification-window {
+  background-color: transparent;
+  background-image: none;
+  border-radius: 1px;
+}
+
+.budgie-notification {
+  &.background {
+    color: $budgie_fg_color;
+    background-color: transparent;
+    border-radius: 1px;
+  }
+
+  .notification-title {
+    font-size: 110%;
+    color: $budgie_fg_color;
+  }
+  .notification-body { color: transparentize($budgie_fg_color, 0.3); }
+}
+
+.drop-shadow {
+  @extend %budgie_widgets;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom,
+                                    $budgie_panel_bg_a,
+                                    $budgie_panel_bg_b);
+  box-shadow: inset 0 1px transparentize(nth($_wm_highlight, 2), 0.05),
+              0 2px 4px 0 rgba(0,0,0,0.3), 0 0 0 1px black;
+  border-radius: 1px;
+}
+
+// Session Dialog
+.budgie-session-dialog {
+  &.background { @extend .drop-shadow; }
+
+  .linked.horizontal > .button {
+    &, &:active {
+      border-bottom-width: 0;
+      border-image-width: 2px 1px 0 1px;
+    }
+    &:first-child {
+      &, &:active {
+        border-bottom-width: 0;
+        border-left-width: 0;
+        border-image-width: 2px 1px 0 0;
+      }
+    }
+    &:last-child, &.destructive-action:last-child, &.suggested-action:last-child {
+      &, &:active {
+        border-bottom-width: 0;
+        border-right-width: 0;
+        border-image-width: 2px 0 0 1px;
+      }
+    }
+  }
+}
+
+// PolKit Dialog
+.budgie-polkit-dialog {
+  @extend .budgie-session-dialog;
+
+  .message { color: transparentize($budgie_fg_color, 0.3); }
+  .failure { color: $error_color; }
+}
