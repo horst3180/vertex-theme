@@ -1754,52 +1754,52 @@ GtkComboBox {
   border-color: #171819; }
 
 .raven .linked > .entry, .drop-shadow .linked > .entry, .budgie-session-dialog.background .linked > .entry, .background.budgie-polkit-dialog .linked > .entry, .raven GtkComboBox.combobox-entry .entry, .drop-shadow GtkComboBox.combobox-entry .entry, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry {
-  border-image: -gtk-scaled(url("borders/middle-entry-normal-border.png"), url("borders/middle-entry-normal-border@2.png")) 1 1 2 0/1px 1px 2px 0 stretch;
+  border-image: -gtk-scaled(url("borders/middle-entry-normal-border-dark.png"), url("borders/middle-entry-normal-border-dark@2.png")) 1 1 2 0/1px 1px 2px 0 stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
   .raven .linked > .entry:focus, .drop-shadow .linked > .entry:focus, .budgie-session-dialog.background .linked > .entry:focus, .background.budgie-polkit-dialog .linked > .entry:focus, .raven GtkComboBox.combobox-entry .entry:focus, .drop-shadow GtkComboBox.combobox-entry .entry:focus, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:focus, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:focus {
-    border-image: -gtk-scaled(url("borders/middle-entry-focused-border.png"), url("borders/middle-entry-focused-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/middle-entry-focused-border-dark.png"), url("borders/middle-entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
 .raven .linked > .entry:first-child, .drop-shadow .linked > .entry:first-child, .budgie-session-dialog.background .linked > .entry:first-child, .background.budgie-polkit-dialog .linked > .entry:first-child, .raven GtkComboBox.combobox-entry .entry:first-child, .drop-shadow GtkComboBox.combobox-entry .entry:first-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:first-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:first-child {
-  border-image: -gtk-scaled(url("borders/left-entry-normal-border.png"), url("borders/left-entry-normal-border@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/left-entry-normal-border-dark.png"), url("borders/left-entry-normal-border-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
   .raven .linked > .entry:first-child:focus, .drop-shadow .linked > .entry:first-child:focus, .budgie-session-dialog.background .linked > .entry:first-child:focus, .background.budgie-polkit-dialog .linked > .entry:first-child:focus, .raven GtkComboBox.combobox-entry .entry:first-child:focus, .drop-shadow GtkComboBox.combobox-entry .entry:first-child:focus, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:first-child:focus, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:first-child:focus {
-    border-image: -gtk-scaled(url("borders/left-entry-focused-border.png"), url("borders/left-entry-focused-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/left-entry-focused-border-dark.png"), url("borders/left-entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
 .raven .linked > .entry:last-child, .drop-shadow .linked > .entry:last-child, .budgie-session-dialog.background .linked > .entry:last-child, .background.budgie-polkit-dialog .linked > .entry:last-child, .raven GtkComboBox.combobox-entry .entry:last-child, .drop-shadow GtkComboBox.combobox-entry .entry:last-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:last-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:last-child {
-  border-image: -gtk-scaled(url("borders/right-entry-normal-border.png"), url("borders/right-entry-normal-border@2.png")) 2 2 3 0/2px 2px 3px 0 stretch;
+  border-image: -gtk-scaled(url("borders/right-entry-normal-border-dark.png"), url("borders/right-entry-normal-border-dark@2.png")) 2 2 3 0/2px 2px 3px 0 stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
   .raven .linked > .entry:last-child:focus, .drop-shadow .linked > .entry:last-child:focus, .budgie-session-dialog.background .linked > .entry:last-child:focus, .background.budgie-polkit-dialog .linked > .entry:last-child:focus, .raven GtkComboBox.combobox-entry .entry:last-child:focus, .drop-shadow GtkComboBox.combobox-entry .entry:last-child:focus, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:last-child:focus, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:last-child:focus {
-    border-image: -gtk-scaled(url("borders/right-entry-focused-border.png"), url("borders/right-entry-focused-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/right-entry-focused-border-dark.png"), url("borders/right-entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
 
 .raven .linked > .entry:only-child, .drop-shadow .linked > .entry:only-child, .budgie-session-dialog.background .linked > .entry:only-child, .background.budgie-polkit-dialog .linked > .entry:only-child, .raven GtkComboBox.combobox-entry .entry:only-child, .drop-shadow GtkComboBox.combobox-entry .entry:only-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:only-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:only-child {
-  border-image: -gtk-scaled(url("borders/entry-normal-border.png"), url("borders/entry-normal-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
   .raven .linked > .entry:only-child:focus, .drop-shadow .linked > .entry:only-child:focus, .budgie-session-dialog.background .linked > .entry:only-child:focus, .background.budgie-polkit-dialog .linked > .entry:only-child:focus, .raven GtkComboBox.combobox-entry .entry:only-child:focus, .drop-shadow GtkComboBox.combobox-entry .entry:only-child:focus, .budgie-session-dialog.background GtkComboBox.combobox-entry .entry:only-child:focus, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .entry:only-child:focus {
-    border-image: -gtk-scaled(url("borders/entry-focused-border.png"), url("borders/entry-focused-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/entry-focused-border-dark.png"), url("borders/entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
@@ -1807,52 +1807,52 @@ GtkComboBox {
 
 .raven .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .drop-shadow .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .budgie-session-dialog.background .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .background.budgie-polkit-dialog .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .header-bar.selection-mode .linked > .button.suggested-action,
 .header-bar.selection-mode .linked > .button.suggested-action:hover, .raven .linked > .button, .drop-shadow .linked > .button, .budgie-session-dialog.background .linked > .button, .background.budgie-polkit-dialog .linked > .button, .raven .linked > .button:hover, .drop-shadow .linked > .button:hover {
-  border-image: -gtk-scaled(url("borders/middle-button-normal-border.png"), url("borders/middle-button-normal-border@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/middle-button-normal-border-dark.png"), url("borders/middle-button-normal-border-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
   .raven .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .drop-shadow .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .budgie-session-dialog.background .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .background.budgie-polkit-dialog .linked > GtkComboBox > .the-button-in-the-combobox:active:dir(ltr), .header-bar.selection-mode .linked > .button.suggested-action:active, .raven .linked > .button:active, .drop-shadow .linked > .button:active, .budgie-session-dialog.background .linked > .button:active, .background.budgie-polkit-dialog .linked > .button:active, .raven .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .drop-shadow .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .budgie-session-dialog.background .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .background.budgie-polkit-dialog .linked > GtkComboBox > .the-button-in-the-combobox:checked:dir(ltr), .header-bar.selection-mode .linked > .button.suggested-action:checked, .raven .linked > .button:checked, .drop-shadow .linked > .button:checked, .budgie-session-dialog.background .linked > .button:checked, .background.budgie-polkit-dialog .linked > .button:checked {
-    border-image: -gtk-scaled(url("borders/middle-button-active-border.png"), url("borders/middle-button-active-border@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+    border-image: -gtk-scaled(url("borders/middle-button-active-border-dark.png"), url("borders/middle-button-active-border-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
 .header-bar.selection-mode .linked > .button.suggested-action:first-child, .raven .linked > .button:first-child, .drop-shadow .linked > .button:first-child, .budgie-session-dialog.background .linked > .button:first-child, .background.budgie-polkit-dialog .linked > .button:first-child, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:first-child, .raven .linked > GtkComboBox:first-child > .the-button-in-the-combobox, .drop-shadow .linked > GtkComboBox:first-child > .the-button-in-the-combobox, .budgie-session-dialog.background .linked > GtkComboBox:first-child > .the-button-in-the-combobox, .background.budgie-polkit-dialog .linked > GtkComboBox:first-child > .the-button-in-the-combobox {
-  border-image: -gtk-scaled(url("borders/left-button-normal-border.png"), url("borders/left-button-normal-border@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/left-button-normal-border-dark.png"), url("borders/left-button-normal-border-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
   .header-bar.selection-mode .linked > .button.suggested-action:first-child:active, .raven .linked > .button:first-child:active, .drop-shadow .linked > .button:first-child:active, .budgie-session-dialog.background .linked > .button:first-child:active, .background.budgie-polkit-dialog .linked > .button:first-child:active, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:active:first-child, .raven .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .drop-shadow .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .budgie-session-dialog.background .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .background.budgie-polkit-dialog .linked > GtkComboBox:first-child > .the-button-in-the-combobox:active, .header-bar.selection-mode .linked > .button.suggested-action:first-child:checked, .raven .linked > .button:first-child:checked, .drop-shadow .linked > .button:first-child:checked, .budgie-session-dialog.background .linked > .button:first-child:checked, .background.budgie-polkit-dialog .linked > .button:first-child:checked, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:first-child, .raven .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked, .drop-shadow .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked, .budgie-session-dialog.background .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked, .background.budgie-polkit-dialog .linked > GtkComboBox:first-child > .the-button-in-the-combobox:checked {
-    border-image: -gtk-scaled(url("borders/left-button-active-border.png"), url("borders/left-button-active-border@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/left-button-active-border-dark.png"), url("borders/left-button-active-border-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
 .header-bar.selection-mode .linked > .button.suggested-action:last-child, .raven .linked > .button:last-child, .drop-shadow .linked > .button:last-child, .budgie-session-dialog.background .linked > .button:last-child, .background.budgie-polkit-dialog .linked > .button:last-child, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:last-child, .raven .linked > GtkComboBox:last-child > .the-button-in-the-combobox, .drop-shadow .linked > GtkComboBox:last-child > .the-button-in-the-combobox, .budgie-session-dialog.background .linked > GtkComboBox:last-child > .the-button-in-the-combobox, .background.budgie-polkit-dialog .linked > GtkComboBox:last-child > .the-button-in-the-combobox {
-  border-image: -gtk-scaled(url("borders/right-button-normal-border.png"), url("borders/right-button-normal-border@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/right-button-normal-border-dark.png"), url("borders/right-button-normal-border-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
   .header-bar.selection-mode .linked > .button.suggested-action:last-child:active, .raven .linked > .button:last-child:active, .drop-shadow .linked > .button:last-child:active, .budgie-session-dialog.background .linked > .button:last-child:active, .background.budgie-polkit-dialog .linked > .button:last-child:active, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:active:last-child, .raven .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .drop-shadow .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .budgie-session-dialog.background .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .background.budgie-polkit-dialog .linked > GtkComboBox:last-child > .the-button-in-the-combobox:active, .header-bar.selection-mode .linked > .button.suggested-action:last-child:checked, .raven .linked > .button:last-child:checked, .drop-shadow .linked > .button:last-child:checked, .budgie-session-dialog.background .linked > .button:last-child:checked, .background.budgie-polkit-dialog .linked > .button:last-child:checked, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:last-child, .raven .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked, .drop-shadow .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked, .budgie-session-dialog.background .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked, .background.budgie-polkit-dialog .linked > GtkComboBox:last-child > .the-button-in-the-combobox:checked {
-    border-image: -gtk-scaled(url("borders/right-button-active-border.png"), url("borders/right-button-active-border@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+    border-image: -gtk-scaled(url("borders/right-button-active-border-dark.png"), url("borders/right-button-active-border-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
 
 .header-bar.selection-mode .linked > .button.suggested-action:only-child, .raven .linked > .button:only-child, .drop-shadow .linked > .button:only-child, .budgie-session-dialog.background .linked > .button:only-child, .background.budgie-polkit-dialog .linked > .button:only-child, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child, .raven .linked > GtkComboBox:only-child > .the-button-in-the-combobox, .drop-shadow .linked > GtkComboBox:only-child > .the-button-in-the-combobox, .budgie-session-dialog.background .linked > GtkComboBox:only-child > .the-button-in-the-combobox, .background.budgie-polkit-dialog .linked > GtkComboBox:only-child > .the-button-in-the-combobox {
-  border-image: -gtk-scaled(url("borders/button-normal-border.png"), url("borders/button-normal-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
   .header-bar.selection-mode .linked > .button.suggested-action:only-child:active, .raven .linked > .button:only-child:active, .drop-shadow .linked > .button:only-child:active, .budgie-session-dialog.background .linked > .button:only-child:active, .background.budgie-polkit-dialog .linked > .button:only-child:active, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:active:only-child, .raven .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .drop-shadow .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .budgie-session-dialog.background .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .background.budgie-polkit-dialog .linked > GtkComboBox:only-child > .the-button-in-the-combobox:active, .header-bar.selection-mode .linked > .button.suggested-action:only-child:checked, .raven .linked > .button:only-child:checked, .drop-shadow .linked > .button:only-child:checked, .budgie-session-dialog.background .linked > .button:only-child:checked, .background.budgie-polkit-dialog .linked > .button:only-child:checked, .raven GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .drop-shadow GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .budgie-session-dialog.background GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .background.budgie-polkit-dialog GtkComboBox.combobox-entry .the-button-in-the-combobox:checked:only-child, .raven .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked, .drop-shadow .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked, .budgie-session-dialog.background .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked, .background.budgie-polkit-dialog .linked > GtkComboBox:only-child > .the-button-in-the-combobox:checked {
-    border-image: -gtk-scaled(url("borders/button-active-border.png"), url("borders/button-active-border@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-active-border-dark.png"), url("borders/button-active-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
@@ -1860,104 +1860,104 @@ GtkComboBox {
 
 .header-bar.selection-mode .linked > .button,
 .header-bar.selection-mode .linked > .button:hover, .raven .linked > .button.suggested-action, .drop-shadow .linked > .button.suggested-action, .budgie-session-dialog.background .linked > .button.suggested-action, .background.budgie-polkit-dialog .linked > .button.suggested-action, .raven .linked > .button.suggested-action:hover, .drop-shadow .linked > .button.suggested-action:hover {
-  border-image: -gtk-scaled(url("borders/middle-button-normal-border-suggested.png"), url("borders/middle-button-normal-border-suggested@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/middle-button-normal-border-suggested-dark.png"), url("borders/middle-button-normal-border-suggested-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
   .header-bar.selection-mode .linked > .button:active, .raven .linked > .button.suggested-action:active, .drop-shadow .linked > .button.suggested-action:active, .budgie-session-dialog.background .linked > .button.suggested-action:active, .background.budgie-polkit-dialog .linked > .button.suggested-action:active, .header-bar.selection-mode .linked > .button:checked, .raven .linked > .button.suggested-action:checked, .drop-shadow .linked > .button.suggested-action:checked, .budgie-session-dialog.background .linked > .button.suggested-action:checked, .background.budgie-polkit-dialog .linked > .button.suggested-action:checked {
-    border-image: -gtk-scaled(url("borders/middle-button-active-border-suggested.png"), url("borders/middle-button-active-border-suggested@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+    border-image: -gtk-scaled(url("borders/middle-button-active-border-suggested-dark.png"), url("borders/middle-button-active-border-suggested-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
 .header-bar.selection-mode .linked > .button:first-child, .raven .linked > .button.suggested-action:first-child, .drop-shadow .linked > .button.suggested-action:first-child, .budgie-session-dialog.background .linked > .button.suggested-action:first-child, .background.budgie-polkit-dialog .linked > .button.suggested-action:first-child {
-  border-image: -gtk-scaled(url("borders/left-button-normal-border-suggested.png"), url("borders/left-button-normal-border-suggested@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/left-button-normal-border-suggested-dark.png"), url("borders/left-button-normal-border-suggested-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
   .header-bar.selection-mode .linked > .button:first-child:active, .raven .linked > .button.suggested-action:first-child:active, .drop-shadow .linked > .button.suggested-action:first-child:active, .budgie-session-dialog.background .linked > .button.suggested-action:first-child:active, .background.budgie-polkit-dialog .linked > .button.suggested-action:first-child:active, .header-bar.selection-mode .linked > .button:first-child:checked, .raven .linked > .button.suggested-action:first-child:checked, .drop-shadow .linked > .button.suggested-action:first-child:checked, .budgie-session-dialog.background .linked > .button.suggested-action:first-child:checked, .background.budgie-polkit-dialog .linked > .button.suggested-action:first-child:checked {
-    border-image: -gtk-scaled(url("borders/left-button-active-border-suggested.png"), url("borders/left-button-active-border-suggested@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/left-button-active-border-suggested-dark.png"), url("borders/left-button-active-border-suggested-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
 .header-bar.selection-mode .linked > .button:last-child, .raven .linked > .button.suggested-action:last-child, .drop-shadow .linked > .button.suggested-action:last-child, .budgie-session-dialog.background .linked > .button.suggested-action:last-child, .background.budgie-polkit-dialog .linked > .button.suggested-action:last-child {
-  border-image: -gtk-scaled(url("borders/right-button-normal-border-suggested.png"), url("borders/right-button-normal-border-suggested@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/right-button-normal-border-suggested-dark.png"), url("borders/right-button-normal-border-suggested-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
   .header-bar.selection-mode .linked > .button:last-child:active, .raven .linked > .button.suggested-action:last-child:active, .drop-shadow .linked > .button.suggested-action:last-child:active, .budgie-session-dialog.background .linked > .button.suggested-action:last-child:active, .background.budgie-polkit-dialog .linked > .button.suggested-action:last-child:active, .header-bar.selection-mode .linked > .button:last-child:checked, .raven .linked > .button.suggested-action:last-child:checked, .drop-shadow .linked > .button.suggested-action:last-child:checked, .budgie-session-dialog.background .linked > .button.suggested-action:last-child:checked, .background.budgie-polkit-dialog .linked > .button.suggested-action:last-child:checked {
-    border-image: -gtk-scaled(url("borders/right-button-active-border-suggested.png"), url("borders/right-button-active-border-suggested@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+    border-image: -gtk-scaled(url("borders/right-button-active-border-suggested-dark.png"), url("borders/right-button-active-border-suggested-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
 
 .header-bar.selection-mode .linked > .button:only-child, .raven .linked > .button.suggested-action:only-child, .drop-shadow .linked > .button.suggested-action:only-child, .budgie-session-dialog.background .linked > .button.suggested-action:only-child, .background.budgie-polkit-dialog .linked > .button.suggested-action:only-child {
-  border-image: -gtk-scaled(url("borders/button-normal-border-suggested.png"), url("borders/button-normal-border-suggested@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/button-normal-border-suggested-dark.png"), url("borders/button-normal-border-suggested-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
   .header-bar.selection-mode .linked > .button:only-child:active, .raven .linked > .button.suggested-action:only-child:active, .drop-shadow .linked > .button.suggested-action:only-child:active, .budgie-session-dialog.background .linked > .button.suggested-action:only-child:active, .background.budgie-polkit-dialog .linked > .button.suggested-action:only-child:active, .header-bar.selection-mode .linked > .button:only-child:checked, .raven .linked > .button.suggested-action:only-child:checked, .drop-shadow .linked > .button.suggested-action:only-child:checked, .budgie-session-dialog.background .linked > .button.suggested-action:only-child:checked, .background.budgie-polkit-dialog .linked > .button.suggested-action:only-child:checked {
-    border-image: -gtk-scaled(url("borders/button-active-border-suggested.png"), url("borders/button-active-border-suggested@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"), url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
 .raven .linked > .button.destructive-action, .drop-shadow .linked > .button.destructive-action, .budgie-session-dialog.background .linked > .button.destructive-action, .background.budgie-polkit-dialog .linked > .button.destructive-action, .raven .linked > .button.destructive-action:hover, .drop-shadow .linked > .button.destructive-action:hover {
-  border-image: -gtk-scaled(url("borders/middle-button-normal-border-destructive.png"), url("borders/middle-button-normal-border-destructive@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/middle-button-normal-border-destructive-dark.png"), url("borders/middle-button-normal-border-destructive-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
   .raven .linked > .button.destructive-action:active, .drop-shadow .linked > .button.destructive-action:active, .budgie-session-dialog.background .linked > .button.destructive-action:active, .background.budgie-polkit-dialog .linked > .button.destructive-action:active, .raven .linked > .button.destructive-action:checked, .drop-shadow .linked > .button.destructive-action:checked, .budgie-session-dialog.background .linked > .button.destructive-action:checked, .background.budgie-polkit-dialog .linked > .button.destructive-action:checked {
-    border-image: -gtk-scaled(url("borders/middle-button-active-border-destructive.png"), url("borders/middle-button-active-border-destructive@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
+    border-image: -gtk-scaled(url("borders/middle-button-active-border-destructive-dark.png"), url("borders/middle-button-active-border-destructive-dark@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
     border-style: solid;
     border-color: transparent; }
 
 .raven .linked > .button.destructive-action:first-child, .drop-shadow .linked > .button.destructive-action:first-child, .budgie-session-dialog.background .linked > .button.destructive-action:first-child, .background.budgie-polkit-dialog .linked > .button.destructive-action:first-child {
-  border-image: -gtk-scaled(url("borders/left-button-normal-border-destructive.png"), url("borders/left-button-normal-border-destructive@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/left-button-normal-border-destructive-dark.png"), url("borders/left-button-normal-border-destructive-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 2px 1px;
   border-style: solid;
   border-color: transparent; }
   .raven .linked > .button.destructive-action:first-child:active, .drop-shadow .linked > .button.destructive-action:first-child:active, .budgie-session-dialog.background .linked > .button.destructive-action:first-child:active, .background.budgie-polkit-dialog .linked > .button.destructive-action:first-child:active, .raven .linked > .button.destructive-action:first-child:checked, .drop-shadow .linked > .button.destructive-action:first-child:checked, .budgie-session-dialog.background .linked > .button.destructive-action:first-child:checked, .background.budgie-polkit-dialog .linked > .button.destructive-action:first-child:checked {
-    border-image: -gtk-scaled(url("borders/left-button-active-border-destructive.png"), url("borders/left-button-active-border-destructive@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/left-button-active-border-destructive-dark.png"), url("borders/left-button-active-border-destructive-dark@2.png")) 2 1 3 2/2px 1px 3px 2px stretch;
     border-radius: 2px 0 0 2px;
     border-width: 1px 0 2px 1px;
     border-style: solid;
     border-color: transparent; }
 
 .raven .linked > .button.destructive-action:last-child, .drop-shadow .linked > .button.destructive-action:last-child, .budgie-session-dialog.background .linked > .button.destructive-action:last-child, .background.budgie-polkit-dialog .linked > .button.destructive-action:last-child {
-  border-image: -gtk-scaled(url("borders/right-button-normal-border-destructive.png"), url("borders/right-button-normal-border-destructive@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+  border-image: -gtk-scaled(url("borders/right-button-normal-border-destructive-dark.png"), url("borders/right-button-normal-border-destructive-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
   border-radius: 0 2px 2px 0;
   border-width: 1px 1px 2px 0;
   border-style: solid;
   border-color: transparent; }
   .raven .linked > .button.destructive-action:last-child:active, .drop-shadow .linked > .button.destructive-action:last-child:active, .budgie-session-dialog.background .linked > .button.destructive-action:last-child:active, .background.budgie-polkit-dialog .linked > .button.destructive-action:last-child:active, .raven .linked > .button.destructive-action:last-child:checked, .drop-shadow .linked > .button.destructive-action:last-child:checked, .budgie-session-dialog.background .linked > .button.destructive-action:last-child:checked, .background.budgie-polkit-dialog .linked > .button.destructive-action:last-child:checked {
-    border-image: -gtk-scaled(url("borders/right-button-active-border-destructive.png"), url("borders/right-button-active-border-destructive@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
+    border-image: -gtk-scaled(url("borders/right-button-active-border-destructive-dark.png"), url("borders/right-button-active-border-destructive-dark@2.png")) 2 2 3 1/2px 2px 3px 1px stretch;
     border-radius: 0 2px 2px 0;
     border-width: 1px 1px 2px 0;
     border-style: solid;
     border-color: transparent; }
 
 .raven .linked > .button.destructive-action:only-child, .drop-shadow .linked > .button.destructive-action:only-child, .budgie-session-dialog.background .linked > .button.destructive-action:only-child, .background.budgie-polkit-dialog .linked > .button.destructive-action:only-child {
-  border-image: -gtk-scaled(url("borders/button-normal-border-destructive.png"), url("borders/button-normal-border-destructive@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+  border-image: -gtk-scaled(url("borders/button-normal-border-destructive-dark.png"), url("borders/button-normal-border-destructive-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
   .raven .linked > .button.destructive-action:only-child:active, .drop-shadow .linked > .button.destructive-action:only-child:active, .budgie-session-dialog.background .linked > .button.destructive-action:only-child:active, .background.budgie-polkit-dialog .linked > .button.destructive-action:only-child:active, .raven .linked > .button.destructive-action:only-child:checked, .drop-shadow .linked > .button.destructive-action:only-child:checked, .budgie-session-dialog.background .linked > .button.destructive-action:only-child:checked, .background.budgie-polkit-dialog .linked > .button.destructive-action:only-child:checked {
-    border-image: -gtk-scaled(url("borders/button-active-border-destructive.png"), url("borders/button-active-border-destructive@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+    border-image: -gtk-scaled(url("borders/button-active-border-destructive-dark.png"), url("borders/button-active-border-destructive-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;

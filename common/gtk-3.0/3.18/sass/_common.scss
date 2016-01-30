@@ -1490,71 +1490,71 @@ GtkComboBox.combobox-entry .the-button-in-the-combobox:only-child,
 
 // Extends for dark linked entries
 %header_entry_linked_middle {
-  @include linked(entry, normal, middle, $dark:$darker);
-  &:focus { @include linked(entry, focused, middle, $dark:$darker) }  
+  @include linked(entry, normal, middle, $dark:'true');
+  &:focus { @include linked(entry, focused, middle, $dark:'true') }  
 }
 
 %header_entry_linked {
   @extend %header_entry_linked_middle;
 
   &:first-child {
-    @include linked(entry, normal, left, $dark:$darker);
-    &:focus { @include linked(entry, focused, left, $dark:$darker) }
+    @include linked(entry, normal, left, $dark:'true');
+    &:focus { @include linked(entry, focused, left, $dark:'true') }
   }
   &:last-child {
-    @include linked(entry, normal, right, $dark:$darker);
-    &:focus { @include linked(entry, focused, right, $dark:$darker) }
+    @include linked(entry, normal, right, $dark:'true');
+    &:focus { @include linked(entry, focused, right, $dark:'true') }
   }
   &:only-child {
-    @include linked(entry, normal, single, $dark:$darker);
-    &:focus { @include linked(entry, focused, single, $dark:$darker); }
+    @include linked(entry, normal, single, $dark:'true');
+    &:focus { @include linked(entry, focused, single, $dark:'true'); }
   }
 }
 
 // Extends for dark linked buttons
 %header_linked_middle {
-  @include linked(button, normal, middle, $dark:$darker);
-  &:active, &:checked { @include linked(button, active, middle, $dark:$darker) }  
+  @include linked(button, normal, middle, $dark:'true');
+  &:active, &:checked { @include linked(button, active, middle, $dark:'true') }  
 }
 
 %header_linked {
   @extend %header_linked_middle;
 
   &:first-child {
-    @include linked(button, normal, left, $dark:$darker);
-    &:active, &:checked { @include linked(button, active, left, $dark:$darker) }
+    @include linked(button, normal, left, $dark:'true');
+    &:active, &:checked { @include linked(button, active, left, $dark:'true') }
   }
   &:last-child {
-    @include linked(button, normal, right, $dark:$darker);
-    &:active, &:checked { @include linked(button, active, right, $dark:$darker) }
+    @include linked(button, normal, right, $dark:'true');
+    &:active, &:checked { @include linked(button, active, right, $dark:'true') }
   }
   &:only-child {
-    @include linked(button, normal, single, $dark:$darker);
-    &:active, &:checked { @include linked(button, active, single, $dark:$darker); }
+    @include linked(button, normal, single, $dark:'true');
+    &:active, &:checked { @include linked(button, active, single, $dark:'true'); }
   }
 }
 
 // Headerbar linked destructive and suggested action buttons
 @each $b_type in (suggested, destructive) {
   %header_#{$b_type}_linked_middle {
-    @include linked(button, normal, middle, $action_type:$b_type, $dark:$darker);
-    &:active, &:checked { @include linked(button, active, middle, $action_type:$b_type, $dark:$darker); }  
+    @include linked(button, normal, middle, $action_type:$b_type, $dark:'true');
+    &:active, &:checked { @include linked(button, active, middle, $action_type:$b_type, $dark:'true'); }
   }
 
   %header_#{$b_type}_linked {
     @extend %header_#{$b_type}_linked_middle;
 
     &:first-child {
-      @include linked(button, normal, left, $action_type:$b_type, $dark:$darker);
-      &:active, &:checked { @include linked(button, active, left, $action_type:$b_type, $dark:$darker); }
+      @include linked(button, normal, left, $action_type:$b_type, $dark:'true');
+      &:active, &:checked { @include linked(button, active, left, $action_type:$b_type, $dark:'true'); }
     }
     &:last-child {
-      @include linked(button, normal, right, $action_type:$b_type, $dark:$darker);
-      &:active, &:checked { @include linked(button, active, right, $action_type:$b_type, $dark:$darker); }
+      @include linked(button, normal, right, $action_type:$b_type, $dark:'true');
+      &:active, &:checked { @include linked(button, active, right, $action_type:$b_type, $dark:'true'); }
     }
     &:only-child {
-      @include linked(button, normal, single, $action_type:$b_type, $dark:$darker);
-      &:active, &:checked { @include linked(button, active, single, $action_type:$b_type, $dark:$darker); }
+      @include linked(button, normal, single, $action_type:$b_type, $dark:'true');
+      &:active, &:checked { @include linked(button, active, single, $action_type:$b_type, $dark:'true'); }
     }
   }
 }
