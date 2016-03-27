@@ -63,6 +63,11 @@ $suggested_color_a: if($variant == 'light', nth($_suggested_color_a, 1), nth($_s
 $_suggested_color_b: (#5A86DB, #2a5285);
 $suggested_color_b: if($variant == 'light', nth($_suggested_color_b, 1), nth($_suggested_color_b, 2));
 
+
+$_drop_target_color: red;
+$drop_target_color: $_drop_target_color;
+
+
 $_action_button_shadow: transparentize(black, 0.7);
 $action_button_shadow: $_action_button_shadow;
 

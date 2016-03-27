@@ -9,10 +9,10 @@
   padding: 3px 6px;
   margin: 3px;
 
-  GtkLabel { color: white }
+  label { color: white }
 }
 
-//
+//FIXME
 // Thin Pane Separator
 //
 GraniteWidgetsThinPaned {
@@ -24,6 +24,7 @@ GraniteWidgetsThinPaned {
 
 }
 
+//FIXME
 // avoid borders when a viewport is
 // packed into a Static Notebook, or Popover
 GraniteWidgetsPopOver .frame,
@@ -82,12 +83,12 @@ GraniteWidgetsStaticNotebook .frame {
   color: transparent;
 }
 
-.source-list.view:prelight {
+.source-list.view:hover {
   background-color: lighten($sidebar_bg, 5%);
 }
 
 .source-list.view:selected,
-.source-list.view:prelight:selected,
+.source-list.view:hover:selected,
 .source-list.view:selected:focus,
 .source-list.category-expander:hover {
   color: $selected_fg_color;
@@ -102,10 +103,10 @@ GraniteWidgetsStaticNotebook .frame {
 }
 
 .source-list.badge,
-.source-list.badge:prelight,
+.source-list.badge:hover,
 .source-list.badge:selected,
 .source-list.badge:selected:focus,
-.source-list.badge:prelight:selected {
+.source-list.badge:hover:selected {
   background-image: none;
   background-color: $selected_bg_color;
   color: $selected_fg_color;
@@ -117,7 +118,7 @@ GraniteWidgetsStaticNotebook .frame {
 
 .source-list.badge:selected,
 .source-list.badge:selected:focus,
-.source-list.badge:prelight:selected {
+.source-list.badge:hover:selected {
   background-color: $selected_fg_color;
   color: $selected_bg_color;
 }
@@ -141,7 +142,7 @@ GraniteWidgetsStaticNotebook .frame {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
-//
+//FIXME
 // Welcome
 //
 GraniteWidgetsWelcome {
@@ -166,7 +167,7 @@ GraniteWidgetsWelcome .h3 {
   border-radius: 0;
 }
 
-//
+//FIXME
 // Popover
 //
 GraniteWidgetsPopOver {
@@ -208,6 +209,6 @@ GraniteWidgetsPopOver * {
     padding-top: 6px;
 }
 
-GtkListBox .h4{
-	padding-left: 6px;
+list .h4{
+  padding-left: 6px;
 }
