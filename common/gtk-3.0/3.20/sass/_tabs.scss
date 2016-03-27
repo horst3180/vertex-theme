@@ -1,0 +1,83 @@
+//
+// Special Tabs
+//
+
+$tab_asset_suffix: if($darker=='false', $asset_suffix, -darker);
+
+.nautilus-window notebook,
+.gedit-bottom-panel-paned notebook {
+
+  > header.top {
+
+    background-color: if($variant=='light', $notebook_bg_color, darken($notebook_bg_color, 2.5%));
+    border-bottom-width: 0px;
+
+    @if $darker=='false' {
+      box-shadow: inset 0 5px transparentize(black, 0.99),
+                  inset 0 4px transparentize(black, 0.985),
+                  inset 0 3px transparentize(black, 0.98), 
+                  inset 0 2px transparentize(black, 0.975), 
+                  inset 0 1px transparentize(black, 0.97),
+                  inset 0 -1px transparentize($borders_color, 0.5);
+    }
+    @else {
+      box-shadow: inset 0 5px transparentize(black, 0.995),
+                  inset 0 4px transparentize(black, 0.98),
+                  inset 0 3px transparentize(black, 0.95), 
+                  inset 0 2px transparentize(black, 0.925), 
+                  inset 0 1px transparentize(black, 0.91),
+                  inset 0 -1px transparentize($borders_color, 0.5);
+    }
+
+    > tabs > tab {
+
+      &, &:hover {
+        border-image: linear-gradient(to bottom,
+                                      $borders_color 0px,
+                                      lighten($borders_color, 3%) 1px,
+                                      transparentize($borders_color, 0.8)) 0 1 0 1;
+      }
+
+      &:checked {
+        margin-left: -4px;
+        margin-right: -5px;
+
+        background-color: transparent;
+        box-shadow: none;
+
+        @if $darker=='true' {
+
+          background-image: linear-gradient(to bottom,
+                                            nth($_notebook_tab_gradient_a, 2),
+                                            nth($_notebook_tab_gradient_b, 2));
+        }
+
+        @include _border(tab-active#{$tab_asset_suffix}, $width: 0 5px 1px 5px, $image-width: 2 7 2 7 / 2px 7px 2px 7px);
+
+        label,
+        button.flat,
+        button.flat:not(:hover):not(:active) {
+          color: $wm_title;
+          text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+          -gtk-icon-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+        }
+
+        button.flat {
+          &:hover {
+            color: lighten(red, 10%);
+            border: 1px solid if($variant=='dark' or $darker=='true', transparentize(white, 0.9), $borders_color);
+          }
+          &:active {
+            color: $wm_title;
+
+            @if $darker=='true' or $variant=='dark' {
+              border: 1px solid nth($_borders_color, 2);
+              background-image: linear-gradient(to bottom, darken(nth($_bg_color, 2), 10%),
+                                                           darken(nth($_bg_color, 2), 5%));
+            }
+          }
+        }
+      }
+    }
+  }
+}
