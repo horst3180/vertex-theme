@@ -1687,9 +1687,11 @@ menubar,
 
 menu,
 .menu {
+  $_menu_bg: if($variant=='light', $base_color, darken($base_color, 2%));
+
   margin: 4px;
   padding: 3px 0;
-  background-color: if($variant=='light', $base_color, darken($base_color, 2%));
+  background-color: $_menu_bg;
   border: 1px solid $borders_color;
 
   .csd & { border: none; }
@@ -1737,20 +1739,24 @@ menu,
     }
   }
   // overflow buttons
-  arrow {
-    @extend %undecorated_button;
+  > arrow {
+    @include button(undecorated);
+
     min-width: 16px;
     min-height: 16px;
-    border-style: none;
+    padding: 4px;
+    background-color: $_menu_bg;
     border-radius: 0;
 
     &.top {
-      -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+      margin-top: -6px;
       border-bottom: 1px solid mix($fg_color, $base_color, 10%);
+      -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
     }
     &.bottom {
-      -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+      margin-bottom: -6px;
       border-top: 1px solid mix($fg_color, $base_color, 10%);
+      -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
     }
     &:hover { background-color: mix($fg_color, $base_color, 10%); }
     &:disabled {

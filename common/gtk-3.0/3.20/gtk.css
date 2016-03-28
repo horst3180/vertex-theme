@@ -939,8 +939,7 @@ toolbar.inline-toolbar toolbutton > button.flat, toolbar.inline-toolbar toolbutt
     border-color: transparent; }
 
 menuitem.button.flat,
-modelbutton.flat, button:link, button:visited, button:link:hover, button:link:active, button:link:checked, button:visited:hover, button:visited:active, button:visited:checked, menu arrow,
-.menu arrow, calendar.button, calendar.button:hover {
+modelbutton.flat, button:link, button:visited, button:link:hover, button:link:active, button:link:checked, button:visited:hover, button:visited:active, button:visited:checked, calendar.button, calendar.button:hover {
   border-color: transparent;
   border-image: none;
   background-color: transparent;
@@ -2090,25 +2089,35 @@ menu,
       menuitem check:dir(rtl), menuitem radio:dir(rtl) {
         margin-left: 4px;
         margin-right: 0; }
-  menu arrow,
-  .menu arrow {
+  menu > arrow,
+  .menu > arrow {
+    border-color: transparent;
+    border-image: none;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
     min-width: 16px;
     min-height: 16px;
-    border-style: none;
+    padding: 4px;
+    background-color: #ffffff;
     border-radius: 0; }
-    menu arrow.top,
-    .menu arrow.top {
-      -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
-      border-bottom: 1px solid #ececec; }
-    menu arrow.bottom,
-    .menu arrow.bottom {
-      -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-      border-top: 1px solid #ececec; }
-    menu arrow:hover,
-    .menu arrow:hover {
+    menu > arrow.top,
+    .menu > arrow.top {
+      margin-top: -6px;
+      border-bottom: 1px solid #ececec;
+      -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
+    menu > arrow.bottom,
+    .menu > arrow.bottom {
+      margin-bottom: -6px;
+      border-top: 1px solid #ececec;
+      -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+    menu > arrow:hover,
+    .menu > arrow:hover {
       background-color: #ececec; }
-    menu arrow:disabled,
-    .menu arrow:disabled {
+    menu > arrow:disabled,
+    .menu > arrow:disabled {
       color: transparent;
       background-color: transparent;
       border-color: transparent; }
