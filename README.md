@@ -6,7 +6,7 @@ The theme comes with three variants to choose from. The default variant with dar
 
 ### Requirements
 
-* At least Gnome/GTK 3.10. This theme works with all versions up to 3.18.
+* At least Gnome/GTK 3.10. This theme works with all versions up to 3.20.
 * The `gnome-themes-standard` package
 * The murrine engine. This has different names depending on your distro.
   * `gtk-engine-murrine` (Arch Linux)
@@ -94,7 +94,7 @@ Other options to pass to autogen.sh are
     --disable-unity            disable Unity support
     --disable-xfwm             disable XFWM support
 
-    --with-gnome=<version>     build the theme for a specific Gnome version (3.10, 3.12, 3.14, 3.16, 3.18)
+    --with-gnome=<version>     build the theme for a specific Gnome version (3.10, 3.12, 3.14, 3.16, 3.18, 3.20)
                                Note: Normally the correct version is detected automatically and this
                                option should not be needed.
 
