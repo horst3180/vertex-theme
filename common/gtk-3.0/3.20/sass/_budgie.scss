@@ -69,7 +69,7 @@ popover.budgie-menu {
       &:active { color: $selected_fg_color; }
       &:hover { background-color: mix(black, $selected_bg_color, 10%); }
 
-      &:insensitive {
+      &:disabled {
         color: transparentize($selected_fg_color, 0.3);
         background-color: transparentize($selected_bg_color, 0.3);
 
@@ -84,11 +84,11 @@ popover.budgie-menu {
 
     //standard checks and radios
     @each $s,$as in ('','-unchecked'),
-                    (':insensitive','-unchecked-insensitive'),
-                    (':inconsistent', '-mixed'),
-                    (':inconsistent:insensitive', '-mixed-insensitive'),
+                    (':disabled','-unchecked-insensitive'),
+                    (':indeterminate', '-mixed'),
+                    (':indeterminate:disabled', '-mixed-insensitive'),
                     (':checked', '-checked'),
-                    (':checked:insensitive','-checked-insensitive') {
+                    (':checked:disabled','-checked-insensitive') {
       #{$w}#{$s} {
         -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-dark.png"),
                                       url("assets/#{$a}#{$as}-dark@2.png"));
@@ -164,7 +164,7 @@ popover.budgie-menu {
     padding-right: 2px;
     border-color: transparentize($budgie_panel_bg_a,1); // fixes the transition
 
-    &:hover { -gtk-image-effect: highlight; }
+    &:hover { -gtk-icon-effect: highlight; }
   }
   .unpinned .launcher,
   .pinned .launcher.running { @extend %underscores; }
