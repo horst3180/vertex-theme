@@ -14,7 +14,6 @@ active_text_shadow_color=#ffffff
 inactive_text_color=#868686
 inactive_text_shadow_color=#ffffff
 
-placement_ratio=20
 shadow_delta_height=2
 shadow_delta_width=0
 shadow_delta_x=0
@@ -23,8 +22,5 @@ shadow_opacity=35
 
 title_shadow_active=true
 
-resize_opacity=100
-move_opacity=100
-popup_opacity=100
 show_frame_shadow=true
 show_popup_shadow=true
