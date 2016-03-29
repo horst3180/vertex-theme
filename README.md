@@ -18,13 +18,14 @@ The theme comes with three variants to choose from. The default variant with dar
 Main distributions that meet these requirements are
 
 * Arch Linux and Arch Linux based distros
-* Ubuntu 14.04, 14.10 and 15.04
+* Ubuntu 14.04 - 16.04
 * elementary OS Freya
 * Linux Mint 17.1
-* Debian Jessie, Testing or Unstable
+* Debian 8, Testing or Unstable
 * Gentoo
-* Fedora 20, 21 and 22
-* OpenSuse 13.1, 13.2 and Tumbleweed
+* Fedora 20 - 24
+* OpenSuse 13.1, 13.2, Leap 42.1 and Tumbleweed
+* Solus
 
 Derivatives of these distributions should work, aswell.
 
