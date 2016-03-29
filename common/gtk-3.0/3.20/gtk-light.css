@@ -1370,13 +1370,13 @@ headerbar,
     background-image: linear-gradient(to bottom, #f7f7f7, #F5F5F7);
     border-bottom: none; }
 
-headerbar entry, headerbar button, headerbar separator {
-  margin-top: 6px;
-  margin-bottom: 6px; }
-
 .titlebar {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px; }
+
+headerbar entry, headerbar button, headerbar separator {
+  margin-top: 6px;
+  margin-bottom: 6px; }
 
 separator:first-child + headerbar, headerbar:first-child {
   border-top-left-radius: 3px; }
@@ -1384,10 +1384,7 @@ separator:first-child + headerbar, headerbar:first-child {
 headerbar:last-child {
   border-top-right-radius: 3px; }
 
-.maximized headerbar:first-child,
-.maximized headerbar:last-child,
-.tiled headerbar:first-child,
-.tiled headerbar:last-child {
+.maximized headerbar:first-child, .maximized headerbar:last-child, .tiled headerbar:first-child, .tiled headerbar:last-child {
   border-radius: 0; }
 
 window.csd > .titlebar:not(headerbar) {

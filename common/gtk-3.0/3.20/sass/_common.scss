@@ -1129,10 +1129,6 @@ headerbar,
 }
 
 headerbar {
-  entry, button, separator {
-    margin-top: 6px;
-    margin-bottom: 6px;
-  }
 }
 
 .titlebar {
@@ -1141,15 +1137,20 @@ headerbar {
 }
 
 headerbar {
-  separator:first-child + &, // tackles the paned container case
+  entry, button, separator {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
 
+  // Fixes split headerbars
+  separator:first-child + &,
   &:first-child { border-top-left-radius: 3px; }
+
   &:last-child { border-top-right-radius: 3px; }
 
-  .maximized &:first-child,
-  .maximized &:last-child,
-  .tiled &:first-child,
-  .tiled &:last-child { border-radius: 0; }
+  .maximized &, .tiled & {
+    &:first-child, &:last-child { border-radius: 0; }
+  }
 }
 
 .titlebar:not(headerbar) {
