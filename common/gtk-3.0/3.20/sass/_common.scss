@@ -433,7 +433,7 @@ button {
   }
 
   //overlay / OSD style
-  .osd &, .osd .linked > & {
+  .osd &, .osd .linked:not(.vertical) > & {
 
     @include button(osd, $border:false);
 
