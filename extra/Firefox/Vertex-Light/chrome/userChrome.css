@@ -185,7 +185,7 @@
 
 /************************* Text Input Boxes ***************************/
 #identity-box {
-  background-color: #ffffff !important;
+  background-color: transparent !important;
 }
 
 .searchbar-textbox {
