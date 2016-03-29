@@ -475,7 +475,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   @else if $position==middle-vertical {
     @if $t==entry {
-      box-shadow: none;
+      &:not(:drop(active)) { box-shadow: none };
       $args: 0, 0 1px 0 1px, 0 1 1 1 / 0 1px 1px 1px;
       @if $state==focused {
         $args: 0, 0 1px 0 1px, 2 2 2 2 / 2px 2px 2px 2px;
@@ -488,7 +488,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   @else if $position==bottom-vertical {
     @if $t==entry {
-      box-shadow: none;
+      &:not(:drop(active)) { box-shadow: none };
       $args: 0 0 2px 2px, 0 1px 2px 1px, 0 2 3 2 / 0 2px 3px 2px;
       @if $state==focused {
         $args: 0 0 2px 2px, 0 1px 2px 1px, 2 3 4 3 / 2px 3px 4px 3px;

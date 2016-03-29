@@ -64,7 +64,7 @@ $_suggested_color_b: (#5A86DB, #2a5285);
 $suggested_color_b: if($variant == 'light', nth($_suggested_color_b, 1), nth($_suggested_color_b, 2));
 
 
-$_drop_target_color: red;
+$_drop_target_color: #4e9a06;
 $drop_target_color: $_drop_target_color;
 
 

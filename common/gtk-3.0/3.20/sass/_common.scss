@@ -250,14 +250,6 @@ entry {
     }
   }
 
-  //FIXME
-  &:drop(active) {
-    &:focus, & {
-      border-color: $drop_target_color;
-      box-shadow: none;
-    }
-  }
-
   progress {
     margin: 0 -6px;
     border-radius: 0;
@@ -414,7 +406,6 @@ button {
 
   &:drop(active) {
     color: $drop_target_color;
-    border-color: $drop_target_color;
   }
 
   // big standalone buttons like in Documents pager
@@ -770,6 +761,8 @@ button:link, button:visited {
 // Spinbuttons
 //
 spinbutton {
+  &:drop(active) { box-shadow: none; }
+
   &:disabled { color: $insensitive_fg_color; }
 
   &:not(.vertical) {
@@ -2803,10 +2796,7 @@ filechooser {
   }
 }
 
-filechooserbutton:drop(active) {
-  box-shadow: none;
-  border-color: transparent;
-}
+button.file:drop(active) { box-shadow: none; }
 
 //
 // Sidebar

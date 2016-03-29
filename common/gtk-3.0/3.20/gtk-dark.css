@@ -193,9 +193,6 @@ entry {
       color: #cc0000; }
     entry.error selection, entry.error selection:focus {
       background-color: #cc0000; }
-  entry:drop(active):focus, entry:drop(active) {
-    border-color: red;
-    box-shadow: none; }
   entry progress {
     margin: 0 -6px;
     border-radius: 0;
@@ -260,19 +257,21 @@ entry {
     border-color: transparent; }
 
 .linked.vertical > entry, spinbutton.vertical entry, .linked.vertical > spinbutton:not(.vertical) {
-  box-shadow: none;
   border-image: -gtk-scaled(url("borders/middle-vertical-entry-normal-border-dark.png"), url("borders/middle-vertical-entry-normal-border-dark@2.png")) 0 1 1 1/0 1px 1px 1px stretch;
   border-radius: 0;
   border-width: 0 1px 0 1px;
   border-style: solid;
   border-color: transparent; }
+  .linked.vertical > entry:not(:drop(active)), spinbutton.vertical entry:not(:drop(active)), .linked.vertical > spinbutton:not(:drop(active)):not(.vertical) {
+    box-shadow: none; }
   .linked.vertical > entry:focus, spinbutton.vertical entry:focus, .linked.vertical > spinbutton:focus:not(.vertical) {
-    box-shadow: none;
     border-image: -gtk-scaled(url("borders/middle-vertical-entry-focused-border-dark.png"), url("borders/middle-vertical-entry-focused-border-dark@2.png")) 2 2 2 2/2px 2px 2px 2px stretch;
     border-radius: 0;
     border-width: 0 1px 0 1px;
     border-style: solid;
     border-color: transparent; }
+    .linked.vertical > entry:focus:not(:drop(active)), spinbutton.vertical entry:focus:not(:drop(active)), .linked.vertical > spinbutton:focus:not(:drop(active)):not(.vertical) {
+      box-shadow: none; }
 
 .linked.vertical > entry:first-child, spinbutton.vertical entry:first-child, .linked.vertical > spinbutton:first-child:not(.vertical) {
   border-image: -gtk-scaled(url("borders/top-vertical-entry-normal-border-dark.png"), url("borders/top-vertical-entry-normal-border-dark@2.png")) 2 2 1 2/2px 2px 1px 2px stretch;
@@ -288,19 +287,21 @@ entry {
     border-color: transparent; }
 
 .linked.vertical > entry:last-child, spinbutton.vertical entry:last-child, .linked.vertical > spinbutton:last-child:not(.vertical) {
-  box-shadow: none;
   border-image: -gtk-scaled(url("borders/bottom-vertical-entry-normal-border-dark.png"), url("borders/bottom-vertical-entry-normal-border-dark@2.png")) 0 2 3 2/0 2px 3px 2px stretch;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 2px 1px;
   border-style: solid;
   border-color: transparent; }
+  .linked.vertical > entry:last-child:not(:drop(active)), spinbutton.vertical entry:last-child:not(:drop(active)), .linked.vertical > spinbutton:last-child:not(:drop(active)):not(.vertical) {
+    box-shadow: none; }
   .linked.vertical > entry:last-child:focus, spinbutton.vertical entry:last-child:focus, .linked.vertical > spinbutton:last-child:focus:not(.vertical) {
-    box-shadow: none;
     border-image: -gtk-scaled(url("borders/bottom-vertical-entry-focused-border-dark.png"), url("borders/bottom-vertical-entry-focused-border-dark@2.png")) 2 3 4 3/2px 3px 4px 3px stretch;
     border-radius: 0 0 2px 2px;
     border-width: 0 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
+    .linked.vertical > entry:last-child:focus:not(:drop(active)), spinbutton.vertical entry:last-child:focus:not(:drop(active)), .linked.vertical > spinbutton:last-child:focus:not(:drop(active)):not(.vertical) {
+      box-shadow: none; }
 
 .linked.vertical > entry:only-child, spinbutton.vertical entry:only-child, .linked.vertical > spinbutton:only-child:not(.vertical) {
   border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -434,8 +435,7 @@ button {
       padding-left: 8px;
       padding-right: 8px; }
   button:drop(active) {
-    color: red;
-    border-color: red; }
+    color: #4e9a06; }
   button.osd {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -1019,6 +1019,9 @@ modelbutton.flat arrow.right {
 
 button:link > label, button:visited > label {
   text-decoration-line: underline; }
+
+spinbutton:drop(active) {
+  box-shadow: none; }
 
 spinbutton:disabled {
   color: #949597; }
@@ -3185,9 +3188,8 @@ filechooser #pathbarbox {
   background-color: #353638;
   border-bottom: 1px solid rgba(23, 24, 25, 0.5); }
 
-filechooserbutton:drop(active) {
-  box-shadow: none;
-  border-color: transparent; }
+button.file:drop(active) {
+  box-shadow: none; }
 
 .sidebar {
   border: none;
@@ -3252,16 +3254,16 @@ placessidebar row {
   placessidebar row.sidebar-placeholder-row {
     padding: 0 8px;
     min-height: 2px;
-    background-image: linear-gradient(to top, red);
+    background-image: linear-gradient(to top, #4e9a06);
     background-clip: content-box; }
   placessidebar row.sidebar-new-bookmark-row {
     color: #4080fb; }
   placessidebar row:drop(active):not(:disabled) {
-    box-shadow: inset 0 1px red, inset 0 -1px red; }
+    box-shadow: inset 0 1px #4e9a06, inset 0 -1px #4e9a06; }
     placessidebar row:drop(active):not(:disabled), placessidebar row:drop(active):not(:disabled) label, placessidebar row:drop(active):not(:disabled) image {
-      color: red; }
+      color: #4e9a06; }
     placessidebar row:drop(active):not(:disabled):selected {
-      background-color: red; }
+      background-color: #4e9a06; }
       placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
         color: #ffffff; }
 
@@ -3388,11 +3390,11 @@ colorswatch.light overlay {
 colorswatch:drop(active) {
   box-shadow: none; }
   colorswatch:drop(active).light overlay {
-    border-color: red;
-    box-shadow: inset 0 0 0 2px #171819, inset 0 0 0 1px red; }
+    border-color: #4e9a06;
+    box-shadow: inset 0 0 0 2px #171819, inset 0 0 0 1px #4e9a06; }
   colorswatch:drop(active).dark overlay {
-    border-color: red;
-    box-shadow: inset 0 0 0 2px #171819, inset 0 0 0 1px red; }
+    border-color: #4e9a06;
+    box-shadow: inset 0 0 0 2px #171819, inset 0 0 0 1px #4e9a06; }
 
 colorswatch overlay {
   box-shadow: inset 0 3px 2px -2px rgba(0, 0, 0, 0.5);
@@ -3509,7 +3511,7 @@ stackswitcher button.circular, stackswitcher button.nautilus-circular-button.ima
 
 *:drop(active):focus,
 *:drop(active) {
-  box-shadow: inset 0 0 0 1px red; }
+  box-shadow: inset 0 0 0 1px #4e9a06; }
 
 button.circular, button.nautilus-circular-button.image-button,
 button.circular-button {
