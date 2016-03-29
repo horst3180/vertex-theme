@@ -96,7 +96,7 @@ $disk_space_free: darken($bg_color, 3%);
 
 .gedit-document-panel {
   background-color: $sidebar_bg;
-  //FIXME
+
   row button {
     min-width: 22px;
     min-height: 22px;
@@ -181,107 +181,128 @@ $disk_space_free: darken($bg_color, 3%);
   border-style: solid;
 }
 
-//FIXME
+//
 // Gnome Builder
 //
-GbWorkbench .floating-bar {
-  color: $fg_color;
-  background-image: none;
+.gb-search-entry-occurrences-tag {
+  background: none;
   box-shadow: none;
-  text-shadow: none;
 }
 
-// Preference page language style
-GbPreferencesPageLanguage  {
-
-  GtkScrolledWindow { border-top-width: 0; }
+workbench stack.titlebar {
+  padding: 0;
+  border: none;
 }
 
-// Editor tweak widget
-GbEditorTweakWidget GtkScrolledWindow {
-  border-top: none;
-}
-
-// View stack styling
-GbViewStack GtkBox.header.notebook {
+layouttabbar {
+  background-color: if($variant=='light', $notebook_bg_color, darken($notebook_bg_color, 2.5%));
   border-bottom: 1px solid $borders_color;
+
+  box-shadow: inset 0 2px 3px -1px transparentize(black, 0.85);
+
+  // new tab button
+  > box > button {
+    margin-left: 3px;
+    margin-right: -3px;
+
+    + button { margin-left: 5px; }
+  }
+
+  button {
+    margin: 6px 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  label { padding: 0 5px; }
 }
 
-GbViewStack.focused GtkBox.header.notebook,
-#project_sidebar_header.focused {
+layouttab {
+  border-bottom: 1px solid $borders_color;
+  border-left: 1px solid $borders_color;
+  border-right: 1px solid $borders_color;
+
   background-image: linear-gradient(to bottom,
                                     mix($button_gradient_color_a, $button_gradient_color_b, 50%),
-                        					  $button_gradient_color_b);
+                                    $button_gradient_color_b);
+
   box-shadow: inset 0 1px $highlight_shadow;
+
+  separator.vertical { margin: 0 4px; }
 }
 
-GbEditorWorkspace > GtkPaned > GtkBox > GtkBox.header.notebook {
+layout {
+  border: 1px solid $borders_color;
+  -PnlDockBin-handle-size: 1;
+}
+
+eggsearchbar box.search-bar {
   border-bottom: 1px solid $borders_color;
 }
 
-// Workspace pane header styling
-GbWorkspacePane GtkBox.header.notebook {
-  border-bottom: 1px solid $borders_color;
-}
+perspectiveswitcher {
+  background: $bg_color;
 
-// Adjust devehlp and symbol panel styling
-DhSidebar GtkSearchEntry.entry,
-SymbolTree GtkSearchEntry.entry,
-DhSidebar GtkSearchEntry.entry:focus,
-SymbolTree GtkSearchEntry.entry:focus {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-image: none;
-  border-radius: 0px;
-  border-bottom: 1px solid $borders_color;
-  box-shadow: none;
-}
-
-// Command Bar styling
-GtkEntry.gb-command-bar-entry.entry.flat,
-GtkEntry.gb-command-bar-entry.entry.flat:focus {
-  font-family: Monospace;
-  color: $osd_fg_color;
-  background-image: none;
-  background-color: opacify($osd_bg_color, 1);
-  padding: 6px 6px 6px 6px;
-  border: none;
-
-  &:selected,
-  &:selected:focus {
-    @extend %selected_items;
+  button {
+    &:checked, &:active {
+      color: $selected_bg_color;
+      -gtk-icon-shadow: none;
+    }
   }
 }
 
-GbTerminalView {
-  background-color: $base_color;
-  color: $fg_color;
+pillbox {
+  color: $selected_fg_color;
+  background-color: $selected_bg_color;
+  border-radius: 3px;
 }
 
-GbSourceStyleSchemeWidget GtkSourceView {
-  font-family: Monospace;
-}
+tabstrip {
+  padding: 0 6px;
 
-GtkScrolledWindow.gb-linked-scroller {
-  border-top: none;
-}
-
-// Disable various animatinos that are enabled by default and really annoying
-// to the overall flow of Builder.
-GbSearchDisplayGroup GtkListBox .list-row, GbDocumentStack .button {
-  transition: none;
-}
-
-GbViewStack GtkBox.header.notebook,
-GbEditorWorkspace > GtkPaned > GtkBox > GtkBox.header.notebook {
+  background-color: if($variant=='light', $notebook_bg_color, darken($notebook_bg_color, 2.5%));
   border-bottom: 1px solid $borders_color;
+
+  box-shadow: inset 0 2px 3px -1px transparentize(black, 0.85);
+
+  tab {
+    min-height: 28px;
+    border: solid transparent;
+    border-width: 0 1px;
+
+    label { opacity: 0.5; }
+    &:checked, &:hover { label { opacity: 1; }}
+
+    &:checked {
+      border-color: $borders_color;
+      background-image: linear-gradient(to bottom,
+                                        $notebook_tab_gradient_a,
+                                        $notebook_tab_gradient_b);
+    }
+  }
 }
 
-GbViewStack.focused GtkBox.header.notebook {
-  background-color: $base_color;
+dockbin {
+  border: 1px solid $borders_color;
+  -PnlDockBin-handle-size: 1;
+}
 
- .button.dim-label { opacity: 1; }
+dockpaned {
+  border: 1px solid $borders_color;
+}
+
+dockoverlayedge {
+  background-color: $bg_color;
+
+  tabstrip {
+    padding: 0;
+    border: none;
+  }
+
+  &.left-edge tab:checked,
+  &.right-edge tab:checked {
+    border-width: 1px 0;
+  }
 }
 
 //
