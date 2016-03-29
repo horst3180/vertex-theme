@@ -140,6 +140,9 @@ $osd_button_bg_a: $_osd_button_bg_a;
 $_osd_button_bg_b: $_osd_toolbar_bg_b;
 $osd_button_bg_b: $_osd_button_bg_b;
 
+$_osd_entry_bg: $_osd_button_bg_b;
+$osd_entry_bg: $_osd_entry_bg;
+
 
 $_osd_trough_bg_a: transparentize(darken($_osd_bg_color, 9%), 0.2);
 $osd_trough_bg_a: $_osd_trough_bg_a;

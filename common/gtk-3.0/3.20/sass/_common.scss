@@ -251,6 +251,12 @@ entry {
     }
   }
 
+  .osd & {
+    @include entry(osd);
+    &:focus { @include entry(osd-focus); }
+    &:disabled { @include entry(osd-insensitive); }
+  }
+
   progress {
     margin: 0 -6px;
     border-radius: 0;
@@ -425,25 +431,9 @@ button {
   }
 
   //overlay / OSD style
-  .osd &, .osd .linked:not(.vertical) > & {
-
+  .osd &,
+  .osd .linked:not(.vertical) > & {
     @include button(osd, $border:false);
-
-    @include _border(middle-button-normal-border-dark, $radius: 0, $width: 1px 0 2px 0, $image_width: 2 1 3 1 / 2px 1px 3px 1px);
-    &:active, &:checked { @include _border(middle-button-active-border-dark, $radius: 0, $width: 1px 0 2px 0, $image_width: 2 1 3 1 / 2px 1px 3px 1px); }
-
-    &:first-child {
-      @include _border(left-button-normal-border-dark, $radius: 2px 0 0 2px, $width: 1px 0 2px 1px, $image_width: 2 1 3 2 / 2px 1px 3px 2px);
-      &:active, &:checked { @include _border(left-button-active-border-dark, $radius: 2px 0 0 2px, $width: 1px 0 2px 1px, $image_width: 2 1 3 2 / 2px 1px 3px 2px); }
-    }
-    &:last-child {
-      @include _border(right-button-normal-border-dark, $radius: 0 2px 2px 0, $width: 1px 1px 2px 0, $image_width: 2 2 3 1 / 2px 2px 3px 1px);
-      &:active, &:checked { @include _border(right-button-active-border-dark, $radius: 0 2px 2px 0, $width: 1px 1px 2px 0, $image_width: 2 2 3 1 / 2px 2px 3px 1px); }
-    }
-    &:only-child {
-      @include _border(button-normal-border-dark);
-      &:active, &:checked { @include _border(button-active-border-dark); }
-    }
 
     &:hover { @include button(osd-hover, $border:false); }
     &:active, &:checked { @include button(osd-active, $border:false); }
@@ -461,6 +451,8 @@ button {
       &:disabled { color: $osd_insensitive_fg_color; }
       &:active, &:checked { @include button(osd-active); }
     }
+
+    @extend %header_linked;
   }
 
   // Suggested and Destructive Action buttons
@@ -791,6 +783,24 @@ spinbutton {
     button.down { @extend %linked_vertical:last-child; }
 
     entry { @extend %entry_linked_vertical; }
+  }
+
+  // OSD Spinbuttons
+  .osd & {
+    &:not(.vertical) {
+      button.down { @extend %header_linked; }
+      button.up {
+        &:dir(ltr) { @extend %header_linked:last-child; }
+        &:dir(rtl) { @extend %header_linked:first-child; }
+      }
+
+      entry {
+        min-width: 28px;
+
+        &:dir(ltr) { @extend %header_entry_linked:first-child; }
+        &:dir(rtl) { @extend %header_entry_linked:last-child; }
+      }
+    }
   }
 }
 
@@ -1410,71 +1420,71 @@ headerbar {
 
 // Extends for dark linked entries
 %header_entry_linked_middle {
-  @include linked(entry, normal, middle, $dark:$darker);
-  &:focus { @include linked(entry, focused, middle, $dark:$darker) }  
+  @include linked(entry, normal, middle, $dark:'true');
+  &:focus { @include linked(entry, focused, middle, $dark:'true') }  
 }
 
 %header_entry_linked {
   @extend %header_entry_linked_middle;
 
   &:first-child {
-    @include linked(entry, normal, left, $dark:$darker);
-    &:focus { @include linked(entry, focused, left, $dark:$darker) }
+    @include linked(entry, normal, left, $dark:'true');
+    &:focus { @include linked(entry, focused, left, $dark:'true') }
   }
   &:last-child {
-    @include linked(entry, normal, right, $dark:$darker);
-    &:focus { @include linked(entry, focused, right, $dark:$darker) }
+    @include linked(entry, normal, right, $dark:'true');
+    &:focus { @include linked(entry, focused, right, $dark:'true') }
   }
   &:only-child {
-    @include linked(entry, normal, single, $dark:$darker);
-    &:focus { @include linked(entry, focused, single, $dark:$darker); }
+    @include linked(entry, normal, single, $dark:'true');
+    &:focus { @include linked(entry, focused, single, $dark:'true'); }
   }
 }
 
 // Extends for dark linked buttons
 %header_linked_middle {
-  @include linked(button, normal, middle, $dark:$darker);
-  &:active, &:checked { @include linked(button, active, middle, $dark:$darker) }  
+  @include linked(button, normal, middle, $dark:'true');
+  &:active, &:checked { @include linked(button, active, middle, $dark:'true') }  
 }
 
 %header_linked {
   @extend %header_linked_middle;
 
   &:first-child {
-    @include linked(button, normal, left, $dark:$darker);
-    &:active, &:checked { @include linked(button, active, left, $dark:$darker) }
+    @include linked(button, normal, left, $dark:'true');
+    &:active, &:checked { @include linked(button, active, left, $dark:'true') }
   }
   &:last-child {
-    @include linked(button, normal, right, $dark:$darker);
-    &:active, &:checked { @include linked(button, active, right, $dark:$darker) }
+    @include linked(button, normal, right, $dark:'true');
+    &:active, &:checked { @include linked(button, active, right, $dark:'true') }
   }
   &:only-child {
-    @include linked(button, normal, single, $dark:$darker);
-    &:active, &:checked { @include linked(button, active, single, $dark:$darker); }
+    @include linked(button, normal, single, $dark:'true');
+    &:active, &:checked { @include linked(button, active, single, $dark:'true'); }
   }
 }
 
 // Headerbar linked destructive and suggested action buttons
 @each $b_type in (suggested, destructive) {
   %header_#{$b_type}_linked_middle {
-    @include linked(button, normal, middle, $action_type:$b_type, $dark:$darker);
-    &:active, &:checked { @include linked(button, active, middle, $action_type:$b_type, $dark:$darker); }  
+    @include linked(button, normal, middle, $action_type:$b_type, $dark:'true');
+    &:active, &:checked { @include linked(button, active, middle, $action_type:$b_type, $dark:'true'); }  
   }
 
   %header_#{$b_type}_linked {
     @extend %header_#{$b_type}_linked_middle;
 
     &:first-child {
-      @include linked(button, normal, left, $action_type:$b_type, $dark:$darker);
-      &:active, &:checked { @include linked(button, active, left, $action_type:$b_type, $dark:$darker); }
+      @include linked(button, normal, left, $action_type:$b_type, $dark:'true');
+      &:active, &:checked { @include linked(button, active, left, $action_type:$b_type, $dark:'true'); }
     }
     &:last-child {
-      @include linked(button, normal, right, $action_type:$b_type, $dark:$darker);
-      &:active, &:checked { @include linked(button, active, right, $action_type:$b_type, $dark:$darker); }
+      @include linked(button, normal, right, $action_type:$b_type, $dark:'true');
+      &:active, &:checked { @include linked(button, active, right, $action_type:$b_type, $dark:'true'); }
     }
     &:only-child {
-      @include linked(button, normal, single, $action_type:$b_type, $dark:$darker);
-      &:active, &:checked { @include linked(button, active, single, $action_type:$b_type, $dark:$darker); }
+      @include linked(button, normal, single, $action_type:$b_type, $dark:'true');
+      &:active, &:checked { @include linked(button, active, single, $action_type:$b_type, $dark:'true'); }
     }
   }
 }
@@ -2173,6 +2183,12 @@ $_list: ('','');
       background: none;
       -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-selected#{$asset_suffix}.png"),
                                     url("assets/#{$a}#{$as}-selected#{$asset_suffix}@2.png"));
+    }
+
+    // OSD
+    .osd #{$w}#{$s} {
+      -gtk-icon-source: -gtk-scaled(url("assets/#{$a}#{$as}-dark.png"),
+                                    url("assets/#{$a}#{$as}-dark@2.png"));
     }
   }
 }

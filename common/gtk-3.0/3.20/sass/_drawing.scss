@@ -75,6 +75,29 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     @include _border(entry-normal-border#{$_asset_suffix});
   }
+
+  @else if $t==osd {
+    color: $osd_fg_color;
+    background-image: linear-gradient(to bottom, $osd_entry_bg);
+
+    @include _border(entry-normal-border-dark);
+  }
+
+  @else if $t==osd-focus {
+    color: $osd_fg_color;
+    background-image: linear-gradient(to bottom, $osd_entry_bg);
+
+    @include _border(entry-focused-border-dark);
+  }
+
+  @else if $t==osd-insensitive {
+    color: $osd_insensitive_fg_color;
+    background-image: linear-gradient(to bottom, $osd_insensitive_bg_color);
+
+    box-shadow: none;
+
+    @include _border(entry-normal-border-dark);
+  }
 }
 
 // buttons
