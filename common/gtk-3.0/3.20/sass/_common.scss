@@ -2102,22 +2102,25 @@ scrollbar {
 //
 switch {
   font: 1;
-  outline-color: transparent;
+
+  min-width: 60px;
+  min-height: 27px;
+
+  margin: 0 -8px;
+
+  slider {
+    min-width: 22px;
+    min-height: 23px;
+
+    margin: 0 8px;
+  }
 
   &, slider {
-    background-repeat: no-repeat;
-    background-position: right center;
     color: transparent;
-    border-color: transparent;
-    border-image: none;
-    border-style: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
     box-shadow: none;
-
-    //&:dir(rtl) { background-position: left center; }
-  }
-  slider {
-    min-width: 38px;
-    min-height: 25px;
   }
 }
 

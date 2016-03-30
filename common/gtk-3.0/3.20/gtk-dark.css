@@ -2455,18 +2455,19 @@ scrollbar.horizontal slider {
 
 switch {
   font: 1;
-  outline-color: transparent; }
-  switch, switch slider {
-    background-repeat: no-repeat;
-    background-position: right center;
-    color: transparent;
-    border-color: transparent;
-    border-image: none;
-    border-style: none;
-    box-shadow: none; }
+  min-width: 60px;
+  min-height: 27px;
+  margin: 0 -8px; }
   switch slider {
-    min-width: 38px;
-    min-height: 25px; }
+    min-width: 22px;
+    min-height: 23px;
+    margin: 0 8px; }
+  switch, switch slider {
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    box-shadow: none; }
 
 switch {
   background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png")); }
