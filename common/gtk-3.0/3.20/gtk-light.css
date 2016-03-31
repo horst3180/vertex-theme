@@ -1928,6 +1928,8 @@ treeview.view {
   -GtkTreeView-expander-size: 16;
   border-left-color: rgba(60, 60, 62, 0.15);
   border-top-color: rgba(0, 0, 0, 0.1); }
+  treeview.view acceleditor > label {
+    background-color: #4080fb; }
   treeview.view:selected, treeview.view:selected:focus {
     border-radius: 0; }
   treeview.view:disabled {
