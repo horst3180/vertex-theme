@@ -514,8 +514,10 @@ button {
     background-image: linear-gradient(to bottom, rgba(70, 70, 72, 0.75), rgba(52, 52, 54, 0.75));
     text-shadow: 0 -1px rgba(0, 0, 0, 0.75);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.75); }
-    .osd button:hover,
-    .osd .linked:not(.vertical) > button:hover {
+    .osd button:hover, .osd button.flat:hover, .osd button.sidebar-button:hover,
+    .osd .linked:not(.vertical) > button:hover,
+    .osd .linked:not(.vertical) > button.flat:hover,
+    .osd .linked:not(.vertical) > button.sidebar-button:hover {
       color: #4080fb;
       outline-color: rgba(255, 255, 255, 0.3);
       background-image: linear-gradient(to bottom, rgba(82, 82, 85, 0.75), rgba(65, 65, 67, 0.75));
@@ -536,9 +538,11 @@ button {
       background-image: linear-gradient(to bottom, rgba(65, 65, 67, 0.7));
       text-shadow: none;
       -gtk-icon-shadow: none; }
-    .osd button.flat, .osd button.sidebar-button,
+    .osd button.flat, .osd button.sidebar-button, .osd button.flat:only-child:not(:hover), .osd button.sidebar-button:only-child:not(:hover),
     .osd .linked:not(.vertical) > button.flat,
-    .osd .linked:not(.vertical) > button.sidebar-button {
+    .osd .linked:not(.vertical) > button.sidebar-button,
+    .osd .linked:not(.vertical) > button.flat:only-child:not(:hover),
+    .osd .linked:not(.vertical) > button.sidebar-button:only-child:not(:hover) {
       border-color: transparent;
       border-image: none;
       background-color: transparent;
@@ -549,19 +553,27 @@ button {
       border: 1px solid transparent;
       text-shadow: 0 -1px rgba(0, 0, 0, 0.75);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.75); }
-      .osd button.flat:hover, .osd button.sidebar-button:hover,
+      .osd button.flat:hover, .osd button.sidebar-button:hover, .osd button.flat:only-child:not(:hover):hover, .osd button.sidebar-button:only-child:not(:hover):hover,
       .osd .linked:not(.vertical) > button.flat:hover,
-      .osd .linked:not(.vertical) > button.sidebar-button:hover {
+      .osd .linked:not(.vertical) > button.sidebar-button:hover,
+      .osd .linked:not(.vertical) > button.flat:only-child:not(:hover):hover,
+      .osd .linked:not(.vertical) > button.sidebar-button:only-child:not(:hover):hover {
         color: #4080fb; }
-      .osd button.flat:disabled, .osd button.sidebar-button:disabled,
+      .osd button.flat:disabled, .osd button.sidebar-button:disabled, .osd button.flat:only-child:not(:hover):disabled, .osd button.sidebar-button:only-child:not(:hover):disabled,
       .osd .linked:not(.vertical) > button.flat:disabled,
-      .osd .linked:not(.vertical) > button.sidebar-button:disabled {
+      .osd .linked:not(.vertical) > button.sidebar-button:disabled,
+      .osd .linked:not(.vertical) > button.flat:only-child:not(:hover):disabled,
+      .osd .linked:not(.vertical) > button.sidebar-button:only-child:not(:hover):disabled {
         color: rgba(255, 255, 255, 0.4); }
-      .osd button.flat:active, .osd button.sidebar-button:active, .osd button.flat:checked, .osd button.sidebar-button:checked,
+      .osd button.flat:active, .osd button.sidebar-button:active, .osd button.flat:checked, .osd button.sidebar-button:checked, .osd button.flat:only-child:not(:hover):active, .osd button.sidebar-button:only-child:not(:hover):active, .osd button.flat:only-child:not(:hover):checked, .osd button.sidebar-button:only-child:not(:hover):checked,
       .osd .linked:not(.vertical) > button.flat:active,
       .osd .linked:not(.vertical) > button.sidebar-button:active,
       .osd .linked:not(.vertical) > button.flat:checked,
-      .osd .linked:not(.vertical) > button.sidebar-button:checked {
+      .osd .linked:not(.vertical) > button.sidebar-button:checked,
+      .osd .linked:not(.vertical) > button.flat:only-child:not(:hover):active,
+      .osd .linked:not(.vertical) > button.sidebar-button:only-child:not(:hover):active,
+      .osd .linked:not(.vertical) > button.flat:only-child:not(:hover):checked,
+      .osd .linked:not(.vertical) > button.sidebar-button:only-child:not(:hover):checked {
         color: #3176fb;
         outline-color: rgba(255, 255, 255, 0.3);
         background-image: linear-gradient(to bottom, rgba(22, 22, 23, 0.75), rgba(34, 34, 36, 0.75));

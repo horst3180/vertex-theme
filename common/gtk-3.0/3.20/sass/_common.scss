@@ -435,11 +435,11 @@ button {
   .osd .linked:not(.vertical) > & {
     @include button(osd, $border:false);
 
-    &:hover { @include button(osd-hover, $border:false); }
+    &:hover, &.flat:hover { @include button(osd-hover, $border:false); }
     &:active, &:checked { @include button(osd-active, $border:false); }
     &:disabled { @include button(osd-insensitive, $border:false); }
 
-    &.flat {
+    &.flat, &.flat:only-child:not(:hover) {
       @include button(undecorated);
 
       border: 1px solid transparent;
