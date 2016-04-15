@@ -8559,36 +8559,6 @@
        y2="15" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3782"
-       id="linearGradient8544"
-       gradientUnits="userSpaceOnUse"
-       x1="9"
-       y1="17"
-       x2="7"
-       y2="17"
-       gradientTransform="translate(-16,1020.3622)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3782"
-       id="linearGradient8540"
-       gradientUnits="userSpaceOnUse"
-       x1="9"
-       y1="17"
-       x2="7"
-       y2="17"
-       gradientTransform="translate(-16,1020.3622)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3782"
-       id="linearGradient8537"
-       gradientUnits="userSpaceOnUse"
-       x1="9"
-       y1="17"
-       x2="7"
-       y2="17"
-       gradientTransform="translate(-16,1020.3622)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient3786-5"
        id="linearGradient8773"
        gradientUnits="userSpaceOnUse"
@@ -8596,36 +8566,6 @@
        y1="16"
        x2="15"
        y2="16" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3782-0-0"
-       id="linearGradient8662"
-       gradientUnits="userSpaceOnUse"
-       x1="9"
-       y1="17"
-       x2="7"
-       y2="17"
-       gradientTransform="translate(-16,1020.3622)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient7630"
-       id="linearGradient8658"
-       gradientUnits="userSpaceOnUse"
-       x1="9"
-       y1="17"
-       x2="7"
-       y2="17"
-       gradientTransform="translate(-16,1020.3622)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3782-7"
-       id="linearGradient8656"
-       gradientUnits="userSpaceOnUse"
-       x1="9"
-       y1="17"
-       x2="7"
-       y2="17"
-       gradientTransform="translate(-16,1020.3622)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6999"
@@ -8689,12 +8629,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="119.45531"
-     inkscape:cy="365.1033"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="31.671753"
+     inkscape:cy="290.08196"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      showguides="false"
      inkscape:guide-bbox="true"
      inkscape:window-width="1366"
@@ -8787,13 +8727,6 @@
        id="scrollbar-slider-hover"
        inkscape:label="#g7281"
        transform="translate(46,-3)">
-      <rect
-         y="620.36218"
-         x="-22"
-         height="32"
-         width="15"
-         id="rect7279"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="30"
@@ -9765,14 +9698,6 @@
        id="scrollbar-slider"
        inkscape:label="#g7273"
        transform="translate(10,0)">
-      <rect
-         transform="translate(0,542.36218)"
-         y="75"
-         x="4"
-         height="32"
-         width="15"
-         id="rect7271"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="29"
@@ -13067,14 +12992,6 @@
        id="scrollbar-slider-dark"
        inkscape:label="#g7474"
        transform="translate(-10,-5e-5)">
-      <rect
-         transform="translate(0,542.36218)"
-         y="337"
-         x="24"
-         height="32"
-         width="15"
-         id="rect7472"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="36"
@@ -13113,14 +13030,6 @@
        id="scrollbar-slider-hover-dark"
        inkscape:label="#g7457"
        transform="translate(10,0)">
-      <rect
-         transform="translate(0,542.36218)"
-         y="337"
-         x="14"
-         height="32"
-         width="15"
-         id="rect7455"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="35"
@@ -17073,13 +16982,6 @@
        id="scrollbar-slider-active"
        inkscape:label="#g7292"
        transform="translate(55,-8)">
-      <rect
-         y="625.36218"
-         x="-21"
-         height="32"
-         width="15"
-         id="rect7290"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="31"
@@ -17118,14 +17020,6 @@
        transform="matrix(0,1,-1,0,693.36223,617.36218)"
        id="scrollbar-slider-horizontal"
        inkscape:label="#g7273">
-      <rect
-         transform="translate(0,542.36218)"
-         y="75"
-         x="4"
-         height="32"
-         width="15"
-         id="rect7271-2"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="29-7"
@@ -17155,13 +17049,6 @@
        id="scrollbar-slider-horizontal-hover"
        inkscape:label="#g7281"
        transform="matrix(0,1,-1,0,696.36218,651.36218)">
-      <rect
-         y="620.36218"
-         x="-22"
-         height="32"
-         width="15"
-         id="rect7279-0"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="30-6"
@@ -17200,13 +17087,6 @@
        id="scrollbar-slider-horizontal-active"
        inkscape:label="#g7292"
        transform="matrix(0,1,-1,0,701.36218,658.36218)">
-      <rect
-         y="625.36218"
-         x="-21"
-         height="32"
-         width="15"
-         id="rect7290-1"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="31-2"
@@ -17248,13 +17128,6 @@
       <g
          id="scrollbar-slider-dark-7"
          inkscape:label="#g7447">
-        <rect
-           style="fill:none;stroke:none"
-           id="rect7437-4"
-           width="15"
-           height="32"
-           x="4"
-           y="879.36218" />
         <g
            transform="translate(4,-140.99997)"
            id="33-3"
@@ -20879,14 +20752,6 @@
        id="scrollbar-slider-horizontal-dark"
        inkscape:label="#g7474"
        transform="matrix(0,1,-1,0,955.36223,859.36218)">
-      <rect
-         transform="translate(0,542.36218)"
-         y="337"
-         x="24"
-         height="32"
-         width="15"
-         id="rect7472-3"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="36-30"
@@ -20925,14 +20790,6 @@
        transform="matrix(0,1,-1,0,955.36223,877.36218)"
        id="scrollbar-slider-horizontal-hover-dark"
        inkscape:label="#g7457">
-      <rect
-         transform="translate(0,542.36218)"
-         y="337"
-         x="14"
-         height="32"
-         width="15"
-         id="rect7455-3"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="35-8"
@@ -20965,13 +20822,6 @@
       <g
          id="scrollbar-slider-dark-7-4"
          inkscape:label="#g7447">
-        <rect
-           style="fill:none;stroke:none"
-           id="rect7437-4-7"
-           width="15"
-           height="32"
-           x="4"
-           y="879.36218" />
         <g
            transform="translate(4,-140.99997)"
            id="33-3-7"
@@ -25665,13 +25515,6 @@
        id="scrollbar-slider-overlay"
        inkscape:label="#g7273"
        transform="translate(0,-5.6976623e-5)">
-      <rect
-         y="619.36224"
-         x="8"
-         height="27.999987"
-         width="8"
-         id="rect7271-9"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="29-6"
@@ -25696,13 +25539,6 @@
        id="scrollbar-slider-overlay-horizontal"
        inkscape:label="#g7273"
        transform="matrix(0,1,-1,0,693.36221,609.36218)">
-      <rect
-         y="619.36218"
-         x="8"
-         height="27.999998"
-         width="8"
-         id="rect7271-9-6"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="29-6-3"
@@ -26542,13 +26378,6 @@
        id="scrollbar-slider-overlay-dark"
        inkscape:label="#g7273"
        transform="translate(0,261.99997)">
-      <rect
-         y="619.36218"
-         x="8"
-         height="27.999998"
-         width="8"
-         id="rect7271-9-9"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="29-6-2"
@@ -26573,13 +26402,6 @@
        id="scrollbar-slider-overlay-horizontal-dark"
        inkscape:label="#g7273"
        transform="matrix(0,1,-1,0,693.36221,871.36218)">
-      <rect
-         y="619.36218"
-         x="8"
-         height="27.999998"
-         width="8"
-         id="rect7271-9-6-1"
-         style="fill:none;stroke:none" />
       <g
          inkscape:label="Ebene 1"
          id="29-6-3-4"
@@ -26599,88 +26421,6 @@
          style="opacity:0.4;fill:#313233;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.39215686"
          d="m 12,622.36221 c -1.662,0 -3,1.338 -3,3 l 0,16 c 0,1.662 1.338,3 3,3 1.662,0 3,-1.338 3,-3 l 0,-16 c 0,-1.662 -1.338,-3 -3,-3 z m 0,1 c 1.108,0 2,0.89199 2,2 l 0,16 c 0,1.10801 -0.892,2 -2,2 -1.108,0 -2,-0.89199 -2,-2 l 0,-16 c 0,-1.10801 0.892,-2 2,-2 z"
          id="rect8280-7-7" />
-    </g>
-    <g
-       id="scrollbar-slider-rtl-hover"
-       inkscape:label="#g7281"
-       transform="matrix(-1,0,0,1,80,-3.0000026)">
-      <rect
-         y="620.36218"
-         x="-22"
-         height="32"
-         width="15"
-         id="rect7279-1"
-         style="fill:none;stroke:none" />
-      <g
-         inkscape:label="Ebene 1"
-         id="30-9"
-         transform="translate(-22,-400.00002)">
-        <rect
-           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect2991-63-7"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-        <rect
-           style="fill:url(#linearGradient8537);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect3780-0-3"
-           width="2"
-           height="18"
-           x="-9"
-           y="1027.3622"
-           transform="scale(-1,1)"
-           rx="2"
-           ry="1" />
-        <rect
-           style="opacity:0.25;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect2991-1-2-8"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-      </g>
-    </g>
-    <g
-       id="scrollbar-slider-rtl"
-       inkscape:label="#g7273"
-       transform="matrix(-1,0,0,1,116,-2.6171874e-6)">
-      <rect
-         transform="translate(0,542.36218)"
-         y="75"
-         x="4"
-         height="32"
-         width="15"
-         id="rect7271-7"
-         style="fill:none;stroke:none" />
-      <g
-         inkscape:label="Ebene 1"
-         id="29-8"
-         transform="translate(4,-402.99997)">
-        <rect
-           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect2991-18"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-        <rect
-           style="fill:url(#linearGradient8540);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect3780-1"
-           width="2"
-           height="18"
-           x="-9"
-           y="1027.3622"
-           transform="scale(-1,1)"
-           rx="2"
-           ry="1" />
-      </g>
     </g>
     <g
        transform="matrix(-1,0,0,1,93.00001,-371.00001)"
@@ -26726,135 +26466,6 @@
          style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
     <g
-       id="scrollbar-slider-rtl-active"
-       inkscape:label="#g7292"
-       transform="matrix(-1,0,0,1,71,-8.0000031)">
-      <rect
-         y="625.36218"
-         x="-21"
-         height="32"
-         width="15"
-         id="rect7290-7"
-         style="fill:none;stroke:none" />
-      <g
-         inkscape:label="Ebene 1"
-         id="31-6"
-         transform="translate(-21,-395.00002)">
-        <rect
-           style="fill:#6f6f71;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect2991-6-0"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-        <rect
-           style="fill:url(#linearGradient8544);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect3780-8-6"
-           width="2"
-           height="18"
-           x="-9"
-           y="1027.3622"
-           rx="2"
-           ry="1"
-           transform="scale(-1,1)" />
-        <rect
-           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect2991-1-5"
-           width="4"
-           height="20.000017"
-           x="-10"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174"
-           transform="scale(-1,1)" />
-      </g>
-    </g>
-    <g
-       id="scrollbar-slider-rtl-dark"
-       inkscape:label="#g7474"
-       transform="matrix(-1,0,0,1,134,-5e-5)">
-      <rect
-         transform="translate(0,542.36218)"
-         y="337"
-         x="24"
-         height="32"
-         width="15"
-         id="rect7472-8"
-         style="fill:none;stroke:none" />
-      <g
-         inkscape:label="Ebene 1"
-         id="36-7"
-         transform="translate(24,-140.99997)">
-        <rect
-           style="fill:#7f7f81;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect2991-12-8"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-        <rect
-           style="fill:url(#linearGradient8656);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect3780-5-1"
-           width="2"
-           height="18"
-           x="-9"
-           y="1027.3622"
-           transform="scale(-1,1)"
-           rx="2"
-           ry="1" />
-        <rect
-           style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect2991-1-4-7"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-      </g>
-    </g>
-    <g
-       id="scrollbar-slider-rtl-hover-dark"
-       inkscape:label="#g7457"
-       transform="matrix(-1,0,0,1,114,0)">
-      <rect
-         transform="translate(0,542.36218)"
-         y="337"
-         x="14"
-         height="32"
-         width="15"
-         id="rect7455-0"
-         style="fill:none;stroke:none" />
-      <g
-         inkscape:label="Ebene 1"
-         id="35-4"
-         transform="translate(14,-140.99997)">
-        <rect
-           style="fill:#6d6d6f;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect2991-125-3"
-           width="4"
-           height="20.000017"
-           x="6"
-           y="1026.3622"
-           rx="2"
-           ry="2.0000174" />
-        <rect
-           style="fill:url(#linearGradient8658);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect3780-52-9"
-           width="2"
-           height="18"
-           x="-9"
-           y="1027.3622"
-           transform="scale(-1,1)"
-           rx="2"
-           ry="1" />
-      </g>
-    </g>
-    <g
        transform="matrix(-1,0,0,1,94.00001,-109)"
        id="scrollbar-trough-rtl-dark"
        inkscape:label="Ebene 1">
@@ -26895,46 +26506,6 @@
          width="1"
          id="rect3782-7-5"
          style="opacity:0.07000002;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <g
-       transform="matrix(-1,0,0,1,93.99999,-5e-5)"
-       id="scrollbar-slider-rtl-active-dark"
-       inkscape:label="#g7439">
-      <g
-         id="scrollbar-slider-dark-7-3"
-         inkscape:label="#g7447">
-        <rect
-           style="fill:none;stroke:none"
-           id="rect7437-4-1"
-           width="15"
-           height="32"
-           x="4"
-           y="879.36218" />
-        <g
-           transform="translate(4,-140.99997)"
-           id="33-3-3"
-           inkscape:label="Ebene 1">
-          <rect
-             ry="2.0000174"
-             rx="2"
-             y="1026.3622"
-             x="6"
-             height="20.000017"
-             width="4"
-             id="rect2991-37-0-0"
-             style="fill:#4c4c4d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-          <rect
-             ry="1"
-             rx="2"
-             y="1027.3622"
-             x="-9"
-             height="18"
-             width="2"
-             id="rect3780-4-7-11"
-             style="fill:url(#linearGradient8662);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             transform="scale(-1,1)" />
-        </g>
-      </g>
     </g>
   </g>
 </svg>

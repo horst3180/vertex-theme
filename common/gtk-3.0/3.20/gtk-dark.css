@@ -2363,109 +2363,99 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
   opacity: 0.999; }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-overlay-dark.png"), url("assets/scrollbar-slider-overlay-dark@2.png")) 6 4 6 4/6px 4px 6px 4px stretch;
+  margin: 1px;
+  min-width: 6px;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-overlay-dark.png"), url("assets/scrollbar-slider-overlay-dark@2.png")) 4 3 4 3/4px 3px 4px 3px stretch;
   border-radius: 0;
-  border-width: 5px 4px 5px 4px;
+  border-width: 0;
   border-style: solid;
   border-color: transparent; }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-overlay-horizontal-dark.png"), url("assets/scrollbar-slider-overlay-horizontal-dark@2.png")) 4 6 4 6/4px 6px 4px 6px stretch;
+  min-height: 6px;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-overlay-horizontal-dark.png"), url("assets/scrollbar-slider-overlay-horizontal-dark@2.png")) 3 4 3 4/3px 4px 3px 4px stretch;
   border-radius: 0;
-  border-width: 4px 6px 4px 6px;
+  border-width: 0;
   border-style: solid;
   border-color: transparent; }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) trough {
+  min-width: 8px;
+  min-height: 8px;
   border: none;
   background: none; }
 
 scrollbar trough {
+  min-width: 15px;
   border-image: -gtk-scaled(url("assets/scrollbar-trough-dark.png"), url("assets/scrollbar-trough-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
   border-radius: 0;
-  border-width: 8px 7px 8px 8px;
+  border-width: 0;
   border-style: solid;
   border-color: transparent; }
   scrollbar trough:dir(rtl) {
     border-image: -gtk-scaled(url("assets/scrollbar-trough-rtl-dark.png"), url("assets/scrollbar-trough-rtl-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
     border-radius: 0;
-    border-width: 8px 7px 8px 8px;
+    border-width: 0;
     border-style: solid;
     border-color: transparent; }
 
 scrollbar.horizontal trough {
+  min-height: 15px;
   border-image: -gtk-scaled(url("assets/scrollbar-trough-horizontal-dark.png"), url("assets/scrollbar-trough-horizontal-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
   border-radius: 0;
-  border-width: 8px 8px 7px 8px;
+  border-width: 0;
   border-style: solid;
   border-color: transparent; }
 
 scrollbar slider {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-dark.png"), url("assets/scrollbar-slider-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+  min-width: 4px;
+  margin: 6px 5px 6px 6px;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-dark.png"), url("assets/scrollbar-slider-dark@2.png")) 3 2 3 2/3px 2px 3px 2px stretch;
   border-radius: 0;
-  border-width: 8px 7px 8px 8px;
+  border-width: 0;
   border-style: solid;
   border-color: transparent; }
   scrollbar slider:dir(rtl) {
-    border-image: -gtk-scaled(url("assets/scrollbar-slider-rtl-dark.png"), url("assets/scrollbar-slider-rtl-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
-    border-radius: 0;
-    border-width: 8px 7px 8px 8px;
-    border-style: solid;
-    border-color: transparent; }
+    margin: 6px 6px 5px 6px; }
   scrollbar slider:hover, scrollbar slider:disabled {
-    border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"), url("assets/scrollbar-slider-hover-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"), url("assets/scrollbar-slider-hover-dark@2.png")) 3 2 3 2/3px 2px 3px 2px stretch;
     border-radius: 0;
-    border-width: 8px 7px 8px 8px;
+    border-width: 0;
     border-style: solid;
     border-color: transparent; }
-    scrollbar slider:hover:dir(rtl), scrollbar slider:disabled:dir(rtl) {
-      border-image: -gtk-scaled(url("assets/scrollbar-slider-rtl-hover-dark.png"), url("assets/scrollbar-slider-rtl-hover-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
-      border-radius: 0;
-      border-width: 8px 7px 8px 8px;
-      border-style: solid;
-      border-color: transparent; }
   scrollbar slider:active {
-    border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"), url("assets/scrollbar-slider-active-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"), url("assets/scrollbar-slider-active-dark@2.png")) 3 2 3 2/3px 2px 3px 2px stretch;
     border-radius: 0;
-    border-width: 8px 7px 8px 8px;
+    border-width: 0;
     border-style: solid;
     border-color: transparent; }
-    scrollbar slider:active:dir(rtl) {
-      border-image: -gtk-scaled(url("assets/scrollbar-slider-rtl-active-dark.png"), url("assets/scrollbar-slider-rtl-active-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
-      border-radius: 0;
-      border-width: 8px 7px 8px 8px;
-      border-style: solid;
-      border-color: transparent; }
 
 scrollbar.horizontal slider {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-dark.png"), url("assets/scrollbar-slider-horizontal-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
+  min-height: 4px;
+  margin: 6px 6px 5px 6px;
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-dark.png"), url("assets/scrollbar-slider-horizontal-dark@2.png")) 2 3 2 3/2px 3px 2px 3px stretch;
   border-radius: 0;
-  border-width: 8px 8px 7px 8px;
+  border-width: 0;
   border-style: solid;
   border-color: transparent; }
   scrollbar.horizontal slider:hover, scrollbar.horizontal slider:disabled {
-    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-hover-dark.png"), url("assets/scrollbar-slider-horizontal-hover-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-hover-dark.png"), url("assets/scrollbar-slider-horizontal-hover-dark@2.png")) 2 3 2 3/2px 3px 2px 3px stretch;
     border-radius: 0;
-    border-width: 8px 8px 7px 8px;
+    border-width: 0;
     border-style: solid;
     border-color: transparent; }
   scrollbar.horizontal slider:active {
-    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-active-dark.png"), url("assets/scrollbar-slider-horizontal-active-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-active-dark.png"), url("assets/scrollbar-slider-horizontal-active-dark@2.png")) 2 3 2 3/2px 3px 2px 3px stretch;
     border-radius: 0;
-    border-width: 8px 8px 7px 8px;
+    border-width: 0;
     border-style: solid;
     border-color: transparent; }
 
-scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
-  margin: 0; }
-
 scrollbar.vertical slider {
-  min-height: 64px;
-  margin: -8px -7px -8px -8px; }
+  min-height: 64px; }
 
 scrollbar.horizontal slider {
-  min-width: 64px;
-  margin: -8px -8px -7px -8px; }
+  min-width: 64px; }
 
 switch {
   font: 1;
