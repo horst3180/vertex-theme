@@ -157,6 +157,7 @@ textview {
   background-color: $base_color;
 }
 
+%osd,
 .osd {
   color: $osd_fg_color;
   outline-color: transparentize($osd_fg_color, 0.7);
@@ -861,7 +862,7 @@ combobox {
   .linked:not(.vertical) > &:last-child > box > button.combo { @extend %linked:last-child; }
   .linked:not(.vertical) > &:only-child > box > button.combo { @extend %linked:only-child; }
 
-  .linked.vertical > & > box > button.combo { @extend %linked_vertical_middle; }
+  .linked.vertical > & > box > button.combo { @extend %linked_middle_vertical; }
   .linked.vertical > &:first-child > box > button.combo { @extend %linked_vertical:first-child; }
   .linked.vertical > &:last-child > box > button.combo { @extend %linked_vertical:last-child; }
   .linked.vertical > &:only-child > box > button.combo { @extend %linked_vertical:only-child; }
@@ -1297,7 +1298,7 @@ headerbar {
     &.linked {
       button:nth-child(2) {
         &:dir(ltr) { @extend %header_linked:last-child; }
-        &:dir(rtl) { @extend %header_:first-child; }
+        &:dir(rtl) { @extend %header_linked:first-child; }
       }
     }
     .linked > & > button.combo {

@@ -142,7 +142,7 @@ popover.budgie-menu {
     }
   }
 
-  button { @extend %budgie_panel_button; }
+  button { @extend %panelbutton; }
 
   // used to indicate unread notifications
   .alert { color: $alert_color; }

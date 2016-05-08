@@ -260,7 +260,7 @@ GtkFlowBox .grid-child {
     border-style: solid;
     border-color: transparent; }
 
-.linked.vertical > .entry, .spinbutton.vertical.entry, .spinbutton.vertical.entry:dir(rtl) {
+.linked.vertical > .entry, .spinbutton.vertical.entry, .spinbutton.vertical.entry:dir(rtl), .spinbutton.vertical.entry:dir(ltr) {
   box-shadow: none;
   border-image: -gtk-scaled(url("borders/middle-vertical-entry-normal-border.png"), url("borders/middle-vertical-entry-normal-border@2.png")) 0 1 1 1/0 1px 1px 1px stretch;
   border-radius: 0;
@@ -730,13 +730,16 @@ GtkFlowBox .grid-child {
       color: inherit; }
 
 .inline-toolbar.toolbar GtkToolButton > .button.flat, .inline-toolbar .button, .linked > .button,
-.linked > .button:hover, .linked > GtkComboBox > .button:dir(ltr) {
+.linked > .button:hover, .linked > GtkComboBox > .button:dir(ltr),
+.linked > GtkComboBox > .button:dir(rtl) {
   border-image: -gtk-scaled(url("borders/middle-button-normal-border.png"), url("borders/middle-button-normal-border@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
   border-radius: 0;
   border-width: 1px 0 2px 0;
   border-style: solid;
   border-color: transparent; }
-  .inline-toolbar.toolbar GtkToolButton > .button.flat:active, .inline-toolbar .button:active, .linked > .button:active, .linked > GtkComboBox > .button:active:dir(ltr), .inline-toolbar.toolbar GtkToolButton > .button.flat:checked, .inline-toolbar .button:checked, .linked > .button:checked, .linked > GtkComboBox > .button:checked:dir(ltr) {
+  .inline-toolbar.toolbar GtkToolButton > .button.flat:active, .inline-toolbar .button:active, .linked > .button:active, .linked > GtkComboBox > .button:active:dir(ltr),
+  .linked > GtkComboBox > .button:active:dir(rtl), .inline-toolbar.toolbar GtkToolButton > .button.flat:checked, .inline-toolbar .button:checked, .linked > .button:checked, .linked > GtkComboBox > .button:checked:dir(ltr),
+  .linked > GtkComboBox > .button:checked:dir(rtl) {
     border-image: -gtk-scaled(url("borders/middle-button-active-border.png"), url("borders/middle-button-active-border@2.png")) 2 1 3 1/2px 1px 3px 1px stretch;
     border-radius: 0;
     border-width: 1px 0 2px 0;
@@ -808,7 +811,7 @@ GtkFlowBox .grid-child {
     border-style: solid;
     border-color: transparent; }
 
-.linked.vertical > .button:first-child, .spinbutton.vertical .button:first-child, .spinbutton.vertical:dir(rtl) .button:first-child, .linked.vertical > GtkComboBoxText:first-child > .button,
+.linked.vertical > .button:first-child, .spinbutton.vertical .button:first-child, .spinbutton.vertical:dir(rtl) .button:first-child, .spinbutton.vertical:dir(ltr) .button:first-child, .linked.vertical > GtkComboBoxText:first-child > .button,
 .linked.vertical > GtkComboBox:first-child > .button {
   border-image: -gtk-scaled(url("borders/top-vertical-button-normal-border.png"), url("borders/top-vertical-button-normal-border@2.png")) 2 2 1 2/2px 2px 1px 2px stretch;
   border-radius: 2px 2px 0 0;
@@ -824,7 +827,7 @@ GtkFlowBox .grid-child {
     border-style: solid;
     border-color: transparent; }
 
-.linked.vertical > .button:last-child, .spinbutton.vertical .button:last-child, .spinbutton.vertical:dir(rtl) .button:last-child, .linked.vertical > GtkComboBoxText:last-child > .button,
+.linked.vertical > .button:last-child, .spinbutton.vertical .button:last-child, .spinbutton.vertical:dir(rtl) .button:last-child, .spinbutton.vertical:dir(ltr) .button:last-child, .linked.vertical > GtkComboBoxText:last-child > .button,
 .linked.vertical > GtkComboBox:last-child > .button {
   border-image: -gtk-scaled(url("borders/bottom-vertical-button-normal-border.png"), url("borders/bottom-vertical-button-normal-border@2.png")) 1 2 3 2/1px 2px 3px 2px stretch;
   border-radius: 0 0 2px 2px;
@@ -2919,7 +2922,8 @@ GtkVolumeButton.button {
   background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png")); }
 
 .view:selected, .view:selected:focus, .view:selected:hover, GtkLabel:selected, GtkLabel:selected:focus, GtkLabel:selected:hover, GtkFlowBox .grid-child:selected, .entry:selected, .entry:selected:focus, GtkIconView.cell:selected,
-GtkIconView.cell:selected:focus, .list-row:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected:focus {
+GtkIconView.cell:selected:focus, .list-row:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected,
+GtkEntry.gb-command-bar-entry.entry.flat:focus:selected {
   background-color: #4080fb;
   color: #ffffff;
   outline-color: rgba(255, 255, 255, 0.3); }
