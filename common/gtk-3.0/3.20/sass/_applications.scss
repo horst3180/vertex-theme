@@ -278,7 +278,7 @@ pillbox {
   border-radius: 3px;
 }
 
-tabstrip {
+docktabstrip {
   padding: 0 6px;
 
   background-color: if($variant=='light', $notebook_bg_color, darken($notebook_bg_color, 2.5%));
@@ -286,7 +286,7 @@ tabstrip {
 
   box-shadow: inset 0 2px 3px -1px transparentize(black, 0.85);
 
-  tab {
+  docktab {
     min-height: 28px;
     border: solid transparent;
     border-width: 0 1px;
@@ -315,7 +315,7 @@ dockpaned {
 dockoverlayedge {
   background-color: $bg_color;
 
-  tabstrip {
+  docktabstrip {
     padding: 0;
     border: none;
   }

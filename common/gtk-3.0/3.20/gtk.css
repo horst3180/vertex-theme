@@ -197,6 +197,13 @@ entry {
       color: #cc0000; }
     entry.error selection, entry.error selection:focus {
       background-color: #cc0000; }
+  entry.search-missing {
+    color: #cc0000;
+    background-image: linear-gradient(to bottom, #f5cccc); }
+    entry.search-missing image {
+      color: #cc0000; }
+    entry.search-missing selection, entry.search-missing selection:focus {
+      background-color: #cc0000; }
   .osd entry {
     background-color: transparent;
     color: white;
@@ -4133,20 +4140,20 @@ pillbox {
   background-color: #4080fb;
   border-radius: 3px; }
 
-tabstrip {
+docktabstrip {
   padding: 0 6px;
   background-color: #fafafa;
   border-bottom: 1px solid #b9b9b9;
   box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.15); }
-  tabstrip tab {
+  docktabstrip docktab {
     min-height: 28px;
     border: solid transparent;
     border-width: 0 1px; }
-    tabstrip tab label {
+    docktabstrip docktab label {
       opacity: 0.5; }
-    tabstrip tab:checked label, tabstrip tab:hover label {
+    docktabstrip docktab:checked label, docktabstrip docktab:hover label {
       opacity: 1; }
-    tabstrip tab:checked {
+    docktabstrip docktab:checked {
       border-color: #b9b9b9;
       background-image: linear-gradient(to bottom, #eaeaed, #e4e4e8); }
 
@@ -4159,7 +4166,7 @@ dockpaned {
 
 dockoverlayedge {
   background-color: #F5F5F7; }
-  dockoverlayedge tabstrip {
+  dockoverlayedge docktabstrip {
     padding: 0;
     border: none; }
   dockoverlayedge.left-edge tab:checked,
