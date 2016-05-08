@@ -1,4 +1,25 @@
 //
+// GNOME Terminal
+//
+$terminal_bg: nth($_base_color, 2);
+
+terminal-window {
+  junction, scrollbar trough {
+    background-color: $terminal_bg;
+    border-color: $terminal_bg;
+    border-image: none;
+  }
+
+  scrollbar.vertical slider {
+    @include _border(scrollbar-slider-dark, $prefix:assets, $radius: 0, $width: 0, $image-width: 3 2 3 2 / 3px 2px 3px 2px);
+
+    &:hover { @include _border(scrollbar-slider-hover-dark, $prefix:assets, $radius: 0, $width: 0, $image-width: 3 2 3 2 / 3px 2px 3px 2px); }
+
+    &:active { @include _border(scrollbar-slider-active-dark, $prefix:assets, $radius: 0, $width: 0, $image-width: 3 2 3 2 / 3px 2px 3px 2px); }
+  }
+}
+
+//
 // Nautilus
 //
 .nautilus-canvas-item {

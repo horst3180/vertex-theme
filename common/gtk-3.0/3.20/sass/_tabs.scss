@@ -81,3 +81,118 @@ $tab_asset_suffix: if($darker=='false', $asset_suffix, -darker);
     }
   }
 }
+
+// Gnome Terminal
+terminal-window notebook {
+
+  > header.top {
+    background-color: lighten($terminal_bg, 2%);
+
+    box-shadow: inset 0 5px transparentize(black, 0.99),
+                inset 0 4px transparentize(black, 0.985),
+                inset 0 3px transparentize(black, 0.98), 
+                inset 0 2px transparentize(black, 0.975), 
+                inset 0 1px transparentize(black, 0.97),
+                inset 0 -1px darken($terminal_bg, 5%),
+                inset 0 1px darken($terminal_bg, 5%);
+
+    button {
+      padding: 0;
+      min-width: 24px;
+      min-height: 24px;
+
+      color: mix(nth($_wm_title, 2), $terminal_bg, 65%);
+      text-shadow: 0 -1px nth($_wm_title_shadow, 2);
+      -gtk-icon-shadow: 0 -1px nth($_wm_title_shadow, 2);
+
+      &:hover { @include button(hover, $dark:'true'); }
+      &:active, &:checked { @include button(active, $dark:'true'); }
+    }
+
+    > tabs > tab {
+
+      label {
+        color: mix(nth($_wm_title, 2), $terminal_bg, 65%);
+        text-shadow: 0 -1px nth($_wm_title_shadow, 2);
+        -gtk-icon-shadow: 0 -1px nth($_wm_title_shadow, 2);
+      }
+
+      &:hover label { color: nth($_wm_title, 2); }
+
+      &:checked label {
+        color: $wm_title;
+        text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+        -gtk-icon-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+      }
+
+      border-image: linear-gradient(to bottom,
+                                    darken($terminal_bg, 5%) 0px,
+                                    darken($terminal_bg, 5%) 1px,
+                                    transparentize(darken($terminal_bg, 5%), 0.8)) 0 1 0 1;
+
+      &:hover {
+        background-color: lighten($terminal_bg, 4%);
+        border-color: darken($terminal_bg, 5%);
+        box-shadow: inset 0 1px darken($terminal_bg, 5%);
+      }
+
+      &:checked {
+        margin-left: -4px;
+        margin-right: -5px;
+
+        background-color: transparent;
+        box-shadow: none;
+
+        background-image: linear-gradient(to bottom,
+                                          $primary_toolbar_bg_a,
+                                          $primary_toolbar_bg_b);
+
+        @include _border(terminal-tab-active#{$tab_asset_suffix}, $width: 0 5px 1px 5px, $image-width: 2 7 2 7 / 2px 7px 2px 7px);
+      }
+
+      // tab close button
+      button.flat {
+        color: mix(nth($_wm_title, 2), $terminal_bg, 65%);
+        -gtk-icon-shadow: 0 -1px nth($_wm_title_shadow, 2);
+
+        &:hover {
+          color: lighten(red, 10%);
+          border: 1px solid transparentize(white, 0.9);
+        }
+        &:active {
+          color: nth($_wm_title, 2);
+          border: 1px solid nth($_borders_color, 2);
+          background-image: linear-gradient(to bottom, darken(nth($_bg_color, 2), 10%),
+                                                       darken(nth($_bg_color, 2), 5%));
+        }
+      }
+      &:hover button.flat:not(:hover):not(:active) {
+        color: nth($_wm_title, 2);
+      }
+      &:checked button.flat {
+        &, &:not(:hover):not(:active) { color: $wm_title; }
+
+        -gtk-icon-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+
+        &:hover {
+          color: lighten(red, 10%);
+          border: 1px solid if($variant=='dark' or $darker=='true', transparentize(white, 0.9), $borders_color);
+        }
+
+        &:active {
+          color: $wm_title;
+
+          background-image: linear-gradient(to bottom, darken($bg_color, 10%),
+                                                       darken($bg_color, 5%));
+
+          @if $darker=='true' or $variant=='dark' {
+            border: 1px solid nth($_borders_color, 2);
+            background-image: linear-gradient(to bottom, darken(nth($_bg_color, 2), 10%),
+                                                         darken(nth($_bg_color, 2), 5%));
+          }
+        }
+      }
+    }
+  }
+}
+

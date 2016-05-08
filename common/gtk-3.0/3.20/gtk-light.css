@@ -3926,6 +3926,30 @@ GraniteWidgetsPopOver * {
 list .h4 {
   padding-left: 6px; }
 
+terminal-window junction, terminal-window scrollbar trough {
+  background-color: #2B2B2C;
+  border-color: #2B2B2C;
+  border-image: none; }
+
+terminal-window scrollbar.vertical slider {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-dark.png"), url("assets/scrollbar-slider-dark@2.png")) 3 2 3 2/3px 2px 3px 2px stretch;
+  border-radius: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent; }
+  terminal-window scrollbar.vertical slider:hover {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"), url("assets/scrollbar-slider-hover-dark@2.png")) 3 2 3 2/3px 2px 3px 2px stretch;
+    border-radius: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent; }
+  terminal-window scrollbar.vertical slider:active {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"), url("assets/scrollbar-slider-active-dark@2.png")) 3 2 3 2/3px 2px 3px 2px stretch;
+    border-radius: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent; }
+
 .nautilus-canvas-item {
   border-radius: 2px; }
 
@@ -4820,6 +4844,89 @@ popover.budgie-menu row:selected button {
     .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.flat:active,
     .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.sidebar-button:active {
       color: #3c3c3e; }
+
+terminal-window notebook > header.top {
+  background-color: #303031;
+  box-shadow: inset 0 5px rgba(0, 0, 0, 0.01), inset 0 4px rgba(0, 0, 0, 0.015), inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.025), inset 0 1px rgba(0, 0, 0, 0.03), inset 0 -1px #1e1e1f, inset 0 1px #1e1e1f; }
+  terminal-window notebook > header.top button {
+    padding: 0;
+    min-width: 24px;
+    min-height: 24px;
+    color: #adadaf;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8); }
+    terminal-window notebook > header.top button:hover {
+      color: #F3F3F5;
+      outline-color: rgba(243, 243, 245, 0.3);
+      background-image: linear-gradient(to bottom, #5e6064, #393A3B);
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+      -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+      border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+      border-radius: 2px;
+      border-width: 1px 1px 2px 1px;
+      border-style: solid;
+      border-color: transparent; }
+    terminal-window notebook > header.top button:active, terminal-window notebook > header.top button:checked {
+      color: #ffffff;
+      outline-color: rgba(255, 255, 255, 0.3);
+      background-image: linear-gradient(to bottom, #242525, #37383A);
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+      -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+      border-image: -gtk-scaled(url("borders/button-active-border-dark.png"), url("borders/button-active-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
+      border-radius: 2px;
+      border-width: 1px 1px 2px 1px;
+      border-style: solid;
+      border-color: transparent; }
+  terminal-window notebook > header.top > tabs > tab {
+    border-image: linear-gradient(to bottom, #1e1e1f 0px, #1e1e1f 1px, rgba(30, 30, 31, 0.2)) 0 1 0 1; }
+    terminal-window notebook > header.top > tabs > tab label {
+      color: #adadaf;
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+      -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8); }
+    terminal-window notebook > header.top > tabs > tab:hover label {
+      color: #F3F3F5; }
+    terminal-window notebook > header.top > tabs > tab:checked label {
+      color: #3c3c3e;
+      text-shadow: 0 1px white;
+      -gtk-icon-shadow: 0 1px white; }
+    terminal-window notebook > header.top > tabs > tab:hover {
+      background-color: #353536;
+      border-color: #1e1e1f;
+      box-shadow: inset 0 1px #1e1e1f; }
+    terminal-window notebook > header.top > tabs > tab:checked {
+      margin-left: -4px;
+      margin-right: -5px;
+      background-color: transparent;
+      box-shadow: none;
+      background-image: linear-gradient(to bottom, #F5F5F7, #eaeaee);
+      border-image: -gtk-scaled(url("borders/terminal-tab-active.png"), url("borders/terminal-tab-active@2.png")) 2 7 2 7/2px 7px 2px 7px stretch;
+      border-radius: 2px;
+      border-width: 0 5px 1px 5px;
+      border-style: solid;
+      border-color: transparent; }
+    terminal-window notebook > header.top > tabs > tab button.flat, terminal-window notebook > header.top > tabs > tab button.sidebar-button {
+      color: #adadaf;
+      -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8); }
+      terminal-window notebook > header.top > tabs > tab button.flat:hover, terminal-window notebook > header.top > tabs > tab button.sidebar-button:hover {
+        color: #ff3333;
+        border: 1px solid rgba(255, 255, 255, 0.1); }
+      terminal-window notebook > header.top > tabs > tab button.flat:active, terminal-window notebook > header.top > tabs > tab button.sidebar-button:active {
+        color: #F3F3F5;
+        border: 1px solid #171819;
+        background-image: linear-gradient(to bottom, #1c1d1e, #29292b); }
+    terminal-window notebook > header.top > tabs > tab:hover button.flat:not(:hover):not(:active), terminal-window notebook > header.top > tabs > tab:hover button.sidebar-button:not(:hover):not(:active) {
+      color: #F3F3F5; }
+    terminal-window notebook > header.top > tabs > tab:checked button.flat, terminal-window notebook > header.top > tabs > tab:checked button.sidebar-button {
+      -gtk-icon-shadow: 0 1px white; }
+      terminal-window notebook > header.top > tabs > tab:checked button.flat, terminal-window notebook > header.top > tabs > tab:checked button.sidebar-button, terminal-window notebook > header.top > tabs > tab:checked button.flat:not(:hover):not(:active), terminal-window notebook > header.top > tabs > tab:checked button.sidebar-button:not(:hover):not(:active) {
+        color: #3c3c3e; }
+      terminal-window notebook > header.top > tabs > tab:checked button.flat:hover, terminal-window notebook > header.top > tabs > tab:checked button.sidebar-button:hover {
+        color: #ff3333;
+        border: 1px solid #b9b9b9; }
+      terminal-window notebook > header.top > tabs > tab:checked button.flat:active, terminal-window notebook > header.top > tabs > tab:checked button.sidebar-button:active {
+        color: #3c3c3e;
+        background-image: linear-gradient(to bottom, #d9d9e0, #e7e7ec); }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
