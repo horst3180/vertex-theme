@@ -111,48 +111,83 @@
 
 /*Selected tab background */
 .tabbrowser-tab[selected="true"],
+.tabbrowser-tab[visuallyselected="true"],
 .tabbrowser-tab[selected="true"]:hover,
-.tabbrowser-tab:not([selected="true"]):hover {
+.tabbrowser-tab[visuallyselected="true"]:hover,
+.tabbrowser-tab:not([selected="true"]):hover, 
+
+.tabbrowser-tab:not([visuallyselected="true"]):hover{
   background-color: rgba(0,0,0,0) !important;
   color: #3c3c3c !important;
   text-shadow: 0 1px rgba(255,255,255,0.95) !important;
 }
 
-.tabbrowser-tab:not([selected="true"]) {
+.tabbrowser-tab:not([selected="true"]), .tabbrowser-tab:not([visuallyselected="true"]) {
   background-color: rgba(0,0,0,0) !important;
   color: #818182 !important;
   text-shadow: 0 1px rgba(255,255,255,0.95) !important;
 }
 
-.tab-background-middle[selected="true"] {
+.tab-background-middle[selected="true"], .tab-background-middle[visuallyselected="true"] {
   background-color: rgba(0,0,0,0) !important;
 }
 
 .tab-background-start[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
-.tab-background-end[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before {
+.tab-background-end[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before,
+.tab-background-start[visuallyselected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+.tab-background-end[visuallyselected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before {
   background-image: url("images/tabActiveStart.svg") !important;
 }
 
 .tab-background-end[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
-.tab-background-start[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before {
+.tab-background-start[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before,
+.tab-background-end[visuallyselected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+.tab-background-start[visuallyselected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before {
   background-image: url("images/tabActiveEnd.svg") !important;
 }
 
-.tab-background-middle[selected=true] {
+.tab-background-middle[selected=true], .tab-background-middle[visuallyselected=true] {
   background-image: url("images/tabActiveMiddle.svg") !important;
 }
 
+.tab-background-middle:not([visuallyselected=true]) {
+
+
+  background-image: none !important;
+}
+.tab-background-middle:not([visuallyselected=true]):hover {
+
+
+
+  background-image: none !important;
+  border-bottom-color: rgb(60, 60, 60) !important;
+  border-top-color: rgb(60, 60, 60) !important;
+  color: rgb(60, 60, 60) !important;
+  outline-color: rgb(60, 60, 60) !important;
+  text-decoration-color: rgb(60, 60, 60) !important;
+  text-emphasis-color: rgb(60, 60, 60) !important;
+  -moz-column-rule-color: rgb(60, 60, 60) !important;
+  -webkit-text-fill-color: rgb(60, 60, 60) !important;
+  -webkit-text-stroke-color: rgb(60, 60, 60) !important;
+}
+
 .tab-background-start[selected=true]:-moz-locale-dir(ltr)::after,
-.tab-background-end[selected=true]:-moz-locale-dir(rtl)::after {
+.tab-background-end[selected=true]:-moz-locale-dir(rtl)::after,
+.tab-background-start[visuallyselected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-end[visuallyselected=true]:-moz-locale-dir(rtl)::after {
   background-image: none !important;
 }
 
 .tab-background-end[selected=true]:-moz-locale-dir(ltr)::after,
-.tab-background-start[selected=true]:-moz-locale-dir(rtl)::after {
+.tab-background-start[selected=true]:-moz-locale-dir(rtl)::after,
+.tab-background-end[visuallyselected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-start[visuallyselected=true]:-moz-locale-dir(rtl)::after {
   background-image: none !important;
 }
 
-.tab-background-middle::after[selected=true] {
+.tab-background-middle::after[selected=true],
+
+.tab-background-middle::after[visuallyselected=true] {
   background-image: none !important;
 }
 
@@ -160,7 +195,9 @@
    Also show separators beside the selected tab when dragging it. */
 #tabbrowser-tabs[movingtab] > .tabbrowser-tab[beforeselected]:not([last-visible-tab])::after,
 .tabbrowser-tab:not([selected]):not([afterselected-visible]):not([afterhovered]):not([first-visible-tab]):not(:hover)::before,
-#tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected]):not([beforehovered]):not(:hover)::after {
+#tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected]):not([beforehovered]):not(:hover)::after,
+.tabbrowser-tab:not([visuallyselected]):not([afterselected-visible]):not([afterhovered]):not([first-visible-tab]):not(:hover)::before,
+#tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([visuallyselected]):not([beforehovered]):not(:hover)::after {
   -moz-margin-start: -1px !important;
   -moz-margin-end: -1px !important;
   background-image: url(images/tab-separator.svg) !important;
@@ -174,6 +211,7 @@
 
 /* new tab button border and gradient on hover */
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([visuallyselected=true]),
 .tabs-newtab-button:hover {
   background-image: url(images/tab-start-hover.svg),
                     url(images/tab-middle-hover.svg),
