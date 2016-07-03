@@ -8,6 +8,8 @@
   -GtkTreeView-horizontal-separator: 4;
   -GtkWidget-text-handle-width: 20;
   -GtkWidget-text-handle-height: 20;
+  -GtkWidget-link-color: #33ccff;
+  -GtkWidget-link-color-visited: #cc66cc;
   -GtkDialog-button-spacing: 4;
   -GtkDialog-action-area-border: 0;
   outline-color: rgba(243, 243, 245, 0.3);
