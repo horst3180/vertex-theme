@@ -135,7 +135,7 @@ entry {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   background-color: transparent;
   color: #F3F3F5;
-  background-image: linear-gradient(to bottom, #2B2B2C);
+  background-image: linear-gradient(to bottom, #2B2B2C, #2B2B2C);
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
   border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
@@ -166,7 +166,7 @@ entry {
     box-shadow: none; }
   entry:focus {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #2B2B2C);
+    background-image: linear-gradient(to bottom, #2B2B2C, #2B2B2C);
     box-shadow: none;
     border-image: -gtk-scaled(url("borders/entry-focused-border-dark.png"), url("borders/entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
@@ -176,7 +176,7 @@ entry {
   entry:disabled {
     background-color: transparent;
     color: #949597;
-    background-image: linear-gradient(to bottom, #434446);
+    background-image: linear-gradient(to bottom, #434446, #434446);
     box-shadow: none;
     border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
@@ -185,21 +185,21 @@ entry {
     border-color: transparent; }
   entry.warning {
     color: #f57900;
-    background-image: linear-gradient(to bottom, #533b23); }
+    background-image: linear-gradient(to bottom, #533b23, #533b23); }
     entry.warning image {
       color: #f57900; }
     entry.warning selection, entry.warning selection:focus {
       background-color: #f57900; }
   entry.error {
     color: #cc0000;
-    background-image: linear-gradient(to bottom, #4b2223); }
+    background-image: linear-gradient(to bottom, #4b2223, #4b2223); }
     entry.error image {
       color: #cc0000; }
     entry.error selection, entry.error selection:focus {
       background-color: #cc0000; }
   entry.search-missing {
     color: #cc0000;
-    background-image: linear-gradient(to bottom, #4b2223); }
+    background-image: linear-gradient(to bottom, #4b2223, #4b2223); }
     entry.search-missing image {
       color: #cc0000; }
     entry.search-missing selection, entry.search-missing selection:focus {
@@ -207,7 +207,7 @@ entry {
   .osd entry {
     background-color: transparent;
     color: white;
-    background-image: linear-gradient(to bottom, rgba(52, 52, 54, 0.75));
+    background-image: linear-gradient(to bottom, rgba(52, 52, 54, 0.75), rgba(52, 52, 54, 0.75));
     border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -216,7 +216,7 @@ entry {
     .osd entry:focus {
       background-color: transparent;
       color: white;
-      background-image: linear-gradient(to bottom, rgba(52, 52, 54, 0.75));
+      background-image: linear-gradient(to bottom, rgba(52, 52, 54, 0.75), rgba(52, 52, 54, 0.75));
       border-image: -gtk-scaled(url("borders/entry-focused-border-dark.png"), url("borders/entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
       border-radius: 2px;
       border-width: 1px 1px 2px 1px;
@@ -225,7 +225,7 @@ entry {
     .osd entry:disabled {
       background-color: transparent;
       color: rgba(255, 255, 255, 0.4);
-      background-image: linear-gradient(to bottom, rgba(65, 65, 67, 0.7));
+      background-image: linear-gradient(to bottom, rgba(65, 65, 67, 0.7), rgba(65, 65, 67, 0.7));
       box-shadow: none;
       border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
       border-radius: 2px;
@@ -437,7 +437,7 @@ button {
     -gtk-icon-shadow: none; }
   button:disabled {
     color: #949597;
-    background-image: linear-gradient(to bottom, #434446);
+    background-image: linear-gradient(to bottom, #434446, #434446);
     text-shadow: none;
     -gtk-icon-shadow: none;
     border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -507,7 +507,7 @@ button {
       border-radius: 2px; }
     button.osd:disabled {
       color: rgba(255, 255, 255, 0.4);
-      background-image: linear-gradient(to bottom, rgba(65, 65, 67, 0.7));
+      background-image: linear-gradient(to bottom, rgba(65, 65, 67, 0.7), rgba(65, 65, 67, 0.7));
       text-shadow: none;
       -gtk-icon-shadow: none;
       border: 1px solid rgba(0, 0, 0, 0.75);
@@ -545,7 +545,7 @@ button {
     .osd button:disabled,
     .osd .linked:not(.vertical) > button:disabled {
       color: rgba(255, 255, 255, 0.4);
-      background-image: linear-gradient(to bottom, rgba(65, 65, 67, 0.7));
+      background-image: linear-gradient(to bottom, rgba(65, 65, 67, 0.7), rgba(65, 65, 67, 0.7));
       text-shadow: none;
       -gtk-icon-shadow: none; }
     .osd button.flat, .osd button.sidebar-button, .osd button.flat:only-child:not(:hover), .osd button.sidebar-button:only-child:not(:hover),
@@ -616,13 +616,13 @@ button {
       border-color: transparent; }
     button.suggested-action:disabled {
       color: rgba(255, 255, 255, 0.6);
-      background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.8));
+      background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.8), rgba(64, 124, 188, 0.8));
       text-shadow: none;
       -gtk-icon-shadow: none; }
       button.suggested-action:disabled > image, button.suggested-action:disabled label {
         color: inherit; }
       button.suggested-action:disabled:active, button.suggested-action:disabled:checked {
-        background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.9)); }
+        background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.9), rgba(64, 124, 188, 0.9)); }
         button.suggested-action:disabled:active > image, button.suggested-action:disabled:active label, button.suggested-action:disabled:checked > image, button.suggested-action:disabled:checked label {
           color: inherit; }
   button.destructive-action {
@@ -648,13 +648,13 @@ button {
       border-color: transparent; }
     button.destructive-action:disabled {
       color: rgba(255, 255, 255, 0.6);
-      background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.8));
+      background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.8), rgba(232, 96, 96, 0.8));
       text-shadow: none;
       -gtk-icon-shadow: none; }
       button.destructive-action:disabled > image, button.destructive-action:disabled label {
         color: inherit; }
       button.destructive-action:disabled:active, button.destructive-action:disabled:checked {
-        background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.9)); }
+        background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.9), rgba(232, 96, 96, 0.9)); }
         button.destructive-action:disabled:active > image, button.destructive-action:disabled:active label, button.destructive-action:disabled:checked > image, button.destructive-action:disabled:checked label {
           color: inherit; }
   .stack-switcher > button {
@@ -721,7 +721,7 @@ button {
     border-color: transparent; }
   .inline-toolbar toolbutton > button:disabled {
     color: #949597;
-    background-image: linear-gradient(to bottom, #434446);
+    background-image: linear-gradient(to bottom, #434446, #434446);
     text-shadow: none;
     -gtk-icon-shadow: none;
     border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -1292,7 +1292,7 @@ headerbar,
         -gtk-icon-shadow: none; }
       headerbar.selection-mode button:disabled, .selection-mode.titlebar:not(headerbar) button:disabled {
         color: rgba(255, 255, 255, 0.7);
-        background-image: linear-gradient(to bottom, #39689f);
+        background-image: linear-gradient(to bottom, #39689f, #39689f);
         text-shadow: none;
         -gtk-icon-shadow: none;
         border-image: -gtk-scaled(url("borders/button-normal-border-suggested-dark.png"), url("borders/button-normal-border-suggested-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -1304,7 +1304,7 @@ headerbar,
           color: inherit; }
         headerbar.selection-mode button:disabled:active, headerbar.selection-mode button:disabled:checked, .selection-mode.titlebar:not(headerbar) button:disabled:active, .selection-mode.titlebar:not(headerbar) button:disabled:checked {
           color: rgba(255, 255, 255, 0.7);
-          background-image: linear-gradient(to bottom, #2b5489);
+          background-image: linear-gradient(to bottom, #2b5489, #2b5489);
           text-shadow: none;
           -gtk-icon-shadow: none;
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -1356,7 +1356,7 @@ headerbar,
           border-color: transparent; }
         headerbar.selection-mode button.suggested-action:disabled, .selection-mode.titlebar:not(headerbar) button.suggested-action:disabled {
           color: #949597;
-          background-image: linear-gradient(to bottom, #434446);
+          background-image: linear-gradient(to bottom, #434446, #434446);
           text-shadow: none;
           -gtk-icon-shadow: none;
           border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -1369,7 +1369,7 @@ headerbar,
     headerbar.selection-mode .selection-menu, .selection-mode.titlebar:not(headerbar) .selection-menu {
       border-image: none;
       border-color: rgba(64, 128, 251, 0);
-      background-image: linear-gradient(to bottom, rgba(64, 128, 251, 0));
+      background-image: linear-gradient(to bottom, rgba(64, 128, 251, 0), rgba(64, 128, 251, 0));
       box-shadow: none;
       padding-left: 10px;
       padding-right: 10px; }
@@ -1423,7 +1423,7 @@ window.csd > .titlebar:not(headerbar) {
 .raven entry, .drop-shadow entry, .budgie-session-dialog.background entry, .background.budgie-polkit-dialog entry {
   background-color: transparent;
   color: #F3F3F5;
-  background-image: linear-gradient(to bottom, #313132);
+  background-image: linear-gradient(to bottom, #313132, #313132);
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
   border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
@@ -1434,7 +1434,7 @@ window.csd > .titlebar:not(headerbar) {
     color: inherit; }
   .raven entry:focus, .drop-shadow entry:focus, .budgie-session-dialog.background entry:focus, .background.budgie-polkit-dialog entry:focus {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #313132);
+    background-image: linear-gradient(to bottom, #313132, #313132);
     box-shadow: none;
     border-image: -gtk-scaled(url("borders/entry-focused-border-dark.png"), url("borders/entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
@@ -1444,7 +1444,7 @@ window.csd > .titlebar:not(headerbar) {
   .raven entry:disabled, .drop-shadow entry:disabled, .budgie-session-dialog.background entry:disabled, .background.budgie-polkit-dialog entry:disabled {
     background-color: transparent;
     color: #949597;
-    background-image: linear-gradient(to bottom, #434446);
+    background-image: linear-gradient(to bottom, #434446, #434446);
     box-shadow: none;
     border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
@@ -1453,7 +1453,7 @@ window.csd > .titlebar:not(headerbar) {
     border-color: transparent; }
   .raven entry.warning, .drop-shadow entry.warning, .budgie-session-dialog.background entry.warning, .background.budgie-polkit-dialog entry.warning {
     color: #f57900;
-    background-image: linear-gradient(to bottom, #533b23);
+    background-image: linear-gradient(to bottom, #533b23, #533b23);
     text-shadow: none;
     -gtk-icon-shadow: none; }
     .raven entry.warning image, .drop-shadow entry.warning image, .budgie-session-dialog.background entry.warning image, .background.budgie-polkit-dialog entry.warning image {
@@ -1462,7 +1462,7 @@ window.csd > .titlebar:not(headerbar) {
       background-color: #f57900; }
   .raven entry.error, .drop-shadow entry.error, .budgie-session-dialog.background entry.error, .background.budgie-polkit-dialog entry.error {
     color: #cc0000;
-    background-image: linear-gradient(to bottom, #4b2223);
+    background-image: linear-gradient(to bottom, #4b2223, #4b2223);
     text-shadow: none;
     -gtk-icon-shadow: none; }
     .raven entry.error image, .drop-shadow entry.error image, .budgie-session-dialog.background entry.error image, .background.budgie-polkit-dialog entry.error image {
@@ -1531,7 +1531,7 @@ window.csd > .titlebar:not(headerbar) {
     border-color: transparent; }
   .raven button:disabled, .drop-shadow button:disabled, .budgie-session-dialog.background button:disabled, .background.budgie-polkit-dialog button:disabled {
     color: #949597;
-    background-image: linear-gradient(to bottom, #434446);
+    background-image: linear-gradient(to bottom, #434446, #434446);
     text-shadow: none;
     -gtk-icon-shadow: none;
     border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
@@ -1585,13 +1585,13 @@ window.csd > .titlebar:not(headerbar) {
       border-color: transparent; }
     .raven button.suggested-action:disabled, .drop-shadow button.suggested-action:disabled, .budgie-session-dialog.background button.suggested-action:disabled, .background.budgie-polkit-dialog button.suggested-action:disabled {
       color: rgba(255, 255, 255, 0.6);
-      background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.8));
+      background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.8), rgba(64, 124, 188, 0.8));
       text-shadow: none;
       -gtk-icon-shadow: none; }
       .raven button.suggested-action:disabled > label, .drop-shadow button.suggested-action:disabled > label, .budgie-session-dialog.background button.suggested-action:disabled > label, .background.budgie-polkit-dialog button.suggested-action:disabled > label, .raven button.suggested-action:disabled image, .drop-shadow button.suggested-action:disabled image, .budgie-session-dialog.background button.suggested-action:disabled image, .background.budgie-polkit-dialog button.suggested-action:disabled image {
         color: inherit; }
       .raven button.suggested-action:disabled:active, .drop-shadow button.suggested-action:disabled:active, .budgie-session-dialog.background button.suggested-action:disabled:active, .background.budgie-polkit-dialog button.suggested-action:disabled:active, .raven button.suggested-action:disabled:checked, .drop-shadow button.suggested-action:disabled:checked, .budgie-session-dialog.background button.suggested-action:disabled:checked, .background.budgie-polkit-dialog button.suggested-action:disabled:checked {
-        background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.9)); }
+        background-image: linear-gradient(to bottom, rgba(64, 124, 188, 0.9), rgba(64, 124, 188, 0.9)); }
         .raven button.suggested-action:disabled:active > label, .drop-shadow button.suggested-action:disabled:active > label, .budgie-session-dialog.background button.suggested-action:disabled:active > label, .background.budgie-polkit-dialog button.suggested-action:disabled:active > label, .raven button.suggested-action:disabled:active image, .drop-shadow button.suggested-action:disabled:active image, .budgie-session-dialog.background button.suggested-action:disabled:active image, .background.budgie-polkit-dialog button.suggested-action:disabled:active image, .raven button.suggested-action:disabled:checked > label, .drop-shadow button.suggested-action:disabled:checked > label, .budgie-session-dialog.background button.suggested-action:disabled:checked > label, .background.budgie-polkit-dialog button.suggested-action:disabled:checked > label, .raven button.suggested-action:disabled:checked image, .drop-shadow button.suggested-action:disabled:checked image, .budgie-session-dialog.background button.suggested-action:disabled:checked image, .background.budgie-polkit-dialog button.suggested-action:disabled:checked image {
           color: inherit; }
   .raven button.destructive-action, .drop-shadow button.destructive-action, .budgie-session-dialog.background button.destructive-action, .background.budgie-polkit-dialog button.destructive-action {
@@ -1617,13 +1617,13 @@ window.csd > .titlebar:not(headerbar) {
       border-color: transparent; }
     .raven button.destructive-action:disabled, .drop-shadow button.destructive-action:disabled, .budgie-session-dialog.background button.destructive-action:disabled, .background.budgie-polkit-dialog button.destructive-action:disabled {
       color: rgba(255, 255, 255, 0.6);
-      background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.8));
+      background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.8), rgba(232, 96, 96, 0.8));
       text-shadow: none;
       -gtk-icon-shadow: none; }
       .raven button.destructive-action:disabled > label, .drop-shadow button.destructive-action:disabled > label, .budgie-session-dialog.background button.destructive-action:disabled > label, .background.budgie-polkit-dialog button.destructive-action:disabled > label, .raven button.destructive-action:disabled image, .drop-shadow button.destructive-action:disabled image, .budgie-session-dialog.background button.destructive-action:disabled image, .background.budgie-polkit-dialog button.destructive-action:disabled image {
         color: inherit; }
       .raven button.destructive-action:disabled:active, .drop-shadow button.destructive-action:disabled:active, .budgie-session-dialog.background button.destructive-action:disabled:active, .background.budgie-polkit-dialog button.destructive-action:disabled:active, .raven button.destructive-action:disabled:checked, .drop-shadow button.destructive-action:disabled:checked, .budgie-session-dialog.background button.destructive-action:disabled:checked, .background.budgie-polkit-dialog button.destructive-action:disabled:checked {
-        background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.9)); }
+        background-image: linear-gradient(to bottom, rgba(232, 96, 96, 0.9), rgba(232, 96, 96, 0.9)); }
         .raven button.destructive-action:disabled:active > label, .drop-shadow button.destructive-action:disabled:active > label, .budgie-session-dialog.background button.destructive-action:disabled:active > label, .background.budgie-polkit-dialog button.destructive-action:disabled:active > label, .raven button.destructive-action:disabled:active image, .drop-shadow button.destructive-action:disabled:active image, .budgie-session-dialog.background button.destructive-action:disabled:active image, .background.budgie-polkit-dialog button.destructive-action:disabled:active image, .raven button.destructive-action:disabled:checked > label, .drop-shadow button.destructive-action:disabled:checked > label, .budgie-session-dialog.background button.destructive-action:disabled:checked > label, .background.budgie-polkit-dialog button.destructive-action:disabled:checked > label, .raven button.destructive-action:disabled:checked image, .drop-shadow button.destructive-action:disabled:checked image, .budgie-session-dialog.background button.destructive-action:disabled:checked image, .background.budgie-polkit-dialog button.destructive-action:disabled:checked image {
           color: inherit; }
 
@@ -2468,7 +2468,7 @@ scrollbar.horizontal slider {
   min-width: 64px; }
 
 switch {
-  font: 1;
+  font-size: 1px;
   min-width: 60px;
   min-height: 27px;
   margin: 0 -8px; }
@@ -3308,7 +3308,7 @@ placessidebar row {
   placessidebar row.sidebar-placeholder-row {
     padding: 0 8px;
     min-height: 2px;
-    background-image: linear-gradient(to top, #4e9a06);
+    background-image: linear-gradient(to bottom, #4e9a06, #4e9a06);
     background-clip: content-box; }
   placessidebar row.sidebar-new-bookmark-row {
     color: #4080fb; }
@@ -3338,15 +3338,15 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: linear-gradient(to top, #171819);
+  background-image: linear-gradient(to bottom, #171819, #171819);
   background-size: 1px 1px; }
   paned > separator:selected {
-    background-image: linear-gradient(to top, #4080fb); }
+    background-image: linear-gradient(to bottom, #4080fb, #4080fb); }
   paned > separator.wide {
     min-width: 5px;
     min-height: 5px;
     background-color: #353638;
-    background-image: linear-gradient(to top, #171819), linear-gradient(to top, #171819);
+    background-image: linear-gradient(to bottom, #171819, #171819), linear-gradient(to bottom, #171819, #171819);
     background-size: 1px 1px, 1px 1px; }
 
 paned.horizontal > separator {
@@ -3534,7 +3534,7 @@ popover.background.touch-selection, .csd popover.background.touch-selection {
   font: initial; }
 
 .monospace {
-  font: Monospace; }
+  font-family: Monospace; }
 
 button.circular, button.nautilus-circular-button.image-button,
 button.circular-button {
@@ -3873,7 +3873,7 @@ GraniteWidgetsWelcome {
 
 GraniteWidgetsWelcome GtkLabel {
   color: #949597;
-  font: open sans 11;
+  font-size: 11px;
   text-shadow: none; }
 
 GraniteWidgetsWelcome .h1,
@@ -3893,7 +3893,7 @@ GraniteWidgetsPopOver {
   margin: 0; }
 
 .popover_bg {
-  background-image: linear-gradient(to bottom, #333436);
+  background-image: linear-gradient(to bottom, #333436, #333436);
   border: 1px solid rgba(0, 0, 0, 0.7); }
 
 GraniteWidgetsPopOver .sidebar.view, GraniteWidgetsPopOver iconview.sidebar,
@@ -3901,13 +3901,13 @@ GraniteWidgetsPopOver * {
   background-color: transparent; }
 
 .h1 {
-  font: open sans 24px; }
+  font-size: 24px; }
 
 .h2 {
-  font: open sans light 18px; }
+  font-size: 18px; }
 
 .h3 {
-  font: open sans 11px; }
+  font-size: 11px; }
 
 .h4,
 .category-label {
@@ -4336,7 +4336,7 @@ ClockBox {
 .marlin-pathbar.pathbar {
   background-color: transparent;
   color: #F3F3F5;
-  background-image: linear-gradient(to bottom, #2B2B2C);
+  background-image: linear-gradient(to bottom, #2B2B2C, #2B2B2C);
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
   border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
@@ -4345,7 +4345,7 @@ ClockBox {
   border-color: transparent; }
   .marlin-pathbar.pathbar:focus {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #2B2B2C);
+    background-image: linear-gradient(to bottom, #2B2B2C, #2B2B2C);
     box-shadow: none;
     border-image: -gtk-scaled(url("borders/entry-focused-border-dark.png"), url("borders/entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
@@ -4355,7 +4355,7 @@ ClockBox {
   .marlin-pathbar.pathbar:disabled {
     background-color: transparent;
     color: #949597;
-    background-image: linear-gradient(to bottom, #434446);
+    background-image: linear-gradient(to bottom, #434446, #434446);
     box-shadow: none;
     border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;

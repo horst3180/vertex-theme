@@ -151,7 +151,7 @@ GraniteWidgetsWelcome {
 
 GraniteWidgetsWelcome GtkLabel {
   color: mix($fg_color, $bg_color, 50%);
-  font: open sans 11;
+  font-size: 11px;
   text-shadow: none;
 }
 
@@ -182,7 +182,7 @@ GraniteWidgetsPopOver {
 }
 
 .popover_bg {
-  background-image: linear-gradient(to bottom, if($variant=='light', darken($base_color, 2%), mix($bg_color,$base_color, 80%)));
+  background-image: _solid(if($variant=='light', darken($base_color, 2%), mix($bg_color,$base_color, 80%)));
   border: 1px solid if($variant=='light', transparentize(black, 0.7), transparentize(black, 0.3));
 }
 
@@ -194,9 +194,9 @@ GraniteWidgetsPopOver * {
 //
 // Text Styles
 //
-.h1 { font: open sans 24px; }
-.h2 { font: open sans light 18px; }
-.h3 { font: open sans 11px; }
+.h1 { font-size: 24px; }
+.h2 { font-size: 18px; }
+.h3 { font-size: 11px; }
 .h4,
 .category-label {
     color: mix($bg_color, $text_color, 30%);

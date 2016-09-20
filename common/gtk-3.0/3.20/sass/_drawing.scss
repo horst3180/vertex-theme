@@ -8,11 +8,16 @@ $darker_asset_suffix: if($darker=='true' or $variant=='dark', '-dark', '');
 $shadow_pos: if($variant=='light', 1, -1); // controls the position of the text shadows
 $darker_shadow_pos: if($darker=='true', -1, 1);
 
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
 @function gtkalpha($c,$a) {
   @return unquote("alpha(#{$c},#{$a})");
 }
 
-$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+// Solid color image
+@function _solid($c) {
+  @return linear-gradient(to bottom, $c, $c);
+}
 
 @mixin _shadows($shadow1, $shadow2:none, $shadow3:none, $shadow4:none) {
 //
@@ -52,7 +57,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   @if $t==normal {
     color: $_fg;
-    background-image: linear-gradient(to bottom, $_bg);
+    background-image: _solid($_bg);
 
     box-shadow: inset 0 1px $entry_inset;
 
@@ -60,7 +65,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   @if $t==focus {
-    background-image: linear-gradient(to bottom, $_bg);
+    background-image: _solid($_bg);
 
     box-shadow: none;
 
@@ -69,7 +74,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   @if $t==insensitive {
     color: $_insensitive_fg;
-    background-image: linear-gradient(to bottom, $_insensitive_bg);
+    background-image: _solid($_insensitive_bg);
 
     box-shadow: none;
 
@@ -78,21 +83,21 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   @else if $t==osd {
     color: $osd_fg_color;
-    background-image: linear-gradient(to bottom, $osd_entry_bg);
+    background-image: _solid($osd_entry_bg);
 
     @include _border(entry-normal-border-dark);
   }
 
   @else if $t==osd-focus {
     color: $osd_fg_color;
-    background-image: linear-gradient(to bottom, $osd_entry_bg);
+    background-image: _solid($osd_entry_bg);
 
     @include _border(entry-focused-border-dark);
   }
 
   @else if $t==osd-insensitive {
     color: $osd_insensitive_fg_color;
-    background-image: linear-gradient(to bottom, $osd_insensitive_bg_color);
+    background-image: _solid($osd_insensitive_bg_color);
 
     box-shadow: none;
 
@@ -206,7 +211,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   //
 
     color: $_insensitive_fg;
-    background-image: linear-gradient(to bottom, $_insensitive_bg);
+    background-image: _solid($_insensitive_bg);
 
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -301,8 +306,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   // insensitive selection-mode button
   //
     color: transparentize($selected_fg_color, 0.3);
-    background-image: linear-gradient(to bottom,
-                                      mix($selection_bg_a, $selection_bg_b, 50%));
+    background-image: _solid(mix($selection_bg_a, $selection_bg_b, 50%));
 
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -319,8 +323,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   // insensitive pushed selection-mode button
   //
     color: transparentize($selected_fg_color, 0.3);
-    background-image: linear-gradient(to bottom,
-                                      lighten($selection_toolbar_button_b, 3%));
+    background-image: _solid(lighten($selection_toolbar_button_b, 3%));
 
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -409,7 +412,7 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   // insensitive osd button
   //
     color: $osd_insensitive_fg_color;
-    background-image: linear-gradient(to bottom, $osd_insensitive_bg_color);
+    background-image: _solid($osd_insensitive_bg_color);
 
     text-shadow: none;
     -gtk-icon-shadow: none;

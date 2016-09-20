@@ -244,7 +244,7 @@ entry {
                              (search-missing, $error_color) {
     &.#{$e_type} {
       color: $e_color;
-      background-image: linear-gradient(to bottom, mix($e_color, $entry_bg_color, 20%));
+      background-image: _solid(mix($e_color, $entry_bg_color, 20%));
 
       image { color: $e_color; }
 
@@ -485,7 +485,7 @@ button {
       }
       &:disabled {
         color: transparentize($selected_fg_color, 0.4);
-        background-image: linear-gradient(to bottom, transparentize(nth($b_color, 1), 0.2));
+        background-image: _solid(transparentize(nth($b_color, 1), 0.2));
 
         text-shadow: none;
         -gtk-icon-shadow: none;
@@ -493,7 +493,7 @@ button {
         > image, label { color: inherit; }
 
         &:active, &:checked {
-          background-image: linear-gradient(to bottom, transparentize(nth($b_color, 1), 0.1));
+          background-image: _solid(transparentize(nth($b_color, 1), 0.1));
 
           > image, label { color: inherit; }
         }
@@ -1102,8 +1102,7 @@ headerbar,
     .selection-menu {
       border-image: none;
       border-color: transparentize($selected_bg_color,1);
-      background-image: linear-gradient(to bottom,
-                        transparentize($selected_bg_color,1));
+      background-image: _solid(transparentize($selected_bg_color,1));
       box-shadow: none;
       padding-left: 10px;
       padding-right: 10px;
@@ -1202,7 +1201,7 @@ headerbar {
                                (error, $error_color) {
       &.#{$e_type} {
         color: $e_color;
-        background-image: linear-gradient(to bottom, mix($e_color, nth($_entry_bg_color, 2), 20%));
+        background-image: _solid(mix($e_color, nth($_entry_bg_color, 2), 20%));
         text-shadow: none;
         -gtk-icon-shadow: none;
 
@@ -1270,7 +1269,7 @@ headerbar {
         }
         &:disabled {
           color: transparentize($selected_fg_color, 0.4);
-          background-image: linear-gradient(to bottom, transparentize(nth($b_color, 1), 0.2));
+          background-image: _solid(transparentize(nth($b_color, 1), 0.2));
 
           text-shadow: none;
           -gtk-icon-shadow: none;
@@ -1278,7 +1277,7 @@ headerbar {
           > label, image { color: inherit; }
 
           &:active, &:checked {
-            background-image: linear-gradient(to bottom, transparentize(nth($b_color, 1), 0.1));
+            background-image: _solid(transparentize(nth($b_color, 1), 0.1));
 
             > label, image { color: inherit; }
           }
@@ -2118,7 +2117,7 @@ scrollbar {
 // Switch
 //
 switch {
-  font: 1;
+  font-size: 1px;
 
   min-width: 60px;
   min-height: 27px;
@@ -2941,7 +2940,7 @@ placessidebar {
     &.sidebar-placeholder-row {
       padding: 0 8px;
       min-height: 2px;
-      background-image: linear-gradient(to top, $drop_target_color);
+      background-image: _solid($drop_target_color);
       background-clip: content-box;
     }
 
@@ -2991,16 +2990,16 @@ paned {
     -gtk-icon-source: none;
     border-style: none;
     background-color: transparent;
-    background-image: linear-gradient(to top, $borders_color);
+    background-image: _solid($borders_color);
     background-size: 1px 1px;
 
-    &:selected { background-image: linear-gradient(to top, $selected_bg_color); }
+    &:selected { background-image: _solid($selected_bg_color); }
 
     &.wide {
       min-width: 5px;
       min-height: 5px;
       background-color: $bg_color;
-      background-image: linear-gradient(to top, $borders_color), linear-gradient(to top, $borders_color);
+      background-image: _solid($borders_color), _solid($borders_color);
       background-size: 1px 1px, 1px 1px;
     }
   }
@@ -3254,7 +3253,7 @@ button.color {
 
 // Decouple the font of context menus from their entry/textview
 .context-menu { font: initial; }
-.monospace { font: Monospace; }
+.monospace { font-family: Monospace; }
 
 //
 // Shortcuts Help
