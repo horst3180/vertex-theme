@@ -1,6 +1,6 @@
 AC_INIT(
     [vertex-theme],
-    [20160329],
+    [20160930],
     [https://github.com/horst3180/Vertex-theme/issues],
     [vertex-theme],
     [https://github.com/horst3180/Vertex-theme],
