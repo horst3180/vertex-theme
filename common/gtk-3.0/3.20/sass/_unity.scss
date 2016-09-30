@@ -17,7 +17,7 @@ UnityDecoration {
   -UnityDecoration-title-fade: 35px;
   -UnityDecoration-title-alignment: 0.0;
 
-  &.top {
+  .top {
     border: 1px solid $window_frame;
     border-bottom-width: 0;
     border-radius: 4px 4px 0 0;
@@ -40,8 +40,8 @@ UnityDecoration {
       color: transparentize($wm_title, 0.5);
     }
   }
-  &.left, &.right, &.bottom,
-  &.left:backdrop, &.right:backdrop, &.bottom:backdrop {
+  .left, .right, .bottom,
+  .left:backdrop, .right:backdrop, .bottom:backdrop {
     background-color: $window_frame;
     background-image: none;
   }

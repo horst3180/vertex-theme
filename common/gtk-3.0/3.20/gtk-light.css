@@ -5063,7 +5063,7 @@ UnityDecoration {
   -UnityDecoration-title-indent: 10px;
   -UnityDecoration-title-fade: 35px;
   -UnityDecoration-title-alignment: 0.0; }
-  UnityDecoration.top {
+  UnityDecoration .top {
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom-width: 0;
     border-radius: 4px 4px 0 0;
@@ -5072,11 +5072,12 @@ UnityDecoration {
     color: #3c3c3e;
     text-shadow: 0 1px white;
     box-shadow: inset 0 1px white; }
-    UnityDecoration.top:backdrop {
+    UnityDecoration .top:backdrop {
       border: 1px solid rgba(0, 0, 0, 0.3);
       border-bottom-width: 0;
       color: rgba(60, 60, 62, 0.5); }
-  UnityDecoration.left, UnityDecoration.right, UnityDecoration.bottom, UnityDecoration.left:backdrop, UnityDecoration.right:backdrop, UnityDecoration.bottom:backdrop {
+  UnityDecoration .left, UnityDecoration .right, UnityDecoration .bottom,
+  UnityDecoration .left:backdrop, UnityDecoration .right:backdrop, UnityDecoration .bottom:backdrop {
     background-color: rgba(0, 0, 0, 0.3);
     background-image: none; }
 
