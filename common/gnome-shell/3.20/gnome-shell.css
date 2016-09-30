@@ -432,6 +432,23 @@ StScrollBar {
 .audio-selection-device-icon {
   icon-size: 64px; }
 
+.access-dialog {
+  spacing: 30px; }
+  .access-dialog-main-layout {
+    padding: 12px 20px 0;
+    spacing: 12px; }
+  .access-dialog-content {
+    max-width: 28em;
+    spacing: 20px; }
+  .access-dialog-icon {
+    min-width: 48px;
+    icon-size: 48px; }
+  .access-dialog-title {
+    font-weight: bold; }
+  .access-dialog-subtitle {
+    color: #F3F3F5;
+    font-weight: bold; }
+
 .geolocation-dialog {
   spacing: 30px; }
   .geolocation-dialog-main-layout {
@@ -543,6 +560,9 @@ StScrollBar {
     border-image: url("assets/misc/slider-osd.svg") 8;
     border-radius: 0;
     color: #4080fb; }
+  .osd-window .level-bar {
+    background-color: #4080fb;
+    border-radius: 2px; }
 
 .resize-popup {
   color: white;
@@ -594,6 +614,9 @@ StScrollBar {
   font-size: 34pt;
   width: 96px;
   height: 96px; }
+
+.cycler-highlight {
+  border: 5px solid #4080fb; }
 
 .workspace-switcher {
   background: transparent;
