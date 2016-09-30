@@ -82,9 +82,6 @@ $disk_space_free: darken($bg_color, 3%);
   }
 }
 
-// View
-.nautilus-list-view .view { border-bottom: 1px solid transparentize($borders_color, 0.7); }
-
 // Batch renaming dialog
 .conflict-row.activatable {
   &, &:active {

@@ -3990,9 +3990,6 @@ terminal-window scrollbar.vertical slider {
     background-color: #2e2e30;
     border-color: #151516; }
 
-.nautilus-list-view .view, .nautilus-list-view iconview {
-  border-bottom: 1px solid rgba(23, 24, 25, 0.3); }
-
 .conflict-row.activatable, .conflict-row.activatable:active {
   color: #ffffff;
   background-color: #cc0000; }

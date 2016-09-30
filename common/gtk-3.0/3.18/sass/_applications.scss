@@ -122,9 +122,6 @@ $disk_space_free: darken($bg_color, 3%);
   @extend %circular-button;
 }
 
-// View
-NautilusListView .view { border-bottom: 1px solid transparentize($borders_color, 0.7); }
-
 //
 // Nemo
 //

@@ -3686,9 +3686,6 @@ NautilusQueryEditor .search-bar.toolbar {
 .nautilus-circular-button.button.image-button {
   padding: 8px; }
 
-NautilusListView .view {
-  border-bottom: 1px solid rgba(23, 24, 25, 0.3); }
-
 NemoWindow .sidebar .frame {
   border-width: 0; }
 

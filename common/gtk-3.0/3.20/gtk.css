@@ -4001,9 +4001,6 @@ terminal-window scrollbar.vertical slider {
     background-color: #ededf0;
     border-color: #d0d0da; }
 
-.nautilus-list-view .view, .nautilus-list-view iconview {
-  border-bottom: 1px solid rgba(185, 185, 185, 0.3); }
-
 .conflict-row.activatable, .conflict-row.activatable:active {
   color: #ffffff;
   background-color: #cc0000; }
