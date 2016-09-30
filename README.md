@@ -6,7 +6,7 @@ The theme comes with three variants to choose from. The default variant with dar
 
 ### Requirements
 
-* At least Gnome/GTK 3.10. This theme works with all versions up to 3.20.
+* At least Gnome/GTK 3.10. This theme works with all versions up to 3.22.
 * The `gnome-themes-standard` package
 * The murrine engine. This has different names depending on your distro.
   * `gtk-engine-murrine` (Arch Linux)
@@ -18,12 +18,12 @@ The theme comes with three variants to choose from. The default variant with dar
 Main distributions that meet these requirements are
 
 * Arch Linux and Arch Linux based distros
-* Ubuntu 14.04 - 16.04
+* Ubuntu 14.04 or newer
 * elementary OS Freya
 * Linux Mint 17.1
 * Debian 8, Testing or Unstable
 * Gentoo
-* Fedora 20 - 24
+* Fedora 20 or newer
 * OpenSuse 13.1, 13.2, Leap 42.1 and Tumbleweed
 * Solus
 
@@ -137,7 +137,7 @@ Ubuntu-Software-Center doesn't play nice with dark themes. If you are using Vert
 To fix this, install the Ubuntu-Software-Center fix. Instructions and relevant files are included in the `extra/Ubuntu-Software-Center` folder.
 
 
-### Bug reporting
+### Bugs
 If you find a bug, please report it at https://github.com/horst3180/Vertex-theme/issues
 
 ![alt tag](http://orig09.deviantart.net/c221/f/2015/066/0/4/vertex___theme_by_horst3180-d7s7ycx.jpg)
