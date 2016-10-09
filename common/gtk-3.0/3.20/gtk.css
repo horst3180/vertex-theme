@@ -4605,7 +4605,7 @@ button.budgie-menu-launcher {
 .user-menu {
   padding: 10px; }
   .user-menu .content-box separator {
-    background-color: tranparentize(#3c3c3e, 0.85); }
+    background-color: rgba(60, 60, 62, 0.15); }
   .user-menu list,
   .user-menu row.activatable {
     background: none;
