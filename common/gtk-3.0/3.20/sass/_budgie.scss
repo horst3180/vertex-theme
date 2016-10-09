@@ -182,7 +182,7 @@ button.budgie-menu-launcher {
   padding: 10px;
 
   .content-box separator {
-    background-color: tranparentize($fg_color, 0.85);
+    background-color: transparent($fg_color, 0.85);
   }
 
   list,
