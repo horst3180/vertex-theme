@@ -118,6 +118,7 @@ StScrollBar StButton#vhandle:active {
 /* ===================================================================
  * PopupMenu (popupMenu.js) 
  * ===================================================================*/
+.menu-boxpointer,
 .popup-menu-boxpointer {
   -arrow-border-radius: 3px;
   -arrow-background-color:  rgba(0,0,0,0.0);
@@ -127,12 +128,14 @@ StScrollBar StButton#vhandle:active {
   -arrow-rise: 0;
 }
 
+.menu,
 .popup-menu {
   color: white;
   min-width: 200px;
   border-image: url("menu/menu.svg") 10 10 35 14;
 }
 
+.menu-arrow,
 .popup-menu-arrow {
   icon-size: 16px;
 }
@@ -243,6 +246,7 @@ StScrollBar StButton#vhandle:active {
   font-weight: bold;
 }
 */
+.menu-icon,
 .popup-menu-icon {
   icon-size: 16px;
 }
