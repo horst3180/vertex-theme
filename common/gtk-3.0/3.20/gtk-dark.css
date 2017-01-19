@@ -3967,6 +3967,9 @@ terminal-window scrollbar.vertical slider {
   .nautilus-list-dim-label:selected:focus {
     color: #d9e6fe; }
 
+NemoWindow EelEditableLabel.entry {
+  transition: none; }
+
 .nautilus-window searchbar {
   box-shadow: none;
   border-top: 1px solid #171819; }
