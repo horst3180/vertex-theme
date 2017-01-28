@@ -1,0 +1,58 @@
+
+/* this is /usr/share/meld/meld-dark.css */
+/* if it does not apply, also create it as /usr/share/meld/meld.css */
+
+@import 'meld.css';
+
+@define-color insert-bg #115511;
+@define-color insert-outline shade(@insert-bg, 1.8);
+@define-color insert-text #008800;
+@define-color delete-bg #111111;
+@define-color delete-outline shade(@delete-bg, 1.8);
+@define-color delete-text #880000;
+
+@define-color replace-bg #111155;
+@define-color replace-outline shade(@replace-bg, 1.8);
+@define-color replace-text #0044dd;
+@define-color inline-bg #222a88;
+@define-color inline-fg #099b09;
+
+@define-color conflict-bg #551111;
+@define-color conflict-outline shade(@conflict-bg, 1.8);
+@define-color conflict-text #ff0000;
+@define-color error-bg #fce94f;
+@define-color error-outline shade(@error-bg, 1.8);
+@define-color error-text #faad3d;
+@define-color unknown-text #888888;
+@define-color current-line-highlight #111100;
+@define-color syncpoint-outline #222a55;
+@define-color current-chunk-highlight #003c5f;
+
+.meld-notebook-toolbar.toolbar {
+    background-image: none;
+    background-color: @theme_base_color;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: @borders;
+
+    -GtkToolbar-button-relief: none;
+    padding: 3px 2px 2px 2px;
+}
+
+LinkMap {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: @borders;
+}
+
+.meld-vc-console-pane {
+    border-width: 1px 0 0px 0;
+    border-style: solid;
+    border-color: @borders;
+}
+
+.not-found {
+    color: white;
+    background-image: none;
+    background-color: rgb (237, 54, 54);
+}
