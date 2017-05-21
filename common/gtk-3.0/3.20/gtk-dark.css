@@ -3247,7 +3247,7 @@ button.file:drop(active) {
 
 .sidebar {
   border: none;
-  background-color: #353638;
+  background-color: #2B2B2C;
   color: rgba(243, 243, 245, 0.8);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
