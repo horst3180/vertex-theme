@@ -106,6 +106,14 @@ After the installation is complete you can activate the theme with `gnome-tweak-
 Run
 
     sudo make uninstall
+    **Manual Installation**
+
+To build the theme you need 
+* `autoconf`
+* `automake`
+* `pkg-config` or `pkgconfig` if you use Fedora
+* `libgtk-3-dev` for Debian based distros or `gtk3-devel` for RPM based distros
+* `git` if you want to clone the source direc
 
 from the same directory as this README resides in, or
 
